@@ -32,11 +32,14 @@ import Vue from 'vue'
 import {mapGetters, mapActions} from "vuex";
 import ProductItem from "~/components/products/ProductItem.vue";
 
-export default Vue.extend({
+export default {
   components: {ProductItem},
 
-  async asyncData({params}) {
+  async asyncData({params, store}) {
     const slug = params.slug;
+
+    await store.dispatch('shop/products/fetchProductsByCollection', 'led-strips');
+
     return {slug}
   },
 
@@ -57,19 +60,5 @@ export default Vue.extend({
       });
     }
   },
-
-  methods: {
-    ...mapActions('shop/products', [
-      'fetchProductsByCollection'
-    ]),
-
-    async init() {
-      await this.fetchProductsByCollection(this.slug);
-    }
-  },
-
-  created() {
-    this.init();
-  }
-})
+}
 </script>

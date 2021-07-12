@@ -10,7 +10,7 @@ const actions = () => ({
     const collection = await this.$shopify.collection.fetchByHandle(collectionHandle, {
       productsFirst: 20,
     });
-    
+
     commit('setProductCollections', collection);
   },
 
