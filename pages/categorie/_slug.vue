@@ -27,7 +27,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import Vue from 'vue'
 import {mapGetters, mapActions} from "vuex";
 import ProductItem from "~/components/products/ProductItem.vue";
