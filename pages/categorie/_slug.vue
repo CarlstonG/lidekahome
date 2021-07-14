@@ -30,9 +30,12 @@
 <script lang="js">
 import ProductItem from '~/components/products/ProductItem.vue';
 import Vue from 'vue';
+import ApiService from "../../services/ApiService";
 
 export default Vue.extend({
-  components: {ProductItem},
+  components: {
+    ProductItem
+  },
 
   data() {
     return {
@@ -42,22 +45,16 @@ export default Vue.extend({
     };
   },
 
-  async asyncData({params, $shopify}) {
+  async asyncData({params}) {
     const slug = params.slug;
-
-    const collection = await $shopify.collection.fetchByHandle(slug, {
-      productsFirst: 50,
-    });
-
+    const collection = await ApiService.getProductsByCollectionHandle(slug);
     return { slug, collection }
   },
 
-  /*
   async fetch() {
-    this.collection = await this.$shopify.collection.fetchByHandle(this.slug, {
-      productsFirst: 20,
-    });
+    // this.collection = await ApiService.getProductsByCollectionHandle(this.slug);
+    // console.log(this.collection);
+    //this.$forceUpdate();
   },
-   */
 })
 </script>

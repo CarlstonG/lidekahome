@@ -62,7 +62,8 @@ export default {
 
   env: {
     shopifyDomain: process.env.SHOPIFY_DOMAIN,
-    shopifyAccessToken: process.env.SHOPIFY_ACCESS_TOKEN
+    shopifyAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
+    shopifyGraphql: process.env.SHOPIFY_GRAPHQL
   },
 
   router: {

@@ -68,11 +68,6 @@ export default Vue.extend({
     };
   },
 
-  async asyncData({params}) {
-    const slug = params.slug;
-    return {slug}
-  },
-
   methods: {
     initializeSwiper() {
       const thumbSwiper = new Swiper(".mySwiper", {
@@ -124,12 +119,18 @@ export default Vue.extend({
     });
   },
 
+  async asyncData({params}) {
+    const slug = params.slug;
+    const product = await ApiService.getProductByHandle(slug);
+    return { slug, product }
+  },
+
   async fetch() {
+    //this.product = await ApiService.getProductByHandle(this.slug);
+
     this.$nextTick(() => {
       this.initializeSwiper();
     });
-
-    this.product = await ApiService.getProductByHandle(this.slug);
   },
 })
 </script>
