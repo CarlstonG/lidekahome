@@ -1,5 +1,5 @@
-const state = () => ({
+const state = {
   lines: [],
-})
+}
 
-export default state();
+export default state;

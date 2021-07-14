@@ -56,6 +56,11 @@ export default {
     unoptimized: false,
   },
 
+  env: {
+    shopifyDomain: process.env.SHOPIFY_DOMAIN,
+    shopifyAccessToken: process.env.SHOPIFY_ACCESS_TOKEN
+  },
+
   router: {
     extendRoutes(routes, resolve) {
       routes.push({

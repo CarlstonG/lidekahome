@@ -28,37 +28,36 @@
 </template>
 
 <script lang="js">
-import Vue from 'vue'
-import {mapGetters, mapActions} from "vuex";
-import ProductItem from "~/components/products/ProductItem.vue";
+import ProductItem from '~/components/products/ProductItem.vue';
+import Vue from 'vue';
 
-export default {
+export default Vue.extend({
   components: {ProductItem},
-
-  async asyncData({params, store}) {
-    const slug = params.slug;
-
-    await store.dispatch('shop/products/fetchProductsByCollection', 'led-strips');
-
-    return {slug}
-  },
 
   data() {
     return {
       loading: false,
+      collection: {},
+      slug: null,
     };
   },
 
-  computed: {
-    ...mapGetters('shop/products', [
-      'getProductCollections'
-    ]),
+  async asyncData({params, $shopify}) {
+    const slug = params.slug;
 
-    collection() {
-      return this.getProductCollections.find((item) => {
-        return item.handle == this.slug
-      });
-    }
+    const collection = await $shopify.collection.fetchByHandle(slug, {
+      productsFirst: 50,
+    });
+
+    return { slug, collection }
   },
-}
+
+  /*
+  async fetch() {
+    this.collection = await this.$shopify.collection.fetchByHandle(this.slug, {
+      productsFirst: 20,
+    });
+  },
+   */
+})
 </script>

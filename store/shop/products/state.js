@@ -1,7 +1,7 @@
-const state = () => ({
+const state = {
   products: [],
   collections: [],
   productCollections: [],
-})
+}
 
-export default state();
+export default state;
