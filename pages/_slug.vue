@@ -2,7 +2,7 @@
   <div class="bg-white">
     <div class="max-w-7xl mx-auto pb-20 pt-6 md:pt-10">
       <div class="grid grid-cols-1 md:grid-cols-2 mx-6 lg:mx-0 relative">
-        <Loading v-show="loading" />
+        <Loading v-show="loading"/>
         <div class="px-0 md:px-6 mb-8 md:mb-0">
           <div style="--swiper-navigation-color: #000; --swiper-pagination-color: #000; --swiper-navigation-size: 20px"
                class="swiper-container mySwiper2 mb-2">
@@ -58,6 +58,43 @@
 
           <h2 v-if="product.price" class="text-2xl pb-6">&euro;{{ product.price }}</h2>
 
+
+          <div v-if="product.related">
+            <span class="text-sm text-gray-500">Aantal meters:</span>
+            <div class="pb-4 mt-1">
+
+              <NuxtLink
+                v-for="related in product.related"
+                :to="`/${related.handle}`"
+                :class="!related.selected ? 'py-1 text-sm px-4 inline-block bg-white border border-gray-500 transition-opacity hover:opacity-50 rounded-md mr-1 mb-1' : 'py-1 px-4 text-sm inline-block bg-black text-white border border-black\n'+
+'            rounded-md mr-1 mb-1'"
+              >
+                {{ related.name }}
+              </NuxtLink>
+
+            </div>
+          </div>
+
+          <div v-if="product.deliveryDate" class="relative pb-4">
+            <dt class="block md:flex items-center">
+              <div
+                class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
+                op voorraad
+              </div>
+              <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ product.deliveryDate }}</p>
+            </dt>
+          </div>
+          <div v-else class="relative pb-4">
+            <dt class="block md:flex items-center">
+              <div
+                class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
+                op voorraad
+              </div>
+              <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">Voor 23:59 besteld = morgen
+                verzonden.</p>
+            </dt>
+          </div>
+
           <div class="flex items-center">
             <!-- if available -->
             <div class="mr-2">
@@ -65,7 +102,7 @@
                       v-model="quantity"
                       class="focus:ring-blue-500 px-5 py-3 border focus:border-blue-500 relative block w-full rounded-md bg-transparent focus:z-10 sm:text-sm border-gray-300">
                 <option selected>1</option>
-                <option v-for="index in 20" :value="index+1">{{ index+1 }}</option>
+                <option v-for="index in 20" :value="index+1">{{ index + 1 }}</option>
               </select>
             </div>
 
@@ -95,7 +132,11 @@
 
             <div class="relative">
               <dt class="flex">
-                <svg class="w-7 h-7 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                <svg class="w-7 h-7 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
                 <p class="ml-3 text-md leading-6 text-gray-500">24/7 bereikbaar</p>
               </dt>
             </div>
@@ -169,7 +210,7 @@ export default Vue.extend({
     ]),
 
     addToCart(variantId, quantity = 1) {
-      this.addLine({ variantId, quantity });
+      this.addLine({variantId, quantity});
     },
 
     initializeSwiper() {

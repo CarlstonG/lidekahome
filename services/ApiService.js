@@ -56,6 +56,35 @@ class Product {
       this.specifications = _.get(this.specifications, 'value', '');
       this.specifications = _.get(JSON.parse(this.specifications), 0, '');
     }
+
+    this.related = this.metafields;
+    this.related = _.find(this.metafields, (item) => {
+      return item.key === 'related'
+    });
+
+    if (this.related) {
+      const relatedNames = JSON.parse(_.get(_.find(this.metafields, (item) => {
+        return item.key === 'name'
+      }), 'value', ''));
+
+      const relatedSelected = JSON.parse(_.get(_.find(this.metafields, (item) => {
+        return item.key === 'selected'
+      }), 'value', ''));
+
+      this.related = JSON.parse(_.get(this.related, 'value', ''));
+
+      this.related = _.map(this.related, (value, key) => {
+        return {
+          name: relatedNames[key],
+          selected: relatedSelected[key],
+          handle: value,
+        }
+      })
+    }
+
+    this.deliveryDate = _.get(_.find(this.metafields, (item) => {
+      return item.key === 'delivery_date'
+    }), 'value', null);
   }
 }
 

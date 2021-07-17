@@ -10,7 +10,7 @@
         </div>
       </div>
 
-      <div class="max-w-screen-xl w-full mx-auto py-10 px-2 md:px-6 relative" style="min-height: 500px;">
+      <div class="max-w-screen-xl w-full mx-auto py-10 px-2 relative" style="min-height: 500px;">
         <div class="grid grid-cols-12">
           <Loading v-show="loading" />
           <div class="col-span-12">

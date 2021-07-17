@@ -5,6 +5,8 @@ const actions = {
     await this.$shopify.checkout.addLineItems(context.getters.checkoutId, [ payload ]).then((checkout) => {
       context.commit('setCount', _.get(checkout, 'lineItems.length', 0));
       context.commit('setCheckout', checkout);
+    }).catch((err) => {
+      //Item not found.
     });
   },
 
@@ -12,6 +14,8 @@ const actions = {
     await this.$shopify.checkout.removeLineItems(context.getters.checkoutId, [ payload ]).then((checkout) => {
       context.commit('setCount', _.get(checkout, 'lineItems.length', 0));
       context.commit('setCheckout', checkout);
+    }).catch((err) => {
+      //Item not found.
     });
   },
 
@@ -21,7 +25,9 @@ const actions = {
     ]).then((checkout) => {
       context.commit('setCount', _.get(checkout, 'lineItems.length', 0));
       context.commit('setCheckout', checkout);
-    })
+    }).catch((err) => {
+      //Item not found.
+    });
   },
 
   async fetchCheckout(context) {

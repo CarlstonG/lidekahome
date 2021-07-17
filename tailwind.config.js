@@ -26,7 +26,13 @@ export default {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      opacity: [
+        "disabled"
+      ],
+    },
+  },
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms')

@@ -17,8 +17,8 @@
           </div>
 
           <div class="flex flex-col relative">
-            <Loading v-show="loading" />
-            <form action="/cart" method="post" novalidate>
+            <Loading v-show="loading || !checkout" />
+            <form v-show="checkout" :action="checkout.webUrl" method="get" novalidate>
               <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
                   <div class="overflow-hidden border-b border-gray-200">
@@ -107,7 +107,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flex items-center justify-start">
+              <div v-show="checkout" class="flex items-center justify-start">
                 <div class="py-10 px-6 lg:px-0">
                   <table class="min-w-full divide-y divide-gray-200">
                     <tbody>
@@ -123,7 +123,7 @@
                       <td class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
                         Totaal
                       </td>
-                      <td class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
+                      <td v-if="checkout.subtotalPrice" class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
                         {{ formatMoney(checkout.subtotalPrice) }} incl. btw
                       </td>
                     </tr>
@@ -131,10 +131,10 @@
                   </table>
                 </div>
               </div>
-              <div x-data="cartCheckout()">
+              <div>
                 <div class="flex items-start mb-4 px-6 lg:px-0">
                   <div class="h-5 flex items-center">
-                    <input id="terms" x-model="terms" name="terms" type="checkbox"
+                    <input id="terms" v-model="terms" name="terms" type="checkbox"
                            class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
                   </div>
                   <div class="ml-3 text-sm">
@@ -145,9 +145,9 @@
                   </div>
                 </div>
                 <div class="flex items-center justify-start px-6 lg:px-0">
-                  <a :href="checkout.webUrl" class="w-60 disabled:opacity-50 flex justify-center py-3 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                  <Button type="submit" :disabled="!terms" class="w-60 disabled:opacity-50 flex justify-center py-3 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                     Naar betalen
-                  </a>
+                  </Button>
                 </div>
               </div>
             </form>
@@ -167,7 +167,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path>
                   </svg>
-                  <p class="ml-3 text-sm leading-6 text-gray-500">DELIVERY USP</p>
+                  <p class="ml-3 text-sm leading-6 text-gray-500">voor 23:59 besteld = morgen in huis</p>
                 </dt>
               </div>
 
@@ -248,6 +248,7 @@ export default Vue.extend({
       products: [],
       formatMoney,
       loading: false,
+      terms: false,
     };
   },
 
@@ -296,9 +297,5 @@ export default Vue.extend({
       this.loading = false;
     }
   },
-
-  created() {
-    console.log(this.checkout);
-  }
 })
 </script>
