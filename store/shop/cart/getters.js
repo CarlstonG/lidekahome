@@ -1,11 +1,12 @@
-const getters = () => ({
-  lines: state => {
-    return state.lines
+const getters = {
+  checkoutId: state => {
+    return state.checkoutId;
   },
-  count: state => {
-    return state.lines.length;
-  }
-});
 
-export default getters();
+  count: state => {
+    return state.count;
+  }
+};
+
+export default getters;
 

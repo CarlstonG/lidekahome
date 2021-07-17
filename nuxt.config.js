@@ -30,9 +30,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-
-  ],
+  plugins: ['~/plugins/vue-imgix.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -44,6 +42,10 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+
+  tailwindcss: {
+    configPath: 'tailwind.config.js',
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -57,13 +59,13 @@ export default {
   shopify: {
     domain: process.env.SHOPIFY_DOMAIN,
     storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
-    unoptimized: false,
+    unoptimized: true
   },
 
   env: {
     shopifyDomain: process.env.SHOPIFY_DOMAIN,
     shopifyAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
-    shopifyGraphql: process.env.SHOPIFY_GRAPHQL
+    shopifyGraphql: process.env.SHOPIFY_GRAPHQL,
   },
 
   router: {

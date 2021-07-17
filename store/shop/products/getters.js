@@ -1,4 +1,4 @@
-const getters = () => ({
+const getters = {
   getProducts: state => {
     return state.products;
   },
@@ -20,7 +20,7 @@ const getters = () => ({
       ].indexOf(item.handle) > -1
     })
   }
-});
+}
 
-export default getters();
+export default getters;
 

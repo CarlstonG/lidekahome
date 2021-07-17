@@ -14,7 +14,11 @@ class Product {
     this.id = _.get(data, 'id', null);
     this.title = _.get(data, 'title', null);
     this.handle = _.get(data, 'handle', null);
-    this.description = _.get(data, 'description', null)
+    this.description = _.get(data, 'descriptionHtml', null)
+
+    this.price = _.get(data, 'priceRange.maxVariantPrice.amount', null)
+
+    this.firstVariantId = _.get(data, 'variants.edges.0.node.id', null);
 
     const imagesEdges = _.get(data, 'images.edges', null);
     this.images = imagesEdges ? _.map(imagesEdges, (item) => {
@@ -23,7 +27,6 @@ class Product {
         src: _.get(item, 'node.transformedSrc', null),
       }
     }) : [];
-
 
     const mediaEdges = _.get(data, 'media.edges', null);
     this.media = mediaEdges ? _.map(mediaEdges, (item) => {
@@ -87,6 +90,23 @@ const ApiService = {
           id
           title
           descriptionHtml
+          priceRange {
+            maxVariantPrice {
+              amount
+              currencyCode
+            }
+            minVariantPrice {
+              amount
+              currencyCode
+            }
+          }
+          variants(first: 1) {
+            edges {
+              node {
+                id
+              }
+            }
+          }
           media(first: 100) {
             edges {
               node {
@@ -118,17 +138,8 @@ const ApiService = {
         }
         ... on MediaImage {
           image {
-          transformedSrc(maxWidth: 800, maxHeight: 800)
-        }
-      }
-
-      ... on Model3d {
-        sources {
-          url
-          mimeType
-          format
-          filesize
-        }
+            transformedSrc(maxWidth: 600, maxHeight: 600)
+          }
       }
 
       ... on Video {
@@ -164,6 +175,16 @@ const ApiService = {
               id
               title,
               handle,
+              priceRange {
+                maxVariantPrice {
+                  amount
+                  currencyCode
+                }
+                minVariantPrice {
+                  amount
+                  currencyCode
+                }
+              }
               images(first: 1) {
                 edges {
                   node {
@@ -185,7 +206,6 @@ const ApiService = {
       return {};
     }
 
-    console.log(data);
     return new Collection(data.collectionByHandle);
   }
 }

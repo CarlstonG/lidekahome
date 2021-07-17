@@ -10,10 +10,11 @@
         </div>
       </div>
 
-      <div class="max-w-screen-xl w-full mx-auto py-10 px-2 md:px-6">
+      <div class="max-w-screen-xl w-full mx-auto py-10 px-2 md:px-6 relative" style="min-height: 500px;">
         <div class="grid grid-cols-12">
+          <Loading v-show="loading" />
           <div class="col-span-12">
-            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 relative">
               <div
                 v-for="product in collection.products"
                 v-bind:key="product.id">
@@ -31,9 +32,11 @@
 import ProductItem from '~/components/products/ProductItem.vue';
 import Vue from 'vue';
 import ApiService from "../../services/ApiService";
+import Loading from "../../components/Loading";
 
 export default Vue.extend({
   components: {
+    Loading,
     ProductItem
   },
 
@@ -47,14 +50,13 @@ export default Vue.extend({
 
   async asyncData({params}) {
     const slug = params.slug;
-    const collection = await ApiService.getProductsByCollectionHandle(slug);
-    return { slug, collection }
+    return { slug }
   },
 
   async fetch() {
-    // this.collection = await ApiService.getProductsByCollectionHandle(this.slug);
-    // console.log(this.collection);
-    //this.$forceUpdate();
+    this.loading = true;
+    this.collection = await ApiService.getProductsByCollectionHandle(this.slug);
+    this.loading = false;
   },
 })
 </script>

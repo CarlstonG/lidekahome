@@ -96,9 +96,9 @@
             <NuxtLink to="/winkelwagen"
                class="relative bg-black p-1 ml-3 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
 
-                      <span style="top: -5px; right: -5px;"
+                      <span v-show="count > 0" style="top: -5px; right: -5px;"
                             class="absolute w-5 h-5 rounded-full bg-white text-xs text-black flex items-center justify-center"
-                            data-cart-count>0</span>
+                            data-cart-count>{{ count }}</span>
 
               <span class="sr-only">View cart</span>
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -196,6 +196,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import {mapGetters} from "vuex";
 
 export default Vue.extend({
   props: {
@@ -203,6 +204,12 @@ export default Vue.extend({
       type: [],
       required: true,
     }
+  },
+
+  computed: {
+    ...mapGetters('shop/cart', [
+      'count'
+    ])
   }
 });
 </script>

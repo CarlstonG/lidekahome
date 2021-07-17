@@ -1,7 +1,11 @@
-const mutations = () => ({
-  addLine(state, payload) {
-    state.lines.push(payload);
-  }
-});
+const mutations = {
+  setCheckoutId(state, payload) {
+    state.checkoutId = payload;
+  },
 
-export default mutations();
+  setCount(state, payload) {
+    state.count = payload;
+  }
+};
+
+export default mutations;

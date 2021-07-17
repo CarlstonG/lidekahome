@@ -1,4 +1,4 @@
-const actions = () => ({
+const actions = {
   async fetchAllProducts({commit}) {
     const products = await this.$shopify.collection.fetchWithProducts('Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2OTQ4NjEyOTMwMQ==', {
       productsFirst: 4,
@@ -18,6 +18,6 @@ const actions = () => ({
     const collections = await this.$shopify.collection.fetchAll();
     commit('setCollections', collections);
   }
-});
+}
 
-export default actions();
+export default actions;

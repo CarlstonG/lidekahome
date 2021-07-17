@@ -1,4 +1,4 @@
-const mutations = () => ({
+const mutations = {
   setProducts(state, payload) {
     state.products = payload;
   },
@@ -14,6 +14,6 @@ const mutations = () => ({
       state.productCollections.push(payload);
     }
   },
-});
+};
 
-export default mutations();
+export default mutations;
