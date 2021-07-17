@@ -5,6 +5,10 @@ const mutations = {
 
   setCount(state, payload) {
     state.count = payload;
+  },
+
+  setCheckout(state, payload) {
+    state.checkout = payload;
   }
 };
 

@@ -5,6 +5,10 @@ const getters = {
 
   count: state => {
     return state.count;
+  },
+
+  checkout: state => {
+    return state.checkout;
   }
 };
 
