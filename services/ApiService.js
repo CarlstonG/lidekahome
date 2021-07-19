@@ -1,6 +1,5 @@
-import axios from 'axios';
 import _ from 'lodash';
-import { gql, GraphQLClient } from 'graphql-request'
+import {gql, GraphQLClient} from 'graphql-request'
 
 const client = new GraphQLClient(process.env.shopifyGraphql, {
   headers: {
@@ -27,6 +26,8 @@ class Product {
         src: _.get(item, 'node.transformedSrc', null),
       }
     }) : [];
+
+    this.firstMediaSrc = _.get(this.images, '0.src', 'https://via.placeholder.com/600');
 
     const mediaEdges = _.get(data, 'media.edges', null);
     this.media = mediaEdges ? _.map(mediaEdges, (item) => {
@@ -115,60 +116,60 @@ const ApiService = {
 
   async getProductByHandle(handle) {
     const query = gql`{
-        productByHandle(handle: "${handle}") {
-          id
-          title
-          descriptionHtml
-          priceRange {
-            maxVariantPrice {
-              amount
-              currencyCode
-            }
-            minVariantPrice {
-              amount
-              currencyCode
+      productByHandle(handle: "${handle}") {
+        id
+        title
+        descriptionHtml
+        priceRange {
+          maxVariantPrice {
+            amount
+            currencyCode
+          }
+          minVariantPrice {
+            amount
+            currencyCode
+          }
+        }
+        variants(first: 1) {
+          edges {
+            node {
+              id
             }
           }
-          variants(first: 1) {
-            edges {
-              node {
-                id
+        }
+        media(first: 100) {
+          edges {
+            node {
+              previewImage {
+                originalSrc
               }
+              alt
+              mediaContentType
+              ...mediaFieldsByType
             }
           }
-          media(first: 100) {
-            edges {
-              node {
-                previewImage {
-                  originalSrc
-                }
-                alt
-                mediaContentType
-                ...mediaFieldsByType
-              }
-            }
-          }
-          metafields(first: 100) {
-            edges {
-              node {
-                key
-                namespace
-                value
-              }
+        }
+        metafields(first: 100) {
+          edges {
+            node {
+              key
+              namespace
+              value
             }
           }
         }
       }
+    }
 
-      fragment mediaFieldsByType on Media {
-        ... on ExternalVideo {
-          id
-          embeddedUrl
+    fragment mediaFieldsByType on Media {
+      ... on ExternalVideo {
+        id
+        embeddedUrl
+      }
+      ... on MediaImage {
+        image {
+          transformedSrc(maxWidth: 600, maxHeight: 600)
         }
-        ... on MediaImage {
-          image {
-            transformedSrc(maxWidth: 600, maxHeight: 600)
-          }
       }
 
       ... on Video {
@@ -191,43 +192,102 @@ const ApiService = {
     return new Product(data.productByHandle);
   },
 
-  async getProductsByCollectionHandle(handle) {
+  async getProductsByQuery(searchQuery) {
     const query = gql`
-    {
-      collectionByHandle(handle: "${handle}") {
-        id
-        title
-        handle
-        products(first: 50) {
+      {
+        products(query: "${searchQuery}", first: 10) {
           edges {
             node {
-              id
               title,
               handle,
-              priceRange {
-                maxVariantPrice {
-                  amount
-                  currencyCode
-                }
-                minVariantPrice {
-                  amount
-                  currencyCode
-                }
-              }
               images(first: 1) {
                 edges {
                   node {
                     id
                     altText,
-                    transformedSrc(maxWidth: 600, maxHeight: 600)
+                    transformedSrc(maxWidth: 200, maxHeight: 200)
                   }
                 }
               }
             }
           }
         }
-      }
-    }`
+      }`
+
+    const data = await this.call(query);
+
+    if (data === undefined) {
+      return {};
+    }
+
+    const productsEdges = _.get(data, 'products.edges', []);
+    return _.map(productsEdges, (item) => {
+      return new Product(item.node);
+    });
+  },
+
+  async getCollectionsByQuery(searchQuery) {
+    const query = gql`
+      {
+        collections(query: "${searchQuery}", first: 10) {
+          edges {
+            node {
+              title,
+              handle
+            }
+          }
+        }
+      }`
+
+    const data = await this.call(query);
+
+    if (data === undefined) {
+      return {};
+    }
+
+    const collectionEdges = _.get(data, 'collections.edges', []);
+    return _.map(collectionEdges, (item) => {
+      return new Collection(item.node);
+    });
+  },
+
+  async getProductsByCollectionHandle(handle) {
+    const query = gql`
+      {
+        collectionByHandle(handle: "${handle}") {
+          id
+          title
+          handle
+          products(first: 50) {
+            edges {
+              node {
+                id
+                title,
+                handle,
+                priceRange {
+                  maxVariantPrice {
+                    amount
+                    currencyCode
+                  }
+                  minVariantPrice {
+                    amount
+                    currencyCode
+                  }
+                }
+                images(first: 1) {
+                  edges {
+                    node {
+                      id
+                      altText,
+                      transformedSrc(maxWidth: 600, maxHeight: 600)
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }`
 
     const data = await this.call(query);
 

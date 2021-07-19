@@ -3,7 +3,7 @@
     <NuxtLink :to="`/${product.handle}`">
       <ix-img class="rounded-lg"
               loading="lazy"
-              :src="product.images[gradient ? product.images.length - 1 : 0].src"
+              :src="!gradient ? product.firstMediaSrc : product.images[product.images.length - 1].src"
               :imgixParams="{fit:'fill', fill:'solid', fillcolor:'f7fafc', trim:'auto'}"
               :alt="product.title"
               width="100%"

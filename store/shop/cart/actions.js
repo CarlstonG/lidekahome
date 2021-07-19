@@ -38,9 +38,7 @@ const actions = {
       checkoutId = _.get(checkout, 'id', null);
       context.commit('setCount', _.get(checkout, 'lineItems.length', 0));
       context.commit('setCheckout', checkout);
-    }
-
-    if (!checkoutId) {
+    } else {
       const checkout = await this.$shopify.checkout.create();
       checkoutId = _.get(checkout, 'id', null);
       context.commit('setCount', 0);

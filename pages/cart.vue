@@ -17,7 +17,7 @@
           </div>
 
           <div class="flex flex-col relative">
-            <Loading v-show="loading || !checkout" />
+            <Loading v-show="loading || !checkout"/>
             <form v-show="checkout" :action="checkout.webUrl" method="get" novalidate>
               <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -48,48 +48,48 @@
                             <div class="ml-4 flex-1">
                               <div class="text-sm font-medium text-gray-900">
                                 <NuxtLink class="font-bold text-lg"
-                                   :to="lineItem.variant.product.handle">
+                                          :to="lineItem.variant.product.handle">
                                   {{ lineItem.title }}
                                 </NuxtLink>
 
                                 <div class="flex items-center space-x-2 mt-4 mb-2">
                                   <div class="flex items-center space-x-2 flex-1">
-                                                                <span
-                                                                  class="relative z-0 inline-flex shadow-sm rounded-md">
-                                                                  <button type="button"
-                                                                          @click="subQuantity(lineItem.quantity, lineItem.id)"
-                                                                          class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
-                                                                    <span class="sr-only">Previous</span>
-                                                                    <!-- Heroicon name: solid/chevron-left -->
-                                                                    <svg class="h-5 w-5"
-                                                                         xmlns="http://www.w3.org/2000/svg"
-                                                                         viewBox="0 0 20 20" fill="currentColor"
-                                                                         aria-hidden="true">
-                                                                      <path fill-rule="evenodd"
-                                                                            d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                                                                            clip-rule="evenodd"/>
-                                                                    </svg>
-                                                                  </button>
-                                                                    <input type="number" :value="lineItem.quantity"
-                                                                           min="0"
-                                                                           name="updates[]"
-                                                                           @blur="updateQuantity($event, lineItem.id)"
-                                                                           class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block text-center w-16 sm:text-sm border-gray-300"/>
-                                                                  <button type="button"
-                                                                          @click="addQuantity(lineItem.quantity, lineItem.id)"
-                                                                          class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
-                                                                    <span class="sr-only">Next</span>
-                                                                    <!-- Heroicon name: solid/chevron-right -->
-                                                                    <svg class="h-5 w-5"
-                                                                         xmlns="http://www.w3.org/2000/svg"
-                                                                         viewBox="0 0 20 20" fill="currentColor"
-                                                                         aria-hidden="true">
-                                                                      <path fill-rule="evenodd"
-                                                                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                                                            clip-rule="evenodd"/>
-                                                                    </svg>
-                                                                  </button>
-                                                                </span>
+                                    <span
+                                      class="relative z-0 inline-flex shadow-sm rounded-md">
+                                      <button type="button"
+                                              @click="subQuantity(lineItem.quantity, lineItem.id)"
+                                              class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                                        <span class="sr-only">Previous</span>
+                                        <!-- Heroicon name: solid/chevron-left -->
+                                        <svg class="h-5 w-5"
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 20 20" fill="currentColor"
+                                             aria-hidden="true">
+                                          <path fill-rule="evenodd"
+                                                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"/>
+                                        </svg>
+                                      </button>
+                                        <input type="number" :value="lineItem.quantity"
+                                               min="0"
+                                               name="updates[]"
+                                               @blur="updateQuantity($event, lineItem.id)"
+                                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block text-center w-16 sm:text-sm border-gray-300"/>
+                                      <button type="button"
+                                              @click="addQuantity(lineItem.quantity, lineItem.id)"
+                                              class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                                        <span class="sr-only">Next</span>
+                                        <!-- Heroicon name: solid/chevron-right -->
+                                        <svg class="h-5 w-5"
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 20 20" fill="currentColor"
+                                             aria-hidden="true">
+                                          <path fill-rule="evenodd"
+                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                clip-rule="evenodd"/>
+                                        </svg>
+                                      </button>
+                                    </span>
                                   </div>
                                   <div>
                                     {{ formatMoney(lineItem.variant.price * lineItem.quantity) }}
@@ -123,7 +123,8 @@
                       <td class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
                         Totaal
                       </td>
-                      <td v-if="checkout.subtotalPrice" class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
+                      <td v-if="checkout.subtotalPrice"
+                          class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
                         {{ formatMoney(checkout.subtotalPrice) }} incl. btw
                       </td>
                     </tr>
@@ -145,7 +146,8 @@
                   </div>
                 </div>
                 <div class="flex items-center justify-start px-6 lg:px-0">
-                  <Button type="submit" :disabled="!terms" class="w-60 disabled:opacity-50 flex justify-center py-3 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                  <Button type="submit" :disabled="!terms"
+                          class="w-60 disabled:opacity-50 flex justify-center py-3 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                     Naar betalen
                   </Button>
                 </div>
@@ -158,63 +160,14 @@
             <h2 class="text-2xl font-bold mb-2">
               Onze service
             </h2>
-            <dl class="mt-4 mb-2 space-y-2">
-              <div class="relative">
-                <dt class="flex items-center">
-                  <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path>
-                  </svg>
-                  <p class="ml-3 text-sm leading-6 text-gray-500">voor 23:59 besteld = morgen in huis</p>
-                </dt>
-              </div>
 
-              <div class="relative">
-                <dt class="flex items-center">
-                  <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                  </svg>
-                  <p class="ml-3 text-sm leading-6 text-gray-500">24/7 bereikbaar</p>
-                </dt>
-              </div>
+            <SellingPoints />
 
-              <div class="relative">
-                <dt class="flex items-center">
-                  <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
-                  </svg>
-                  <p class="ml-3 text-sm leading-6 text-gray-500">Gratis verzending & Gratis
-                    retourneren</p>
-                </dt>
-              </div>
-
-              <div class="relative">
-                <dt class="flex items-center">
-                  <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-                  </svg>
-                  <p class="ml-3 text-sm leading-6 text-gray-500">60 dagen gratis retourneren</p>
-                </dt>
-              </div>
-            </dl>
             <h2 class="text-md font-medium mb-4 mt-6 text-gray-400">
               Makkelijk betalen
             </h2>
             <div class="flex">
-              <img src="~/assets/payment-methods/ideal.svg" class="w-12 mr-2 mb-2" alt="Betaal met iDeal"/>
-              <img src="~/assets/payment-methods/creditcard.svg" class="w-12 mr-2 mb-2" alt="Betaal met Credit Card"/>
-              <img src="~/assets/payment-methods/bancontact.svg" class="w-12 mr-2 mb-2" alt="Betaal met Bancontact"/>
-              <img src="~/assets/payment-methods/directdebit.svg" class="w-12 mr-2 mb-2" alt="Betaal met Direct Debit"/>
-              <img src="~/assets/payment-methods/paypal.svg" class="w-12 mr-2 mb-2" alt="Betaal met PayPal"/>
-              <img src="~/assets/payment-methods/klarna.svg" class="w-12 mr-2 mb-2" alt="Betaal met Klarna"/>
+              <PaymentMethodes />
             </div>
             <h2 class="text-md font-medium mt-6 text-gray-400">
               Veilig winkelen
@@ -239,10 +192,12 @@ import Vue from 'vue'
 import {mapActions, mapGetters} from "vuex";
 import {formatMoney} from "~/services/Helpers";
 import Loading from "~/components/Loading.vue";
+import SellingPoints from "~/components/SellingPoints.vue";
+import PaymentMethodes from "~/components/PaymentMethodes.vue";
 
 export default Vue.extend({
   name: 'winkelwagen',
-  components: {Loading},
+  components: {PaymentMethodes, SellingPoints, Loading},
   data() {
     return {
       products: [],

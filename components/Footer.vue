@@ -1,7 +1,5 @@
 <template>
   <div>
-    <div id="insta-feed"></div>
-
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="bg-gray-900">
       <div class="max-w-7xl mx-auto px-6 py-6">
@@ -206,19 +204,7 @@
           </p>
           <div class="flex mt-4 items-center">
             <span class="text-gray-500 text-sm mr-2 mb-2">Veilig betalen: </span>
-            <img src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/ideal.svg" class="w-10 mr-2 mb-2"
-                 alt="Betaal met iDeal"/>
-            <img src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/creditcard.svg" class="w-10 mr-2 mb-2"
-                 alt="Betaal met Credit Card"/>
-            <img src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/bancontact.svg" class="w-10 mr-2 mb-2"
-                 alt="Betaal met Bancontact"/>
-            <img src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/directdebit.svg"
-                 class="w-10 mr-2 mb-2"
-                 alt="Betaal met Direct Debit"/>
-            <img src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/paypal.svg" class="w-10 mr-2 mb-2"
-                 alt="Betaal met PayPal"/>
-            <img src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/klarna.svg?v=1755298728192555864"
-                 class="w-10 mr-2 mb-2" alt="Betaal met Klarna"/>
+            <PaymentMethodes />
           </div>
         </div>
 
@@ -269,3 +255,9 @@
     </footer>
   </div>
 </template>
+<script>
+import PaymentMethodes from "~/components/PaymentMethodes";
+export default {
+  components: {PaymentMethodes}
+}
+</script>
