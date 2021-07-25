@@ -14,7 +14,6 @@ import {mapActions, mapGetters} from "vuex";
 
 export default Vue.extend({
   components: {Footer, Navigation},
-  transition: 'slide-fade',
 
   data () {
     return {
@@ -54,18 +53,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-.page-enter-active {
-  transition: all .1s ease-in-out;
-}
-
-.page-leave-active,
-.page-enter,
-.page-leave-to
-{
-  opacity: 0;
-  transition: opacity .1s ease-in-out;
-}
-
 .page-content {
   line-height: 1.5;
   font-size: 1.05rem;
