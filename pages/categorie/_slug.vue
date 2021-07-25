@@ -31,8 +31,8 @@
 <script lang="js">
 import ProductItem from '~/components/products/ProductItem.vue';
 import Vue from 'vue';
-import ApiService from "../../services/ApiService";
 import Loading from "../../components/Loading";
+import {Collections} from "../../services/shopify/Collections";
 
 export default Vue.extend({
   components: {
@@ -48,6 +48,19 @@ export default Vue.extend({
     };
   },
 
+  head() {
+    return {
+      title: this.collection.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.collection.description,
+        }
+      ]
+    }
+  },
+
   async asyncData({params}) {
     const slug = params.slug;
     return { slug }
@@ -55,7 +68,7 @@ export default Vue.extend({
 
   async fetch() {
     this.loading = true;
-    this.collection = await ApiService.getProductsByCollectionHandle(this.slug);
+    this.collection = await Collections.find(this.slug);
     this.loading = false;
   },
 })

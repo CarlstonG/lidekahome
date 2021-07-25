@@ -4,7 +4,7 @@
       <h2 class="text-3xl font-bold text-white sm:text-4xl sm:tracking-tight lg:text-5xl">Kwaliteit Led-en Solar artikelen</h2>
       <p class="mt-1 text-3xl text-white tracking-wide">van Lideka&reg;</p>
     </div>
-
+    
     <div class="max-w-7xl mx-auto p-2">
       <div class="w-full bg-center bg-no-repeat bg-cover bg-scroll mb-2 rounded-lg"
            style="background-image: url('https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/LEDxSolar_homepage.jpg')">

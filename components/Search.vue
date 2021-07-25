@@ -20,7 +20,7 @@
                @input="isOpen = true"
                @click="isOpen = true"
                :class="{ 'bg-white border-white ring-white': isOpen }"
-               class="block right-0 left-0 top-0 bottom-0 absolute z-20 w-full pl-10 pr-3 py-2 border-none rounded-md leading-5 bg-gray-900 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm"
+               class="block shadow-lg right-0 left-0 top-0 bottom-0 absolute z-20 w-full pl-10 pr-3 py-2 border-none rounded-md leading-5 bg-gray-900 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm"
                placeholder="Zoeken..."
                type="search"
         >
@@ -37,14 +37,14 @@
             </div>
           </li>
           <li @click="isOpen = false" v-for="collection in collections">
-            <NuxtLink :to="`/categorie/${collection.handle}`" class="flex items-center py-2">
+            <NuxtLink :to="collection.url" class="flex items-center py-2">
               <div class="ml-3">
                 <p class="text-sm font-medium text-gray-900">{{ collection.title }}</p>
               </div>
             </NuxtLink>
           </li>
           <li @click="isOpen = false" v-for="product in products">
-            <NuxtLink :to="`/${product.handle}`" class="flex items-center py-2">
+            <NuxtLink :to="product.url" class="flex items-center py-2">
               <img v-if="product.firstMediaSrc" class="h-6 w-6 rounded-full"
                    :src="product.firstMediaSrc"
                    loading="lazy"
@@ -62,8 +62,9 @@
 
 <script>
 import Vue from "vue";
-import ApiService from "~/services/ApiService";
 import Loading from "~/components/Loading";
+import { Products } from "~/services/shopify/Products";
+import { Collections} from "~/services/shopify/Collections";
 
 export default Vue.extend({
   components: {Loading},
@@ -101,8 +102,8 @@ export default Vue.extend({
       }
 
       this.loading = true;
-      this.products = await ApiService.getProductsByQuery(this.fields.query);
-      this.collections = await ApiService.getCollectionsByQuery(this.fields.query);
+      this.products = await Products.search(this.fields.query);
+      this.collections = await Collections.search(this.fields.query);
       this.loading = false;
     }
   }

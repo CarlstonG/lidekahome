@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-900">
     <Navigation :collections="getMainCollections" />
-    <Nuxt />
+    <Nuxt keep-alive />
     <Footer />
   </div>
 </template>

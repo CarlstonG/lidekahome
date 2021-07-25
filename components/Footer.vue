@@ -63,51 +63,51 @@
             </h3>
             <ul class="mt-4 space-y-4">
               <li>
-                <a href="/pages/klantenservice" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/klantenservice" class="text-base text-gray-300 hover:text-white">
                   Klantenservice
-                </a>
+                </NuxtLink>
               </li>
 
               <li>
-                <a href="/pages/bestellen-en-betalen" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/bestellen-en-betalen" class="text-base text-gray-300 hover:text-white">
                   Bestellen en Betalen
-                </a>
+                </NuxtLink>
               </li>
 
               <li>
-                <a href="/pages/verzending" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/verzending" class="text-base text-gray-300 hover:text-white">
                   Verzending
-                </a>
+                </NuxtLink>
               </li>
 
               <li>
-                <a href="/pages/over-ons" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/over-ons" class="text-base text-gray-300 hover:text-white">
                   Over ons
-                </a>
+                </NuxtLink>
               </li>
 
               <li>
-                <a href="/pages/algemene-voorwaarden" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/algemene-voorwaarden" class="text-base text-gray-300 hover:text-white">
                   Algemene voorwaarden
-                </a>
+                </NuxtLink>
               </li>
 
               <li>
-                <a href="/pages/privacy-statement" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/privacy-statement" class="text-base text-gray-300 hover:text-white">
                   Privacy statement
-                </a>
+                </NuxtLink>
               </li>
 
               <li>
-                <a href="/pages/veelgestelde-vragen" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/veelgestelde-vragen" class="text-base text-gray-300 hover:text-white">
                   Veelgestelde vragen
-                </a>
+                </NuxtLink>
               </li>
 
               <li>
-                <a href="/blogs/blog" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/blog" class="text-base text-gray-300 hover:text-white">
                   Blog
-                </a>
+                </NuxtLink>
               </li>
             </ul>
 
@@ -153,14 +153,14 @@
                 Konings Dreef 9<br/>3261 NJ, Oud-Beijerland
               </li>
               <li class="text-gray-300">
-                <a href="/pages/contact" class="flex">
+                <NuxtLink to="/contact" class="flex">
                   <svg class="w-5 h-5 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                        xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
                   Contact opnemen
-                </a>
+                </NuxtLink>
               </li>
             </ul>
           </div>

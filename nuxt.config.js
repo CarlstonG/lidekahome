@@ -30,7 +30,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/vue-imgix.js'],
+  plugins: ['~/plugins/vue-imgix.js', '~/plugins/jsonld'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -50,6 +50,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     'nuxt-shopify',
+    'nuxt-ssr-cache'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -68,7 +69,21 @@ export default {
     shopifyGraphql: process.env.SHOPIFY_GRAPHQL,
   },
 
+  cache: {
+    useHostPrefix: false,
+    pages: [
+      /^\/categorie\/\d+$/,
+    ],
+
+    store: {
+      type: 'memory',
+      max: 100,
+      ttl: 3600,
+    },
+  },
+
   router: {
+    linkPrefetchedClass: 'preloaded',
     extendRoutes(routes, resolve) {
       routes.push({
         name: 'winkelwagen',

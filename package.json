@@ -16,8 +16,11 @@
     "graphql": "^15.5.1",
     "graphql-request": "^3.4.0",
     "lodash": "^4.17.21",
+    "moment": "^2.29.1",
     "nuxt": "^2.15.7",
+    "nuxt-jsonld": "^1.5.1",
     "nuxt-shopify": "^1.10.10",
+    "nuxt-ssr-cache": "^1.5.2",
     "sass-loader": "^10.2.0",
     "swiper": "^6.7.5",
     "vue-imgix": "^2.9.0"
@@ -26,6 +29,7 @@
     "@nuxt/types": "^2.15.7",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/tailwindcss": "^4.2.0",
+    "@types/lodash": "^4.14.171",
     "node-sass": "^6.0.0",
     "postcss": "^8.3.5"
   }

@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 export const formatMoney = (amount, decimals = 2, minDecimals = 2, currency = 'EUR') => {
   if (minDecimals > decimals) {
     minDecimals = decimals;
@@ -12,3 +14,18 @@ export const formatMoney = (amount, decimals = 2, minDecimals = 2, currency = 'E
     .format(amount)
     .replace(/([,.])00$/, '$1-');
 };
+
+export const safeGet = (resource, key, defaultValue = null) => {
+  return _.get(resource, key, defaultValue);
+};
+
+export const truncateString = (str, max = 10) => {
+  const array = str.trim().split(' ');
+  const ellipsis = array.length > max ? '...' : '';
+
+  return array.slice(0, max).join(' ') + ellipsis;
+};
+
+export const capitalizeFirstLetter = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
