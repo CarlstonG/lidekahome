@@ -44,7 +44,7 @@ export class Product {
       return {
         type: safeGet(item, 'node.mediaContentType'),
         alt: safeGet(item, 'node.alt'),
-        preview: safeGet(item, 'node.previewImage.originalSrc'),
+        preview: safeGet(item, 'node.previewImage.transformedSrc'),
         src: safeGet(item, 'node.image.transformedSrc'),
         sources: safeGet(item, 'node.sources'),
       }

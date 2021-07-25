@@ -42,7 +42,7 @@ export default {
           edges {
             node {
               previewImage {
-                originalSrc
+                transformedSrc(maxWidth: 100, maxHeight: 100)
               }
               alt
               mediaContentType
