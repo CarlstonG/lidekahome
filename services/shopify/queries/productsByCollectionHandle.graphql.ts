@@ -1,14 +1,15 @@
 import { gql } from 'graphql-request'
+import { IQueryOptions } from "~/interfaces/options";
 
 export default {
-  query(handle: string) {
+  query(handle: string, limit = null as null|number, options = {} as IQueryOptions) {
     return gql`
       {
         collectionByHandle(handle: "${handle}") {
           id
           title
           handle
-          products(first: 50) {
+          products(first: ${limit ?? 50}) {
             edges {
               node {
                 id
@@ -25,7 +26,7 @@ export default {
                     currencyCode
                   }
                 }
-                images(first: 1) {
+                images(first: 1, reverse: ${options.reverseImages ?? false}) {
                   edges {
                     node {
                       id

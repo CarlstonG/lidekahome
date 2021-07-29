@@ -3,10 +3,11 @@ import {Collection as CollectionObject} from "~/services/shopify/classes/Collect
 import CollectionsByQuery from './queries/collectionsByQuery.graphql';
 import ProductsByCollectionHandle from './queries/productsByCollectionHandle.graphql';
 import _ from "lodash";
+import {IQueryOptions} from "~/interfaces/options";
 
 export const Collections = {
-  async find(handle: string) {
-    const { collectionByHandle }  = await ShopifyService.call(ProductsByCollectionHandle.query(handle)) as {
+  async find(handle: string, limit = null as null|number, options = {} as IQueryOptions) {
+    const { collectionByHandle }  = await ShopifyService.call(ProductsByCollectionHandle.query(handle, limit, options)) as {
       collectionByHandle: {}
     };
     return new CollectionObject(collectionByHandle);

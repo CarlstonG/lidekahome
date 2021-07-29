@@ -3,8 +3,7 @@
     <NuxtLink :to="product.url" prefetch>
       <ix-img class="rounded-lg"
               loading="lazy"
-              v-if="!gradient ? product.firstMediaSrc : product.images[product.images.length - 1].src"
-              :src="!gradient ? product.firstMediaSrc : product.images[product.images.length - 1].src"
+              :src="product.firstMediaSrc"
               :imgixParams="{fit:'fill', fill:'solid', fillcolor:'f7fafc', trim:'auto'}"
               :alt="product.title"
               width="100%"

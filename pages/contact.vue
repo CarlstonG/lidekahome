@@ -2,7 +2,7 @@
   <div class="bg-gray-50">
     <Breadcrumbs />
     <div v-if="!page.id">
-      <div class="max-w-7xl mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
+      <div class="container mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
         <Loading v-show="loading"/>
         <NotFound v-if="!loading" />
       </div>

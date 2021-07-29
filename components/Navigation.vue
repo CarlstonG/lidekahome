@@ -3,10 +3,10 @@
     <div class="h-32 md:h-44 block">&nbsp;</div>
     <div class="fixed right-0 top-0 left-0 z-40 shadow-lg">
       <div class="bg-black hidden md:block">
-        <div class="max-w-7xl mx-auto px-8 md:px-2 py-2">
-          <dl class="md:grid md:grid-cols-3">
+        <div class="container mx-auto px-2 md:px-2 py-2">
+          <dl class="md:grid md:grid-cols-4">
             <div class="relative">
-              <dt class="flex">
+              <dt class="flex items-center h-full">
                 <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                   <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
@@ -18,7 +18,7 @@
             </div>
 
             <div class="relative hidden md:block">
-              <dt class="flex">
+              <dt class="flex items-center h-full">
                 <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -28,8 +28,8 @@
               </dt>
             </div>
 
-            <div class="relative hidden md:block">
-              <dt class="flex">
+            <div class="relative hidden md:block ">
+              <dt class="flex items-center h-full">
                 <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -38,16 +38,23 @@
                 <p class="ml-2 text-xs leading-6 text-gray-400">60 dagen gratis retourneren</p>
               </dt>
             </div>
+
+            <div class="relative hidden md:block">
+              <dt class="flex items-center justify-end h-full">
+                <img class="w-20" src="~/assets/thuiswinkel.svg" />
+              </dt>
+            </div>
           </dl>
         </div>
       </div>
 
       <nav class="bg-black shadow-lg">
-        <div class="max-w-7xl mx-auto px-2 px-8 md:px-2">
+        <div class="container mx-auto px-2 px-2 md:px-2">
           <div class="relative flex items-center justify-between h-20">
             <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
               <!-- Mobile menu button-->
-              <button type="button"
+              <button @click.prevent="openSidebar()"
+                      type="button"
                       class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                       aria-controls="mobile-menu" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
@@ -80,10 +87,10 @@
               <div class="flex-shrink-0 flex items-center">
                 <NuxtLink to="/">
                   <img class="block lg:hidden h-12 w-auto"
-                       src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/lideka-home.svg" alt="Workflow">
+                       src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/lideka-home.svg" alt="Lideka Home">
                   <img class="hidden lg:block h-8 w-auto"
                        src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/lideka-home-alt.svg"
-                       alt="Workflow">
+                       alt="Lideka Home">
                 </NuxtLink>
               </div>
 
@@ -111,7 +118,7 @@
         </div>
 
         <div class="hidden md:block bg-black border-t border-gray-800 border-b">
-          <div class="max-w-7xl mx-auto  px-2 py-2 px-8 md:px-2">
+          <div class="container mx-auto  px-2 py-2 px-8 md:px-2">
             <div class="relative flex items-center justify-between -ml-2">
               <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-grow">
@@ -134,6 +141,9 @@
         </div>
       </nav>
     </div>
+    <transition name="fade">
+      <Sidebar v-if="sidebarIsOpen" @closeSidebar="closeSidebar()" :collections="collections" />
+    </transition>
   </div>
 </template>
 
@@ -141,13 +151,30 @@
 import Vue from 'vue'
 import {mapGetters} from "vuex";
 import Search from "~/components/Search.vue";
+import Sidebar from "~/components/navigation/Sidebar.vue";
 
 export default Vue.extend({
-  components: {Search},
+  components: {Sidebar, Search},
   props: {
     collections: {
       type: [],
       required: true,
+    }
+  },
+
+  data() {
+    return {
+      sidebarIsOpen: false,
+    };
+  },
+
+  methods: {
+    closeSidebar() {
+      this.sidebarIsOpen = false;
+    },
+
+    openSidebar() {
+      this.sidebarIsOpen = true;
     }
   },
 
@@ -158,3 +185,13 @@ export default Vue.extend({
   }
 });
 </script>
+
+<style lang="scss" scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease-in-out, transform .25s ease-in-out;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+</style>

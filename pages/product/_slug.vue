@@ -1,14 +1,14 @@
 <template>
   <div class="bg-white">
     <div v-if="!product.id">
-      <div class="max-w-7xl mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
+      <div class="container mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
         <Loading v-show="loading"/>
         <NotFound v-if="!loading" />
       </div>
     </div>
     <div v-else>
       <Breadcrumbs :path="[ { title: product.collection.title, path: product.collection.url } ]" :title="product.title" />
-      <div class="max-w-7xl mx-auto pb-20 pt-6 md:pt-10">
+      <div class="container mx-auto pb-20 pt-6 md:pt-10">
         <div class="grid grid-cols-1 md:grid-cols-2 mx-6 lg:mx-0 relative">
           <div class="px-0 md:px-6 mb-8 md:mb-0">
             <div
@@ -73,6 +73,7 @@
 
                 <NuxtLink
                   v-for="related in product.related"
+                  :key="related.id"
                   :to="`/product/${related.handle}`"
                   :class="!related.selected ? 'py-1 text-sm px-4 inline-block bg-white border border-gray-500 transition-opacity hover:opacity-50 rounded-md mr-1 mb-1' : 'py-1 px-4 text-sm inline-block bg-black text-white border border-black\n'+
 '            rounded-md mr-1 mb-1'"
@@ -131,7 +132,7 @@
         </div>
       </div>
 
-      <div class="max-w-7xl mx-auto px-6 lg:px-0 pb-10 pt-6">
+      <div class="container mx-auto px-6 lg:px-0 pb-10 pt-6">
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div class="px-0 md:px-6 mb-6">
             <h2 class="font-extrabold text-3xl mb-4">Productbeschrijving</h2>
@@ -221,8 +222,12 @@ export default Vue.extend({
       'addLine'
     ]),
 
-    addToCart(variantId, quantity = 1) {
-      this.addLine({variantId, quantity});
+    async addToCart(variantId, quantity = 1) {
+      await this.addLine({variantId, quantity});
+      //@ts-ignore
+      this.$root.$emit('addNotification', 'Toegevoegd', 'Product toegevoegd aan winkelmandje');
+
+      this.product = await Products.find(this.slug);
     },
 
     initializeSwiper() {
@@ -240,6 +245,9 @@ export default Vue.extend({
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         breakpoints: {
+          1500: {
+            slidesPerView: 6,
+          },
           1200: {
             slidesPerView: 5,
           },

@@ -1,8 +1,9 @@
 <template>
   <div class="bg-gray-900">
     <Navigation :collections="getMainCollections" />
-    <Nuxt keep-alive />
+    <Nuxt />
     <Footer />
+    <Notifications ref="notifications" />
   </div>
 </template>
 
@@ -11,13 +12,14 @@ import Vue from 'vue'
 import Navigation from "~/components/Navigation.vue";
 import Footer from "~/components/Footer.vue";
 import {mapActions, mapGetters} from "vuex";
+import Notifications from "~/components/notifications/Notifications.vue";
 
 export default Vue.extend({
-  components: {Footer, Navigation},
+  components: {Notifications, Footer, Navigation},
 
   data () {
     return {
-      //
+
     };
   },
 
