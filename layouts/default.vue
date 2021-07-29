@@ -41,10 +41,15 @@ export default Vue.extend({
 
     ...mapActions('shop/cart', [
       'fetchCheckout'
+    ]),
+
+    ...mapActions('shop/customer', [
+      'fetchCustomer'
     ])
   },
 
   mounted() {
+    this.fetchCustomer();
     this.fetchCheckout();
   },
 

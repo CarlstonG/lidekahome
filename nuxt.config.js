@@ -30,7 +30,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/vue-imgix.js', '~/plugins/jsonld'],
+  plugins: ['~/plugins/vue-imgix.js', '~/plugins/jsonld', '~/plugins/vuelidate.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -89,6 +89,12 @@ export default {
         name: 'winkelwagen',
         path: '/winkelwagen',
         component: resolve(__dirname, 'pages/cart.vue')
+      })
+
+      routes.push({
+        name: 'activate',
+        path: '/account/activate/:activationToken/:userId',
+        component: resolve(__dirname, 'pages/account/activate.vue')
       })
 
       sortRoutes(routes)

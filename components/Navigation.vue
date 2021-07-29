@@ -2,7 +2,7 @@
   <div>
     <div class="h-32 md:h-44 block">&nbsp;</div>
     <div class="fixed right-0 top-0 left-0 z-40 shadow-lg">
-      <div class="bg-black hidden md:block">
+      <div class="bg-black border-b border-gray-900 hidden md:block">
         <div class="container mx-auto px-2 md:px-2 py-2">
           <dl class="md:grid md:grid-cols-4">
             <div class="relative">
@@ -99,19 +99,38 @@
               </div>
             </div>
             <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto sm:ml-6 sm:pr-0">
-              <NuxtLink to="/winkelwagen"
-                        class="relative bg-black p-1 ml-3 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+              <NuxtLink v-if="customer" to="/account/myaccount"
+                 class="bg-black p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+                <span class="text-sm ml-2 hidden md:block">{{ customer.firstName }}</span>
+              </NuxtLink>
+              <NuxtLink v-else to="/account/login"
+                        class="bg-black p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+                <span class="hidden md:block text-sm ml-2">Inloggen</span>
+              </NuxtLink>
 
-                      <span v-show="count > 0" style="top: -5px; right: -5px;"
+              <NuxtLink to="/winkelwagen"
+                        class="relative flex justify-center items-center bg-black p-1 ml-3 rounded-full text-gray-400 hover:text-white focus:outline-none">
+
+                      <span v-show="count > 0" style="top: -5px; left: 20px;"
                             class="absolute w-5 h-5 rounded-full bg-white text-xs text-black flex items-center justify-center"
                             data-cart-count>{{ count }}</span>
 
-                <span class="sr-only">View cart</span>
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                 </svg>
+                <span class="hidden md:block text-sm ml-2">Winkelwagen</span>
               </NuxtLink>
             </div>
           </div>
@@ -181,6 +200,10 @@ export default Vue.extend({
   computed: {
     ...mapGetters('shop/cart', [
       'count'
+    ]),
+
+    ...mapGetters('shop/customer', [
+      'customer'
     ])
   }
 });

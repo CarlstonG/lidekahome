@@ -8,9 +8,9 @@ export const graphClient = new GraphQLClient(process.env.shopifyGraphql as strin
 })
 
 export const ShopifyService = {
-  async call(query: string) {
+  async call(query: string, variables = {} as {}) {
     return await new Promise((resolve, reject) => {
-      graphClient.request(query).then((response) => {
+      graphClient.request(query, variables).then((response) => {
         return resolve(response);
       }).catch((err) => {
         return reject(err);
