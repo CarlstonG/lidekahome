@@ -53,7 +53,9 @@
 </template>
 
 <script lang="ts">
-export default {
+import Vue from "vue";
+
+export default Vue.extend({
   props: {
     collections: {
       type: [],
@@ -66,5 +68,5 @@ export default {
       this.$emit('closeSidebar');
     },
   }
-}
+});
 </script>
