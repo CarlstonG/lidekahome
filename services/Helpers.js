@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import moment from "moment";
 
 export const formatMoney = (amount, decimals = 2, minDecimals = 2, currency = 'EUR') => {
   if (minDecimals > decimals) {
@@ -13,6 +14,10 @@ export const formatMoney = (amount, decimals = 2, minDecimals = 2, currency = 'E
   })
     .format(amount)
     .replace(/([,.])00$/, '$1-');
+};
+
+export const formatDate = (date) => {
+  return moment(date).format('D MMMM, YYYY');
 };
 
 export const safeGet = (resource, key, defaultValue = null) => {

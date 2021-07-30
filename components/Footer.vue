@@ -1,50 +1,33 @@
 <template>
   <div>
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="bg-gray-900">
+    <div class="border-t bg-black border-b border-gray-900">
       <div class="container mx-auto px-6 py-6">
         <dl class="md:grid md:grid-cols-4">
           <div class="relative hidden md:block">
             <dt class="flex justify-center items-center">
-              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path>
-              </svg>
+              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <p class="ml-2 text-xs leading-6 font-medium text-gray-400">voor 23:59 besteld = morgen in huis</p>
             </dt>
           </div>
 
           <div class="relative">
             <dt class="flex justify-center items-center">
-              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-              </svg>
+              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <p class="ml-2 text-xs leading-6 font-medium text-gray-400">24/7 bereikbaar</p>
             </dt>
           </div>
 
           <div class="relative hidden md:block">
             <dt class="flex justify-center items-center">
-              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
-              </svg>
+              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <p class="ml-2 text-xs leading-6 font-medium text-gray-400">Gratis verzending & Gratis retourneren</p>
             </dt>
           </div>
 
           <div class="relative hidden md:block">
             <dt class="flex justify-center items-center">
-              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-              </svg>
+              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <p class="ml-2 text-xs leading-6 font-medium text-gray-400">60 dagen gratis retourneren</p>
             </dt>
           </div>
@@ -61,51 +44,51 @@
             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
               Sitemap
             </h3>
-            <ul class="mt-4 space-y-4">
+            <ul class="mt-4 space-y-2">
               <li>
-                <NuxtLink to="/klantenservice" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/klantenservice" class="text-sm text-gray-300 hover:text-white">
                   Klantenservice
                 </NuxtLink>
               </li>
 
               <li>
-                <NuxtLink to="/bestellen-en-betalen" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/bestellen-en-betalen" class="text-sm text-gray-300 hover:text-white">
                   Bestellen en Betalen
                 </NuxtLink>
               </li>
 
               <li>
-                <NuxtLink to="/verzending" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/verzending" class="text-sm text-gray-300 hover:text-white">
                   Verzending
                 </NuxtLink>
               </li>
 
               <li>
-                <NuxtLink to="/over-ons" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/over-ons" class="text-sm text-gray-300 hover:text-white">
                   Over ons
                 </NuxtLink>
               </li>
 
               <li>
-                <NuxtLink to="/algemene-voorwaarden" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/algemene-voorwaarden" class="text-sm text-gray-300 hover:text-white">
                   Algemene voorwaarden
                 </NuxtLink>
               </li>
 
               <li>
-                <NuxtLink to="/privacy-statement" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/privacy-statement" class="text-sm text-gray-300 hover:text-white">
                   Privacy statement
                 </NuxtLink>
               </li>
 
               <li>
-                <NuxtLink to="/veelgestelde-vragen" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/veelgestelde-vragen" class="text-sm text-gray-300 hover:text-white">
                   Veelgestelde vragen
                 </NuxtLink>
               </li>
 
               <li>
-                <NuxtLink to="/blog" class="text-base text-gray-300 hover:text-white">
+                <NuxtLink to="/blog" class="text-sm text-gray-300 hover:text-white">
                   Blog
                 </NuxtLink>
               </li>
@@ -121,9 +104,9 @@
             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
               Klantenservice
             </h3>
-            <ul class="space-y-4 mt-4">
+            <ul class="space-y-2 mt-4">
               <li class="text-gray-300">
-                <a href="mailto:klantenservice@lidekahome.nl" class="flex">
+                <a href="mailto:klantenservice@lidekahome.nl" class="flex text-sm">
                   <svg class="w-5 h-5 mt-1 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                        xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -133,7 +116,7 @@
                 </a>
               </li>
               <li class="text-gray-300">
-                <a href="tel:+31 (0)85 - 06 01 297" class="flex">
+                <a href="tel:+31 (0)85 - 06 01 297" class="flex text-sm">
                   <svg class="w-5 h-5 mt-1 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                        xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -142,7 +125,7 @@
                   +31 (0)85 - 06 01 297
                 </a>
               </li>
-              <li class="text-gray-300 flex">
+              <li class="text-gray-300 flex text-sm">
                 <svg class="w-5 h-5 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -152,7 +135,7 @@
                 </svg>
                 Konings Dreef 9<br/>3261 NJ, Oud-Beijerland
               </li>
-              <li class="text-gray-300">
+              <li class="text-gray-300 text-sm">
                 <NuxtLink to="/contact" class="flex">
                   <svg class="w-5 h-5 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                        xmlns="http://www.w3.org/2000/svg">
@@ -168,7 +151,7 @@
             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
               Blijf op de hoogte
             </h3>
-            <p class="mt-4 text-base text-gray-300">
+            <p class="mt-4 text-sm text-gray-300">
               Schrijf je in, en maak kans op een Led Pakket t.w.v €149,95
             </p>
             <form>

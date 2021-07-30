@@ -2,6 +2,7 @@ import {safeGet} from "~/services/Helpers";
 // @ts-ignore
 import _ from 'lodash';
 import {Collection} from "~/services/shopify/classes/Collection";
+import {Variant} from "~/services/shopify/classes/Variant";
 
 export class Product {
   id: number | null;
@@ -14,6 +15,7 @@ export class Product {
   images: {} | [] | null | undefined;
   media: {} | [] | null | undefined;
   metafields: {} | [] | null | undefined;
+  firstVariant: Variant|null;
   firstVariantId: number | null | undefined;
   firstMediaSrc: string | null | undefined;
   seo = {} as {
@@ -37,6 +39,8 @@ export class Product {
     this.convertImagesEdges(safeGet(data, 'images.edges', {}));
     this.convertMetaFieldsEdges(safeGet(data, 'metafields.edges', {}));
     this.customDeclarations();
+
+    this.firstVariant = new Variant(safeGet(data, 'variants.edges.0.node'));
   }
 
   private convertMediaEdges(mediaEdges: {}) {

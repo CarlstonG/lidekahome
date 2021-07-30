@@ -16,6 +16,15 @@ const actions = {
     } else {
       commit('setAccessToken', null);
     }
+  },
+
+  async logout({commit}) {
+    const accessToken = localStorage.getItem('accessToken');
+    await Customers.deleteAccessToken({
+      customerAccessToken: accessToken
+    });
+    await commit('setCustomer', {});
+    await commit('setAccessToken', null);
   }
 }
 

@@ -1,22 +1,35 @@
 <template>
-  <div>
-    <div class="bg-white py-8 px-4 shadow rounded-lg sm:px-10">
+  <form @submit.prevent="submit">
+    <div class="space-y-6">
+      <FormField :errors="$v.fields.email" :model-value.sync="fields.email" name="E-mailadres" input-type="email"/>
+      <FormField :errors="$v.fields.password" :model-value.sync="fields.password" name="Wachtwoord"
+                 input-type="password"/>
+
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <input id="remember_me" name="remember_me" type="checkbox"
+                 class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+          <label for="remember_me" class="ml-2 block text-sm text-gray-900">
+            Onthouden
+          </label>
+        </div>
+
+        <div class="text-sm">
+          <NuxtLink to="/account/recover"
+             class="font-medium text-blue-600 hover:text-blue-500">
+            Wachtwoord vergeten?
+          </NuxtLink>
+        </div>
+      </div>
+
       <div>
-        <form @submit.prevent="submit">
-          <div class="space-y-6">
-            <FormField :errors="$v.fields.email" :model-value.sync="fields.email" name="E-mailadres" input-type="email" />
-            <FormField :errors="$v.fields.password" :model-value.sync="fields.password" name="Password" input-type="password" />
-            <div>
-              <button type="submit"
-                      class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                Inloggen
-              </button>
-            </div>
-          </div>
-        </form>
+        <button type="submit"
+                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+          Inloggen
+        </button>
       </div>
     </div>
-  </div>
+  </form>
 </template>
 
 <script lang="ts">
@@ -25,7 +38,7 @@ import {Customers} from "~/services/shopify/Customers";
 import {required, email, minLength} from 'vuelidate/lib/validators'
 import FormField from "~/components/input/FormField.vue";
 import {safeGet} from "~/services/Helpers";
-import {mapActions} from "vuex";
+import {mapActions, mapGetters} from "vuex";
 
 export default Vue.extend({
   components: {FormField},
@@ -49,6 +62,10 @@ export default Vue.extend({
         email
       }
     }
+  },
+
+  computed: {
+    ...mapGetters('shop/cart', ['checkoutId'])
   },
 
   methods: {
@@ -75,6 +92,13 @@ export default Vue.extend({
 
           if (!accessToken) {
             this.$root.$emit('addNotification', 'Oops.', 'Er is iets fout gegaan.', 'error')
+          }
+
+          if (this.checkoutId) {
+            await Customers.connectToCheckout({
+              checkoutId: this.checkoutId,
+              customerAccessToken: accessToken
+            })
           }
 
           await this.setAccessToken(accessToken);

@@ -97,6 +97,12 @@ export default {
         component: resolve(__dirname, 'pages/account/activate.vue')
       })
 
+      routes.push({
+        name: 'reset',
+        path: '/account/reset/:activationToken/:userId',
+        component: resolve(__dirname, 'pages/account/reset.vue')
+      })
+
       sortRoutes(routes)
     }
   }

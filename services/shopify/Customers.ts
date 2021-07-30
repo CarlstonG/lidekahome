@@ -8,6 +8,9 @@ import customerUpdate from "~/services/shopify/queries/customers/customerUpdate.
 import customerRecover from "~/services/shopify/queries/customers/customerRecover.graphql";
 import customerReset from "~/services/shopify/queries/customers/customerReset.graphql";
 import customerActivate from "~/services/shopify/queries/customers/customerActivate.graphql";
+import associateCustomerWithCheckout from "~/services/shopify/queries/customers/associateCustomerWithCheckout.graphql";
+import customerOrdersByAccessToken from "~/services/shopify/queries/customers/customerOrdersByAccessToken.graphql";
+import {Customer} from "~/services/shopify/classes/Customer";
 
 export const Customers = {
   async create(variables = {} as {}) {
@@ -16,6 +19,13 @@ export const Customers = {
 
   async find(accessToken: string) {
     return await ShopifyService.call(customerByAccessToken.query(accessToken));
+  },
+
+  async get(accessToken: string) {
+    const { customer } = await ShopifyService.call(customerOrdersByAccessToken.query(accessToken)) as {
+      customer: {}
+    }
+    return new Customer(customer);
   },
 
   async getAccessToken(variables = {} as {}) {
@@ -44,5 +54,9 @@ export const Customers = {
 
   async update(variables = {} as {}) {
     return await ShopifyService.call(customerUpdate.query(), variables)
+  },
+
+  async connectToCheckout(variables = {} as {}) {
+    return await ShopifyService.call(associateCustomerWithCheckout.query(), variables);
   }
 }

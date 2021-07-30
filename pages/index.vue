@@ -68,7 +68,7 @@
         </div>
         <div class="grid grid-cols-2 md:grid-cols-2 py-6 md:py-0">
           <div v-if="collection" v-for="product in collection.products" :key="product.id">
-            <ProductItem :product="product" />
+            <ProductItem :gradient="true" :product="product" class="mx-10" />
           </div>
         </div>
       </div>
@@ -163,7 +163,7 @@
         </div>
         <div class="grid grid-cols-2 md:grid-cols-2 py-6 md:py-0">
           <div v-if="secondaryCollection" v-for="product in secondaryCollection.products" :key="product.id">
-            <ProductItem :product="product" />
+            <ProductItem :gradient="true" :product="product" class="mx-10" />
           </div>
         </div>
       </div>

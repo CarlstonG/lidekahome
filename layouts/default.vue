@@ -19,7 +19,7 @@ export default Vue.extend({
 
   data () {
     return {
-
+      //
     };
   },
 
@@ -53,9 +53,9 @@ export default Vue.extend({
     this.fetchCheckout();
   },
 
-  created() {
-    this.fetchCollections();
-  }
+  async fetch() {
+    await this.fetchCollections();
+  },
 })
 </script>
 

@@ -16,6 +16,27 @@ export default {
                 title
                 vendor
                 handle
+                variants(first: 1) {
+                  edges {
+                    node {
+                      priceV2 {
+                        amount
+                      }
+                      compareAtPriceV2 {
+                        amount
+                      }
+                    }
+                  }
+                },
+                metafields(first: 20) {
+                  edges {
+                    node {
+                      key
+                      namespace
+                      value
+                    }
+                  }
+                },
                 priceRange {
                   maxVariantPrice {
                     amount

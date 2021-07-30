@@ -3,8 +3,8 @@ import {gql} from 'graphql-request'
 export default {
   query() {
     return gql`
-      mutation customerReset($id: ID!, $input: CustomerResetInput!) {
-        customerReset(id: $id, input: $input) {
+      mutation customerResetByUrl($resetUrl: URL!, $password: String!) {
+        customerResetByUrl(resetUrl: $resetUrl, password: $password) {
           customer {
             id
           }
