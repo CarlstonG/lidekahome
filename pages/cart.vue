@@ -110,7 +110,7 @@
                   </div>
                 </div>
               </div>
-              <div v-else>
+              <div v-else class="px-4 md:px-0">
                 Je winkelwagen is nog leeg!
               </div>
               <div v-if="checkout.lineItems && checkout.lineItems.length > 0">
