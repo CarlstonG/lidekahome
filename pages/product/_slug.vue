@@ -166,7 +166,7 @@ export default Vue.extend({
 
   head() {
     return {
-      title: safeGet(this.product, 'seo.title'),
+      title: safeGet(this.product, 'seo.title') ?? safeGet(this.product, 'title'),
       meta: [
         {
           hid: 'description',

@@ -6,8 +6,15 @@ import _ from "lodash";
 import {IQueryOptions} from "~/interfaces/options";
 
 export const Collections = {
-  async find(handle: string, limit = null as null|number, options = {} as IQueryOptions) {
-    const { collectionByHandle }  = await ShopifyService.call(ProductsByCollectionHandle.query(handle, limit, options)) as {
+  productSortKeys: {
+    BEST_SELLING: 'Best verkocht',
+    PRICE: 'Prijs',
+    RELEVANCE: 'Relevantie',
+    TITLE: 'Titel',
+  },
+
+  async find(handle: string, limit = null as null|number, options = {} as IQueryOptions, variables= {} as {}) {
+    const { collectionByHandle }  = await ShopifyService.call(ProductsByCollectionHandle.query(handle, limit, options), variables) as {
       collectionByHandle: {}
     };
     return new CollectionObject(collectionByHandle);

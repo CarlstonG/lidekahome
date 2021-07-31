@@ -31,6 +31,10 @@ export default Vue.extend({
     ...mapGetters('shop/products', [
       'getCollections',
       'getMainCollections',
+    ]),
+
+    ...mapGetters('shop/shop', [
+      'shop'
     ])
   },
 
@@ -45,12 +49,24 @@ export default Vue.extend({
 
     ...mapActions('shop/customer', [
       'fetchCustomer'
+    ]),
+
+    ...mapActions('shop/shop', [
+      'fetchShop'
     ])
   },
 
   mounted() {
     this.fetchCustomer();
     this.fetchCheckout();
+    this.fetchShop();
+  },
+
+  head() {
+    return {
+      title: this.shop.name,
+      description: this.shop.description
+    }
   },
 
   async fetch() {

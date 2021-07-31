@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center transition-all shadow-none mt-4 mb-6 rounded-lg">
+  <div class="flex flex-col items-center transition-all shadow-none rounded-lg" :class="{ 'mt-4': gradient }">
     <NuxtLink :to="product.url" prefetch>
       <ix-img class="rounded-lg"
               loading="lazy"
@@ -31,7 +31,7 @@
         {{ formatMoney(product.firstVariant.price) }}
       </p>
       <div class="w-full text-right">
-        <button @click.prevent="addToCart(product.firstVariantId, quantity)" type="submit" name="add"
+        <button @click.prevent="addToCart(product.firstVariantId, 1)" type="submit" name="add"
                 id="AddToCart"
                 class="mt-3 inline-block shadow-md p-2 px-4 items-center justify-center border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"

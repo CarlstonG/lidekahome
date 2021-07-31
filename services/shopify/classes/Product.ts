@@ -22,7 +22,9 @@ export class Product {
     title: string
     description: string
   };
-  collection = {} as Collection|{}
+  collection = {} as Collection|{};
+  tags: []|null;
+  productType: string|null;
 
   constructor(data: {}) {
     this.id = safeGet(data, 'id');
@@ -41,6 +43,8 @@ export class Product {
     this.customDeclarations();
 
     this.firstVariant = new Variant(safeGet(data, 'variants.edges.0.node'));
+    this.tags = safeGet(data, 'tags', []);
+    this.productType = safeGet(data, 'productType');
   }
 
   private convertMediaEdges(mediaEdges: {}) {
