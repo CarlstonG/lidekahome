@@ -49,8 +49,8 @@ export default {
       default: null,
     },
     path: {
-      required: false,
-      default: []
+      type: [],
+      default: () => []
     }
   },
   computed: {

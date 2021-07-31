@@ -1,67 +1,11 @@
 <template>
   <div>
-    <form method="POST">
+    <form @submit.prevent="submit">
       <div class="space-y-6">
-        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
-             role="alert">
-                            <span class="block">
-        Bedankt voor je bericht, we zullen zo spoedig mogelijk reageren!
-                            </span>
-        </div>
-
-
-        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
-             role="alert">
-                          <span class="block">
-                              Errors.
-                          </span>
-        </div>
-
-        <div>
-          <label for="ContactFormName" class="block text-sm font-medium text-gray-700">
-            Naam
-          </label>
-          <div class="mt-1">
-            <input id="ContactFormName" name="contact[first_name]"
-                   type="text"
-                   required
-                   class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-          </div>
-        </div>
-
-        <div>
-          <label for="ContactFormEmail" class="block text-sm font-medium text-gray-700">
-            E-mailadres
-          </label>
-          <div class="mt-1">
-            <input id="ContactFormEmail" name="contact[email]"
-                   type="email"
-                   required
-                   class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-          </div>
-        </div>
-
-        <div>
-          <label for="ContactFormPhone" class="block text-sm font-medium text-gray-700">
-            Telefoon
-          </label>
-          <div class="mt-1">
-            <input id="ContactFormPhone" name="contact[phone]"
-                   type="tel"
-                   required
-                   class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-          </div>
-        </div>
-
-        <div>
-          <label for="ContactFormMessage" class="block text-sm font-medium text-gray-700">
-            Bericht
-          </label>
-          <div class="mt-1">
-                <textarea rows="10" name="contact[body]" id="ContactFormMessage" required
-                          class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
-          </div>
-        </div>
+        <FormField :errors="$v.fields.name" :model-value.sync="fields.name" name="Naam" input-type="text" />
+        <FormField :errors="$v.fields.email" :model-value.sync="fields.email" name="E-mailadres" input-type="email" />
+        <FormField :model-value.sync="fields.phone" name="Telefoonnummer" input-type="text" />
+        <FormField :errors="$v.fields.message" :model-value.sync="fields.message" name="Bericht" input-type="textarea" />
 
         <div>
           <button type="submit"
@@ -75,7 +19,73 @@
 </template>
 
 <script>
+import FormField from "./input/FormField";
+import {email, minLength, required} from "vuelidate/lib/validators";
+import {RocksolidService} from "../services/rocksolid/RocksolidService";
 export default {
-  //
+  components: {FormField},
+
+  data() {
+    return {
+      loading: false,
+      fields: {
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+      }
+    }
+  },
+
+  methods: {
+    async submit() {
+      if (this.loading) {
+        return;
+      }
+
+      this.loading = true;
+
+      this.$v.$touch();
+
+      if (this.$v.$invalid) {
+        this.$root.$emit('addNotification', 'Niet gelukt!', 'Vul alle velden correct in', 'error')
+      } else {
+        try {
+          await RocksolidService.post('/contact', {
+            ...this.fields
+          })
+
+          this.fields = {
+            name: '',
+            email: '',
+            phone: '',
+            message: '',
+          }
+
+          this.$root.$emit('addNotification', 'Gelukt!', 'Je bericht is verstuurd! Wij zullen zo spoedig mogelijk reageren!', '', 10000)
+        } catch (err) {
+          this.$root.$emit('addNotification', 'Oops.', 'Er is iets fout gegaan.', 'error')
+        }
+      }
+
+      this.loading = false;
+    }
+  },
+
+  validations: {
+    fields: {
+      name: {
+        required
+      },
+      email: {
+        required,
+        email
+      },
+      message: {
+        required,
+        minLength: minLength(6)
+      },
+    }
+  },
 }
 </script>

@@ -70,6 +70,7 @@ export default {
     shopifyDomain: process.env.SHOPIFY_DOMAIN,
     shopifyAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
     shopifyGraphql: process.env.SHOPIFY_GRAPHQL,
+    rocksolidApiKey: process.env.ROCKSOLID_API_KEY
   },
 
   cache: {

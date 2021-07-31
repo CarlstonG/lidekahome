@@ -4,13 +4,19 @@
       {{ name }}
     </label>
     <div class="mt-1 relative">
-      <input :id="name" :name="name"
+      <textarea v-if="inputType === 'textarea'" :id="name" :name="name"
+                v-model="value"
+                rows="5"
+                v-bind="$attrs"
+                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                :class="{ 'border-red-300': errors && errors.$error }"></textarea>
+      <input v-else :id="name" :name="name"
              v-model="value"
              :type="inputType"
              v-bind="$attrs"
              class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-             :class="{ 'border-red-300': errors.$error }"/>
-      <div v-if="errors.$error" class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+             :class="{ 'border-red-300': errors && errors.$error }"/>
+      <div v-if="errors && errors.$error" class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
         <svg class="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
              fill="currentColor" aria-hidden="true">
           <path fill-rule="evenodd"
@@ -19,7 +25,7 @@
         </svg>
       </div>
     </div>
-    <div v-if="errors.$error">
+    <div v-if="errors && errors.$error">
       <p v-if="errors.hasOwnProperty('email') && !errors.email" class="mt-2 text-sm text-red-600">Incorrecte email.</p>
       <p v-else-if="errors.hasOwnProperty('required') && !errors.required" class="mt-2 text-sm text-red-600">Dit veld is verplicht.</p>
       <p v-else-if="errors.hasOwnProperty('minLength') && !errors.minLength" class="mt-2 text-sm text-red-600">Dit veld is te kort.</p>
@@ -36,7 +42,7 @@ export default Vue.extend({
   props: {
     errors: {
       type: Object,
-      default: {},
+      default: () => {},
     },
     name: {
       type: String,
