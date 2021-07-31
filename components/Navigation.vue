@@ -28,7 +28,9 @@
 
             <div class="relative hidden md:block">
               <dt class="flex items-center justify-end h-full">
-                <img alt="Thuiswinkel waarborg" class="w-20" src="~/assets/thuiswinkel.svg" />
+                <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank">
+                  <img alt="Thuiswinkel waarborg" class="w-20" src="~/assets/thuiswinkel.svg" />
+                </a>
               </dt>
             </div>
           </dl>

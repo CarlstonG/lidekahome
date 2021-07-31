@@ -22,6 +22,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { hid: 'thuiswinkel', src: '//widget.thuiswinkel.org/script.js?id=NTM3NC0x', defer: true }
     ]
   },
 

@@ -32,6 +32,7 @@ export default {
                 variants(first: 1) {
                   edges {
                     node {
+                      id
                       priceV2 {
                         amount
                       }

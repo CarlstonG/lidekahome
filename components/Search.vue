@@ -17,15 +17,16 @@
         <input id="search"
                v-model="fields.query"
                name="query"
+               ref="searchRef"
                @input="isOpen = true"
                @click="isOpen = true"
                :class="{ 'bg-white border-white ring-white': isOpen }"
                class="block shadow-lg right-0 left-0 top-0 bottom-0 absolute z-20 w-full pl-10 pr-3 py-2 border-none rounded-md leading-5 bg-gray-900 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm"
-               placeholder="Zoeken..."
+               placeholder="Zoek op product of categorie (Druk '/' om te focussen)"
                type="search"
         >
       </div>
-      <div v-show="isOpen && (fields.query.length > 3 || loading)"
+      <div v-show="isOpen && (fields.query.length >= 2 || loading)"
            class="bg-white rounded-lg absolute left-0 right-0 p-2 top-12 shadow-lg z-20 max-h-96 overflow-y-scroll" style="min-height: 50px">
         <Loading v-show="loading" />
         <ul class="divide-y divide-gray-200">
@@ -93,9 +94,20 @@ export default Vue.extend({
     },
   },
 
+  mounted() {
+    document.addEventListener('keyup', (event) => {
+      if (event.key === '/') {
+        if (this.$refs.searchRef) {
+          this.$refs.searchRef.focus();
+        }
+        event.stopPropagation();
+      }
+    })
+  },
+
   methods: {
     async search() {
-      if (this.fields.query.length < 4) {
+      if (this.fields.query.length < 3) {
         this.products = [];
         this.collections = [];
         return;

@@ -53,7 +53,7 @@
     <div class="container mx-auto py-2">
       <div class="relative grid grid-cols-1 md:grid-cols-2">
         <div class="pr-2 pl-2">
-          <a class="relative block" href="#">
+          <NuxtLink class="relative block" to="categorie/led-strips">
             <img src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/ambience_bedroom_nl.jpg"
                  class="rounded-lg" loading="lazy"
                  width="100%" height="100%"/>
@@ -64,7 +64,7 @@
                 Producten bekijken
               </button>
             </div>
-          </a>
+          </NuxtLink>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-2 py-6 md:py-0">
           <div v-if="collection" v-for="product in collection.products" :key="product.id">

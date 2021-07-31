@@ -16,7 +16,7 @@
       </div>
       <div class="mt-5 flex-1 h-0 overflow-y-auto">
         <nav class="px-6 space-y-1">
-          <Filters component-key="sideBar" :filters="filters" />
+          <Filters component-key="sideBar" @selectedFilters="setSelectedFilters" :filters="filters" />
         </nav>
       </div>
     </div>
@@ -40,6 +40,10 @@ export default Vue.extend({
     closeSidebar() {
       this.$emit('closeSidebar');
     },
+
+    setSelectedFilters(filters = {}) {
+      this.$emit('selectedFilters', filters);
+    }
   }
 });
 </script>

@@ -19,7 +19,8 @@
           <div class="flex flex-col relative">
             <Loading v-show="loading || !checkout"/>
             <form v-show="checkout" :action="checkout.webUrl" method="get" novalidate>
-              <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div v-if="checkout.lineItems && checkout.lineItems.length > 0"
+                   class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
                   <div class="overflow-hidden border-b border-gray-200">
                     <table class="min-w-full divide-y divide-gray-200">
@@ -41,10 +42,10 @@
                               </a>
                               <NuxtLink v-if="lineItem.variant" :to="`/product/${lineItem.variant.product.handle}`">
                                 <img
-                                      v-if="lineItem.variant.image"
-                                      class="h-20 w-20"
-                                     :src="lineItem.variant.image.src"
-                                     :alt="lineItem.title">
+                                  v-if="lineItem.variant.image"
+                                  class="h-20 w-20"
+                                  :src="lineItem.variant.image.src"
+                                  :alt="lineItem.title">
                               </NuxtLink>
                             </div>
                             <div class="ml-4 flex-1">
@@ -109,49 +110,57 @@
                   </div>
                 </div>
               </div>
-              <div v-show="checkout" class="flex items-center justify-start">
-                <div class="py-10 px-6 lg:px-0">
-                  <table class="min-w-full divide-y divide-gray-200">
-                    <tbody>
-                    <tr class="bg-gray-50">
-                      <td class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
-                        Verzendkosten
-                      </td>
-                      <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-green-600">
-                        GRATIS
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
-                        Totaal
-                      </td>
-                      <td v-if="checkout.subtotalPrice"
-                          class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
-                        {{ formatMoney(checkout.subtotalPrice) }} incl. btw
-                      </td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div v-else>
+                Je winkelwagen is nog leeg!
               </div>
-              <div>
-                <div class="flex items-start mb-4 px-6 lg:px-0">
-                  <div class="h-5 flex items-center">
-                    <input id="terms" v-model="terms" name="terms" type="checkbox"
-                           class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
-                  </div>
-                  <div class="ml-3 text-sm">
-                    <label for="terms" class="font-medium text-gray-700">
-                      Ik ga akkoord met de <a class="underline" target="_blank" href="/pages/algemene-voorwaarden">algemene
-                      voorwaarden</a>.
-                    </label>
+              <div v-if="checkout.lineItems && checkout.lineItems.length > 0">
+                <div v-show="checkout" class="flex items-center justify-start">
+                  <div class="py-10 px-6 lg:px-0">
+                    <table class="min-w-full divide-y divide-gray-200">
+                      <tbody>
+                      <tr class="bg-gray-50">
+                        <td class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
+                          Verzendkosten
+                        </td>
+                        <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-green-600">
+                          GRATIS
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
+                          Totaal
+                        </td>
+                        <td v-if="checkout.subtotalPrice"
+                            class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
+                          {{ formatMoney(checkout.subtotalPrice) }} incl. btw
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-                <div class="flex items-center justify-start px-6 lg:px-0">
-                  <Button type="submit" :disabled="!terms"
-                          class="w-60 disabled:opacity-50 flex justify-center py-3 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-                    Naar betalen
-                  </Button>
+                <div>
+                  <div class="flex items-start mb-4 px-6 lg:px-0">
+                    <div class="h-5 flex items-center">
+                      <input id="terms" v-model="terms" name="terms" type="checkbox"
+                             class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                    </div>
+                    <div class="ml-3 text-sm">
+                      <label for="terms" class="font-medium text-gray-700">
+                        Ik ga akkoord met de
+                        <NuxtLink class="underline" target="_blank" to="/algemene-voorwaarden">algemene
+                          voorwaarden
+                        </NuxtLink>
+                        .
+                      </label>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-start px-6 lg:px-0">
+                    <Button type="submit" :disabled="!terms"
+                            class="w-60 disabled:opacity-50 flex justify-center py-3 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                      Naar betalen
+                    </Button>
+                  </div>
                 </div>
               </div>
             </form>
@@ -163,21 +172,23 @@
               Onze service
             </h2>
 
-            <SellingPoints />
+            <SellingPoints/>
 
             <h2 class="text-md font-medium mb-4 mt-6 text-gray-400">
               Makkelijk betalen
             </h2>
             <div class="flex">
-              <PaymentMethodes />
+              <PaymentMethodes/>
             </div>
             <h2 class="text-md font-medium mt-6 text-gray-400">
               Veilig winkelen
             </h2>
-            <div class="mt-4 mb-2">
-              <div class="tww_popup_wrapper_NTM3NC0y"></div>
+            <div class="mt-4 mb-4">
+              <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank">
+                <img class="w-40" alt="Thuiswinkel" src="~/assets/thuiswinkel-black.svg"/>
+              </a>
             </div>
-            <div class="bg-white rounded-lg mt-4">
+            <div class="bg-white rounded-lg mt-6">
               <iframe loading="lazy" frameborder="0" allowtransparency="true"
                       src="https://www.kiyoh.com/retrieve-widget.html?color=white&allowTransparency=true&button=true&lang=nl&tenantId=98&locationId=1064733"
                       width="300" height="150"></iframe>

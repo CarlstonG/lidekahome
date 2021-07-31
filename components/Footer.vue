@@ -176,6 +176,12 @@
           </div>
         </div>
         <div class="mt-8 border-t border-gray-700 pt-8">
+          <div class="mb-4">
+            <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank">
+              <img class="w-40" alt="Thuiswinkel" src="~/assets/thuiswinkel.svg" />
+            </a>
+          </div>
+
           <p class="text-gray-500 text-sm">
             - Alle prijzen op deze website zijn inclusief 21% BTW.
           </p>

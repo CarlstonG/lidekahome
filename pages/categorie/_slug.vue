@@ -57,7 +57,7 @@
       </div>
 
       <transition name="fade">
-        <FilterSidebar v-if="sidebarIsOpen" @closeSidebar="closeSidebar()" :filters="collection.filters" />
+        <FilterSidebar v-show="sidebarIsOpen" @closeSidebar="closeSidebar()" :filters="collection.filters" @selectedFilters="setSelectedFilters" />
       </transition>
     </div>
   </div>
