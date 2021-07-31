@@ -1,9 +1,9 @@
 <template>
   <div>
-    <label :for="name" class="block text-sm font-medium text-gray-700">
+    <label v-if="!hideLabel" :for="name" class="block text-sm font-medium text-gray-700 mb-1">
       {{ name }}
     </label>
-    <div class="mt-1 relative">
+    <div class="relative">
       <textarea v-if="inputType === 'textarea'" :id="name" :name="name"
                 v-model="value"
                 rows="5"
@@ -12,6 +12,7 @@
                 :class="{ 'border-red-300': errors && errors.$error }"></textarea>
       <input v-else :id="name" :name="name"
              v-model="value"
+             :placeholder="name"
              :type="inputType"
              v-bind="$attrs"
              class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -47,6 +48,10 @@ export default Vue.extend({
     name: {
       type: String,
       default: '',
+    },
+    hideLabel: {
+      type: Boolean,
+      default: false,
     },
     initialValue: {
       type: String,

@@ -107,7 +107,7 @@
             <ul class="space-y-2 mt-4">
               <li class="text-gray-300">
                 <a href="mailto:klantenservice@lidekahome.nl" class="flex text-sm">
-                  <svg class="w-5 h-5 mt-1 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                        xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -117,7 +117,7 @@
               </li>
               <li class="text-gray-300">
                 <a href="tel:+31 (0)85 - 06 01 297" class="flex text-sm">
-                  <svg class="w-5 h-5 mt-1 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                        xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
@@ -126,7 +126,7 @@
                 </a>
               </li>
               <li class="text-gray-300 flex text-sm">
-                <svg class="w-5 h-5 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
@@ -137,7 +137,7 @@
               </li>
               <li class="text-gray-300 text-sm">
                 <NuxtLink to="/contact" class="flex">
-                  <svg class="w-5 h-5 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                        xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -154,25 +154,11 @@
             <p class="mt-4 text-sm text-gray-300">
               Schrijf je in, en maak kans op een Led Pakket t.w.v €149,95
             </p>
-            <form>
-              <input id="contact_tags" name="contact[tags]" type="hidden" value="prospect,newsletter"/>
-              <div class="mt-4 sm:flex sm:max-w-md">
-                <label for="contact_email" class="sr-only">E-mailadres</label>
-                <input type="email" name="contact[email]" id="contact_email" autocomplete="email" required
-                       class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
-                       placeholder="E-mailadres">
-                <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                  <button type="submit"
-                          class="w-full bg-indigo-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500">
-                    Aanmelden
-                  </button>
-                </div>
-              </div>
-              <p class="text-gray-500 text-xs mt-4">
-                Je geeft hierbij aan akkoord te gaan met onze <a href="https://lidekahome.nl/pages/privacy-statement">privacy
-                statement</a> en staat toe dat wij je op de hoogte houden van aanbiedingen via jouw e-mailadres.
-              </p>
-            </form>
+            <Newsletter class="mb-2 mt-4" />
+            <p class="text-gray-500 text-xs mt-4">
+              Je geeft hierbij aan akkoord te gaan met onze <NuxtLink to="/privacy-statement">privacy
+              statement</NuxtLink> en staat toe dat wij je op de hoogte houden van aanbiedingen via jouw e-mailadres.
+            </p>
           </div>
         </div>
         <div class="mt-8 border-t border-gray-700 pt-8">
@@ -246,7 +232,9 @@
 </template>
 <script>
 import PaymentMethodes from "~/components/PaymentMethodes";
+import Newsletter from "~/components/Newsletter";
+
 export default {
-  components: {PaymentMethodes}
+  components: { PaymentMethodes, Newsletter }
 }
 </script>
