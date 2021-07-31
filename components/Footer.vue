@@ -178,7 +178,7 @@
         <div class="mt-8 border-t border-gray-700 pt-8">
           <div class="mb-4">
             <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank">
-              <img class="w-40" alt="Thuiswinkel" src="~/assets/thuiswinkel.svg" />
+              <img loading="lazy" class="w-40" alt="Thuiswinkel" src="~/assets/thuiswinkel.svg" />
             </a>
           </div>
 

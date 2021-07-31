@@ -11,6 +11,13 @@
       <div class="container mx-auto pb-20 pt-6 md:pt-10">
         <div class="grid grid-cols-1 md:grid-cols-2 mx-6 lg:mx-0 relative">
           <div class="px-0 md:px-6 mb-8 md:mb-0">
+
+            <FsLightbox
+              v-show="productImages.length > 0"
+              :toggler="showLightbox"
+              :sources="productImages"
+            />
+
             <div
               style="--swiper-navigation-color: #000; --swiper-pagination-color: #000; --swiper-navigation-size: 20px"
               class="swiper-container mySwiper2 mb-2">
@@ -18,7 +25,7 @@
                 <div
                   v-for="media in product.media"
                   class="swiper-slide flex cursor-pointer justify-center items-center h-full w-full rounded-lg">
-                  <a data-fslightbox :href="media.src">
+                  <a @click.prevent="showLightbox = !showLightbox">
                     <ix-img v-if="media.type === 'IMAGE'" class="rounded-lg swiper-lazy"
                             loading="lazy"
                             width="800px"
@@ -160,9 +167,11 @@ import {Products} from '~/services/shopify/Products';
 import {safeGet} from "~/services/Helpers";
 import NotFound from "~/components/NotFound";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import FsLightbox from "fslightbox-vue";
+import _ from 'lodash';
 
 export default Vue.extend({
-  components: {Breadcrumbs, NotFound, SellingPoints, Loading, ProductItem},
+  components: {Breadcrumbs, NotFound, SellingPoints, Loading, ProductItem, FsLightbox},
 
   head() {
     return {
@@ -208,12 +217,20 @@ export default Vue.extend({
     };
   },
 
+  setup() {
+    return {
+      _
+    };
+  },
+
   data() {
     return {
+      showLightbox: false,
       loading: false,
       product: {},
       slug: null,
       quantity: 1,
+      productImages: [],
     };
   },
 
@@ -294,6 +311,12 @@ export default Vue.extend({
     this.loading = true;
     this.product = await Products.find(this.slug);
     this.loading = false;
+
+    const x = _.map(this.product.media, (item) => { return item.src !== null ? item.src : false });
+
+    this.productImages = _.reject(x, (item) => {
+      return !item;
+    });
 
     this.$nextTick(() => {
       this.initializeSwiper();

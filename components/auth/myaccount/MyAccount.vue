@@ -43,7 +43,7 @@
       </div>
       <div v-else-if="selectedTab === 'credentials'">
         <div class="bg-white py-16 px-4 shadow rounded-lg sm:px-10">
-          In ontwikkeling.
+          Coming soon.
         </div>
       </div>
     </div>
