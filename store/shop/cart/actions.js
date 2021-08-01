@@ -26,7 +26,7 @@ const actions = {
       context.commit('setCount', _.get(checkout, 'lineItems.length', 0));
       context.commit('setCheckout', checkout);
     }).catch((err) => {
-      //Item not found.
+      //No item found
     });
   },
 
