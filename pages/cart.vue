@@ -18,7 +18,7 @@
 
           <div class="flex flex-col relative">
             <Loading v-show="loading || !checkout"/>
-            <form v-show="checkout" :action="checkout.webUrl" method="get" novalidate>
+            <form v-show="checkout" :action="checkoutUrl(checkout.webUrl)" method="get" novalidate>
               <div v-if="checkout.lineItems && checkout.lineItems.length > 0"
                    class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -205,6 +205,7 @@ import {formatMoney} from "~/services/Helpers";
 import Loading from "~/components/Loading.vue";
 import SellingPoints from "~/components/SellingPoints.vue";
 import PaymentMethodes from "~/components/PaymentMethodes.vue";
+import _ from 'lodash';
 
 export default Vue.extend({
   name: 'winkelwagen',
@@ -221,7 +222,7 @@ export default Vue.extend({
   computed: {
     ...mapGetters('shop/cart', [
       'checkout'
-    ])
+    ]),
   },
 
   methods: {
@@ -229,6 +230,10 @@ export default Vue.extend({
       'updateLineItemQuantity',
       'removeLineItem',
     ]),
+
+    checkoutUrl(webUrl: string) {
+      return webUrl.replace('lideka-home.myshopify.com', 'checkout.lidekahome.nl') ?? '#';
+    },
 
     async addQuantity(quantity: number, id: number) {
       this.loading = true;
