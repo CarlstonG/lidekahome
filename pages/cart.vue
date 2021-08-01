@@ -17,6 +17,7 @@
           </div>
 
           <div class="flex flex-col relative">
+
             <Loading v-show="loading || !checkout"/>
             <form v-show="checkout" :action="checkout.webUrl" method="get" novalidate>
               <div v-if="checkout.lineItems && checkout.lineItems.length > 0"
