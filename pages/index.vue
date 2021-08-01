@@ -115,7 +115,7 @@
       <div class="relative grid grid-cols-1 md:grid-cols-2">
         <div class="pr-2 pl-2 mb-6 md:mb-0">
           <NuxtLink class="relative block"
-                    to="/product/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie">
+                    to="/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie">
             <img src="~/assets/visuals/Solar_Powerbank_product.webp" alt="Product Solar Powerbank" class="rounded-lg"
                  loading="lazy"
                  width="100%" height="100%"/>

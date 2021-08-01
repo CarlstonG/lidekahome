@@ -86,6 +86,23 @@ export default {
     },
   },
 
+  serverMiddleware: [{
+    path: '/',
+    handler: (req, res, next) => {
+      if(req.url.match("/pages\/")) {
+        res.writeHead(301, { Location: req.url.replace("pages/", "") })
+        res.end();
+      }
+
+      if(req.url.match("/collections\/")) {
+        res.writeHead(301, {Location: req.url.replace("collections/", "categorie/")})
+        res.end();
+      }
+
+      next();
+    }
+  }],
+
   router: {
     linkPrefetchedClass: 'preloaded',
     extendRoutes(routes, resolve) {

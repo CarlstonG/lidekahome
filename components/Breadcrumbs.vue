@@ -66,7 +66,7 @@ export default {
         const match = this.$router.match(path)
 
         /* Inject. */
-        if (path === '/product') {
+        if (path === '/products') {
           if (this.path.length > 0) {
             for (let i = 0; i < this.path.length; i++) {
               crumbs.push(this.path[i]);

@@ -41,7 +41,7 @@
                                         d="M6 18L18 6M6 6l12 12"></path>
                                 </svg>
                               </a>
-                              <NuxtLink v-if="lineItem.variant" :to="`/product/${lineItem.variant.product.handle}`">
+                              <NuxtLink v-if="lineItem.variant" :to="`/products/${lineItem.variant.product.handle}`">
                                 <img
                                   v-if="lineItem.variant.image"
                                   class="h-20 w-20"
@@ -52,7 +52,7 @@
                             <div class="ml-4 flex-1">
                               <div class="text-sm font-medium text-gray-900">
                                 <NuxtLink v-if="lineItem.variant" class="font-bold text-lg"
-                                          :to="`/product/${lineItem.variant.product.handle}`">
+                                          :to="`/products/${lineItem.variant.product.handle}`">
                                   {{ lineItem.title }}
                                 </NuxtLink>
 

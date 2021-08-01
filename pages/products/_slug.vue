@@ -81,7 +81,7 @@
                 <NuxtLink
                   v-for="related in product.related"
                   :key="related.id"
-                  :to="`/product/${related.handle}`"
+                  :to="`/products/${related.handle}`"
                   :class="!related.selected ? 'py-1 text-sm px-4 inline-block bg-white border border-gray-500 transition-opacity hover:opacity-50 rounded-md mr-1 mb-1' : 'py-1 px-4 text-sm inline-block bg-black text-white border border-black\n'+
 '            rounded-md mr-1 mb-1'"
                 >

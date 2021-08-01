@@ -30,7 +30,7 @@ export class Product {
     this.id = safeGet(data, 'id');
     this.title = safeGet(data, 'title');
     this.handle = safeGet(data, 'handle');
-    this.url = `/product/${this.handle}`;
+    this.url = `/products/${this.handle}`;
     this.brand = safeGet(data, 'vendor');
     this.description = safeGet(data, 'descriptionHtml');
     this.price = safeGet(data, 'priceRange.maxVariantPrice.amount');
