@@ -31,6 +31,10 @@ const actions = {
   },
 
   async fetchCheckout(context) {
+    if (typeof localStorage == 'undefined') {
+      return;
+    }
+
     let checkoutId = localStorage.getItem('checkoutId');
 
     if (checkoutId) {

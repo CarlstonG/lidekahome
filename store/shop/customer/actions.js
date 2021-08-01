@@ -6,6 +6,10 @@ const actions = {
   },
 
   async fetchCustomer({commit}) {
+    if (typeof localStorage == 'undefined') {
+      return;
+    }
+
     const accessToken = localStorage.getItem('accessToken');
 
     const { customer } = await Customers.find(accessToken);
