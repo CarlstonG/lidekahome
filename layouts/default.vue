@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900">
+  <div class="bg-black">
     <Navigation :collections="getMainCollections" />
     <Nuxt />
     <Footer />
@@ -56,10 +56,11 @@ export default Vue.extend({
     ])
   },
 
-  mounted() {
+  created() {
     this.fetchCustomer();
     this.fetchCheckout();
     this.fetchShop();
+    this.fetchCollections();
   },
 
   head() {
@@ -67,10 +68,6 @@ export default Vue.extend({
       title: this.shop.name,
       description: this.shop.description
     }
-  },
-
-  async fetch() {
-    await this.fetchCollections();
   },
 })
 </script>

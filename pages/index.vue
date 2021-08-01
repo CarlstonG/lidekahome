@@ -229,14 +229,20 @@ export default Vue.extend({
     };
   },
 
-  async fetch() {
-    this.collection = await Collections.find('led-strips', 4, {
-      reverseImages: true
-    } as IQueryOptions);
+  methods: {
+    async getCollections() {
+      this.collection = await Collections.find('led-strips', 4, {
+        reverseImages: true
+      } as IQueryOptions);
 
-    this.secondaryCollection = await Collections.find('solar-tuinverlichting', 4, {
-      reverseImages: true
-    } as IQueryOptions);
+      this.secondaryCollection = await Collections.find('solar-tuinverlichting', 4, {
+        reverseImages: true
+      } as IQueryOptions);
+    },
+  },
+
+  created() {
+    this.getCollections();
   },
 })
 </script>

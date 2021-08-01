@@ -130,7 +130,7 @@
             <div class="relative flex items-center justify-between -ml-2">
               <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-grow">
-                  <div class="flex space-x-1">
+                  <div class="flex space-x-1 min-h-10">
                     <NuxtLink prefetch v-for="collection in collections" :to="`/categorie/${collection.handle}`"
                               class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                       {{ collection.title }}
