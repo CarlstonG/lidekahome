@@ -54,7 +54,7 @@
       <div class="relative grid grid-cols-1 md:grid-cols-2">
         <div class="pr-2 pl-2">
           <NuxtLink class="relative block" to="categorie/led-strips">
-            <img src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/ambience_bedroom_nl.jpg"
+            <img src="~/assets/visuals/ambience_bedroom_nl.webp"
                  class="rounded-lg" loading="lazy"
                  width="100%" height="100%"/>
 

@@ -8,7 +8,7 @@
               {{ collection.title }}
             </h1>
             <div class="flex items-center justify-center md:justify-end space-x-4 pb-4 md:pb-0 pt-4 md:pt-0">
-              <div class="hidden md:block flex-1">
+              <div class="block md:hidden flex-1">
                 <button @click.prevent="sidebarIsOpen = true" type="submit" name="add"
                         class="flex shadow-md p-2 px-2 items-center justify-center border border-transparent rounded-md
                         font-medium text-white bg-black hover:opacity-50 focus:outline-none focus:ring-2

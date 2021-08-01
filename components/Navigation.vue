@@ -8,7 +8,7 @@
             <div class="relative">
               <dt class="flex items-center h-full">
                 <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                <p class="ml-2 text-xs leading-6 text-gray-400">voor 23:59 besteld = morgen in huis</p>
+                <p class="ml-2 text-xs leading-6 text-gray-400">voor {{ currentMaxDeliveryTime }} besteld = morgen in huis</p>
               </dt>
             </div>
 
@@ -76,9 +76,9 @@
               <div class="flex-shrink-0 flex items-center">
                 <NuxtLink to="/">
                   <img class="block lg:hidden h-12 w-auto"
-                       src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/lideka-home.svg" alt="Lideka Home">
+                       src="~/assets/lideka-home.svg" alt="Lideka Home">
                   <img class="hidden lg:block h-8 w-auto"
-                       src="https://cdn.shopify.com/s/files/1/0570/2352/9109/t/3/assets/lideka-home-alt.svg"
+                       src="~/assets/lideka-home-alt.svg"
                        alt="Lideka Home">
                 </NuxtLink>
               </div>
@@ -194,6 +194,10 @@ export default Vue.extend({
     ...mapGetters('shop/customer', [
       'customer',
       'loggedIn'
+    ]),
+
+    ...mapGetters('shop/shop', [
+      'currentMaxDeliveryTime'
     ])
   }
 });
