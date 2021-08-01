@@ -20,6 +20,7 @@
     "moment": "^2.29.1",
     "nuxt": "^2.15.7",
     "nuxt-jsonld": "^1.5.1",
+    "nuxt-perfect-cache": "^1.1.0",
     "nuxt-shopify": "^1.10.10",
     "nuxt-ssr-cache": "^1.5.2",
     "sass-loader": "^10.2.0",

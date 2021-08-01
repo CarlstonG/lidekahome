@@ -4,7 +4,6 @@ export default {
   query(handle: string) {
     return gql`{
       productByHandle(handle: "${handle}") {
-        id
         title
         vendor
         seo {
@@ -14,7 +13,6 @@ export default {
         collections(first: 1, reverse: true) {
           edges {
             node {
-              id
               title
               handle
             }
@@ -64,7 +62,6 @@ export default {
 
     fragment mediaFieldsByType on Media {
       ... on ExternalVideo {
-        id
         embeddedUrl
       }
       ... on MediaImage {

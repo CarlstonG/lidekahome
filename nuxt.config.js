@@ -1,4 +1,4 @@
-import { sortRoutes } from '@nuxt/utils'
+import {sortRoutes} from '@nuxt/utils'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -15,22 +15,21 @@ export default {
       lang: 'en'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: ''},
+      {name: 'format-detection', content: 'telephone=no'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ],
     script: [
-      { hid: 'thuiswinkel', src: '//widget.thuiswinkel.org/script.js?id=NTM3NC0x', defer: true }
+      {hid: 'thuiswinkel', src: '//widget.thuiswinkel.org/script.js?id=NTM3NC0x', defer: true}
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~/plugins/vue-imgix.js', '~/plugins/jsonld', '~/plugins/vuelidate.js'],
@@ -53,12 +52,26 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     'nuxt-shopify',
-    'nuxt-ssr-cache'
+    'nuxt-ssr-cache',
+    ['nuxt-perfect-cache',
+      {
+        disable: false,
+        appendHost: true,
+        ignoreConnectionErrors: false, //it's better to be true in production
+        prefix: 'r-',
+        url: 'rediss://default:ab5bdjspl16w946r@db-redis-ams3-05016-do-user-9338631-0.b.db.ondigitalocean.com:25061',
+        getCacheData(route, context) {
+          if (route !== '/') {
+            return false
+          }
+          return {key: 'my-home-page', expire: 60 * 60}//1hour
+        }
+      }
+    ]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
+  build: {},
 
   shopify: {
     domain: process.env.SHOPIFY_DOMAIN,
@@ -89,16 +102,17 @@ export default {
   serverMiddleware: [{
     path: '/',
     handler: (req, res, next) => {
-      if(req.url.match("/pages\/")) {
-        res.writeHead(301, { Location: req.url.replace("pages/", "") })
+      if (req.url.match("/pages\/")) {
+        res.writeHead(301, {Location: req.url.replace("pages/", "")})
         res.end();
       }
 
-      if(req.url.match("/collections\/")) {
+      if (req.url.match("/collections\/")) {
         res.writeHead(301, {Location: req.url.replace("collections/", "categorie/")})
         res.end();
       }
 
+      res.setHeader('Cache-Control', 'public, max-age=86400, s-maxage=15778476');
       next();
     }
   }],

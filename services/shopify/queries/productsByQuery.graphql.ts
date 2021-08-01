@@ -13,7 +13,6 @@ export default {
               images(first: 1) {
                 edges {
                   node {
-                    id
                     altText
                     transformedSrc(maxWidth: 200, maxHeight: 200)
                   }

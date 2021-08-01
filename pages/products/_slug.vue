@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <div v-if="!product.id">
+    <div v-if="!product.title">
       <div class="container mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
         <Loading v-show="loading"/>
         <NotFound v-if="!loading" />
@@ -87,7 +87,6 @@
                 >
                   {{ related.name }}
                 </NuxtLink>
-
               </div>
             </div>
 
@@ -302,21 +301,36 @@ export default Vue.extend({
     });
   },
 
-  async asyncData({params}) {
-    const slug = params.slug;
-    return {slug}
+  async asyncData(ctx) {
+    const slug = ctx.params.slug;
+
+    const product = await ctx.$cacheFetch({ key: slug, expire: 60 * 2 }, async () => {
+      return Products.find(slug);
+    });
+
+    const x = _.map(product.media, (item) => { return item.src !== null ? item.src : false });
+
+    const productImages = _.reject(x, (item) => {
+      return !item;
+    });
+
+    return {slug, product, productImages }
   },
 
   async fetch() {
     this.loading = true;
-    this.product = await Products.find(this.slug);
+
+    // this.product = await this.$cacheFetch({ key: this.slug, expire: 60 * 2 }, async () => {
+    //   return Products.find(this.slug);
+    // })
+
     this.loading = false;
 
-    const x = _.map(this.product.media, (item) => { return item.src !== null ? item.src : false });
+    // const x = _.map(this.product.media, (item) => { return item.src !== null ? item.src : false });
 
-    this.productImages = _.reject(x, (item) => {
-      return !item;
-    });
+    // this.productImages = _.reject(x, (item) => {
+    //   return !item;
+    // });
 
     this.$nextTick(() => {
       this.initializeSwiper();

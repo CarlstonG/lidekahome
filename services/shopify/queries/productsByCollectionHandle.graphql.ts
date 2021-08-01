@@ -6,7 +6,6 @@ export default {
     return gql`
       query ProductType($product_filters: [ProductFilter!]) {
         collectionByHandle(handle: "${handle}") {
-          id
           title
           handle
           products(first: ${limit ?? 50}, reverse: ${options.reverse ?? false}, sortKey: ${options.sortKey ?? 'BEST_SELLING'}, filters: $product_filters) {
@@ -23,7 +22,6 @@ export default {
             }
             edges {
               node {
-                id
                 title
                 vendor
                 productType
@@ -64,7 +62,6 @@ export default {
                 images(first: 1, reverse: ${options.reverseImages ?? false}) {
                   edges {
                     node {
-                      id
                       altText
                       transformedSrc(maxWidth: 600, maxHeight: 600)
                     }
