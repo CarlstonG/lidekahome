@@ -8,11 +8,18 @@
               {{ collection.title }}
             </h1>
             <div class="flex items-center justify-center md:justify-end space-x-4 pb-4 md:pb-0 pt-4 md:pt-0">
-              <div class="flex-1">
+              <div class="hidden md:block flex-1">
                 <button @click.prevent="sidebarIsOpen = true" type="submit" name="add"
-                        class="flex shadow-md p-2 px-2 items-center justify-center border border-transparent rounded-md font-medium text-white bg-black hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2">
-                  <svg class="w-6 h-6 md:h-4 md:h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
-                  <span class="text-sm hidden md:block">Filteren</span>
+                        class="flex shadow-md p-2 px-2 items-center justify-center border border-transparent rounded-md
+                        font-medium text-white bg-black hover:opacity-50 focus:outline-none focus:ring-2
+                        focus:ring-offset-2
+                ">
+                <svg class="w-6 h-6 md:h-4 md:h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+                </svg>
+                <span class="text-sm hidden md:block">Filteren</span>
                 </button>
               </div>
               <div>
@@ -57,7 +64,8 @@
       </div>
 
       <transition name="fade">
-        <FilterSidebar v-show="sidebarIsOpen" @closeSidebar="closeSidebar()" :filters="collection.filters" @selectedFilters="setSelectedFilters" />
+        <FilterSidebar v-show="sidebarIsOpen" @closeSidebar="closeSidebar()" :filters="collection.filters"
+                       @selectedFilters="setSelectedFilters"/>
       </transition>
     </div>
   </div>
@@ -160,7 +168,9 @@ export default Vue.extend({
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s ease-in-out, transform .25s ease-in-out;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
   opacity: 0;
   transform: translateX(-500px);
 }

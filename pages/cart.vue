@@ -103,8 +103,6 @@
                           </div>
                         </td>
                       </tr>
-
-                      <!-- More people... -->
                       </tbody>
                     </table>
                   </div>

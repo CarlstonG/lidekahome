@@ -226,6 +226,9 @@
             &copy; 2021 Lideka Home - All rights reserved.
           </p>
         </div>
+        <p class="mt-8 text-xs text-gray-400 md:mt-0 md:order-1">
+          Website by <a href="https://rocksolid.dev" target="_blank">Rocksolid Development</a>.
+        </p>
       </div>
     </footer>
   </div>
