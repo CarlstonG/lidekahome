@@ -19,7 +19,7 @@
           <div class="flex flex-col relative">
 
             <Loading v-show="loading || !checkout"/>
-            <form v-show="checkout" :action="checkout.webUrl" method="get" novalidate>
+            <form v-show="checkout" :action="checkout.webUrl ? checkout.webUrl.replace('lideka-home.myshopify.com', 'checkout.lidekahome.nl') : ''" method="get" novalidate>
               <div v-if="checkout.lineItems && checkout.lineItems.length > 0"
                    class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
