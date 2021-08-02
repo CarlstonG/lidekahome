@@ -18,6 +18,7 @@
         <div class="flex items-center flex-col">
           <img src="~/assets/icons/WEBicons-01.webp" alt="Hoge kwaliteit" class="w-20" loading="lazy "/>
           <h2 class="text-white text-center text-sm font-bold mb-2">Hoge Kwaliteit</h2>
+
           <p class="text-gray-500 text-center text-xs">
             Al onze producten zijn van hoge kwaliteit, en voldoen dan ook aan alle europese eisen. Voordat de artikelen
             verpakt worden ze handmatig dubbel gecheckt.
