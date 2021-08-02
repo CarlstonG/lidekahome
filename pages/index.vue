@@ -242,8 +242,8 @@ export default Vue.extend({
     },
   },
 
-  created() {
-    this.getCollections();
+  async fetch() {
+    await this.getCollections();
   },
 })
 </script>
