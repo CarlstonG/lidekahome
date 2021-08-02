@@ -52,22 +52,17 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     'nuxt-shopify',
-    'nuxt-ssr-cache',
-    ['nuxt-perfect-cache',
+    [
+      'nuxt-compress',
       {
-        disable: false,
-        appendHost: true,
-        ignoreConnectionErrors: false, //it's better to be true in production
-        prefix: 'r-',
-        url: 'rediss://default:ab5bdjspl16w946r@db-redis-ams3-05016-do-user-9338631-0.b.db.ondigitalocean.com:25061',
-        getCacheData(route, context) {
-          if (route !== '/') {
-            return false
-          }
-          return {key: 'my-home-page', expire: 60 * 60}//1hour
-        }
-      }
-    ]
+        gzip: {
+          threshold: 8192,
+        },
+        brotli: {
+          threshold: 8192,
+        },
+      },
+    ],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -76,7 +71,7 @@ export default {
   shopify: {
     domain: process.env.SHOPIFY_DOMAIN,
     storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
-    unoptimized: true
+    unoptimized: false
   },
 
   env: {
@@ -84,19 +79,6 @@ export default {
     shopifyAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
     shopifyGraphql: process.env.SHOPIFY_GRAPHQL,
     rocksolidApiKey: process.env.ROCKSOLID_API_KEY
-  },
-
-  cache: {
-    useHostPrefix: false,
-    pages: [
-      /^\/categorie\/\d+$/,
-    ],
-
-    store: {
-      type: 'memory',
-      max: 100,
-      ttl: 3600,
-    },
   },
 
   serverMiddleware: [{
@@ -112,7 +94,6 @@ export default {
         res.end();
       }
 
-      res.setHeader('Cache-Control', 'public, max-age=86400, s-maxage=15778476');
       next();
     }
   }],
