@@ -59,7 +59,6 @@ export default {
   ],
 
   image: {
-    provider: 'static',
     domains: ['https://cdn.shopify.com', 'https://lidekahome.nl'],
     imgix: {
       baseURL: 'https://lideka-home.imgix.net'
