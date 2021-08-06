@@ -1,4 +1,4 @@
-import {Customers} from "~/services/shopify/Customers";
+import {deleteAccessToken, findCustomer} from "~/services/ApiService";
 
 const actions = {
   async setAccessToken({commit}, accessToken) {
@@ -12,7 +12,7 @@ const actions = {
 
     const accessToken = localStorage.getItem('accessToken');
 
-    const { customer } = await Customers.find(accessToken);
+    const { customer } = await findCustomer(accessToken);
     commit('setCustomer', customer);
 
     if (customer !== null) {
@@ -24,7 +24,7 @@ const actions = {
 
   async logout({commit}) {
     const accessToken = localStorage.getItem('accessToken');
-    await Customers.deleteAccessToken({
+    await deleteAccessToken({
       customerAccessToken: accessToken
     });
     await commit('setCustomer', {});

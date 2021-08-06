@@ -53,15 +53,14 @@
 <script lang="ts">
 import Vue from 'vue';
 import {mapActions, mapGetters} from "vuex";
-import { Customers } from "~/services/shopify/Customers";
 import Orders from "~/components/auth/myaccount/Orders.vue";
-import { Customer} from "~/services/shopify/classes/Customer";
+import {getCustomer} from "~/services/ApiService";
 
 export default Vue.extend({
   components: {Orders},
   data() {
     return {
-      customerData: new Customer({}),
+      customerData: {},
       selectedTab: 'orders',
     }
   },
@@ -83,7 +82,7 @@ export default Vue.extend({
     ]),
 
     async getCompleteCustomer() {
-      this.customerData = await Customers.get(this.accessToken) as Customer;
+      this.customerData = await getCustomer(this.accessToken);
     },
 
     async onLogout() {

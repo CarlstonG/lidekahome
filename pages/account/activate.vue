@@ -25,6 +25,5 @@ import Activate from "../../components/auth/Activate";
 
 export default Vue.extend({
   components: {Activate}
-  //
 })
 </script>

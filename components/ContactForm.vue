@@ -21,7 +21,8 @@
 <script>
 import FormField from "./input/FormField";
 import {email, minLength, required} from "vuelidate/lib/validators";
-import {RocksolidService} from "../services/rocksolid/RocksolidService";
+import {post} from "../services/ApiService";
+
 export default {
   components: {FormField},
 
@@ -51,7 +52,7 @@ export default {
         this.$root.$emit('addNotification', 'Niet gelukt!', 'Vul alle velden correct in', 'error')
       } else {
         try {
-          await RocksolidService.post('/contact', {
+          await post('/contact', {
             ...this.fields
           })
 

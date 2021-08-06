@@ -57,7 +57,7 @@
 <script lang="js">
 import Vue from 'vue';
 import Loading from "~/components/Loading";
-import {Blogs} from "~/services/shopify/Blogs";
+import {getBlog} from "../../services/ApiService";
 import {safeGet} from "../../services/Helpers";
 
 export default Vue.extend({
@@ -93,7 +93,7 @@ export default Vue.extend({
 
   async fetch() {
     this.loading = true;
-    this.blog = await Blogs.find('blog');
+    this.blog = await getBlog('blog');
     this.loading = false;
   },
 })

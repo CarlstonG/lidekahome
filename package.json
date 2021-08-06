@@ -9,6 +9,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@luxdamore/nuxt-prune-html": "^2.0.6",
+    "@nuxtjs/component-cache": "^1.1.6",
+    "@nuxtjs/robots": "^2.5.0",
+    "@nuxtjs/sitemap": "^2.4.0",
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/typography": "^0.4.1",
     "axios": "^0.21.1",
@@ -22,6 +26,7 @@
     "nuxt-compress": "^5.0.0",
     "nuxt-jsonld": "^1.5.1",
     "nuxt-perfect-cache": "^1.1.0",
+    "nuxt-precompress": "^0.5.9",
     "nuxt-shopify": "^1.10.10",
     "nuxt-ssr-cache": "^1.5.2",
     "sass-loader": "^10.2.0",
@@ -30,8 +35,10 @@
     "vuelidate": "^0.7.6"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.5.0",
     "@nuxt/types": "^2.15.7",
     "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/tailwindcss": "^4.2.0",
     "@types/lodash": "^4.14.171",
     "@types/vuelidate": "^0.7.15",

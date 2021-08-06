@@ -1,8 +1,7 @@
-import {Shop} from "~/services/shopify/classes/Shop";
 import moment from "moment";
 
 const state = {
-  shop: new Shop({}),
+  shop: {},
   currentMaxDeliveryTime: moment().weekday() === 7 ? '22:00' : '23:59'
 }
 

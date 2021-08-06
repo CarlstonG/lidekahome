@@ -37,7 +37,7 @@ const actions = {
 
     let checkoutId = localStorage.getItem('checkoutId');
 
-    if (checkoutId) {
+    if (checkoutId && checkoutId !== 'null') {
       const checkout = await this.$shopify.checkout.fetch(checkoutId);
       checkoutId = _.get(checkout, 'id', null);
       context.commit('setCount', _.get(checkout, 'lineItems.length', 0));

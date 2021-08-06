@@ -46,10 +46,11 @@
           </li>
           <li @click="isOpen = false" v-for="product in products">
             <NuxtLink :to="product.url" class="flex items-center py-2">
-              <img v-if="product.firstMediaSrc" class="h-6 w-6 rounded-full"
-                   :src="product.firstMediaSrc"
-                   loading="lazy"
-                   alt="">
+              <nuxt-img v-if="product.firstMediaSrc" class="h-6 w-6 rounded-full"
+                    provider="imgix"
+                    :src="product.firstMediaSrc"
+                    loading="lazy"
+                    alt="" />
               <div class="ml-3">
                 <p class="text-sm font-medium text-gray-900">{{ product.title }}</p>
               </div>
@@ -64,8 +65,7 @@
 <script>
 import Vue from "vue";
 import Loading from "~/components/Loading";
-import { Products } from "~/services/shopify/Products";
-import { Collections} from "~/services/shopify/Collections";
+import {searchProducts, searchCollections} from "~/services/ApiService";
 
 export default Vue.extend({
   components: {Loading},
@@ -114,8 +114,8 @@ export default Vue.extend({
       }
 
       this.loading = true;
-      this.products = await Products.search(this.fields.query);
-      this.collections = await Collections.search(this.fields.query);
+      this.products = await searchProducts(this.fields.query)
+      this.collections = await searchCollections(this.fields.query);
       this.loading = false;
     }
   }

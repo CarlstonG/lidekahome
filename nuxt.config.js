@@ -1,4 +1,5 @@
 import {sortRoutes} from '@nuxt/utils'
+import axios from "axios";
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -10,9 +11,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'rocksolid-headless-shopify',
+    title: 'Lideka Home',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'nl'
     },
     meta: [
       {charset: 'utf-8'},
@@ -23,9 +24,6 @@ export default {
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ],
-    script: [
-      {hid: 'thuiswinkel', src: '//widget.thuiswinkel.org/script.js?id=NTM3NC0x', defer: true}
-    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -35,7 +33,7 @@ export default {
   plugins: ['~/plugins/vue-imgix.js', '~/plugins/jsonld', '~/plugins/vuelidate.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -43,6 +41,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/pwa',
   ],
 
   tailwindcss: {
@@ -51,19 +50,120 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/robots',
+    '@nuxt/image',
     'nuxt-shopify',
-    [
-      'nuxt-compress',
+    '@luxdamore/nuxt-prune-html',
+    'nuxt-precompress',
+    ['@nuxtjs/component-cache', { maxAge: 1000 * 60 * 60 }],
+  ],
+
+  image: {
+    provider: 'static',
+    domains: ['https://cdn.shopify.com', 'https://lidekahome.nl'],
+    imgix: {
+      baseURL: 'https://lideka-home.imgix.net'
+    },
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536
+    },
+  },
+
+  nuxtPrecompress: {
+    enabled: true, // Enable in production
+    report: false, // set true to turn one console messages during module init
+    test: /\.(js|css|html|txt|xml|svg)$/, // files to compress on build
+    // Serving options
+    middleware: {
+      // You can disable middleware if you serve static files using nginx...
+      enabled: true,
+      // Enable if you have .gz or .br files in /static/ folder
+      enabledStatic: true,
+      // Priority of content-encodings, first matched with request Accept-Encoding will me served
+      encodingsPriority: ['br', 'gzip'],
+    },
+
+    // build time compression settings
+    gzip: {
+      // should compress to gzip?
+      enabled: true,
+      // compression config
+      // https://www.npmjs.com/package/compression-webpack-plugin
+      filename: '[path].gz[query]', // middleware will look for this filename
+      threshold: 10240,
+      minRatio: 0.8,
+      compressionOptions: { level: 9 },
+    },
+    brotli: {
+      // should compress to brotli?
+      enabled: true,
+      // compression config
+      // https://www.npmjs.com/package/compression-webpack-plugin
+      filename: '[path].br[query]', // middleware will look for this filename
+      compressionOptions: { level: 11 },
+      threshold: 10240,
+      minRatio: 0.8,
+    },
+  },
+
+  pruneHtml: {
+    enabled: true, // `true` in production
+    hideGenericMessagesInConsole: false, // `false` in production
+    hideErrorsInConsole: false, // deactivate the `console.error` method
+    hookRenderRoute: true, // activate `hook:render:route`
+    hookGeneratePage: true, // activate `hook:generate:page`
+    selectors: [
+      // CSS selectors to prune
+      'link[rel="preload"][as="script"]',
+      'script:not([type="application/ld+json"])',
+    ],
+    classesSelectorsToKeep: [], // disallow pruning of scripts with this classes, n.b.: each `classesSelectorsToKeep` is appended to every `selectors`, ex.: `link[rel="preload"][as="script"]:not(__classesSelectorsToKeep__)`
+    link: [], // inject custom links, only if pruned
+    script: [], // inject custom scripts, only if pruned
+    htmlElementClass: null, // a string added as a class to the <html> element if pruned
+    cheerio: {
+      // the config passed to the `cheerio.load(__config__)` method
+      xmlMode: false,
+    },
+    types: [
+      // it's possibile to add different rules for pruning
+      'default-detect',
+    ],
+
+    // 👇🏻 Type: `default-detect`
+    headerNameForDefaultDetection: 'user-agent', // The `header-key` base for `MobileDetection`, usage `request.headers[ headerNameForDefaultDetection ]`
+    auditUserAgent: 'lighthouse', // prune if `request.header[ headerNameForDefaultDetection ]` match, could be a string or an array of strings
+    isAudit: true, // remove selectors if match with `auditUserAgent`
+    isBot: true, // remove selectors if is a bot
+    ignoreBotOrAudit: false, // remove selectors in any case, not depending on Bot or Audit
+    matchUserAgent: null, // prune if `request.header[ headerNameForDefaultDetection ]` match, could be a string or an array of strings
+
+    // 👇🏻 Type: 'query-parameters'
+    queryParametersToPrune: [
+      // array of objects (key-value)
+      // trigger the pruning if 'query-parameters' is present in `types` and at least one value is matched, ex. `/?prune=true`
       {
-        gzip: {
-          threshold: 8192,
-        },
-        brotli: {
-          threshold: 8192,
-        },
+        key: 'prune',
+        value: 'true',
       },
     ],
-  ],
+    queryParametersToExcludePrune: [], // same as `queryParametersToPrune`, exclude the pruning if 'query-parameters' is present in `types` and at least one value is matched, this priority is over than `queryParametersToPrune`
+
+    // 👇🏻 Type: 'headers-exist'
+    headersToPrune: [], // same as `queryParametersToPrune`, but it checks `request.headers`
+    headersToExcludePrune: [], // same as `queryParamToExcludePrune`, but it checks `request.headers`, this priority is over than `headersToPrune`
+
+    // Emitted events for callbacks methods
+    onBeforePrune: null, // ({ result, [ req, res ] }) => {}, `req` and `res` are not available on `nuxt generate`
+    onAfterPrune: null, // ({ result, [ req, res ] }) => {}, `req` and `res` are not available on `nuxt generate`
+  },
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
@@ -78,12 +178,13 @@ export default {
     shopifyDomain: process.env.SHOPIFY_DOMAIN,
     shopifyAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
     shopifyGraphql: process.env.SHOPIFY_GRAPHQL,
-    rocksolidApiKey: process.env.ROCKSOLID_API_KEY
+    rocksolidApiKey: process.env.ROCKSOLID_API_KEY,
+    rocksolidApiUrl: process.env.ROCKSOLID_API_URL
   },
 
   serverMiddleware: [{
     path: '/',
-    handler: (req, res, next) => {
+    handler: async (req, res, next) => {
       if (req.url.match("/pages\/")) {
         res.writeHead(301, {Location: req.url.replace("pages/", "")})
         res.end();
@@ -94,12 +195,21 @@ export default {
         res.end();
       }
 
+      if (req.url.match('sitemap.xml')) {
+        await axios.get(`${process.env.ROCKSOLID_API_URL}/sitemap?api_key=${process.env.ROCKSOLID_API_KEY}`).then((response) => {
+          res.end(response.data);
+        }).catch((err) => {
+          res.end(err);
+        })
+      }
+
       next();
     }
   }],
 
   router: {
     linkPrefetchedClass: 'preloaded',
+
     extendRoutes(routes, resolve) {
       routes.push({
         name: 'winkelwagen',

@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col items-center transition-all shadow-none rounded-lg" :class="{ 'mt-4': gradient }">
     <NuxtLink :to="product.url" prefetch>
-      <ix-img class="rounded-lg"
+      <nuxt-img class="rounded-lg"
+              provider="imgix"
               loading="lazy"
               :src="product.firstMediaSrc"
-              :imgixParams="{fit:'fill', fill:'solid', fillcolor:'f7fafc', trim:'auto'}"
               :alt="product.title"
               width="100%"
               height="100%"

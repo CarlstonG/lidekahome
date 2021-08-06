@@ -17,8 +17,7 @@
 import Vue from 'vue';
 import FormField from "~/components/input/FormField.vue";
 import {email, required} from "vuelidate/lib/validators";
-import { Customers } from "~/services/shopify/Customers";
-import { safeGet } from "~/services/Helpers";
+import {recoverCustomer} from "~/services/ApiService";
 
 export default Vue.extend({
   components: {FormField},
@@ -43,9 +42,9 @@ export default Vue.extend({
         this.$root.$emit('addNotification', 'Niet gelukt!', 'Vul alle velden correct in', 'error')
       } else {
         try {
-          await Customers.recover({
+          await recoverCustomer({
             email: this.email
-          });
+          })
 
           this.$root.$emit('addNotification', 'E-mail verstuurd!', 'Als we je account konden vinden, sturen wij je een e-mail om jouw account te herstellen.', '', 5000);
           await this.$router.push('/account/login');

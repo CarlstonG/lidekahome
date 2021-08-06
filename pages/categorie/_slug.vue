@@ -14,12 +14,12 @@
                         font-medium text-white bg-black hover:opacity-50 focus:outline-none focus:ring-2
                         focus:ring-offset-2
                 ">
-                <svg class="w-6 h-6 md:h-4 md:h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
-                </svg>
-                <span class="text-sm hidden md:block">Filteren</span>
+                  <svg class="w-6 h-6 md:h-4 md:h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+                  </svg>
+                  <span class="text-sm hidden md:block">Filteren</span>
                 </button>
               </div>
               <div>
@@ -75,10 +75,11 @@
 import ProductItem from '~/components/products/ProductItem.vue';
 import Vue from 'vue';
 import Loading from "../../components/Loading";
-import {Collections} from "../../services/shopify/Collections";
 import Filters from "../../components/filters/Filters";
 import _ from 'lodash';
 import FilterSidebar from "../../components/filters/FilterSidebar";
+import {getCollection} from "../../services/ApiService";
+import {safeGet} from "../../services/Helpers";
 
 export default Vue.extend({
   components: {
@@ -88,31 +89,32 @@ export default Vue.extend({
     ProductItem
   },
 
-  setup() {
-    return {Collections}
-  },
-
   data() {
     return {
       sidebarIsOpen: false,
       selectedFilters: {},
       loading: false,
       collection: {},
-      sortKeys: {},
-      slug: null,
+      sortKeys: {
+        BEST_SELLING: 'Best verkocht',
+        PRICE: 'Prijs',
+        RELEVANCE: 'Relevantie',
+        TITLE: 'Titel',
+      },
 
-      sortBy: 'BEST_SELLING',
+      slug: null,
+      sortBy: 'PRICE',
       reverse: false,
     };
   },
 
   watch: {
     sortBy() {
-      this.$fetch();
+      this.fetch();
     },
 
     reverse() {
-      this.$fetch();
+      this.fetch();
     }
   },
 
@@ -130,18 +132,29 @@ export default Vue.extend({
         product_filters: [...this.selectedFilters]
       }
 
-      this.$fetch();
+      this.fetch();
+    },
+
+    async fetch() {
+      this.loading = true;
+      this.collection = await getCollection(this.slug, {
+        limit: 50,
+        sortKey: this.sortBy,
+        reverse: this.reverse,
+        filters: this.selectedFilters
+      });
+      this.loading = false;
     }
   },
 
   head() {
     return {
-      title: this.collection.title,
+      title: safeGet(this.collection, 'title'),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.collection.description,
+          content: safeGet(this.collection, 'description'),
         }
       ]
     }
@@ -149,17 +162,15 @@ export default Vue.extend({
 
   async asyncData({params}) {
     const slug = params.slug;
-    const sortKeys = Collections.productSortKeys;
-    return {slug, sortKeys}
-  },
-
-  async fetch() {
-    this.loading = true;
-    this.collection = await Collections.find(this.slug, 50, {
-      sortKey: this.sortBy,
-      reverse: this.reverse,
-    }, this.selectedFilters);
-    this.loading = false;
+    const collection = await getCollection(slug, {
+      limit: 50,
+      sortKey: 'PRICE',
+      reverse: false,
+      filters: {
+        product_filters: {},
+      },
+    });
+    return {slug, collection}
   },
 })
 </script>

@@ -18,9 +18,8 @@
 <script lang="ts">
 import FormField from "~/components/input/FormField.vue";
 import {email, required} from "vuelidate/lib/validators";
-import {Customers} from "~/services/shopify/Customers";
 import Vue from "vue";
-import {RocksolidService} from "~/services/rocksolid/RocksolidService";
+import {post} from "~/services/ApiService";
 
 export default Vue.extend({
   components: {FormField},
@@ -50,7 +49,7 @@ export default Vue.extend({
         this.$root.$emit('addNotification', 'Niet gelukt!', 'Vul alle velden correct in', 'error')
       } else {
         try {
-          await RocksolidService.post('/contact', {
+          await post('/contact', {
             ...this.fields
           })
 

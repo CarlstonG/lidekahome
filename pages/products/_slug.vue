@@ -1,13 +1,14 @@
 <template>
   <div class="bg-white">
-    <div v-if="!product.title">
+    <div v-if="!product || !product.title">
       <div class="container mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
         <Loading v-show="loading"/>
-        <NotFound v-if="!loading" />
+        <NotFound v-if="!loading"/>
       </div>
     </div>
     <div v-else>
-      <Breadcrumbs class="hidden md:block" :path="[ { title: product.collection.title, path: product.collection.url } ]" :title="product.title" />
+      <Breadcrumbs class="hidden md:block" :path="[ { title: product.collection.title, path: product.collection.url } ]"
+                   :title="product.title"/>
       <div class="container mx-auto pb-20 pt-6 md:pt-10">
         <div class="grid grid-cols-1 md:grid-cols-2 mx-6 lg:mx-0 relative">
           <div class="px-0 md:px-6 mb-8 md:mb-0">
@@ -26,13 +27,13 @@
                   v-for="media in product.media"
                   class="swiper-slide flex cursor-pointer justify-center items-center h-full w-full rounded-lg">
                   <a @click.prevent="showLightbox = !showLightbox">
-                    <ix-img v-if="media.type === 'IMAGE'" class="rounded-lg swiper-lazy"
+                    <nuxt-img v-if="media.type === 'IMAGE'" class="rounded-lg swiper-lazy"
                             loading="lazy"
+                            provider="imgix"
                             width="800px"
                             height="800px"
                             :src="media.src"
                             :alt="media.alt"
-                            :imgixParams="{fit:'fill', fill:'solid', fillcolor:'f7fafc', trim:'auto'}"
                     />
                     <video v-else-if="media.type === 'VIDEO'" width="100%" height="480px" controls
                            playsinline
@@ -55,13 +56,13 @@
                 <div
                   v-for="media in product.media"
                   class="swiper-slide flex cursor-pointer justify-center items-center h-20 w-20 rounded-lg bg-center bg-cover">
-                  <ix-img class="rounded-lg swiper-lazy"
+                  <nuxt-img class="rounded-lg swiper-lazy"
                           loading="lazy"
+                          provider="imgix"
                           width="100px"
                           height="100px"
                           :src="media.preview"
                           :alt="media.alt"
-                          :imgixParams="{fit:'fill', fill:'solid', fillcolor:'f7fafc', trim:'auto'}"
                   />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
@@ -162,12 +163,12 @@ import 'swiper/swiper-bundle.css';
 import Loading from "~/components/Loading";
 import {mapActions} from "vuex";
 import SellingPoints from "~/components/SellingPoints";
-import {Products} from '~/services/shopify/Products';
 import {safeGet} from "~/services/Helpers";
 import NotFound from "~/components/NotFound";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import FsLightbox from "fslightbox-vue";
 import _ from 'lodash';
+import {getProduct} from "../../services/ApiService";
 
 export default Vue.extend({
   components: {Breadcrumbs, NotFound, SellingPoints, Loading, ProductItem, FsLightbox},
@@ -209,10 +210,10 @@ export default Vue.extend({
     return {
       '@context': 'https://schema.org',
       '@type': 'Product',
-      name: this.product.title,
-      brand: this.product.brand,
-      description: this.product.description,
-      image: this.product.firstMediaSrc
+      name: safeGet(this.product, 'title'),
+      brand: safeGet(this.product, 'brand'),
+      description: safeGet(this.product, 'description'),
+      image: safeGet(this.product, 'firstMediaSrc')
     };
   },
 
@@ -243,7 +244,7 @@ export default Vue.extend({
       //@ts-ignore
       this.$root.$emit('addNotification', 'Toegevoegd', 'Product toegevoegd aan winkelmandje');
 
-      this.product = await Products.find(this.slug);
+      this.product = await getProduct(this.slug);
     },
 
     initializeSwiper() {
@@ -304,37 +305,17 @@ export default Vue.extend({
   async asyncData(ctx) {
     const slug = ctx.params.slug;
 
-    const product = await ctx.$cacheFetch({ key: slug, expire: 60 * 2 }, async () => {
-      return Products.find(slug);
-    });
+    const product = await getProduct(slug);
 
-    const x = _.map(product.media, (item) => { return item.src !== null ? item.src : false });
+    const x = _.map(product.media, (item) => {
+      return item.fullSrc !== null ? item.fullSrc : false
+    });
 
     const productImages = _.reject(x, (item) => {
       return !item;
     });
 
-    return {slug, product, productImages }
-  },
-
-  async fetch() {
-    this.loading = true;
-
-    // this.product = await this.$cacheFetch({ key: this.slug, expire: 60 * 2 }, async () => {
-    //   return Products.find(this.slug);
-    // })
-
-    this.loading = false;
-
-    // const x = _.map(this.product.media, (item) => { return item.src !== null ? item.src : false });
-
-    // this.productImages = _.reject(x, (item) => {
-    //   return !item;
-    // });
-
-    this.$nextTick(() => {
-      this.initializeSwiper();
-    });
+    return {product, slug, productImages }
   },
 })
 </script>

@@ -34,11 +34,11 @@
 
 <script lang="ts">
 import Vue from "vue";
-import {Customers} from "~/services/shopify/Customers";
 import {required, email, minLength} from 'vuelidate/lib/validators'
 import FormField from "~/components/input/FormField.vue";
 import {safeGet} from "~/services/Helpers";
 import {mapActions, mapGetters} from "vuex";
+import {connectCustomerToCheckout, getAccessToken} from "~/services/ApiService";
 
 export default Vue.extend({
   components: {FormField},
@@ -78,9 +78,10 @@ export default Vue.extend({
         this.$root.$emit('addNotification', 'Niet gelukt!', 'Vul alle velden correct in', 'error')
       } else {
         try {
-          const { customerAccessTokenCreate } = await Customers.getAccessToken({input: {...this.fields}}) as {
+          const { customerAccessTokenCreate } = await getAccessToken({input: {...this.fields}}) as {
             customerAccessTokenCreate: {}
           };
+
           const code = safeGet(customerAccessTokenCreate, 'customerUserErrors.0.code');
 
           if (code === 'UNIDENTIFIED_CUSTOMER') {
@@ -95,7 +96,7 @@ export default Vue.extend({
           }
 
           if (this.checkoutId) {
-            await Customers.connectToCheckout({
+            await connectCustomerToCheckout({
               checkoutId: this.checkoutId,
               customerAccessToken: accessToken
             })

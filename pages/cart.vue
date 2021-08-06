@@ -1,5 +1,6 @@
 <template>
   <div class="bg-white">
+
     <div class="container mx-auto py-20">
       <script src="//widget.thuiswinkel.org/script.js?id=NTM3NC0y"></script>
       <div class="grid gap-5 grid-cols-1 lg:grid-cols-3">
@@ -19,7 +20,7 @@
           <div class="flex flex-col relative">
 
             <Loading v-show="loading || !checkout"/>
-            <form v-show="checkout" :action="checkout.webUrl ? checkout.webUrl.replace('lideka-home.myshopify.com', 'checkout.lidekahome.nl') : ''" method="get" novalidate>
+            <div v-show="checkout" novalidate>
               <div v-if="checkout.lineItems && checkout.lineItems.length > 0"
                    class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -155,14 +156,18 @@
                     </div>
                   </div>
                   <div class="flex items-center justify-start px-6 lg:px-0">
-                    <Button type="submit" :disabled="!terms"
-                            class="w-60 disabled:opacity-50 flex justify-center py-3 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                    <a
+                      v-if="checkout"
+                      @click="onCheckoutButton"
+                      :href="checkout.webUrl"
+                      class="w-60 disabled:opacity-50 flex justify-center py-3 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                    >
                       Naar betalen
-                    </Button>
+                    </a>
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
         <div class="w-full">
@@ -206,23 +211,28 @@ import {formatMoney} from "~/services/Helpers";
 import Loading from "~/components/Loading.vue";
 import SellingPoints from "~/components/SellingPoints.vue";
 import PaymentMethodes from "~/components/PaymentMethodes.vue";
-import _ from 'lodash';
 
 export default Vue.extend({
   name: 'winkelwagen',
   components: {PaymentMethodes, SellingPoints, Loading},
+
   data() {
     return {
       formatMoney,
       products: [],
       loading: false,
       terms: false,
+      webUrl: '#',
     };
   },
 
   computed: {
     ...mapGetters('shop/cart', [
       'checkout'
+    ]),
+
+    ...mapGetters('shop/customer', [
+      'customer'
     ]),
   },
 
@@ -231,6 +241,24 @@ export default Vue.extend({
       'updateLineItemQuantity',
       'removeLineItem',
     ]),
+
+    onCheckoutButton(e: Event) {
+      if (!this.terms) {
+        if (!confirm('Door verder te gaan gaat u akkoord met onze algemene voowaarden.')) {
+          e.preventDefault();
+          return;
+        }
+      }
+
+      if (this.customer) {
+        window.location.href = `${this.checkout.webUrl}
+      &checkout[shipping_address][last_name]=${this.customer.lastName}
+      &checkout[shipping_address][first_name]=${this.customer.firstName}
+      &checkout[email]=${this.customer.email}`
+        e.preventDefault();
+        return;
+      }
+    },
 
     async addQuantity(quantity: number, id: number) {
       this.loading = true;

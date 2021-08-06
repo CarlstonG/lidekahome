@@ -26,6 +26,7 @@ export default Vue.extend({
   computed: {
     ...mapGetters('shop/cart', [
       'count',
+      'checkout'
     ]),
 
     ...mapGetters('shop/products', [
@@ -66,7 +67,7 @@ export default Vue.extend({
   head() {
     return {
       title: this.shop.name,
-      description: this.shop.description
+      description: this.shop.description,
     }
   },
 })

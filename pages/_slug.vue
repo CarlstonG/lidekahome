@@ -27,7 +27,7 @@ import Vue from 'vue';
 import Loading from "~/components/Loading";
 import {safeGet} from "~/services/Helpers";
 import NotFound from "~/components/NotFound";
-import { Pages } from "~/services/shopify/Pages";
+import {getPage} from "../services/ApiService";
 import Breadcrumbs from "~/components/Breadcrumbs";
 
 export default Vue.extend({
@@ -75,7 +75,7 @@ export default Vue.extend({
 
   async fetch() {
     this.loading = true;
-    this.page = await Pages.find(this.slug);
+    this.page = await getPage(this.slug);
     this.loading = false;
   },
 })

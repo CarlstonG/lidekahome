@@ -18,10 +18,10 @@
 
 <script lang="ts">
 import Vue from "vue";
-import {Customers} from "~/services/shopify/Customers";
 import {required, email, minLength} from 'vuelidate/lib/validators'
 import FormField from "~/components/input/FormField.vue";
 import {safeGet} from "~/services/Helpers";
+import {createCustomer} from "~/services/ApiService";
 
 export default Vue.extend({
   components: {FormField},
@@ -64,7 +64,10 @@ export default Vue.extend({
         this.$root.$emit('addNotification', 'Niet gelukt!', 'Vul alle velden correct in', 'error')
       } else {
         try {
-          const {customerCreate} = await Customers.create({input: {...this.fields}}) as { customerCreate: {} };
+          const { customerCreate } = await createCustomer({input: {...this.fields}}) as {
+            customerCreate: {}
+          };
+
           const code = safeGet(customerCreate, 'customerUserErrors.0.code');
           const message = safeGet(customerCreate, 'customerUserErrors.0.message');
 
@@ -73,8 +76,15 @@ export default Vue.extend({
             return;
           }
 
+          if (code === 'BAD_DOMAIN') {
+            this.$root.$emit('addNotification', 'Fout.', 'Ongeldige domeinnaam.', 'error', 5000)
+            return;
+          }
+
           if (message) {
             this.$root.$emit('addNotification', 'Account aangemaakt', message, '', 10000);
+          } else {
+            this.$root.$emit('addNotification', 'Account aangemaakt', 'Je kunt nu inloggen met je e-mailadres en wachtwoord.', '', 10000);
           }
 
           await this.$router.push('/account/login');

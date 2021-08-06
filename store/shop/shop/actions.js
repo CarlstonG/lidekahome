@@ -1,8 +1,8 @@
-import {Shop} from "~/services/shopify/Shop";
+import {getShop} from "~/services/ApiService";
 
 const actions = {
   async fetchShop({commit}) {
-    const shop = await Shop.get();
+    const shop = await getShop();
     commit('setShop', shop);
   },
 }

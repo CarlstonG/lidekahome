@@ -73,9 +73,9 @@ import Vue from 'vue';
 import Loading from "~/components/Loading";
 import {safeGet} from "~/services/Helpers";
 import NotFound from "~/components/NotFound";
-import { Pages } from "~/services/shopify/Pages";
 import Breadcrumbs from "../components/Breadcrumbs";
 import ContactForm from "../components/ContactForm";
+import {getPage} from "../services/ApiService";
 
 export default Vue.extend({
   components: {
@@ -117,7 +117,7 @@ export default Vue.extend({
 
   async fetch() {
     this.loading = true;
-    this.page = await Pages.find('contact');
+    this.page = await getPage('contact');
     this.loading = false;
   },
 })

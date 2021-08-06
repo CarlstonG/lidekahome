@@ -8,14 +8,13 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { Customer } from "~/services/shopify/classes/Customer";
 import Order from "~/components/auth/myaccount/Order.vue";
 
 export default Vue.extend({
   components: {Order},
   props: {
     customerData: {
-      type: Customer,
+      type: Object,
       required: true,
     },
   }

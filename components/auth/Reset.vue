@@ -19,8 +19,8 @@
 import Vue from 'vue';
 import FormField from "~/components/input/FormField.vue";
 import {minLength, required, sameAs} from "vuelidate/lib/validators";
-import { Customers } from "~/services/shopify/Customers";
 import { safeGet } from "~/services/Helpers";
+import {resetCustomer} from "~/services/ApiService";
 
 export default Vue.extend({
   components: {FormField},
@@ -50,10 +50,10 @@ export default Vue.extend({
         this.$root.$emit('addNotification', 'Niet gelukt!', 'Vul alle velden correct in', 'error')
       } else {
         try {
-          const { customerResetByUrl } = await Customers.reset({
+          const customerResetByUrl = await resetCustomer({
             resetUrl: window.location.href,
             password: this.password
-          }) as { customerResetByUrl: {} };
+          })
 
           const code = safeGet(customerResetByUrl, 'customerUserErrors.0.code');
 

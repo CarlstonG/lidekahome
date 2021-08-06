@@ -100,7 +100,6 @@
 </template>
 
 <script lang="ts">
-import {Order} from "~/services/shopify/classes/Order";
 import {formatDate, formatMoney} from "~/services/Helpers";
 import Vue from 'vue';
 
@@ -114,7 +113,7 @@ export default Vue.extend({
   },
   props: {
     order: {
-      type: Order,
+      type: Object,
       required: true,
     }
   }
