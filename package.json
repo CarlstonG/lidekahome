@@ -20,6 +20,7 @@
     "fslightbox-vue": "^1.2.0",
     "graphql": "^15.5.1",
     "graphql-request": "^3.4.0",
+    "ipx": "^0.7.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "nuxt": "^2.15.7",
