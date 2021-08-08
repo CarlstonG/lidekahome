@@ -17,7 +17,6 @@
           <label for="tabs" class="sr-only">Select a tab</label>
           <select id="tabs" v-model="selectedTab" name="tabs" class="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
             <option selected value="orders">Bestellingen</option>
-            <option value="credentials">Mijn gegevens</option>
           </select>
         </div>
         <div class="hidden sm:block">
@@ -28,23 +27,11 @@
               <span>Mijn bestellingen</span>
               <span aria-hidden="true" class="bg-transparent absolute inset-x-0 bottom-0 h-0.5" :class="{ 'bg-indigo-500': selectedTab === 'orders' }"></span>
             </a>
-
-            <a @click.prevent="selectedTab = 'credentials'" href="#" class="rounded-r-lg text-gray-500 hover:text-gray-700 group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-sm font-medium text-center hover:bg-gray-50 focus:z-10"
-              :class="{ 'text-gray-900': selectedTab === 'credentials' }"
-            >
-              <span>Mijn gegevens</span>
-              <span aria-hidden="true" class="bg-transparent absolute inset-x-0 bottom-0 h-0.5" :class="{ 'bg-indigo-500': selectedTab === 'credentials' }"></span>
-            </a>
           </nav>
         </div>
       </div>
       <div v-if="selectedTab === 'orders'">
         <Orders v-if="customerData" :customerData="customerData" />
-      </div>
-      <div v-else-if="selectedTab === 'credentials'">
-        <div class="bg-white py-16 px-4 shadow rounded-lg sm:px-10">
-          Coming soon.
-        </div>
       </div>
     </div>
   </div>
