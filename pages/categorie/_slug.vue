@@ -59,6 +59,8 @@
                 <ProductItem :product="product"/>
               </div>
             </div>
+
+            <div v-if="collection.description" class="prose mt-10 mb-4 text-sm max-w-full" v-html="collection.description"></div>
           </div>
         </div>
       </div>
