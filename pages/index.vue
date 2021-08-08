@@ -8,7 +8,7 @@
 
     <div class="container mx-auto p-2">
       <NuxtLink to="/categorie/led-strips">
-        <nuxt-img alt="Lideka Home" src="images/visuals/LEDxSolar_homepage.webp" loading="lazy"
+        <img alt="Lideka Home" src="~assets/visuals/LEDxSolar_homepage.webp" loading="lazy"
              class="rounded-lg"/>
       </NuxtLink>
     </div>
@@ -16,7 +16,7 @@
     <div class="container mx-auto py-10 px-6 md:px-0">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div class="flex items-center flex-col">
-          <nuxt-img src="images/icons/WEBicons-01.webp" alt="Hoge kwaliteit" class="w-20" loading="lazy "/>
+          <img src="~assets/icons/WEBicons-01.webp" alt="Hoge kwaliteit" class="w-20" loading="lazy "/>
           <h2 class="text-white text-center text-sm font-bold mb-2">Hoge Kwaliteit</h2>
 
           <p class="text-gray-500 text-center text-xs">
@@ -25,7 +25,7 @@
           </p>
         </div>
         <div class="flex items-center flex-col">
-          <nuxt-img loading="lazy" src="images/icons/WEBicons-02.webp" alt="'Echte' service" class="w-20"/>
+          <img loading="lazy" src="~assets/icons/WEBicons-02.webp" alt="'Echte' service" class="w-20"/>
           <h2 class="text-white text-center text-sm font-bold mb-2">'Echte' service</h2>
           <p class="text-gray-500 text-center text-xs">
             Lideka® stelt hoge eisen aan service, en daarom zijn we telefonisch 24/7 bereikbaar. Heb je s avonds laat
@@ -33,7 +33,7 @@
           </p>
         </div>
         <div class="flex items-center flex-col">
-          <nuxt-img loading="lazy" src="images/icons/WEBicons-03.webp" alt="Snelle levering" class="w-20"/>
+          <img loading="lazy" src="~assets/icons/WEBicons-03.webp" alt="Snelle levering" class="w-20"/>
           <h2 class="text-white text-center text-sm font-bold mb-2">Snelle levering</h2>
           <p class="text-gray-500 text-center text-xs">
             Wij zijn trotse partner van PostNl, en die zal dan dus ook jouw bestelling bij je thuis bezorgen. Is het
@@ -41,7 +41,7 @@
           </p>
         </div>
         <div class="flex items-center flex-col">
-          <nuxt-img loading="lazy" src="images/icons/lideka-bulb.svg" alt="100% oplossings garantie" class="w-20"/>
+          <img loading="lazy" src="~assets/icons/lideka-bulb.svg" alt="100% oplossings garantie" class="w-20"/>
           <h2 class="text-white text-center text-sm font-bold mb-2">100% oplossings garantie</h2>
           <p class="text-gray-500 text-center text-xs">
             Bij Lideka&reg;️ hechten wij enorm hoge waarde aan service, en daarom lossen wij iedere probleem voor 100%
@@ -55,7 +55,7 @@
       <div class="relative grid grid-cols-1 md:grid-cols-2">
         <div class="pr-2 pl-2">
           <NuxtLink class="relative block" to="categorie/led-strips">
-            <nuxt-img src="images/visuals/ambience_bedroom_nl.webp"
+            <img src="~assets/visuals/ambience_bedroom_nl.webp"
                  class="rounded-lg" loading="lazy" />
 
             <div class="absolute right-0 left-0 bottom-0 pb-4">
@@ -77,7 +77,7 @@
     <div class="container mx-auto pt-8 py-12 px-6 md:px-0">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div class="flex items-center flex-col">
-          <nuxt-img loading="lazy" src="images/icons/WEBicons-04.webp" alt="Gratis Verzending" class="w-20"/>
+          <img loading="lazy" src="~assets/icons/WEBicons-04.webp" alt="Gratis Verzending" class="w-20"/>
           <h2 class="text-white text-center text-sm font-bold mb-2">Gratis Verzending</h2>
           <p class="text-gray-500 text-center text-xs">
             Omdat Lideka® voor service staat bieden wij al onze artikelen aan met gratis verzending (vanaf 20,-). Dat
@@ -85,7 +85,7 @@
           </p>
         </div>
         <div class="flex items-center flex-col">
-          <nuxt-img loading="lazy" src="images/icons/WEBicons-05.webp" alt="Makkelijk retourneren" class="w-20"/>
+          <img loading="lazy" src="~assets/icons/WEBicons-05.webp" alt="Makkelijk retourneren" class="w-20"/>
           <h2 class="text-white text-center text-sm font-bold mb-2">Makkelijk retourneren</h2>
           <p class="text-gray-500 text-center text-xs">
             Lideka® maakt retourneren makkelijk. Via ‘Returnless’ kun je op een PostNl locatie jouw pakketje gratis
@@ -93,7 +93,7 @@
           </p>
         </div>
         <div class="flex items-center flex-col">
-          <nuxt-img loading="lazy" src="images/icons/WEBicons-06.webp" alt="100% tevredenheidsgarantie" class="w-20"/>
+          <img loading="lazy" src="~assets/icons/WEBicons-06.webp" alt="100% tevredenheidsgarantie" class="w-20"/>
           <h2 class="text-white text-center text-sm font-bold mb-2">100% tevredenheidsgarantie</h2>
           <p class="text-gray-500 text-center text-xs">
             Wij staan volledig achter de kwaliteit van onze producten en bieden jou daarom een onvoorwaardelijke
@@ -101,7 +101,7 @@
           </p>
         </div>
         <div class="flex items-center flex-col">
-          <nuxt-img loading="lazy" src="images/icons/WEBicons-07.webp" alt="Duurzaamheid" class="w-20"/>
+          <img loading="lazy" src="~assets/icons/WEBicons-07.webp" alt="Duurzaamheid" class="w-20"/>
           <h2 class="text-white text-center text-sm font-bold mb-2">Duurzaamheid</h2>
           <p class="text-gray-500 text-center text-xs">
             Lideka® denkt mee aan het milieu, met een duurzame achtergrond werken de producten energiebesparend, en
@@ -116,7 +116,7 @@
         <div class="pr-2 pl-2 mb-6 md:mb-0">
           <NuxtLink class="relative block"
                     to="/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie">
-            <nuxt-img src="images/visuals/Solar_Powerbank_product.webp" alt="Product Solar Powerbank" class="rounded-lg"
+            <img src="~assets/visuals/Solar_Powerbank_product.webp" alt="Product Solar Powerbank" class="rounded-lg"
                  loading="lazy"
                  width="100%" height="100%"/>
 
@@ -134,7 +134,7 @@
         </div>
         <div class="pr-2 pl-2">
           <NuxtLink to="/categorie/solar-powerbank">
-            <nuxt-img src="images/visuals/Solar_Powerbank_square.webp" alt="Product Solar Powerbank" class="rounded-lg"
+            <img src="~assets/visuals/Solar_Powerbank_square.webp" alt="Product Solar Powerbank" class="rounded-lg"
                  loading="lazy"
                  width="100%" height="100%"/>
           </NuxtLink>
@@ -146,7 +146,7 @@
       <div class="relative grid grid-cols-1 md:grid-cols-2">
         <div class="pr-2 pl-2">
           <NuxtLink v-if="secondaryCollection && secondaryCollection.url" class="relative block" :to="secondaryCollection.url">
-            <nuxt-img alt="Solar tuinverlichting" src="images/visuals/SOLAR_garden_square.webp" class="rounded-lg" loading="lazy"
+            <img alt="Solar tuinverlichting" src="~assets/visuals/SOLAR_garden_square.webp" class="rounded-lg" loading="lazy"
                  width="100%" height="100%"/>
 
             <div class="absolute top-0 right-0 left-0 pt-4">

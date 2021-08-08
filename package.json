@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@luxdamore/nuxt-prune-html": "^2.0.6",
     "@nuxtjs/component-cache": "^1.1.6",
     "@nuxtjs/robots": "^2.5.0",
@@ -43,7 +44,16 @@
     "@nuxtjs/tailwindcss": "^4.2.0",
     "@types/lodash": "^4.14.171",
     "@types/vuelidate": "^0.7.15",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^9.0.0",
+    "lqip-loader": "^2.2.1",
     "node-sass": "^6.0.0",
-    "postcss": "^8.3.5"
+    "postcss": "^8.3.5",
+    "responsive-loader": "^2.3.0",
+    "sharp": "^0.28.3",
+    "sqip-loader": "^1.0.0",
+    "webp-loader": "^0.6.0"
   }
 }

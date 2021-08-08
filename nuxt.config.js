@@ -30,7 +30,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/vue-imgix.js', '~/plugins/jsonld', '~/plugins/vuelidate.js'],
+  plugins: ['~/plugins/jsonld', '~/plugins/vuelidate.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
@@ -42,7 +42,12 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/pwa',
+    '@aceforth/nuxt-optimized-images',
   ],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   tailwindcss: {
     configPath: 'tailwind.config.js',
