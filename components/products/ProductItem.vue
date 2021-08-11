@@ -10,19 +10,19 @@
               height="100%"
       />
     </NuxtLink>
-    <NuxtLink class="text-md text-black w-full text-black text-left flex-grow flex-1 block mt-2" :class="{ 'text-gray-500': gradient }" :to="product.url">{{ product.title }}</NuxtLink>
+    <NuxtLink class="text-md text-black w-full text-black text-left flex-grow flex-1 h-full block mt-2" :class="{ 'text-gray-500': gradient }" :to="product.url">{{ product.title }}</NuxtLink>
 
-    <div v-if="product.deliveryDate" class="text-left relative py-2 w-full">
-      <dt class="block md:flex items-center">
-        <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-        <p class="block text-green-500 ml-2 text-xs leading-6 font-medium">{{ product.deliveryDate }}</p>
-      </dt>
-    </div>
-    <div v-else class="relative py-2 text-left w-full">
-      <dt class="block md:flex items-center">
-        <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-        <p class="block text-green-500 ml-2 text-xs leading-6 font-medium">Voor {{ currentMaxDeliveryTime }} besteld = morgen in huis</p>
-      </dt>
+    <div v-if="!gradient" class="w-full">
+      <div v-if="product.deliveryDate" class="text-left relative py-2 w-full">
+        <dt class="block md:flex">
+          <p class="block text-green-500 text-xs leading-6 font-medium">{{ product.deliveryDate }}</p>
+        </dt>
+      </div>
+      <div v-else class="relative py-2 text-left w-full">
+        <dt class="block md:flex">
+          <p class="block text-green-500 text-xs leading-6 font-medium">Voor {{ currentMaxDeliveryTime }} besteld, morgen in huis</p>
+        </dt>
+      </div>
     </div>
 
     <div v-if="!gradient" class="flex items-center justify-space-between w-full">

@@ -107,7 +107,7 @@ export default Vue.extend({
   }
 
   b, strong {
-    color: #000 !important;
+    color: #000;
   }
 
   p {

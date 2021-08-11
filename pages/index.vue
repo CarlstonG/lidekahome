@@ -16,7 +16,7 @@
     <div class="container mx-auto py-10 px-6 md:px-0">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div class="flex items-center flex-col">
-          <img src="~assets/icons/WEBicons-01.webp" alt="Hoge kwaliteit" class="w-20" loading="lazy "/>
+          <img src="~assets/icons/WEBicons-01.webp" alt="Hoge kwaliteit" class="w-20" loading="lazy" />
           <h2 class="text-white text-center text-sm font-bold mb-2">Hoge Kwaliteit</h2>
 
           <p class="text-gray-500 text-center text-xs">
@@ -170,6 +170,75 @@
     </div>
 
     <div class="container mx-auto pt-16 py-32 pb-20 px-6 md:px-0">
+      <div class="text-xs text-gray-500 max-w-full prose">
+        <h1 style="color: #ccc;">
+          LED strips – sfeervolle verlichting voor binnen en buiten
+        </h1>
+        <p>
+          Verhoog de sfeer binnen en buiten met de LED strips van Lideka Home. LED verlichting is de nieuwe trend voor huishoudens, verkrijgbaar in diverse maten en daardoor multifunctioneel te gebruiken. Wat zijn de voordelen van LED strips en waar kan je deze stijlvolle lichtsnoeren in huis installeren?
+        </p>
+        <h2 style="color: #ccc;">
+          Wat zijn LED strips?
+        </h2>
+        <p>
+          LED strips, ook wel geschreven als ledstrips, zijn lichtsnoeren met lichtcomponenten. LED staat voor Light Emitting Diode, vrij vertaald als lichtgevende lampjes. Het kenmerkende element van een LED strip is de veelzijdigheid. Wist je bijvoorbeeld dat je binnen het kleurenpalet keuze hebt uit meer dan 16 miljoen kleuren en tinten? Het zorgt ervoor dat LED verlichting in vrijwel elke ruimte een sfeervolle toepassing kent. Voorbeelden zijn LED strips in de badkamer, slaapkamer of woonkamer. Je kunt de ledstrips tegen het plafond installeren, of juist langs de rand van de spiegel in de badkamer. Zelfs als vervanging van de bestaande verlichting in de ruimte!
+          Steeds meer mensen gebruiken LED strips buiten. En waarom ook niet? We kopen tegenwoordig de mooiste tuinsets om buiten te kunnen zitten, en sfeervolle verlichting hoort daar uiteraard bij. LED strips zijn eenvoudig te bevestigen langs de onderkant van het dak, en blijven dankzij een stevige plakrand altijd op hun plek hangen. Zo creëer je ook buiten een unieke sfeer, waarmee in de eigen tuin loungen nog leuker wordt.
+        </p>
+        <h2 style="color: #ccc;">
+          Hoe werkt LED?
+        </h2>
+        <p>
+          Zoals je misschien al wist is LED een energiezuinige manier om ruimtes van verlichting te voorzien. Binnen LED verlichting wordt 90 tot 95 procent van de energie gebruikt om licht te produceren. Bij de traditionele gloeilamp is dit hooguit 10 procent, en die besparing in energie merk je. De gloeilamp wordt voelbaar warmer dan LED lampen, waardoor onnodig veel energie verloren gaat. Een LED verlichting strip is derhalve een stuk efficiënter. Bij een LED strip worden de lampjes op evenredige afstand van elkaar op het lichtsnoer gesoldeerd, en zorgen daarmee over kleine en grote afstand voor een gelijke afgifte van licht. Sfeervol en efficiënt.
+          5V, 12V en 24V ledstrips
+        </p>
+        <p>
+          Overweeg je LED strips te kopen? Dan is het belangrijk om rekening te houden met het Voltage. De LED strips zijn beschikbaar in 5 en 12 volt. Langs de 5V ledstrips en 12V ledstrips loopt minder stroom, waardoor het over het algemeen als veiliger wordt ervaren. Voor de kortere ledstrips, zoals een LED strip van 3, 5 of 10 meter, is dit voltage ideaal. Voor de grotere lengtematen vanaf 10 meter is 12V de beste optie.
+        </p>
+        <h2 style="color: #ccc;">Voordelen LED strips</h2>
+        <p>
+        We hebben de voordelen van LED strips al kort laten doorschemeren. Het is een moderne vorm van verlichting voor binnen- en buitenshuis, alsmede voor bedrijfspanden. Bij Lideka Home willen we iedereen de kans geven om de voordelen van LED strips te ervaren. Wat zijn de belangrijkste voordelen van LED verlichting?
+        </p>
+        <ul>
+          <li>Energiezuinige vorm van verlichting</li>
+          <li>Verkrijgbaar in verschillende lengtematen</li>
+          <li>LED strips zijn eenvoudig zelf op maat te maken</li>
+          <li>Ruim kleurenpalet met miljoenen sprekende RGB kleuren en tinten</li>
+          <li>Waterproof (IP65) en daarmee ook buiten te gebruiken</li>
+          <li>Extra lange levensduur</li>
+          <li>Sfeervol wonen, geschikt voor iedere gelegenheid</li>
+        </ul>
+        <h2 style="color: #ccc;">
+          LED strips met lichteffecten
+        </h2>
+        <p>
+        Nog meer halen uit je LED strips? Maak kennis met onze verrassende lichteffecten, ideaal voor iedere gelegenheid. Heb je een feestje? Dan kies je voor de Strobe stand: flitsende lichten, waarmee je iedereen in beweging krijgt. Een lounge avond met vrienden of familie? Met onze Fade verlichting creëer je een unieke sfeer. Deze verlichting biedt wisselende kleuren met donkere intervallen. De Flash verlichting op onze LED strips wisselen doorlopend van kleur en dat geeft een supergaaf effect. Tot slot kun je nog kiezen voor Smooth LED verlichting; gebruikt voor speciale gelegenheden, feestjes of simpelweg voor de optimale lounge experience.
+        </p>
+        <h2 style="color: #ccc;">Waterdichte LED strips</h2>
+        <p>
+          Onze 5, 12 en 24V LED strips zijn waterdicht, en daardoor ook geschikt voor buiten. Lekker als je ’s avonds tot in de late uurtjes buiten wilt genieten van zomerse omstandigheden, of juist in de winter, wanneer je buiten bij de warme kachel wilt zitten. Met onze IP65 bescherming garanderen we dat de LED strips ook in een vochtige omgeving optimaal functioneren. Op zoek naar LED strips die waterdicht zijn? Maak je keuze uit het ruime assortiment LED strips bij Lideka Home.
+        </p>
+        <h2 style="color: #ccc;">
+          LED strips monteren: wat heb je nodig?
+        </h2>
+        <p>
+          Wil je LED strips gebruiken? Montage is erg eenvoudig! Je kunt de LED strip naar eigen inzicht op maat afknippen op de aangegeven markering. Ideaal wanneer je iets van lengte te kort komt. De plakrand is extra stevig en blijft na montage op een glad oppervlak goed zitten. Met een totaal van 50.000 branduren kan je nog jaren genieten van unieke LED verlichting in huis. Welke onderdelen komen nog meer kijken bij de montage van LED strips?
+        </p>
+        <h2 style="color: #ccc;">Smart app Lideka Home of afstandsbediening LED</h2>
+        <p>
+          Met de Smart app van Lideka Home ervaar je het gewenste gebruiksgemak. Je kunt hiermee de LED strip op afstand bedienen en kiezen uit het volledige kleurenpalet. Heerlijk vanaf je smartphone schakelen tussen alle kleuren en tinten; de fijnste manier om de sfeer in huis te bepalen. Wil je niet kiezen voor de Smart app? Dan gebruik je onze bijgeleverde LED strip afstandsbediening.
+        </p>
+        <h2 style="color: #ccc;">Voedingsadapter LED strip</h2>
+        <p>
+          Zoals we al eerder vertelden, heb je bij de aankoop van LED strips keuze uit 5V, 12V of 24V. Welke keuze je hierin maakt, is eveneens afhankelijk van de voedingsadapter. Aangezien de normale stroomvoorziening vanuit het stopcontact vaststaat op 230V, dien je deze voor de LED verlichting nog wel om te zetten.
+        </p>
+        <h2 style="color: #ccc;">Toepassing van Led-strips</h2>
+        <p>
+          Led verlichting is toepasbaar in het gehele huis en door de waterdichtheid van de strips kun je ze ook buiten toepassen. Verlicht jouw schuur met helder wit licht en creëer sfeer in de woonkamer met elegante kleuren. De keuze is aan jou!
+        </p>
+      </div>
+    </div>
+
+    <div class="container mx-auto pt-16 py-32 pb-20 px-6 md:px-0">
       <div class="flex justify-center space-x-6 md:order-2">
         <a href="https://www.facebook.com/lidekahome" target="_blank"
            class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
@@ -226,6 +295,39 @@ export default Vue.extend({
       collection: {},
       secondaryCollection: {},
     };
+  },
+
+  head() {
+    return {
+      title: 'Lideka Home - Kwaliteit Led-en Solar artikelen',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Lideka Home maakt het leven leuker, gezelliger en aantrekkelijker. Binnen de webshop vind je alle producten waarmee je die fijne sfeer meeneemt naar huis. Met unieke LED-verlichting creëer je zowel binnen als buiten een comfortabele omgeving; een plek waar je zelf graag bent, en waar je het liefst zit met de mensen om wie je het meest geeft.'
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Lideka Home'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Lideka Home maakt het leven leuker, gezelliger en aantrekkelijker. Binnen de webshop vind je alle producten waarmee je die fijne sfeer meeneemt naar huis. Met unieke LED-verlichting creëer je zowel binnen als buiten een comfortabele omgeving; een plek waar je zelf graag bent, en waar je het liefst zit met de mensen om wie je het meest geeft.'
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: require('../assets/visuals/LEDxSolar_homepage.webp')
+        },
+        {
+          hid: 'og:image:alt',
+          property: 'og:image:alt',
+          content: 'Lideka Home maakt het leven leuker, gezelliger en aantrekkelijker. Binnen de webshop vind je alle producten waarmee je die fijne sfeer meeneemt naar huis. Met unieke LED-verlichting creëer je zowel binnen als buiten een comfortabele omgeving; een plek waar je zelf graag bent, en waar je het liefst zit met de mensen om wie je het meest geeft.'
+        }
+      ]
+    }
   },
 
   methods: {

@@ -20,6 +20,7 @@ import FormField from "~/components/input/FormField.vue";
 import {email, required} from "vuelidate/lib/validators";
 import Vue from "vue";
 import {post} from "~/services/ApiService";
+import axios from "axios";
 
 export default Vue.extend({
   components: {FormField},
@@ -49,10 +50,11 @@ export default Vue.extend({
         this.$root.$emit('addNotification', 'Niet gelukt!', 'Vul alle velden correct in', 'error')
       } else {
         try {
-          await post('/contact', {
+          await post('/newsletter', {
             ...this.fields
           })
 
+          this.fields.email = '';
           this.$root.$emit('addNotification', 'Gelukt!', 'Je bent geabonneerd, bedankt!', '', 5000)
         } catch (err) {
           this.$root.$emit('addNotification', 'Oops.', 'Er is iets fout gegaan.', 'error')

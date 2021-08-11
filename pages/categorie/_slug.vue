@@ -52,12 +52,33 @@
           </div>
           <div class="col-span-12 md:col-span-9 lg:col-span-10 relative" style="min-height: 500px;">
             <Loading v-show="loading"/>
-            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-10 relative">
-              <div
-                v-for="product in collection.products"
-                v-bind:key="product.id">
-                <ProductItem :product="product"/>
-              </div>
+
+            <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
+              <NuxtLink :to="product.url" v-for="product in collection.products" :key="product.id" class="group text-sm flex flex-col">
+                <div class="w-full aspect-w-1 aspect-h-1 rounded-lg overflow-hidden bg-gray-100 group-hover:opacity-75">
+                  <nuxt-img class="w-full h-full object-center object-cover"
+                            provider="imgix"
+                            loading="lazy"
+                            :src="product.firstMediaSrc"
+                            :alt="product.title"
+                            width="100%"
+                            height="100%"
+                  />
+                </div>
+                <div class="flex-grow">
+                  <h3 class="mt-4 font-bold text-gray-900">
+                    {{ product.title }}
+                  </h3>
+                  <p class="text-gray-500 text-xs text-green-500">
+                    <span v-if="product.deliveryDate">{{ product.deliveryDate }}</span>
+                    <span v-else>Voor {{ currentMaxDeliveryTime }} besteld, morgen in huis</span>
+                  </p>
+                </div>
+
+                <p class="mt-2 font-medium text-gray-900">
+                  {{ formatMoney(product.firstVariant.price) }}
+                </p>
+              </NuxtLink>
             </div>
 
             <div v-if="collection.description" class="prose mt-10 mb-4 text-sm max-w-full" v-html="collection.description"></div>
@@ -81,7 +102,8 @@ import Filters from "../../components/filters/Filters";
 import _ from 'lodash';
 import FilterSidebar from "../../components/filters/FilterSidebar";
 import {getCollection} from "../../services/ApiService";
-import {safeGet} from "../../services/Helpers";
+import {safeGet, formatMoney} from "../../services/Helpers";
+import {mapGetters} from "vuex";
 
 export default Vue.extend({
   components: {
@@ -93,6 +115,7 @@ export default Vue.extend({
 
   data() {
     return {
+      formatMoney,
       sidebarIsOpen: false,
       selectedFilters: {},
       loading: false,
@@ -103,7 +126,6 @@ export default Vue.extend({
         RELEVANCE: 'Relevantie',
         TITLE: 'Titel',
       },
-
       slug: null,
       sortBy: 'PRICE',
       reverse: false,
@@ -118,6 +140,12 @@ export default Vue.extend({
     reverse() {
       this.fetch();
     }
+  },
+
+  computed: {
+    ...mapGetters('shop/shop', [
+      'currentMaxDeliveryTime'
+    ])
   },
 
   methods: {
@@ -172,7 +200,7 @@ export default Vue.extend({
         product_filters: {},
       },
     });
-    return {slug, collection}
+    return {slug, collection }
   },
 })
 </script>

@@ -11,7 +11,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Lideka Home',
+    title: 'Lideka Home - Kwaliteit Led-en Solar artikelen',
     htmlAttrs: {
       lang: 'nl'
     },
@@ -190,6 +190,16 @@ export default {
   serverMiddleware: [{
     path: '/',
     handler: async (req, res, next) => {
+      if (req.url.match("/shop")) {
+        res.writeHead(301, {Location: req.url.replace("/shop", "/")})
+        res.end();
+      }
+
+      if (req.url.match("/solar-fonteinen")) {
+        res.writeHead(301, {Location: req.url.replace("/solar-fonteinen", "/categorie/solar-tuinverlichting")})
+        res.end();
+      }
+
       if (req.url.match("/pages\/")) {
         res.writeHead(301, {Location: req.url.replace("pages/", "")})
         res.end();

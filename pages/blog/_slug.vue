@@ -2,7 +2,7 @@
   <div class="bg-white">
     <div v-if="!blog.id">
       <div class="container mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
-        <Loading v-show="loading"/>
+        <Loading v-show="loading" />
         <NotFound v-if="!loading" />
       </div>
     </div>

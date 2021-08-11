@@ -236,6 +236,12 @@ export default Vue.extend({
     ]),
   },
 
+  head() {
+    return {
+      title: 'Lideka Home - Winkelwagen'
+    }
+  },
+
   methods: {
     ...mapActions('shop/cart', [
       'updateLineItemQuantity',
