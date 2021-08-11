@@ -53,7 +53,7 @@
           <div class="col-span-12 md:col-span-9 lg:col-span-10 relative" style="min-height: 500px;">
             <Loading v-show="loading"/>
 
-            <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
+            <div class="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
               <NuxtLink :to="product.url" v-for="product in collection.products" :key="product.id" class="group text-sm flex flex-col">
                 <div class="w-full aspect-w-1 aspect-h-1 rounded-lg overflow-hidden bg-gray-100 group-hover:opacity-75">
                   <nuxt-img class="w-full h-full object-center object-cover"
