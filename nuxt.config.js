@@ -184,7 +184,8 @@ export default {
     shopifyAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
     shopifyGraphql: process.env.SHOPIFY_GRAPHQL,
     rocksolidApiKey: process.env.ROCKSOLID_API_KEY,
-    rocksolidApiUrl: process.env.ROCKSOLID_API_URL
+    rocksolidApiUrl: process.env.ROCKSOLID_API_URL,
+    shopifyCheckoutDomain: process.env.SHOPIFY_CHECKOUT_DOMAIN
   },
 
   serverMiddleware: [{
@@ -240,7 +241,7 @@ export default {
 
       routes.push({
         name: 'reset',
-        path: '/account/reset/:activationToken/:userId',
+        path: `/account/reset/:activationToken/:userId`,
         component: resolve(__dirname, 'pages/account/reset.vue')
       })
 

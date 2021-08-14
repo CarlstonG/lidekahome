@@ -78,7 +78,10 @@ export default Vue.extend({
     ]),
 
     async addToCart(variantId: string|null|number, quantity = 1) {
-      await this.addLine({variantId, quantity});
+      await this.addLine({
+        variantId: variantId,
+        quantity: quantity
+      });
       //@ts-ignore
       this.$root.$emit('addNotification', 'Toegevoegd', 'Product toegevoegd aan winkelmandje');
     },

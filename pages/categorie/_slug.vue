@@ -2,7 +2,7 @@
   <div class="bg-white">
     <div v-if="collection">
       <div class="w-full bg-black">
-        <div class="container mx-auto pt-2 md:pt-10 mb-2 md:pb-4 text-left px-4 md:px-2">
+        <div class="container mx-auto pt-2 md:pt-6 mb-2 md:pb-6 text-left px-4 md:px-2">
           <div class="block md:flex justify-space-between w-full">
             <h1 class="text-white mt-1 text-lg font-bold sm:text-xl lg:text-2xl flex-1">
               {{ collection.title }}
@@ -55,7 +55,7 @@
 
             <div class="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
               <NuxtLink :to="product.url" v-for="product in collection.products" :key="product.id" class="group text-sm flex flex-col">
-                <div class="w-full aspect-w-1 aspect-h-1 rounded-lg overflow-hidden bg-gray-100 group-hover:opacity-75">
+                <div class="w-full aspect-w-1 aspect-h-1 rounded-lg overflow-hidden bg-gray-100">
                   <nuxt-img class="w-full h-full object-center object-cover"
                             provider="imgix"
                             loading="lazy"
@@ -66,10 +66,23 @@
                   />
                 </div>
                 <div class="flex-grow">
-                  <h3 class="mt-4 font-bold text-gray-900">
+                  <p v-if="product.firstVariant && product.firstVariant.title !== 'Default Title'" class="text-gray-500 text-sm">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                      {{ product.firstVariant.title }}
+                    </span>
+                  </p>
+                  <h3 class="mt-4 font-bold text-base text-gray-900">
                     {{ product.title }}
                   </h3>
-                  <p class="text-gray-500 text-xs text-green-500">
+
+                  <div v-if="product.stars > 0" class="flex items-center">
+                    <svg v-for="star in product.stars" :key="star"  class="flex-shrink-0 h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    ({{ product.totalReviews }})
+                  </div>
+
+                  <p class="text-gray-500 text-md text-green-500 mt-2">
                     <span v-if="product.deliveryDate">{{ product.deliveryDate }}</span>
                     <span v-else>Voor {{ currentMaxDeliveryTime }} besteld, morgen in huis</span>
                   </p>
@@ -78,6 +91,10 @@
                 <p class="mt-2 font-medium text-gray-900">
                   {{ formatMoney(product.firstVariant.price) }}
                 </p>
+
+                <div class="mt-4">
+                  <a href="#" @click.prevent="addToCart(product.firstVariant.id, 1)" class="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200">In winkelwagen<span class="sr-only">, {{ product.title }}</span></a>
+                </div>
               </NuxtLink>
             </div>
 
@@ -103,7 +120,7 @@ import _ from 'lodash';
 import FilterSidebar from "../../components/filters/FilterSidebar";
 import {getCollection} from "../../services/ApiService";
 import {safeGet, formatMoney} from "../../services/Helpers";
-import {mapGetters} from "vuex";
+import {mapActions, mapGetters} from "vuex";
 
 export default Vue.extend({
   components: {
@@ -153,6 +170,10 @@ export default Vue.extend({
       this.sidebarIsOpen = false;
     },
 
+    ...mapActions('shop/cart', [
+      'addLine'
+    ]),
+
     setSelectedFilters(filters = {}) {
       this.selectedFilters = _.flattenDepth(_.map(filters, (item) => {
         return item;
@@ -163,6 +184,15 @@ export default Vue.extend({
       }
 
       this.fetch();
+    },
+
+    async addToCart(variantId, quantity = 1) {
+      await this.addLine({
+        variantId: variantId,
+        quantity: quantity
+      });
+      //@ts-ignore
+      this.$root.$emit('addNotification', 'Toegevoegd', 'Product toegevoegd aan winkelmandje');
     },
 
     async fetch() {

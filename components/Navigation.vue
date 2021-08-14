@@ -97,15 +97,16 @@
                 </svg>
                 <span class="text-sm ml-2 hidden md:block">{{ customer.firstName }}</span>
               </NuxtLink>
-              <NuxtLink v-else to="/account/login"
-                        class="bg-black p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
+              <a v-else
+                 :href="`${shopifyCheckoutDomain}/account`"
+                 class="bg-black p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                 </svg>
                 <span class="hidden md:block text-sm ml-2">Inloggen</span>
-              </NuxtLink>
+              </a>
 
               <NuxtLink to="/winkelwagen"
                         class="relative flex justify-center items-center bg-black p-1 ml-3 rounded-full text-gray-400 hover:text-white focus:outline-none">
@@ -187,6 +188,10 @@ export default Vue.extend({
   },
 
   computed: {
+    shopifyCheckoutDomain() {
+      return `https://${process.env.shopifyCheckoutDomain}`
+    },
+
     ...mapGetters('shop/cart', [
       'count'
     ]),

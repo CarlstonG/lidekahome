@@ -54,7 +54,7 @@ export default Vue.extend({
     },
     type: {
       type: String,
-      required: true
+      default: 'success'
     },
     duration: {
       type: Number,

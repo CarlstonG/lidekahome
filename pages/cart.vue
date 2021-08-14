@@ -42,18 +42,18 @@
                                         d="M6 18L18 6M6 6l12 12"></path>
                                 </svg>
                               </a>
-                              <NuxtLink v-if="lineItem.variant" :to="`/products/${lineItem.variant.product.handle}`">
+                              <NuxtLink v-if="lineItem.variant" :to="`/products/${lineItem.variant.productHandle}`">
                                 <img
                                   v-if="lineItem.variant.image"
                                   class="h-20 w-20"
-                                  :src="lineItem.variant.image.src"
+                                  :src="lineItem.variant.image"
                                   :alt="lineItem.title">
                               </NuxtLink>
                             </div>
                             <div class="ml-4 flex-1">
                               <div class="text-sm font-medium text-gray-900">
                                 <NuxtLink v-if="lineItem.variant" class="font-bold text-lg"
-                                          :to="`/products/${lineItem.variant.product.handle}`">
+                                          :to="`/products/${lineItem.variant.productHandle}`">
                                   {{ lineItem.title }}
                                 </NuxtLink>
 
@@ -62,7 +62,7 @@
                                     <span
                                       class="relative z-0 inline-flex shadow-sm rounded-md">
                                       <button type="button"
-                                              @click="subQuantity(lineItem.quantity, lineItem.id)"
+                                              @click="subQuantity(lineItem.quantity, lineItem.id, lineItem.variant.id)"
                                               class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
                                         <span class="sr-only">Previous</span>
                                         <!-- Heroicon name: solid/chevron-left -->
@@ -78,10 +78,10 @@
                                         <input type="number" :value="lineItem.quantity"
                                                min="0"
                                                name="updates[]"
-                                               @blur="updateQuantity($event, lineItem.id)"
+                                               @blur="updateQuantity($event, lineItem.id, lineItem.variant.id)"
                                                class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block text-center w-16 sm:text-sm border-gray-300"/>
                                       <button type="button"
-                                              @click="addQuantity(lineItem.quantity, lineItem.id)"
+                                              @click="addQuantity(lineItem.quantity, lineItem.id, lineItem.variant.id)"
                                               class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
                                         <span class="sr-only">Next</span>
                                         <!-- Heroicon name: solid/chevron-right -->
@@ -130,9 +130,9 @@
                         <td class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
                           Totaal
                         </td>
-                        <td v-if="checkout.subtotalPrice"
+                        <td v-if="checkout.subTotalPrice"
                             class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
-                          {{ formatMoney(checkout.subtotalPrice) }} incl. btw
+                          {{ formatMoney(checkout.subTotalPrice.amount) }} incl. btw
                         </td>
                       </tr>
                       </tbody>
@@ -158,8 +158,7 @@
                   <div class="flex items-center justify-start px-6 lg:px-0">
                     <a
                       v-if="checkout"
-                      @click="onCheckoutButton"
-                      :href="checkout.webUrl"
+                      @click.prevent="onCheckoutButton"
                       class="w-60 disabled:opacity-50 flex justify-center py-3 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                     >
                       Naar betalen
@@ -222,7 +221,7 @@ export default Vue.extend({
       products: [],
       loading: false,
       terms: false,
-      webUrl: '#',
+      checkoutUrl: '#',
     };
   },
 
@@ -256,44 +255,40 @@ export default Vue.extend({
         }
       }
 
-      if (this.customer) {
-        window.location.href = `${this.checkout.webUrl}
-      &checkout[shipping_address][last_name]=${this.customer.lastName}
-      &checkout[shipping_address][first_name]=${this.customer.firstName}
-      &checkout[email]=${this.customer.email}`
-        e.preventDefault();
-        return;
-      }
+      window.location.href = this.checkout.checkoutUrl.replace(process.env.shopifyDomain, process.env.shopifyCheckoutDomain);
     },
 
-    async addQuantity(quantity: number, id: number) {
+    async addQuantity(quantity: number, id: string|number, variantId: string) {
       this.loading = true;
       await this.updateLineItemQuantity({
         quantity: ++quantity,
-        id: id
+        lineItemId: id,
+        variantId: variantId,
       });
       this.loading = false;
     },
 
-    async subQuantity(quantity: number, id: number) {
+    async subQuantity(quantity: number, id: string|number, variantId: string) {
       this.loading = true;
       await this.updateLineItemQuantity({
         quantity: --quantity,
-        id: id
+        lineItemId: id,
+        variantId: variantId,
       });
       this.loading = false;
     },
 
-    async updateQuantity(e: any, id: number) {
+    async updateQuantity(e: any, id: string|number, variantId: string) {
       this.loading = true;
       await this.updateLineItemQuantity({
         quantity: parseInt(e.target.value) ?? 0,
-        id: id
+        lineItemId: id,
+        variantId: variantId,
       });
       this.loading = false;
     },
 
-    async removeFromCart(id: number) {
+    async removeFromCart(id: string|number) {
       this.loading = true;
       await this.removeLineItem(id);
       this.loading = false;

@@ -1,7 +1,7 @@
 <template>
-  <div class="space-y-4">
-    <div v-for="filter in filters" v-if="filter.type === 'LIST'" :key="filter.id">
-      <div class="font-bold mb-2 text-sm">{{ filter.label }}</div>
+  <div>
+    <div v-for="filter in filters" v-if="filter.type === 'LIST'" :key="filter.id" class="mb-10">
+      <div class="mb-3 text-md text-gray-700">{{ filter.label }}</div>
       <List :component-key="componentKey" v-if="filter.type === 'LIST'" :values="filter.values" :filter-key="filter.id" @params="onParams"
             :is-boolean="filter.id === 'filter.v.availability'"
       />

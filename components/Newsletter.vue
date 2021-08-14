@@ -54,6 +54,7 @@ export default Vue.extend({
             ...this.fields
           })
 
+          this.$v.$reset();
           this.fields.email = '';
           this.$root.$emit('addNotification', 'Gelukt!', 'Je bent geabonneerd, bedankt!', '', 5000)
         } catch (err) {

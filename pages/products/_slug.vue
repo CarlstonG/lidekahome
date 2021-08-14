@@ -10,8 +10,8 @@
       <Breadcrumbs class="hidden md:block" :path="[ { title: product.collection.title, path: product.collection.url } ]"
                    :title="product.title"/>
       <div class="container mx-auto pb-20 pt-6 md:pt-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 mx-6 lg:mx-0 relative">
-          <div class="px-0 md:px-6 mb-8 md:mb-0">
+        <div class="grid grid-cols-1 md:grid-cols-12 mx-6 lg:mx-0 relative">
+          <div class="px-0 md:px-6 mb-8 md:mb-0 col-span-1 md:col-span-5">
 
             <FsLightbox
               v-show="productImages.length > 0"
@@ -69,11 +69,19 @@
               </div>
             </div>
           </div>
-          <div class="lg:px-4">
-            <h1 class="font-extrabold text-4xl mb-2">{{ product.title }}</h1>
+          <div class="lg:px-4 col-span-1 md:col-span-7">
+            <h1 class="font-extrabold text-4xl">{{ product.title }}</h1>
 
-            <h2 v-if="product.price" class="text-2xl pb-6">&euro;{{ product.price }}</h2>
+            <div v-if="product.stars > 0" class="flex items-center">
+              <svg v-for="star in product.stars" :key="star"  class="flex-shrink-0 h-6 w-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              ({{ product.totalReviews }})
+            </div>
 
+            <h2 v-if="product.price" class="text-xl mb-6 mt-2 bg-red-600 inline-block text-white rounded-md py-2 px-4">
+              {{ formatMoney(product.price) }}
+            </h2>
 
             <div v-if="product.related">
               <span class="text-sm text-gray-500">Aantal meters:</span>
@@ -106,8 +114,7 @@
                   class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
                   op voorraad
                 </div>
-                <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">Voor 23:59 besteld = morgen
-                  verzonden.</p>
+                <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">Voor 23:59 besteld, morgen in huis</p>
               </dt>
             </div>
 
@@ -141,13 +148,21 @@
 
       <div class="container mx-auto px-6 lg:px-0 pb-10 pt-6">
         <div class="grid grid-cols-1 md:grid-cols-2">
-          <div class="px-0 md:px-6 mb-6">
+          <div class="px-0 md:px-6 mb-6 ">
             <h2 class="font-extrabold text-3xl mb-4">Productbeschrijving</h2>
-            <div class="product-des" v-html="product.description"></div>
-          </div>
-          <div class="px-0 md:px-6 mb-6">
+            <div class="relative">
+              <div class="product-des" v-bind:class="{ 'fadeHidden': !expandProductDescription }" v-html="productDescription"></div>
+              <div v-show="!expandProductDescription" class="w-full flex justify-center absolute bottom-6 z-10 left-0 right-0">
+                <button @click.prevent="expandProductDescription = true" type="button" class="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                  Toon meer
+                </button>
+              </div>
+            </div>
             <h2 class="font-extrabold text-3xl mb-4">Specificaties</h2>
             <div class="product-specs" v-html="product.specifications"></div>
+          </div>
+          <div v-if="product" class="px-0 md:px-6 mb-6">
+            <Reviews :product="product" />
           </div>
         </div>
       </div>
@@ -169,9 +184,12 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import FsLightbox from "fslightbox-vue";
 import _ from 'lodash';
 import {getProduct} from "../../services/ApiService";
+import { formatMoney } from "../../services/Helpers";
+import Reviews from "../../components/reviews/Reviews";
+import Stars from "../../components/reviews/Stars";
 
 export default Vue.extend({
-  components: {Breadcrumbs, NotFound, SellingPoints, Loading, ProductItem, FsLightbox},
+  components: {Stars, Reviews, Breadcrumbs, NotFound, SellingPoints, Loading, ProductItem, FsLightbox},
 
   head() {
     return {
@@ -206,6 +224,12 @@ export default Vue.extend({
     }
   },
 
+  computed: {
+    productDescription() {
+      return this.product.description;
+    }
+  },
+
   jsonld() {
     return {
       '@context': 'https://schema.org',
@@ -219,18 +243,20 @@ export default Vue.extend({
 
   setup() {
     return {
-      _
+      _,
     };
   },
 
   data() {
     return {
+      formatMoney,
       showLightbox: false,
       loading: false,
       product: {},
       slug: null,
       quantity: 1,
       productImages: [],
+      expandProductDescription: false,
     };
   },
 
@@ -240,7 +266,11 @@ export default Vue.extend({
     ]),
 
     async addToCart(variantId, quantity = 1) {
-      await this.addLine({variantId, quantity});
+      await this.addLine({
+        variantId: variantId,
+        quantity: quantity
+      });
+
       //@ts-ignore
       this.$root.$emit('addNotification', 'Toegevoegd', 'Product toegevoegd aan winkelmandje');
 
@@ -331,4 +361,26 @@ export default Vue.extend({
     opacity: 1;
   }
 }
+
+.fadeHidden {
+  position: relative;
+  max-height: 500px;
+  overflow: hidden;
+
+  &:after {
+    background: transparent;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    display: block;
+    opacity: 1;
+    content: ' ';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
 </style>
+
+

@@ -11,10 +11,17 @@ export const formatMoney = (amount, decimals = 2, minDecimals = 2, currency = 'E
     minimumFractionDigits: minDecimals,
     maximumFractionDigits: decimals,
     currency,
-  })
-    .format(amount)
-    .replace(/([,.])00$/, '$1-');
+  }).format(amount)
+    .replace(/([,.])00$/, '$1-').replace('€', '').trim();
 };
+
+export const nl2br = (str, is_xhtml) => {
+  if (typeof str === 'undefined' || str === null) {
+    return '';
+  }
+  const breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';
+  return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
+}
 
 export const formatDate = (date) => {
   return moment(date).format('D MMMM, YYYY');

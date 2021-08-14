@@ -80,6 +80,11 @@ export const getCustomer = async (accessToken: string) => {
   return data;
 };
 
+export const getAccessTokenByWebToken = async (variables: {}) => {
+  const {data} = await post(`/customer/getAccessTokenByWebToken`, variables) as { data: {} };
+  return data;
+};
+
 export const getAccessToken = async (variables: {}) => {
   const {data} = await post(`/customer/getAccessToken`, variables) as { data: {} };
   return data;
@@ -120,7 +125,54 @@ export const connectCustomerToCheckout = async (variables: {}) => {
   return data;
 };
 
+export const createCheckout = async() => {
+  const { data } = await post(`/checkout`, {}) as { data: {} };
+  return data;
+}
+
+export const getCheckout = async(checkoutId: string) => {
+  const { data } = await get(`/checkout/${checkoutId}`, {}) as { data: {} };
+  return data;
+}
+
+export const addLineItem = async(checkoutId: string, variantId: string, quantity: number) => {
+  const { data } = await post(`/checkout/addItem`, {
+    checkoutId: checkoutId,
+    variantId: variantId,
+    quantity: quantity,
+  }) as { data: {} };
+  return data;
+}
+
+export const updateLineItem = async(checkoutId: string, lineItemId: string, variantId: string, quantity: number) => {
+  const { data } = await post(`/checkout/updateItem`, {
+    lineItemId: lineItemId,
+    checkoutId: checkoutId,
+    variantId: variantId,
+    quantity: quantity,
+  }) as { data: {} };
+  return data;
+}
+
+export const removeLineItem = async(checkoutId: string, lineItemId: string) => {
+  const { data } = await post(`/checkout/removeItem`, {
+    checkoutId: checkoutId,
+    lineItemId: lineItemId,
+  }) as { data: {} };
+  return data;
+}
+
 export const getShop = async () => {
   const { data } = await get(`/shop`) as { data: {} };
+  return data;
+}
+
+export const createReview = async (variables: {}) => {
+  const { data } = await post('/reviews', variables) as { data: {} };
+  return data;
+}
+
+export const getReviews = async (productId: string) => {
+  const { data } = await get(`/reviews/${productId}`) as { data: {} };
   return data;
 }
