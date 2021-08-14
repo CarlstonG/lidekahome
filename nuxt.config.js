@@ -201,6 +201,31 @@ export default {
         res.end();
       }
 
+      if (req.url.startsWith('/account/login')) {
+        res.writeHead(301, {Location: (`https://${process.env.SHOPIFY_CHECKOUT_DOMAIN}/account/login${(req.url.replace('/account/login', ''))}`) });
+        res.end();
+      }
+
+      if (req.url.startsWith('/account/register')) {
+        res.writeHead(301, {Location: (`https://${process.env.SHOPIFY_CHECKOUT_DOMAIN}/account/register${(req.url.replace('/account/register', ''))}`) });
+        res.end();
+      }
+
+      if (req.url.startsWith('/account/activate')) {
+        res.writeHead(301, {Location: (`https://${process.env.SHOPIFY_CHECKOUT_DOMAIN}/account/activate${(req.url.replace('/account/activate', ''))}`) });
+        res.end();
+      }
+
+      if (req.url.startsWith('/account/logout')) {
+        res.writeHead(301, {Location: (`https://${process.env.SHOPIFY_CHECKOUT_DOMAIN}/account/logout${(req.url.replace('/account/logout', ''))}`) });
+        res.end();
+      }
+
+      if (req.url.startsWith('/account/reset')) {
+        res.writeHead(301, {Location: (`https://${process.env.SHOPIFY_CHECKOUT_DOMAIN}/account/reset${(req.url.replace('/account/reset', ''))}`) });
+        res.end();
+      }
+
       if (req.url.match("/pages\/")) {
         res.writeHead(301, {Location: req.url.replace("pages/", "")})
         res.end();
