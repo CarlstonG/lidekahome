@@ -49,7 +49,7 @@
           <p class="mt-1 text-sm text-gray-600">Als je dit product hebt gekocht, laat een recensie achter voor andere klanten!</p>
 
           <a href="#" v-show="!showReviewForm" @click.prevent="showReviewForm = true" class="mt-6 inline-flex w-full bg-white border border-gray-300 rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-50 sm:w-auto lg:w-full">Schrijf een review</a>
-          <ReviewForm v-if="showReviewForm" class="mt-4" :product="product" @close="showReviewForm = false" />
+          <ReviewForm v-if="showReviewForm" class="mt-4" :product="product" @close="showReviewForm = false; fetchReviews()" />
         </div>
       </div>
 
@@ -102,12 +102,15 @@ export default Vue.extend({
     product: {
       type: Object,
       required: true
+    },
+    reviews: {
+      type: Array,
+      default: [],
     }
   },
 
   data() {
     return {
-      reviews: [],
       reviewByStars: {},
       showReviewForm: false,
       stars: [5,4,3,2,1]
@@ -116,8 +119,6 @@ export default Vue.extend({
 
   methods: {
     async fetchReviews() {
-      const data = await getReviews(safeGet(this.product, 'id'));
-      this.reviews = safeGet(data, 'reviews', []);
       this.reviewByStars = _.groupBy(this.reviews, 'stars');
     }
   },

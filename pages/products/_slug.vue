@@ -162,7 +162,7 @@
             <div class="product-specs" v-html="product.specifications"></div>
           </div>
           <div v-if="product" class="px-0 md:px-6 mb-6">
-            <Reviews :product="product" />
+            <Reviews v-if="reviews.reviews" :product="product" :reviews="reviews.reviews" />
           </div>
         </div>
       </div>
@@ -183,7 +183,7 @@ import NotFound from "~/components/NotFound";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import FsLightbox from "fslightbox-vue";
 import _ from 'lodash';
-import {getProduct} from "../../services/ApiService";
+import {getProduct, getReviews} from "../../services/ApiService";
 import { formatMoney } from "../../services/Helpers";
 import Reviews from "../../components/reviews/Reviews";
 import Stars from "../../components/reviews/Stars";
@@ -213,7 +213,7 @@ export default Vue.extend({
         {
           hid: 'og:image',
           property: 'og:image',
-          content: safeGet(this.product, 'product.firstMediaSrc')
+          content: safeGet(this.product, 'product.altMediaSrc')
         },
         {
           hid: 'og:image:alt',
@@ -231,14 +231,24 @@ export default Vue.extend({
   },
 
   jsonld() {
-    return {
-      '@context': 'https://schema.org',
-      '@type': 'Product',
-      name: safeGet(this.product, 'title'),
-      brand: safeGet(this.product, 'brand'),
-      description: safeGet(this.product, 'description'),
-      image: safeGet(this.product, 'firstMediaSrc')
-    };
+    return [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        sku: safeGet(this.product, 'sku'),
+        name: safeGet(this.product, 'title'),
+        brand: safeGet(this.product, 'brand'),
+        description: safeGet(this.product, 'description'),
+        image: safeGet(this.product, 'altMediaSrc'),
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: safeGet(this.product, 'stars', 0),
+          bestRating: "5",
+          ratingCount: safeGet(this.product, 'totalReviews', 0)
+        },
+      },
+      ...safeGet(this.reviews, 'ldata', {})
+    ]
   },
 
   setup() {
@@ -334,8 +344,9 @@ export default Vue.extend({
 
   async asyncData(ctx) {
     const slug = ctx.params.slug;
-
     const product = await getProduct(slug);
+
+    const reviews = await getReviews(safeGet(product, 'id'));
 
     const x = _.map(product.media, (item) => {
       return item.fullSrc !== null ? item.fullSrc : false
@@ -345,7 +356,7 @@ export default Vue.extend({
       return !item;
     });
 
-    return {product, slug, productImages }
+    return {product, reviews, slug, productImages }
   },
 })
 </script>
