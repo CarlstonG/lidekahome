@@ -206,6 +206,11 @@ export default {
         res.end();
       }
 
+      if (req.url.match('/checkouts')) {
+        res.writeHead(301, {Location: (`https://${process.env.SHOPIFY_CHECKOUT_DOMAIN}${req.url}`) });
+        res.end();
+      }
+
       if (req.url.startsWith('/account/register')) {
         res.writeHead(301, {Location: (`https://${process.env.SHOPIFY_CHECKOUT_DOMAIN}/account/register${(req.url.replace('/account/register', ''))}`) });
         res.end();
