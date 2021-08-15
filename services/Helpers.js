@@ -41,3 +41,16 @@ export const truncateString = (str, max = 10) => {
 export const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+export const isVideo = (filename) => {
+  var ext = getExtension(filename);
+  switch (ext.toLowerCase()) {
+    case 'm4v':
+    case 'avi':
+    case 'mpg':
+    case 'mp4':
+      // etc
+      return true;
+  }
+  return false;
+}

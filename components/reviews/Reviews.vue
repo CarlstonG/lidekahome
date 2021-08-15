@@ -81,7 +81,9 @@
               </div>
 
               <div v-if="review.photos.length > 0" class="mt-4 flex space-x-4">
-                <img v-for="photo in review.photos" :key="photo" :src="photo" alt="Photo for review" class="h-20 w-20 rounded-lg bg-center bg-cover">
+                <a v-for="photo in review.photos" :href="photo" :key="photo" target="_blank">
+                  <img :src="photo" loading="lazy" alt="Photo for review" class="h-20 w-20 rounded-lg bg-center bg-cover">
+                </a>
               </div>
             </div>
 
@@ -97,7 +99,7 @@
 import Vue from "vue";
 import ReviewForm from "~/components/reviews/ReviewForm.vue";
 import {getReviews} from "~/services/ApiService";
-import {safeGet, nl2br} from "~/services/Helpers";
+import {safeGet, nl2br, isVideo} from "~/services/Helpers";
 import _ from 'lodash';
 
 export default Vue.extend({
@@ -117,14 +119,15 @@ export default Vue.extend({
     return {
       reviewByStars: {},
       showReviewForm: false,
-      stars: [5,4,3,2,1]
+      stars: [5,4,3,2,1],
+      isVideo,
     }
   },
 
   methods: {
     async fetchReviews() {
       this.reviewByStars = _.groupBy(this.reviews, 'stars');
-    }
+    },
   },
 
   created() {
