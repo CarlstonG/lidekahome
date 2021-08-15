@@ -17,7 +17,7 @@
             </div>
             <p class="sr-only">{{ product.stars }} out of 5 stars</p>
           </div>
-          <p class="ml-2 text-sm text-gray-900">Gebaseerd op {{ product.totalReviews }} reviews</p>
+          <p class="ml-2 text-sm text-gray-900">Gebaseerd op {{ product.totalReviews }} {{ product.totalReviews == 1 ? 'review' : 'reviews' }}</p>
         </div>
 
         <div class="mt-6">
@@ -78,6 +78,10 @@
                 <p class="text-sm text-gray-600">
                   {{ review.description }}
                 </p>
+              </div>
+
+              <div v-if="review.photos.length > 0" class="mt-4 flex space-x-4">
+                <img v-for="photo in review.photos" :key="photo" :src="photo" alt="Photo for review" class="h-20 w-20 rounded-lg bg-center bg-cover">
               </div>
             </div>
 

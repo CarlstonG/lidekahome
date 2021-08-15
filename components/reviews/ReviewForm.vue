@@ -23,6 +23,7 @@
         <FormField :hide-label="true" :errors="$v.fields.email" :model-value.sync="fields.email" name="E-mailadres" input-type="text" />
         <FormField :hide-label="true" :errors="$v.fields.title" :model-value.sync="fields.title" name="Titel" input-type="text" />
         <FormField :hide-label="true" :errors="$v.fields.description" :model-value.sync="fields.description" name="Beschrijving" input-type="textarea" />
+        <Upload :model-value.sync="fields.uploads" name="Foto's" />
 
         <div>
           <button type="submit"
@@ -38,12 +39,13 @@
 <script lang="ts">
 import Vue from "vue";
 import FormField from "~/components/input/FormField.vue";
+import Upload from "~/components/input/Upload.vue";
 import {email, minLength, required} from "vuelidate/lib/validators";
 import {createReview} from "~/services/ApiService";
 import {safeGet} from "~/services/Helpers";
 
 export default Vue.extend({
-  components: {FormField},
+  components: {FormField, Upload},
   props: {
     product: {
       type: Object,
@@ -87,11 +89,27 @@ export default Vue.extend({
         this.$root.$emit('addNotification', 'Niet gelukt!', 'Vul alle velden correct in', 'error')
       } else {
         try {
-          await createReview({
-            shopify_product_id: safeGet(this.product, 'id'),
-            anonymous: false,
-            ...this.fields
-          });
+          const formData = new FormData();
+          formData.append('shopify_product_id', safeGet(this.product, 'id'));
+          formData.append('anonymous', '0');
+
+          for (const [key, value] of Object.entries(this.fields)) {
+            if (key !== 'uploads') {
+              formData.append(key, <string>value);
+            } else {
+              const files = <FileList><unknown>value;
+              
+              for (let i = 0; i < files.length; i++) {
+                const file = files.item(i);
+                
+                if (file) {
+                  formData.append('photos', file);
+                }
+              }
+            }
+          }
+
+          await createReview(formData);
 
           this.$emit('close');
 
@@ -114,6 +132,7 @@ export default Vue.extend({
         email: '',
         title: '',
         description: '',
+        uploads: [],
       },
       values: [
         {

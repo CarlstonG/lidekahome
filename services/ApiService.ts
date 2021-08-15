@@ -10,9 +10,11 @@ export const client = axios.create({
   }
 })
 
-export const post = async (url: string, data: {}) => {
+export const post = async (url: string, data: {}|FormData, headers: {} = {}) => {
   return await new Promise((resolve, reject) => {
-    client.post(url, data).then((response) => {
+    client.post(url, data, {
+      headers,
+    }).then((response) => {
       return resolve(response);
     }).catch((err) => {
       return reject(err);
@@ -167,8 +169,10 @@ export const getShop = async () => {
   return data;
 }
 
-export const createReview = async (variables: {}) => {
-  const { data } = await post('/reviews', variables) as { data: {} };
+export const createReview = async (variables: FormData) => {
+  const { data } = await post('/reviews', variables, {
+    'Content-Type': 'multipart/form-data',
+  }) as { data: {} };
   return data;
 }
 
