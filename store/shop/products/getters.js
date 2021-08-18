@@ -15,7 +15,6 @@ const getters = {
     return state.collections.filter((item) => {
       return [
         'led-strips',
-        'solar-powerbank',
         'solar-tuinverlichting',
       ].indexOf(item.handle) > -1
     })

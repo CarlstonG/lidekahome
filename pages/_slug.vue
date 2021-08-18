@@ -47,22 +47,22 @@ export default Vue.extend({
 
   head() {
     return {
-      title: safeGet(this.page, 'seo.title'),
+      title: safeGet(this.page, 'seo.title', safeGet(this.page, 'title')),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: safeGet(this.page, 'seo.description'),
+          content: safeGet(this.page, 'seo.description', safeGet(this.page, 'body')),
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: safeGet(this.page, 'seo.title')
+          content: safeGet(this.page, 'seo.title', safeGet(this.page, 'title'))
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: safeGet(this.page, 'seo.description')
+          content: safeGet(this.page, 'seo.description', safeGet(this.page, 'body'))
         },
       ]
     }

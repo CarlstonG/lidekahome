@@ -72,14 +72,14 @@
           <div class="lg:px-4 col-span-1 md:col-span-7">
             <h1 class="font-extrabold text-4xl">{{ product.title }}</h1>
 
-            <div v-if="product.stars > 0" class="flex items-center">
+            <a href="#reviews" v-if="product.stars > 0" class="flex items-center">
               <svg v-for="star in product.stars" :key="star"  class="flex-shrink-0 h-6 w-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
               ({{ product.totalReviews }})
-            </div>
+            </a>
 
-            <h2 v-if="product.price" class="text-xl mb-6 mt-2 bg-red-600 inline-block text-white rounded-md py-2 px-4">
+            <h2 v-if="product.price" class="text-2xl mb-6 mt-2 inline-block font-bold text-red-500 rounded-md">
               {{ formatMoney(product.price) }}
             </h2>
 
@@ -161,7 +161,7 @@
             <h2 class="font-extrabold text-3xl mb-4">Specificaties</h2>
             <div class="product-specs" v-html="product.specifications"></div>
           </div>
-          <div v-if="product" class="px-0 md:px-6 mb-6">
+          <div v-if="product" class="px-0 md:px-6 mb-6" id="reviews">
             <Reviews v-if="reviews.reviews" :product="product" :reviews="reviews.reviews" />
           </div>
         </div>
