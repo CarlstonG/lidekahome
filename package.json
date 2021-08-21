@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
+    "@fancyapps/ui": "^4.0.0-beta.2",
     "@luxdamore/nuxt-prune-html": "^2.0.6",
     "@nuxtjs/component-cache": "^1.1.6",
     "@nuxtjs/gtm": "^2.4.0",

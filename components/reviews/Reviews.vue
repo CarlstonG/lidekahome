@@ -81,7 +81,7 @@
               </div>
 
               <div v-if="review.photos.length > 0" class="mt-4 flex space-x-4">
-                <a v-for="photo in review.photos" :href="photo" :key="photo" target="_blank">
+                <a v-for="photo in review.photos" :data-fancybox="review.id" :href="photo" :key="photo">
                   <img :src="photo" loading="lazy" alt="Photo for review" class="h-20 w-20 rounded-lg bg-center bg-cover">
                 </a>
               </div>
@@ -95,12 +95,14 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import Vue from "vue";
 import ReviewForm from "~/components/reviews/ReviewForm.vue";
 import {getReviews} from "~/services/ApiService";
 import {safeGet, nl2br, isVideo} from "~/services/Helpers";
 import _ from 'lodash';
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox.css";
 
 export default Vue.extend({
   components: {ReviewForm},

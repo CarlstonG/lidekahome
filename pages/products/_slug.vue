@@ -12,30 +12,27 @@
       <div class="container mx-auto pb-20 pt-6 md:pt-10">
         <div class="grid grid-cols-1 md:grid-cols-12 mx-6 lg:mx-0 relative">
           <div class="px-0 md:px-6 mb-8 md:mb-0 col-span-1 md:col-span-5">
-
-            <FsLightbox
-              v-show="productImages.length > 0"
-              :toggler="showLightbox"
-              :sources="productImages"
-            />
-
             <div
-              style="--swiper-navigation-color: #000; --swiper-pagination-color: #000; --swiper-navigation-size: 20px"
+              style="--swiper-navigation-color: #2563eb; --swiper-pagination-color: #2563eb; --swiper-navigation-size: 40px"
               class="swiper-container mySwiper2 mb-2">
               <div class="swiper-wrapper items-center">
                 <div
                   v-for="media in product.media"
                   class="swiper-slide flex cursor-pointer justify-center items-center h-full w-full rounded-lg">
-                  <a @click.prevent="showLightbox = !showLightbox">
-                    <nuxt-img v-if="media.type === 'IMAGE'" class="rounded-lg swiper-lazy"
-                            loading="lazy"
-                            provider="imgix"
-                            width="800px"
-                            height="800px"
-                            :src="media.src"
-                            :alt="media.alt"
+
+                  <a v-if="media.type === 'IMAGE'" data-fancybox="gallery" :data-src="`https://cdn.shopify.com${media.src}`">
+                    <nuxt-img class="rounded-lg swiper-lazy"
+                          loading="lazy"
+                          provider="imgix"
+                          width="800px"
+                          height="800px"
+                          :src="media.src"
+                          :alt="media.alt"
                     />
-                    <video v-else-if="media.type === 'VIDEO'" width="100%" height="480px" controls
+                    <div class="swiper-lazy-preloader"></div>
+                  </a>
+                  <a v-if="media.type === 'VIDEO'" data-fancybox="gallery" data-type="video" :data-src="`${media.sources[Object.keys(media.sources)[1]].url}`">
+                    <video width="100%" height="480px" controls
                            playsinline
                            autoplay
                            muted
@@ -44,14 +41,16 @@
                       <source v-for="source in media.sources" :src="source.url" :type="source.mimeType">
                       Your browser does not support the video tag.
                     </video>
-                    <div v-if="media.type === 'IMAGE'" class="swiper-lazy-preloader"></div>
                   </a>
                 </div>
               </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-            <div thumbsSlider class="swiper-container mySwiper">
+            <div thumbsSlider
+                 class="swiper-container mySwiper"
+                 style="--swiper-navigation-color: #2563eb; --swiper-pagination-color: #2563eb; --swiper-navigation-size: 40px"
+            >
               <div class="swiper-wrapper items-center relative">
                 <div
                   v-for="media in product.media"
@@ -67,6 +66,8 @@
                   <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
           <div class="lg:px-4 col-span-1 md:col-span-7">
@@ -181,7 +182,8 @@ import SellingPoints from "~/components/SellingPoints";
 import {safeGet} from "~/services/Helpers";
 import NotFound from "~/components/NotFound";
 import Breadcrumbs from "../../components/Breadcrumbs";
-import FsLightbox from "fslightbox-vue";
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox.css";
 import _ from 'lodash';
 import {getProduct, getReviews} from "../../services/ApiService";
 import { formatMoney } from "../../services/Helpers";
@@ -189,7 +191,7 @@ import Reviews from "../../components/reviews/Reviews";
 import Stars from "../../components/reviews/Stars";
 
 export default Vue.extend({
-  components: {Stars, Reviews, Breadcrumbs, NotFound, SellingPoints, Loading, ProductItem, FsLightbox},
+  components: {Stars, Reviews, Breadcrumbs, NotFound, SellingPoints, Loading, ProductItem},
 
   head() {
     return {
@@ -292,6 +294,7 @@ export default Vue.extend({
         spaceBetween: 10,
         slidesPerView: 3,
         loop: false,
+        freeMode: true,
         touchRatio: 0.1,
         threshold: 5,
         lazy: true,
@@ -301,6 +304,10 @@ export default Vue.extend({
         slideToClickedSlide: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
         breakpoints: {
           1500: {
             slidesPerView: 6,
@@ -372,6 +379,11 @@ export default Vue.extend({
     opacity: 1;
   }
 }
+
+.swiper-button-prev, .swiper-button-next {
+  font-size: 30px;
+}
+
 
 .fadeHidden {
   position: relative;
