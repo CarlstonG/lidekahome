@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <div v-if="!product || !product.title">
-      <div class="container mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
+      <div class="max-w-7xl mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
         <Loading v-show="loading"/>
         <NotFound v-if="!loading"/>
       </div>
@@ -9,9 +9,9 @@
     <div v-else>
       <Breadcrumbs class="hidden md:block" :path="[ { title: product.collection.title, path: product.collection.url } ]"
                    :title="product.title"/>
-      <div class="container mx-auto pb-20 pt-6 md:pt-10">
+      <div class="max-w-7xl mx-auto pb-2 pt-6 md:pt-10">
         <div class="grid grid-cols-1 md:grid-cols-12 mx-6 lg:mx-0 relative">
-          <div class="px-0 md:px-6 mb-8 md:mb-0 col-span-1 md:col-span-5">
+          <div class="px-0 md:px-6 mb-8 md:mb-0 col-span-1 md:col-span-6">
             <div
               style="--swiper-navigation-color: #2563eb; --swiper-pagination-color: #2563eb; --swiper-navigation-size: 40px"
               class="swiper-container mySwiper2 mb-2">
@@ -49,7 +49,7 @@
             </div>
             <div thumbsSlider
                  class="swiper-container mySwiper"
-                 style="--swiper-navigation-color: #2563eb; --swiper-pagination-color: #2563eb; --swiper-navigation-size: 40px"
+                 style="--swiper-navigation-color: #2563eb; --swiper-pagination-color: #2563eb; --swiper-navigation-size: 24px"
             >
               <div class="swiper-wrapper items-center relative">
                 <div
@@ -70,7 +70,7 @@
               <div class="swiper-button-next"></div>
             </div>
           </div>
-          <div class="lg:px-4 col-span-1 md:col-span-7">
+          <div class="lg:px-4 col-span-1 md:col-span-6">
             <h1 class="font-extrabold text-4xl">{{ product.title }}</h1>
 
             <a href="#reviews" v-if="product.stars > 0" class="flex items-center">
@@ -147,20 +147,24 @@
         </div>
       </div>
 
-      <div class="container mx-auto px-6 lg:px-0 pb-10 pt-6">
+      <div class="max-w-7xl mx-auto px-6 lg:px-0 pb-10 pt-6">
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div class="px-0 md:px-6 mb-6 ">
-            <h2 class="font-extrabold text-3xl mb-4">Productbeschrijving</h2>
-            <div class="relative">
-              <div class="product-des" v-bind:class="{ 'fadeHidden': !expandProductDescription }" v-html="productDescription"></div>
-              <div v-show="!expandProductDescription" class="w-full flex justify-center absolute bottom-6 z-10 left-0 right-0">
-                <button @click.prevent="expandProductDescription = true" type="button" class="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                  Toon meer
-                </button>
+            <div v-if="productDescription">
+              <h2 class="font-extrabold text-3xl mb-4">Productbeschrijving</h2>
+              <div class="relative">
+                <div class="product-des" v-bind:class="{ 'fadeHidden': !expandProductDescription }" v-html="productDescription"></div>
+                <div v-show="!expandProductDescription" class="w-full flex justify-center absolute bottom-6 z-10 left-0 right-0">
+                  <button @click.prevent="expandProductDescription = true" type="button" class="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Toon meer
+                  </button>
+                </div>
               </div>
             </div>
-            <h2 class="font-extrabold text-3xl mb-4">Specificaties</h2>
-            <div class="product-specs" v-html="product.specifications"></div>
+            <div v-if="product.specifications">
+              <h2 class="font-extrabold text-3xl mb-4">Specificaties</h2>
+              <div class="product-specs" v-html="product.specifications"></div>
+            </div>
           </div>
           <div v-if="product" class="px-0 md:px-6 mb-6" id="reviews">
             <Reviews v-if="reviews.reviews" :product="product" :reviews="reviews.reviews" />
@@ -346,6 +350,10 @@ export default Vue.extend({
   async mounted() {
     this.$nextTick(() => {
       this.initializeSwiper();
+
+      if (this.productDescription.length < 500) {
+        this.expandProductDescription = true;
+      }
     });
   },
 

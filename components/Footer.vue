@@ -2,7 +2,7 @@
   <div>
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="border-t bg-black border-b border-gray-900">
-      <div class="container mx-auto px-6 py-6">
+      <div class="max-w-7xl mx-auto px-6 py-6">
         <dl class="md:grid md:grid-cols-4">
           <div class="relative hidden md:block">
             <dt class="flex justify-center items-center">
@@ -38,7 +38,7 @@
 
     <footer class="bg-black" aria-labelledby="footerHeading">
       <h2 id="footerHeading" class="sr-only">Footer</h2>
-      <div class="container mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">

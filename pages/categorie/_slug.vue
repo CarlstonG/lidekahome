@@ -2,7 +2,7 @@
   <div class="bg-white">
     <div v-if="collection">
       <div class="w-full bg-black">
-        <div class="container mx-auto pt-2 md:pt-6 mb-2 md:pb-6 text-left px-4 md:px-2">
+        <div class="max-w-7xl mx-auto pt-2 md:pt-6 mb-2 md:pb-6 text-left px-4 md:px-2">
           <div class="block md:flex justify-space-between w-full">
             <h1 class="text-white mt-1 text-lg font-bold sm:text-xl lg:text-2xl flex-1">
               {{ collection.title }}
@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <div class="container w-full mx-auto py-10 px-2 relative">
+      <div class="max-w-7xl w-full mx-auto py-10 px-2 relative">
         <div class="grid grid-cols-12">
           <div class="hidden md:block col-span-3 lg:col-span-2">
             <Filters @selectedFilters="setSelectedFilters" :filters="collection.filters"/>

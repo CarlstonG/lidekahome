@@ -1,22 +1,130 @@
 <template>
   <div class="bg-black">
-    <div class="text-center py-10">
+    <div class="text-center pt-10">
       <h2 class="text-3xl font-bold text-white sm:text-4xl sm:tracking-tight lg:text-5xl">Kwaliteit Led-en Solar
         artikelen</h2>
-      <p class="mt-1 text-3xl text-white tracking-wide">van Lideka&reg;</p>
+      <p class="mt-1 text-3xl text-gray-500 tracking-wide">van Lideka&reg;</p>
     </div>
 
-    <div class="container mx-auto p-2">
-      <NuxtLink to="/categorie/led-strips">
-        <img alt="Lideka Home" src="~assets/visuals/LEDxSolar_homepage.webp" loading="lazy"
-             class="rounded-lg"/>
-      </NuxtLink>
+    <div class="max-w-7xl mx-auto p-2">
+      <h2 class="sr-only">Why you should buy from us</h2>
+      <div class="flex overflow-x-auto">
+        <div class="mx-auto flex space-x-12 whitespace-nowrap py-3 px-4 sm:px-6 lg:space-x-24 lg:px-8">
+          <div class="flex items-center text-sm font-medium text-indigo-400">
+            <!-- Heroicon name: outline/truck -->
+            <svg class="mr-2 flex-none w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+            </svg>
+            <p>Voor 23:59 besteld, morgen in huis</p>
+          </div>
+
+          <div class="flex items-center text-sm font-medium text-indigo-400">
+            <!-- Heroicon name: outline/badge-check -->
+            <svg class="mr-2 flex-none w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+            <p>Gratis verzending in NL en BE</p>
+          </div>
+
+          <div class="flex items-center text-sm font-medium text-indigo-400">
+            <!-- Heroicon name: outline/calendar -->
+            <svg class="mr-2 flex-none w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <p>60 dagen gratis retourneren in NL en BE</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="container mx-auto py-10 px-6 md:px-0">
+    <div class="max-w-7xl mx-auto p-2">
+      <video width="100%" height="480px" controls="controls" playsinline="" autoplay="autoplay" muted="muted"
+             poster="/s/files/1/0570/2352/9109/products/f814e9f0f2e7433ca5ffe31178c6e4dc.thumbnail.0000000_100x100.jpg?v=1629462448"
+             class="shadow-lg shadow-white border border-gray-800 rounded-lg border-5 border-color-black shadow-lg">
+        <source
+          src="https://cdn.shopify.com/videos/c/vp/f814e9f0f2e7433ca5ffe31178c6e4dc/f814e9f0f2e7433ca5ffe31178c6e4dc.m3u8"
+          type="application/x-mpegURL">
+        <source
+          src="https://cdn.shopify.com/videos/c/vp/f814e9f0f2e7433ca5ffe31178c6e4dc/f814e9f0f2e7433ca5ffe31178c6e4dc.HD-1080p-7.2Mbps.mp4"
+          type="video/mp4">
+        <source
+          src="https://cdn.shopify.com/videos/c/vp/f814e9f0f2e7433ca5ffe31178c6e4dc/f814e9f0f2e7433ca5ffe31178c6e4dc.HD-720p-4.5Mbps.mp4"
+          type="video/mp4"
+        >
+        <source
+          src="https://cdn.shopify.com/videos/c/vp/f814e9f0f2e7433ca5ffe31178c6e4dc/f814e9f0f2e7433ca5ffe31178c6e4dc.SD-480p-1.5Mbps.mp4"
+          type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="">
+      <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-2">
+        <div class="sm:flex sm:items-baseline sm:justify-between">
+          <h2 class="text-2xl font-extrabold tracking-tight text-gray-300">Kies een categorie</h2>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
+          <div class="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
+            <img src="~assets/visuals/led-photo.jpg" alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee." class="object-center object-cover group-hover:opacity-75">
+            <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50"></div>
+            <div class="p-6 flex items-end">
+              <div>
+                <h3 class="font-semibold text-white">
+                  <NuxtLink to="/categorie/led-strips">
+                    <span class="absolute inset-0"></span>
+                    Led strips
+                  </NuxtLink>
+                </h3>
+                <p aria-hidden="true" class="mt-1 text-sm text-white">
+                  Bekijk producten
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:relative sm:aspect-none sm:h-full">
+            <img src="~assets/visuals/SOLAR_garden_square.webp" alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters." class="object-center object-cover group-hover:opacity-75 sm:absolute sm:inset-0 sm:w-full sm:h-full">
+            <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"></div>
+            <div class="p-6 flex items-end sm:absolute sm:inset-0">
+              <div>
+                <h3 class="font-semibold text-white">
+                  <NuxtLink to="/categorie/solar-tuinverlichting">
+                    <span class="absolute inset-0"></span>
+                    Solar tuinverlichting
+                  </NuxtLink>
+                </h3>
+                <p aria-hidden="true" class="mt-1 text-sm text-white">
+                  Bekijk producten
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:relative sm:aspect-none sm:h-full">
+            <img src="~assets/visuals/Solar_Powerbank_square.webp" alt="Lidekahome Solar Powerbank" class="object-center object-cover group-hover:opacity-75 sm:absolute sm:inset-0 sm:w-full sm:h-full">
+            <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"></div>
+            <div class="p-6 flex items-end sm:absolute sm:inset-0">
+              <div>
+                <h3 class="font-semibold text-white">
+                  <NuxtLink to="/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie">
+                    <span class="absolute inset-0"></span>
+                    Solar Powerbank
+                  </NuxtLink>
+                </h3>
+                <p aria-hidden="true" class="mt-1 text-sm text-white">
+                  Bekijk producten
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto py-10 px-6 md:px-0">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div class="flex items-center flex-col">
-          <img src="~assets/icons/WEBicons-01.webp" alt="Hoge kwaliteit" class="w-20" loading="lazy" />
+          <img src="~assets/icons/WEBicons-01.webp" alt="Hoge kwaliteit" class="w-20" loading="lazy"/>
           <h2 class="text-white text-center text-sm font-bold mb-2">Hoge Kwaliteit</h2>
 
           <p class="text-gray-500 text-center text-xs">
@@ -51,30 +159,41 @@
       </div>
     </div>
 
-    <div class="container mx-auto py-2">
-      <div class="relative grid grid-cols-1 md:grid-cols-2">
-        <div class="pr-2 pl-2">
-          <NuxtLink class="relative block" to="categorie/led-strips">
-            <img src="~assets/visuals/ambience_bedroom_nl.webp"
-                 class="rounded-lg" loading="lazy" />
+    <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-2">
+      <div class="sm:flex sm:items-baseline sm:justify-between">
+        <h2 class="text-2xl font-extrabold tracking-tight text-gray-300">Led strips</h2>
+        <NuxtLink to="/categorie/led-strips" class="hidden text-sm font-semibold text-indigo-300 hover:text-indigo-500 sm:block">Bekijk onze producten<span aria-hidden="true"> &rarr;</span></NuxtLink>
+      </div>
 
-            <div class="absolute right-0 left-0 bottom-0 pb-4">
-              <button type="button"
-                      class="mx-auto hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 rounded-full py-2 px-10 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500">
-                Producten bekijken
-              </button>
+      <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6 lg:gap-8">
+        <div class="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-1">
+          <img src="~assets/visuals/blue-light.jpg" alt="LED strips categorie" class="object-center object-cover group-hover:opacity-75">
+          <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50"></div>
+          <div class="p-6 flex items-end">
+            <div>
+              <h3 class="font-semibold text-white">
+                <NuxtLink to="/categorie/led-strips">
+                  <span class="absolute inset-0"></span>
+                  Led strips
+                </NuxtLink>
+              </h3>
+              <p aria-hidden="true" class="mt-1 text-sm text-white">
+                Bekijk
+              </p>
             </div>
-          </NuxtLink>
+          </div>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-2 gap-2 py-6 md:py-0">
-          <div v-if="collection" v-for="product in collection.products" :key="product.id">
-            <ProductItem :gradient="true" :product="product" class="mx-2 md:mx-10" />
+        <div class="group aspect-w-2 aspect-h-1 rounded-lg sm:relative sm:aspect-none sm:h-full">
+          <div class="grid grid-cols-2 gap-6">
+            <div v-if="collection" v-for="product in collection.products" :key="product.id">
+              <ProductItemGradient :gradient="true" :product="product" class=""/>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container mx-auto pt-8 py-12 px-6 md:px-0">
+    <div class="max-w-7xl mx-auto pt-8 py-12 px-6 md:px-0">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div class="flex items-center flex-col">
           <img loading="lazy" src="~assets/icons/WEBicons-04.webp" alt="Gratis Verzending" class="w-20"/>
@@ -111,7 +230,7 @@
       </div>
     </div>
 
-    <div class="container mx-auto py-2">
+    <div class="max-w-7xl mx-auto py-2">
       <div class="relative grid grid-cols-1 md:grid-cols-2">
         <div class="pr-2 pl-2 mb-6 md:mb-0">
           <NuxtLink class="relative block"
@@ -121,7 +240,7 @@
                  width="100%" height="100%"/>
 
             <div class="absolute top-0 right-0 left-0 pt-4">
-              <h2 class="text-5xl text-white filter drop-shadow-lg text-center"><strong class="font-bold">Solar</strong>
+              <h2 class="text-3xl text-white filter drop-shadow-lg text-center"><strong class="font-bold">Solar</strong>
                 Powerbank</h2>
             </div>
             <div class="absolute right-0 left-0 bottom-0 pb-4">
@@ -142,103 +261,249 @@
       </div>
     </div>
 
-    <div class="container mx-auto py-2">
-      <div class="relative grid grid-cols-1 md:grid-cols-2">
-        <div class="pr-2 pl-2">
-          <NuxtLink v-if="secondaryCollection && secondaryCollection.url" class="relative block" :to="secondaryCollection.url">
-            <img alt="Solar tuinverlichting" src="~assets/visuals/SOLAR_garden_square.webp" class="rounded-lg" loading="lazy"
-                 width="100%" height="100%"/>
+    <div v-if="secondaryCollection.url" class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-2">
+      <div class="sm:flex sm:items-baseline sm:justify-between">
+        <h2 class="text-2xl font-extrabold tracking-tight text-gray-300">Solar tuinverlichting</h2>
+        <NuxtLink :to="secondaryCollection.url" class="hidden text-sm font-semibold text-indigo-300 hover:text-indigo-500 sm:block">Bekijk onze producten<span aria-hidden="true"> &rarr;</span></NuxtLink>
+      </div>
 
-            <div class="absolute top-0 right-0 left-0 pt-4">
-              <h2 class="text-5xl text-white filter drop-shadow-lg text-center"><strong class="font-bold">Solar</strong>
-                Tuinverlichting</h2>
+      <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6 lg:gap-8">
+        <div class="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-1">
+          <img src="~assets/visuals/SOLAR_garden_square.webp" alt="Solar tuinverlichting" class="object-center object-cover group-hover:opacity-75">
+          <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50"></div>
+          <div class="p-6 flex items-end">
+            <div>
+              <h3 class="font-semibold text-white">
+                <NuxtLink :to="secondaryCollection.url">
+                  <span class="absolute inset-0"></span>
+                  Solar tuinverlichting
+                </NuxtLink>
+              </h3>
+              <p aria-hidden="true" class="mt-1 text-sm text-white">
+                Bekijk
+              </p>
             </div>
-            <div class="absolute right-0 left-0 bottom-0 pb-4">
-              <button type="button"
-                      class="mx-auto hover:opacity-50 bg-gradient-to-br from-orange-400 to-red-600 rounded-full py-2 px-10 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500">
-                Bekijk alle Solar Lamps
-              </button>
-            </div>
-          </NuxtLink>
+          </div>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-2 gap-2 py-6 md:py-0">
-          <div v-if="secondaryCollection" v-for="product in secondaryCollection.products" :key="product.id">
-            <ProductItem :gradient="true" :product="product" class="mx-2 md:mx-10" />
+        <div class="group aspect-w-2 aspect-h-1 rounded-lg sm:relative sm:aspect-none sm:h-full">
+          <div class="grid grid-cols-2 gap-6">
+            <div v-if="collection" v-for="product in secondaryCollection.products" :key="product.id">
+              <ProductItemGradient :gradient="true" :product="product" class=""/>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container mx-auto pt-16 py-32 pb-20 px-6 md:px-0">
-      <div class="text-xs text-gray-500 max-w-full prose">
-        <h1 style="color: #ccc;">
-          LED strips – sfeervolle verlichting voor binnen en buiten
-        </h1>
-        <p>
-          Verhoog de sfeer binnen en buiten met de LED strips van Lideka Home. LED verlichting is de nieuwe trend voor huishoudens, verkrijgbaar in diverse maten en daardoor multifunctioneel te gebruiken. Wat zijn de voordelen van LED strips en waar kan je deze stijlvolle lichtsnoeren in huis installeren?
-        </p>
-        <h2 style="color: #ccc;">
-          Wat zijn LED strips?
-        </h2>
-        <p>
-          LED strips, ook wel geschreven als ledstrips, zijn lichtsnoeren met lichtcomponenten. LED staat voor Light Emitting Diode, vrij vertaald als lichtgevende lampjes. Het kenmerkende element van een LED strip is de veelzijdigheid. Wist je bijvoorbeeld dat je binnen het kleurenpalet keuze hebt uit meer dan 16 miljoen kleuren en tinten? Het zorgt ervoor dat LED verlichting in vrijwel elke ruimte een sfeervolle toepassing kent. Voorbeelden zijn LED strips in de badkamer, slaapkamer of woonkamer. Je kunt de ledstrips tegen het plafond installeren, of juist langs de rand van de spiegel in de badkamer. Zelfs als vervanging van de bestaande verlichting in de ruimte!
-          Steeds meer mensen gebruiken LED strips buiten. En waarom ook niet? We kopen tegenwoordig de mooiste tuinsets om buiten te kunnen zitten, en sfeervolle verlichting hoort daar uiteraard bij. LED strips zijn eenvoudig te bevestigen langs de onderkant van het dak, en blijven dankzij een stevige plakrand altijd op hun plek hangen. Zo creëer je ook buiten een unieke sfeer, waarmee in de eigen tuin loungen nog leuker wordt.
-        </p>
-        <h2 style="color: #ccc;">
-          Hoe werkt LED?
-        </h2>
-        <p>
-          Zoals je misschien al wist is LED een energiezuinige manier om ruimtes van verlichting te voorzien. Binnen LED verlichting wordt 90 tot 95 procent van de energie gebruikt om licht te produceren. Bij de traditionele gloeilamp is dit hooguit 10 procent, en die besparing in energie merk je. De gloeilamp wordt voelbaar warmer dan LED lampen, waardoor onnodig veel energie verloren gaat. Een LED verlichting strip is derhalve een stuk efficiënter. Bij een LED strip worden de lampjes op evenredige afstand van elkaar op het lichtsnoer gesoldeerd, en zorgen daarmee over kleine en grote afstand voor een gelijke afgifte van licht. Sfeervol en efficiënt.
-          5V, 12V en 24V ledstrips
-        </p>
-        <p>
-          Overweeg je LED strips te kopen? Dan is het belangrijk om rekening te houden met het Voltage. De LED strips zijn beschikbaar in 5 en 12 volt. Langs de 5V ledstrips en 12V ledstrips loopt minder stroom, waardoor het over het algemeen als veiliger wordt ervaren. Voor de kortere ledstrips, zoals een LED strip van 3, 5 of 10 meter, is dit voltage ideaal. Voor de grotere lengtematen vanaf 10 meter is 12V de beste optie.
-        </p>
-        <h2 style="color: #ccc;">Voordelen LED strips</h2>
-        <p>
-        We hebben de voordelen van LED strips al kort laten doorschemeren. Het is een moderne vorm van verlichting voor binnen- en buitenshuis, alsmede voor bedrijfspanden. Bij Lideka Home willen we iedereen de kans geven om de voordelen van LED strips te ervaren. Wat zijn de belangrijkste voordelen van LED verlichting?
-        </p>
-        <ul>
-          <li>Energiezuinige vorm van verlichting</li>
-          <li>Verkrijgbaar in verschillende lengtematen</li>
-          <li>LED strips zijn eenvoudig zelf op maat te maken</li>
-          <li>Ruim kleurenpalet met miljoenen sprekende RGB kleuren en tinten</li>
-          <li>Waterproof (IP65) en daarmee ook buiten te gebruiken</li>
-          <li>Extra lange levensduur</li>
-          <li>Sfeervol wonen, geschikt voor iedere gelegenheid</li>
-        </ul>
-        <h2 style="color: #ccc;">
-          LED strips met lichteffecten
-        </h2>
-        <p>
-        Nog meer halen uit je LED strips? Maak kennis met onze verrassende lichteffecten, ideaal voor iedere gelegenheid. Heb je een feestje? Dan kies je voor de Strobe stand: flitsende lichten, waarmee je iedereen in beweging krijgt. Een lounge avond met vrienden of familie? Met onze Fade verlichting creëer je een unieke sfeer. Deze verlichting biedt wisselende kleuren met donkere intervallen. De Flash verlichting op onze LED strips wisselen doorlopend van kleur en dat geeft een supergaaf effect. Tot slot kun je nog kiezen voor Smooth LED verlichting; gebruikt voor speciale gelegenheden, feestjes of simpelweg voor de optimale lounge experience.
-        </p>
-        <h2 style="color: #ccc;">Waterdichte LED strips</h2>
-        <p>
-          Onze 5, 12 en 24V LED strips zijn waterdicht, en daardoor ook geschikt voor buiten. Lekker als je ’s avonds tot in de late uurtjes buiten wilt genieten van zomerse omstandigheden, of juist in de winter, wanneer je buiten bij de warme kachel wilt zitten. Met onze IP65 bescherming garanderen we dat de LED strips ook in een vochtige omgeving optimaal functioneren. Op zoek naar LED strips die waterdicht zijn? Maak je keuze uit het ruime assortiment LED strips bij Lideka Home.
-        </p>
-        <h2 style="color: #ccc;">
-          LED strips monteren: wat heb je nodig?
-        </h2>
-        <p>
-          Wil je LED strips gebruiken? Montage is erg eenvoudig! Je kunt de LED strip naar eigen inzicht op maat afknippen op de aangegeven markering. Ideaal wanneer je iets van lengte te kort komt. De plakrand is extra stevig en blijft na montage op een glad oppervlak goed zitten. Met een totaal van 50.000 branduren kan je nog jaren genieten van unieke LED verlichting in huis. Welke onderdelen komen nog meer kijken bij de montage van LED strips?
-        </p>
-        <h2 style="color: #ccc;">Smart app Lideka Home of afstandsbediening LED</h2>
-        <p>
-          Met de Smart app van Lideka Home ervaar je het gewenste gebruiksgemak. Je kunt hiermee de LED strip op afstand bedienen en kiezen uit het volledige kleurenpalet. Heerlijk vanaf je smartphone schakelen tussen alle kleuren en tinten; de fijnste manier om de sfeer in huis te bepalen. Wil je niet kiezen voor de Smart app? Dan gebruik je onze bijgeleverde LED strip afstandsbediening.
-        </p>
-        <h2 style="color: #ccc;">Voedingsadapter LED strip</h2>
-        <p>
-          Zoals we al eerder vertelden, heb je bij de aankoop van LED strips keuze uit 5V, 12V of 24V. Welke keuze je hierin maakt, is eveneens afhankelijk van de voedingsadapter. Aangezien de normale stroomvoorziening vanuit het stopcontact vaststaat op 230V, dien je deze voor de LED verlichting nog wel om te zetten.
-        </p>
-        <h2 style="color: #ccc;">Toepassing van Led-strips</h2>
-        <p>
-          Led verlichting is toepasbaar in het gehele huis en door de waterdichtheid van de strips kun je ze ook buiten toepassen. Verlicht jouw schuur met helder wit licht en creëer sfeer in de woonkamer met elegante kleuren. De keuze is aan jou!
-        </p>
+    <div class="py-8 px-4 sm:px-6 lg:px-8 bg-black overflow-hidden">
+      <div class="max-w-max lg:max-w-7xl mx-auto">
+        <div class="relative z-10 mb-8 md:mb-2 md:px-6">
+          <div class="text-base max-w-prose lg:max-w-none">
+            <h1 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">LED strips – sfeervolle verlichting voor binnen en buiten</h1>
+          </div>
+        </div>
+        <div class="relative">
+          <svg class="hidden md:block absolute top-0 right-0 -mt-20 -mr-20" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
+            <defs>
+              <pattern id="95e8f2de-6d30-4b7e-8159-f791729db21b" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-800" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#95e8f2de-6d30-4b7e-8159-f791729db21b)" />
+          </svg>
+          <svg class="hidden md:block absolute bottom-0 left-0 -mb-20 -ml-20" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
+            <defs>
+              <pattern id="7a00fe67-0343-4a3c-8e81-c145097a3ce0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-800" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)" />
+          </svg>
+          <div class="relative md:p-6">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-6">
+              <div class="prose prose-teal prose-lg text-gray-500 lg:max-w-none text-sm">
+                <p>
+                  Verhoog de sfeer binnen en buiten met de LED strips van Lideka Home. LED verlichting is de nieuwe trend voor
+                  huishoudens, verkrijgbaar in diverse maten en daardoor multifunctioneel te gebruiken. Wat zijn de voordelen
+                  van LED strips en waar kan je deze stijlvolle lichtsnoeren in huis installeren?
+                </p>
+
+                <NuxtLink class="text-teal-200" to="/categorie/led-strips">Bekijk onze led strips</NuxtLink>
+
+                <h2 style="color: #fff">Wat zijn LED strips?</h2>
+                <p>
+                  LED strips, ook wel geschreven als ledstrips, zijn lichtsnoeren met lichtcomponenten. LED staat voor Light
+                  Emitting Diode, vrij vertaald als lichtgevende lampjes. Het kenmerkende element van een LED strip is de
+                  veelzijdigheid. Wist je bijvoorbeeld dat je binnen het kleurenpalet keuze hebt uit meer dan 16 miljoen kleuren
+                  en tinten? Het zorgt ervoor dat LED verlichting in vrijwel elke ruimte een sfeervolle toepassing kent.
+                  Voorbeelden zijn LED strips in de badkamer, slaapkamer of woonkamer. Je kunt de ledstrips tegen het plafond
+                  installeren, of juist langs de rand van de spiegel in de badkamer. Zelfs als vervanging van de bestaande
+                  verlichting in de ruimte!
+                </p>
+                <p>
+                  Steeds meer mensen gebruiken LED strips buiten. En waarom ook niet? We kopen tegenwoordig de mooiste tuinsets
+                  om buiten te kunnen zitten, en sfeervolle verlichting hoort daar uiteraard bij. LED strips zijn eenvoudig te
+                  bevestigen langs de onderkant van het dak, en blijven dankzij een stevige plakrand altijd op hun plek hangen.
+                  Zo creëer je ook buiten een unieke sfeer, waarmee in de eigen tuin loungen nog leuker wordt.
+                </p>
+                <h2 style="color: #fff;">Waterdichte LED strips</h2>
+                <p>
+                  Onze 5, 12 en 24V LED strips zijn waterdicht, en daardoor ook geschikt voor buiten. Lekker als je ’s avonds
+                  tot in de late uurtjes buiten wilt genieten van zomerse omstandigheden, of juist in de winter, wanneer je
+                  buiten bij de warme kachel wilt zitten. Met onze IP65 bescherming garanderen we dat de LED strips ook in een
+                  vochtige omgeving optimaal functioneren. Op zoek naar LED strips die waterdicht zijn? Maak je keuze uit het
+                  ruime assortiment LED strips bij Lideka Home.
+                </p>
+                <h2 style="color: #fff;">
+                  LED strips monteren: wat heb je nodig?
+                </h2>
+                <p>
+                  Wil je LED strips gebruiken? Montage is erg eenvoudig! Je kunt de LED strip naar eigen inzicht op maat
+                  afknippen op de aangegeven markering. Ideaal wanneer je iets van lengte te kort komt. De plakrand is extra
+                  stevig en blijft na montage op een glad oppervlak goed zitten. Met een totaal van 50.000 branduren kan je nog
+                  jaren genieten van unieke LED verlichting in huis. Welke onderdelen komen nog meer kijken bij de montage van
+                  LED strips?
+                </p>
+                <h2 style="color: #fff;">Smart app Lideka Home of afstandsbediening LED</h2>
+                <p>
+                  Met de Smart app van Lideka Home ervaar je het gewenste gebruiksgemak. Je kunt hiermee de LED strip op afstand
+                  bedienen en kiezen uit het volledige kleurenpalet. Heerlijk vanaf je smartphone schakelen tussen alle kleuren
+                  en tinten; de fijnste manier om de sfeer in huis te bepalen. Wil je niet kiezen voor de Smart app? Dan gebruik
+                  je onze bijgeleverde LED strip afstandsbediening.
+                </p>
+                <h2 style="color: #fff;">Voedingsadapter LED strip</h2>
+                <p>
+                  Zoals we al eerder vertelden, heb je bij de aankoop van LED strips keuze uit 5V, 12V of 24V. Welke keuze je
+                  hierin maakt, is eveneens afhankelijk van de voedingsadapter. Aangezien de normale stroomvoorziening vanuit
+                  het stopcontact vaststaat op 230V, dien je deze voor de LED verlichting nog wel om te zetten.
+                </p>
+                <h2 style="color: #fff;">Toepassing van Led-strips</h2>
+                <p>
+                  Led verlichting is toepasbaar in het gehele huis en door de waterdichtheid van de strips kun je ze ook buiten
+                  toepassen. Verlicht jouw schuur met helder wit licht en creëer sfeer in de woonkamer met elegante kleuren. De
+                  keuze is aan jou!
+                </p>
+                <NuxtLink to="/blog">Lees meer over LED strips</NuxtLink>
+              </div>
+              <div class="mt-6 prose prose-teal prose-lg text-gray-500 lg:mt-0 text-sm">
+                <h2 style="color: #fff;">
+                  Hoe werkt LED?
+                </h2>
+                <p>
+                  Zoals je misschien al wist is LED een energiezuinige manier om ruimtes van verlichting te voorzien. Binnen LED
+                  verlichting wordt 90 tot 95 procent van de energie gebruikt om licht te produceren. Bij de traditionele
+                  gloeilamp is dit hooguit 10 procent, en die besparing in energie merk je. De gloeilamp wordt voelbaar warmer
+                  dan LED lampen, waardoor onnodig veel energie verloren gaat. Een LED verlichting strip is derhalve een stuk
+                  efficiënter. Bij een LED strip worden de lampjes op evenredige afstand van elkaar op het lichtsnoer
+                  gesoldeerd, en zorgen daarmee over kleine en grote afstand voor een gelijke afgifte van licht. Sfeervol en
+                  efficiënt.
+                  5V, 12V en 24V ledstrips
+                </p>
+                <p>
+                  Overweeg je LED strips te kopen? Dan is het belangrijk om rekening te houden met het Voltage. De LED strips
+                  zijn beschikbaar in 5 en 12 volt. Langs de 5V ledstrips en 12V ledstrips loopt minder stroom, waardoor het
+                  over het algemeen als veiliger wordt ervaren. Voor de kortere ledstrips, zoals een LED strip van 3, 5 of 10
+                  meter, is dit voltage ideaal. Voor de grotere lengtematen vanaf 10 meter is 12V de beste optie.
+                </p>
+                <NuxtLink to="/blog/hoe-werkt-led-verlichting">Lees hier meer over hoe led verlichting werkt</NuxtLink>
+                <h2 style="color: #fff;">Voordelen LED strips</h2>
+                <p>
+                  We hebben de voordelen van LED strips al kort laten doorschemeren. Het is een moderne vorm van verlichting
+                  voor binnen- en buitenshuis, alsmede voor bedrijfspanden. Bij Lideka Home willen we iedereen de kans geven om
+                  de voordelen van LED strips te ervaren. Wat zijn de belangrijkste voordelen van LED verlichting?
+                </p>
+                <ul>
+                  <li>Energiezuinige vorm van verlichting</li>
+                  <li>Verkrijgbaar in verschillende lengtematen</li>
+                  <li>LED strips zijn eenvoudig zelf op maat te maken</li>
+                  <li>Ruim kleurenpalet met miljoenen sprekende RGB kleuren en tinten</li>
+                  <li>Waterproof (IP65) en daarmee ook buiten te gebruiken</li>
+                  <li>Extra lange levensduur</li>
+                  <li>Sfeervol wonen, geschikt voor iedere gelegenheid</li>
+                </ul>
+                <NuxtLink to="/products/led-strip-10-meter">Bekijk ons meest verkochte product</NuxtLink>
+                <h2 style="color: #ffff;">
+                  LED strips met lichteffecten
+                </h2>
+                <p>
+                  Nog meer halen uit je LED strips? Maak kennis met onze verrassende lichteffecten, ideaal voor iedere
+                  gelegenheid. Heb je een feestje? Dan kies je voor de Strobe stand: flitsende lichten, waarmee je iedereen in
+                  beweging krijgt. Een lounge avond met vrienden of familie? Met onze Fade verlichting creëer je een unieke
+                  sfeer. Deze verlichting biedt wisselende kleuren met donkere intervallen. De Flash verlichting op onze LED
+                  strips wisselen doorlopend van kleur en dat geeft een supergaaf effect. Tot slot kun je nog kiezen voor Smooth
+                  LED verlichting; gebruikt voor speciale gelegenheden, feestjes of simpelweg voor de optimale lounge
+                  experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="container mx-auto pt-16 py-32 pb-20 px-6 md:px-0">
+    <div class="">
+      <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-2">
+        <div class="sm:flex sm:items-baseline sm:justify-between">
+          <h2 class="text-2xl font-extrabold tracking-tight text-gray-300">Kies een categorie</h2>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
+          <div class="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
+            <img src="~assets/visuals/led-photo.jpg" alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee." class="object-center object-cover group-hover:opacity-75">
+            <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50"></div>
+            <div class="p-6 flex items-end">
+              <div>
+                <h3 class="font-semibold text-white">
+                  <NuxtLink to="/categorie/led-strips">
+                    <span class="absolute inset-0"></span>
+                    Led strips
+                  </NuxtLink>
+                </h3>
+                <p aria-hidden="true" class="mt-1 text-sm text-white">
+                  Bekijk producten
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:relative sm:aspect-none sm:h-full">
+            <img src="~assets/visuals/SOLAR_garden_square.webp" alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters." class="object-center object-cover group-hover:opacity-75 sm:absolute sm:inset-0 sm:w-full sm:h-full">
+            <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"></div>
+            <div class="p-6 flex items-end sm:absolute sm:inset-0">
+              <div>
+                <h3 class="font-semibold text-white">
+                  <NuxtLink to="/categorie/solar-tuinverlichting">
+                    <span class="absolute inset-0"></span>
+                    Solar tuinverlichting
+                  </NuxtLink>
+                </h3>
+                <p aria-hidden="true" class="mt-1 text-sm text-white">
+                  Bekijk producten
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:relative sm:aspect-none sm:h-full">
+            <img src="~assets/visuals/Solar_Powerbank_square.webp" alt="Lidekahome Solar Powerbank" class="object-center object-cover group-hover:opacity-75 sm:absolute sm:inset-0 sm:w-full sm:h-full">
+            <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"></div>
+            <div class="p-6 flex items-end sm:absolute sm:inset-0">
+              <div>
+                <h3 class="font-semibold text-white">
+                  <NuxtLink to="/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie">
+                    <span class="absolute inset-0"></span>
+                    Solar Powerbank
+                  </NuxtLink>
+                </h3>
+                <p aria-hidden="true" class="mt-1 text-sm text-white">
+                  Bekijk producten
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-16 py-32 pb-20 px-6 md:px-0">
       <div class="flex justify-center space-x-6 md:order-2">
         <a href="https://www.facebook.com/lidekahome" target="_blank"
            class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
@@ -286,10 +551,11 @@
 <script lang="ts">
 import Vue from 'vue'
 import ProductItem from "~/components/products/ProductItem.vue";
+import ProductItemGradient from "~/components/products/ProductItemGradient.vue";
 import {getCollection} from "~/services/ApiService";
 
 export default Vue.extend({
-  components: {ProductItem},
+  components: {ProductItem, ProductItemGradient},
   data() {
     return {
       collection: {},

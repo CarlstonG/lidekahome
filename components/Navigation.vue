@@ -3,7 +3,7 @@
     <div class="h-32 md:h-44 block">&nbsp;</div>
     <div class="fixed right-0 top-0 left-0 z-40 shadow-lg">
       <div class="bg-black border-b border-gray-900 hidden md:block">
-        <div class="container mx-auto px-2 md:px-2 py-2">
+        <div class="max-w-7xl mx-auto px-2 md:px-2 py-2">
           <dl class="md:grid md:grid-cols-12">
 
             <div class="relative flex space-x-4 col-span-9">
@@ -55,7 +55,7 @@
       </div>
 
       <nav class="bg-black shadow-lg">
-        <div class="container mx-auto px-2 px-2 md:px-2">
+        <div class="max-w-7xl mx-auto px-2 px-2 md:px-2">
           <div class="relative flex items-center justify-between h-20">
             <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
               <!-- Mobile menu button-->
@@ -144,7 +144,7 @@
         </div>
 
         <div class="hidden md:block bg-black border-t border-gray-800 border-b">
-          <div class="container mx-auto  px-2 py-2 px-8 md:px-2">
+          <div class="max-w-7xl mx-auto  px-2 py-2 px-8 md:px-2">
             <div class="relative flex items-center justify-between -ml-2">
               <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-grow">

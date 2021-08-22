@@ -16,6 +16,7 @@ const getters = {
       return [
         'led-strips',
         'solar-tuinverlichting',
+        'accessoires',
       ].indexOf(item.handle) > -1
     })
   }
