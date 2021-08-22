@@ -183,7 +183,7 @@
             </div>
           </div>
         </div>
-        <div class="group aspect-w-2 aspect-h-1 rounded-lg sm:relative sm:aspect-none sm:h-full">
+        <div class="">
           <div class="grid grid-cols-2 gap-6">
             <div v-if="collection" v-for="product in collection.products" :key="product.id">
               <ProductItemGradient :gradient="true" :product="product" class=""/>
@@ -285,7 +285,7 @@
             </div>
           </div>
         </div>
-        <div class="group aspect-w-2 aspect-h-1 rounded-lg sm:relative sm:aspect-none sm:h-full">
+        <div>
           <div class="grid grid-cols-2 gap-6">
             <div v-if="collection" v-for="product in secondaryCollection.products" :key="product.id">
               <ProductItemGradient :gradient="true" :product="product" class=""/>
