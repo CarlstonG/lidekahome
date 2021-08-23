@@ -24,7 +24,7 @@
         <nav class="px-2 space-y-1">
           <!-- Hier komt categorieen -->
           <div class="text-gray-200 bg-black text-xs group flex items-center px-2 py-2 font-medium rounded-md">
-            Categorie
+            Producten
           </div>
           <NuxtLink @click.native="closeSidebar()" prefetch v-for="collection in collections" :to="`/categorie/${collection.handle}`" :key="collection.handle"
                 class="text-gray-400 bg-black hover:text-white group flex items-center px-2 py-2 text-base font-medium rounded-md">
@@ -34,7 +34,7 @@
             Solar Powerbank
           </NuxtLink>
           <div class="text-gray-200 bg-black text-xs group flex items-center px-2 py-2 font-medium rounded-md">
-            Sitemap
+            Pagina's
           </div>
           <NuxtLink @click.native="closeSidebar()" to="/klantenservice"
                     class="text-gray-400 bg-black hover:text-white group flex items-center px-2 py-2 text-base font-medium rounded-md">

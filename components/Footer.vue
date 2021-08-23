@@ -42,7 +42,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              Sitemap
+              Pagina's
             </h3>
             <ul class="mt-4 space-y-2">
               <li>
