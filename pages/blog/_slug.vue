@@ -57,7 +57,7 @@ export default Vue.extend({
 
   head() {
     return {
-      title: safeGet(this.blog, 'seo.title'),
+      title: safeGet(this.blog, 'article.title'),
       meta: [
         {
           hid: 'description',
@@ -67,7 +67,7 @@ export default Vue.extend({
         {
           hid: 'og:title',
           property: 'og:title',
-          content: safeGet(this.blog, 'seo.title')
+          content: safeGet(this.blog, 'article.title')
         },
         {
           hid: 'og:description',

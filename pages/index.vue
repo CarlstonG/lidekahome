@@ -512,7 +512,7 @@
         <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
           <div class="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
             <img src="~assets/visuals/led-photo.jpg"
-                 alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
+                 alt="Lidekahome LED strips"
                  class="object-center object-cover group-hover:opacity-75">
             <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50"></div>
             <div class="p-6 flex items-end">
@@ -531,7 +531,7 @@
           </div>
           <div class="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:relative sm:aspect-none sm:h-full">
             <img src="~assets/visuals/SOLAR_garden_square.webp"
-                 alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters."
+                 alt="Lidekahome SOLAR tuinverlichting"
                  class="object-center object-cover group-hover:opacity-75 sm:absolute sm:inset-0 sm:w-full sm:h-full">
             <div aria-hidden="true"
                  class="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"></div>
