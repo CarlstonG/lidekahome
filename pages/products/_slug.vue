@@ -20,10 +20,9 @@
                   v-for="media in product.media"
                   class="swiper-slide flex cursor-pointer justify-center items-center h-full w-full rounded-lg">
 
-                  <a v-if="media.type === 'IMAGE'" data-fancybox="gallery" :data-src="`https://cdn.shopify.com${media.src}`">
-                    <nuxt-img class="rounded-lg swiper-lazy"
+                  <a v-if="media.type === 'IMAGE'" data-fancybox="gallery" :data-src="`${media.src}`">
+                    <img class="rounded-lg swiper-lazy"
                           loading="lazy"
-                          provider="imgix"
                           width="800px"
                           height="800px"
                           :src="media.src"
@@ -55,9 +54,8 @@
                 <div
                   v-for="media in product.media"
                   class="swiper-slide flex cursor-pointer justify-center items-center h-20 w-20 rounded-lg bg-center bg-cover">
-                  <nuxt-img class="rounded-lg swiper-lazy"
+                  <img class="rounded-lg swiper-lazy"
                           loading="lazy"
-                          provider="imgix"
                           width="100px"
                           height="100px"
                           :src="media.preview"

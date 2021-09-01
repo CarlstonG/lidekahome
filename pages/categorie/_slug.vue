@@ -56,8 +56,7 @@
             <div class="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
               <NuxtLink :to="product.url" v-for="product in collection.products" :key="product.id" class="group text-sm flex flex-col">
                 <div class="w-full aspect-w-1 aspect-h-1 rounded-lg overflow-hidden bg-gray-100">
-                  <nuxt-img class="w-full h-full object-center object-cover"
-                            provider="imgix"
+                  <img class="w-full h-full object-center object-cover"
                             loading="lazy"
                             :src="product.firstMediaSrc"
                             :alt="product.title"
