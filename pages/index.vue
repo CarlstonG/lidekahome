@@ -1,9 +1,130 @@
 <template>
   <div class="bg-black">
-    <div class="text-center pt-10">
-      <h2 class="text-3xl font-bold text-white sm:text-4xl sm:tracking-tight lg:text-5xl">Kwaliteit Led-en Solar
-        artikelen</h2>
-      <p class="mt-1 text-3xl text-gray-500 tracking-wide">van Lideka&reg;</p>
+    <div class="pt-10 bg-black sm:pt-16 lg:pt-8 pb-14 lg:overflow-hidden">
+      <div class="mx-auto max-w-7xl lg:px-8">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+          <div
+              class="mx-auto px-4 sm:px-6 lg:px-0 text-left lg:flex items-center">
+            <div class="lg:py-24">
+              <dt class="flex items-center h-full">
+                <a href="https://www.kiyoh.com/reviews/1064733/lideka?from=widget&lang=nl" target="_blank"
+                   class="flex items-center mr-4">
+                  <svg v-for="i in 5" class="flex-shrink-0 h-6 w-6 text-yellow-400"
+                       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <span class="ml-1 text-gray-400 text-sm"><span
+                      class="text-gray-200 font-medium">9,6</span> (57)</span>
+                </a>
+
+                <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank">
+                  <img alt="Thuiswinkel waarborg" class="w-32" src="~/assets/thuiswinkel.svg"/>
+                </a>
+              </dt>
+              <h1 class="mt-4 text-4xl tracking-tight font-bold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+                <span class="block text-4xl">Lideka is de specialist in</span>
+                <span class="block text-indigo-400">Led en Solar artikelen</span>
+              </h1>
+              <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                Lideka heeft een mooi assortiment voor huis en tuin wat iedere maand met spectaculaire items vergroot
+                wordt.
+              </p>
+              <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                Ben je niet tevreden met je aankoop? Retourneer makkelijk, gratis, en ontvang het volledige
+                aankoopbedrag terug.
+              </p>
+              <div class="mt-10 sm:mt-12">
+                <div class="w-full space-y-2">
+                  <div class="grid grid-cols-2">
+                    <dt class="flex items-center h-full">
+                      <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      <p class="ml-2 text-base leading-6 text-green-400">24/7 telefonisch bereikbaar</p>
+                    </dt>
+                    <dt class="flex items-center h-full">
+                      <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      <p class="ml-2 text-base leading-6 text-green-400">24 maanden garantie</p>
+                    </dt>
+                  </div>
+                  <div class="grid grid-cols-2">
+                    <dt class="flex items-center h-full">
+                      <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      <p class="ml-2 text-base leading-6 text-green-400">Gratis verzending</p>
+                    </dt>
+                    <dt class="flex items-center h-full">
+                      <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      <p class="ml-2 text-base leading-6 text-green-400">Gratis retourneren</p>
+                    </dt>
+                  </div>
+                  <div class="grid grid-cols-2">
+                    <dt class="flex items-center h-full">
+                      <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      <p class="ml-2 text-base leading-6 text-green-400">Duurzaam</p>
+                    </dt>
+                    <dt class="flex items-center h-full">
+                      <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      <p class="ml-2 text-base leading-6 text-green-400">Hoge kwaliteit</p>
+                    </dt>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10">
+                <NuxtLink to="/categorie/led-strips"
+                        class="justify-center inline-block py-3 px-10 pr-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                  <div class="flex items-center">
+                    <span class="mr-7">Shop nu</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                  </div>
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 hidden lg:block">
+            <div
+                class="mx-auto h-full justify-center items-center flex max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 relative">
+
+              <NuxtLink to="/categorie/led-strips">
+                <img class="absolute rounded-lg w-96 shadow-lg border-4 border-black hover:border-indigo-500 transition-ease-in-out transition-all" style="left: 0; top: 150px; z-index: 10" src="~assets/main.jpg"
+                     alt="Led strips">
+              </NuxtLink>
+
+              <NuxtLink to="/categorie/solar-tuinverlichting">
+                <img class="absolute rounded-lg w-96 shadow-lg border-4 border-black hover:border-indigo-500 transition-ease-in-out transition-all" style="right: -20px; bottom: 100px"
+                     src="~assets/home-header/box_GM80194.jpg" alt="Solar tuinverlichting">
+              </NuxtLink>
+
+              <NuxtLink to="/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie">
+                <img class="absolute rounded-lg w-96 shadow-lg border-4 border-black hover:border-indigo-500 transition-ease-in-out transition-all" style="right: -100px; top: -50px"
+                     src="~assets/visuals/Solar_Powerbank_square.jpg" alt="Solar powerbank">
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="max-w-7xl mx-auto p-2">
@@ -49,17 +170,17 @@
              poster="/s/files/1/0570/2352/9109/products/bc68fe084ce143ae9db15a61daab44b4.thumbnail.0000000_100x100.jpg?v=1629463822"
              class="rounded-lg border-5 border-color-black shadow-lg">
         <source
-          src="https://cdn.shopify.com/videos/c/vp/bc68fe084ce143ae9db15a61daab44b4/bc68fe084ce143ae9db15a61daab44b4.m3u8"
-          type="application/x-mpegURL">
+            src="https://cdn.shopify.com/videos/c/vp/bc68fe084ce143ae9db15a61daab44b4/bc68fe084ce143ae9db15a61daab44b4.m3u8"
+            type="application/x-mpegURL">
         <source
-          src="https://cdn.shopify.com/videos/c/vp/bc68fe084ce143ae9db15a61daab44b4/bc68fe084ce143ae9db15a61daab44b4.HD-1080p-7.2Mbps.mp4"
-          type="video/mp4">
+            src="https://cdn.shopify.com/videos/c/vp/bc68fe084ce143ae9db15a61daab44b4/bc68fe084ce143ae9db15a61daab44b4.HD-1080p-7.2Mbps.mp4"
+            type="video/mp4">
         <source
-          src="https://cdn.shopify.com/videos/c/vp/bc68fe084ce143ae9db15a61daab44b4/bc68fe084ce143ae9db15a61daab44b4.HD-720p-4.5Mbps.mp4"
-          type="video/mp4">
+            src="https://cdn.shopify.com/videos/c/vp/bc68fe084ce143ae9db15a61daab44b4/bc68fe084ce143ae9db15a61daab44b4.HD-720p-4.5Mbps.mp4"
+            type="video/mp4">
         <source
-          src="https://cdn.shopify.com/videos/c/vp/bc68fe084ce143ae9db15a61daab44b4/bc68fe084ce143ae9db15a61daab44b4.SD-480p-1.5Mbps.mp4"
-          type="video/mp4">
+            src="https://cdn.shopify.com/videos/c/vp/bc68fe084ce143ae9db15a61daab44b4/bc68fe084ce143ae9db15a61daab44b4.SD-480p-1.5Mbps.mp4"
+            type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -119,7 +240,7 @@
               <div>
                 <h3 class="font-semibold text-white">
                   <NuxtLink
-                    to="/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie">
+                      to="/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie">
                     <span class="absolute inset-0"></span>
                     Solar Powerbank
                   </NuxtLink>
@@ -558,7 +679,7 @@
               <div>
                 <h3 class="font-semibold text-white">
                   <NuxtLink
-                    to="/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie">
+                      to="/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie">
                     <span class="absolute inset-0"></span>
                     Solar Powerbank
                   </NuxtLink>
@@ -600,7 +721,7 @@
           <span class="sr-only">LinkedIn</span>
           <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8">
             <path
-              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
           </svg>
         </a>
 
@@ -609,7 +730,7 @@
           <span class="sr-only">YouTube</span>
           <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24">
             <path
-              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
           </svg>
         </a>
       </div>

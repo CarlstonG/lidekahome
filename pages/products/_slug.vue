@@ -8,7 +8,7 @@
     </div>
     <div v-else>
       <Breadcrumbs class="hidden md:block" :path="[ { title: product.collection.title, path: product.collection.url } ]"
-                   :title="product.title"/>
+                   :title="product.title" />
       <div class="max-w-7xl mx-auto pb-2 pt-6 md:pt-10">
         <div class="grid grid-cols-1 md:grid-cols-12 mx-6 lg:mx-0 relative">
           <div class="px-0 md:px-6 mb-8 md:mb-0 col-span-1 md:col-span-6">
