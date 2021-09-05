@@ -11,7 +11,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import {mapActions} from "vuex";
-import { getAccessTokenByWebToken} from "~/services/ApiService";
+import { getAccessTokenByWebToken } from "~/services/ApiService";
 import {safeGet} from "~/services/Helpers";
 import Loading from "~/components/Loading.vue";
 
@@ -35,12 +35,11 @@ export default Vue.extend({
       const accessToken = safeGet(customerAccessTokenCreate, 'customerAccessToken.accessToken');
 
       await this.setAccessToken(accessToken);
-      await this.fetchCustomer();
     } catch (err) {
-
+      console.log(err);
     }
 
-    await this.$router.push('/account/myaccount');
+    window.location.href = '/account/myaccount';
   }
 })
 </script>
