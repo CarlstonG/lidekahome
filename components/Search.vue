@@ -46,8 +46,7 @@
           </li>
           <li @click="isOpen = false" v-for="product in products">
             <NuxtLink :to="product.url" class="flex items-center py-2">
-              <nuxt-img v-if="product.firstMediaSrc" class="h-6 w-6 rounded-full"
-                    provider="imgix"
+              <img v-if="product.firstMediaSrc" class="h-6 w-6 rounded-full"
                     :src="product.firstMediaSrc"
                     loading="lazy"
                     alt="" />

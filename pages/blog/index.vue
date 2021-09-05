@@ -1,12 +1,12 @@
 <template>
   <div class="bg-white">
     <div v-if="Object.keys(blog).length < 1 && loading">
-      <div class="container mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
+      <div class="max-w-7xl mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
         <Loading v-show="loading"/>
       </div>
     </div>
     <div v-else class="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-20 lg:pb-28 lg:px-8">
-      <div class="relative container mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="text-center">
           <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
             {{ blog.title }}

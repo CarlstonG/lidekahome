@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="bg-white border-b border-gray-200 flex" aria-label="Breadcrumb">
-      <ol class="container w-full mx-auto px-4 flex space-x-4 sm:px-6 lg:px-8"
+      <ol class="max-w-7xl w-full mx-auto px-4 flex space-x-4 sm:px-6 lg:px-8"
           vocab="http://schema.org/"
           typeof="BreadcrumbList"
       >

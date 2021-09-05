@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
 
-    <div class="container mx-auto py-20">
+    <div class="max-w-7xl mx-auto py-20">
       <script src="//widget.thuiswinkel.org/script.js?id=NTM3NC0y"></script>
       <div class="grid gap-5 grid-cols-1 lg:grid-cols-3">
         <div class="col-span-2">

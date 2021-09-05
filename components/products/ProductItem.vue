@@ -1,8 +1,7 @@
 <template>
   <div class="flex flex-col items-center transition-all shadow-none rounded-lg" :class="{ 'mt-4': gradient }">
     <NuxtLink :to="product.url" prefetch>
-      <nuxt-img class="rounded-lg"
-              provider="imgix"
+      <img class="rounded-lg"
               loading="lazy"
               :src="product.firstMediaSrc"
               :alt="product.title"

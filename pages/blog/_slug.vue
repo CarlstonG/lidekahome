@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <div v-if="!blog.id">
-      <div class="container mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
+      <div class="max-w-7xl mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
         <Loading v-show="loading" />
         <NotFound v-if="!loading" />
       </div>
@@ -9,7 +9,7 @@
     <div v-else>
       <div class="w-full bg-cover bg-no-repeat bg-center bg-scroll"
            :style="`background-image: url('${blog.article.image}')`">
-        <div class="container mx-auto py-32 text-center"></div>
+        <div class="max-w-7xl mx-auto py-32 text-center"></div>
       </div>
 
       <div class="relative py-16 bg-white overflow-hidden">
@@ -57,7 +57,7 @@ export default Vue.extend({
 
   head() {
     return {
-      title: safeGet(this.blog, 'seo.title'),
+      title: safeGet(this.blog, 'article.title'),
       meta: [
         {
           hid: 'description',
@@ -67,7 +67,7 @@ export default Vue.extend({
         {
           hid: 'og:title',
           property: 'og:title',
-          content: safeGet(this.blog, 'seo.title')
+          content: safeGet(this.blog, 'article.title')
         },
         {
           hid: 'og:description',

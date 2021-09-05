@@ -2,21 +2,21 @@
   <div class="bg-white">
     <Breadcrumbs />
     <div v-if="!page.id">
-      <div class="container mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
+      <div class="max-w-7xl mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
         <Loading v-show="loading"/>
         <NotFound v-if="!loading" />
       </div>
     </div>
     <div v-else>
       <div class="w-full bg-cover bg-no-repeat bg-center bg-scroll bg-gradient-to-br from-blue-500 to-purple-800">
-        <div class="container mx-auto py-20 text-center">
+        <div class="max-w-7xl mx-auto py-20 text-center">
           <h1 class="text-white mt-1 text-2xl font-extrabold sm:text-2xl sm:tracking-tight lg:text-4xl">{{ page.title }}</h1>
         </div>
       </div>
 
       <div class="pb-10">
         <div class="bg-white">
-          <div class="container mx-auto pt-16 pb-4 px-4 sm:px-6 lg:px-8">
+          <div class="max-w-7xl mx-auto pt-16 pb-4 px-4 sm:px-6 lg:px-8">
             <div class="max-w-lg mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8">
               <div class="bg-gray-50 rounded-lg p-10">
                 <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
@@ -119,7 +119,7 @@
         </div>
 
         <div class="bg-white">
-          <div class="container py-4 mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-7xl py-4 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-lg mx-auto md:max-w-none md:grid md:grid-cols-3 md:gap-8">
               <div class="bg-gray-50 rounded-lg p-10">
                 <h2 class="text-xl font-bold">Algemeen</h2>

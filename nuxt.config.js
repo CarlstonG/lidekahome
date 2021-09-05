@@ -55,6 +55,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/gtm',
     '@nuxtjs/robots',
     '@nuxt/image',
     'nuxt-shopify',
@@ -62,6 +63,10 @@ export default {
     'nuxt-precompress',
     ['@nuxtjs/component-cache', { maxAge: 1000 * 60 * 60 }],
   ],
+
+  gtm: {
+    id: process.env.GTM
+  },
 
   image: {
     domains: ['https://cdn.shopify.com', 'https://lidekahome.nl'],
@@ -207,6 +212,11 @@ export default {
       }
 
       if (req.url.match('/checkouts')) {
+        res.writeHead(301, {Location: (`https://${process.env.SHOPIFY_CHECKOUT_DOMAIN}${req.url}`) });
+        res.end();
+      }
+
+      if (req.url.match('/orders')) {
         res.writeHead(301, {Location: (`https://${process.env.SHOPIFY_CHECKOUT_DOMAIN}${req.url}`) });
         res.end();
       }

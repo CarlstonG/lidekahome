@@ -1,41 +1,37 @@
 <template>
   <div class="bg-white">
     <div v-if="!product || !product.title">
-      <div class="container mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
+      <div class="max-w-7xl mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
         <Loading v-show="loading"/>
         <NotFound v-if="!loading"/>
       </div>
     </div>
     <div v-else>
       <Breadcrumbs class="hidden md:block" :path="[ { title: product.collection.title, path: product.collection.url } ]"
-                   :title="product.title"/>
-      <div class="container mx-auto pb-20 pt-6 md:pt-10">
+                   :title="product.title" />
+      <div class="max-w-7xl mx-auto pb-2 pt-6 md:pt-10">
         <div class="grid grid-cols-1 md:grid-cols-12 mx-6 lg:mx-0 relative">
-          <div class="px-0 md:px-6 mb-8 md:mb-0 col-span-1 md:col-span-5">
-
-            <FsLightbox
-              v-show="productImages.length > 0"
-              :toggler="showLightbox"
-              :sources="productImages"
-            />
-
+          <div class="px-0 md:px-6 mb-8 md:mb-0 col-span-1 md:col-span-6">
             <div
-              style="--swiper-navigation-color: #000; --swiper-pagination-color: #000; --swiper-navigation-size: 20px"
+              style="--swiper-navigation-color: #2563eb; --swiper-pagination-color: #2563eb; --swiper-navigation-size: 40px"
               class="swiper-container mySwiper2 mb-2">
               <div class="swiper-wrapper items-center">
                 <div
                   v-for="media in product.media"
                   class="swiper-slide flex cursor-pointer justify-center items-center h-full w-full rounded-lg">
-                  <a @click.prevent="showLightbox = !showLightbox">
-                    <nuxt-img v-if="media.type === 'IMAGE'" class="rounded-lg swiper-lazy"
-                            loading="lazy"
-                            provider="imgix"
-                            width="800px"
-                            height="800px"
-                            :src="media.src"
-                            :alt="media.alt"
+
+                  <a v-if="media.type === 'IMAGE'" data-fancybox="gallery" :data-src="`${media.src}`">
+                    <img class="rounded-lg swiper-lazy"
+                          loading="lazy"
+                          width="800px"
+                          height="800px"
+                          :src="media.src"
+                          :alt="media.alt"
                     />
-                    <video v-else-if="media.type === 'VIDEO'" width="100%" height="480px" controls
+                    <div class="swiper-lazy-preloader"></div>
+                  </a>
+                  <a v-if="media.type === 'VIDEO'" data-fancybox="gallery" data-type="video" :data-src="`${media.sources[Object.keys(media.sources)[1]].url}`">
+                    <video width="100%" height="480px" controls
                            playsinline
                            autoplay
                            muted
@@ -44,21 +40,22 @@
                       <source v-for="source in media.sources" :src="source.url" :type="source.mimeType">
                       Your browser does not support the video tag.
                     </video>
-                    <div v-if="media.type === 'IMAGE'" class="swiper-lazy-preloader"></div>
                   </a>
                 </div>
               </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-            <div thumbsSlider class="swiper-container mySwiper">
+            <div thumbsSlider
+                 class="swiper-container mySwiper"
+                 style="--swiper-navigation-color: #2563eb; --swiper-pagination-color: #2563eb; --swiper-navigation-size: 24px"
+            >
               <div class="swiper-wrapper items-center relative">
                 <div
                   v-for="media in product.media"
                   class="swiper-slide flex cursor-pointer justify-center items-center h-20 w-20 rounded-lg bg-center bg-cover">
-                  <nuxt-img class="rounded-lg swiper-lazy"
+                  <img class="rounded-lg swiper-lazy"
                           loading="lazy"
-                          provider="imgix"
                           width="100px"
                           height="100px"
                           :src="media.preview"
@@ -67,19 +64,21 @@
                   <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
-          <div class="lg:px-4 col-span-1 md:col-span-7">
+          <div class="lg:px-4 col-span-1 md:col-span-6">
             <h1 class="font-extrabold text-4xl">{{ product.title }}</h1>
 
-            <div v-if="product.stars > 0" class="flex items-center">
+            <a href="#reviews" v-if="product.stars > 0" class="flex items-center">
               <svg v-for="star in product.stars" :key="star"  class="flex-shrink-0 h-6 w-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
               ({{ product.totalReviews }})
-            </div>
+            </a>
 
-            <h2 v-if="product.price" class="text-xl mb-6 mt-2 bg-red-600 inline-block text-white rounded-md py-2 px-4">
+            <h2 v-if="product.price" class="text-2xl mb-6 mt-2 inline-block font-bold text-red-500 rounded-md">
               {{ formatMoney(product.price) }}
             </h2>
 
@@ -151,22 +150,26 @@
         </div>
       </div>
 
-      <div class="container mx-auto px-6 lg:px-0 pb-10 pt-6">
+      <div class="max-w-7xl mx-auto px-6 lg:px-0 pb-10 pt-6">
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div class="px-0 md:px-6 mb-6 ">
-            <h2 class="font-extrabold text-3xl mb-4">Productbeschrijving</h2>
-            <div class="relative">
-              <div class="product-des" v-bind:class="{ 'fadeHidden': !expandProductDescription }" v-html="productDescription"></div>
-              <div v-show="!expandProductDescription" class="w-full flex justify-center absolute bottom-6 z-10 left-0 right-0">
-                <button @click.prevent="expandProductDescription = true" type="button" class="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                  Toon meer
-                </button>
+            <div v-if="productDescription">
+              <h2 class="font-extrabold text-3xl mb-4">Productbeschrijving</h2>
+              <div class="relative">
+                <div class="product-des" v-bind:class="{ 'fadeHidden': !expandProductDescription }" v-html="productDescription"></div>
+                <div v-show="!expandProductDescription" class="w-full flex justify-center absolute bottom-6 z-10 left-0 right-0">
+                  <button @click.prevent="expandProductDescription = true" type="button" class="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Toon meer
+                  </button>
+                </div>
               </div>
             </div>
-            <h2 class="font-extrabold text-3xl mb-4">Specificaties</h2>
-            <div class="product-specs" v-html="product.specifications"></div>
+            <div v-if="product.specifications">
+              <h2 class="font-extrabold text-3xl mb-4">Specificaties</h2>
+              <div class="product-specs" v-html="product.specifications"></div>
+            </div>
           </div>
-          <div v-if="product" class="px-0 md:px-6 mb-6">
+          <div v-if="product" class="px-0 md:px-6 mb-6" id="reviews">
             <Reviews v-if="reviews.reviews" :product="product" :reviews="reviews.reviews" />
           </div>
         </div>
@@ -186,7 +189,8 @@ import SellingPoints from "~/components/SellingPoints";
 import {safeGet} from "~/services/Helpers";
 import NotFound from "~/components/NotFound";
 import Breadcrumbs from "../../components/Breadcrumbs";
-import FsLightbox from "fslightbox-vue";
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox.css";
 import _ from 'lodash';
 import {getProduct, getReviews} from "../../services/ApiService";
 import { formatMoney } from "../../services/Helpers";
@@ -194,7 +198,7 @@ import Reviews from "../../components/reviews/Reviews";
 import Stars from "../../components/reviews/Stars";
 
 export default Vue.extend({
-  components: {Stars, Reviews, Breadcrumbs, NotFound, SellingPoints, Loading, ProductItem, FsLightbox},
+  components: {Stars, Reviews, Breadcrumbs, NotFound, SellingPoints, Loading, ProductItem},
 
   head() {
     return {
@@ -297,6 +301,7 @@ export default Vue.extend({
         spaceBetween: 10,
         slidesPerView: 3,
         loop: false,
+        freeMode: true,
         touchRatio: 0.1,
         threshold: 5,
         lazy: true,
@@ -306,6 +311,10 @@ export default Vue.extend({
         slideToClickedSlide: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
         breakpoints: {
           1500: {
             slidesPerView: 6,
@@ -344,6 +353,10 @@ export default Vue.extend({
   async mounted() {
     this.$nextTick(() => {
       this.initializeSwiper();
+
+      if (this.productDescription.length < 500) {
+        this.expandProductDescription = true;
+      }
     });
   },
 
@@ -377,6 +390,11 @@ export default Vue.extend({
     opacity: 1;
   }
 }
+
+.swiper-button-prev, .swiper-button-next {
+  font-size: 30px;
+}
+
 
 .fadeHidden {
   position: relative;

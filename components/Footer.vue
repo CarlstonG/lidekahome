@@ -2,7 +2,7 @@
   <div>
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="border-t bg-black border-b border-gray-900">
-      <div class="container mx-auto px-6 py-6">
+      <div class="max-w-7xl mx-auto px-6 py-6">
         <dl class="md:grid md:grid-cols-4">
           <div class="relative hidden md:block">
             <dt class="flex justify-center items-center">
@@ -21,14 +21,14 @@
           <div class="relative hidden md:block">
             <dt class="flex justify-center items-center">
               <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <p class="ml-2 text-xs leading-6 font-medium text-gray-400">Gratis verzending & Gratis retourneren</p>
+              <p class="ml-2 text-xs leading-6 font-medium text-gray-400">Gratis verzending in NL en BE</p>
             </dt>
           </div>
 
           <div class="relative hidden md:block">
             <dt class="flex justify-center items-center">
               <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <p class="ml-2 text-xs leading-6 font-medium text-gray-400">60 dagen gratis retourneren</p>
+              <p class="ml-2 text-xs leading-6 font-medium text-gray-400">60 dagen gratis retourneren in NL en BE</p>
             </dt>
           </div>
         </dl>
@@ -38,11 +38,11 @@
 
     <footer class="bg-black" aria-labelledby="footerHeading">
       <h2 id="footerHeading" class="sr-only">Footer</h2>
-      <div class="container mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              Sitemap
+              Pagina's
             </h3>
             <ul class="mt-4 space-y-2">
               <li>
