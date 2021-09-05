@@ -54,6 +54,11 @@
             <Loading v-show="loading"/>
 
             <div class="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
+              <div v-if="collection.products.length === 0" class="rounded-md bg-blue-50 p-4 sm:col-span-2 lg:col-span-4">
+                <p class="text-sm text-blue-700">
+                  Er zijn geen producten gevonden<template v-if="selectedFilters && selectedFilters.product_filters.length > 0"> met de door u geselecteerde filters</template>.
+                </p>
+              </div>
               <NuxtLink :to="product.url" v-for="product in collection.products" :key="product.id" class="group text-sm flex flex-col">
                 <div class="w-full aspect-w-1 aspect-h-1 rounded-lg overflow-hidden bg-gray-100">
                   <nuxt-img class="w-full h-full object-center object-cover"
