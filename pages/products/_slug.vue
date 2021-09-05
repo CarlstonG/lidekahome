@@ -85,7 +85,6 @@
             <div v-if="product.related">
               <span class="text-sm text-gray-500">Aantal meters:</span>
               <div class="pb-4 mt-1">
-
                 <NuxtLink
                   v-for="related in product.related"
                   :key="related.id"

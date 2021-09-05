@@ -22,19 +22,19 @@
                   <img alt="Thuiswinkel waarborg" class="w-32" src="~/assets/thuiswinkel.svg"/>
                 </a>
               </dt>
-              <h1 class="mt-4 text-4xl tracking-tight font-bold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                <span class="block text-4xl">Lideka is de specialist in</span>
+              <h1 class="mt-4 text-4xl tracking-tight font-bold text-white sm:mt-5 sm:text-4xl lg:mt-6 xl:text-4xl">
+                <span class="block text-2xl">Lideka is de specialist in</span>
                 <span class="block text-indigo-400">Led en Solar artikelen</span>
               </h1>
-              <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+              <p class="mt-3 text-sm text-gray-300 sm:mt-5">
                 Lideka heeft een mooi assortiment voor huis en tuin wat iedere maand met spectaculaire items vergroot
                 wordt.
               </p>
-              <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+              <p class="mt-3 text-sm text-gray-300 sm:mt-5">
                 Ben je niet tevreden met je aankoop? Retourneer makkelijk, gratis, en ontvang het volledige
                 aankoopbedrag terug.
               </p>
-              <div class="mt-10 sm:mt-12">
+              <div class="mt-6 sm:mt-6">
                 <div class="w-full space-y-2">
                   <div class="grid grid-cols-2">
                     <dt class="flex items-center h-full">
@@ -43,7 +43,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
-                      <p class="ml-2 text-base leading-6 text-green-400">24/7 telefonisch bereikbaar</p>
+                      <p class="ml-2 text-xs leading-6 text-green-400">24/7 telefonisch bereikbaar</p>
                     </dt>
                     <dt class="flex items-center h-full">
                       <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -51,25 +51,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
-                      <p class="ml-2 text-base leading-6 text-green-400">24 maanden garantie</p>
-                    </dt>
-                  </div>
-                  <div class="grid grid-cols-2">
-                    <dt class="flex items-center h-full">
-                      <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                           xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
-                      <p class="ml-2 text-base leading-6 text-green-400">Gratis verzending</p>
-                    </dt>
-                    <dt class="flex items-center h-full">
-                      <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                           xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
-                      <p class="ml-2 text-base leading-6 text-green-400">Gratis retourneren</p>
+                      <p class="ml-2 text-xs leading-6 text-green-400">24 maanden garantie</p>
                     </dt>
                   </div>
                   <div class="grid grid-cols-2">
@@ -79,7 +61,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
-                      <p class="ml-2 text-base leading-6 text-green-400">Duurzaam</p>
+                      <p class="ml-2 text-xs leading-6 text-green-400">Gratis verzending</p>
                     </dt>
                     <dt class="flex items-center h-full">
                       <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -87,7 +69,25 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
-                      <p class="ml-2 text-base leading-6 text-green-400">Hoge kwaliteit</p>
+                      <p class="ml-2 text-xs leading-6 text-green-400">Gratis retourneren</p>
+                    </dt>
+                  </div>
+                  <div class="grid grid-cols-2">
+                    <dt class="flex items-center h-full">
+                      <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      <p class="ml-2 text-xs leading-6 text-green-400">Duurzaam</p>
+                    </dt>
+                    <dt class="flex items-center h-full">
+                      <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      <p class="ml-2 text-xs leading-6 text-green-400">Hoge kwaliteit</p>
                     </dt>
                   </div>
                 </div>
@@ -108,13 +108,8 @@
                 class="mx-auto h-full justify-center items-center flex max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 relative">
 
               <NuxtLink to="/categorie/led-strips">
-                <img class="absolute rounded-lg w-96 shadow-lg border-4 border-black hover:border-indigo-500 transition-ease-in-out transition-all" style="left: 0; top: 150px; z-index: 10" src="~assets/main.jpg"
+                <img class="absolute rounded-lg shadow-lg border-4 border-black hover:border-indigo-500 transition-ease-in-out transition-all" style="left: 0; width: 500px; top: 150px; z-index: 10" src="~assets/main.jpg"
                      alt="Led strips">
-              </NuxtLink>
-
-              <NuxtLink to="/categorie/solar-tuinverlichting">
-                <img class="absolute rounded-lg w-96 shadow-lg border-4 border-black hover:border-indigo-500 transition-ease-in-out transition-all" style="right: -20px; bottom: 100px"
-                     src="~assets/home-header/box_GM80194.jpg" alt="Solar tuinverlichting">
               </NuxtLink>
 
               <NuxtLink to="/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie">
