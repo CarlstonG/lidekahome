@@ -4,6 +4,7 @@
     <Nuxt />
     <Footer />
     <Notifications ref="notifications" />
+    <AddedToCartModal />
   </div>
 </template>
 
@@ -13,9 +14,10 @@ import Navigation from "~/components/Navigation.vue";
 import Footer from "~/components/Footer.vue";
 import {mapActions, mapGetters} from "vuex";
 import Notifications from "~/components/notifications/Notifications.vue";
+import AddedToCartModal from "~/components/AddedToCartModal.vue";
 
 export default Vue.extend({
-  components: {Notifications, Footer, Navigation},
+  components: {Notifications, Footer, Navigation, AddedToCartModal},
 
   data () {
     return {

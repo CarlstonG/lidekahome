@@ -97,7 +97,7 @@
                 </p>
 
                 <div class="mt-4">
-                  <a href="#" @click.prevent="addToCart(product.firstVariant.id, 1)" class="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200">In winkelwagen<span class="sr-only">, {{ product.title }}</span></a>
+                  <a href="#" @click.prevent="addToCart(product.firstVariant.id, product, 1)" class="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200">In winkelwagen<span class="sr-only">, {{ product.title }}</span></a>
                 </div>
               </NuxtLink>
             </div>
@@ -190,13 +190,13 @@ export default Vue.extend({
       this.fetch();
     },
 
-    async addToCart(variantId, quantity = 1) {
+    async addToCart(variantId, product, quantity = 1) {
       await this.addLine({
         variantId: variantId,
         quantity: quantity
       });
       //@ts-ignore
-      this.$root.$emit('addNotification', 'Toegevoegd', 'Product toegevoegd aan winkelmandje');
+      this.$root.$emit('productAddedToCart', product, quantity);
     },
 
     async fetch() {
