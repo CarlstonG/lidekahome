@@ -283,6 +283,10 @@ export default Vue.extend({
       'addLine'
     ]),
 
+    ...mapActions('shop/products', [
+      'addProductToRecentlyVisited',
+    ]),
+
     async addToCart(variantId, quantity = 1) {
       await this.addLine({
         variantId: variantId,
@@ -356,6 +360,14 @@ export default Vue.extend({
       if (this.productDescription.length < 500) {
         this.expandProductDescription = true;
       }
+    });
+
+    this.addProductToRecentlyVisited({
+      slug: this.slug,
+      title: this.product.title,
+      image: this.productImages[0],
+      deliveryDate: this.product.deliveryDate,
+      price: this.product.price,
     });
   },
 

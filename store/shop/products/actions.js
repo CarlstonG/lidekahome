@@ -17,7 +17,32 @@ const actions = {
   async fetchCollections({commit}) {
     const collections = await this.$shopify.collection.fetchAll();
     commit('setCollections', collections);
-  }
+  },
+
+  addProductToRecentlyVisited({commit, state}, product) {
+    const current = state.recentlyVisitedProducts.length > 0 ? state.recentlyVisitedProducts : JSON.parse(localStorage.getItem('recentlyVisitedProducts') ?? '[]');
+    const products = [...current];
+
+    const productExists = products.find(p => p.slug === product.slug);
+    if (productExists) {
+      return;
+    }
+
+    products.push(product);
+
+    if (products.length > 5) {
+      products.shift();
+    }
+
+    localStorage.setItem('recentlyVisitedProducts', JSON.stringify(products));
+
+    commit('setRecentlyVisitedProducts', products);
+  },
+
+  initRecentlyVisitedProducts({commit}) {
+    const products = JSON.parse(localStorage.getItem('recentlyVisitedProducts') ?? '[]');
+    commit('setRecentlyVisitedProducts', products);
+  },
 }
 
 export default actions;
