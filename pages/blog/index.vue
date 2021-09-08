@@ -12,11 +12,11 @@
             {{ blog.title }}
           </h2>
         </div>
-        <div class="mt-12 mx-auto grid gap-5 lg:grid-cols-3">
+        <div class="mt-12 mx-auto grid gap-5 lg:grid-cols-4">
           <div v-for="article in blog.articles" :key="article.id" class="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div class="flex-shrink-0">
               <NuxtLink :to="article.url">
-                <img class="h-48 w-full object-cover" :src="article.image" :alt="article.imageAlt">
+                <img class="h-96 w-full object-cover" :src="article.image" :alt="article.imageAlt">
               </NuxtLink>
             </div>
             <div class="flex-1 bg-white p-6 flex flex-col justify-between">
