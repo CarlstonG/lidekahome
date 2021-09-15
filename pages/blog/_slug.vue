@@ -6,11 +6,8 @@
         <NotFound v-if="!loading" />
       </div>
     </div>
-    <div v-else>
-      <div class="max-w-prose prose-lg mx-auto bg-cover bg-no-repeat bg-center bg-scroll"
-           :style="`background-image: url('${blog.article.image}')`">
-        <div class="max-w-7xl mx-auto py-64 text-center"></div>
-      </div>
+    <div class="bg-white pt-0 md:pt-6" v-else>
+      <img :alt="blog.article.title" :src="blog.article.image" class="shadow-lg w-full max-w-2xl mx-auto md:rounded-lg rounded-none" />
 
       <div class="relative py-16 bg-white overflow-hidden">
         <div class="relative px-4 sm:px-6 lg:px-8">
