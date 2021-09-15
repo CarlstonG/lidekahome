@@ -2,6 +2,7 @@
   <div class="bg-black">
     <Navigation :collections="getMainCollections" />
     <Nuxt />
+    <RecentlyVisited />
     <Footer />
     <Notifications ref="notifications" />
     <Smile />
@@ -17,9 +18,10 @@ import {mapActions, mapGetters} from "vuex";
 import Notifications from "~/components/notifications/Notifications.vue";
 import Smile from  "~/components/Smile.vue";
 import AddedToCartModal from "~/components/AddedToCartModal.vue";
+import RecentlyVisited from '~/components/products/RecentlyVisited.vue';
 
 export default Vue.extend({
-  components: {Notifications, Footer, Navigation, Smile, AddedToCartModal},
+  components: {Notifications, Footer, Navigation, Smile, AddedToCartModal, RecentlyVisited},
 
   data () {
     return {
@@ -45,7 +47,8 @@ export default Vue.extend({
 
   methods: {
     ...mapActions('shop/products', [
-      'fetchCollections'
+      'fetchCollections',
+      'initRecentlyVisitedProducts'
     ]),
 
     ...mapActions('shop/cart', [
@@ -66,6 +69,10 @@ export default Vue.extend({
     this.fetchCheckout();
     this.fetchShop();
     this.fetchCollections();
+  },
+
+  mounted() {
+    this.initRecentlyVisitedProducts();
   },
 
   head() {

@@ -10,6 +10,9 @@ export default {
     ],
   },
   theme: {
+    fill: {
+      current: 'currentColor',
+    },
     extend: {
       colors: {
         'light-blue': colors.lightBlue,
@@ -23,6 +26,13 @@ export default {
         white: colors.white,
         gray: colors.gray,
         black: colors.black,
+
+        social: {
+          fb: '#1877F2',
+          twitter: '#1DA1F2',
+          whatsapp: '#25D366',
+          pinterest: '#BD081C',
+        }
       },
     },
   },

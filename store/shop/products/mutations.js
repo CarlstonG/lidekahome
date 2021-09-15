@@ -14,6 +14,10 @@ const mutations = {
       state.productCollections.push(payload);
     }
   },
+
+  setRecentlyVisitedProducts(state, products) {
+    state.recentlyVisitedProducts = products;
+  }
 };
 
 export default mutations;
