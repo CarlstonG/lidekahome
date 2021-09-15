@@ -79,7 +79,7 @@
             </a>
 
             <h2 v-if="product.price" class="text-2xl mb-6 mt-2 inline-block font-bold text-red-500 rounded-md">
-              {{ formatMoney(product.price) }}
+              {{ formatMoney(product.price) }} <del v-if="product.priceCompare" class="text-xl text-black">{{ formatMoney(product.priceCompare) }}</del>
             </h2>
 
             <div v-if="product.related">

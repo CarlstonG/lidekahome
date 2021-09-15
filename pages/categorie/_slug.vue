@@ -93,7 +93,7 @@
                 </div>
 
                 <p class="mt-2 font-medium text-gray-900">
-                  {{ formatMoney(product.firstVariant.price) }}
+                  {{ formatMoney(product.firstVariant.price) }} <del v-if="product.priceCompare" class="text-xs text-black">{{ formatMoney(product.priceCompare) }}</del>
                 </p>
 
                 <div class="mt-4">

@@ -26,7 +26,7 @@
 
     <div v-if="!gradient" class="flex items-center justify-space-between w-full">
       <p class="text-md w-full text-black text-left block mt-2 font-bold">
-        {{ formatMoney(product.firstVariant.price) }}
+        {{ formatMoney(product.price) }}
       </p>
       <div class="w-full text-right">
         <button @click.prevent="addToCart(product.firstVariantId, 1)" type="submit" name="add"
