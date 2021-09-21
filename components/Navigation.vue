@@ -155,7 +155,7 @@
                       {{ collection.title }}
                     </NuxtLink>
                     <NuxtLink prefetch
-                              to="/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie"
+                              to="/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge"
                               class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                       Solar Powerbank
                     </NuxtLink>
