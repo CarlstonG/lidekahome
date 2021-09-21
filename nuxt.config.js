@@ -251,6 +251,81 @@ export default {
         res.end();
       }
 
+      if (req.url.match("/products/lideka-rgb-smart-tv-led-light-strip-2-meter-met-smart-app")) {
+        res.writeHead(301, {Location: req.url.replace("lideka-rgb-smart-tv-led-light-strip-2-meter-met-smart-app", "lideka-tv-led-strip-2-meter-usb-rgb-smart-verlichting")})
+        res.end();
+      }
+
+      if (req.url.match("/products/lideka-rgb-smart-tv-led-light-strip-3-meter-met-smart-app")) {
+        res.writeHead(301, {Location: req.url.replace("lideka-rgb-smart-tv-led-light-strip-3-meter-met-smart-app", "lideka-tv-led-strip-3-meter-usb-rgb-smart-verlichting")})
+        res.end();
+      }
+
+      if (req.url.match("/products/lideka-rgb-led-light-strip-3-meter")) {
+        res.writeHead(301, {Location: req.url.replace("lideka-rgb-led-light-strip-3-meter", "rgb-led-light-strip-3-meter-smart-verlichting")})
+        res.end();
+      }
+
+      if (req.url.match("/products/led-strip-5-meter")) {
+        res.writeHead(301, {Location: req.url.replace("led-strip-5-meter", "rgb-led-light-strip-5-meter-smart-verlichting")})
+        res.end();
+      }
+
+      if (req.url.match("/products/led-strip-10-meter")) {
+        res.writeHead(301, {Location: req.url.replace("led-strip-10-meter", "rgb-led-light-strip-10-meter-smart-verlichting")})
+        res.end();
+      }
+
+      if (req.url.match("/products/lideka-rgb-led-light-strip-15-meter")) {
+        res.writeHead(301, {Location: req.url.replace("lideka-rgb-led-light-strip-15-meter", "rgb-led-light-strip-15-meter-smart-verlichting")})
+        res.end();
+      }
+
+      if (req.url.match("/products/lideka-rgb-led-light-strip-20-meter")) {
+        res.writeHead(301, {Location: req.url.replace("lideka-rgb-led-light-strip-20-meter", "rgb-led-light-strip-20-meter-smart-verlichting")})
+        res.end();
+      }
+
+      if (req.url.match("/products/lideka-led-strip-3-meter-tv-strip-2m-compleet-pakket-incl-app")) {
+        res.writeHead(301, {Location: req.url.replace("lideka-led-strip-3-meter-tv-strip-2m-compleet-pakket-incl-app", "rgb-led-light-strip-15-meter-tv-strip-3m-combinatie-pakket-1")})
+        res.end();
+      }
+
+      if (req.url.match("/products/lideka-rgb-led-light-strip-6-meter-tv-led-strip-2-meter")) {
+        res.writeHead(301, {Location: req.url.replace("lideka-rgb-led-light-strip-6-meter-tv-led-strip-2-meter", "rgb-led-light-strip-5-meter-tv-strip-2m-combinatie-pakket")})
+        res.end();
+      }
+
+      if (req.url.match("/products/lideka-rgb-led-light-strip-12-meter-2x6-tv-led-strip-3-meter")) {
+        res.writeHead(301, {Location: req.url.replace("lideka-rgb-led-light-strip-12-meter-2x6-tv-led-strip-3-meter", "rgb-led-light-strip-10-meter-tv-strip-3m-combinatie-pakket")})
+        res.end();
+      }
+
+      if (req.url.match("/products/copy-of-lideka-led-strip-15-3x5-meter-tv-strip-3m-compleet-pakket-incl-app")) {
+        res.writeHead(301, {Location: req.url.replace("copy-of-lideka-led-strip-15-3x5-meter-tv-strip-3m-compleet-pakket-incl-app", "rgb-led-light-strip-15-meter-tv-strip-3m-combinatie-pakket")})
+        res.end();
+      }
+
+      if (req.url.match("/products/lideka-led-strip-20-4x5-meter-tv-strip-3m-compleet-pakket-incl-app")) {
+        res.writeHead(301, {Location: req.url.replace("lideka-led-strip-20-4x5-meter-tv-strip-3m-compleet-pakket-incl-app", "rgb-led-light-strip-20-meter-tv-strip-3m-combinatie-pakket")})
+        res.end();
+      }
+
+      if (req.url.match("/products/led-strip-5-meter-1-meter-van-lideka-rgb")) {
+        res.writeHead(301, {Location: req.url.replace("led-strip-5-meter-1-meter-van-lideka-rgb", "rgb-ic-led-light-strip-5-meter-smart-verlichting")})
+        res.end();
+      }
+
+      if (req.url.match("/products/led-strip-10-meter-2-meter-van-lideka®-rgb")) {
+        res.writeHead(301, {Location: req.url.replace("led-strip-5-meter-1-meter-van-lideka-rgb", "rgb-ic-led-light-strip-10-meter-smart-verlichting")})
+        res.end();
+      }
+
+      if (req.url.match("/products/lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie")) {
+        res.writeHead(301, {Location: req.url.replace("lideka-solar-powerbank-30-000-mah-usb-c-waterdicht-4-usb-poorten-zonneenergie", "solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge")})
+        res.end();
+      }
+
       if (req.url.match('sitemap.xml')) {
         await axios.get(`${process.env.ROCKSOLID_API_URL}/sitemap?api_key=${process.env.ROCKSOLID_API_KEY}`).then((response) => {
           res.end(response.data);
