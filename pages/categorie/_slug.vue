@@ -1,6 +1,50 @@
 <template>
   <div class="bg-white">
-    <div v-if="collection">
+    <TvLedStrips
+        v-if="collection && collection.handle === 'tv-led-strips'"
+        :collection="collection"
+    />
+    <RgbIcLedStrips
+        v-else-if="collection && collection.handle === 'rgb-ic-led-strips'"
+        :collection="collection"
+    />
+    <RgbLedStrips
+        v-else-if="collection && collection.handle === 'rgb-led-strips'"
+        :collection="collection"
+    />
+    <LedPakketten
+        v-else-if="collection && collection.handle === 'led-pakketten'"
+        :collection="collection"
+    />
+    <LedStrips
+        v-else-if="collection && collection.handle === 'led-strips'"
+        :collection="collection"
+    />
+    <Woonkamer
+        v-else-if="collection && collection.handle === 'woonkamer'"
+        :collection="collection"
+    />
+    <Keuken
+        v-else-if="collection && collection.handle === 'keuken'"
+        :collection="collection"
+    />
+    <Slaapkamer
+        v-else-if="collection && collection.handle === 'slaapkamer'"
+        :collection="collection"
+    />
+    <Gamekamer
+        v-else-if="collection && collection.handle === 'gamekamer'"
+        :collection="collection"
+    />
+    <Badkamer
+        v-else-if="collection && collection.handle === 'badkamer'"
+        :collection="collection"
+    />
+    <Plafond
+        v-else-if="collection && collection.handle === 'plafond'"
+        :collection="collection"
+    />
+    <div v-else-if="collection && collection.handle">
       <div class="w-full bg-black">
         <div class="max-w-7xl mx-auto pt-2 md:pt-6 mb-2 md:pb-6 text-left px-4 md:px-2">
           <div class="block md:flex justify-space-between w-full">
@@ -54,9 +98,9 @@
             <Loading v-show="loading"/>
 
             <div class="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
-              <div v-if="collection.products.length === 0" class="rounded-md bg-blue-50 p-4 sm:col-span-2 lg:col-span-4">
+              <div v-if="!collection || !collection.products || collection.products.length === 0" class="rounded-md bg-blue-50 p-4 sm:col-span-2 lg:col-span-4">
                 <p class="text-sm text-blue-700">
-                  Er zijn geen producten gevonden<template v-if="selectedFilters && selectedFilters.product_filters.length > 0"> met de door u geselecteerde filters</template>.
+                  Er zijn geen producten gevonden.
                 </p>
               </div>
               <NuxtLink :to="product.url" v-for="product in collection.products" :key="product.id" class="group text-sm flex flex-col">
@@ -112,6 +156,9 @@
                        @selectedFilters="setSelectedFilters"/>
       </transition>
     </div>
+    <div v-else>
+      <NotFound />
+    </div>
   </div>
 </template>
 
@@ -125,9 +172,35 @@ import FilterSidebar from "../../components/filters/FilterSidebar";
 import {getCollection} from "../../services/ApiService";
 import {safeGet, formatMoney} from "../../services/Helpers";
 import {mapActions, mapGetters} from "vuex";
+import Landingspage from "../../components/Landingspage";
+import TvLedStrips from "../../components/landingspages/TvLedStrips";
+import RgbIcLedStrips from "../../components/landingspages/RgbIcLedStrips";
+import RgbLedStrips from "../../components/landingspages/RgbLedStrips";
+import NotFound from "../../components/NotFound";
+import LedPakketten from "../../components/landingspages/LedPakketten";
+import LedStrips from "../../components/landingspages/LedStrips";
+import Slaapkamer from "../../components/landingspages/Slaapkamer";
+import Woonkamer from "../../components/landingspages/Woonkamer";
+import Keuken from "../../components/landingspages/Keuken";
+import Gamekamer from "../../components/landingspages/Gamekamer";
+import Badkamer from "../../components/landingspages/Badkamer";
+import Plafond from "../../components/landingspages/Plafond";
 
 export default Vue.extend({
   components: {
+    Plafond,
+    Badkamer,
+    Gamekamer,
+    Keuken,
+    Woonkamer,
+    Slaapkamer,
+    LedStrips,
+    LedPakketten,
+    NotFound,
+    RgbLedStrips,
+    RgbIcLedStrips,
+    TvLedStrips,
+    Landingspage,
     FilterSidebar,
     Filters,
     Loading,
@@ -230,6 +303,7 @@ export default Vue.extend({
       limit: 50,
       sortKey: 'PRICE',
       reverse: false,
+      reverseImages: true,
       filters: {
         product_filters: {},
       },

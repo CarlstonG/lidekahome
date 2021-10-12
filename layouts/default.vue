@@ -2,10 +2,8 @@
   <div class="bg-black">
     <Navigation :collections="getMainCollections" />
     <Nuxt />
-    <RecentlyVisited />
     <Footer />
     <Notifications ref="notifications" />
-    <Smile />
     <AddedToCartModal />
   </div>
 </template>
@@ -278,5 +276,57 @@ export default Vue.extend({
   tr:nth-child(even) {
     background-color: #f2f2f2;
   }
+}
+
+.black-gradient {
+  background: linear-gradient(137.27deg, #222222 3.07%, rgba(0, 0, 0, 0) 100%);
+}
+
+._plant {
+  height: 375px;
+  background: url('~assets/design/landings/plant-bg.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+._plant-bg {
+  opacity: 0.1;
+  background: url('~assets/design/landings/plant-bg-img.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+._audio {
+  height: 375px;
+  border-radius: 40px;
+  background: linear-gradient(115.95deg, rgba(137, 33, 163, 0.81) 0%, rgba(43, 180, 171, 0.67) 100%);
+}
+
+._audio-bg {
+  opacity: 0.1;
+  background: url('~assets/design/landings/audio-bg.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+._colors {
+  height: 375px;
+  border-radius: 40px;
+  background: #151515;
+}
+
+._montage {
+  height: 375px;
+  border-radius: 40px;
+  background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);
+}
+
+._brightness {
+  background: linear-gradient(178.32deg, rgba(53, 53, 53, 0.21) 1.42%, rgba(255, 211, 99, 0.63) 95%);
+  height: 375px;
+  border-radius: 40px;
 }
 </style>

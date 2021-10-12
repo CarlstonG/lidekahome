@@ -15,8 +15,10 @@ const getters = {
     return state.collections.filter((item) => {
       return [
         'led-strips',
-        'solar-tuinverlichting',
-        'accessoires',
+        'rgb-led-strips',
+        'tv-led-strips',
+        'rgb-ic-led-strips',
+        'led-pakketten',
       ].indexOf(item.handle) > -1
     })
   }

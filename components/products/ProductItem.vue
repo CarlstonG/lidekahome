@@ -9,7 +9,9 @@
               height="100%"
       />
     </NuxtLink>
-    <NuxtLink class="text-md text-black w-full text-black text-left flex-grow flex-1 h-full block mt-2" :class="{ 'text-gray-500': gradient }" :to="product.url">{{ product.title }}</NuxtLink>
+    <NuxtLink class="text-md text-black w-full text-black text-left flex-grow flex-1 h-full block mt-2" :class="{ 'text-white text-2xl font-bold': gradient }" :to="product.url">
+      {{ !gradient ? product.title : product.firstVariant.title }}
+    </NuxtLink>
 
     <div v-if="!gradient" class="w-full">
       <div v-if="product.deliveryDate" class="text-left relative py-2 w-full">
@@ -37,6 +39,24 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
           </svg>
+        </button>
+      </div>
+    </div>
+    <div v-else class="w-full">
+      <p class="text-md w-full text-white text-left block mt-2 font-bold">
+        {{ formatMoney(product.price) }}
+      </p>
+      <div class="w-full">
+        <button @click.prevent="addToCart(product.firstVariantId, 1)" type="submit" name="add"
+                id="AddToCart"
+                class="mt-3 flex inline-block shadow-md p-2 px-4 items-center justify-center border border-transparent rounded-full shadow-sm text-md font-medium text-white bg-indigo-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+          <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+               xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+
+          Bestellen
         </button>
       </div>
     </div>
