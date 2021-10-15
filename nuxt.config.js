@@ -30,7 +30,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/jsonld', '~/plugins/vuelidate.js'],
+  plugins: ['~/plugins/jsonld', '~/plugins/vuelidate.js', { src: '~/plugins/vue-carousel.js', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,

@@ -36,6 +36,7 @@
     "nuxt-ssr-cache": "^1.5.2",
     "sass-loader": "^10.2.0",
     "swiper": "^6.7.5",
+    "vue-carousel": "^0.18.0",
     "vue-imgix": "^2.9.0",
     "vuelidate": "^0.7.6"
   },
