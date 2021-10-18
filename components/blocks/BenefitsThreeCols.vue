@@ -38,16 +38,16 @@ import Vue from "vue";
 export default Vue.extend({
   props: {
     firstBlock: {
-      type: {},
+      type: Object,
       required: true,
     },
     secondBlock: {
-      type: {},
-      required: true
+      type: Object,
+      required: true,
     },
     thirdBlock: {
-      type: {},
-      required: true
+      type: Object,
+      required: true,
     }
   }
 });

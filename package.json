@@ -38,6 +38,7 @@
     "swiper": "^6.7.5",
     "vue-carousel": "^0.18.0",
     "vue-imgix": "^2.9.0",
+    "vue-nl2br": "^0.1.2",
     "vuelidate": "^0.7.6"
   },
   "devDependencies": {

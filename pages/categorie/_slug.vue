@@ -24,6 +24,10 @@
         v-else-if="collection && collection.handle === 'woonkamer'"
         :collection="collection"
     />
+    <Bed
+        v-else-if="collection && collection.handle === 'bed'"
+        :collection="collection"
+    />
     <Keuken
         v-else-if="collection && collection.handle === 'keuken'"
         :collection="collection"
@@ -185,9 +189,11 @@ import Keuken from "../../components/landingspages/Keuken";
 import Gamekamer from "../../components/landingspages/Gamekamer";
 import Badkamer from "../../components/landingspages/Badkamer";
 import Plafond from "../../components/landingspages/Plafond";
+import Bed from "../../components/landingspages/Bed";
 
 export default Vue.extend({
   components: {
+    Bed,
     Plafond,
     Badkamer,
     Gamekamer,

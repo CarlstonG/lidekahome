@@ -35,12 +35,12 @@ export default Vue.extend({
       default: false
     },
     firstBlock: {
-      type: {},
+      type: Object,
       required: true,
     },
     secondBlock: {
-      type: {},
-      required: true
+      type: Object,
+      required: true,
     }
   }
 });
