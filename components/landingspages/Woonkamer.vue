@@ -295,19 +295,23 @@ export default Vue.extend({
   methods: {
     async getCollection() {
       this.collection1 = await getCollection('rgb-led-strips', {
-        reverseImages: true
+        reverseImages: true,
+        sortKey: 'PRICE',
       });
 
       this.collection2 = await getCollection('tv-led-strips', {
-        reverseImages: true
+        reverseImages: true,
+        sortKey: 'PRICE',
       });
 
       this.collection3 = await getCollection('rgb-ic-led-strips', {
-        reverseImages: true
+        reverseImages: true,
+        sortKey: 'PRICE',
       });
 
       this.collection4 = await getCollection('led-pakketten', {
-        reverseImages: true
+        reverseImages: true,
+        sortKey: 'PRICE',
       });
     }
   },

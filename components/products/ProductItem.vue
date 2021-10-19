@@ -27,7 +27,7 @@
     </div>
 
     <div v-if="!gradient" class="flex items-center justify-space-between w-full">
-      <p class="text-md w-full text-black text-left block mt-2 font-bold">
+      <p class="text-md w-full text-black text-left block mt-2 font-extralight">
         {{ formatMoney(product.price) }}
       </p>
       <div class="w-full text-right">
@@ -43,7 +43,7 @@
       </div>
     </div>
     <div v-else class="w-full">
-      <p class="text-md w-full text-white text-left block mt-2 font-bold">
+      <p class="text-md w-full text-white text-left block mt-2 extralight opacity-50">
         {{ formatMoney(product.price) }}
       </p>
       <div class="w-full">

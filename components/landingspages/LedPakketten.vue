@@ -193,8 +193,7 @@
 
       <OtherCollections
         :collections="[
-
-            'led-strip-pakketten',
+            'rgb-ic-led-strips',
             'rgb-led-strips',
             'tv-led-strips'
         ]"

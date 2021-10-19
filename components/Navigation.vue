@@ -154,6 +154,14 @@
                               class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                       {{ collection.title }}
                     </NuxtLink>
+
+                    <NuxtLink prefetch
+                              v-for="collection in collections"
+                              :to="`/categorie/${collection.handle}`"
+                              class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Solar powerbank
+                    </NuxtLink>
                   </div>
                 </div>
               </div>

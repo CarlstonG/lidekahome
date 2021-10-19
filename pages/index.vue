@@ -131,9 +131,9 @@
       <div class="mx-auto max-w-7xl py-10 px-6" style="border-radius: 40px; background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);">
         <div class="grid grid-cols-1 lg:grid-cols-2 p-2 gap-10 lg:p-10">
           <div class="flex items-center flex-col">
-            <img src="~assets/design/led-strips.png" class="-mt-20 lg:-mt-28" />
+            <img src="~assets/rgb-led-strip.jpg" class="rounded-lg max-w-sm mb-4" />
 
-            <div class="flex space-x-8 items-center justify-center -mt-16 lg:-mt-20">
+            <div class="flex space-x-8 items-center justify-center">
               <div class="text-center flex flex-col">
                 <div class="flex-grow flex items-center justify-center">
                   <img class="w-20" src="~assets/icons/WEBicons-01.png" />
@@ -158,13 +158,107 @@
             <div class="space-y-4 px-4 lg:px-8">
               <h2 class="text-3xl text-white font-bold">RGB Led strips</h2>
               <p class="text-white font-extralight">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus vestibulum ipsum, nunc odio ut. Egestas tincidunt lectus dui velit turpis nulla. Ut est aenean scelerisque ut mattis libero.
+                RGB-led verlichting combineert rode, groene en blauwe led-lampjes in één behuizing en vormt honderden verschillende lichttinten door deze drie kleuren te mengen. Zo stel jij jouw favoriete kleuren samen wanneer je maar wilt en geniet je iedere keer weer van een unieke sfeer.
               </p>
               <p class="text-white font-extralight">
-                Proin eget lobortis tortor sed quis mattis in justo arcu.
+                Deze stijlvolle led set wordt geleverd inclusief installatiemateriaal, IP65-waterproof bescherming en led lampjes van de hoogste kwaliteit zodat je jouw aankoop nog jarenlang kunt gebruiken. Toch niet tevreden? Lideka® garandeert jou van een 2-jarige garantie.
               </p>
               <NuxtLink to="/categorie/led-strips"
                 class="border-2 border-white px-8 inline-block py-2 text-white rounded-lg tracking-light mt-10"
+              >
+                Bekijken
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-6 mt-10">
+      <div class="mx-auto max-w-7xl py-10 px-6" style="border-radius: 40px; background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);">
+        <div class="grid grid-cols-1 lg:grid-cols-2 p-2 gap-10 lg:p-10">
+          <div class="flex items-center flex-col">
+            <img src="~assets/tv-led-strip.jpg" class="rounded-lg max-w-sm mb-4" />
+
+            <div class="flex space-x-8 items-center justify-center">
+              <div class="text-center flex flex-col">
+                <div class="flex-grow flex items-center justify-center">
+                  <img class="w-20" src="~assets/icons/WEBicons-01.png" />
+                </div>
+                <span class="text-white">Quality 100%</span>
+              </div>
+              <div class="text-center flex flex-col">
+                <div class="flex-grow flex items-center justify-center">
+                  <img class="w-20" src="~assets/icons/WEBicons-06.png" />
+                </div>
+                <span class="text-white">Durability</span>
+              </div>
+              <div class="text-center flex flex-col">
+                <div class="flex-grow flex items-center justify-center">
+                  <img class="w-20" src="~assets/icons/WEBicons-06.png" />
+                </div>
+                <span class="text-white">Bright</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-4 flex items-center">
+            <div class="space-y-4 px-4 lg:px-8">
+              <h2 class="text-3xl text-white font-bold">TV Led strips</h2>
+              <p class="text-white font-extralight">
+                LEen led-strip achter je TV creëert een stijlvolle lichtgloed rondom het scherm en geeft jouw huiskamer een echte bioscoop sfeer. Maar deze handige strips zijn veel meer dan alleen mooi en zorgen ook voor een subtielere overgang tussen licht en donker. Zo worden jouw ogen minder snel moe en kijk je extra comfortabel naar jouw favoriete films & shows. De set wordt bovendien geleverd met dubbelzijdig tape en een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.
+              </p>
+              <p class="text-white font-extralight">
+                Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.
+              </p>
+              <NuxtLink to="/categorie/tv-led-strips"
+                        class="border-2 border-white px-8 inline-block py-2 text-white rounded-lg tracking-light mt-10"
+              >
+                Bekijken
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-6 mt-10">
+      <div class="mx-auto max-w-7xl py-10 px-6" style="border-radius: 40px; background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);">
+        <div class="grid grid-cols-1 lg:grid-cols-2 p-2 gap-10 lg:p-10">
+          <div class="flex items-center flex-col">
+            <img src="~assets/design/led-strips.png" class="-mt-20 lg:-mt-28" alt="RGB-IC Led strips" />
+
+            <div class="flex space-x-8 items-center justify-center -mt-16 lg:-mt-20">
+              <div class="text-center flex flex-col">
+                <div class="flex-grow flex items-center justify-center">
+                  <img class="w-20" src="~assets/icons/WEBicons-01.png" />
+                </div>
+                <span class="text-white">Quality 100%</span>
+              </div>
+              <div class="text-center flex flex-col">
+                <div class="flex-grow flex items-center justify-center">
+                  <img class="w-20" src="~assets/icons/WEBicons-06.png" />
+                </div>
+                <span class="text-white">Durability</span>
+              </div>
+              <div class="text-center flex flex-col">
+                <div class="flex-grow flex items-center justify-center">
+                  <img class="w-20" src="~assets/icons/WEBicons-06.png" />
+                </div>
+                <span class="text-white">Bright</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-4 flex items-center">
+            <div class="space-y-4 px-4 lg:px-8">
+              <h2 class="text-3xl text-white font-bold">RGB-IC Led strips</h2>
+              <p class="text-white font-extralight">
+                Net als bij een standaard model vormt de RGB-IC led-strip alle mogelijke kleurtinten, maar dan met schitterende extra lichteffecten. Deze splinternieuwe vorm van led licht wordt ook wel ‘Dreamcolor Led’ genoemd en is razend populair bij onder Amerikaanse TikTokkers. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe editie is het mogelijk!
+              </p>
+              <p class="text-white font-extralight">
+                Naast deze extra features werkt de RGB-IC uitvoering net als een traditionele led-strip. Zo ben je verzekerd van 2 jaar garantie, IP65-waterproof bescherming en led-lampjes van de hoogste kwaliteit.
+              </p>
+              <NuxtLink to="/categorie/rgb-ic-led-strips"
+                        class="border-2 border-white px-8 inline-block py-2 text-white rounded-lg tracking-light mt-10"
               >
                 Bekijken
               </NuxtLink>
