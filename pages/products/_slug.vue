@@ -406,7 +406,6 @@ export default Vue.extend({
   font-size: 30px;
 }
 
-
 .fadeHidden {
   position: relative;
   max-height: 500px;

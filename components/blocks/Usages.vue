@@ -2,7 +2,7 @@
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
       <div class="col-span-1 lg:col-span-5 _living-room">
-        <NuxtLink to="/categorie/woonkwamer">
+        <NuxtLink to="/categorie/woonkamer">
           <div class="flex items-end justify-center text-center" style="height: 400px;">
             <h2 class="p-6 text-white text-2xl font-bold">Huiskamer</h2>
           </div>
@@ -48,7 +48,7 @@
         </NuxtLink>
       </div>
       <div class="col-span-1 lg:col-span-4 _bed">
-        <NuxtLink to="/categorie/badkamer">
+        <NuxtLink to="/categorie/bed">
           <div class="flex items-end justify-center text-center" style="height: 400px;">
             <h2 class="p-6 text-white text-2xl font-bold">Bed</h2>
           </div>

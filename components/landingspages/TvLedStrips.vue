@@ -30,19 +30,99 @@
       <ProductsWithBackground
         title="Transformeer jouw ruimte tot thuisbioscoop met onze multifunctionele TV led-strips!"
         :collection="collection"
+        style="margin-top: 80px;"
       />
 
+      <div class="mx-auto max-w-5xl">
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-10">
+          <LongParagraph
+              bg-color
+              title="Compleet pakket"
+          >
+            <p class="text-white font-extralight">
+              Dit set is echt helemaal compleet en je hebt geen extra kabel meer nodig. Je zou er wel nog hoekconnectoren bij kunnen gebruiken maar deze raden wij sterk af. Onze TV led strips zijn enorm flexibel en deze kun je zonder te knippen achter op een TV plakken.
+            </p>
+          </LongParagraph>
+          <LongParagraph
+              bg-color
+              title="Waarschuwing"
+          >
+            <p class="text-white font-extralight">
+              Let AUB goed op het feit dat sommige TV's niet voldoende stroom geven aan de led strip, in dit geval raden we je aan om een USB adapter te gebruiken, deze zijn overal te verkrijgen. Je kunt dit ontdekken door gewoon te kijken naar de manier waarop de led strip functioneert. Bij vragen kun je altijd even contact opnemen met de klantenservice.
+            </p>
+          </LongParagraph>
+        </div>
+      </div>
+
+      <SingleImage
+        :image-src="require('assets/design/landings/tv-green.png')"
+        description="<h2 class='font-bold text-3xl'>TV verlichting goed voor de ogen</h2><p>Er zijn meerdere studies en onderzoeken geweest naar het gebruik van TV led strips, en daar is keer op keer uitgekomen dat het goed voor de ogen is. Vooral de wat zachtere kleuren zoals rood doen het enorm goed, het brengt je ogen en mind tot rust en het laat je meer ontspannen.</p>"
+      />
+
+      <div class="mx-auto max-w-5xl">
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-10">
+          <LongParagraph
+              bg-color
+              title="Indirecte verlichting"
+          >
+            <p class="text-white font-extralight">
+              Deze TV strip sets kunnen perfect gebruikt worden als indirecte verlichting, daar zijn ze immers voor bedoeld. Lees ook goed de nederlandse handleiding zodat jij een echte verlichting specialist kunt worden. Mocht je al een verlichting specialist zijn dan horen we graag wat wij nog kunnen verbeteren aan onze artikelen.
+            </p>
+          </LongParagraph>
+          <LongParagraph
+              bg-color
+              title="Kleuren verlichting"
+          >
+            <p class="text-white font-extralight">
+              Deze verlichting heeft echt een bijzonder breed scala aan kleuren 16 miljoen+ kleuren maar liefst. Je kunt je dromerige kleuren instellen, ja favoriete kleuren, fellere kleuren, maar ook een kleur helder blauw bijvoorbeeld. De mogelijkheden zijn echt oneindig.
+            </p>
+          </LongParagraph>
+        </div>
+      </div>
+
+      <div class="mx-auto max-w-5xl">
+        <LongParagraph
+            bg-color
+            title="Verbindingen"
+        >
+          <p class="text-white font-extralight">
+            Er zijn bepaalde softwares zoals google assistent en amazon alexa die dit soort apparaten kunnen bedienen. Echter is dat bij TV Led strips vaak overbodig aangezien deze vanzelf al aan en uit gaan met de TV.
+          </p>
+        </LongParagraph>
+      </div>
+
+      <SingleImage
+          :image-src="require('assets/design/landings/banner-2.png')"
+      />
+
+      <div class="mx-auto max-w-5xl">
+        <LongParagraph
+            title="Led verlichting"
+        >
+          <p class="text-white font-extralight">
+            De meeste mensen denken bij verlichting aan elektriciteit en de daaraan verbonden risico's, en het is waar dat elk elektrisch apparaat brand kan veroorzaken. Velen gebruiken ze zelfs als sfeerverlichting omdat ze vaak dimbaar zijn, en je veel meer keuze hebt in kleur. Led verlichting is bijzonder duurzaam en wordt steeds vaker gebruikt in en om het huis. Lampen gaan langer mee dan gewone verlichtingsarmaturen en produceren minder warmte in het milieu.
+          </p>
+          <p class="text-white font-extralight">
+            LED lampen bevatten geen kwik, in tegenstelling tot fluorescentielampen die grote hoeveelheden kwik bevatten en kunnen versplinteren als ze op een harde vloer vallen of als er een dier op valt. Omdat dit soort ongelukken soms gebeuren, moeten deze lampen vanwege hun gevaarlijke bestanddelen met zorg worden weggegooid bij speciale recyclingcentra. Door het gebruik van LED-verlichting voor uw huis of bedrijf bespaart u niet alleen geld, maar beschermt u ook het milieu!
+            Dit zijn slechts enkele van de manieren waarop u de opwarming van de aarde kunt helpen voorkomen. Het gebruik van deze ongewone soorten lampen zal u helpen elektriciteit te besparen en tegelijkertijd de broeikasgassen te verminderen die bijdragen tot de klimaatverandering! LED-verlichting voor thuis of voor uw bedrijf is een geweldige manier om groen te zijn, omdat ze u helpen geld te besparen en tegelijkertijd de CO2-uitstoot te verminderen.
+          </p>
+          <p class="text-white font-extralight">
+            Led lampen worden niet beïnvloed door stroompieken, ze flikkeren niet bij 60 Hz zoals sommige fluorescentielampen doen, dus de meeste mensen merken het niet eens als ze worden ingeschakeld. Ze kunnen zonder afdekkingen worden gebruikt in afgesloten ruimtes, omdat er geen risico is op verwondingen door gebroken glas als zich onverwacht een defect voordoet. En in tegenstelling tot compacte fluorescentielampen die kwik bevatten, bevatten led lampen helemaal geen gevaarlijke stoffen.
+          </p>
+        </LongParagraph>
+      </div>
+
       <CenterTitle
-        title="De voordelen van jouw nieuwe RGB TV LED-strip"
+          title="De voordelen van jouw nieuwe RGB TV LED-strip"
       />
 
       <Benefits
-        :first-block="{
+          :first-block="{
           title: 'Energiebesparend',
           description: 'Energiebesparend',
           imageSrc: require('assets/design/landings/plant.png')
         }"
-        :second-block="{
+          :second-block="{
           title: 'Naadloze overgang',
           description: 'Naadloze overgang op het geluid van de tv',
           imageSrc: require('assets/design/landings/audio.png')
@@ -65,10 +145,6 @@
             description: 'Hoge helderheid',
             imageSrc: require('assets/design/landings/brightness.png')
           }"
-      />
-
-      <SingleImage
-        :image-src="require('assets/design/landings/tv-green.png')"
       />
 
       <CenterTitle title="Een complete set bestaat uit:" />
@@ -123,10 +199,9 @@
 
       <OtherCollections
         :collections="[
-
-            'led-strip-pakketten',
             'rgb-led-strips',
-            'tv-led-strips'
+            'rgb-ic-led-strips',
+            'led-pakketten',
         ]"
       />
 
@@ -159,9 +234,11 @@ import LengthProducts from "~/components/blocks/LengthProducts.vue";
 import OtherCollections from "~/components/blocks/OtherCollections.vue";
 import SmallCenterTitle from "~/components/blocks/SmallCenterTitle.vue";
 import Usages from "~/components/blocks/Usages.vue";
+import LongParagraph from "~/components/blocks/LongParagraph.vue";
 
 export default Vue.extend({
   components: {
+    LongParagraph,
     Usages,
     SmallCenterTitle,
     OtherCollections,
