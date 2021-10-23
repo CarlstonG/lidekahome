@@ -14,10 +14,10 @@ export default {
       current: 'currentColor',
     },
     fontFamily: {
-      'mono': ['"Open Sans"'],
-      'sans': ['"Open Sans"'],
-      'display': ['"Open Sans"'],
-      'body': ['"Open Sans"'],
+      'mono': ['"Open Sans", sans-serif'],
+      'sans': ['"Open Sans", sans-serif'],
+      'display': ['"Open Sans", sans-serif'],
+      'body': ['"Open Sans", sans-serif'],
     },
     extend: {
       colors: {
