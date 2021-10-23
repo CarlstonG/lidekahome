@@ -1,9 +1,13 @@
 <template>
   <div class="bg-black">
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 mb-10 lg:mb-0">
-      <img src="~assets/design/home.png" alt="Lideka home" />
-      <div class="md:absolute bottom-2 left-2 md:bottom-20 md:left-20">
-        <h1 class="mx-auto text-3xl  text-white font-bold">
+      <video class="w-full h-full rounded-2xl" autoplay muted playsinline>
+        <source src="~assets/products/video.webm" type="video/webm" />
+        <source src="~assets/products/video.mp4" type="video/mp4" />
+      </video>
+
+      <div class="md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20">
+        <h1 class="mx-auto text-4xl text-white font-bold tracking-wide">
           Wij creëren de ultieme sfeer voor jou,
         </h1>
         <h2 class="mx-auto text-2xl font-extralight text-white">
@@ -13,7 +17,6 @@
     </div>
 
     <div class="max-w-7xl mx-auto p-2 hidden lg:block">
-      <h2 class="sr-only">Why you should buy from us</h2>
       <div class="flex overflow-x-auto">
         <div class="mx-auto flex space-x-12 whitespace-nowrap py-3 px-4 sm:px-6 lg:space-x-24 lg:px-8">
           <div class="flex items-center text-sm font-medium text-indigo-400">
@@ -51,34 +54,36 @@
     </div>
 
     <div class="px-6 lg:px-0">
-      <div class="mx-auto max-w-7xl py-10 px-8" style="border-radius: 40px; background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);">
-        <div class="grid grid-cols-1 lg:grid-cols-4 p-0 lg:p-10 gap-6 lg:gap-0">
+      <div class="mx-auto max-w-7xl py-10 px-8 default-gradient" style="border-radius: 20px;">
+        <h2>
           <div class="flex items-center justify-center mb-4 lg:mb-0">
-            <h2 class="text-7xl text-white font-bold">Wij geloven in...</h2>
+            <h2 class="text-3xl text-white font-bold tracking-wide uppercase">Wij geloven in...</h2>
           </div>
-          <div class="flex flex-col w-full lg:w-auto items-center justify-center border-4 rounded-lg border-white lg:mx-10 mx-0 py-4"
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 p-0 lg:p-10 gap-6 lg:gap-0">
+          <div class="flex flex-col w-full lg:w-auto items-center justify-center rounded-lg lg:mx-10 mx-0 py-4"
             style="border-color: rgba(255, 255, 255, 0.1)"
           >
             <div class="flex-grow items-center flex">
-              <img class="w-40" src="~assets/icons/WEBicons-01.png" />
+              <img class="w-32" src="~assets/icon/icons8-technical-support-50.svg" />
             </div>
-            <h3 class="text-gray-100">Service</h3>
+            <h3 class="text-gray-100 tracking-wide font-bold uppercase mt-4">Service</h3>
           </div>
-          <div class="flex flex-col w-full lg:w-auto items-center justify-center border-4 rounded-lg border-white lg:mx-10 mx-0 py-4"
+          <div class="flex flex-col w-full lg:w-auto items-center justify-center rounded-lg lg:mx-10 mx-0 py-4"
                style="border-color: rgba(255, 255, 255, 0.1)"
           >
             <div class="flex-grow items-center flex">
-              <img class="w-40" src="~assets/icons/WEBicons-06.png" />
+              <img class="w-32" src="~assets/icon/icons8-verified-account-50.svg" />
             </div>
-            <h3 class="text-gray-100">Kwaliteit</h3>
+            <h3 class="text-gray-100 tracking-wide font-bold uppercase mt-4">Kwaliteit</h3>
           </div>
-          <div class="flex flex-col w-full lg:w-auto items-center justify-center border-4 rounded-lg border-white lg:mx-10 mx-0 py-4"
+          <div class="flex flex-col w-full lg:w-auto items-center justify-center rounded-lg lg:mx-10 mx-0 py-4"
                style="border-color: rgba(255, 255, 255, 0.1)"
           >
             <div class="flex-grow items-center flex h-40 lg:h-auto">
-              <img class="w-32" src="~assets/design/icon-cheap.png" />
+              <img class="w-32" src="~assets/icon/icons8-low-price-euro-50.svg" />
             </div>
-            <h3 class="text-gray-100">Betaalbaarheid</h3>
+            <h3 class="text-gray-100 tracking-wide font-bold uppercase mt-4">Betaalbaarheid</h3>
           </div>
         </div>
     </div>
@@ -86,32 +91,27 @@
 
     <div class="mx-auto max-w-7xl py-10 px-6 lg:px-0">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <div class="relative flex justify-center items-center" style="border-radius: 38px; background: rgba(142, 188, 82, 0.63); background: linear-gradient(178.32deg, rgba(142, 188, 82, 0.63) 1.42%, rgba(116, 193, 89, 0.12) 95%);"
+        <div class="relative flex justify-center items-center green-gradient" style="border-radius: 20px;"
         >
           <div class="h-full py-10 lg:py-32 flex justify-center flex-col" style="z-index: 1">
             <div class="flex-grow flex items-center">
-              <img class="w-32 mx-auto" src="~assets/design/icon-green.png" />
+              <img class="w-40 mx-auto" src="~assets/icon/icons8-forest.svg" />
             </div>
-            <p class="text-white font-bold text-lg pt-6 px-6 lg:px-20">
+            <h3 class="text-gray-100 tracking-wide text-center font-bold uppercase mt-4">Duurzame verlichting</h3>
+            <p class="text-white font-extralight text-lg pt-6 px-6 lg:px-20 text-center tracking-wide">
               Onze duurzame smart verlichting is met zorg geproduceerd, makkelijk bedienbaar, en draagt bij aan het behoud van onze planeet!
             </p>
-            <p class="text-gray-400 italic font-extralight text-md pt-2 px-6 lg:px-20">
-              * zelfs na 1 jaar na gebruik accepteren wij retouren, jouw tevredenheid is onze zorg!
-            </p>
           </div>
-          <img class="absolute top-0 left-0 right-0 opacity-50"  src="~assets/design/forest.png" />
         </div>
-        <div class="relative flex justify-center items-center" style="border-radius: 38px; background: rgba(37, 178, 231, 0.63); background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);"
+        <div class="relative flex justify-center items-center default-gradient" style="border-radius: 20px;"
         >
           <div class="h-full py-10 lg:py-32 flex justify-center flex-col" style="z-index: 1">
             <div class="flex-grow flex items-center">
-              <img class="w-40 mx-auto" src="~assets/icons/WEBicons-05.png" />
+              <img class="w-40 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" />
             </div>
-            <p class="text-white font-bold text-lg pt-6 px-6 lg:px-20">
+            <h3 class="text-gray-100 tracking-wide text-center font-bold uppercase mt-4">Gratis retourneren</h3>
+            <p class="text-white font-extralight text-lg pt-6 px-6 lg:px-20 text-center tracking-wide">
               Ben je niet tevreden met je aankoop? Retourneer makkelijk, gratis, en ontvang het volledige aankoopbedrag terug.
-            </p>
-            <p class="text-gray-400 italic font-extralight text-md pt-2 px-6 lg:px-20">
-              * zelfs na 1 jaar na gebruik accepteren wij retouren, jouw tevredenheid is onze zorg!
             </p>
           </div>
         </div>
@@ -127,144 +127,201 @@
       </p>
     </div>
 
-    <div class="px-6">
-      <div class="mx-auto max-w-7xl py-10 px-6" style="border-radius: 40px; background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);">
-        <div class="grid grid-cols-1 lg:grid-cols-2 p-2 gap-10 lg:p-10">
-          <div class="flex items-center flex-col">
-            <img src="~assets/rgb-led-strip.jpg" class="rounded-lg max-w-sm mb-4" />
+    <div class="px-6 lg:px-0 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="default-gradient relative" style="border-radius: 20px;">
+          <div class="p-6">
+            <div class="flex items-center flex-col">
+              <img src="~assets/products/1.png" class="rounded-lg w-full max-w-md" />
 
-            <div class="flex space-x-8 items-center justify-center">
-              <div class="text-center flex flex-col">
-                <div class="flex-grow flex items-center justify-center">
-                  <img class="w-20" src="~assets/icons/WEBicons-01.png" />
+              <div class="flex space-x-8 items-center justify-center">
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-verified-account-50.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Kwaliteit 100%</span>
                 </div>
-                <span class="text-white">Quality 100%</span>
-              </div>
-              <div class="text-center flex flex-col">
-                <div class="flex-grow flex items-center justify-center">
-                  <img class="w-20" src="~assets/icons/WEBicons-06.png" />
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-forest.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaamheid</span>
                 </div>
-                <span class="text-white">Durability</span>
-              </div>
-              <div class="text-center flex flex-col">
-                <div class="flex-grow flex items-center justify-center">
-                  <img class="w-20" src="~assets/icons/WEBicons-06.png" />
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-shade-selected-faces-50.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helderheid</span>
                 </div>
-                <span class="text-white">Bright</span>
               </div>
             </div>
-          </div>
-          <div class="space-y-4 flex items-center">
-            <div class="space-y-4 px-4 lg:px-8">
-              <h2 class="text-3xl text-white font-bold">RGB Led strips</h2>
-              <p class="text-white font-extralight">
-                RGB-led verlichting combineert rode, groene en blauwe led-lampjes in één behuizing en vormt honderden verschillende lichttinten door deze drie kleuren te mengen. Zo stel jij jouw favoriete kleuren samen wanneer je maar wilt en geniet je iedere keer weer van een unieke sfeer.
-              </p>
-              <p class="text-white font-extralight">
-                Deze stijlvolle led set wordt geleverd inclusief installatiemateriaal, IP65-waterproof bescherming en led lampjes van de hoogste kwaliteit zodat je jouw aankoop nog jarenlang kunt gebruiken. Toch niet tevreden? Lideka® garandeert jou van een 2-jarige garantie.
-              </p>
-              <NuxtLink to="/categorie/led-strips"
-                class="border-2 border-white px-8 inline-block py-2 text-white rounded-lg tracking-light mt-10"
-              >
-                Bekijken
-              </NuxtLink>
+            <div class="flex items-center mt-10 lg:px-6">
+              <div class="space-y-4">
+                <h2 class="text-2xl text-white font-bold uppercase tracking-wide">RGB Led strips</h2>
+                <p class="text-white font-extralight ">
+                  RGB-led verlichting combineert rode, groene en blauwe led-lampjes in één behuizing en vormt honderden verschillende lichttinten door deze drie kleuren te mengen. Zo stel jij jouw favoriete kleuren samen wanneer je maar wilt en geniet je iedere keer weer van een unieke sfeer.
+                </p>
+                <p class="text-white font-extralight ">
+                  Deze stijlvolle led set wordt geleverd inclusief installatiemateriaal, IP65-waterproof bescherming en led lampjes van de hoogste kwaliteit zodat je jouw aankoop nog jarenlang kunt gebruiken. Toch niet tevreden? Lideka® garandeert jou van een 2-jarige garantie.
+                </p>
+                <div class="lg:px-8 h-20">
+                  <NuxtLink to="/categorie/rgb-led-strips"
+                            class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"
+                  >
+                    Bekijk collectie
+                  </NuxtLink>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="default-gradient relative" style="border-radius: 20px;">
+          <div class="p-6">
+            <div class="flex items-center flex-col">
+              <img src="~assets/products/5.png" class="rounded-lg w-full max-w-md" />
+
+              <div class="flex space-x-8 items-center justify-center">
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-verified-account-50.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Kwaliteit 100%</span>
+                </div>
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-forest.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaamheid</span>
+                </div>
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-shade-selected-faces-50.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helderheid</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center mt-10 lg:px-6">
+              <div class="space-y-4">
+                <h2 class="text-2xl text-white font-bold uppercase tracking-wide">TV LED STRIP</h2>
+                <p class="text-white font-extralight ">
+                  Een led-strip achter je TV creëert een stijlvolle lichtgloed rondom het scherm en geeft jouw huiskamer een echte bioscoop sfeer. Maar deze handige strips zijn veel meer dan alleen mooi en zorgen ook voor een subtielere overgang tussen licht en donker. Zo worden jouw ogen minder snel moe en kijk je extra comfortabel naar jouw favoriete films & shows. De set wordt bovendien geleverd met dubbelzijdig tape en een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.
+                </p>
+                <p class="text-white font-extralight ">
+                  Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.
+                </p>
+                <div class="lg:px-8 h-20">
+                  <NuxtLink to="/categorie/tv-led-strips"
+                            class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"
+                  >
+                    Bekijk collectie
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="px-6 mt-10">
-      <div class="mx-auto max-w-7xl py-10 px-6" style="border-radius: 40px; background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);">
-        <div class="grid grid-cols-1 lg:grid-cols-2 p-2 gap-10 lg:p-10">
-          <div class="flex items-center flex-col">
-            <img src="~assets/tv-led-strip.jpg" class="rounded-lg max-w-sm mb-4" />
+    <div class="px-6 lg:px-0 max-w-7xl mx-auto mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="default-gradient relative" style="border-radius: 20px;">
+          <div class="p-6">
+            <div class="flex items-center flex-col">
+              <img src="~assets/products/16.png" class="rounded-lg w-full max-w-md" />
 
-            <div class="flex space-x-8 items-center justify-center">
-              <div class="text-center flex flex-col">
-                <div class="flex-grow flex items-center justify-center">
-                  <img class="w-20" src="~assets/icons/WEBicons-01.png" />
+              <div class="flex space-x-8 items-center justify-center">
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-verified-account-50.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Kwaliteit 100%</span>
                 </div>
-                <span class="text-white">Quality 100%</span>
-              </div>
-              <div class="text-center flex flex-col">
-                <div class="flex-grow flex items-center justify-center">
-                  <img class="w-20" src="~assets/icons/WEBicons-06.png" />
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-forest.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaamheid</span>
                 </div>
-                <span class="text-white">Durability</span>
-              </div>
-              <div class="text-center flex flex-col">
-                <div class="flex-grow flex items-center justify-center">
-                  <img class="w-20" src="~assets/icons/WEBicons-06.png" />
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-shade-selected-faces-50.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helderheid</span>
                 </div>
-                <span class="text-white">Bright</span>
               </div>
             </div>
-          </div>
-          <div class="space-y-4 flex items-center">
-            <div class="space-y-4 px-4 lg:px-8">
-              <h2 class="text-3xl text-white font-bold">TV Led strips</h2>
-              <p class="text-white font-extralight">
-                LEen led-strip achter je TV creëert een stijlvolle lichtgloed rondom het scherm en geeft jouw huiskamer een echte bioscoop sfeer. Maar deze handige strips zijn veel meer dan alleen mooi en zorgen ook voor een subtielere overgang tussen licht en donker. Zo worden jouw ogen minder snel moe en kijk je extra comfortabel naar jouw favoriete films & shows. De set wordt bovendien geleverd met dubbelzijdig tape en een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.
-              </p>
-              <p class="text-white font-extralight">
-                Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.
-              </p>
-              <NuxtLink to="/categorie/tv-led-strips"
-                        class="border-2 border-white px-8 inline-block py-2 text-white rounded-lg tracking-light mt-10"
-              >
-                Bekijken
-              </NuxtLink>
+            <div class="flex items-center mt-10 lg:px-6">
+              <div class="space-y-4">
+                <h2 class="text-2xl text-white font-bold uppercase tracking-wide">RGB-IC Led strips</h2>
+                <p class="text-white font-extralight ">
+                  Net als bij een standaard model vormt de RGB-IC led-strip alle mogelijke kleurtinten, maar dan met schitterende extra lichteffecten. Deze splinternieuwe vorm van led licht wordt ook wel ‘Dreamcolor Led’ genoemd en is razend populair bij onder Amerikaanse TikTokkers. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe editie is het mogelijk!
+                </p>
+                <p class="text-white font-extralight ">
+                  Naast deze extra features werkt de RGB-IC uitvoering net als een traditionele led-strip. Zo ben je verzekerd van 2 jaar garantie, IP65-waterproof bescherming en led-lampjes van de hoogste kwaliteit.
+                </p>
+                <div class="lg:px-8 h-20">
+                  <NuxtLink to="/categorie/rgb-led-strips"
+                            class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"
+                  >
+                    Bekijk collectie
+                  </NuxtLink>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="px-6 mt-10">
-      <div class="mx-auto max-w-7xl py-10 px-6" style="border-radius: 40px; background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);">
-        <div class="grid grid-cols-1 lg:grid-cols-2 p-2 gap-10 lg:p-10">
-          <div class="flex items-center flex-col">
-            <img src="~assets/design/led-strips.png" class="-mt-20 lg:-mt-28" alt="RGB-IC Led strips" />
+        <div class="default-gradient relative" style="border-radius: 20px;">
+          <div class="p-6">
+            <div class="flex items-center flex-col">
+              <img src="~assets/products/18.png" class="rounded-lg w-full max-w-md" />
 
-            <div class="flex space-x-8 items-center justify-center -mt-16 lg:-mt-20">
-              <div class="text-center flex flex-col">
-                <div class="flex-grow flex items-center justify-center">
-                  <img class="w-20" src="~assets/icons/WEBicons-01.png" />
+              <div class="flex space-x-8 items-center justify-center">
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-verified-account-50.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Kwaliteit 100%</span>
                 </div>
-                <span class="text-white">Quality 100%</span>
-              </div>
-              <div class="text-center flex flex-col">
-                <div class="flex-grow flex items-center justify-center">
-                  <img class="w-20" src="~assets/icons/WEBicons-06.png" />
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-forest.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaamheid</span>
                 </div>
-                <span class="text-white">Durability</span>
-              </div>
-              <div class="text-center flex flex-col">
-                <div class="flex-grow flex items-center justify-center">
-                  <img class="w-20" src="~assets/icons/WEBicons-06.png" />
+                <div class="text-center flex flex-col">
+                  <div class="flex-grow flex items-center justify-center">
+                    <img class="w-14" src="~assets/icon/icons8-shade-selected-faces-50.svg" />
+                  </div>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helderheid</span>
                 </div>
-                <span class="text-white">Bright</span>
               </div>
             </div>
-          </div>
-          <div class="space-y-4 flex items-center">
-            <div class="space-y-4 px-4 lg:px-8">
-              <h2 class="text-3xl text-white font-bold">RGB-IC Led strips</h2>
-              <p class="text-white font-extralight">
-                Net als bij een standaard model vormt de RGB-IC led-strip alle mogelijke kleurtinten, maar dan met schitterende extra lichteffecten. Deze splinternieuwe vorm van led licht wordt ook wel ‘Dreamcolor Led’ genoemd en is razend populair bij onder Amerikaanse TikTokkers. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe editie is het mogelijk!
-              </p>
-              <p class="text-white font-extralight">
-                Naast deze extra features werkt de RGB-IC uitvoering net als een traditionele led-strip. Zo ben je verzekerd van 2 jaar garantie, IP65-waterproof bescherming en led-lampjes van de hoogste kwaliteit.
-              </p>
-              <NuxtLink to="/categorie/rgb-ic-led-strips"
-                        class="border-2 border-white px-8 inline-block py-2 text-white rounded-lg tracking-light mt-10"
-              >
-                Bekijken
-              </NuxtLink>
+            <div class="flex items-center mt-10 lg:px-6">
+              <div class="space-y-4">
+                <h2 class="text-2xl text-white font-bold uppercase tracking-wide">LED pakketten</h2>
+                <p class="text-white font-extralight">
+                  Voor de echte liefhebbers hebben we complete LED pakketten. Deze LED pakketten bestaan uit TV Led strips, en RGB Led strips. Beiden soorten bestaan uit complete sets.
+                </p>
+                <p class="text-white font-extralight">
+                  Met een uitstekende plakstrip die nooit meer laat, en eindeloze kleurencombinaties is dit een bijzonder pakket.
+                </p>
+                <div class="lg:px-8 h-20">
+                  <NuxtLink to="/categorie/tv-led-strips"
+                            class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"
+                  >
+                    Bekijk collectie
+                  </NuxtLink>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -274,7 +331,9 @@
       </h2>
     </div>
 
-    <Usages />
+    <div class="px-6 lg:px-0">
+      <Usages />
+    </div>
 
     <div class="max-w-7xl mx-auto mt-10 lg:px-0 px-6">
       <div class="_house">
@@ -299,12 +358,14 @@
     </div>
 
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 space-y-6 lg:space-y-0">
-      <img src="~assets/design/home-2.png" alt="Lideka home" />
-      <div class="lg:absolute bottom-20 right-20 left-20">
+      <img src="~assets/headers/1.jpg" class="rounded-2xl" alt="Lideka home" />
+      <div class="lg:absolute bottom-10 right-10 left-10 rounded-2xl p-10"
+        style="background: rgba(0, 0, 0, 0.75)"
+      >
         <h1 class="mx-auto text-3xl  text-white font-bold mb-4">
           Lideka home - Betaalbare Slimme Led strips
         </h1>
-        <p class="mx-auto text-sm text-white font-extralight">
+        <p class="mx-auto text-white font-extralight">
           Lideka is een merk dat zich concentreert op het produceren van slimme betaalbare Led strips. Op dit moment bestaat ons assortiment uit RGB led strips, RGBIC led strips, TV led strips en led strips pakketten. Ons assortiment zal snel uitgebreid worden met andere soorten slimme verlichting.
           Wij onderscheiden onszelf van de concurrentie door een goede, degelijke kwaliteit te leveren met een lange levensduur, en de allerbeste service. Tegelijk dragen we bij aan een vermindering van energieverbruik. Dit alles tegen een verkoopprijs die voor vrijwel alle burgers gemakkelijk haalbaar is. En op deze wijze creëren we voor iedereen een meer sfeervolle, aangenamere leefomgeving.
         </p>
@@ -312,47 +373,45 @@
     </div>
 
     <div class="mx-auto max-w-7xl py-10 px-6 lg:px-0">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <div class="relative flex justify-center items-center" style="border-radius: 38px; background: rgba(37, 178, 231, 0.63); background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);"
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div class="relative default-gradient" style="border-radius: 20px;"
         >
-          <div class="h-full py-10 lg:py-24 flex justify-center flex-col" style="z-index: 1">
-            <div class="flex-grow flex items-center">
-              <img class="w-40 mx-auto" src="~assets/icons/WEBicons-01.png" />
+          <div class="py-10 lg:py-16 " style="z-index: 1">
+            <div class="flex items-center">
+              <img class="w-32 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" />
             </div>
-            <h2 class="text-white font-bold text-center text-3xl pt-6 px-6 lg:px-20">
+            <h2 class="text-white font-bold text-center text-2xl px-6 mt-4 uppercase tracking-wide">
               Service
             </h2>
-            <p class="text-white font-extralight text-sm pt-6 px-6 lg:px-20">
+            <p class="text-white font-extralight pt-6 px-6">
               Een goede service voor jou vinden wij belangrijk. Wij geloven dat het onze verantwoordelijkheid is om jou te helpen en te adviseren waar dat nodig is, niet alleen tijdens het verkoopproces, maar vooral na het verkoopproces. Je kunt ons 24/7 bereiken op (085-0601297), je zult niet altijd direct antwoord kunnen krijgen op specifieke vragen, maar onze experts zullen je altijd zo snel mogelijk antwoord geven. We streven ernaar om altijd binnen 24 uur terug te bellen of terug te mailen, dit kan op klantenservice@lidekahome.nl.
             </p>
           </div>
         </div>
-        <div class="relative flex justify-center items-center" style="border-radius: 38px; background: rgba(37, 178, 231, 0.63); background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);"
+        <div class="relative default-gradient" style="border-radius: 20px;"
         >
-          <div class="h-full py-10 lg:py-24 flex justify-center flex-col" style="z-index: 1">
-            <div class="flex-grow flex items-center">
-              <img class="w-40 mx-auto" src="~assets/icons/WEBicons-06.png" />
+          <div class="py-10 lg:py-16 " style="z-index: 1">
+            <div class="flex items-center">
+              <img class="w-32 mx-auto" src="~assets/icon/icons8-verified-account-50.svg" />
             </div>
-            <h2 class="text-white font-bold text-center text-3xl pt-6 px-6 lg:px-20">
+            <h2 class="text-white font-bold text-center text-2xl px-6 mt-4 uppercase tracking-wide">
               Kwaliteit
             </h2>
-            <p class="text-white font-extralight text-sm pt-6 px-6 lg:px-20">
+            <p class="text-white font-extralight pt-6 px-6">
               Zoals je hierboven al hebt gelezen gaan we voor een degelijke kwaliteit. Een kwaliteit waarop jij kan bouwen, en een kwaliteit waarin jij kan geloven. Al onze fabrieken worden zorgvuldig gecontroleerd op zaken zoals: Kinderarbeid, slechte werkcondities en slechte salarissen. Alle materialen die we gebruiken hebben een uitstekende kwaliteit, tevens voldoen alle artikelen aan de zogeheten CE markeringen. Mocht er onverhoopt iets misgaan of ben je toch niet tevreden? Er is altijd iemand voor jou beschikbaar om al je obstakels op te lossen, twijfel nooit om contact op te nemen.
             </p>
           </div>
         </div>
-      </div>
-      <div class="grid grid-cols-1 gap-10 mt-10">
-        <div class="relative flex justify-center items-center" style="border-radius: 38px; background: rgba(37, 178, 231, 0.63); background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);"
+        <div class="relative default-gradient" style="border-radius: 20px;"
         >
-          <div class="h-full py-10 lg:py-24 flex justify-center flex-col" style="z-index: 1">
-            <div class="flex-grow flex items-center mb-8">
-              <img class="w-32 mx-auto" src="~assets/design/icon-cheap.png" />
+          <div class="py-10 lg:py-16 " style="z-index: 1">
+            <div class="flex items-center">
+              <img class="w-32 mx-auto" src="~assets/icon/icons8-low-price-euro-50.svg" />
             </div>
-            <h2 class="text-white font-bold text-center text-3xl pt-6 px-6 lg:px-20">
+            <h2 class="text-white font-bold text-center text-2xl px-6 mt-4 uppercase tracking-wide">
               Betaalbaarheid
             </h2>
-            <p class="text-white font-extralight text-sm pt-6 px-6 lg:px-20 mx-auto max-w-2xl">
+            <p class="text-white font-extralight pt-6 px-6 mx-auto max-w-2xl">
               Slimme verlichting kan erg duur zijn, en vooral slimme led-strips, nu kun je ook voor een goedkopere gaan maar je wilt toch kwaliteit. Vaak wordt er gedacht dat kwaliteit automatisch duur is, maar kwaliteit hoeft echt niet duur te zijn. Door de juiste processen te hanteren in de fabriek en de juiste partners te vinden kun jij een hele degelijke prijs neerzetten die voor iedereen haalbaar is. Dat is Lideka en dat is waar wij in geloven, betaalbare slimme led strips en verlichting, niet alleen voor jou, maar voor iedereen!
             </p>
           </div>
@@ -364,32 +423,32 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div class="flex items-center flex-col">
           <img loading="lazy" src="~assets/icons/WEBicons-04.webp" alt="Gratis Verzending" class="w-20"/>
-          <h2 class="text-white text-center text-sm font-bold mb-2">Gratis Verzending</h2>
-          <p class="text-gray-500 text-center text-xs">
+          <h2 class="text-white text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase">Gratis Verzending</h2>
+          <p class="text-gray-500 text-center text-sm">
             Omdat Lideka® voor service staat bieden wij al onze artikelen aan met gratis verzending (vanaf 20,-). Dat
             noemen we service!
           </p>
         </div>
         <div class="flex items-center flex-col">
           <img loading="lazy" src="~assets/icons/WEBicons-05.webp" alt="Makkelijk retourneren" class="w-20"/>
-          <h2 class="text-white text-center text-sm font-bold mb-2">Makkelijk retourneren</h2>
-          <p class="text-gray-500 text-center text-xs">
+          <h2 class="text-white text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase">Makkelijk retourneren</h2>
+          <p class="text-gray-500 text-center text-sm">
             Lideka® maakt retourneren makkelijk. Via ‘Returnless’ kun je op een PostNl locatie jouw pakketje gratis
             afleveren en scannen met je mobiel.
           </p>
         </div>
         <div class="flex items-center flex-col">
           <img loading="lazy" src="~assets/icons/WEBicons-06.webp" alt="100% tevredenheidsgarantie" class="w-20"/>
-          <h2 class="text-white text-center text-sm font-bold mb-2">100% tevredenheidsgarantie</h2>
-          <p class="text-gray-500 text-center text-xs">
+          <h2 class="text-white text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase">100% tevredenheidsgarantie</h2>
+          <p class="text-gray-500 text-center text-sm">
             Wij staan volledig achter de kwaliteit van onze producten en bieden jou daarom een onvoorwaardelijke
             garantie van 12-24 maanden.
           </p>
         </div>
         <div class="flex items-center flex-col">
           <img loading="lazy" src="~assets/icons/WEBicons-07.webp" alt="Duurzaamheid" class="w-20"/>
-          <h2 class="text-white text-center text-sm font-bold mb-2">Duurzaamheid</h2>
-          <p class="text-gray-500 text-center text-xs">
+          <h2 class="text-white text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase">Duurzaamheid</h2>
+          <p class="text-gray-500 text-center text-sm">
             Lideka® denkt mee aan het milieu, met een duurzame achtergrond werken de producten energiebesparend, en
             energieopwekkend.
           </p>
@@ -498,55 +557,55 @@ export default Vue.extend({
   background: url('~assets/design/living-room.png') no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 ._bedroom {
   background: url('~assets/design/bedroom.png') no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 ._kitchen {
   background: url('~assets/design/kitchen.png') no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 ._gameroom {
   background: url('~assets/design/gameroom.png') no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 ._bathroom {
   background: url('~assets/design/bathroom.png') no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 ._house {
   background: url('~assets/design/house.png') no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 ._bed {
   background: url('~assets/design/bed.png') no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 ._ceiling {
   background: url('~assets/design/ceiling.png') no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 </style>

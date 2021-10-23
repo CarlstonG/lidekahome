@@ -83,6 +83,17 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+.default-gradient {
+  background: linear-gradient(180deg, rgba(44, 175, 228, 0.35) 1.42%, rgba(192, 41, 255, 0.25) 95%);
+}
+
+.green-gradient {
+  background: linear-gradient(180deg, rgba(51, 177, 119, 0.45) 1.42%, rgba(102, 242, 175, 0.10) 95%);
+
+}
+
 .page-content {
   line-height: 1.5;
   font-size: 1.05rem;

@@ -13,6 +13,12 @@ export default {
     fill: {
       current: 'currentColor',
     },
+    fontFamily: {
+      'mono': ['"Open Sans"'],
+      'sans': ['"Open Sans"'],
+      'display': ['"Open Sans"'],
+      'body': ['"Open Sans"'],
+    },
     extend: {
       colors: {
         'light-blue': colors.lightBlue,

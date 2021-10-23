@@ -30,6 +30,21 @@
                 class="text-gray-400 bg-black hover:text-white group flex items-center px-2 py-2 text-base font-medium rounded-md">
             {{ collection.title }}
           </NuxtLink>
+
+          <NuxtLink prefetch
+                    to="/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge"
+                    class="text-gray-400 bg-black hover:text-white group flex items-center px-2 py-2 text-base font-medium rounded-md"
+          >
+            Solar powerbank
+          </NuxtLink>
+
+          <NuxtLink prefetch
+                    to="/categorie/accessoires"
+                    class="text-gray-400 bg-black hover:text-white group flex items-center px-2 py-2 text-base font-medium rounded-md"
+          >
+            Accessoires
+          </NuxtLink>
+
           <div class="text-gray-200 bg-black text-xs group flex items-center px-2 py-2 font-medium rounded-md">
             Pagina's
           </div>
