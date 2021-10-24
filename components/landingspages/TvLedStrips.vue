@@ -13,15 +13,15 @@
 
       <Highlights :highlights="[
           {
-            imageSrc: require('assets/design/landings/tape.png'),
+            imageSrc: require('assets/icon/icons8-best-seller-50.svg'),
             description: 'Door zijn bijzondere stevige dubbelzijge 3M tape ben jij verzekerd van een LED-strip die nooit meer loslaat. Zorg voor een schone ondergrond.'
           },
           {
-            imageSrc: require('assets/design/landings/usb.png'),
+            imageSrc: require('assets/icon/icons8-usb-on-50.svg'),
             description: 'Dit set wordt bovendien geleverd met  een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.'
           },
           {
-            imageSrc: require('assets/design/landings/warranty.png'),
+            imageSrc: require('assets/icon/icons8-warranty-50.svg'),
             description: 'Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.'
           }
       ]" />
@@ -120,12 +120,12 @@
           :first-block="{
           title: 'Energiebesparend',
           description: 'Energiebesparend',
-          imageSrc: require('assets/design/landings/plant.png')
+          imageSrc: require('assets/icon/icons8-forest.svg')
         }"
           :second-block="{
           title: 'Naadloze overgang',
           description: 'Naadloze overgang op het geluid van de tv',
-          imageSrc: require('assets/design/landings/audio.png')
+          imageSrc: require('assets/icon/icons8-audio-wave-50.svg')
         }"
       />
 
@@ -133,17 +133,17 @@
           :first-block="{
             title: 'Kleuren',
             description: '16 miljoen kleuren',
-            imageSrc: require('assets/design/landings/colors.png')
+            imageSrc: require('assets/icon/icons8-paint-palette-50.svg')
           }"
           :second-block="{
             title: 'Makkelijke bevestiging',
             description: 'Makkelijke bevestiging',
-            imageSrc: require('assets/design/landings/settings.png')
+            imageSrc: require('assets/icon/icons8-wrench-50.svg')
           }"
           :third-block="{
             title: 'Helderheid',
             description: 'Hoge helderheid',
-            imageSrc: require('assets/design/landings/brightness.png')
+            imageSrc: require('assets/icon/icons8-shade-selected-faces-50.svg')
           }"
       />
 
@@ -164,7 +164,7 @@
             description: 'Met 3 verschillende knoppen'
           }
         ]"
-        :image-src="require('assets/design/landings/tv-pakket.png')"
+        :image-src="require('assets/products/5.png')"
         :right-data="[
           {
             title: 'De TV Strips',

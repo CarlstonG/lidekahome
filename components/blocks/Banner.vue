@@ -8,7 +8,7 @@
 
       <div class="relative">
         <img :src="imageSrc" :alt="title" />
-        <h2 v-if="description && !smallText" class="text-white text-center text-4xl font-bold tracking-wide lg:absolute bottom-10 left-0 right-0">
+        <h2 v-if="description && !smallText" class="text-white text-center text-2xl font-bold tracking-wide lg:absolute bottom-10 left-0 right-0 uppercase">
           {{ description }}
         </h2>
       </div>

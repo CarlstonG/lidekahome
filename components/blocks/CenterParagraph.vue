@@ -1,8 +1,9 @@
 <template>
   <div class="max-w-5xl mx-auto">
-    <p class="text-white font-extralight text-center">
+    <p class="text-white font-extralight text-center" v-html="description">
       {{ description }}
     </p>
+    <slot />
   </div>
 </template>
 

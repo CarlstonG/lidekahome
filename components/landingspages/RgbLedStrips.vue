@@ -16,15 +16,15 @@ Zo stel jij jouw favoriete kleuren samen wanneer je maar wilt en geniet je ieder
 
       <Highlights :highlights="[
           {
-            imageSrc: require('assets/design/landings/tape.png'),
+            imageSrc: require('assets/icon/icons8-best-seller-50.svg'),
             description: 'Deze stijlvolle led set wordt geleverd inclusief installatiemateriaal'
           },
           {
-            imageSrc: require('assets/design/landings/rgb-ic/waterproof.png'),
+            imageSrc: require('assets/icon/icons8-usb-on-50.svg'),
             description: 'IP65-waterproof bescherming en led lampjes van de hoogste kwaliteit zodat je jouw aankoop nog jarenlang kunt gebruiken'
           },
           {
-            imageSrc: require('assets/design/landings/warranty.png'),
+            imageSrc: require('assets/icon/icons8-warranty-50.svg'),
             description: 'Toch niet tevreden? Lideka® garandeert jou van een 2-jarige garantie'
           }
       ]" />
@@ -102,34 +102,33 @@ Zo stel jij jouw favoriete kleuren samen wanneer je maar wilt en geniet je ieder
       />
 
       <Benefits
-        :reverse="true"
-        :first-block="{
+          :first-block="{
           title: 'Energiebesparend',
           description: 'Energiebesparend',
-          imageSrc: require('assets/design/landings/plant.png')
+          imageSrc: require('assets/icon/icons8-forest.svg')
         }"
-        :second-block="{
+          :second-block="{
           title: 'Naadloze overgang',
           description: 'Naadloze overgang op het geluid van de tv',
-          imageSrc: require('assets/design/landings/audio.png')
+          imageSrc: require('assets/icon/icons8-audio-wave-50.svg')
         }"
       />
 
       <BenefitsThreeCols
           :first-block="{
-            title: 'Kleureffecten',
-            description: 'Eindeloze kleureffecten',
-            imageSrc: require('assets/design/landings/colors.png')
+            title: 'Kleuren',
+            description: '16 miljoen kleuren',
+            imageSrc: require('assets/icon/icons8-paint-palette-50.svg')
           }"
           :second-block="{
             title: 'Makkelijke bevestiging',
             description: 'Makkelijke bevestiging',
-            imageSrc: require('assets/design/landings/settings.png')
+            imageSrc: require('assets/icon/icons8-wrench-50.svg')
           }"
           :third-block="{
             title: 'Helderheid',
             description: 'Hoge helderheid',
-            imageSrc: require('assets/design/landings/brightness.png')
+            imageSrc: require('assets/icon/icons8-shade-selected-faces-50.svg')
           }"
       />
 
@@ -154,7 +153,7 @@ Zo stel jij jouw favoriete kleuren samen wanneer je maar wilt en geniet je ieder
             description: 'Met 3 verschillende knoppen'
           }
         ]"
-        :image-src="require('assets/design/landings/rgb-ic/set.png')"
+        :image-src="require('assets/products/1.png')"
         :right-data="[
           {
             title: 'De RGB strips',

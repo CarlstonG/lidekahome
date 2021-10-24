@@ -13,16 +13,16 @@
 
       <Highlights :highlights="[
           {
-            imageSrc: require('assets/design/landings/tape.png'),
-            description: 'Dit set wordt bovendien geleverd met dubbelzijdig tape en een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.'
+            imageSrc: require('assets/icon/icons8-water-50.svg'),
+            description: '<a href=\'https://nl.wikipedia.org/wiki/IP-code\' class=\'link\' target=\'blank\'>IP65-waterproof</a> bescherming en led-lampjes van de hoogste kwaliteit'
           },
           {
-            imageSrc: require('assets/design/landings/rgb-ic/waterproof.png'),
-            description: 'IP65-waterproof bescherming en led-lampjes van de hoogste kwaliteit'
+            imageSrc: require('assets/icon/icons8-usb-on-50.svg'),
+            description: 'Word geleverd met dubbelzijdig tape.'
           },
           {
-            imageSrc: require('assets/design/landings/warranty.png'),
-            description: 'Zo ben je verzekerd van 2 jaar garantie.'
+            imageSrc: require('assets/icon/icons8-warranty-50.svg'),
+            description: 'Zo ben je verzekerd van 2 jaar <a class=\'link\' href=\'/pages/garantie\' target=\'blank\'>garantie</a>.'
           }
       ]" />
 
@@ -37,34 +37,33 @@
       />
 
       <Benefits
-        :reverse="true"
-        :first-block="{
+          :first-block="{
           title: 'Energiebesparend',
           description: 'Energiebesparend',
-          imageSrc: require('assets/design/landings/plant.png')
+          imageSrc: require('assets/icon/icons8-forest.svg')
         }"
-        :second-block="{
+          :second-block="{
           title: 'Naadloze overgang',
           description: 'Naadloze overgang op het geluid van de tv',
-          imageSrc: require('assets/design/landings/audio.png')
+          imageSrc: require('assets/icon/icons8-audio-wave-50.svg')
         }"
       />
 
       <BenefitsThreeCols
           :first-block="{
-            title: 'Kleureffecten',
-            description: 'Eindeloze kleureffecten',
-            imageSrc: require('assets/design/landings/colors.png')
+            title: 'Kleuren',
+            description: '16 miljoen kleuren',
+            imageSrc: require('assets/icon/icons8-paint-palette-50.svg')
           }"
           :second-block="{
             title: 'Makkelijke bevestiging',
             description: 'Makkelijke bevestiging',
-            imageSrc: require('assets/design/landings/settings.png')
+            imageSrc: require('assets/icon/icons8-wrench-50.svg')
           }"
           :third-block="{
             title: 'Helderheid',
             description: 'Hoge helderheid',
-            imageSrc: require('assets/design/landings/brightness.png')
+            imageSrc: require('assets/icon/icons8-shade-selected-faces-50.svg')
           }"
       />
 
@@ -89,7 +88,7 @@
             description: 'Met 3 verschillende knoppen'
           }
         ]"
-        :image-src="require('assets/design/landings/rgb-ic/set.png')"
+        :image-src="require('assets/products/16.png')"
         :right-data="[
           {
             title: 'De RGB-IC strips',
@@ -101,6 +100,40 @@
           }
         ]"
       />
+
+      <LongParagraph
+          title="Led strip RGBIC"
+      >
+        <div>
+          <p class="text-white font-extralight">
+            Net als bij een standaard model vormt de RGBIC led <strong>alle mogelijke kleurtinten</strong>, maar dan
+            met schitterende <strong>extra lichteffecten</strong>. Deze splinternieuwe vorm van led strip verlichting
+            wordt ook wel ‘<strong>Dreamcolor Ledstrip</strong>’ genoemd en is razend populair bij onder Amerikaanse
+            TikTokkers, en bij aanbieders zoals amazon.
+          </p>
+          <p class="text-white font-extralight">
+            Van <strong>regenboog patronen</strong> tot schietende leds of
+            dromerige kleuren, met deze gloednieuwe dreamcolor ledstrip is het mogelijk!
+            Naast deze extra features werkt de RGBIC led uitvoering net als een <a class="link" target="_blank" href="https://www.straluma.nl/verlichting-tips/wat-zijn-ip-waarden-lees-alles-wat-je-moet-weten/">traditionele led-strip</a>. Zo
+            ben je verzekerd van 2 jaar garantie, <a href="https://www.straluma.nl/verlichting-tips/wat-zijn-ip-waarden-lees-alles-wat-je-moet-weten/" target="_blank" class="link">IP65-waterproof</a> bescherming en led-lampjes van de
+            hoogste kwaliteit. Deze nieuwe generatie strips wordt alleen maar populairder.
+          </p>
+          <p class="text-white font-extralight">
+            Creëer een extra persoonlijke sfeer met RGBIC led verlichting! Kies voor een gave scène of
+            een bepaalde kleur, bijvoorbeeld jouw favoriete kleur.
+          </p>
+        </div>
+      </LongParagraph>
+
+      <LongParagraph
+          title="Smart IC Chip"
+      >
+        <div>
+          <p class="text-white font-extralight">
+            Een smart IC Chip of ook wel <strong>'WS2811b Chip'</strong> is de meest geavanceerde chip op de markt van dit moment, maar dat niet alleen. Deze WS2811b Chip is ook nog eens één van de <strong>nieuwste chips</strong>.
+          </p>
+        </div>
+      </LongParagraph>
 
       <SingleImage :image-src="require('assets/design/landings/tv-bg.png')"
                    description="<strong class='font-bold text-2xl'>100% tevredenheidsgarantie</strong><br />Ben je niet tevreden met je aankoop? Wij betalen jouw volledige aankoopbedrag terug of je krijgt gratis een compleet nieuw set."
@@ -120,16 +153,25 @@
           title="Google home"
       />
 
-      <CenterParagraph
-          description="Vaak kan jouw nieuwe light strip ook verbonden worden met google home. Google home is een platform waar jij al jouw slimme apparaten kunt toevoegen en ook direct bedienen. Je zult dan een wifi RGBIC strip nodig hebben, en deze moet natuurlijk te verbinden zijn met google home, let daar goed op bij het moment van aankopen. "
-      />
+      <CenterParagraph>
+        <p class="text-white font-extralight text-center">
+          Vaak kan jouw nieuwe light strip ook verbonden worden met google home.
+          <a href="https://nl.wikipedia.org/wiki/Google_Home" class="link" target="_blank">Google home</a> is een platform waar jij al jouw slimme apparaten kunt toevoegen en ook direct bedienen. Je zult dan een wifi RGBIC strip nodig hebben, en deze moet natuurlijk te verbinden zijn met google home, let daar goed op bij het moment van aankopen.
+        </p>
+        <p class="text-white font-extralight text-center mt-2">
+          Je zult dan een wifi RGBIC strip nodig hebben, en deze moet natuurlijk te verbinden zijn met google home, let daar goed op bij het moment van aankopen.
+        </p>
+      </CenterParagraph>
 
       <LongParagraph
         title="Google assistant"
       >
         <div>
           <p class="text-white font-extralight">
-            Google assistant is een virtuele assistent dat in 2016 ontwikkeld is door google zelf. Je gebruikt google assistant dus in combinatie met google home. Om gebruik te maken van deze software heb je echter wel wifi verbinding nodig, let daarbij wel op dat een bluetooth verbinding makkelijker, en sneller zal werken.
+            <a class="link" target="_blank" href="https://nl.wikipedia.org/wiki/Google_Assistant">Google assistant</a> is een <strong>virtuele assistent</strong> dat in 2016 ontwikkeld is door google zelf. Je gebruikt google assistant dus in combinatie met google home.
+          </p>
+          <p class="text-white font-extralight">
+            Om gebruik te maken van deze software heb je echter wel <strong>wifi verbinding</strong> nodig, let daarbij wel op dat een bluetooth verbinding makkelijker, en sneller zal werken.
           </p>
         </div>
       </LongParagraph>
@@ -141,7 +183,13 @@
               title="Muziek modus"
           >
             <p class="text-white font-extralight">
-              Door onze speciale muziek led strips kun je extra genieten, er zit een hele gevoelige microfoon in onze controllers, als je de muziek modus aanzet via de app of met de afstandsbediening dan zal de verlichting prachtig meedansen op de muziek. Als je hier nog vragen over hebt dan kun je altijd even een kijkje nemen bij onze veelgestelde vragen of contact opnemen met de klantenservice. Ook voor extra informatie kun je bij ons terecht.
+              Door onze speciale muziek led strips kun je extra genieten, er zit een <strong>hele gevoelige</strong> microfoon in onze controllers,
+              als je de muziek modus aanzet via de app of met de afstandsbediening dan zal de verlichting prachtig <strong>meedansen</strong> op de muziek.
+            </p>
+            <p class="text-white font-extralight">
+              Als je hier nog vragen over hebt dan kun je altijd even een kijkje nemen bij onze
+              <a href="/veelgestelde-vragen" class="link" target="_blank">veelgestelde vragen</a>
+              of contact opnemen met de <a href="/klantenservice" target="_blank" class="link">klantenservice</a>. Ook voor extra informatie kun je bij ons terecht.
             </p>
           </LongParagraph>
           <LongParagraph

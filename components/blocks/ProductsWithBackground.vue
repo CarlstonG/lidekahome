@@ -1,6 +1,6 @@
 <template>
   <div v-if="productsLength >= 3">
-    <h2 class="text-center text-white max-w-4xl mx-auto font-bold text-3xl">{{ title }}</h2>
+    <h2 class="text-center text-white max-w-4xl mx-auto font-bold text-3xl uppercase tracking-wide">{{ title }}</h2>
     <client-only class="bg-gray-900 rounded-3xl p-6 lg:p-16">
       <carousel v-bind="options" :perPageCustom="[[480, 1], [768, 3], [1022, 4]]" :navigation-enabled="true" :navigation-prev-label="prevLabel"  :navigation-next-label="nextLabel" class="grid grid-cols-1 lg:grid-cols-3 gap-10 py-10">
       <slide  v-for="product in collection.products"  class="pl-1 pr-1 ">
@@ -12,7 +12,7 @@
     </client-only>
   </div>
   <div v-else class="max-w-7xl mx-auto">
-    <h2 class="text-center text-white max-w-4xl mx-auto font-bold text-3xl">{{ title }}</h2>
+    <h2 class="text-center text-white max-w-4xl mx-auto font-bold text-3xl uppercase tracking-wide">{{ title }}</h2>
     <client-only class="bg-gray-900 max-w-7xl mx-auto rounded-3xl p-6 lg:p-16">
       <carousel v-bind="options" :perPageCustom="[[480, 1], [768, 3], [1022, 3]]" :centerMode="true" :navigation-enabled="true" :navigation-prev-label="prevLabel"  :navigation-next-label="nextLabel" class="py-10">
         <slide  v-for="product in collection.products"  class="pl-1 pr-1">

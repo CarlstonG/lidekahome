@@ -89,7 +89,6 @@ export default Vue.extend({
 
 .green-gradient {
   background: linear-gradient(180deg, rgba(51, 177, 119, 0.45) 1.42%, rgba(102, 242, 175, 0.10) 95%);
-
 }
 
 .page-content {
@@ -293,49 +292,55 @@ export default Vue.extend({
 
 ._plant {
   height: 375px;
-  background: url('~assets/design/landings/plant-bg.png') no-repeat;
-  background-position: center;
+  background: linear-gradient(180deg, rgba(51, 177, 119, 0.45) 1.42%, rgba(102, 242, 175, 0.10) 95%);
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 ._plant-bg {
   opacity: 0.1;
-  background: url('~assets/design/landings/plant-bg-img.png') no-repeat;
-  background-position: center;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 ._audio {
   height: 375px;
-  border-radius: 40px;
-  background: linear-gradient(115.95deg, rgba(137, 33, 163, 0.81) 0%, rgba(43, 180, 171, 0.67) 100%);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(44, 175, 228, 0.35) 1.42%, rgba(192, 41, 255, 0.25) 95%);
 }
 
 ._audio-bg {
   opacity: 0.1;
-  background: url('~assets/design/landings/audio-bg.png') no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 ._colors {
   height: 375px;
-  border-radius: 40px;
-  background: #151515;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(44, 175, 228, 0.35) 1.42%, rgba(192, 41, 255, 0.25) 95%);
 }
 
 ._montage {
   height: 375px;
-  border-radius: 40px;
-  background: linear-gradient(178.32deg, rgba(37, 178, 231, 0.63) 1.42%, rgba(127, 96, 169, 0.12) 95%);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(44, 175, 228, 0.35) 1.42%, rgba(192, 41, 255, 0.25) 95%);
 }
 
 ._brightness {
-  background: linear-gradient(178.32deg, rgba(53, 53, 53, 0.21) 1.42%, rgba(255, 211, 99, 0.63) 95%);
+  background: linear-gradient(180deg, rgba(44, 175, 228, 0.35) 1.42%, rgba(192, 41, 255, 0.25) 95%);
   height: 375px;
-  border-radius: 40px;
+  border-radius: 20px;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.prose.prose-teal-500 {
+  strong, a {
+    color: inherit;
+  }
 }
 </style>

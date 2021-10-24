@@ -37,15 +37,15 @@
       />
 
       <Benefits
-        :first-block="{
+          :first-block="{
           title: 'Energiebesparend',
           description: 'Energiebesparend',
-          imageSrc: require('assets/design/landings/plant.png')
+          imageSrc: require('assets/icon/icons8-forest.svg')
         }"
-        :second-block="{
+          :second-block="{
           title: 'Naadloze overgang',
           description: 'Naadloze overgang op het geluid van de tv',
-          imageSrc: require('assets/design/landings/audio.png')
+          imageSrc: require('assets/icon/icons8-audio-wave-50.svg')
         }"
       />
 
@@ -53,17 +53,17 @@
           :first-block="{
             title: 'Kleuren',
             description: '16 miljoen kleuren',
-            imageSrc: require('assets/design/landings/colors.png')
+            imageSrc: require('assets/icon/icons8-paint-palette-50.svg')
           }"
           :second-block="{
             title: 'Makkelijke bevestiging',
             description: 'Makkelijke bevestiging',
-            imageSrc: require('assets/design/landings/settings.png')
+            imageSrc: require('assets/icon/icons8-wrench-50.svg')
           }"
           :third-block="{
             title: 'Helderheid',
             description: 'Hoge helderheid',
-            imageSrc: require('assets/design/landings/brightness.png')
+            imageSrc: require('assets/icon/icons8-shade-selected-faces-50.svg')
           }"
       />
 
