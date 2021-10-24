@@ -342,5 +342,27 @@ export default Vue.extend({
   strong, a {
     color: inherit;
   }
+
+  .no-list-type {
+    li {
+      padding: 10px !important;
+      background: rgba(0, 0, 0, 0.1);
+      margin: 0 0 10px 0 !important;
+      border-radius: 10px;
+
+      img, span {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        margin-right: 15px;
+      }
+
+      &:before {
+        display: none !important;
+      }
+    }
+  }
 }
 </style>
