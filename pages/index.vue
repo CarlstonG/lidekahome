@@ -145,13 +145,13 @@
                   <div class="flex-grow flex items-center justify-center">
                     <img class="w-14" src="~assets/icon/icons8-forest.svg" />
                   </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaamheid</span>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaam</span>
                 </div>
                 <div class="text-center flex flex-col">
                   <div class="flex-grow flex items-center justify-center">
                     <img class="w-14" src="~assets/icon/icons8-shade-selected-faces-50.svg" />
                   </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helderheid</span>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helder</span>
                 </div>
               </div>
             </div>
@@ -159,12 +159,19 @@
               <div class="space-y-4">
                 <h2 class="text-2xl text-white font-bold uppercase tracking-wide">RGB Led strips</h2>
                 <p class="text-white font-extralight ">
-                  RGB-led verlichting combineert rode, groene en blauwe led-lampjes in één behuizing en vormt honderden verschillende lichttinten door deze drie kleuren te mengen. Zo stel jij jouw favoriete kleuren samen wanneer je maar wilt en geniet je iedere keer weer van een unieke sfeer.
+                  Lideka biedt een geweldig assortiment RGB led strips aan, je kunt deze led-strips voor enorm veel verschillende doeleinden gebruiken.
                 </p>
                 <p class="text-white font-extralight ">
-                  Deze stijlvolle led set wordt geleverd inclusief installatiemateriaal, IP65-waterproof bescherming en led lampjes van de hoogste kwaliteit zodat je jouw aankoop nog jarenlang kunt gebruiken. Toch niet tevreden? Lideka® garandeert jou van een 2-jarige garantie.
+                  De voordelen van deze Led-strips zijn:
                 </p>
-                <div class="lg:px-8 h-20">
+                <ul class="text-white font-extralight no-list-type">
+                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Speciale effecten met de dreamcolor functie</span></li>
+                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Makkelijk te installeren</span></li>
+                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Zelfklevende strip</span></li>
+                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Duurzaam</span></li>
+                </ul>
+
+                  <div class="lg:px-8 h-20">
                   <NuxtLink to="/categorie/rgb-led-strips"
                             class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"
                   >
@@ -192,13 +199,13 @@
                   <div class="flex-grow flex items-center justify-center">
                     <img class="w-14" src="~assets/icon/icons8-forest.svg" />
                   </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaamheid</span>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaam</span>
                 </div>
                 <div class="text-center flex flex-col">
                   <div class="flex-grow flex items-center justify-center">
                     <img class="w-14" src="~assets/icon/icons8-shade-selected-faces-50.svg" />
                   </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helderheid</span>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helder</span>
                 </div>
               </div>
             </div>
@@ -206,11 +213,13 @@
               <div class="space-y-4">
                 <h2 class="text-2xl text-white font-bold uppercase tracking-wide">TV LED STRIP</h2>
                 <p class="text-white font-extralight ">
-                  Een led-strip achter je TV creëert een stijlvolle lichtgloed rondom het scherm en geeft jouw huiskamer een echte bioscoop sfeer. Maar deze handige strips zijn veel meer dan alleen mooi en zorgen ook voor een subtielere overgang tussen licht en donker. Zo worden jouw ogen minder snel moe en kijk je extra comfortabel naar jouw favoriete films & shows. De set wordt bovendien geleverd met dubbelzijdig tape en een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.
+                  Hou je gave special effects bij jouw TV of Computer? Deze USB Led strips zijn meer dan geschikt. Ook geschikt voor een mooie game kamer.
                 </p>
-                <p class="text-white font-extralight ">
-                  Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.
-                </p>
+                <ul class="text-white font-extralight no-list-type">
+                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Extra effecten bij de TV</span></li>
+                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Achter de computer</span></li>
+                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">In een game kamer</span></li>
+                </ul>
                 <div class="lg:px-8 h-20">
                   <NuxtLink to="/categorie/tv-led-strips"
                             class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"
@@ -244,13 +253,13 @@
                   <div class="flex-grow flex items-center justify-center">
                     <img class="w-14" src="~assets/icon/icons8-forest.svg" />
                   </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaamheid</span>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaam</span>
                 </div>
                 <div class="text-center flex flex-col">
                   <div class="flex-grow flex items-center justify-center">
                     <img class="w-14" src="~assets/icon/icons8-shade-selected-faces-50.svg" />
                   </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helderheid</span>
+                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helder</span>
                 </div>
               </div>
             </div>
@@ -258,13 +267,19 @@
               <div class="space-y-4">
                 <h2 class="text-2xl text-white font-bold uppercase tracking-wide">RGB-IC Led strips</h2>
                 <p class="text-white font-extralight ">
-                  Net als bij een standaard model vormt de RGB-IC led-strip alle mogelijke kleurtinten, maar dan met schitterende extra lichteffecten. Deze splinternieuwe vorm van led licht wordt ook wel ‘Dreamcolor Led’ genoemd en is razend populair bij onder Amerikaanse TikTokkers. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe editie is het mogelijk!
+                  Bekijk hier één van de nieuwste soorten, ook wel de ‘’dreamcolor’’ strip genoemd. Net als alle andere modellen is de bedienbaar via app en afstandsbediening
                 </p>
                 <p class="text-white font-extralight ">
-                  Naast deze extra features werkt de RGB-IC uitvoering net als een traditionele led-strip. Zo ben je verzekerd van 2 jaar garantie, IP65-waterproof bescherming en led-lampjes van de hoogste kwaliteit.
+                  De voordelen van deze Led-strips zijn:
                 </p>
+                <ul class="text-white font-extralight no-list-type">
+                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">De nieuwste kleureffecten</span></li>
+                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Zelfklevend</span></li>
+                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Scherpe prijs</span></li>
+                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Duurzaam</span></li>
+                </ul>
                 <div class="lg:px-8 h-20">
-                  <NuxtLink to="/categorie/rgb-led-strips"
+                  <NuxtLink to="/categorie/rgb-ic-led-strips"
                             class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"
                   >
                     Bekijk collectie
@@ -327,7 +342,7 @@
 
     <div class="mx-auto max-w-7xl mt-10 mb-10 px-6">
       <h2 class="mx-auto text-3xl text-center text-white font-bold">
-        Waar ga jij de LED strip bevestigen?
+        Kies hier jouw specifieke toepassing
       </h2>
     </div>
 
@@ -359,15 +374,29 @@
 
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 space-y-6 lg:space-y-0">
       <img src="~assets/headers/1.jpg" class="rounded-2xl" alt="Lideka home" />
-      <div class="lg:absolute bottom-10 right-10 left-10 rounded-2xl p-10"
+      <div class="lg:absolute bottom-10 right-10 left-10 rounded-2xl p-10 prose prose-teal-500 text-white"
         style="background: rgba(0, 0, 0, 0.75)"
       >
-        <h1 class="mx-auto text-3xl  text-white font-bold mb-4">
+        <h1 class="mx-auto text-3xl uppercase text-white font-bold mb-4" style="color: white;">
           Lideka home - Betaalbare Slimme Led strips
         </h1>
         <p class="mx-auto text-white font-extralight">
-          Lideka is een merk dat zich concentreert op het produceren van slimme betaalbare Led strips. Op dit moment bestaat ons assortiment uit RGB led strips, RGBIC led strips, TV led strips en led strips pakketten. Ons assortiment zal snel uitgebreid worden met andere soorten slimme verlichting.
-          Wij onderscheiden onszelf van de concurrentie door een goede, degelijke kwaliteit te leveren met een lange levensduur, en de allerbeste service. Tegelijk dragen we bij aan een vermindering van energieverbruik. Dit alles tegen een verkoopprijs die voor vrijwel alle burgers gemakkelijk haalbaar is. En op deze wijze creëren we voor iedereen een meer sfeervolle, aangenamere leefomgeving.
+          Lideka is een merk dat zich concentreert op het produceren van
+          <a target="_blank" class="link" href="/categorie/led-strips">slimme betaalbare Led strips.</a>
+          Op dit moment bestaat ons assortiment uit
+          <a class="link" href="/categorie/rgb-led-strips">RGB led strips</a>,
+          <a class="link" href="/categorie/rgb-ic-led-strips">RGBIC led strips</a>,
+          <a class="link" href="/categorie/tv-led-strips">TV led strips</a> en
+          <a class="link" href="/categorie/led-pakketten">led strips pakketten</a>.
+        </p>
+        <p class="mx-auto text-white font-extralight">
+          Ons assortiment zal snel uitgebreid worden met andere soorten slimme verlichting.
+          Wij onderscheiden onszelf van de concurrentie door een <strong>goede, degelijke kwaliteit</strong> te leveren met een <strong>lange levensduur</strong>,
+          en de <strong>allerbeste service</strong>. Tegelijk dragen we bij aan een vermindering van energieverbruik.
+        </p>
+        <p class="mx-auto text-white font-extralight">
+          Dit alles tegen een verkoopprijs die voor vrijwel alle burgers gemakkelijk haalbaar is.
+          En op deze wijze creëren we voor iedereen een meer <strong>sfeervolle, aangenamere leefomgeving</strong>.
         </p>
       </div>
     </div>
@@ -384,7 +413,14 @@
               Service
             </h2>
             <p class="text-white font-extralight pt-6 px-6">
-              Een goede service voor jou vinden wij belangrijk. Wij geloven dat het onze verantwoordelijkheid is om jou te helpen en te adviseren waar dat nodig is, niet alleen tijdens het verkoopproces, maar vooral na het verkoopproces. Je kunt ons 24/7 bereiken op (085-0601297), je zult niet altijd direct antwoord kunnen krijgen op specifieke vragen, maar onze experts zullen je altijd zo snel mogelijk antwoord geven. We streven ernaar om altijd binnen 24 uur terug te bellen of terug te mailen, dit kan op klantenservice@lidekahome.nl.
+              Een goede service voor jou vinden wij belangrijk.
+              Wij geloven dat het onze verantwoordelijkheid is om jou te helpen en te adviseren waar dat nodig is, niet alleen tijdens het verkoopproces, maar vooral na het verkoopproces.
+            </p>
+            <p class="text-white font-extralight pt-6 px-6">
+              Je kunt ons 24/7 bereiken op (<a class="link" href="tel:0850601297">085-0601297</a>),
+              je zult niet altijd direct antwoord kunnen krijgen op specifieke vragen,
+              maar onze experts zullen je altijd zo snel mogelijk antwoord geven. We streven ernaar om altijd binnen 24 uur terug te bellen of terug te mailen, dit kan op
+              <a class="link" href="mailto:klantenservice@lidekahome.nl">klantenservice@lidekahome.nl</a>.
             </p>
           </div>
         </div>
@@ -398,7 +434,17 @@
               Kwaliteit
             </h2>
             <p class="text-white font-extralight pt-6 px-6">
-              Zoals je hierboven al hebt gelezen gaan we voor een degelijke kwaliteit. Een kwaliteit waarop jij kan bouwen, en een kwaliteit waarin jij kan geloven. Al onze fabrieken worden zorgvuldig gecontroleerd op zaken zoals: Kinderarbeid, slechte werkcondities en slechte salarissen. Alle materialen die we gebruiken hebben een uitstekende kwaliteit, tevens voldoen alle artikelen aan de zogeheten CE markeringen. Mocht er onverhoopt iets misgaan of ben je toch niet tevreden? Er is altijd iemand voor jou beschikbaar om al je obstakels op te lossen, twijfel nooit om contact op te nemen.
+              Zoals je hierboven al hebt gelezen gaan we voor een <strong>degelijke kwaliteit</strong>.
+              Een kwaliteit waarop jij kan bouwen, en een kwaliteit waarin jij kan geloven.
+            </p>
+            <p class="text-white font-extralight pt-6 px-6">
+              Al onze fabrieken worden zorgvuldig gecontroleerd op zaken zoals:
+              Kinderarbeid, slechte werkcondities en slechte salarissen. Alle materialen die we
+              gebruiken hebben een <strong>uitstekende kwaliteit</strong>, tevens voldoen alle artikelen aan de zogeheten <strong>CE markeringen</strong>.
+            </p>
+            <p class="text-white font-extralight pt-6 px-6">
+              Mocht er onverhoopt iets misgaan of ben je toch niet tevreden? Er is altijd iemand voor
+              jou beschikbaar om al je obstakels op te lossen, twijfel nooit om contact op te nemen.
             </p>
           </div>
         </div>
@@ -412,7 +458,14 @@
               Betaalbaarheid
             </h2>
             <p class="text-white font-extralight pt-6 px-6 mx-auto max-w-2xl">
-              Slimme verlichting kan erg duur zijn, en vooral slimme led-strips, nu kun je ook voor een goedkopere gaan maar je wilt toch kwaliteit. Vaak wordt er gedacht dat kwaliteit automatisch duur is, maar kwaliteit hoeft echt niet duur te zijn. Door de juiste processen te hanteren in de fabriek en de juiste partners te vinden kun jij een hele degelijke prijs neerzetten die voor iedereen haalbaar is. Dat is Lideka en dat is waar wij in geloven, betaalbare slimme led strips en verlichting, niet alleen voor jou, maar voor iedereen!
+              Slimme verlichting kan erg duur zijn, en vooral <a class="link" href="/categorie/led-strips">slimme led-strips</a>, nu kun je ook voor een goedkopere gaan maar je wilt toch
+              <strong>kwaliteit</strong>.
+            </p>
+            <p class="text-white font-extralight pt-6 px-6 mx-auto max-w-2xl">
+              Vaak wordt er gedacht dat kwaliteit automatisch duur is, maar kwaliteit hoeft echt niet duur te zijn. Door de <strong>juiste processen</strong> te hanteren in de fabriek en de juiste partners te vinden kun jij een hele degelijke prijs neerzetten die voor iedereen haalbaar is.
+            </p>
+            <p class="text-white font-extralight pt-6 px-6 mx-auto max-w-2xl">
+              Dat is Lideka en dat is waar wij in <strong>geloven</strong>, betaalbare slimme led strips en verlichting, niet alleen voor jou, maar voor <strong>iedereen</strong>!
             </p>
           </div>
         </div>
@@ -583,6 +636,13 @@ export default Vue.extend({
 
 ._bathroom {
   background: url('~assets/design/bathroom.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+._other {
+  background: url('~assets/headers/1.jpg') no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 20px;

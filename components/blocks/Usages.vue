@@ -55,6 +55,15 @@
         </NuxtLink>
       </div>
     </div>
+    <div class="grid grid-cols-1 gap-10 mt-10">
+      <div class="col-span-1 lg:col-span-4 _other hover:opacity-50 transition-all">
+        <NuxtLink to="/categorie/led-strips">
+          <div class="flex items-end justify-center text-center" style="height: 400px;">
+            <h2 class="p-6 text-white text-2xl font-bold tracking-wide uppercase">Overige</h2>
+          </div>
+        </NuxtLink>
+      </div>
+    </div>
   </div>
 </template>
 

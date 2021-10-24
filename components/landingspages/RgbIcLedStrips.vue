@@ -17,7 +17,7 @@
             description: '<a href=\'https://nl.wikipedia.org/wiki/IP-code\' class=\'link\' target=\'blank\'>IP65-waterproof</a> bescherming en led-lampjes van de hoogste kwaliteit'
           },
           {
-            imageSrc: require('assets/icon/icons8-usb-on-50.svg'),
+            imageSrc: require('assets/icon/icons8-wrench-50.svg'),
             description: 'Word geleverd met dubbelzijdig tape.'
           },
           {
