@@ -7,7 +7,7 @@
       <CenterParagraph v-if="smallText && description" :description="description" />
 
       <div class="relative">
-        <img :src="imageSrc" :alt="title" />
+        <img :src="imageSrc" :alt="title" class="rounded-2xl" />
         <h2 v-if="description && !smallText" class="text-white text-center text-2xl font-bold tracking-wide lg:absolute bottom-10 left-0 right-0 uppercase">
           {{ description }}
         </h2>

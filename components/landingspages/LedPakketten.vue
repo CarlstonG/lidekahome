@@ -4,7 +4,7 @@
       <Banner
         title="LED-strip pakketten | Combineren | Complete sets"
         description="LED PAKKETTEN"
-        :imageSrc="require('assets/design/landings/led-pakketten/banner.png')"
+        :imageSrc="require('assets/headers/led-pakket-1.jpg')"
       />
 
       <TextWithImage
@@ -107,7 +107,7 @@
       />
 
       <SingleImage
-        :image-src="require('assets/design/landings/led-pakketten/banner2.png')"
+        :image-src="require('assets/headers/led-pakket-2.jpg')"
       />
 
       <CenterTitle title="Een complete set bestaat uit:" />

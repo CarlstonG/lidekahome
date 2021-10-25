@@ -9,9 +9,9 @@
       <client-only class="bg-gray-900 rounded-3xl p-6 lg:p-16">
         <carousel v-bind="options" :perPageCustom="[[480, 1], [768, 3], [1022, 4]]" :navigation-enabled="true"
                   :navigation-prev-label="prevLabel" :navigation-next-label="nextLabel"
-                  class="grid grid-cols-1 lg:grid-cols-3 gap-10 py-10">
+                  class="py-10">
           <slide v-for="product in collection.products" class="pl-1 pr-1 ">
-            <div class="lg:col-span-2 bg-dark rounded-3xl p-4" style="background-color:#151515;">
+            <div class="bg-dark rounded-3xl p-4" style="background-color:#151515;">
               <ProductItem :gradient="true" :key="product.id" :product="product"/>
             </div>
           </slide>
@@ -47,6 +47,7 @@ export default Vue.extend({
       options: {
         loop: true,
         slideCount: 1,
+        perPage: 1,
         paginationEnabled: false,
       },
       nextLabel: "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" style=\"color: white;\" class=\"bi bi-caret-right\" viewBox=\"0 0 16 16\">\n" +

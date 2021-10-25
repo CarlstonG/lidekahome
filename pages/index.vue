@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black">
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 mb-10 lg:mb-0">
-      <video class="w-full h-full rounded-2xl" autoplay muted playsinline>
+      <video poster="~assets/headers/led-pakket-1.jpg" class="w-full h-full rounded-2xl" autoplay muted playsinline>
         <source src="~assets/products/video.webm" type="video/webm" />
         <source src="~assets/products/video.mp4" type="video/mp4" />
       </video>
@@ -11,7 +11,7 @@
           Wij creëren de ultieme sfeer voor jou,
         </h1>
         <h2 class="mx-auto text-2xl font-extralight text-white">
-          zowel binnen als buiten het huis, en dat doen we met betaalbare Slimme LED-strips!
+          Zowel binnen als buiten het huis, en dat doen we met betaalbare Slimme LED-strips!
         </h2>
       </div>
     </div>
@@ -132,7 +132,7 @@
         <div class="default-gradient relative" style="border-radius: 20px;">
           <div class="p-6">
             <div class="flex items-center flex-col">
-              <img src="~assets/products/1.png" class="rounded-lg w-full max-w-md" />
+              <img src="~assets/products/14.png" class="rounded-lg w-full max-w-md" />
 
               <div class="flex space-x-8 items-center justify-center">
                 <div class="text-center flex flex-col">

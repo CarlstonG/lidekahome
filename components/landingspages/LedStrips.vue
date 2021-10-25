@@ -1,10 +1,18 @@
 <template>
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
-      <Banner
-        description="Led Strips"
-        :imageSrc="require('assets/design/landings/led-strips/banner.png')"
-      />
+      <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 mb-10 lg:mb-0">
+        <video poster="~assets/headers/led-pakket-1.jpg" class="w-full h-full rounded-2xl" autoplay muted playsinline>
+          <source src="~assets/headers/led-strip-video.webm" type="video/webm" />
+          <source src="~assets/headers/led-strip-video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20">
+          <h1 class="mx-auto text-4xl text-white font-bold tracking-wide">
+            LED strips
+          </h1>
+        </div>
+      </div>
 
       <ProductsWithBackground
           v-if="collection1"

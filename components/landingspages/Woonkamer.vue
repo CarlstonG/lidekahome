@@ -1,12 +1,21 @@
 <template>
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
-      <Banner
-        title="LED STRIP WOONKAMER"
-        description="Als je naar betaalbare, kwalitatieve LED-strips opzoekt bent voor in de woonkamer, dan ben je hier aan het perfecte adres. Lideka biedt speciaal voor de woonkamer onze RGB en RGB-IC LED-strips aan. Onze LED lights is van hoge kwaliteit, en helderder dan ooit in de geschiedenis van LED verlichting."
-        :imageSrc="require('assets/design/landings/woonkamer/banner.png')"
-        :smallText="true"
-      />
+      <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 mb-10 lg:mb-0">
+        <video poster="~assets/headers/led-pakket-1.jpg" class="w-full h-full rounded-2xl" autoplay muted playsinline>
+          <source src="~assets/headers/woonkamer-video.webm" type="video/webm" />
+          <source src="~assets/headers/woonkamer-video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20">
+          <h1 class="mx-auto text-4xl text-white font-bold tracking-wide">
+            LED STRIP WOONKAMER
+          </h1>
+          <h2 class="mx-auto text-lg font-extralight text-white">
+            Als je naar betaalbare, kwalitatieve LED-strips opzoekt bent voor in de woonkamer, dan ben je hier aan het perfecte adres. Lideka biedt speciaal voor de woonkamer onze RGB en RGB-IC LED-strips aan. Onze LED lights is van hoge kwaliteit, en helderder dan ooit in de geschiedenis van LED verlichting.
+          </h2>
+        </div>
+      </div>
 
       <CenterTitle title="KIEZEN UIT 2 SOORTEN" />
 
@@ -158,36 +167,37 @@
       </LongParagraph>
 
       <Benefits
-          :reverse="true"
           :first-block="{
           title: 'Energiebesparend',
           description: 'Energiebesparend',
-          imageSrc: require('assets/design/landings/plant.png')
+          imageSrc: require('assets/icon/icons8-forest.svg')
         }"
           :second-block="{
           title: 'Naadloze overgang',
           description: 'Naadloze overgang op het geluid van de tv',
-          imageSrc: require('assets/design/landings/audio.png')
+          imageSrc: require('assets/icon/icons8-audio-wave-50.svg')
         }"
       />
 
       <BenefitsThreeCols
           :first-block="{
-            title: 'Kleureffecten',
-            description: 'Eindeloze kleureffecten',
-            imageSrc: require('assets/design/landings/colors.png')
+            title: 'Kleuren',
+            description: '16 miljoen kleuren',
+            imageSrc: require('assets/icon/icons8-paint-palette-50.svg')
           }"
           :second-block="{
             title: 'Makkelijke bevestiging',
             description: 'Makkelijke bevestiging',
-            imageSrc: require('assets/design/landings/settings.png')
+            imageSrc: require('assets/icon/icons8-wrench-50.svg')
           }"
           :third-block="{
             title: 'Helderheid',
             description: 'Hoge helderheid',
-            imageSrc: require('assets/design/landings/brightness.png')
+            imageSrc: require('assets/icon/icons8-shade-selected-faces-50.svg')
           }"
       />
+
+      <CenterTitle title="Een complete set bestaat uit:" />
 
       <CompleteSet
         :left-data="[
@@ -204,7 +214,7 @@
             description: 'Met 3 verschillende knoppen'
           }
         ]"
-        :image-src="require('assets/design/landings/led-pakketten/pakket.png')"
+        :image-src="require('assets/products/18.png')"
         :right-data="[
           {
             title: 'De TV Strips',

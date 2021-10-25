@@ -4,7 +4,7 @@
       <img :src="imageSrc" :alt="title" />
     </div>
     <div class="mx-auto space-y-10 px-6 lg:px-0 mt-6 bottom-10 relative">
-      <h1 v-if="title" class="text-white uppercase text-center text-4xl font-bold" style="font-size: 43px; letter-spacing: 0.08em;">
+      <h1 v-if="title" class="text-white uppercase text-center text-xl lg:text-4xl font-bold tracking-wide">
         {{ title }}
       </h1>
     </div>
