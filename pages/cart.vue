@@ -191,11 +191,6 @@
                 <img loading="lazy" class="w-40" alt="Thuiswinkel" src="~/assets/thuiswinkel-black.svg"/>
               </a>
             </div>
-            <div class="bg-white rounded-lg mt-6">
-              <iframe loading="lazy" frameborder="0" allowtransparency="true"
-                      src="https://www.kiyoh.com/retrieve-widget.html?color=white&allowTransparency=true&button=true&lang=nl&tenantId=98&locationId=1064733"
-                      width="300" height="150"></iframe>
-            </div>
           </div>
         </div>
       </div>

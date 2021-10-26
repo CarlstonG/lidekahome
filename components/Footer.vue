@@ -93,12 +93,6 @@
                 </NuxtLink>
               </li>
             </ul>
-
-            <div class="mt-4">
-              <iframe loading="lazy" frameborder="0" allowtransparency="true"
-                      src="https://www.kiyoh.com/retrieve-widget.html?color=dark&allowTransparency=true&button=true&lang=nl&tenantId=98&locationId=1064733"
-                      width="300" height="150"></iframe>
-            </div>
           </div>
           <div class="mt-12 md:mt-0">
             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
