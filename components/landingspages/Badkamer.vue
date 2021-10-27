@@ -21,7 +21,7 @@
       </LongParagraph>
 
       <Banner
-        :imageSrc="require('assets/design/landings/badkamer/banner.png')"
+        :imageSrc="require('assets/design/landings/badkamer/banner.jpg')"
       />
 
       <CenterTitle title="led strips badkamer" />
@@ -54,7 +54,7 @@
           :collection="collection3"
       />
 
-      <TextWithImage image-alt="Badkamerverlichting" :image-src="require('assets/design/landings/badkamer/verlichting.png')" title="Badkamerverlichting">
+      <TextWithImage image-alt="Badkamerverlichting" :image-src="require('assets/design/landings/badkamer/verlichting.jpg')" title="Badkamerverlichting">
         <p class="text-white font-extralight">
           Bij badkamerverlichting is het vooral belangrijk dat je LED verlichting plaatst met een IP65 ratio, dat houd in dat de verlichting volledig waterdicht is. Onze speciale badkamer LED-strips beschikken over dit ratio, en zijn daarom meer dan geschikt. Ook in de douche hoef jij je geen zorgen te maken, let daarop wel op dat je controller en adapter afsluit van water en vocht.
         </p>
@@ -69,7 +69,7 @@
         </p>
       </TextWithImage>
 
-      <SingleImage :image-src="require('assets/design/landings/badkamer/banner2.png')" />
+      <SingleImage :image-src="require('assets/design/landings/badkamer/banner2.jpg')" />
 
       <CenterTitle title="Waarom zou ik deze LED-strips gebruiken als badkamerverlichting?" />
 
@@ -136,7 +136,7 @@
       </div>
 
       <SingleImage
-        :image-src="require('assets/design/landings/badkamer/banner3.png')"
+        :image-src="require('assets/design/landings/badkamer/banner3.jpg')"
       />
 
       <CenterTitle title="Indirecte verlichting" />
@@ -165,7 +165,7 @@
       </LongParagraph>
 
       <SingleImage
-        :image-src="require('assets/design/landings/badkamer/banner4.png')"
+        :image-src="require('assets/design/landings/badkamer/banner4.jpg')"
       />
 
       <CenterTitle title="Wit licht" />
@@ -231,7 +231,7 @@
             description: 'Met 3 verschillende knoppen'
           }
         ]"
-          :image-src="require('assets/design/landings/led-pakketten/pakket.png')"
+          :image-src="require('assets/design/landings/led-pakketten/pakket.jpg')"
           :right-data="[
           {
             title: 'De TV Strips',

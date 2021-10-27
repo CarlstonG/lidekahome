@@ -4,7 +4,7 @@
 
       <BedPageBanner
         title="LED BEDVERLICHTING"
-        :imageSrc="require('assets/design/landings/bed/bannerBedPage.png')"
+        :imageSrc="require('assets/design/landings/bed/bannerBedPage.jpg')"
         :smallText="true"
       />
 
@@ -68,7 +68,7 @@
       </LongParagraph>
 
       <div class="relative">
-        <img src="~assets/design/landings/bed/bedroom-blue.png">
+        <img src="~assets/design/landings/bed/bedroom-blue.jpg">
         <div class="lg:absolute max-w-5xl bottom-5 inset-x-0 mx-auto">
           <h2 class="text-white uppercase font-bold tracking-wide text-3xl">Indirect licht</h2>
           <span class="text-white">De led strips van Lideka kunnen uitstekend worden gebruikt als indirect licht, dat komt door zijn hoge helderheid en hoge aantal leds per meter. Al onze strips zijn uitgerust met de hoge kwalitatieve SMD 5050 leds die drie keer zoveel licht opbrengen en drie keer zo lang meegaan.</span>
@@ -171,7 +171,7 @@
 
       <div>
         <div class="relative top-10">
-          <img src="~assets/design/landings/bed/bedWithLedLighting.png">
+          <img src="~assets/design/landings/bed/bedWithLedLighting.jpg">
         </div>
         <div class="relative max-w-5xl bottom-10 inset-x-0 mx-auto px-6 lg:px-0">
           <h2 class="text-white text-2xl uppercase tracking-wide font-bold">Waarom zou ik deze LED-strip gebruiken voor mijn bed, als bedverlichting?</h2>

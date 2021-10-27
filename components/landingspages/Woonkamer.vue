@@ -37,7 +37,7 @@
 
       <CenterParagraph description="De RGB-IC LED-strips hebben nog een extra functie, een hele bijzondere functie. Je bij dit soort namelijk verschillende kleuren tegelijk door de strips laten gaan. Dat is een enorm gaaf effect, en erg geliefd onder onze klanten. Verder werkt alles hetzelfde bij dit type LED verlichting, en wordt deze ook in een compleet set geleverd." />
 
-      <SingleImage :image-src="require('assets/design/landings/woonkamer/banner2.png')" />
+      <SingleImage :image-src="require('assets/design/landings/woonkamer/banner2.jpg')" />
 
       <CenterTitle title="Led verlichting woonkamer" />
 
@@ -144,7 +144,7 @@
         </p>
       </LongParagraph>
 
-      <SingleImage :image-src="require('assets/design/landings/woonkamer/banner3.png')" />
+      <SingleImage :image-src="require('assets/design/landings/woonkamer/banner3.jpg')" />
 
       <LongParagraph
         title="Waarom zijn dit de beste LED-strips voor de woonkamer?"

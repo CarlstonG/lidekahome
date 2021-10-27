@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        :imageSrc="require('assets/design/landings/gamekamer/banner.png')"
+        :imageSrc="require('assets/design/landings/gamekamer/banner.jpg')"
         :smallText="true"
       />
 
@@ -27,7 +27,7 @@
         </p>
       </LongParagraph>
 
-      <SingleImage :image-src="require('assets/design/landings/gamekamer/banner2.png')" />
+      <SingleImage :image-src="require('assets/design/landings/gamekamer/banner2.jpg')" />
 
       <CenterTitle title="RGB LED STRIP" />
 
@@ -51,7 +51,7 @@
           :collection="collection2"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/gamekamer/banner3.png')" />
+      <SingleImage :image-src="require('assets/design/landings/gamekamer/banner3.jpg')" />
 
       <CenterTitle title="Wat is een RGB led strip?" />
 
@@ -74,7 +74,7 @@
       </LongParagraph>
 
       <div class="mx-auto max-w-5xl">
-        <TextWithImage :bg-color="true" image-alt="RGB verlichting" :reverse="true" :imageSrc="require('assets/design/landings/gamekamer/rgbverlichting.png')"
+        <TextWithImage :bg-color="true" image-alt="RGB verlichting" :reverse="true" :imageSrc="require('assets/design/landings/gamekamer/rgbverlichting.jpg')"
                        title="RGB verlichting">
           <p class="text-white font-extralight">
             Het aantal leds per meter is enorm belangrijk als je gaat kijken voor nieuwe bedienbare ledstrips. Waarom is dat nu zo belangrijk? Hoe minder leds, hoe lager de lichtopbrengst, daarom heeft Lideka gekozen voor een aantal van 30 leds per meter. Hierdoor heb je meer dan voldoende licht bij jouw nieuwe RGB verlichting. Bekijk ook eens onze andere RGB verlichting.
@@ -154,7 +154,7 @@
         </div>
       </div>
 
-      <SingleImage :image-src="require('assets/design/landings/gamekamer/banner4.png')" />
+      <SingleImage :image-src="require('assets/design/landings/gamekamer/banner4.jpg')" />
 
       <CenterTitle title="Wat is een RGB led strip?" />
 
@@ -196,7 +196,7 @@
             description: 'Met 3 verschillende knoppen'
           }
         ]"
-          :image-src="require('assets/design/landings/led-pakketten/pakket.png')"
+          :image-src="require('assets/design/landings/led-pakketten/pakket.jpg')"
           :right-data="[
           {
             title: 'De TV Strips',

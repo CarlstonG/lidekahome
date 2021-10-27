@@ -4,7 +4,7 @@
       <Banner
         title="RGB-IC Led strips | Dreamcolor | Special Effects | Complete sets"
         description="RGB-IC Led strips"
-        :imageSrc="require('assets/design/landings/rgb-ic/banner.png')"
+        :imageSrc="require('assets/design/landings/rgb-ic/banner.jpg')"
       />
 
       <CenterParagraph
@@ -68,7 +68,7 @@
       />
 
       <SingleImage
-        :image-src="require('assets/design/landings/rgb-ic/banner-2.png')"
+        :image-src="require('assets/design/landings/rgb-ic/banner-2.jpg')"
       />
 
       <CenterTitle title="Een complete set bestaat uit:" />
@@ -135,7 +135,7 @@
         </div>
       </LongParagraph>
 
-      <SingleImage :image-src="require('assets/design/landings/tv-bg.png')"
+      <SingleImage :image-src="require('assets/design/landings/tv-bg.jpg')"
                    description="<strong class='font-bold text-2xl'>100% tevredenheidsgarantie</strong><br />Ben je niet tevreden met je aankoop? Wij betalen jouw volledige aankoopbedrag terug of je krijgt gratis een compleet nieuw set."
       />
 
@@ -146,7 +146,7 @@
       />
 
       <SingleImage
-          :image-src="require('assets/design/landings/rgb-led-strips/banner-5.png')"
+          :image-src="require('assets/design/landings/rgb-led-strips/banner-5.jpg')"
       />
 
       <CenterTitle

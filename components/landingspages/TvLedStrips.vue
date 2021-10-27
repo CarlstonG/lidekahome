@@ -4,7 +4,7 @@
       <Banner
         title="RGB TV Led strips | 16 miljoen kleuren | Complete sets"
         description="TV LED-STRIPS"
-        :imageSrc="require('assets/design/landings/banner.png')"
+        :imageSrc="require('assets/design/landings/banner.jpg')"
       />
 
       <CenterParagraph
@@ -55,7 +55,7 @@
       </div>
 
       <SingleImage
-        :image-src="require('assets/design/landings/tv-green.png')"
+        :image-src="require('assets/design/landings/tv-green.jpg')"
         description="<h2 class='font-bold text-3xl'>TV verlichting goed voor de ogen</h2><p>Er zijn meerdere studies en onderzoeken geweest naar het gebruik van TV led strips, en daar is keer op keer uitgekomen dat het goed voor de ogen is. Vooral de wat zachtere kleuren zoals rood doen het enorm goed, het brengt je ogen en mind tot rust en het laat je meer ontspannen.</p>"
       />
 
@@ -92,7 +92,7 @@
       </div>
 
       <SingleImage
-          :image-src="require('assets/design/landings/banner-2.png')"
+          :image-src="require('assets/design/landings/banner-2.jpg')"
       />
 
       <div class="mx-auto max-w-5xl">
@@ -181,7 +181,7 @@
         ]"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/tv-bg.png')"
+      <SingleImage :image-src="require('assets/design/landings/tv-bg.jpg')"
                    description="Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden.<br />
           Niet tevreden met jouw aankoop of loop je tegen problemen aan?<br />
           Wij betalen je het aankoopbedrag zonder probleem terug of zorgen voor een vervangend exemplaar."
@@ -209,7 +209,7 @@
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/sitting-tv.png')" />
+      <SingleImage :image-src="require('assets/design/landings/sitting-tv.jpg')" />
 
       <Usages />
 

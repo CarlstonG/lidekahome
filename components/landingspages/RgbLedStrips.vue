@@ -4,7 +4,7 @@
       <Banner
         title="RGB Led strips | Multicolor | Complete sets"
         description="RGB Led strips"
-        :imageSrc="require('assets/design/landings/rgb-led-strips/banner.png')"
+        :imageSrc="require('assets/design/landings/rgb-led-strips/banner.jpg')"
       />
 
       <CenterParagraph>
@@ -187,7 +187,7 @@
       />
 
       <SingleImage
-        :image-src="require('assets/design/landings/rgb-led-strips/banner-2.png')"
+        :image-src="require('assets/design/landings/rgb-led-strips/banner-2.jpg')"
       />
 
       <CenterTitle title="Een complete set bestaat uit:" />
@@ -220,7 +220,7 @@
         ]"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/rgb-led-strips/banner-3.png')" />
+      <SingleImage :image-src="require('assets/design/landings/rgb-led-strips/banner-3.jpg')" />
 
       <LengthProducts
         :collection="collection"
@@ -242,7 +242,7 @@
       />
 
       <SingleImage
-          :image-src="require('assets/design/landings/rgb-led-strips/banner-6.png')"
+          :image-src="require('assets/design/landings/rgb-led-strips/banner-6.jpg')"
           description="<h2 class='text-3xl font-bold'>Multifunctioneel</h2><p>Met handige pijltjes en <strong>snijmarkeringen</strong> knip je jouw strip gemakkelijk door op de juiste lengte. Kies je voor een futuristisch verlichte tv, trendy keuken of sfeervolle tuin? Deze <strong>multifunctionele led-strip</strong> is écht overal te gebruiken.</p>"
       />
 
@@ -253,12 +253,12 @@
       />
 
       <SingleImage
-          :image-src="require('assets/design/landings/rgb-led-strips/banner-4.png')"
+          :image-src="require('assets/design/landings/rgb-led-strips/banner-4.jpg')"
       />
 
       <Usages />
 
-      <SingleImage :image-src="require('assets/design/landings/rgb-led-strips/banner-7.png')" />
+      <SingleImage :image-src="require('assets/design/landings/rgb-led-strips/banner-7.jpg')" />
 
       <CenterTitle
         title="Decoratieve verlichting"

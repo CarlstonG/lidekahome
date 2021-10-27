@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        :imageSrc="require('assets/design/landings/keuken/banner.png')"
+        :imageSrc="require('assets/design/landings/keuken/banner.jpg')"
         :smallText="true"
       />
 
@@ -38,14 +38,14 @@
 
       <CenterParagraph description="De RGB-IC LED-strip is bijna hetzelfde, maar toch net even iets anders. Er zit namelijk een speciale functie bij, met deze functie kun je verschillende kleuren Led’s tegelijk door de LED-strip heen laten gaan. Dat geef een heel gaaf effect, en wordt ook wel ‘’dreamcolor’’ genoemd. Verder wordt deze ook in een compleet set geleverd en heb je verder niets meer nodig." />
 
-      <SingleImage :image-src="require('assets/design/landings/keuken/banner2.png')" />
+      <SingleImage :image-src="require('assets/design/landings/keuken/banner2.jpg')" />
 
       <CenterTitle title="Wit licht" />
 
       <CenterParagraph description="De RGB en RGBIC strips bevatten op dit moment nog geen wit licht, echter zit er wel een soort licht bij dat er veel op lijkt. Deze word dan ook vaak gebruik ter vervanging van het gewone witte licht. Wat je dan niet hebt is de mogelijkheid om de strip koud wit te maken. Als je de strip warm wit wilt maken wordt het al makkelijker aangezien de meeste kleuren al warmer zijn. Een witte strip word het meest gebruikt aan bijvoorbeeld een eettafel." />
 
       <TextWithImage image-alt="GESCHIKTE VERLICHTING"
-                     :image-src="require('assets/design/landings/keuken/verlichting.png')"
+                     :image-src="require('assets/design/landings/keuken/verlichting.jpg')"
                      title="GESCHIKTE VERLICHTING"
                      :bg-color="false"
                      :reverse="true"
@@ -166,7 +166,7 @@
             description: 'Met 3 verschillende knoppen'
           }
         ]"
-          :image-src="require('assets/design/landings/led-pakketten/pakket.png')"
+          :image-src="require('assets/design/landings/led-pakketten/pakket.jpg')"
           :right-data="[
           {
             title: 'De TV Strips',
@@ -183,7 +183,7 @@
         ]"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/keuken/banner4.png')" />
+      <SingleImage :image-src="require('assets/design/landings/keuken/banner4.jpg')" />
 
       <LongParagraph
         title="Waarom zijn dit de beste led strips voor de keuken?"

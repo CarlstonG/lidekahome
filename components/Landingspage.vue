@@ -4,7 +4,7 @@
       <Banner
         title="RGB TV Led strips | 16 miljoen kleuren | Complete sets"
         description="TV LED-STRIPS"
-        :imageSrc="require('assets/design/landings/banner.png')"
+        :imageSrc="require('assets/design/landings/banner.jpg')"
       />
 
       <CenterParagraph
@@ -68,7 +68,7 @@
       />
 
       <SingleImage
-        :image-src="require('assets/design/landings/tv-green.png')"
+        :image-src="require('assets/design/landings/tv-green.jpg')"
       />
 
       <CenterTitle title="Een complete set bestaat uit:" />
@@ -88,7 +88,7 @@
             description: 'Met 3 verschillende knoppen'
           }
         ]"
-        :image-src="require('assets/design/landings/tv-pakket.png')"
+        :image-src="require('assets/design/landings/tv-pakket.jpg')"
         :right-data="[
           {
             title: 'De TV Strips',
@@ -105,7 +105,7 @@
         ]"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/tv-bg.png')"
+      <SingleImage :image-src="require('assets/design/landings/tv-bg.jpg')"
                    description="Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden.<br />
           Niet tevreden met jouw aankoop of loop je tegen problemen aan?<br />
           Wij betalen je het aankoopbedrag zonder probleem terug of zorgen voor een vervangend exemplaar."
@@ -131,7 +131,7 @@
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/sitting-tv.png')" />
+      <SingleImage :image-src="require('assets/design/landings/sitting-tv.jpg')" />
 
       <Usages />
 

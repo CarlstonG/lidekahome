@@ -4,7 +4,7 @@
 
 
       <Banner
-        :imageSrc="require('assets/design/landings/plafond/banner.png')"
+        :imageSrc="require('assets/design/landings/plafond/banner.jpg')"
       />
 
       <CenterTitle title="Led strips plafond" />
@@ -41,7 +41,7 @@
 
       <CenterParagraph description="RGB-IC lijkt veel op de RGB versie, maar heeft net nog een extra functie erbij die zeer aangenaam is. Je kunt met de RGB-IC namelijk verschillende kleuren Led’s tegelijk voor de strip heen laten schieten, en dat geeft echt een gaaf effect. Dit set wordt ook compleet geleverd." />
 
-      <SingleImage :image-src="require('assets/design/landings/plafond/banner2.png')" />
+      <SingleImage :image-src="require('assets/design/landings/plafond/banner2.jpg')" />
 
       <CenterTitle title="SMD 5050 LEDS" />
 
@@ -64,7 +64,7 @@
       </div>
 
       <div class="mx-auto max-w-5xl">
-        <TextWithImage image-alt="Badkamerverlichting" :image-src="require('assets/design/landings/plafond/indirect.png')" title="Indirecte woonkamer verlichting">
+        <TextWithImage image-alt="Badkamerverlichting" :image-src="require('assets/design/landings/plafond/indirect.jpg')" title="Indirecte woonkamer verlichting">
           <p class="text-white font-extralight">
             Ledstrip verlichting is een uitstekende toepassing als het gaat om indirecte verlichting. Vaak word sfeervolle verlichting aangeraden voor de woonkamer, en dat is begrijpelijk aangezien we allemaal houden van extra sfeer in de woonkamer.
             Als je echt speciale woonkamer verlichting nodig hebt, dan ben je hier aan het juiste adres. De RGB en de RGBIC zijn daar meer dan geschikt voor. Bij een compleet set krijg je altijd een Led strip controller, een Led strip afstandsbediening en, een Led strip voeding.
@@ -149,7 +149,7 @@
       </div>
 
       <div class="mx-auto max-w-5xl">
-        <TextWithImage image-alt="Slaapkamer" :image-src="require('assets/design/landings/plafond/slaapkamer.png')" title="Slaapkamer">
+        <TextWithImage image-alt="Slaapkamer" :image-src="require('assets/design/landings/plafond/slaapkamer.jpg')" title="Slaapkamer">
           <p class="text-white font-extralight">
             Als je houd van een gezellige slaapkamer dan is RGB verlichting echt iets voor jou. Onze ervaring is dat je een gewone slaapkamer binnen no-time kan omtoveren naar een ware lichtshow. Door middel van een RGB led strip is het ook nog eens een gemakkelijke oplossing. De installatie is namelijk enorm makkelijk.
           </p>

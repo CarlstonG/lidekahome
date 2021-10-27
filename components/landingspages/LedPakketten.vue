@@ -10,7 +10,7 @@
       <TextWithImage
           title="LED-strip pakketten"
           imageAlt="LED-strip pakketten"
-          :imageSrc="require('assets/design/landings/led-pakketten/pakket-1.png')"
+          :imageSrc="require('assets/design/landings/led-pakketten/pakket-1.jpg')"
           url="/"
       >
         <p class="text-white font-extralight">
@@ -24,7 +24,7 @@
       <TextWithImage
           title="RGB LED-strip"
           imageAlt="RGB LED-strip"
-          :imageSrc="require('assets/design/landings/led-pakketten/pakket-2.png')"
+          :imageSrc="require('assets/design/landings/led-pakketten/pakket-2.jpg')"
           url="/"
           reverse="true"
       >
@@ -39,7 +39,7 @@
       <TextWithImage
           title="TV LED-strip"
           imageAlt="TV LED-strip"
-          :imageSrc="require('assets/design/landings/led-pakketten/pakket-3.png')"
+          :imageSrc="require('assets/design/landings/led-pakketten/pakket-3.jpg')"
           url="/"
       >
         <p class="text-white font-extralight">
@@ -203,7 +203,7 @@
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/sitting-tv.png')" />
+      <SingleImage :image-src="require('assets/design/landings/sitting-tv.jpg')" />
 
       <Usages />
 
