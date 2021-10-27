@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 mb-10 lg:mb-0">
-        <video poster="~assets/headers/led-pakket-1.jpg" class="w-full h-full rounded-2xl" autoplay muted playsinline>
+        <video :poster="require('assets/video-poster-1.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
           <source src="~assets/headers/woonkamer-video.webm" type="video/webm" />
           <source src="~assets/headers/woonkamer-video.mp4" type="video/mp4" />
         </video>

@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black">
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 mb-10 lg:mb-0">
-      <video poster="~assets/headers/led-pakket-1.jpg" class="w-full h-full rounded-2xl" autoplay muted playsinline>
+      <video :poster="require('assets/video-poster-1.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
         <source src="~assets/products/video.webm" type="video/webm" />
         <source src="~assets/products/video.mp4" type="video/mp4" />
       </video>
