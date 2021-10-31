@@ -1,6 +1,6 @@
 <template>
   <div
-      :class="`${bgColor ? 'rounded-3xl p-10' : ''}`"
+      :class="`${bgColor ? 'rounded-3xl p-4 py-6 md:p-10' : ''}`"
       :style="`${bgColor ? 'background-color: #151515' : ''}`"
   >
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">

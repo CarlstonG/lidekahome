@@ -3,7 +3,6 @@
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
         title="LED-strip pakketten | Combineren | Complete sets"
-        description="LED PAKKETTEN"
         :imageSrc="require('assets/headers/led-pakket-1.jpg')"
       />
 
@@ -148,7 +147,7 @@
                    description="<div class='font-bold text-2xl'>100% tevredenheidsgarantie.</div> Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden."
       />
 
-      <div class="mx-auto max-w-7xl px-6 lg:px-0">
+      <div class="mx-auto max-w-7xl lg:px-0">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div class="relative flex justify-center default-gradient" style="border-radius: 20px;"
           >
@@ -156,10 +155,10 @@
               <div class="flex items-center">
                 <img class="w-32 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" />
               </div>
-              <h2 class="text-white font-bold text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
+              <h2 class="text-white font-bold text-left md:text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
                 60 dagen gratis retourneren
               </h2>
-              <p class="text-white font-extralight text-center pt-6 px-6 lg:px-20">
+              <p class="text-white font-extralight text-left md:text-center pt-6 px-6 lg:px-20">
                 Omdat wij geloven in service, en jou willen voorzien van een risicoloze aankoop geven we in eerste instantie 60 dagen gratis retourneren.
               </p>
             </div>
@@ -170,10 +169,10 @@
               <div class="flex items-center">
                 <img class="w-32 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" />
               </div>
-              <h2 class="text-white font-bold text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
+              <h2 class="text-white font-bold text-left md:text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
                 24/7 ondersteuning beschikbaar
               </h2>
-              <p class="text-white font-extralight text-center pt-6 px-6 lg:px-20">
+              <p class="text-white font-extralight text-left md:text-center pt-6 px-6 lg:px-20">
                 Lideka staat overigens 24/7 klaar om al jouw vragen te beantwoorden.
               </p>
             </div>
@@ -203,7 +202,7 @@
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/sitting-tv.jpg')" />
+      <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
 

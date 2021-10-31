@@ -131,7 +131,7 @@
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/sitting-tv.jpg')" />
+      <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
 

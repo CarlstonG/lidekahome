@@ -218,6 +218,8 @@ Lideka heeft niet de laagste prijs, maar wel een hele degelijke kwaliteit, en de
         ]"
       />
 
+      <CenterTitle title="Kies hier jouw specifieke toepassing" />
+
       <Usages />
 
     </div>

@@ -7,10 +7,10 @@
       </video>
 
       <div class="md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20">
-        <h1 class="mx-auto text-4xl text-white font-bold tracking-wide">
-          Wij creëren de ultieme sfeer voor jou,
+        <h1 class="mx-auto text-3xl text-white font-bold tracking-wide">
+          Wij creëren de ultieme sfeer voor jou.
         </h1>
-        <h2 class="mx-auto text-2xl font-extralight text-white">
+        <h2 class="mx-auto text-lg font-extralight text-white mt-2">
           Zowel binnen als buiten het huis, en dat doen we met betaalbare Slimme LED-strips!
         </h2>
       </div>
@@ -98,7 +98,7 @@
               <img class="w-40 mx-auto" src="~assets/icon/icons8-forest.svg" />
             </div>
             <h3 class="text-gray-100 tracking-wide text-center font-bold uppercase mt-4">Duurzame verlichting</h3>
-            <p class="text-white font-extralight text-lg pt-6 px-6 lg:px-20 text-center tracking-wide">
+            <p class="text-white font-extralight text-lg pt-6 px-6 lg:px-20 text-left md:text-center tracking-wide">
               Onze duurzame smart verlichting is met zorg geproduceerd, makkelijk bedienbaar, en draagt bij aan het behoud van onze planeet!
             </p>
           </div>
@@ -110,7 +110,7 @@
               <img class="w-40 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" />
             </div>
             <h3 class="text-gray-100 tracking-wide text-center font-bold uppercase mt-4">Gratis retourneren</h3>
-            <p class="text-white font-extralight text-lg pt-6 px-6 lg:px-20 text-center tracking-wide">
+            <p class="text-white font-extralight text-lg pt-6 px-6 lg:px-20 text-left md:text-center tracking-wide">
               Ben je niet tevreden met je aankoop? Retourneer makkelijk, gratis, en ontvang het volledige aankoopbedrag terug.
             </p>
           </div>
@@ -127,217 +127,8 @@
       </p>
     </div>
 
-    <div class="px-6 lg:px-0 max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div class="default-gradient relative" style="border-radius: 20px;">
-          <div class="p-6">
-            <div class="flex items-center flex-col">
-              <img src="~assets/products/14.png" class="rounded-lg w-full max-w-md" />
-
-              <div class="flex space-x-8 items-center justify-center">
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-verified-account-50.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Kwaliteit 100%</span>
-                </div>
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-forest.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaam</span>
-                </div>
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-shade-selected-faces-50.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helder</span>
-                </div>
-              </div>
-            </div>
-            <div class="flex items-center mt-10 lg:px-6">
-              <div class="space-y-4">
-                <h2 class="text-2xl text-white font-bold uppercase tracking-wide">RGB Led strips</h2>
-                <p class="text-white font-extralight ">
-                  Lideka biedt een geweldig assortiment RGB led strips aan, je kunt deze led-strips voor enorm veel verschillende doeleinden gebruiken.
-                </p>
-                <p class="text-white font-extralight ">
-                  De voordelen van deze Led-strips zijn:
-                </p>
-                <ul class="text-white font-extralight no-list-type">
-                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Speciale effecten met de dreamcolor functie</span></li>
-                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Makkelijk te installeren</span></li>
-                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Zelfklevende strip</span></li>
-                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Duurzaam</span></li>
-                </ul>
-
-                  <div class="lg:px-8 h-20">
-                  <NuxtLink to="/categorie/rgb-led-strips"
-                            class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"
-                  >
-                    Bekijk collectie
-                  </NuxtLink>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="default-gradient relative" style="border-radius: 20px;">
-          <div class="p-6">
-            <div class="flex items-center flex-col">
-              <img src="~assets/products/5.png" class="rounded-lg w-full max-w-md" />
-
-              <div class="flex space-x-8 items-center justify-center">
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-verified-account-50.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Kwaliteit 100%</span>
-                </div>
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-forest.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaam</span>
-                </div>
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-shade-selected-faces-50.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helder</span>
-                </div>
-              </div>
-            </div>
-            <div class="flex items-center mt-10 lg:px-6">
-              <div class="space-y-4">
-                <h2 class="text-2xl text-white font-bold uppercase tracking-wide">TV LED STRIP</h2>
-                <p class="text-white font-extralight ">
-                  Hou je gave special effects bij jouw TV of Computer? Deze USB Led strips zijn meer dan geschikt. Ook geschikt voor een mooie game kamer.
-                </p>
-                <ul class="text-white font-extralight no-list-type">
-                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Extra effecten bij de TV</span></li>
-                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Achter de computer</span></li>
-                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">In een game kamer</span></li>
-                </ul>
-                <div class="lg:px-8 h-20">
-                  <NuxtLink to="/categorie/tv-led-strips"
-                            class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"
-                  >
-                    Bekijk collectie
-                  </NuxtLink>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
     <div class="px-6 lg:px-0 max-w-7xl mx-auto mt-10">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div class="default-gradient relative" style="border-radius: 20px;">
-          <div class="p-6">
-            <div class="flex items-center flex-col">
-              <img src="~assets/products/16.png" class="rounded-lg w-full max-w-md" />
-
-              <div class="flex space-x-8 items-center justify-center">
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-verified-account-50.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Kwaliteit 100%</span>
-                </div>
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-forest.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaam</span>
-                </div>
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-shade-selected-faces-50.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helder</span>
-                </div>
-              </div>
-            </div>
-            <div class="flex items-center mt-10 lg:px-6">
-              <div class="space-y-4">
-                <h2 class="text-2xl text-white font-bold uppercase tracking-wide">RGB-IC Led strips</h2>
-                <p class="text-white font-extralight ">
-                  Bekijk hier één van de nieuwste soorten, ook wel de ‘’dreamcolor’’ strip genoemd. Net als alle andere modellen is de bedienbaar via app en afstandsbediening
-                </p>
-                <p class="text-white font-extralight ">
-                  De voordelen van deze Led-strips zijn:
-                </p>
-                <ul class="text-white font-extralight no-list-type">
-                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">De nieuwste kleureffecten</span></li>
-                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Zelfklevend</span></li>
-                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Scherpe prijs</span></li>
-                  <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Duurzaam</span></li>
-                </ul>
-                <div class="lg:px-8 h-20">
-                  <NuxtLink to="/categorie/rgb-ic-led-strips"
-                            class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"
-                  >
-                    Bekijk collectie
-                  </NuxtLink>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="default-gradient relative" style="border-radius: 20px;">
-          <div class="p-6">
-            <div class="flex items-center flex-col">
-              <img src="~assets/products/18.png" class="rounded-lg w-full max-w-md" />
-
-              <div class="flex space-x-8 items-center justify-center">
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-verified-account-50.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Kwaliteit 100%</span>
-                </div>
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-forest.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Duurzaamheid</span>
-                </div>
-                <div class="text-center flex flex-col">
-                  <div class="flex-grow flex items-center justify-center">
-                    <img class="w-14" src="~assets/icon/icons8-shade-selected-faces-50.svg" />
-                  </div>
-                  <span class="text-white font-bold text-xs tracking-wide uppercase mt-2">Helderheid</span>
-                </div>
-              </div>
-            </div>
-            <div class="flex items-center mt-10 lg:px-6">
-              <div class="space-y-4">
-                <h2 class="text-2xl text-white font-bold uppercase tracking-wide">LED pakketten</h2>
-                <p class="text-white font-extralight">
-                  Voor de echte liefhebbers hebben we complete LED pakketten. Deze LED pakketten bestaan uit TV Led strips, en RGB Led strips. Beiden soorten bestaan uit complete sets.
-                </p>
-                <p class="text-white font-extralight">
-                  Met een uitstekende plakstrip die nooit meer laat, en eindeloze kleurencombinaties is dit een bijzonder pakket.
-                </p>
-                <div class="lg:px-8 h-20">
-                  <NuxtLink to="/categorie/tv-led-strips"
-                            class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"
-                  >
-                    Bekijk collectie
-                  </NuxtLink>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      <CategorySlider />
     </div>
 
     <div class="mx-auto max-w-7xl mt-10 mb-10 px-6">
@@ -372,8 +163,10 @@
       </div>
     </div>
 
-    <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 space-y-6 lg:space-y-0">
-      <img src="~assets/headers/1.jpg" class="rounded-2xl" alt="Lideka home" />
+    <div class="mx-auto max-w-7xl mt-8 relative lg:px-0 space-y-6 lg:space-y-0">
+      <div class="mx-6">
+        <img src="~assets/headers/1.jpg" class="rounded-2xl mx-auto" alt="Lideka home" />
+      </div>
       <div class="lg:absolute bottom-10 right-10 left-10 rounded-2xl p-10 prose prose-teal-500 text-white"
         style="background: rgba(0, 0, 0, 0.75)"
       >
@@ -473,7 +266,7 @@
     </div>
 
     <div class="max-w-7xl mx-auto pt-8 py-12 px-6 md:px-0">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div class="flex items-center flex-col">
           <img loading="lazy" src="~assets/icons/WEBicons-04.webp" alt="Gratis Verzending" class="w-20"/>
           <h2 class="text-white text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase">Gratis Verzending</h2>
@@ -560,9 +353,10 @@ import ProductItem from "~/components/products/ProductItem.vue";
 import ProductItemGradient from "~/components/products/ProductItemGradient.vue";
 import {getCollection} from "~/services/ApiService";
 import Usages from "~/components/blocks/Usages.vue";
+import CategorySlider from "~/components/CategorySlider.vue";
 
 export default Vue.extend({
-  components: {Usages, ProductItem, ProductItemGradient},
+  components: {CategorySlider, Usages, ProductItem, ProductItemGradient},
   data() {
     return {
       collection: {},

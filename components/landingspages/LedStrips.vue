@@ -1,22 +1,26 @@
 <template>
   <div class="bg-black">
-    <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
-      <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 mb-10 lg:mb-0">
-        <video :poster="require('assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
-          <source src="~assets/headers/led-strip-video.webm" type="video/webm" />
-          <source src="~assets/headers/led-strip-video.mp4" type="video/mp4" />
-        </video>
+    <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 lg:mb-0">
+      <h1 class="md:hidden mx-auto text-3xl text-white font-bold tracking-wide uppercase mb-6">
+        LED strips
+      </h1>
 
-        <div class="md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20">
-          <h1 class="mx-auto text-4xl text-white font-bold tracking-wide">
-            LED strips
-          </h1>
-        </div>
+      <video :poster="require('assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
+        <source src="~assets/headers/led-strip-video.webm" type="video/webm" />
+        <source src="~assets/headers/led-strip-video.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hidden md:block md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20">
+        <h1 class="mx-auto text-3xl text-white font-bold tracking-wide">
+          LED strips
+        </h1>
       </div>
+    </div>
 
+    <div class="max-w-7xl mx-auto space-y-10 mb-10 px-6 lg:px-0">
       <ProductsWithBackground
           v-if="collection1"
-          title="RGB LED Strips"
+          title=""
           :collection="collection1"
       />
 
@@ -179,7 +183,7 @@
                    description="<div class='font-bold text-2xl'>100% tevredenheidsgarantie.</div> Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden."
       />
 
-      <div class="mx-auto max-w-7xl px-6 lg:px-0">
+      <div class="mx-auto max-w-7xl lg:px-0">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div class="relative flex justify-center default-gradient" style="border-radius: 20px;"
           >
@@ -187,10 +191,10 @@
               <div class="flex items-center">
                 <img class="w-32 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" />
               </div>
-              <h2 class="text-white font-bold text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
+              <h2 class="text-white font-bold text-left md:text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
                 60 dagen gratis retourneren
               </h2>
-              <p class="text-white font-extralight text-center pt-6 px-6 lg:px-20">
+              <p class="text-white font-extralight text-left md:text-center pt-6 px-6 lg:px-20">
                 Omdat wij geloven in service, en jou willen voorzien van een risicoloze aankoop geven we in eerste instantie 60 dagen gratis retourneren.
               </p>
             </div>
@@ -201,10 +205,10 @@
               <div class="flex items-center">
                 <img class="w-32 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" />
               </div>
-              <h2 class="text-white font-bold text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
+              <h2 class="text-white font-bold text-left md:text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
                 24/7 ondersteuning beschikbaar
               </h2>
-              <p class="text-white font-extralight text-center pt-6 px-6 lg:px-20">
+              <p class="text-white font-extralight text-left md:text-center pt-6 px-6 lg:px-20">
                 Lideka staat overigens 24/7 klaar om al jouw vragen te beantwoorden.
               </p>
             </div>
@@ -234,10 +238,9 @@
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/sitting-tv.jpg')" />
+      <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
-
     </div>
   </div>
 </template>

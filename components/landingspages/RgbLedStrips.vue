@@ -256,6 +256,8 @@
           :image-src="require('assets/design/landings/rgb-led-strips/banner-4.jpg')"
       />
 
+      <CenterTitle title="Kies hier jouw specifieke toepassing" />
+
       <Usages />
 
       <SingleImage :image-src="require('assets/design/landings/rgb-led-strips/banner-7.jpg')" />

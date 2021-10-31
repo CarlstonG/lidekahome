@@ -231,6 +231,8 @@
         ]"
       />
 
+      <CenterTitle title="Kies hier jouw specifieke toepassing" />
+
       <Usages />
 
     </div>

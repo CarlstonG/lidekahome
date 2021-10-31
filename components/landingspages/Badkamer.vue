@@ -7,7 +7,7 @@
       />
 
       <LongParagraph>
-        <div class="text-center">
+        <div class="text-left md:text-center">
           <p class="text-white font-extralight">
             Ben jij opzoek naar mooie LED strips voor in de badkamer of douche? Dan ben je hier aan het juiste adres.
           </p>
@@ -27,7 +27,7 @@
       <CenterTitle title="led strips badkamer" />
 
       <LongParagraph>
-        <div class="text-center">
+        <div class="text-left md:text-center">
           <p class="text-white font-extralight">
             Led strips in de badkamer geven een gezellige sfeer. Met led strips kunt u zelfs een bepaalde sfeer creëren, misschien bent u niet in de stemming voor een rustige sfeer en wilt u iets ruigers, led strips zullen precies dat doen.
           </p>
@@ -54,7 +54,7 @@
           :collection="collection3"
       />
 
-      <TextWithImage image-alt="Badkamerverlichting" :image-src="require('assets/design/landings/badkamer/verlichting.jpg')" title="Badkamerverlichting">
+      <TextWithImage image-alt="Badkamerverlichting" :image-src="require('assets/design/landings/badkamer/verlichting.jpg')" title="Badkamer verlichting">
         <p class="text-white font-extralight">
           Bij badkamerverlichting is het vooral belangrijk dat je LED verlichting plaatst met een IP65 ratio, dat houd in dat de verlichting volledig waterdicht is. Onze speciale badkamer LED-strips beschikken over dit ratio, en zijn daarom meer dan geschikt. Ook in de douche hoef jij je geen zorgen te maken, let daarop wel op dat je controller en adapter afsluit van water en vocht.
         </p>
@@ -71,7 +71,7 @@
 
       <SingleImage :image-src="require('assets/design/landings/badkamer/banner2.jpg')" />
 
-      <CenterTitle title="Waarom zou ik deze LED-strips gebruiken als badkamerverlichting?" />
+      <CenterTitle title="Waarom zou ik deze LED-strips gebruiken als badkamer verlichting?" />
 
       <LongParagraph>
         <p class="text-white font-extralight">
@@ -208,7 +208,7 @@
         <p>
           Er zijn verschillende opties voor badkamerverlichting beschikbaar. Badkamers kunnen één armatuur hebben, meerdere armaturen die langs één kant van de kamer zijn geïnstalleerd of één die van de ene kant naar de andere overspant. Dit type verlichting is meestal fluorescerend, gloeiend of LED. Badkamer verlichting kan worden ingebouwd in het plafond, aan de muur worden gemonteerd als wandarmatuur, of aan het plafond worden opgehangen als inbouw armatuur.
         </p>
-        <h3 class="text-3xl text-white font-bold">Dimbare badkamer verlichtingsarmaturen integreren</h3>
+        <h3 class="text-3xl text-white font-bold" style="color: #fff;">Dimbare badkamer verlichtingsarmaturen integreren</h3>
         <p>
           Geïntegreerde dim technologie wordt ook vaak gezien in inbouw- en inbouw badkamer verlichting. Deze armaturen zijn vaak voorzien van een fotocel sensor om het lichtniveau in de loop van de dag automatisch aan te passen. Wanneer deze armaturen voor langere tijd worden uitgeschakeld, hervatten ze hun vorige lichtintensiteit onmiddellijk wanneer het weer wordt ingeschakeld. Badkamers die slechts gedurende bepaalde uren van de dag worden gebruikt - zoals slaapkamers of inloopkasten - kunnen baat hebben bij dit soort technologie.
         </p>
@@ -247,6 +247,8 @@
           }
         ]"
       />
+
+      <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
     </div>

@@ -154,11 +154,11 @@
       />
 
       <CenterParagraph>
-        <p class="text-white font-extralight text-center">
+        <p class="text-white font-extralight text-left md:text-center">
           Vaak kan jouw nieuwe light strip ook verbonden worden met google home.
           <a href="https://nl.wikipedia.org/wiki/Google_Home" class="link" target="_blank">Google home</a> is een platform waar jij al jouw slimme apparaten kunt toevoegen en ook direct bedienen. Je zult dan een wifi RGBIC strip nodig hebben, en deze moet natuurlijk te verbinden zijn met google home, let daar goed op bij het moment van aankopen.
         </p>
-        <p class="text-white font-extralight text-center mt-2">
+        <p class="text-white font-extralight text-left md:text-center mt-2">
           Je zult dan een wifi RGBIC strip nodig hebben, en deze moet natuurlijk te verbinden zijn met google home, let daar goed op bij het moment van aankopen.
         </p>
       </CenterParagraph>
@@ -520,7 +520,7 @@
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/rgb-ic/banner-3.png')" />
+      <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
 

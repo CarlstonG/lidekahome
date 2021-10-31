@@ -1,17 +1,15 @@
 <template>
   <div class="bg-black">
-    <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
-      <h1 v-if="title" class="text-white uppercase text-center text-4xl font-bold">
-        {{ title }}
-      </h1>
-      <CenterParagraph v-if="smallText && description" :description="description" />
+    <h1 v-if="title" class="text-left text-white uppercase md:text-center text-3xl font-bold mb-4">
+      {{ title }}
+    </h1>
+    <CenterParagraph v-if="smallText && description" :description="description" />
 
-      <div class="relative">
-        <img :src="imageSrc" :alt="title" class="rounded-2xl" />
-        <h2 v-if="description && !smallText" class="text-white text-center text-2xl font-bold tracking-wide lg:absolute bottom-10 left-0 right-0 uppercase">
-          {{ description }}
-        </h2>
-      </div>
+    <div class="relative">
+      <img :src="imageSrc" :alt="title" class="rounded-2xl" />
+      <h2 v-if="description && !smallText" class="mt-2 md:mt-0 text-white text-left md:text-center text-2xl font-bold tracking-wide lg:absolute bottom-10 left-0 right-0 uppercase">
+        {{ description }}
+      </h2>
     </div>
   </div>
 </template>

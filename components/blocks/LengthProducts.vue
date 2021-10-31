@@ -1,15 +1,14 @@
 <template>
-  <div class="bg-gray-900 rounded-3xl p-6 lg:p-16">
-    <h2 class="text-center text-white max-w-4xl mx-auto font-bold text-3xl uppercase tracking-wide">{{ title }}</h2>
-    <p class="text-white font-extralight py-2 text-center">
+  <div class="bg-gray-900 rounded-3xl py-6 px-3 lg:p-16">
+    <h2 class="text-left md:text-center text-white max-w-4xl mx-auto font-bold text-3xl uppercase tracking-wide">{{ title }}</h2>
+    <p class="text-white font-extralight py-2 text-left md:text-center">
       {{ description }}
     </p>
 
-    <div v-if="productsLength >= 3">
-      <client-only class="bg-gray-900 rounded-3xl p-6 lg:p-16">
+    <div v-if="productsLength >= 3" class="mt-10">
+      <client-only class="bg-gray-900 rounded-3xl">
         <carousel v-bind="options" :perPageCustom="[[480, 1], [768, 3], [1022, 4]]" :navigation-enabled="true"
-                  :navigation-prev-label="prevLabel" :navigation-next-label="nextLabel"
-                  class="py-10">
+                  :navigation-prev-label="prevLabel" :navigation-next-label="nextLabel">
           <slide v-for="product in collection.products" class="pl-1 pr-1 ">
             <div class="bg-dark rounded-3xl p-4" style="background-color:#151515;">
               <ProductItem :gradient="true" :key="product.id" :product="product"/>
@@ -18,11 +17,10 @@
         </carousel>
       </client-only>
     </div>
-    <div v-else>
-      <client-only class="bg-gray-900 max-w-7xl mx-auto rounded-3xl p-6 lg:p-16">
+    <div v-else class="mt-10">
+      <client-only class="bg-gray-900 max-w-7xl mx-auto rounded-3xl">
         <carousel v-bind="options" :perPageCustom="[[480, 1], [768, 3], [1022, 3]]" :centerMode="true"
-                  :navigation-enabled="true" :navigation-prev-label="prevLabel" :navigation-next-label="nextLabel"
-                  class="py-10">
+                  :navigation-enabled="true" :navigation-prev-label="prevLabel" :navigation-next-label="nextLabel">
           <slide v-for="product in collection.products" class="pl-1 pr-1">
             <div class="bg-dark rounded-3xl p-4" style="background-color:#151515;">
               <ProductItem :gradient="true" :key="product.id" :product="product"/>
