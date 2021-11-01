@@ -2,8 +2,8 @@
   <div class="bg-black">
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 mb-10 lg:mb-0">
       <video :poster="require('assets/video-poster-1.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
-        <source src="~assets/products/video.webm" type="video/webm" />
-        <source src="~assets/products/video.mp4" type="video/mp4" />
+        <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/video.webm" type="video/webm" />
+        <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/video_1.mp4" type="video/mp4" />
       </video>
 
       <div class="md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20">

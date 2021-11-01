@@ -1,10 +1,10 @@
 <template>
   <div>
     <client-only>
-      <carousel v-bind="options" :perPageCustom="[[480, 1], [768, 1], [1022, 2]]" :navigation-enabled="true"
+      <carousel v-bind="options" :perPageCustom="[[480, 1], [768, 2], [1022, 3]]" :navigation-enabled="true"
                 :navigation-prev-label="prevLabel" :navigation-next-label="nextLabel">
-        <slide v-if="collections.indexOf('rgb-ic-led-strips') !== -1">
-          <div v-if="collections.indexOf('rgb-led-strips') !== -1" class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10">
+        <slide v-if="collections.indexOf('rgb-led-strips') !== -1">
+          <div class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10 mx-2">
             <img src="~assets/products/1.png" alt="RGB Led Strips" class="rounded-lg" />
             <h2 class="text-white text-xl font-bold uppercase tracking-wide">RGB Led strips</h2>
             <NuxtLink to="/categorie/rgb-led-strips"
@@ -15,7 +15,7 @@
           </div>
         </slide>
         <slide v-if="collections.indexOf('rgb-ic-led-strips') !== -1">
-          <div class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10">
+          <div class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10 mx-2">
             <img src="~assets/products/16.png" alt="RGB-IC Led Strips" class="rounded-lg" />
             <h2 class="text-white text-xl font-bold uppercase tracking-wide">RGB-IC Led strips</h2>
             <NuxtLink to="/categorie/rgb-ic-led-strips"
@@ -26,7 +26,7 @@
           </div>
         </slide>
         <slide v-if="collections.indexOf('tv-led-strips') !== -1">
-          <div  class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10">
+          <div  class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10 mx-2">
             <img src="~assets/products/5.png" alt="TV Led strips" class="rounded-lg" />
             <h2 class="text-white text-xl font-bold uppercase tracking-wide">TV Led strips</h2>
             <NuxtLink to="/categorie/tv-led-strips"
@@ -37,7 +37,7 @@
           </div>
         </slide>
         <slide v-if="collections.indexOf('led-pakketten') !== -1" >
-          <div class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10">
+          <div class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10 mx-2">
             <img src="~assets/products/18.png" alt="LED strip pakket" class="rounded-lg" />
             <h2 class="text-white text-xl font-bold uppercase tracking-wide">LED-strip pakketten</h2>
             <NuxtLink to="/categorie/led-pakketten"

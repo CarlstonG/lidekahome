@@ -6,8 +6,8 @@
       </h1>
 
       <video :poster="require('assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
-        <source src="~assets/headers/led-strip-video.webm" type="video/webm" />
-        <source src="~assets/headers/led-strip-video.mp4" type="video/mp4" />
+        <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/led-strip-video.webm" type="video/webm" />
+        <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/led-strip-video_1.mp4" type="video/mp4" />
       </video>
 
       <div class="hidden md:block md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20">
