@@ -10,7 +10,7 @@
       <CenterTitle title="Led strips plafond" />
 
       <LongParagraph>
-        <div class="text-center">
+        <div class="text-left">
           <p class="text-white font-extralight">
             Led strips in de badkamer geven een gezellige sfeer. Met led strips kunt u zelfs een bepaalde sfeer creëren, misschien bent u niet in de stemming voor een rustige sfeer en wilt u iets ruigers, led strips zullen precies dat doen.
           </p>

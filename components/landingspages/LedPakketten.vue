@@ -6,6 +6,11 @@
         :imageSrc="require('assets/headers/led-pakket-1.jpg')"
       />
 
+      <ProductsWithBackground
+          title="Thuis genieten van die fijne lounge vibes? Bestel jouw RGB led-strip vandaag nog!"
+          :collection="collection"
+      />
+
       <TextWithImage
           title="LED-strip pakketten"
           imageAlt="LED-strip pakketten"
@@ -63,12 +68,6 @@
             description: 'Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.'
           }
       ]" />
-
-
-      <ProductsWithBackground
-        title="Thuis genieten van die fijne lounge vibes? Bestel jouw RGB led-strip vandaag nog!"
-        :collection="collection"
-      />
 
       <CenterTitle
         title="De voordelen van jouw nieuwe LED strips"

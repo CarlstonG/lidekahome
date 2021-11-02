@@ -1,13 +1,17 @@
 <template>
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
+      <Banner
+          :imageSrc="require('assets/design/landings/badkamer/banner.jpg')"
+      />
 
       <CenterTitle
+        tag="h1"
         title="led strips badkamer"
       />
 
       <LongParagraph>
-        <div class="text-left md:text-center">
+        <div class="text-left">
           <p class="text-white font-extralight">
             Ben jij opzoek naar mooie LED strips voor in de badkamer of douche? Dan ben je hier aan het juiste adres.
           </p>
@@ -20,10 +24,17 @@
         </div>
       </LongParagraph>
 
-      <Banner
-        :imageSrc="require('assets/design/landings/badkamer/banner.jpg')"
+      <ProductsWithBackground
+          v-if="collection1"
+          title="RGB LED Strips"
+          :collection="collection1"
       />
 
+      <ProductsWithBackground
+          v-if="collection3"
+          title="RGB-IC LED Strips"
+          :collection="collection3"
+      />
       <CenterTitle title="led strips badkamer" />
 
       <LongParagraph>
@@ -40,20 +51,6 @@
         </div>
       </LongParagraph>
 
-      <CenterTitle title="Beschikbare meters" />
-
-      <ProductsWithBackground
-          v-if="collection1"
-          title="RGB LED Strips"
-          :collection="collection1"
-      />
-
-      <ProductsWithBackground
-          v-if="collection3"
-          title="RGB-IC LED Strips"
-          :collection="collection3"
-      />
-
       <TextWithImage image-alt="Badkamerverlichting" :image-src="require('assets/design/landings/badkamer/verlichting.jpg')" title="Badkamer verlichting">
         <p class="text-white font-extralight">
           Bij badkamerverlichting is het vooral belangrijk dat je LED verlichting plaatst met een IP65 ratio, dat houd in dat de verlichting volledig waterdicht is. Onze speciale badkamer LED-strips beschikken over dit ratio, en zijn daarom meer dan geschikt. Ook in de douche hoef jij je geen zorgen te maken, let daarop wel op dat je controller en adapter afsluit van water en vocht.
@@ -69,7 +66,7 @@
         </p>
       </TextWithImage>
 
-      <SingleImage :image-src="require('assets/design/landings/badkamer/banner2.jpg')" />
+      <SingleImage :image-src="require('~/assets/photos/Badkamer-2.jpg')" />
 
       <CenterTitle title="Waarom zou ik deze LED-strips gebruiken als badkamer verlichting?" />
 
@@ -165,7 +162,7 @@
       </LongParagraph>
 
       <SingleImage
-        :image-src="require('assets/design/landings/badkamer/banner4.jpg')"
+        :image-src="require('assets/photos/Badkamer-4.jpg')"
       />
 
       <CenterTitle title="Wit licht" />

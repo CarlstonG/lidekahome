@@ -35,8 +35,7 @@
                 <div class="space-y-4">
                   <h2 class="text-2xl text-white font-bold uppercase tracking-wide">RGB Led strips</h2>
                   <p class="text-white font-extralight ">
-                    Lideka biedt een geweldig assortiment RGB led strips aan, je kunt deze led-strips voor enorm veel
-                    verschillende doeleinden gebruiken.
+                    Lideka biedt een geweldig assortiment RGB led strips aan, je kunt deze led-strips voor enorm veel verschillende doeleinden gebruiken.
                   </p>
                   <p class="text-white font-extralight ">
                     De voordelen van deze Led-strips zijn:
@@ -44,7 +43,7 @@
                   <ul class="text-white font-extralight no-list-type">
                     <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8"
                                                                  src="~assets/icon/icons8-checkmark.svg"/><span
-                        class="tracking-wide text-gray-300 uppercase font-bold">Speciale effecten met de dreamcolor functie</span>
+                        class="tracking-wide text-gray-300 uppercase font-bold">Bijzonder veel kleuren mogelijkheden</span>
                     </li>
                     <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8"
                                                                  src="~assets/icon/icons8-checkmark.svg"/><span
@@ -100,8 +99,10 @@
                 <div class="space-y-4">
                   <h2 class="text-2xl text-white font-bold uppercase tracking-wide">TV LED STRIP</h2>
                   <p class="text-white font-extralight ">
-                    Hou je gave special effects bij jouw TV of Computer? Deze USB Led strips zijn meer dan geschikt. Ook
-                    geschikt voor een mooie game kamer.
+                    Hou je gave special effects bij jouw TV of Computer? Deze USB Led strips zijn meer dan geschikt. Ook geschikt voor een mooie game kamer.
+                  </p>
+                  <p class="text-white font-extralight ">
+                    De voordelen van deze Led-strips zijn:
                   </p>
                   <ul class="text-white font-extralight no-list-type">
                     <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8"
@@ -113,6 +114,9 @@
                     <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8"
                                                                  src="~assets/icon/icons8-checkmark.svg"/><span
                         class="tracking-wide text-gray-300 uppercase font-bold">In een game kamer</span></li>
+                    <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8"
+                                                                 src="~assets/icon/icons8-checkmark.svg"/><span
+                        class="tracking-wide text-gray-300 uppercase font-bold">Achter een bureau</span></li>
                   </ul>
                   <div class="lg:px-8 h-20">
                     <NuxtLink to="/categorie/tv-led-strips"
@@ -157,7 +161,7 @@
                 <div class="space-y-4">
                   <h2 class="text-2xl text-white font-bold uppercase tracking-wide">RGB-IC Led strips</h2>
                   <p class="text-white font-extralight ">
-                    Bekijk hier één van de nieuwste soorten, ook wel de ‘’dreamcolor’’ strip genoemd. Net als alle andere modellen is de bedienbaar via app en afstandsbediening
+                    Bekijk hier één van de nieuwste soorten, ook wel de ‘’dreamcolor’’ strip genoemd. Net als alle andere modellen is de bedienbaar via app en afstandsbediening.
                   </p>
                   <p class="text-white font-extralight ">
                     De voordelen van deze Led-strips zijn:
@@ -211,11 +215,17 @@
                 <div class="space-y-4">
                   <h2 class="text-2xl text-white font-bold uppercase tracking-wide">LED pakketten</h2>
                   <p class="text-white font-extralight">
-                    Voor de echte liefhebbers hebben we complete LED pakketten. Deze LED pakketten bestaan uit TV Led strips, en RGB Led strips. Beiden soorten bestaan uit complete sets.
+                    Voor de echte liefhebbers hebben we complete LED pakketten. Deze LED paketten bestaan uit TV Led strips, en RGB Led strips. Beiden soorten bestaan uit complete sets.
                   </p>
                   <p class="text-white font-extralight">
-                    Met een uitstekende plakstrip die nooit meer laat, en eindeloze kleurencombinaties is dit een bijzonder pakket.
+                    De voordelen van deze paketten zijn:
                   </p>
+                  <ul class="text-white font-extralight no-list-type">
+                    <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Compleet</span></li>
+                    <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Zelfklevend</span></li>
+                    <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Scherpe prijs</span></li>
+                    <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Duurzaam</span></li>
+                  </ul>
                   <div class="lg:px-8 h-20">
                     <NuxtLink to="/categorie/tv-led-strips"
                               class="border-2 border-white absolute bottom-10 left-6 md:left-12 px-8 inline-block py-2 text-white rounded-lg mt-6 uppercase tracking-wide font-bold"

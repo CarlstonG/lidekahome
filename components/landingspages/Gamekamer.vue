@@ -25,13 +25,10 @@
           Door zijn enorm stevige 3M tape laat hij nooit meer los, en kan hij op elke gewenste plek bevestigd worden.
           Met de ingebouwde microfoon gaan de LED-strips perfect mee op het geluid van de TV of PC, en geniet je van een echte game ervaring!
         </p>
+        <p>
+          Lideka heeft natuurlijk verschillende soorten strips en verschillende lengtes daarin. We gaan er vanuit dat jij houd van heldere verlichting, en dat je deze verlichting misschien ook wel als indirecte verlichting wilt gaan gebruiken. Daarom kiezen wij altijd voor hoge kwaliteit leds en een hoog aantal leds per meter. Voor het aantal watt per meter verwijzen we je graag door naar onze product pagina's.
+        </p>
       </LongParagraph>
-
-      <SingleImage :image-src="require('assets/design/landings/gamekamer/banner2.jpg')" />
-
-      <CenterTitle title="RGB LED STRIP" />
-
-      <CenterParagraph description="Lideka heeft natuurlijk verschillende soorten strips en verschillende lengtes daarin. We gaan er vanuit dat jij houd van heldere verlichting, en dat je deze verlichting misschien ook wel als indirecte verlichting wilt gaan gebruiken. Daarom kiezen wij altijd voor hoge kwaliteit leds en een hoog aantal leds per meter. Voor het aantal watt per meter verwijzen we je graag door naar onze product pagina's." />
 
       <ProductsWithBackground
           v-if="collection1"
@@ -51,7 +48,7 @@
           :collection="collection2"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/gamekamer/banner3.jpg')" />
+      <SingleImage :image-src="require('assets/design/landings/gamekamer/banner2.jpg')" />
 
       <CenterTitle title="Wat is een RGB led strip?" />
 
@@ -72,6 +69,8 @@
           Lideka bied alleen RGB verlichting aan in de vorm van slimme verlichting, dat hou in dat deze te bedienen zijn via een app en met een afstandsbediening. Als je meer informatie wilt omtrent slimme verlichting dan verwijs ik je graag door naar onze informatie pagina.
         </p>
       </LongParagraph>
+
+      <SingleImage :image-src="require('assets/design/landings/gamekamer/banner3.jpg')" />
 
       <div class="mx-auto max-w-5xl">
         <TextWithImage :bg-color="true" image-alt="RGB verlichting" :reverse="true" :imageSrc="require('assets/design/landings/gamekamer/rgbverlichting.jpg')"

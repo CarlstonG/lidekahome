@@ -3,7 +3,11 @@
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
         title="LED STRIP SLAAPKAMER"
-        description="Onze RGB LED-strips en RGB-IC LED-strips zijn perfect voor in de slaapkamer. Beiden hebben een bijzonder stevige plakstrip, en kunnen daarmee overal bevestigd worden. Ook is onze LED verlichting uitgerust met de beste kwaliteit led lampjes, waardoor je een enorm hoge helderheid hebt."
+        description="Onze <a href='/categorie/led-strips' class='link'>RGB LED-strips</a> en
+        <a href='/categorie/rgb-ic-led-strips' class='link'>RGB-IC LED-strips</a> zijn perfect voor in de slaapkamer.
+        Beiden hebben een bijzonder <strong>stevige plakstrip</strong>, en kunnen daarmee overal bevestigd worden.
+        Ook is onze LED verlichting uitgerust met de <strong>beste kwaliteit led lampjes</strong>,
+        waardoor je een enorm hoge helderheid hebt."
         :imageSrc="require('assets/design/landings/slaapkamer/banner.jpg')"
         :smallText="true"
       />
@@ -97,7 +101,7 @@
       </div>
 
       <SingleImageWithContent
-          :image-src="require('assets/design/landings/slaapkamer/banner2.jpg')"
+          :image-src="require('assets/photos/Slaapkamer-indirect.jpg')"
       >
         <h2 class="font-bold text-3xl">Indirecte verlichting</h2>
         <p>
@@ -135,7 +139,7 @@
           :bg-color="false"
           :reverse="true"
           :medium-image="true"
-          :imageSrc="require('assets/design/landings/slaapkamer/lampen.jpg')"
+          :imageSrc="require('assets/photos/Slaapkamer-led-lamp.jpg')"
       >
         <p class="text-white font-extralight">
           Er zijn ook bijzonder mooie led lampen te koop die je ook kunt aansluiten op een netwerk van slimme verlichting. We raden dit dan ook zeker aangezien je nog meer sfeer kunt creëren in de kamer. Lideka zal deze led lampen ook snel gaan uitbrengen.

@@ -4,7 +4,7 @@
 
       <BedPageBanner
         title="LED BEDVERLICHTING"
-        :imageSrc="require('assets/design/landings/bed/bannerBedPage.jpg')"
+        :imageSrc="require('assets/photos/Bed-1.jpg')"
         :smallText="true"
       />
 
@@ -104,7 +104,7 @@
       </LongParagraph>
 
       <div class="relative">
-        <img src="~assets/design/landings/bed/bedroom-blue.jpg">
+        <img src="~assets/photos/Bed-2.jpg" class="rounded-2xl" />
         <div class="lg:absolute max-w-5xl bottom-5 inset-x-0 mx-auto">
           <h2 class="text-white uppercase font-bold tracking-wide text-3xl">Indirect licht</h2>
           <span class="text-white">De led strips van Lideka kunnen uitstekend worden gebruikt als indirect licht, dat komt door zijn

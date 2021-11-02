@@ -21,6 +21,17 @@
         </p>
       </CenterParagraph>
 
+      <div style="margin-top: 100px;">
+        <ProductsWithBackground
+            title="Thuis genieten van die fijne lounge vibes? Bestel jouw RGB led-strip vandaag nog!"
+            :collection="collection"
+        />
+      </div>
+
+      <CenterTitle
+          title="Jouw nieuwe RGB led-strip is:"
+      />
+
       <Highlights :highlights="[
           {
             imageSrc: require('assets/icon/icons8-best-seller-50.svg'),
@@ -37,13 +48,6 @@
             description: 'Toch niet tevreden? Lideka® garandeert jou van een 2-jarige garantie'
           }
       ]" />
-
-      <div style="margin-top: 100px;">
-        <ProductsWithBackground
-          title="Thuis genieten van die fijne lounge vibes? Bestel jouw RGB led-strip vandaag nog!"
-          :collection="collection"
-        />
-      </div>
 
       <div class="mx-auto max-w-5xl">
         <LongParagraph

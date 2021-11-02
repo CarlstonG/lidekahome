@@ -1,7 +1,7 @@
 <template>
-  <h2 class="uppercase text-left md:text-center text-white max-w-4xl mx-auto font-bold text-3xl">
+  <component :is="tag" class="uppercase text-left md:text-center text-white max-w-4xl mx-auto font-bold text-3xl">
     {{ title }}
-  </h2>
+  </component>
 </template>
 
 <script lang="ts">
@@ -13,6 +13,10 @@ export default Vue.extend({
       type: String,
       default: ''
     },
+    tag: {
+      type: String,
+      default: 'h2'
+    }
   }
 });
 </script>

@@ -4,11 +4,21 @@
       <Banner
         title="RGB TV Led strips | 16 miljoen kleuren | Complete sets"
         description="TV LED-STRIPS"
-        :imageSrc="require('assets/design/landings/banner.jpg')"
+        :imageSrc="require('assets/photos/TV-1.jpg')"
       />
 
       <CenterParagraph
         description="Een led-strip achter je TV creëert een stijlvolle lichtgloed rondom het scherm en geeft jouw huiskamer een echte bioscoop sfeer. Maar deze handige strips zijn veel meer dan alleen mooi en zorgen ook voor een subtielere overgang tussen licht en donker. Zo worden jouw ogen minder snel moe en kijk je extra comfortabel naar jouw favoriete films & shows."
+      />
+
+      <ProductsWithBackground
+          title="Transformeer jouw ruimte tot thuisbioscoop met onze multifunctionele TV led-strips!"
+          :collection="collection"
+          style="margin-top: 80px;"
+      />
+
+      <CenterTitle
+          title="Jouw nieuwe RGB led-strip is:"
       />
 
       <Highlights :highlights="[
@@ -25,13 +35,6 @@
             description: 'Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.'
           }
       ]" />
-
-
-      <ProductsWithBackground
-        title="Transformeer jouw ruimte tot thuisbioscoop met onze multifunctionele TV led-strips!"
-        :collection="collection"
-        style="margin-top: 80px;"
-      />
 
       <div class="mx-auto max-w-5xl">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-10">
@@ -92,7 +95,7 @@
       </div>
 
       <SingleImage
-          :image-src="require('assets/design/landings/banner-2.jpg')"
+          :image-src="require('assets/photos/TV3.jpg')"
       />
 
       <div class="mx-auto max-w-5xl">

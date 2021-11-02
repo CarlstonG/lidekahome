@@ -11,6 +11,11 @@
         description="Net als bij een standaard model vormt de RGB-IC led-strip alle mogelijke kleurtinten, maar dan met schitterende extra lichteffecten. Deze splinternieuwe vorm van led licht wordt ook wel ‘Dreamcolor Led’ genoemd en is razend populair bij onder Amerikaanse TikTokkers. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe editie is het mogelijk!"
       />
 
+      <ProductsWithBackground
+          title="Creëer een extra persoonlijke sfeer met RGB-IC led verlichting!"
+          :collection="collection"
+      />
+
       <Highlights :highlights="[
           {
             imageSrc: require('assets/icon/icons8-water-50.svg'),
@@ -25,12 +30,6 @@
             description: 'Zo ben je verzekerd van 2 jaar <a class=\'link\' href=\'/pages/garantie\' target=\'blank\'>garantie</a>.'
           }
       ]" />
-
-
-      <ProductsWithBackground
-        title="Creëer een extra persoonlijke sfeer met RGB-IC led verlichting!"
-        :collection="collection"
-      />
 
       <CenterTitle
         title="De voordelen van jouw nieuwe RGB-IC LED-strip"

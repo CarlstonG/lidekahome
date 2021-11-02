@@ -2,12 +2,9 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 mb-10 lg:mb-0">
-        <video :poster="require('assets/video-poster-1.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
-          <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/woonkamer-video.webm" type="video/webm" />
-          <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/woonkamer-video_1.mp4" type="video/mp4" />
-        </video>
+        <SingleImage :image-src="require('assets/photos/Woonkamer-1.jpg')" />
 
-        <div class="md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20">
+        <div class="md:absolute mt-10 lg:mt-0 right-2 bottom-2 left-2 md:bottom-20 md:right-20 md:left-20">
           <h1 class="mx-auto text-4xl text-white font-bold tracking-wide">
             LED STRIP WOONKAMER
           </h1>
@@ -37,7 +34,7 @@
 
       <CenterParagraph description="De RGB-IC LED-strips hebben nog een extra functie, een hele bijzondere functie. Je bij dit soort namelijk verschillende kleuren tegelijk door de strips laten gaan. Dat is een enorm gaaf effect, en erg geliefd onder onze klanten. Verder werkt alles hetzelfde bij dit type LED verlichting, en wordt deze ook in een compleet set geleverd." />
 
-      <SingleImage :image-src="require('assets/design/landings/woonkamer/banner2.jpg')" />
+      <SingleImage :image-src="require('assets/photos/Woonkamer-2.jpg')" />
 
       <CenterTitle title="Led verlichting woonkamer" />
 
@@ -144,7 +141,7 @@
         </p>
       </LongParagraph>
 
-      <SingleImage :image-src="require('assets/design/landings/woonkamer/banner3.jpg')" />
+      <SingleImage :image-src="require('assets/photos/Woonkamer-3.jpg')" />
 
       <LongParagraph
         title="Waarom zijn dit de beste LED-strips voor de woonkamer?"

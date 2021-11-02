@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <img :src="imageSrc" />
+    <img :src="imageSrc" class="rounded-2xl" />
 
     <div class="text-white font-extralight top-10 lg:absolute left-10 mt-10 lg:mt-0 right-10 p-10 border border-white rounded-xl"
       style="left: 50%;"

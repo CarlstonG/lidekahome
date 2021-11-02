@@ -16,7 +16,7 @@
         </div>
       </div>
       <div :class="`flex items-center justify-center ${reverse ? 'order-first' : ''}`">
-        <img :class="`${smallImage ? 'w-52' : ''} ${mediumImage ? 'w-96' : ''}`" :src="imageSrc" :alt="imageAlt" />
+        <img :class="`${smallImage ? 'w-52' : ''} rounded-2xl ${mediumImage ? 'w-96' : ''}`" :src="imageSrc" :alt="imageAlt" />
       </div>
     </div>
   </div>

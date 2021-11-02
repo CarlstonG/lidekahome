@@ -3,7 +3,9 @@
     <h1 v-if="title" class="text-left text-white uppercase md:text-center text-3xl font-bold mb-4">
       {{ title }}
     </h1>
-    <CenterParagraph v-if="smallText && description" :description="description" />
+    <CenterParagraph v-if="smallText && description">
+      <div class="text-white font-extralight text-left md:text-center" v-html="description"></div>
+    </CenterParagraph>
 
     <div class="relative">
       <img :src="imageSrc" :alt="title" class="rounded-2xl" />

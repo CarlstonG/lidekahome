@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black">
     <div class="relative">
-      <img :src="imageSrc" :alt="title" />
+      <img class="rounded-2xl" :src="imageSrc" :alt="title" />
     </div>
     <div class="mx-auto space-y-10 px-6 lg:px-0 mt-6 bottom-10 relative">
       <h1 v-if="title" class="text-white uppercase text-center text-xl lg:text-4xl font-bold tracking-wide">
