@@ -58,7 +58,7 @@
       </div>
 
       <SingleImage
-        :image-src="require('assets/design/landings/tv-green.jpg')"
+        :image-src="require('assets/photos/remote.jpg')"
         description="<h2 class='font-bold text-3xl'>TV verlichting goed voor de ogen</h2><p>Er zijn meerdere studies en onderzoeken geweest naar het gebruik van TV led strips, en daar is keer op keer uitgekomen dat het goed voor de ogen is. Vooral de wat zachtere kleuren zoals rood doen het enorm goed, het brengt je ogen en mind tot rust en het laat je meer ontspannen.</p>"
       />
 
@@ -184,7 +184,7 @@
         ]"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/tv-bg.jpg')"
+      <SingleImage :image-src="require('assets/photos/tv-last.jpg')"
                    description="Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden.<br />
           Niet tevreden met jouw aankoop of loop je tegen problemen aan?<br />
           Wij betalen je het aankoopbedrag zonder probleem terug of zorgen voor een vervangend exemplaar."

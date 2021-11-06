@@ -5,7 +5,7 @@
                 :navigation-prev-label="prevLabel" :navigation-next-label="nextLabel">
         <slide class="relative">
           <div class="_living-room hover:opacity-50 transition-all mx-2">
-            <NuxtLink to="/categorie/woonkamer">
+            <NuxtLink to="/categorie/led-strip-woonkamer">
               <div class="flex items-end justify-center text-center" style="height: 400px;">
                 <h2 class="p-6 text-white text-2xl font-bold tracking-wide uppercase">Woonkamer</h2>
               </div>
@@ -14,7 +14,7 @@
         </slide>
         <slide class="relative">
           <div class="col-span-1 lg:col-span-7 _bedroom hover:opacity-50 transition-all mx-2">
-            <NuxtLink to="/categorie/slaapkamer">
+            <NuxtLink to="/categorie/led-strip-slaapkamer">
               <div class="flex items-end justify-center text-center" style="height: 400px;">
                 <h2 class="p-6 text-white text-2xl font-bold tracking-wide uppercase">Slaapkamer</h2>
               </div>
@@ -23,7 +23,7 @@
         </slide>
         <slide class="relative">
             <div class="col-span-1 lg:col-span-8 _kitchen hover:opacity-50 transition-all mx-2">
-              <NuxtLink to="/categorie/keuken">
+              <NuxtLink to="/categorie/led-strip-keuken">
                 <div class="flex items-end justify-center text-center" style="height: 400px;">
                   <h2 class="p-6 text-white text-2xl font-bold tracking-wide uppercase">Keuken</h2>
                 </div>
@@ -32,7 +32,7 @@
         </slide>
         <slide class="relative">
           <div class="col-span-1 lg:col-span-4 _gameroom hover:opacity-50 transition-all mx-2">
-            <NuxtLink to="/categorie/gamekamer">
+            <NuxtLink to="/categorie/led-strip-gamekamer">
               <div class="flex items-end justify-center text-center" style="height: 400px;">
                 <h2 class="p-6 text-white text-2xl font-bold tracking-wide uppercase">Game kamer</h2>
               </div>
@@ -41,7 +41,7 @@
         </slide>
         <slide class="relative">
           <div class="col-span-1 lg:col-span-4 _bathroom hover:opacity-50 transition-all mx-2">
-            <NuxtLink to="/categorie/badkamer">
+            <NuxtLink to="/categorie/led-strip-badkamer">
               <div class="flex items-end justify-center text-center" style="height: 400px;">
                 <h2 class="p-6 text-white text-2xl font-bold tracking-wide uppercase">Badkamer</h2>
               </div>
@@ -50,7 +50,7 @@
         </slide>
         <slide class="relative">
           <div class="col-span-1 lg:col-span-4 _ceiling hover:opacity-50 transition-all mx-2">
-            <NuxtLink to="/categorie/plafond">
+            <NuxtLink to="/categorie/led-strip-plafond">
               <div class="flex items-end justify-center text-center" style="height: 400px;">
                 <h2 class="p-6 text-white text-2xl font-bold tracking-wide uppercase">Plafond</h2>
               </div>
@@ -59,7 +59,7 @@
         </slide>
         <slide class="relative">
           <div class="col-span-1 lg:col-span-4 _bed hover:opacity-50 transition-all mx-2">
-            <NuxtLink to="/categorie/bed">
+            <NuxtLink to="/categorie/led-strip-bed">
               <div class="flex items-end justify-center text-center" style="height: 400px;">
                 <h2 class="p-6 text-white text-2xl font-bold tracking-wide uppercase">Bed</h2>
               </div>

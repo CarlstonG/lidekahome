@@ -366,22 +366,22 @@ export default Vue.extend({
 
   head() {
     return {
-      title: 'Lideka Home - Kwaliteit Led-en Solar artikelen',
+      title: 'Lideka Home - Ruim Aanbod Slimme Led-strips',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Lideka Home maakt het leven leuker, gezelliger en aantrekkelijker. Binnen de webshop vind je alle producten waarmee je die fijne sfeer meeneemt naar huis. Met unieke LED-verlichting creëer je zowel binnen als buiten een comfortabele omgeving; een plek waar je zelf graag bent, en waar je het liefst zit met de mensen om wie je het meest geeft.'
+          content: 'Uitstekende Service En Kwaliteit, Klanten Geven Ons Een Beoordeling Van Gemiddeld 9,6. Op Werkdagen Voor 23:59 besteld = Morgen thuis, Gratis Verzending En Retour. Duurzaam.'
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Lideka Home'
+          content: 'Lideka Home - Ruim Aanbod Slimme Led-strips',
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: 'Lideka Home maakt het leven leuker, gezelliger en aantrekkelijker. Binnen de webshop vind je alle producten waarmee je die fijne sfeer meeneemt naar huis. Met unieke LED-verlichting creëer je zowel binnen als buiten een comfortabele omgeving; een plek waar je zelf graag bent, en waar je het liefst zit met de mensen om wie je het meest geeft.'
+          content: 'Uitstekende Service En Kwaliteit, Klanten Geven Ons Een Beoordeling Van Gemiddeld 9,6. Op Werkdagen Voor 23:59 besteld = Morgen thuis, Gratis Verzending En Retour. Duurzaam.'
         },
         {
           hid: 'og:image',
@@ -391,7 +391,7 @@ export default Vue.extend({
         {
           hid: 'og:image:alt',
           property: 'og:image:alt',
-          content: 'Lideka Home maakt het leven leuker, gezelliger en aantrekkelijker. Binnen de webshop vind je alle producten waarmee je die fijne sfeer meeneemt naar huis. Met unieke LED-verlichting creëer je zowel binnen als buiten een comfortabele omgeving; een plek waar je zelf graag bent, en waar je het liefst zit met de mensen om wie je het meest geeft.'
+          content: 'Uitstekende Service En Kwaliteit, Klanten Geven Ons Een Beoordeling Van Gemiddeld 9,6. Op Werkdagen Voor 23:59 besteld = Morgen thuis, Gratis Verzending En Retour. Duurzaam.'
         }
       ]
     }

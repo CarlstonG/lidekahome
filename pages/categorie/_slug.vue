@@ -304,7 +304,11 @@ export default Vue.extend({
   },
 
   async asyncData({params}) {
-    const slug = params.slug;
+    let slug = params.slug;
+    slug = slug.replace('led-strip-', '');
+
+    console.log(slug);
+
     const collection = await getCollection(slug, {
       limit: 50,
       sortKey: 'PRICE',

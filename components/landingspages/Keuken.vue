@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        :imageSrc="require('assets/design/landings/keuken/banner.jpg')"
+        :imageSrc="require('assets/photos/keuken.jpg')"
         :smallText="true"
       />
 
@@ -76,31 +76,6 @@
         ]" />
       </div>
 
-      <Steps
-          :steps="[
-              {
-                step: 1,
-                description: 'In geval van een nieuwe keuken raden we je aan om goed na te denken over de plek waar je hem gaat bevestigen, de strip is zo sterk dat je wel sporen zult zien als je de strip weer gaat verplaatsen.'
-              },
-              {
-                step: 2,
-                description: 'Zoek een plek waar je voldoende licht kwijt kan'
-              },
-              {
-                step: 3,
-                description: 'Zorg dat de ondergrond goed schoon is'
-              },
-              {
-                step: 4,
-                description: 'Haal de rode beschermlaag van de led strip netjes weg'
-              },
-              {
-                step: 5,
-                description: 'Plak het artikel op'
-              }
-          ]"
-       />
-
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <LongParagraph
           title="LED STRIP PROFIELEN"
@@ -166,20 +141,16 @@
             description: 'Met 3 verschillende knoppen'
           }
         ]"
-          :image-src="require('assets/design/landings/led-pakketten/pakket.jpg')"
+          :image-src="require('assets/products/18.png')"
           :right-data="[
           {
-            title: 'De TV Strips',
-            description: 'IP20'
+            title: 'De LED Strip',
+            description: 'IP65'
           },
           {
-            title: 'USB aansluiting',
+            title: 'Adapter',
             description: 'Hoge kwaliteit kunststof'
           },
-          {
-            title: 'Bedankt kaartje',
-            description: 'Omdat we blij met je zijn'
-          }
         ]"
       />
 

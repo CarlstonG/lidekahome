@@ -47,7 +47,22 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/pwa',
     '@aceforth/nuxt-optimized-images',
+    '@/plugins/generator'
   ],
+
+  sitemap: {
+    hostname: 'https://lidekahome.nl',
+    gzip: true,
+    exclude: [
+      '/winkelwagen',
+      '/sso'
+    ],
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date()
+    }
+  },
 
   optimizedImages: {
     optimizeImages: true
@@ -65,6 +80,7 @@ export default {
     'nuxt-shopify',
     '@luxdamore/nuxt-prune-html',
     'nuxt-precompress',
+    '@nuxtjs/sitemap',
     ['@nuxtjs/component-cache', { maxAge: 1000 * 60 * 60 }],
   ],
 
@@ -205,6 +221,41 @@ export default {
         res.end();
       }
 
+      if (req.url.match("/categorie/plafond")) {
+        res.writeHead(301, {Location: req.url.replace("/plafond", "/led-strip-plafond")})
+        res.end();
+      }
+
+      if (req.url.match("/categorie/woonkamer")) {
+        res.writeHead(301, {Location: req.url.replace("/woonkamer", "/led-strip-woonkamer")})
+        res.end();
+      }
+
+      if (req.url.match("/categorie/slaapkamer")) {
+        res.writeHead(301, {Location: req.url.replace("/slaapkamer", "/led-strip-woonkamer")})
+        res.end();
+      }
+
+      if (req.url.match("/categorie/keuken")) {
+        res.writeHead(301, {Location: req.url.replace("/keuken", "/led-strip-keuken")})
+        res.end();
+      }
+
+      if (req.url.match("/categorie/gamekamer")) {
+        res.writeHead(301, {Location: req.url.replace("/gamekamer", "/led-strip-gamekamer")})
+        res.end();
+      }
+
+      if (req.url.match("/categorie/badkamer")) {
+        res.writeHead(301, {Location: req.url.replace("/badkamer", "/led-strip-badkamer")})
+        res.end();
+      }
+
+      if (req.url.match("/categorie/bed")) {
+        res.writeHead(301, {Location: req.url.replace("/bed", "/led-strip-bed")})
+        res.end();
+      }
+
       if (req.url.match("/solar-fonteinen")) {
         res.writeHead(301, {Location: req.url.replace("/solar-fonteinen", "/categorie/solar-tuinverlichting")})
         res.end();
@@ -330,6 +381,7 @@ export default {
         res.end();
       }
 
+      /*
       if (req.url.match('sitemap.xml')) {
         await axios.get(`${process.env.ROCKSOLID_API_URL}/sitemap?api_key=${process.env.ROCKSOLID_API_KEY}`).then((response) => {
           res.end(response.data);
@@ -337,6 +389,7 @@ export default {
           res.end(err);
         })
       }
+       */
 
       next();
     }

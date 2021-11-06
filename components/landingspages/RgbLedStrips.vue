@@ -191,7 +191,7 @@
       />
 
       <SingleImage
-        :image-src="require('assets/design/landings/rgb-led-strips/banner-2.jpg')"
+        :image-src="require('assets/photos/rgb-slaapkamer.jpg')"
       />
 
       <CenterTitle title="Een complete set bestaat uit:" />
@@ -224,7 +224,7 @@
         ]"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/rgb-led-strips/banner-3.jpg')" />
+      <SingleImage :image-src="require('assets/photos/Woonkamer-3.jpg')" />
 
       <LengthProducts
         :collection="collection"
@@ -256,15 +256,11 @@
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
 
-      <SingleImage
-          :image-src="require('assets/design/landings/rgb-led-strips/banner-4.jpg')"
-      />
-
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
 
-      <SingleImage :image-src="require('assets/design/landings/rgb-led-strips/banner-7.jpg')" />
+      <SingleImage :image-src="require('assets/photos/Woonkamer-2.jpg')" />
 
       <CenterTitle
         title="Decoratieve verlichting"

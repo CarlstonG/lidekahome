@@ -228,7 +228,7 @@
             description: 'Met 3 verschillende knoppen'
           }
         ]"
-          :image-src="require('assets/design/landings/led-pakketten/pakket.jpg')"
+          :image-src="require('assets/products/18.png')"
           :right-data="[
           {
             title: 'De TV Strips',

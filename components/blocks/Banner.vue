@@ -7,7 +7,7 @@
       <div class="text-white font-extralight text-left md:text-center" v-html="description"></div>
     </CenterParagraph>
 
-    <div class="relative">
+    <div class="relative mt-2">
       <img :src="imageSrc" :alt="title" class="rounded-2xl" />
       <h2 v-if="description && !smallText" class="mt-2 md:mt-0 text-white text-left md:text-center text-2xl font-bold tracking-wide lg:absolute bottom-10 left-0 right-0 uppercase">
         {{ description }}

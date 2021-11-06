@@ -8,7 +8,7 @@
         Beiden hebben een bijzonder <strong>stevige plakstrip</strong>, en kunnen daarmee overal bevestigd worden.
         Ook is onze LED verlichting uitgerust met de <strong>beste kwaliteit led lampjes</strong>,
         waardoor je een enorm hoge helderheid hebt."
-        :imageSrc="require('assets/design/landings/slaapkamer/banner.jpg')"
+        :imageSrc="require('assets/photos/Bed-1.jpg')"
         :smallText="true"
       />
 
@@ -111,24 +111,6 @@
 
       <CenterTitle title="DUBBELZIJDIG TAPE" />
       <CenterParagraph description="Zoals je misschien al wist levert Lideka altijd complete sets, dit doen we omdat we houden van gemak. Niemand heeft zin om allerlei extra dingen erbij te moeten zoeken, als je er helemaal geen verstand van hebt. Voor een expert op het gebied van verlichting zou het dan weer een ander verhaal zijn. Met onze led strip controller kun je volgende 3 dingen doen:" />
-      <CenterTitle title="Stap voor stap" />
-
-      <Steps
-        :steps="[
-          {
-            step: 1,
-            description: 'Zoek een mooie plek uit om de strip te bevestigen',
-          },
-          {
-            step: 2,
-            description: 'Maak de ondergrond netjes schoon met een vochtige doek en daarna met een droge doek',
-          },
-          {
-            step: 3,
-            description: 'Zorg dat je de strip stevig aandrukt zodat er geen lucht onder blijft zitten',
-          }
-        ]"
-      />
 
       <CenterTitle title="Led strip afstandsbediening" />
       <CenterParagraph description="Bij deze TV strip wordt een prachtige moderne afstandsbediening geleverd. Deze afstandsbediening heeft meerdere opties, zo kun je heel makkelijk en snel van kleur veranderen. Je kunt ook verschillende soorten scenes instellen, en dat maak het hem extra veelzijdig. Voor een compleet overzicht van alle functies kun je hier een kijkje nemen." />
@@ -163,7 +145,7 @@
           imageAlt="Wit licht"
           :bg-color="false"
           :reverse="true"
-          :imageSrc="require('assets/design/landings/slaapkamer/white.jpg')"
+          :imageSrc="require('assets/photos/slaapkamer-wit.jpg')"
       >
         <p class="text-white font-extralight">
           Er zijn ook vele soorten verlichting te koop met een wit licht, toch gaan de meeste mensen tegenwoordig voor de nieuwe RGB verlichting. Je kunt ook een mooie combinatie van verlichting maken door bijvoorbeeld rood en wit te combineren met elkaar. Echter is het in de praktijk niet heel makkelijk om een combinatie van verlichting te maken, daarom raden wij bij voorkeur de volgende soorten led aan:
@@ -171,7 +153,7 @@
       </TextWithImage>
 
       <SingleImage
-          :image-src="require('assets/design/landings/slaapkamer/banner3.jpg')"
+          :image-src="require('assets/photos/Bed-2.jpg')"
       />
 
       <CenterTitle
@@ -205,7 +187,7 @@ Lideka heeft niet de laagste prijs, maar wel een hele degelijke kwaliteit, en de
             description: 'Met 3 verschillende knoppen'
           }
         ]"
-        :image-src="require('assets/design/landings/led-pakketten/pakket.jpg')"
+        :image-src="require('assets/products/18.png')"
         :right-data="[
           {
             title: 'De TV Strips',

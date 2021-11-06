@@ -142,7 +142,7 @@
         ]"
       />
 
-      <SingleImage :image-src="require('assets/design/landings/led-pakketten/satisfy.png')"
+      <SingleImage :image-src="require('assets/photos/TV3.jpg')"
                    description="<div class='font-bold text-2xl'>100% tevredenheidsgarantie.</div> Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden."
       />
 
