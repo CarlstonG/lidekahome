@@ -9,14 +9,22 @@
       <CenterTitle title="LED STRIP KEUKEN" />
 
       <LongParagraph>
-        <p>
-          Wil je graag jouw keuken wat opfleuren met mooie keukenverlichting? Dan ben je bij ons aan het juiste adres. Onze RGB en RGB-IC versies zijn speciaal ontworpen met een siliconen coating, daardoor zijn de ledjes volledig waterdicht.
+        <p class="text-white font-extralight">
+          Wil je graag jouw keuken wat opfleuren met mooie <strong>keukenverlichting</strong>? Dan ben je bij ons aan het juiste adres. Onze
+          <a href="/categorie/led-strips">RGB en RGB-IC versies</a> zijn speciaal ontworpen met een siliconen coating, daardoor zijn de ledjes volledig waterdicht.
+        </p>
+        <p class="text-white font-extralight">
+          Ook beschikt onze keuken verlichting over de uitzonderlijke heldere <strong>SMD 5050</strong> Led’s. Met deze <strong>bijzondere leds</strong>
+          heb jij meer dan voldoende licht in de keuken, en creëer jij per direct een bijzondere sfeer. Geniet daarbij ook nog eens van een <strong>breed scala</strong> aan kleuren.
+        </p>
+        <p class="text-white font-extralight">
+          Tevens zijn ze enorm makkelijk te bedienen door middel van een <strong>app en afstandsbediening</strong>. Wat vooral belangrijk is bij verlichting voor de keuken is de
+          <a href="https://nl.wikipedia.org/wiki/IP-code" class="link">IP65 ratio</a>, dat houd in dat de lampjes 100% waterdicht zijn, door alle dampen en vocht die zich voordoen in de keuken raden we je zeker een IP65 ratio aan.
         </p>
         <p>
-          Ook beschikt onze keuken verlichting over de uitzonderlijke heldere SMD 5050 Led’s. Met deze bijzondere leds heb jij meer dan voldoende licht in de keuken, en creeer jij per direct een bijzondere sfeer. Geniet daarbij ook nog eens van een breed scala aan kleuren.
-        </p>
-        <p>
-          Tevens zijn ze enorm makkelijk te bedienen door middel van een app of afstandsbediening. Wat vooral belangrijk is bij verlichting voor de keuken is de IP65 ratio, dat houd in dat de lampjes 100% waterdicht zijn, door alle dampen en vocht die zich voordoen in de keuken raden we je zeker een IP65 ratio aan.
+          <a href="/blog/welke-kleuren-led-strips-zijn-er" class="link">
+            Welke kleuren led strips zijn er?
+          </a>
         </p>
       </LongParagraph>
 
@@ -28,7 +36,12 @@
           :collection="collection1"
       />
 
-      <CenterParagraph description="De RGB LED-strips hebben oneindig veel kleuren combinaties. Deze worden geleverd met alle benodigdheden en je hebt dus helemaal niks meer nodig verder. Bedien de LED-strip makkelijk en snel met je afstandsbediening of app." />
+      <CenterParagraph>
+        <p class="text-white font-extralight">
+          De <a href="/categorie/rgb-led-strips" class="link">RGB LED-strips</a> hebben oneindig veel kleuren combinaties. Deze worden geleverd met alle benodigdheden en je hebt dus helemaal niks meer nodig verder. Bedien de
+          <a class="link" href="/categorie/led-strips">LED-strip</a> makkelijk en snel met je afstandsbediening of app.
+        </p>
+      </CenterParagraph>
 
       <ProductsWithBackground
           v-if="collection3"
@@ -36,13 +49,30 @@
           :collection="collection3"
       />
 
-      <CenterParagraph description="De RGB-IC LED-strip is bijna hetzelfde, maar toch net even iets anders. Er zit namelijk een speciale functie bij, met deze functie kun je verschillende kleuren Led’s tegelijk door de LED-strip heen laten gaan. Dat geef een heel gaaf effect, en wordt ook wel ‘’dreamcolor’’ genoemd. Verder wordt deze ook in een compleet set geleverd en heb je verder niets meer nodig." />
+      <CenterParagraph>
+        <p class="text-white font-extralight">
+          De RGB-IC LED-strip is bijna hetzelfde, maar toch net even iets anders. Er zit namelijk een speciale functie bij, met deze functie kun je verschillende kleuren Led’s tegelijk door de
+          <a href="/categorie/led-strips" class="link">LED-strip</a> heen laten gaan. Dat geef een <strong>heel gaaf effect</strong>, en wordt ook wel ‘’<strong>dreamcolor</strong>’’ genoemd. Verder wordt deze ook in een compleet set geleverd en heb je verder niets meer nodig.
+        </p>
+        <p class="text-white font-extralight mt-4">
+          <a href="/blog/hoe-werkt-led-verlichting" class="link">
+            Hoe werkt led verlichting?
+          </a>
+        </p>
+      </CenterParagraph>
 
       <SingleImage :image-src="require('assets/design/landings/keuken/banner2.jpg')" />
 
       <CenterTitle title="Wit licht" />
 
-      <CenterParagraph description="De RGB en RGBIC strips bevatten op dit moment nog geen wit licht, echter zit er wel een soort licht bij dat er veel op lijkt. Deze word dan ook vaak gebruik ter vervanging van het gewone witte licht. Wat je dan niet hebt is de mogelijkheid om de strip koud wit te maken. Als je de strip warm wit wilt maken wordt het al makkelijker aangezien de meeste kleuren al warmer zijn. Een witte strip word het meest gebruikt aan bijvoorbeeld een eettafel." />
+      <LongParagraph>
+        <p class="text-white font-extralight">
+          De RGB en RGBIC strips bevatten op dit moment nog <strong>geen wit licht</strong>, echter zit er wel een <strong>soort licht</strong> bij dat er veel op lijkt. Deze wordt dan ook vaak gebruik ter vervanging van het gewone witte licht.
+        </p>
+        <p class="text-white font-extralight">
+          Wat je dan niet hebt is de mogelijkheid om de strip koud wit te maken. Als je de strip warm wit wilt maken wordt het al makkelijker aangezien de meeste kleuren al warmer zijn. Een witte strip wordt het meest gebruikt aan bijvoorbeeld een eettafel.
+        </p>
+      </LongParagraph>
 
       <TextWithImage image-alt="GESCHIKTE VERLICHTING"
                      :image-src="require('assets/design/landings/keuken/verlichting.jpg')"
@@ -51,7 +81,15 @@
                      :reverse="true"
       >
         <p class="text-white font-extralight">
-          Je kunt onze strips ook prima als accent verlichting gebruiken, we zien het namelijk steeds vaker doordat accent verlichting toch wel een ander soort verlichting vereist dan de traditionele verlichting. Maar dat niet alleen, goede verlichting moet ook gebruikt kunnen worden als sfeervolle verlichting, daarom zijn al onze artikelen dimbaar en kun je deze zelf makkelijk instellen.
+          Je kunt onze strips ook prima als accentverlichting gebruiken, we zien het namelijk steeds vaker doordat accentverlichting toch wel een ander soort verlichting vereist dan de traditionele verlichting.
+        </p>
+        <p class="text-white font-extralight">
+          Maar dat niet alleen, goede verlichting moet ook gebruikt kunnen worden als sfeervolle verlichting, daarom zijn al <strong>onze artikelen dimbaar</strong> en kun je deze zelf makkelijk instellen.
+        </p>
+        <p class="text-white font-extralight">
+          <a href="/blog/led-verlichting-in-de-slaapkamer" class="link">
+            LED verlichting in de slaapkamer - Lideka Home
+          </a>
         </p>
       </TextWithImage>
 
@@ -63,15 +101,15 @@
         <Highlights :highlights="[
             {
               imageSrc: require('assets/design/landings/slaapkamer/app.png'),
-              description: 'Via onze eigen app'
+              description: 'Met de app'
             },
             {
               imageSrc: require('assets/design/landings/slaapkamer/remote.png'),
-              description: 'Via de afstandsbediening'
+              description: 'Met de afstandsbediening'
             },
             {
               imageSrc: require('assets/design/landings/slaapkamer/controller.png'),
-              description: 'Via de controller'
+              description: 'Met de led strip controller'
             }
         ]" />
       </div>
@@ -82,7 +120,7 @@
           :bg-color="true"
         >
           <p>
-            De led strips van Lideka kunnen prima gebruikt worden in combinatie met led strip profielen. De voorkeur gaat dan uit naar een aluminium led profiel, dit heeft namelijk een positieve invloed op de ledstrip zelf.
+            De led strips van Lideka kunnen prima gebruikt worden in combinatie met <strong>led strip profielen</strong>. De voorkeur gaat dan uit naar een <strong>aluminium led profiel</strong>, dit heeft namelijk een positieve invloed op de ledstrip zelf.
           </p>
         </LongParagraph>
         <LongParagraph
@@ -90,7 +128,9 @@
             :bg-color="true"
         >
           <p>
-            Profielen van aluminium worden vaak gebruikt in de keuken, maar ook in de slaapkamer of in de badkamer. Het kan allemaal, let daarbij wel op dat je een product neemt met een IP 65 ratio, dit zorgt voor een volledige waterdichtheid van de lampjes zelf.
+            Profielen van aluminium worden vaak gebruikt in de keuken, maar ook in de
+            <a href="/categorie/slaapkamer" class="link">slaapkamer</a> of in de badkamer. Het kan allemaal, let daarbij wel op dat je een product neemt met een IP65 ratio, dit zorgt voor een
+            <strong>volledige waterdichtheid</strong> van de lampjes zelf.
           </p>
         </LongParagraph>
       </div>
@@ -100,25 +140,25 @@
           :bg-color="true"
       >
        <p>
-         Bij Lideka houden we makkelijk en eenvoudig, niet iedereen is namelijk een techneut en heeft veel verstand van verlichting of elektrischiteit. Daarom worden onze sets geleverd inclusief ledstrip controller, voeding en led strip afstandsbediening. Hieronder wat specificaties omtrent de componenten van de led strip.
+         Bij Lideka houden we makkelijk en eenvoudig, niet iedereen is namelijk een techneut en heeft veel verstand van verlichting of elektriciteit. Daarom worden onze sets geleverd <strong>inclusief ledstrip controller, voeding en led strip afstandsbediening.</strong> Hieronder wat specificaties omtrent de componenten van de led strip.
        </p>
-        <h3 class="font-bold text-4xl uppercase text-white">LED strip controller:</h3>
-        <ul>
+        <h3 class="font-bold text-4xl uppercase text-white force-white">LED strip controller:</h3>
+        <ul class="text-white font-extralight">
           <li>Hoogwaardige kwaliteit kunststof</li>
           <li>Drie verschillende knoppen voor een extra makkelijk bediening</li>
           <li>Stel zelf de helderheid in zodat je het prima kunt gebruiken als sfeerverlichting</li>
           <li>Ruime keuze aan kleuren, voor iedere setting een goede kleur</li>
           <li>Lengte van ongeveer 15cm</li>
         </ul>
-        <h3 class="font-bold text-4xl uppercase text-white">Led strip afstandsbediening:</h3>
-        <ul>
+        <h3 class="font-bold text-4xl uppercase text-white force-white">Led strip afstandsbediening:</h3>
+        <ul class="text-white font-extralight">
           <li>Talloze kleuren voor een eigen lichtshow</li>
           <li>Kies zelf een gave scene voor iedere gelegenheid</li>
           <li>Nieuwste model</li>
           <li>Uitstekende kwaliteit, zodat je nog jaren kunt genieten</li>
         </ul>
-        <h3 class="font-bold text-4xl uppercase text-white">Led strip voeding:</h3>
-        <ul>
+        <h3 class="font-bold text-4xl uppercase text-white force-white">Led strip voeding:</h3>
+        <ul class="text-white font-extralight">
           <li>12V voor een bijzonder hoge lichtopbrengst<li>
           <li>Kabel van 1.40 zodat installeren nog eenvoudiger word<li>
           <li>Hoogwaardige kwaliteit kunststof</li>
@@ -159,17 +199,22 @@
       <LongParagraph
         title="Waarom zijn dit de beste led strips voor de keuken?"
       >
+       <p>
+         We hebben deze LEDstrip speciaal geselecteerd als <strong>keukenverlichting</strong> door zijn <strong>IP65</strong> ratio. Bij gebruik van verlichting in de keuken is het namelijk belangrijk dat je rekening houd met een bepaalde hoeveelheid vocht en damp, zo is een IP65 ratio ideaal.
+       </p>
         <p>
-          We hebben deze LEDstrip speciaal geselecteerd als keukenverlichting door zijn IP65 ratio. Bij gebruik van verlichting in de keuken is het namelijk belangrijk dat je rekening houd met een bepaalde hoeveelheid vocht en damp, zo is een IP 65 ratio ideaal.
+          Maar dat niet alleen, ook de kristal heldere <strong>SMD 5050</strong> lampjes maken hem de absolute winnaar.
         </p>
         <p>
-          Maar dat niet alleen, ook de kristal heldere SMD 5050 lampjes maken hem de absolute winnaar.
+          Als je nog opzoek bent naar inspiratie voor je woonkamer, dan kun je altijd even kijken op <a href="https://nl.pinterest.com/search/pins/?q=keuken%20inspiratie&rs=typed&term_meta%5B%5D=keuken%7Ctyped&term_meta%5B%5D=inspiratie%7Ctyped" target="_blank" class="link">pinterest</a>.
         </p>
         <p>
-          Als je nog opzoek bent naar inspiratie voor je woonkamer, dan kun je altijd even kijken op pinterest.
+          Heb je nog vragen? Lideka staat <a href="/klantenservice" class="link">24/7</a> klaar om al jouw vragen te beantwoorden, we helpen je daarbij ook graag om de juiste verlichting te vinden.
         </p>
         <p>
-          Heb je nog vragen? Lideka staat 24/7 klaar om al jouw vragen te beantwoorden, we helpen je daarbij ook graag om de juiste verlichting te vinden. >
+          <a href="/blog/led-verlichting-in-de-badkamer" class="link">
+            Led verlichting in de badkamer - Lideka Home
+          </a>
         </p>
       </LongParagraph>
 

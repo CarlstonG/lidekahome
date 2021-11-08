@@ -365,4 +365,8 @@ export default Vue.extend({
     }
   }
 }
+
+.force-white {
+  color: white !important;
+}
 </style>
