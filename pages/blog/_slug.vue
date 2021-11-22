@@ -120,7 +120,7 @@ export default Vue.extend({
 
   computed: {
     url() {
-      return `https://lidekahome.nl/${this.$route.fullPath}`;
+      return `https://lidekahome.nl${this.$route.fullPath}`;
     },
   },
 
