@@ -253,6 +253,14 @@ export default Vue.extend({
   tr:nth-child(even){
     background-color: #f2f2f2;
   }
+
+  h3, h3 * {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800 !important;
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
 }
 
 .default-page-content {

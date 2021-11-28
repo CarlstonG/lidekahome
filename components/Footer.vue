@@ -157,7 +157,7 @@
         </div>
         <div class="mt-8 border-t border-gray-700 pt-8">
           <div class="mb-4">
-            <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank">
+            <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank" rel="nofollow">
               <img loading="lazy" class="w-40" alt="Thuiswinkel" src="~/assets/thuiswinkel.svg" />
             </a>
           </div>
@@ -179,7 +179,7 @@
 
         <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
           <div class="flex space-x-6 md:order-2">
-            <a href="https://www.facebook.com/lidekahome" target="_blank" class="text-gray-400 hover:text-gray-300">
+            <a href="https://www.facebook.com/lidekahome" target="_blank" rel="nofollow" class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">Facebook</span>
               <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -188,7 +188,7 @@
               </svg>
             </a>
 
-            <a href="https://www.instagram.com/lidekahome" target="_blank"
+            <a href="https://www.instagram.com/lidekahome" target="_blank" rel="nofollow"
                class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">Instagram</span>
               <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -198,7 +198,7 @@
               </svg>
             </a>
 
-            <a href="https://www.linkedin.com/company/lideka" target="_blank"
+            <a href="https://www.linkedin.com/company/lideka" target="_blank" rel="nofollow"
                class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">LinkedIn</span>
               <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6">
@@ -207,7 +207,7 @@
               </svg>
             </a>
 
-            <a href="https://www.youtube.com/channel/UCM6KUMoinLVJZUIOx3Mm2Tw" target="_blank"
+            <a href="https://www.youtube.com/channel/UCM6KUMoinLVJZUIOx3Mm2Tw" target="_blank" rel="nofollow"
                class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">YouTube</span>
               <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24">

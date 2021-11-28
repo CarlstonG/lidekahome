@@ -304,7 +304,7 @@
 
     <div class="max-w-7xl mx-auto pt-16 py-32 pb-20 px-6 md:px-0">
       <div class="flex justify-center space-x-6 md:order-2">
-        <a href="https://www.facebook.com/lidekahome" target="_blank"
+        <a href="https://www.facebook.com/lidekahome" target="_blank" rel="nofollow"
            class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
           <span class="sr-only">Facebook</span>
           <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -314,7 +314,7 @@
           </svg>
         </a>
 
-        <a href="https://www.instagram.com/lidekahome" target="_blank"
+        <a href="https://www.instagram.com/lidekahome" target="_blank" rel="nofollow"
            class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
           <span class="sr-only">Instagram</span>
           <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -324,7 +324,7 @@
           </svg>
         </a>
 
-        <a href="https://www.linkedin.com/company/lideka" target="_blank"
+        <a href="https://www.linkedin.com/company/lideka" target="_blank" rel="nofollow"
            class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
           <span class="sr-only">LinkedIn</span>
           <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8">
@@ -333,7 +333,7 @@
           </svg>
         </a>
 
-        <a href="https://www.youtube.com/channel/UCM6KUMoinLVJZUIOx3Mm2Tw" target="_blank"
+        <a href="https://www.youtube.com/channel/UCM6KUMoinLVJZUIOx3Mm2Tw" target="_blank" rel="nofollow"
            class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
           <span class="sr-only">YouTube</span>
           <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24">
