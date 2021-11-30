@@ -205,7 +205,7 @@
               Veilig winkelen
             </h2>
             <div class="mt-4 mb-4">
-              <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank">
+              <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank" rel="nofollow">
                 <img loading="lazy" class="w-40" alt="Thuiswinkel" src="~/assets/thuiswinkel-black.svg"/>
               </a>
             </div>
