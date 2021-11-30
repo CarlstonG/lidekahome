@@ -136,7 +136,7 @@
 
                   <p class="text-gray-500 text-md text-green-500 mt-2">
                     <span v-if="product.deliveryDate">{{ product.deliveryDate }}</span>
-                    <span v-else>Voor {{ currentMaxDeliveryTime }} besteld, morgen in huis</span>
+                    <span v-else>{{ currentMaxDeliveryTime }}</span>
                   </p>
                 </div>
 
@@ -292,12 +292,12 @@ export default Vue.extend({
 
   head() {
     return {
-      title: safeGet(this.collection, 'title'),
+      title: safeGet(this.collection, 'seoTitle'),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: safeGet(this.collection, 'description'),
+          content: safeGet(this.collection, 'seoDescription'),
         }
       ]
     }
@@ -306,8 +306,6 @@ export default Vue.extend({
   async asyncData({params}) {
     let slug = params.slug;
     slug = slug.replace('led-strip-', '');
-
-    console.log(slug);
 
     const collection = await getCollection(slug, {
       limit: 50,
@@ -318,6 +316,7 @@ export default Vue.extend({
         product_filters: {},
       },
     });
+
     return {slug, collection }
   },
 })

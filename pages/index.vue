@@ -351,7 +351,6 @@
 import Vue from 'vue'
 import ProductItem from "~/components/products/ProductItem.vue";
 import ProductItemGradient from "~/components/products/ProductItemGradient.vue";
-import {getCollection} from "~/services/ApiService";
 import Usages from "~/components/blocks/Usages.vue";
 import CategorySlider from "~/components/CategorySlider.vue";
 

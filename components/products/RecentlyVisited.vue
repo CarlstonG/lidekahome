@@ -1,5 +1,5 @@
 <template>
-    <div 
+    <div
         v-if="items.length > 0"
         class="pt-5 pb-8"
         :class="{'bg-white': !useDarkBackground}">
@@ -20,14 +20,14 @@
                                 height="100%"
                     />
                     </div>
-                    <h3 
+                    <h3
                         class="mt-4 font-bold text-base text-center md:text-left"
                         :class="{'text-gray-300': useDarkBackground, 'text-gray-900': !useDarkBackground}">
                         {{ product.title }}
                     </h3>
                     <p class="text-gray-500 text-md text-green-500 mt-2">
                         <span v-if="product.deliveryDate">{{ product.deliveryDate }}</span>
-                        <span v-else>Voor {{ currentMaxDeliveryTime }} besteld, morgen in huis</span>
+                        <span v-else>{{ currentMaxDeliveryTime }}</span>
                     </p>
 
                     <p class="mt-2 font-medium text-gray-900">

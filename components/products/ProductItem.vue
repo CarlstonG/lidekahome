@@ -21,7 +21,7 @@
       </div>
       <div v-else class="relative py-2 text-left w-full">
         <dt class="block md:flex">
-          <p class="block text-green-500 text-xs leading-6 font-medium">Voor {{ currentMaxDeliveryTime }} besteld, morgen in huis</p>
+          <p class="block text-green-500 text-xs leading-6 font-medium">{{ currentMaxDeliveryTime }}</p>
         </dt>
       </div>
     </div>
