@@ -5,7 +5,7 @@ import {
   getCheckout,
   addLineItem,
   removeLineItem as removeLineItemApiService,
-  updateLineItem
+  updateLineItem, applyDiscount
 } from "~/services/ApiService";
 
 const actions = {
@@ -25,6 +25,10 @@ const actions = {
     const checkout = await updateLineItem(context.getters.checkoutId, payload.lineItemId, payload.variantId, payload.quantity);
     context.commit('setCount', _.get(checkout, 'lineItems.length', 0));
     context.commit('setCheckout', checkout);
+  },
+
+  async applyDiscount(context, payload) {
+    await applyDiscount(context.getters.checkoutId, payload.discountCode);
   },
 
   async fetchCheckout(context) {

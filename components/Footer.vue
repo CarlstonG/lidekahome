@@ -7,7 +7,7 @@
           <div class="relative hidden md:block">
             <dt class="flex justify-center items-center">
               <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <p class="ml-2 text-xs leading-6 font-medium text-gray-400">voor {{ currentMaxDeliveryTime }} besteld, morgen in huis</p>
+              <p class="ml-2 text-xs leading-6 font-medium text-gray-400">{{ currentMaxDeliveryTime }}</p>
             </dt>
           </div>
 

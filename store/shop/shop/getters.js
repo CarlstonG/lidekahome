@@ -4,7 +4,7 @@ const getters = {
   },
 
   currentMaxDeliveryTime: state => {
-    return state.currentMaxDeliveryTime;
+    return state.maxDeliverySentence
   }
 }
 

@@ -113,9 +113,25 @@
               <div v-else class="px-4 md:px-0">
                 Je winkelwagen is nog leeg!
               </div>
+
               <div v-if="checkout.lineItems && checkout.lineItems.length > 0">
+                <div class="mt-4 px-6">
+                  <div class="flex items-center space-x-4 mb-4 max-w-md">
+                    <div class="flex-1 flex-grow">
+                      <FormField :model-value.sync="fields.coupon" name="Coupon code" hide-label />
+                    </div>
+
+                    <button
+                        @click.prevent="applyCoupon"
+                        type="button"
+                        class="flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                      Activeer
+                    </button>
+                  </div>
+                </div>
+
                 <div v-show="checkout" class="flex items-center justify-start">
-                  <div class="py-10 px-6 lg:px-0">
+                  <div class="pb-10 px-6">
                     <table class="min-w-full divide-y divide-gray-200">
                       <tbody>
                       <tr class="bg-gray-50">
@@ -132,7 +148,9 @@
                         </td>
                         <td v-if="checkout.subTotalPrice"
                             class="px-3 py-2 whitespace-nowrap text-md font-medium text-gray-900">
-                          {{ formatMoney(checkout.subTotalPrice.amount) }} incl. btw
+                          <del class="text-xs text-gray-500" v-if="checkout.paymentDue.amount < checkout.subTotalPrice.amount">{{ formatMoney(checkout.subTotalPrice.amount) }}</del>
+
+                          {{ formatMoney(checkout.paymentDue.amount) }} incl. btw
                         </td>
                       </tr>
                       </tbody>
@@ -140,7 +158,7 @@
                   </div>
                 </div>
                 <div>
-                  <div class="flex items-start mb-4 px-6 lg:px-0">
+                  <div class="flex items-start mb-4 px-6">
                     <div class="h-5 flex items-center">
                       <input id="terms" v-model="terms" name="terms" type="checkbox"
                              class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
@@ -155,7 +173,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="flex items-center justify-start px-6 lg:px-0">
+                  <div class="flex items-center justify-start px-6">
                     <a
                       v-if="checkout"
                       @click.prevent="onCheckoutButton"
@@ -205,10 +223,11 @@ import {formatMoney} from "~/services/Helpers";
 import Loading from "~/components/Loading.vue";
 import SellingPoints from "~/components/SellingPoints.vue";
 import PaymentMethodes from "~/components/PaymentMethodes.vue";
+import FormField from "~/components/input/FormField.vue";
 
 export default Vue.extend({
   name: 'winkelwagen',
-  components: {PaymentMethodes, SellingPoints, Loading},
+  components: {FormField, PaymentMethodes, SellingPoints, Loading},
 
   data() {
     return {
@@ -217,6 +236,9 @@ export default Vue.extend({
       loading: false,
       terms: false,
       checkoutUrl: '#',
+      fields: {
+        coupon: ''
+      }
     };
   },
 
@@ -240,7 +262,16 @@ export default Vue.extend({
     ...mapActions('shop/cart', [
       'updateLineItemQuantity',
       'removeLineItem',
+      'applyDiscount',
+      'fetchCheckout'
     ]),
+
+    async applyCoupon() {
+      await this.applyDiscount({
+        discountCode: this.fields.coupon
+      });
+      await this.fetchCheckout();
+    },
 
     onCheckoutButton(e: Event) {
       if (!this.terms) {

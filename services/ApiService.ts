@@ -156,6 +156,14 @@ export const updateLineItem = async(checkoutId: string, lineItemId: string, vari
   return data;
 }
 
+export const applyDiscount = async(checkoutId: string, discountCode: string) => {
+  await post(`/checkout/applyDiscount`, {
+    checkoutId: checkoutId,
+    discountCode: discountCode
+  })
+}
+
+
 export const removeLineItem = async(checkoutId: string, lineItemId: string) => {
   const { data } = await post(`/checkout/removeItem`, {
     checkoutId: checkoutId,
