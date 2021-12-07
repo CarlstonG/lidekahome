@@ -165,7 +165,7 @@
             </div>
             <div v-if="product.specifications">
               <h2 class="font-extrabold text-3xl mb-4">Specificaties</h2>
-              <div class="product-specs" v-html="product.specifications"></div>
+              <div class="product-specs" v-html="cleanSpecifications"></div>
             </div>
           </div>
           <div v-if="product" class="px-0 md:px-6 mb-6" id="reviews">
@@ -235,7 +235,15 @@ export default Vue.extend({
   computed: {
     productDescription() {
       return this.product.description;
-    }
+    },
+
+    cleanSpecifications() {
+      if (! this.product.specifications) {
+        return null;
+      }
+
+      return this.product.specifications.replace(/style="[^"]*"/gm, "")
+    },
   },
 
   jsonld() {

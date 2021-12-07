@@ -230,6 +230,7 @@ export default Vue.extend({
 .product-specs {
   table {
     border-radius: 5px;
+    width: 100%;
   }
 
   table tr:first-child td:first-child {
@@ -250,6 +251,7 @@ export default Vue.extend({
 
   td {
     padding: 5px 10px;
+    width: 50%;
   }
 
   tr:nth-child(even){

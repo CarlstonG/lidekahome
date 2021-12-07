@@ -92,6 +92,12 @@
                   Blog
                 </NuxtLink>
               </li>
+
+              <li>
+                <NuxtLink to="/partners" class="text-sm text-gray-300 hover:text-white">
+                  Partners
+                </NuxtLink>
+              </li>
             </ul>
           </div>
           <div class="mt-12 md:mt-0">
