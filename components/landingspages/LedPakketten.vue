@@ -11,6 +11,8 @@
           :collection="collection"
       />
 
+      <VideoReviews />
+
       <TextWithImage
           title="LED-strip pakketten"
           imageAlt="LED-strip pakketten"
@@ -227,6 +229,7 @@ import OtherCollections from "~/components/blocks/OtherCollections.vue";
 import SmallCenterTitle from "~/components/blocks/SmallCenterTitle.vue";
 import Usages from "~/components/blocks/Usages.vue";
 import TextWithImage from "~/components/blocks/TextWithImage.vue";
+import VideoReviews from "~/components/VideoReviews.vue";
 
 export default Vue.extend({
   components: {
@@ -245,7 +248,8 @@ export default Vue.extend({
     CenterParagraph,
     Banner,
     ProductItem,
-    ProductItemGradient
+    ProductItemGradient,
+    VideoReviews
   },
   props: {
     collection: {

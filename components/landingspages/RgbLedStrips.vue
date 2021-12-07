@@ -28,6 +28,8 @@
         />
       </div>
 
+      <VideoReviews />
+
       <CenterTitle
           title="Jouw nieuwe RGB led-strip is:"
       />
@@ -432,6 +434,7 @@ import SmallCenterTitle from "~/components/blocks/SmallCenterTitle.vue";
 import Usages from "~/components/blocks/Usages.vue";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import QualityBlocks from "~/components/QualityBlocks.vue";
+import VideoReviews from "~/components/VideoReviews.vue";
 
 export default Vue.extend({
   components: {
@@ -451,7 +454,8 @@ export default Vue.extend({
     CenterParagraph,
     Banner,
     ProductItem,
-    ProductItemGradient
+    ProductItemGradient,
+    VideoReviews
   },
   props: {
     collection: {

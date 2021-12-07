@@ -5,6 +5,7 @@
     <Footer />
     <Notifications ref="notifications" />
     <AddedToCartModal />
+    <DefaultModal />
   </div>
 </template>
 
@@ -17,9 +18,10 @@ import Notifications from "~/components/notifications/Notifications.vue";
 import Smile from  "~/components/Smile.vue";
 import AddedToCartModal from "~/components/AddedToCartModal.vue";
 import RecentlyVisited from '~/components/products/RecentlyVisited.vue';
+import DefaultModal from "~/components/DefaultModal.vue";
 
 export default Vue.extend({
-  components: {Notifications, Footer, Navigation, Smile, AddedToCartModal, RecentlyVisited},
+  components: {DefaultModal, Notifications, Footer, Navigation, Smile, AddedToCartModal, RecentlyVisited},
 
   data () {
     return {

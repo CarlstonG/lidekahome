@@ -16,6 +16,8 @@
           :collection="collection"
       />
 
+      <VideoReviews />
+
       <Highlights :highlights="[
           {
             imageSrc: require('assets/icon/icons8-water-50.svg'),
@@ -550,6 +552,7 @@ import OtherCollections from "~/components/blocks/OtherCollections.vue";
 import SmallCenterTitle from "~/components/blocks/SmallCenterTitle.vue";
 import Usages from "~/components/blocks/Usages.vue";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
+import VideoReviews from "~/components/VideoReviews.vue";
 
 export default Vue.extend({
   components: {
@@ -568,7 +571,8 @@ export default Vue.extend({
     CenterParagraph,
     Banner,
     ProductItem,
-    ProductItemGradient
+    ProductItemGradient,
+    VideoReviews
   },
   props: {
     collection: {

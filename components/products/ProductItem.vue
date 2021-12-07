@@ -51,7 +51,7 @@
           <span
               class="mt-3 uppercase inline-block tracking-wide inline-block shadow-md p-3 px-6 items-center justify-center border border-transparent rounded-full shadow-sm text-sm font-bold text-white bg-indigo-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
           >
-            Bestellen
+            Bekijken
           </span>
         </NuxtLink>
       </div>

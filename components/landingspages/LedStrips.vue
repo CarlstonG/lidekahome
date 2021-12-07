@@ -17,10 +17,30 @@
       </div>
     </div>
 
+    <div class="mx-auto max-w-7xl mt-10 mb-10">
+      <LongParagraph>
+        <p class="text-white font-extralight">
+          Led-strips zijn niet meer uit jouw huiskamer weg te denken en worden als huisdecoratie steeds
+          <strong>populairder</strong>. Deze gave lichteffecten zijn
+          <strong>makkelijk</strong> te installeren, creëren een flinke dosis gezelligheid en transformeren jouw ruimte met stijlvolle lounge vibes.
+        </p>
+        <p class="text-white font-extralight">
+          Het mooiste aan deze moderne
+          <a class="link" href="/blog/alles-over-led-verlichting-als-sfeerverlichting">sfeerverlichting</a>?
+          Led-strips zijn ontzettend <strong>multifunctioneel</strong> en op te hangen waar je maar wilt! Kies je voor een
+          futuristisch verlichte tv, trendy keuken of sfeervolle tuin? Het Lideka® assortiment heeft een led-strip voor
+          <strong>elke gelegenheid</strong>.
+        </p>
+        <p class="text-white font-extralight">
+          Wat is nou het verschil tussen al die verschillende led-strips? Hier vind je al onze kennis en informatie in een handig overzicht. Zo ontdek je gemakkelijk welke Lideka® strip het beste bij jou en jouw ruimte past.
+        </p>
+      </LongParagraph>
+    </div>
+
     <div class="max-w-7xl mx-auto space-y-10 mb-10 px-6 lg:px-0">
       <ProductsWithBackground
           v-if="collection1"
-          title=""
+          title="RGB LED STRIPS"
           :collection="collection1"
       />
 
@@ -42,36 +62,7 @@
           :collection="collection4"
       />
 
-      <TextWithImage
-          title="LED strips"
-          imageAlt="LED-strips"
-          :imageSrc="require('assets/design/landings/led-pakketten/pakket-2.jpg')"
-          url="/"
-          :reverse="true"
-      >
-        <p class="text-white font-extralight">
-          Led-strips zijn niet meer uit jouw huiskamer weg te denken en worden als huisdecoratie steeds
-          <strong>populairder</strong>. Deze gave lichteffecten zijn
-          <strong>makkelijk</strong> te installeren, creëren een flinke dosis gezelligheid en transformeren jouw ruimte met stijlvolle lounge vibes.
-        </p>
-        <p class="text-white font-extralight">
-          Het mooiste aan deze moderne
-          <a class="link" href="/blog/alles-over-led-verlichting-als-sfeerverlichting">sfeerverlichting</a>?
-          Led-strips zijn ontzettend <strong>multifunctioneel</strong> en op te hangen waar je maar wilt! Kies je voor een
-          futuristisch verlichte tv, trendy keuken of sfeervolle tuin? Het Lideka® assortiment heeft een led-strip voor
-          <strong>elke gelegenheid</strong>.
-        </p>
-        <p class="text-white font-extralight">
-          Wat is nou het verschil tussen al die verschillende led-strips? Hier vind je al onze kennis en informatie in een handig overzicht. Zo ontdek je gemakkelijk welke Lideka® strip het beste bij jou en jouw ruimte past.
-        </p>
-        <p class="text-white font-extralight">
-          Wil je graag wat extra sfeer in de keuken?
-
-          <a href="/categorie/led-strip-keuken" class="link">
-            Bekijk hier led strip keuken.
-          </a>
-        </p>
-      </TextWithImage>
+      <VideoReviews />
 
       <TextWithImage
           title="LED-strip pakketten"
@@ -835,9 +826,11 @@ import Usages from "~/components/blocks/Usages.vue";
 import TextWithImage from "~/components/blocks/TextWithImage.vue";
 import {getCollection} from "~/services/ApiService";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
+import VideoReviews from "~/components/VideoReviews.vue";
 
 export default Vue.extend({
   components: {
+    VideoReviews,
     LongParagraph,
     TextWithImage,
     Usages,
@@ -881,21 +874,25 @@ export default Vue.extend({
       this.collection1 = await getCollection('rgb-led-strips', {
         reverseImages: true,
         sortKey: 'PRICE',
+        reverse: true
       });
 
       this.collection2 = await getCollection('tv-led-strips', {
         reverseImages: true,
         sortKey: 'PRICE',
+        reverse: true
       });
 
       this.collection3 = await getCollection('rgb-ic-led-strips', {
         reverseImages: true,
         sortKey: 'PRICE',
+        reverse: true
       });
 
       this.collection4 = await getCollection('led-pakketten', {
         reverseImages: true,
         sortKey: 'PRICE',
+        reverse: true
       });
     }
   },
