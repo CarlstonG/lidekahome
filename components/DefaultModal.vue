@@ -26,7 +26,7 @@ export default Vue.extend({
        };
    },
    mounted() {
-     this.$root.$on('openModal', (content) => {
+     this.$root.$on('openModal', (content: any) => {
          this.isOpen = true;
          this.content = content;
      });
