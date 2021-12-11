@@ -6,70 +6,60 @@
         :imageSrc="require('assets/headers/led-pakket-1.jpg')"
       />
 
+      <LongParagraph>
+        <p class="text-white font-extralight">
+          Voor de echte liefhebbers hebben we <strong>complete</strong> LED pakketten. Deze LED pakketten bestaan uit <NuxtLink to="/products/lideka-rgb-smart-tv-led-light-strip-3-meter-met-smart-app" class="link">TV Led strips</NuxtLink>,
+          en <NuxtLink to="/categorie/rgb-led-strips" class="link">RGB Led strips</NuxtLink>. Beiden soorten bestaan uit complete sets.
+        </p>
+        <p class="text-white font-extralight">
+          Met een <strong>uitstekende plakstrip</strong> die nooit meer laat, en eindeloze kleurencombinaties is dit een bijzonder pakket.
+        </p>
+      </LongParagraph>
+
       <ProductsWithBackground
-          title="Thuis genieten van die fijne lounge vibes? Bestel jouw RGB led-strip vandaag nog!"
+          title="Onze LED pakketten"
           :collection="collection"
       />
 
       <VideoReviews />
 
-      <TextWithImage
-          title="LED-strip pakketten"
-          imageAlt="LED-strip pakketten"
-          :imageSrc="require('assets/design/landings/led-pakketten/pakket-1.jpg')"
-          url="/"
-      >
-        <p class="text-white font-extralight">
-          Voor de echte liefhebbers hebben we complete LED pakketten. Deze LED pakketten bestaan uit TV Led strips, en RGB Led strips. Beiden soorten bestaan uit complete sets.
-        </p>
-        <p class="text-white font-extralight">
-          Met een uitstekende plakstrip die nooit meer laat, en eindeloze kleurencombinaties is dit een bijzonder pakket.
-        </p>
-      </TextWithImage>
+      <SingleImage :image-src="require('assets/photos/Woonkamer-1.jpg')" />
 
-      <TextWithImage
-          title="RGB LED-strip"
-          imageAlt="RGB LED-strip"
-          :imageSrc="require('assets/design/landings/led-pakketten/pakket-2.jpg')"
-          url="/"
-          reverse="true"
-      >
-        <p class="text-white font-extralight">
-          De RGB LED-strip beschikt over een breed scala aan kleuren, rood, blauw, groen het zit er allemaal bij. Kies, combineer en bepaal zelf wanneer je welke combinatie wilt zien.
-        </p>
-        <p class="text-white font-extralight">
-          Door middel van een moderne en geavanceerde afstandsbediening is het makkelijker dan ooit om de LED-strips te bedienen, maar dat niet alleen, onze uitgebreide app beschikt ook over oneindige functies en mogelijkheden.
-        </p>
-      </TextWithImage>
+      <div class="mx-auto max-w-4xl space-y-10 lg:px-0">
+        <TextWithImage
+            title="RGB LED-strip"
+            imageAlt="RGB LED-strip"
+            :imageSrc="require('assets/design/landings/led-pakketten/pakket-1.jpg')"
+            url="/"
+        >
+          <p class="text-white font-extralight">
+            De <NuxtLink class="link" to="/products/led-strip-5-meter">RGB LED-strip</NuxtLink> beschikt over een breed scala aan kleuren, rood, blauw, groen het zit er allemaal bij. Kies, combineer en bepaal zelf wanneer je welke combinatie wilt zien.
+          </p>
+          <p class="text-white font-extralight">
+            Door middel van een <strong>moderne en geavanceerde afstandsbediening</strong> is het makkelijker dan ooit om de LED-strips te bedienen, maar dat niet alleen, onze <strong>uitgebreide app</strong> beschikt ook over oneindige functies en mogelijkheden.
+          </p>
+        </TextWithImage>
 
-      <TextWithImage
-          title="TV LED-strip"
-          imageAlt="TV LED-strip"
-          :imageSrc="require('assets/design/landings/led-pakketten/pakket-3.jpg')"
-          url="/"
-      >
-        <p class="text-white font-extralight">
-          De TV LED-strip beschikt over een enorm stevige plakstrip, waardoor hij nooit meer loslaat. Door de flexibiliteit van de strip was het nog nooit zo makkelijk om deze te installeren.
-        </p>
-        <p class="text-white font-extralight">
-          Met een naadloze overgang op het geluid van de TV, Computer of Game console, ben jij verzekerd van een unieke kijk of speelervaring!
-        </p>
-      </TextWithImage>
+        <TextWithImage
+            title="TV LED-strip"
+            imageAlt="TV LED-strip"
+            :imageSrc="require('assets/design/landings/led-pakketten/pakket-3.jpg')"
+            url="/"
+            reverse
+        >
+          <p class="text-white font-extralight">
+            De <NuxtLink class="link" to="/categorie/tv-led-strips">TV LED-strip</NuxtLink> beschikt over een <strong>enorm stevige plakstrip</strong>, waardoor hij nooit meer loslaat.
+            Door de <strong>flexibiliteit van de strip</strong> was het nog nooit zo makkelijk om deze te installeren.
+          </p>
+          <p class="text-white font-extralight">
+            Met een naadloze overgang op het geluid van de <strong>TV, Computer of Game console</strong>, ben jij verzekerd van een unieke kijk of speelervaring!
+          </p>
+        </TextWithImage>
+      </div>
 
-      <Highlights :highlights="[
-          {
-            imageSrc: require('assets/icon/icons8-best-seller-50.svg'),
-            description: 'Door zijn bijzondere stevige dubbelzijge 3M tape ben jij verzekerd van een LED-strip die nooit meer loslaat. Zorg voor een schone ondergrond.'
-          },
-          {
-            imageSrc: require('assets/icon/icons8-usb-on-50.svg'),
-            description: 'Dit set wordt bovendien geleverd met  een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.'
-          },
-          {
-            imageSrc: require('assets/icon/icons8-warranty-50.svg'),
-            description: 'Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.'
-          }
-      ]" />
+      <CTA to="/products/rgb-led-light-strip-5-meter-tv-strip-2m-combinatie-pakket">
+        Bekijk beste verkochte LED pakket
+      </CTA>
 
       <CenterTitle
         title="De voordelen van jouw nieuwe LED strips"
@@ -106,74 +96,44 @@
           }"
       />
 
-      <SingleImage
-        :image-src="require('assets/headers/led-pakket-2.jpg')"
-      />
+      <div class="mx-auto max-w-4xl lg:px-0">
+        <SingleImage :image-src="require('assets/photos/TV3.jpg')"
+                     description="<div class='font-bold text-2xl'>100% tevredenheidsgarantie.</div> Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden."
+        />
+      </div>
 
-      <CenterTitle title="Een complete set bestaat uit:" />
 
-      <CompleteSet
-        :left-data="[
-          {
-            title: 'Afstandsbediening',
-            description: 'Modern model'
-          },
-          {
-            title: 'Handleiding',
-            description: 'Nederlands, Engels, Duits en Frans'
-          },
-          {
-            title: 'Controller box',
-            description: 'Met 3 verschillende knoppen'
-          }
-        ]"
-        :image-src="require('assets/products/18.png')"
-        :right-data="[
-          {
-            title: 'De TV Strips',
-            description: 'IP20'
-          },
-          {
-            title: 'USB aansluiting',
-            description: 'Hoge kwaliteit kunststof'
-          },
-          {
-            title: 'Bedankt kaartje',
-            description: 'Omdat we blij met je zijn'
-          }
-        ]"
-      />
+      <div class="mx-auto max-w-4xl space-y-10 lg:px-0">
+        <CenterTitle title="Kies jou specifieke lengte" />
+        <Lenghts />
+      </div>
 
-      <SingleImage :image-src="require('assets/photos/TV3.jpg')"
-                   description="<div class='font-bold text-2xl'>100% tevredenheidsgarantie.</div> Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden."
-      />
-
-      <div class="mx-auto max-w-7xl lg:px-0">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div class="mx-auto max-w-4xl lg:px-0">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div class="relative flex justify-center default-gradient" style="border-radius: 20px;"
           >
-            <div class="h-full py-10 lg:py-24 flex flex-col" style="z-index: 1">
+            <div class="h-full py-6 flex flex-col" style="z-index: 1">
               <div class="flex items-center">
-                <img class="w-32 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" />
+                <img class="w-24 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" />
               </div>
-              <h2 class="text-white font-bold text-left md:text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
+              <h2 class="text-white font-bold text-left md:text-center text-sm uppercase tracking-wide pt-6 px-6 lg:px-20">
                 60 dagen gratis retourneren
               </h2>
-              <p class="text-white font-extralight text-left md:text-center pt-6 px-6 lg:px-20">
+              <p class="text-white font-extralight text-left md:text-center pt-2 px-6 lg:px-20 text-sm">
                 Omdat wij geloven in service, en jou willen voorzien van een risicoloze aankoop geven we in eerste instantie 60 dagen gratis retourneren.
               </p>
             </div>
           </div>
           <div class="relative flex justify-center default-gradient" style="border-radius: 20px;"
           >
-            <div class="h-full py-10 lg:py-24 flex flex-col" style="z-index: 1">
+            <div class="h-full py-6 flex flex-col" style="z-index: 1">
               <div class="flex items-center">
-                <img class="w-32 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" />
+                <img class="w-24 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" />
               </div>
-              <h2 class="text-white font-bold text-left md:text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
+              <h2 class="text-white font-bold text-left md:text-center text-sm uppercase tracking-wide pt-6 px-6 lg:px-20">
                 24/7 ondersteuning beschikbaar
               </h2>
-              <p class="text-white font-extralight text-left md:text-center pt-6 px-6 lg:px-20">
+              <p class="text-white font-extralight text-left md:text-center pt-2 px-6 lg:px-20 text-sm">
                 Lideka staat overigens 24/7 klaar om al jouw vragen te beantwoorden.
               </p>
             </div>
@@ -181,23 +141,10 @@
         </div>
       </div>
 
-      <LengthProducts
-        :collection="collection"
-        title="Uit welke lengtes kan je kiezen?"
-        description="Wij leveren pakketten van 3 meter, 5 meter, 10 meter, 15 meter, en 20 meter."
-      />
 
-      <CenterTitle
-        title="Bekijk ook eens onze andere soorten LED-strips:"
-      />
-
-      <OtherCollections
-        :collections="[
-            'rgb-ic-led-strips',
-            'rgb-led-strips',
-            'tv-led-strips'
-        ]"
-      />
+      <div class="mx-auto max-w-4xl lg:px-0">
+        <BlogList />
+      </div>
 
       <SmallCenterTitle
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
@@ -230,9 +177,17 @@ import SmallCenterTitle from "~/components/blocks/SmallCenterTitle.vue";
 import Usages from "~/components/blocks/Usages.vue";
 import TextWithImage from "~/components/blocks/TextWithImage.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
+import LongParagraph from "~/components/blocks/LongParagraph.vue";
+import CTA from "~/components/CTA.vue";
+import Lenghts from "~/components/Lenghts.vue";
+import BlogList from "~/components/BlogList.vue";
 
 export default Vue.extend({
   components: {
+    BlogList,
+    Lenghts,
+    CTA,
+    LongParagraph,
     TextWithImage,
     Usages,
     SmallCenterTitle,

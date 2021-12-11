@@ -122,11 +122,14 @@ export default Vue.extend({
       reviewByStars: {},
       showReviewForm: false,
       stars: [5,4,3,2,1],
-      isVideo,
     }
   },
 
   methods: {
+    doIsVideo(video) {
+      return isVideo(video);
+    },
+
     async fetchReviews() {
       this.reviewByStars = _.groupBy(this.reviews, 'stars');
     },

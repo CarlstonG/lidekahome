@@ -34,11 +34,13 @@
     "nuxt-precompress": "^0.5.9",
     "nuxt-shopify": "^1.10.10",
     "nuxt-ssr-cache": "^1.5.2",
+    "rellax": "^1.12.1",
     "sass-loader": "^10.2.0",
     "swiper": "^6.7.5",
     "vue-carousel": "^0.18.0",
     "vue-imgix": "^2.9.0",
     "vue-nl2br": "^0.1.2",
+    "vue-rellax": "^0.2.0",
     "vuelidate": "^0.7.6"
   },
   "devDependencies": {
@@ -55,6 +57,7 @@
     "imagemin-svgo": "^9.0.0",
     "lqip-loader": "^2.2.1",
     "node-sass": "^6.0.0",
+    "nuxt-use-motion": "^2.0.0-beta.5",
     "postcss": "^8.3.5",
     "responsive-loader": "^2.3.0",
     "sharp": "^0.28.3",

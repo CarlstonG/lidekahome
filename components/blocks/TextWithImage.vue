@@ -11,11 +11,11 @@
           <NuxtLink :to="url"
                     class="mt-3 inline-block shadow-md p-2 px-4 items-center justify-center border border-transparent rounded-full shadow-sm text-md font-medium text-white bg-indigo-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
           >
-            Meer informatie
+            {{urlText}}
           </NuxtLink>
         </div>
       </div>
-      <div :class="`flex items-center justify-center ${reverse ? 'order-first' : ''}`">
+      <div v-motion-fade-up :class="`flex items-center justify-center ${reverse ? 'order-first' : ''}`">
         <img :class="`${smallImage ? 'w-52' : ''} rounded-2xl ${mediumImage ? 'w-96' : ''}`" :src="imageSrc" :alt="imageAlt" />
       </div>
     </div>
@@ -58,6 +58,10 @@ export default Vue.extend({
     imageAlt: {
       type: String,
       required: true,
+    },
+    urlText: {
+      type: String,
+      default: () => 'Meer informatie'
     },
   }
 });

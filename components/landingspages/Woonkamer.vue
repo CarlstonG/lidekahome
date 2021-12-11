@@ -194,40 +194,6 @@
           }"
       />
 
-      <CenterTitle title="Een complete set bestaat uit:" />
-
-      <CompleteSet
-        :left-data="[
-          {
-            title: 'Afstandsbediening',
-            description: 'Modern model'
-          },
-          {
-            title: 'Handleiding',
-            description: 'Nederlands, Engels, Duits en Frans'
-          },
-          {
-            title: 'Controller box',
-            description: 'Met 3 verschillende knoppen'
-          }
-        ]"
-        :image-src="require('assets/products/18.png')"
-        :right-data="[
-          {
-            title: 'De TV Strips',
-            description: 'IP20'
-          },
-          {
-            title: 'USB aansluiting',
-            description: 'Hoge kwaliteit kunststof'
-          },
-          {
-            title: 'Bedankt kaartje',
-            description: 'Omdat we blij met je zijn'
-          }
-        ]"
-      />
-
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />

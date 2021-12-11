@@ -284,36 +284,6 @@
 
       <SmallCenterTitle title="Lideka staat overigens 24/7 klaar om al jouw vragen te beantwoorden."/>
 
-      <CenterTitle title="Een complete set bestaat uit:" />
-
-      <CompleteSet
-        :left-data="[
-          {
-            title: 'Afstandsbediening',
-            description: 'Modern model'
-          },
-          {
-            title: 'Handleiding',
-            description: 'Nederlands, Engels, Duits en Frans'
-          },
-          {
-            title: 'Controller box',
-            description: 'Met 3 verschillende knoppen'
-          }
-        ]"
-        :image-src="require('assets/products/18.png')"
-        :right-data="[
-          {
-            title: 'De LED Strip',
-            description: 'IP65'
-          },
-          {
-            title: 'Controller box',
-            description: 'Hoge kwaliteit kunststof'
-          },
-        ]"
-      />
-
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />

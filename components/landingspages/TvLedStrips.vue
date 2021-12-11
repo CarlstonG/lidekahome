@@ -3,7 +3,6 @@
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
         title="RGB TV Led strips | 16 miljoen kleuren | Complete sets"
-        description="TV LED-STRIPS"
         :imageSrc="require('assets/photos/TV-1.jpg')"
       />
 
@@ -33,24 +32,28 @@
 
       <VideoReviews />
 
-      <CenterTitle
-          title="Jouw nieuwe RGB led-strip is:"
-      />
+      <CTA to="/products/lideka-tv-led-strip-3-meter-usb-rgb-smart-verlichting">
+        Bekijk meest verkochte led strip
+      </CTA>
 
-      <Highlights :highlights="[
-          {
-            imageSrc: require('assets/icon/icons8-best-seller-50.svg'),
-            description: 'Door zijn bijzondere stevige dubbelzijge 3M tape ben jij verzekerd van een LED-strip die nooit meer loslaat. Zorg voor een schone ondergrond.'
-          },
-          {
-            imageSrc: require('assets/icon/icons8-usb-on-50.svg'),
-            description: 'Dit set wordt bovendien geleverd met  een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.'
-          },
-          {
-            imageSrc: require('assets/icon/icons8-warranty-50.svg'),
-            description: 'Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.'
-          }
-      ]" />
+<!--      <CenterTitle-->
+<!--          title="Jouw nieuwe RGB led-strip is:"-->
+<!--      />-->
+
+<!--      <Highlights :highlights="[-->
+<!--          {-->
+<!--            imageSrc: require('assets/icon/icons8-best-seller-50.svg'),-->
+<!--            description: 'Door zijn bijzondere stevige dubbelzijge 3M tape ben jij verzekerd van een LED-strip die nooit meer loslaat. Zorg voor een schone ondergrond.'-->
+<!--          },-->
+<!--          {-->
+<!--            imageSrc: require('assets/icon/icons8-usb-on-50.svg'),-->
+<!--            description: 'Dit set wordt bovendien geleverd met  een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.'-->
+<!--          },-->
+<!--          {-->
+<!--            imageSrc: require('assets/icon/icons8-warranty-50.svg'),-->
+<!--            description: 'Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.'-->
+<!--          }-->
+<!--      ]" />-->
 
       <div class="mx-auto ">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-10">
@@ -93,6 +96,10 @@
           </LongParagraph>
         </div>
       </div>
+
+      <CTA to="/products/lideka-tv-led-strip-3-meter-usb-rgb-smart-verlichting">
+        Bekijk meest verkochte led strip
+      </CTA>
 
       <SingleImage
         :image-src="require('assets/photos/remote.jpg')"
@@ -152,52 +159,9 @@
           :image-src="require('assets/photos/TV3.jpg')"
       />
 
-      <div class="mx-auto max-w-5xl">
-        <LongParagraph
-            title="Led verlichting"
-        >
-          <p class="text-white font-extralight">
-            De meeste mensen denken bij verlichting aan elektriciteit en de daaraan verbonden risico's, en het is waar dat elk elektrisch apparaat brand kan veroorzaken. Velen gebruiken ze zelfs als sfeerverlichting omdat ze vaak dimbaar zijn, en je veel meer keuze hebt in kleur. Ledverlichting is bijzonder duurzaam en wordt steeds vaker gebruikt in en om het huis. Lampen gaan langer mee dan gewone verlichtingsarmaturen en produceren minder warmte in het milieu.
-          </p>
-          <p class="text-white font-extralight">
-            LED lampen bevatten geen kwik, in tegenstelling tot fluorescentielampen die grote hoeveelheden kwik bevatten en kunnen versplinteren als ze op een harde vloer vallen of als er een dier op valt. Omdat dit soort ongelukken soms gebeuren, moeten deze lampen vanwege hun gevaarlijke bestanddelen met zorg worden weggegooid bij speciale recyclingcentra. Door het gebruik van LED-verlichting voor uw huis of bedrijf bespaart u niet alleen geld, maar beschermt u ook het milieu!
-          </p>
-          <p class="text-white font-extralight">
-            Dit zijn slechts enkele van de manieren waarop u de opwarming van de aarde kunt helpen voorkomen. Het gebruik van deze ongewone soorten lampen zal u helpen elektriciteit te besparen en tegelijkertijd de broeikasgassen te verminderen die bijdragen tot de klimaatverandering! LED-verlichting voor thuis of voor uw bedrijf is een geweldige manier om groen te zijn, omdat ze u helpen geld te besparen en tegelijkertijd de CO2-uitstoot te verminderen.
-          </p>
-          <p class="text-white font-extralight">
-            Led lampen worden niet beïnvloed door stroompieken, ze flikkeren niet bij 60 Hz zoals sommige fluorescentielampen doen, dus de meeste mensen merken het niet eens als ze worden ingeschakeld. Ze kunnen zonder afdekkingen worden gebruikt in afgesloten ruimtes, omdat er geen risico is op verwondingen door gebroken glas als zich onverwacht een defect voordoet. En in tegenstelling tot compacte fluorescentielampen die kwik bevatten, bevatten led lampen helemaal geen gevaarlijke stoffen.
-          </p>
-        </LongParagraph>
-      </div>
-
-      <div class="mx-auto max-w-5xl">
-        <LongParagraph
-            title="Led strip met afstandsbediening"
-        >
-          <p class="text-white font-extralight">
-            Deze led strip met afstandsbediening heeft maar liefst zestien miljoen kleuren mogelijkheden, je kunt echt alle kanten op. We raden je dan ook altijd aan om een led strip met afstandsbediening te nemen, zo kun je vanuit je luie stoel de kleuren veranderen, en bijvoorbeeld de strip aanzetten
-          </p>
-          <p class="text-white font-extralight">
-            <strong>Universele afstandsbediening</strong>
-          </p>
-          <p class="text-white font-extralight">
-            Lideka maakt gebruikt van een universele afstandsbediening, zo kun je al onze producten met dezelfde universele afstandsbediening bedienen. Let daarbij wel op dat je een wifi of bluetooth module hebt, beiden kunnen nog verschillen. Vaak zal een led strip met afstandsbediening een wifi module hebben.
-          </p>
-          <p class="text-white font-extralight">
-            <strong>Bediening via afstandsbediening</strong>
-          </p>
-          <p class="text-white font-extralight">
-            De bediening via afstandsbediening is makkelijker en sneller dan ooit. Vanwege zijn nieuwe formaat en nieuwe design kun je extra snel schakelen tussen gave kleuren en effecten.
-          </p>
-          <p class="text-white font-extralight">
-            <strong>Juiste afstandsbediening</strong>
-          </p>
-          <p class="text-white font-extralight">
-            Bij Lideka hoef jij je nooit geen zorgen te maken over de juiste afstandsbediening. Bij een compleet set zorgen wij altijd voor de beste componenten met de hoogste kwaliteit.
-          </p>
-        </LongParagraph>
-      </div>
+      <CTA to="/products/lideka-tv-led-strip-3-meter-usb-rgb-smart-verlichting">
+        Bekijk meest verkochte led strip
+      </CTA>
 
       <CenterTitle
           title="De voordelen van jouw nieuwe RGB TV LED-strip"
@@ -234,72 +198,18 @@
           }"
       />
 
-      <CenterTitle title="Een complete set bestaat uit:" />
-
-      <CompleteSet
-        :left-data="[
-          {
-            title: 'Afstandsbediening',
-            description: 'Modern model'
-          },
-          {
-            title: 'Handleiding',
-            description: 'Nederlands, Engels, Duits en Frans'
-          },
-          {
-            title: 'Controller box',
-            description: 'Met 3 verschillende knoppen'
-          }
-        ]"
-        :image-src="require('assets/products/5.png')"
-        :right-data="[
-          {
-            title: 'De TV Strips',
-            description: 'IP20'
-          },
-          {
-            title: 'USB aansluiting',
-            description: 'Hoge kwaliteit kunststof'
-          },
-          {
-            title: 'Bedankt kaartje',
-            description: 'Omdat we blij met je zijn'
-          }
-        ]"
-      />
-
-      <LongParagraph>
-        <p class="text-white font-extralight">
-          Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden.
-        </p>
-        <p class="text-white font-extralight">
-          Niet tevreden met jouw aankoop of loop je tegen problemen aan?
-        </p>
-        <p class="text-white font-extralight">
-          Wij betalen je het aankoopbedrag zonder probleem terug of zorgen voor een vervangend exemplaar.
-        </p>
-        <p class="text-white font-extralight">
-          <strong>Uit welke lengtes kan je kiezen?</strong>
-        </p>
-        <p class="text-white font-extralight">
-          Wij leveren <a href="/products/lideka-rgb-smart-tv-led-light-strip-3-meter-met-smart-app" class="link">TV Led strip</a> van 2 en 3 meter.
-        </p>
-        <p class="text-white font-extralight">
-          Lideka staat overigens <a href="/klantenservice" class="link">24/7</a> klaar om al jouw vragen te beantwoorden.
-        </p>
-      </LongParagraph>
-
       <SingleImage :image-src="require('assets/photos/tv-last.jpg')"
                    description="Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden.<br />
           Niet tevreden met jouw aankoop of loop je tegen problemen aan?<br />
           Wij betalen je het aankoopbedrag zonder probleem terug of zorgen voor een vervangend exemplaar."
       />
 
-      <LengthProducts
-        :collection="collection"
-        title="Uit welke lengtes kan je kiezen?"
-        description="Wij leveren TV Led strips van 2 en 3 meter."
+
+      <CenterTitle
+          title="Uit welke lengtes kan je kiezen?"
       />
+
+      <Lenghts />
 
       <CenterTitle
         title="Bekijk ook eens onze andere soorten LED-strips:"
@@ -313,6 +223,8 @@
         ]"
       />
 
+     <BlogList />
+
       <SmallCenterTitle
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
@@ -320,8 +232,6 @@
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
-
-      <QualityBlocks />
 
     </div>
   </div>
@@ -347,9 +257,15 @@ import Usages from "~/components/blocks/Usages.vue";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import QualityBlocks from "~/components/QualityBlocks.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
+import CTA from "~/components/CTA.vue";
+import Lenghts from "~/components/Lenghts.vue";
+import BlogList from "~/components/BlogList.vue";
 
 export default Vue.extend({
   components: {
+    BlogList,
+    Lenghts,
+    CTA,
     QualityBlocks,
     LongParagraph,
     Usages,

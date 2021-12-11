@@ -67,44 +67,6 @@
           }"
       />
 
-      <SingleImage
-        :image-src="require('assets/design/landings/tv-green.jpg')"
-      />
-
-      <CenterTitle title="Een complete set bestaat uit:" />
-
-      <CompleteSet
-        :left-data="[
-          {
-            title: 'Afstandsbediening',
-            description: 'Modern model'
-          },
-          {
-            title: 'Handleiding',
-            description: 'Nederlands, Engels, Duits en Frans'
-          },
-          {
-            title: 'Controller box',
-            description: 'Met 3 verschillende knoppen'
-          }
-        ]"
-        :image-src="require('assets/design/landings/tv-pakket.jpg')"
-        :right-data="[
-          {
-            title: 'De TV Strips',
-            description: 'IP20'
-          },
-          {
-            title: 'USB aansluiting',
-            description: 'Hoge kwaliteit kunststof'
-          },
-          {
-            title: 'Bedankt kaartje',
-            description: 'Omdat we blij met je zijn'
-          }
-        ]"
-      />
-
       <SingleImage :image-src="require('assets/design/landings/tv-bg.jpg')"
                    description="Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden.<br />
           Niet tevreden met jouw aankoop of loop je tegen problemen aan?<br />

@@ -54,3 +54,7 @@ export const isVideo = (filename) => {
   }
   return false;
 }
+
+export const hasNumber = (myString) => {
+  return /\d/.test(myString);
+}

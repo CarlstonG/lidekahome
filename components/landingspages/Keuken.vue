@@ -165,35 +165,6 @@
         </ul>
       </LongParagraph>
 
-
-      <CompleteSet
-          :left-data="[
-          {
-            title: 'Afstandsbediening',
-            description: 'Modern model'
-          },
-          {
-            title: 'Handleiding',
-            description: 'Nederlands, Engels, Duits en Frans'
-          },
-          {
-            title: 'Controller box',
-            description: 'Met 3 verschillende knoppen'
-          }
-        ]"
-          :image-src="require('assets/products/18.png')"
-          :right-data="[
-          {
-            title: 'De LED Strip',
-            description: 'IP65'
-          },
-          {
-            title: 'Adapter',
-            description: 'Hoge kwaliteit kunststof'
-          },
-        ]"
-      />
-
       <SingleImage :image-src="require('assets/design/landings/keuken/banner4.jpg')" />
 
       <LongParagraph

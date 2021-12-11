@@ -23,12 +23,6 @@ import DefaultModal from "~/components/DefaultModal.vue";
 export default Vue.extend({
   components: {DefaultModal, Notifications, Footer, Navigation, Smile, AddedToCartModal, RecentlyVisited},
 
-  data () {
-    return {
-      //
-    };
-  },
-
   computed: {
     ...mapGetters('shop/cart', [
       'count',
@@ -303,7 +297,7 @@ export default Vue.extend({
 }
 
 ._plant {
-  height: 375px;
+  height: 200px;
   background: linear-gradient(180deg, rgba(51, 177, 119, 0.45) 1.42%, rgba(102, 242, 175, 0.10) 95%);
   background-size: cover;
   border-radius: 20px;
@@ -316,7 +310,7 @@ export default Vue.extend({
 }
 
 ._audio {
-  height: 375px;
+  height: 200px;
   border-radius: 20px;
   background: linear-gradient(180deg, rgba(44, 175, 228, 0.35) 1.42%, rgba(192, 41, 255, 0.25) 95%);
 }
@@ -329,20 +323,20 @@ export default Vue.extend({
 }
 
 ._colors {
-  height: 375px;
+  height: 200px;
   border-radius: 20px;
   background: linear-gradient(180deg, rgba(44, 175, 228, 0.35) 1.42%, rgba(192, 41, 255, 0.25) 95%);
 }
 
 ._montage {
-  height: 375px;
+  height: 200px;
   border-radius: 20px;
   background: linear-gradient(180deg, rgba(44, 175, 228, 0.35) 1.42%, rgba(192, 41, 255, 0.25) 95%);
 }
 
 ._brightness {
   background: linear-gradient(180deg, rgba(44, 175, 228, 0.35) 1.42%, rgba(192, 41, 255, 0.25) 95%);
-  height: 375px;
+  height: 200px;
   border-radius: 20px;
 }
 

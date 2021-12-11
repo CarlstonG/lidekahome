@@ -212,36 +212,6 @@
         </p>
       </LongParagraph>
 
-      <CenterTitle title="Een complete set bestaat uit:" />
-
-      <CompleteSet
-          :left-data="[
-          {
-            title: 'Afstandsbediening',
-            description: 'Modern model'
-          },
-          {
-            title: 'Handleiding',
-            description: 'Nederlands, Engels, Duits en Frans'
-          },
-          {
-            title: 'Controller box',
-            description: 'Met 3 verschillende knoppen'
-          }
-        ]"
-          :image-src="require('assets/products/18.png')"
-          :right-data="[
-          {
-            title: 'De LED Strip',
-            description: 'IP65'
-          },
-          {
-            title: 'Adapter',
-            description: 'Hoge kwaliteit kunststof'
-          },
-        ]"
-      />
-
       <div class="mx-auto max-w-5xl">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <LongParagraph

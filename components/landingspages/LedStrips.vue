@@ -10,14 +10,14 @@
         <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/led-strip-video_1.mp4" type="video/mp4" />
       </video>
 
-      <div class="hidden md:block md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20">
-        <h1 class="mx-auto text-3xl text-white font-bold tracking-wide">
+      <div class="hidden md:block md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20 md:right-20">
+        <h1 class="mx-auto text-3xl text-white font-bold tracking-wide text-center">
           LED strips
         </h1>
       </div>
     </div>
 
-    <div class="mx-auto max-w-7xl mt-10 mb-10">
+    <div class="mx-auto max-w-7xl mt-10 mb-10 px-6 lg:px-0">
       <LongParagraph>
         <p class="text-white font-extralight">
           Led-strips zijn niet meer uit jouw huiskamer weg te denken en worden als huisdecoratie steeds
@@ -64,66 +64,73 @@
 
       <VideoReviews />
 
-      <TextWithImage
-          title="LED-strip pakketten"
-          imageAlt="LED-strip pakketten"
-          :imageSrc="require('assets/design/landings/led-pakketten/pakket-1.jpg')"
-          url="/"
-      >
-        <p class="text-white font-extralight">
-          Voor de echte liefhebbers hebben we complete LED pakketten.
-          Deze LED pakketten bestaan uit TV Led strips, en RGB Led strips.
-          Beiden soorten bestaan uit complete sets.
-        </p>
-        <p class="text-white font-extralight">
-          Met een uitstekende plakstrip die nooit meer laat, en eindeloze kleurencombinaties is dit een bijzonder pakket.
-        </p>
-      </TextWithImage>
+      <div class="max-w-5xl mx-auto">
+        <LongParagraph
+            title="Wat zijn LED strips"
+            :bg-color="false"
+        >
+          <p class="text-white font-extralight">
+            LED strips, ook wel geschreven als ledstrips, zijn lichtsnoeren met lichtcomponenten. LED staat voor Light Emitting Diode, vrij vertaald als lichtgevende lampjes. Het kenmerkende element van een LED strip is de
+            <strong>veelzijdigheid</strong>. Wist je bijvoorbeeld dat je binnen het kleurenpalet keuze hebt uit meer dan
+            <strong>16 miljoen kleuren</strong> en tinten? Het zorgt ervoor dat LED verlichting in vrijwel elke ruimte een sfeervolle toepassing kent.
+          </p>
+          <p class="text-white font-extralight">
+            Voorbeelden zijn LED strips in de
+            <a href="/categorie/led-strip-badkamer" class="link">badkamer</a>,
+            <a href="/categorie/led-strip-slaapkamer" class="link">slaapkamer</a> of
+            <a href="/categorie/led-strip-woonkamer" class="link">woonkamer</a>.
+            Je kunt de ledstrips tegen het <a href="/categorie/led-strip-plafond" class="link">plafond</a> installeren, of juist langs de rand van de spiegel in de badkamer. Zelfs als vervanging van de bestaande verlichting in de ruimte!
+          </p>
+          <p class="text-white font-extralight">
+            Steeds meer mensen gebruiken LED strips buiten. En waarom ook niet? We kopen tegenwoordig de mooiste tuinsets om buiten te kunnen zitten, en
+            <a href="/blog/alles-over-led-verlichting-als-sfeerverlichting" class="link">sfeervolle verlichting</a> hoort daar uiteraard bij.
+          </p>
+          <p class="text-white font-extralight">
+            LED strips zijn eenvoudig te bevestigen langs de onderkant van het dak, en blijven dankzij een
+            <strong>stevige plakrand</strong> altijd op hun plek hangen. Zo creëer je ook buiten een
+            <strong>unieke sfeer</strong>, waarmee in de eigen tuin loungen nog leuker wordt. Het gebruik van deze led strips gaat vaak via een
+            <strong>afstandsbediening</strong>, en <strong>app</strong>.
+          </p>
+        </LongParagraph>
+      </div>
 
-      <TextWithImage
-          title="RGB LED-strip"
-          imageAlt="RGB LED-strip"
-          :imageSrc="require('assets/design/landings/led-pakketten/pakket-2.jpg')"
-          url="/"
-          reverse="true"
-      >
-        <p class="text-white font-extralight">
-          De RGB LED-strip beschikt over een breed scala aan kleuren, rood, blauw, groen het zit er allemaal bij. Kies, combineer en bepaal zelf wanneer je welke combinatie wilt zien.
-        </p>
-        <p class="text-white font-extralight">
-          Door middel van een moderne en geavanceerde afstandsbediening is het makkelijker dan ooit om de LED-strips te bedienen, maar dat niet alleen, onze uitgebreide app beschikt ook over oneindige functies en mogelijkheden.
-        </p>
-      </TextWithImage>
+      <CTA to="/products/rgb-led-light-strip-15-meter-smart-verlichting">
+        Bekijk meest verkochte led strip
+      </CTA>
 
-      <TextWithImage
-          title="TV LED-strip"
-          imageAlt="TV LED-strip"
-          :imageSrc="require('assets/design/landings/led-pakketten/pakket-3.jpg')"
-          url="/"
-      >
-        <p class="text-white font-extralight">
-          De TV LED-strip beschikt over een enorm stevige plakstrip, waardoor hij nooit meer loslaat. Door de flexibiliteit van de strip was het nog nooit zo makkelijk om deze te installeren.
-        </p>
-        <p class="text-white font-extralight">
-          Met een naadloze overgang op het geluid van de TV, Computer of Game console, ben jij verzekerd van een unieke kijk of speelervaring!
-        </p>
-      </TextWithImage>
+      <SingleImage :image-src="require('assets/photos/Woonkamer-3.jpg')" />
 
-      <Highlights :highlights="[
-          {
-            imageSrc: require('assets/icon/icons8-best-seller-50.svg'),
-            description: 'Door zijn bijzondere stevige dubbelzijge 3M tape ben jij verzekerd van een LED-strip die nooit meer loslaat. Zorg voor een schone ondergrond.'
-          },
-          {
-            imageSrc: require('assets/icon/icons8-usb-on-50.svg'),
-            description: 'Dit set wordt bovendien geleverd met  een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.'
-          },
-          {
-            imageSrc: require('assets/icon/icons8-warranty-50.svg'),
-            description: 'Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.'
-          }
-      ]" />
+      <div class="mx-auto max-w-7xl">
+        <h2 class="mx-auto text-3xl text-center text-white font-bold">
+          De 4 meest populaire soorten LED strips,
+        </h2>
+        <p class="text-white text-2xl text-center mt-2">
+          welke kies jij?
+        </p>
+      </div>
 
+      <CategorySlider />
+
+      <CTA to="/products/rgb-led-light-strip-15-meter-smart-verlichting">
+        Bekijk meest verkochte led strip
+      </CTA>
+
+<!--      <Highlights :highlights="[-->
+<!--          {-->
+<!--            imageSrc: require('assets/icon/icons8-best-seller-50.svg'),-->
+<!--            description: 'Door zijn bijzondere stevige dubbelzijge 3M tape ben jij verzekerd van een LED-strip die nooit meer loslaat. Zorg voor een schone ondergrond.'-->
+<!--          },-->
+<!--          {-->
+<!--            imageSrc: require('assets/icon/icons8-usb-on-50.svg'),-->
+<!--            description: 'Dit set wordt bovendien geleverd met  een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.'-->
+<!--          },-->
+<!--          {-->
+<!--            imageSrc: require('assets/icon/icons8-warranty-50.svg'),-->
+<!--            description: 'Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.'-->
+<!--          }-->
+<!--      ]" />-->
+
+      <SingleImage :image-src="require('assets/photos/Woonkamer-2.jpg')" />
 
       <ProductsWithBackground
         title="Thuis genieten van die fijne lounge vibes? Bestel jouw RGB led-strip vandaag nog!"
@@ -165,74 +172,36 @@
           }"
       />
 
-      <SingleImage
-        :image-src="require('assets/photos/Woonkamer-1.jpg')"
-      />
-
-      <CenterTitle title="Een complete set bestaat uit:" />
-
-      <CompleteSet
-        :left-data="[
-          {
-            title: 'Afstandsbediening',
-            description: 'Modern model'
-          },
-          {
-            title: 'Handleiding',
-            description: 'Nederlands, Engels, Duits en Frans'
-          },
-          {
-            title: 'Controller box',
-            description: 'Met 3 verschillende knoppen'
-          }
-        ]"
-        :image-src="require('assets/products/1.png')"
-        :right-data="[
-          {
-            title: 'De TV Strips',
-            description: 'IP20'
-          },
-          {
-            title: 'USB aansluiting',
-            description: 'Hoge kwaliteit kunststof'
-          },
-          {
-            title: 'Bedankt kaartje',
-            description: 'Omdat we blij met je zijn'
-          }
-        ]"
-      />
-
       <SingleImage :image-src="require('assets/photos/TV3.jpg')"
                    description="<div class='font-bold text-2xl'>100% tevredenheidsgarantie.</div> Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden."
       />
 
-      <div class="mx-auto max-w-7xl lg:px-0">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div class="mx-auto max-w-4xl lg:px-0">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div class="relative flex justify-center default-gradient" style="border-radius: 20px;"
           >
-            <div class="h-full py-10 lg:py-24 flex flex-col" style="z-index: 1">
+            <div class="h-full py-6 flex flex-col" style="z-index: 1">
               <div class="flex items-center">
-                <img class="w-32 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" />
+                <img class="w-24 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" />
               </div>
-              <h2 class="text-white font-bold text-left md:text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
+              <h2 class="text-white font-bold text-left md:text-center text-sm uppercase tracking-wide pt-6 px-6 lg:px-20">
                 60 dagen gratis retourneren
               </h2>
-              <p class="text-white font-extralight text-left md:text-center pt-6 px-6 lg:px-20">
+              <p class="text-white font-extralight text-left md:text-center pt-2 px-6 lg:px-20 text-sm">
                 Omdat wij geloven in service, en jou willen voorzien van een risicoloze aankoop geven we in eerste instantie 60 dagen gratis retourneren.
               </p>
             </div>
           </div>
           <div class="relative flex justify-center default-gradient" style="border-radius: 20px;"
           >
-            <div class="h-full py-10 lg:py-24 flex flex-col" style="z-index: 1">
+            <div class="h-full py-6 flex flex-col" style="z-index: 1">
               <div class="flex items-center">
-                <img class="w-32 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" />
+                <img class="w-24 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" />
               </div>
-              <h2 class="text-white font-bold text-left md:text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
+              <h2 class="text-white font-bold text-left md:text-center text-sm uppercase tracking-wide pt-6 px-6 lg:px-20">
                 24/7 ondersteuning beschikbaar
               </h2>
-              <p class="text-white font-extralight text-left md:text-center pt-6 px-6 lg:px-20">
+              <p class="text-white font-extralight text-left md:text-center pt-2 px-6 lg:px-20 text-sm">
                 Lideka staat overigens 24/7 klaar om al jouw vragen te beantwoorden.
               </p>
             </div>
@@ -240,55 +209,56 @@
         </div>
       </div>
 
-      <LengthProducts
-        :collection="collection"
-        title="Uit welke lengtes kan je kiezen?"
-        description="Wij leveren pakketten van 3 meter, 5 meter, 10 meter, 15 meter, en 20 meter."
-      />
+      <CenterTitle title="Kies jou specifieke lengte" />
+      <Lenghts />
 
-      <CenterTitle
-        title="Bekijk ook eens onze andere soorten LED-strips:"
-      />
+<!--      <CenterTitle-->
+<!--        title="Bekijk ook eens onze andere soorten LED-strips:"-->
+<!--      />-->
 
-      <OtherCollections
-        :collections="[
-            'led-pakketten',
-            'rgb-led-strips',
-            'tv-led-strips'
-        ]"
-      />
+<!--      <OtherCollections-->
+<!--        :collections="[-->
+<!--            'led-pakketten',-->
+<!--            'rgb-led-strips',-->
+<!--            'tv-led-strips'-->
+<!--        ]"-->
+<!--      />-->
+
+      <SingleImage :image-src="require('assets/photos/TV-1.jpg')" />
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-          title="LED Strips"
-          :bg-color="true"
+            title="RGB ledstrips"
+            :bg-color="true"
         >
           <p class="text-white font-extralight">
-            LED strips, ook wel geschreven als ledstrips, zijn lichtsnoeren met lichtcomponenten. LED staat voor Light Emitting Diode, vrij vertaald als lichtgevende lampjes. Het kenmerkende element van een LED strip is de
-            <strong>veelzijdigheid</strong>. Wist je bijvoorbeeld dat je binnen het kleurenpalet keuze hebt uit meer dan
-            <strong>16 miljoen kleuren</strong> en tinten? Het zorgt ervoor dat LED verlichting in vrijwel elke ruimte een sfeervolle toepassing kent.
+            RGB-led verlichting combineert rode, groene en blauwe led-lampjes in één behuizing en vormt honderden verschillende lichttinten door deze drie kleuren te mengen. Zo stel jij jouw favoriete kleuren samen wanneer je maar wilt en geniet je iedere keer weer van een unieke sfeer.
           </p>
           <p class="text-white font-extralight">
-            Voorbeelden zijn LED strips in de
-            <a href="/categorie/led-strip-badkamer" class="link">badkamer</a>,
-            <a href="/categorie/led-strip-slaapkamer" class="link">slaapkamer</a> of
-            <a href="/categorie/led-strip-woonkamer" class="link">woonkamer</a>.
-            Je kunt de ledstrips tegen het <a href="/categorie/led-strip-plafond" class="link">plafond</a> installeren, of juist langs de rand van de spiegel in de badkamer. Zelfs als vervanging van de bestaande verlichting in de ruimte!
+            Deze stijlvolle led set wordt geleverd inclusief installatiemateriaal, IP65-waterproof bescherming en led lampjes van de hoogste kwaliteit zodat je jouw aankoop nog jarenlang kunt gebruiken. Toch niet tevreden? Lideka® garandeert jou van een 2-jarige garantie.
           </p>
-          <p class="text-white font-extralight">
-            Steeds meer mensen gebruiken LED strips buiten. En waarom ook niet? We kopen tegenwoordig de mooiste tuinsets om buiten te kunnen zitten, en
-            <a href="/blog/alles-over-led-verlichting-als-sfeerverlichting" class="link">sfeervolle verlichting</a> hoort daar uiteraard bij.
+          <p class="text-white font-bold">
+            Verkrijgbaar in:
           </p>
-          <p class="text-white font-extralight">
-            LED strips zijn eenvoudig te bevestigen langs de onderkant van het dak, en blijven dankzij een
-            <strong>stevige plakrand</strong> altijd op hun plek hangen. Zo creëer je ook buiten een
-            <strong>unieke sfeer</strong>, waarmee in de eigen tuin loungen nog leuker wordt. Het gebruik van deze led strips gaat vaak via een
-            <strong>afstandsbediening</strong>, en <strong>app</strong>.
-          </p>
+          <ul class="text-white font-extralight">
+            <li>
+              <NuxtLink to="/products/rgb-led-light-strip-3-meter-smart-verlichting" class="link">3 meter: 90 Leds</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/products/rgb-led-light-strip-5-meter-smart-verlichting" class="link">5 meter: 300 Leds</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/products/rgb-led-light-strip-10-meter-smart-verlichting" class="link">10 meter: 300 Leds</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/products/rgb-led-light-strip-15-meter-smart-verlichting" class="link">15 meter: 270 Leds</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/products/rgb-led-light-strip-20-meter-smart-verlichting" class="link">20 meter: 270 Leds</NuxtLink>
+            </li>
+          </ul>
         </LongParagraph>
       </div>
-
-      <SingleImage :image-src="require('assets/photos/TV-1.jpg')" />
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
@@ -297,33 +267,31 @@
         >
           <p class="text-white font-extralight">
             Net als bij een standaard model vormt de
-            <a href="/categorie/rgb-ic-led-strips" class="link">RGB-IC led-strip</a> alle mogelijke kleurtinten, maar dan met schitterende
-            <strong>extra lichteffecten</strong>. Deze splinternieuwe vorm van led licht wordt ook wel ‘Dreamcolor Led’ genoemd en is razend populair bij onder Amerikaanse TikTokkers.
-            Van <strong>regenboog patronen</strong> tot <strong>schietende leds</strong> of <strong>dromerige kleuren</strong>, met deze gloednieuwe editie is het mogelijk!
+            <NuxtLink class="link" to="/categorie/rgb-ic-led-strips">RGB-IC led-strip</NuxtLink> alle mogelijke kleurtinten, maar dan met schitterende <strong>extra lichteffecten</strong>. Deze splinternieuwe vorm van led licht wordt ook wel ‘Dreamcolor Led’ genoemd en is razend populair bij onder Amerikaanse TikTokkers. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe editie is het mogelijk!
           </p>
           <p class="text-white font-extralight">
             Naast deze extra features werkt de RGB-IC uitvoering net als een traditionele led-strip. Zo ben je verzekerd van 2 jaar garantie, IP65-waterproof bescherming en led-lampjes van de hoogste kwaliteit.
           </p>
-          <p class="text-white font-extralight">
-            Verkrijgbaar in
+          <p class="text-white font-bold">
+            RGBIC
           </p>
-          <ul class="text-white font-extralight no-list-type">
-            <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8"
-                                                         src="~assets/icon/icons8-checkmark.svg"/><span
-                class="tracking-wide text-gray-300 uppercase font-bold">5 meter</span>
+          <ul class="text-white font-extralight">
+            <li>
+              <NuxtLink to="/products/rgb-ic-led-light-strip-5-meter-smart-verlichting" class="link">5 meter: 150 Leds</NuxtLink>
             </li>
-            <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8"
-                                                         src="~assets/icon/icons8-checkmark.svg"/><span
-                class="tracking-wide text-gray-300 uppercase font-bold">10 meter</span>
+            <li>
+              <NuxtLink to="/products/rgb-ic-led-light-strip-10-meter-smart-verlichting" class="link">10 meter: 300 Leds</NuxtLink>
             </li>
           </ul>
-          <p>
-            <a href="/categorie/led-strip-badkamer" class="link">
-              Extra sfeer in de badkamer? Bekijk snel onze specifieke badkamerverlichting
-            </a>
-          </p>
         </LongParagraph>
       </div>
+
+      <CTA to="/categorie/rgb-ic-led-strips">
+        Bekijk RGB-IC LED-strips
+      </CTA>
+
+
+      <SingleImage :image-src="require('assets/photos/slaapkamer-indirect.jpg')" />
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
@@ -342,21 +310,23 @@
           <p class="text-white font-extralight">
             De set wordt bovendien geleverd met <strong>dubbelzijdig tape</strong> en een directe <strong>USB</strong>-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.
           </p>
-          <p class="text-white font-extralight">
-            Verkrijgbaar in
+          <p class="text-white font-bold">
+            USB
           </p>
-          <ul class="text-white font-extralight no-list-type">
-            <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8"
-                                                         src="~assets/icon/icons8-checkmark.svg"/><span
-                class="tracking-wide text-gray-300 uppercase font-bold">2 meter</span>
+          <ul class="text-white font-extralight">
+            <li>
+              <NuxtLink to="/products/lideka-tv-led-strip-2-meter-usb-rgb-smart-verlichting" class="link">2 meter: 60 Leds</NuxtLink>
             </li>
-            <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8"
-                                                         src="~assets/icon/icons8-checkmark.svg"/><span
-                class="tracking-wide text-gray-300 uppercase font-bold">3 meter</span>
+            <li>
+              <NuxtLink to="/products/lideka-tv-led-strip-3-meter-usb-rgb-smart-verlichting" class="link">3 meter: 90 Leds</NuxtLink>
             </li>
           </ul>
         </LongParagraph>
       </div>
+
+      <CTA to="/categorie/tv-led-strips">
+        Bekijk TV LED-strips
+      </CTA>
 
       <SingleImage :image-src="require('assets/photos/Badkamer-2.jpg')" />
 
@@ -465,6 +435,12 @@
         </LongParagraph>
       </div>
 
+      <CTA to="/product/led-strip-10-meter">
+        Bekijk best verkochte LED-strips
+      </CTA>
+
+      <SingleImage :image-src="require('assets/photos/keuken.jpg')" />
+
       <div class="max-w-5xl mx-auto">
         <LongParagraph
             title="Voordelen LED strips"
@@ -498,13 +474,12 @@
           <p class="text-white font-extralight">
             Een ander leuk voordeel is dat het licht mooi egaal verdeeld wordt over de ruimte waar je de led strip geplaatst hebt.
           </p>
-          <p class="text-white font-extralight">
-            <a href="/products/led-strip-10-meter" class="link">
-              Bekijk ons meest verkochte product
-            </a>
-          </p>
         </LongParagraph>
       </div>
+
+      <CTA to="/product/led-strip-10-meter">
+        Bekijk best verkochte LED-strips
+      </CTA>
 
       <SingleImage :image-src="require('assets/photos/keuken.jpg')" />
 
@@ -535,6 +510,12 @@
           </p>
         </LongParagraph>
       </div>
+
+      <CTA to="/product/led-strip-10-meter">
+        Bekijk best verkochte LED-strips
+      </CTA>
+
+      <SingleImage :image-src="require('assets/photos/Badkamer-4.jpg')" />
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
@@ -580,6 +561,10 @@
           </p>
         </LongParagraph>
       </div>
+
+      <CTA to="/product/led-strip-10-meter">
+        Bekijk best verkochte LED-strips
+      </CTA>
 
       <SingleImage :image-src="require('assets/photos/slaapkamer-wit.jpg')" />
 
@@ -632,6 +617,10 @@
         </LongParagraph>
       </div>
 
+      <CTA to="/product/led-strip-10-meter">
+        Bekijk best verkochte LED-strips
+      </CTA>
+
       <SingleImage :image-src="require('assets/photos/tv-last.jpg')" />
 
       <div class="max-w-5xl mx-auto">
@@ -663,104 +652,11 @@
         </LongParagraph>
       </div>
 
-      <CenterTitle title="Verschillende soorten verlichting" />
+      <CTA to="/product/led-strip-10-meter">
+        Bekijk best verkochte LED-strips
+      </CTA>
 
-      <div class="max-w-5xl mx-auto">
-        <LongParagraph
-            title="Indirecte verlichting"
-            :bg-color="true"
-        >
-          <p class="text-white font-extralight">
-            Indirecte verlichting is niet meer zo populair als vroeger. Maar voor wie op zoek is naar een <strong>romantische omgeving</strong>, kan indirecte verlichting de juiste manier zijn.
-          </p>
-          <p class="text-white font-extralight">
-            Indirect licht is vaak zachter, maar kan ook dramatische effecten hebben met kleur en lichtintensiteit. Een goed voorbeeld hiervan zou het gebruik van kaarsen zijn in een kamer die wordt verlicht door lampen aan weerszijden in plaats van bovenlichten of tafellampen in de buurt van waar mensen samenkomen.
-          </p>
-          <p class="text-white font-extralight">
-            Dit type verlichting creëert een sfeer die tegelijkertijd <strong>zacht en levendig</strong> is. Het indirecte licht weerkaatst op muren en andere oppervlakken en voegt diepte en dimensie toe aan voorwerpen in het zicht, zoals schilderijen, beeldhouwwerk, meubels en meer. Indirecte verlichting kan zelfs stemmingen versterken zoals romantiek of intimiteit als u uw verbeelding.
-          </p>
-        </LongParagraph>
-      </div>
-
-      <div class="max-w-5xl mx-auto">
-        <LongParagraph
-            title="Directe verlichting"
-            :bg-color="true"
-        >
-          <p class="text-white font-extralight">
-            Directe verlichting is wat u doorgaans ziet als de <strong>meest voorkomende vorm</strong> van verlichting (bv. tafellampen, plafondlampen), die zorgt voor taakverlichting en algemene verlichting van de ruimte. Directe verlichting kan ook dramatisch zijn, afhankelijk van grootte, type en aantal van de gebruikte armaturen.
-          </p>
-        </LongParagraph>
-      </div>
-
-      <div class="max-w-5xl mx-auto">
-        <LongParagraph
-            title="Decorative verlichting"
-            :bg-color="true"
-        >
-          <p class="text-white font-extralight">
-            Decoratieve verlichting is een geweldige manier om <strong>warmte en karakter</strong> aan een ruimte toe te voegen. De beste manier om dit te doen is gebruik te maken van indirecte verlichtingsarmaturen, zoals kroonluchters, tafellampen, wandkandelaars of muur kandelaars.
-          </p>
-          <p class="text-white font-extralight">
-            Bij deze armaturen kunnen kappen op verschillende manieren worden gebruikt om <strong>drama of zachtheid</strong> toe te voegen, afhankelijk van waar de inrichter de voorkeur aan geeft. In het algemeen moeten de lampenkappen qua kleur en textuur dicht bij de omringende muren liggen.
-          </p>
-          <p class="text-white font-extralight">
-            Een andere geweldige manier om karakter en warmte toe te voegen is het gebruik van <strong>tafellampen met schaduw.</strong> De kleur van de lampenkappen kan gemakkelijk worden aangepast om de sfeer in de kamer te veranderen. Een warme, amberkleurige tint geeft een ruimte een <strong>intieme sfeer</strong>, terwijl koele blauwe tinten een formele of professionele uitstraling kunnen geven.
-          </p>
-          <p class="text-white font-extralight">
-            <a href="/blog/tv-led-strips-decoratief-en-rustig-voor-de-ogen" class="link">
-              Benieuwd wat TV led strips voor jou kunnen doen? Lees nu onze blog over TV Led-strips
-            </a>
-          </p>
-        </LongParagraph>
-      </div>
-
-      <div class="max-w-5xl mx-auto">
-        <LongParagraph
-            title="Voor- en nadelen aan elk type verlichting"
-            :bg-color="true"
-        >
-          <p class="text-white font-extralight">
-            De het belangrijkste voordeel van het gebruik van directe verlichting is dat het een ruime hoeveelheid licht geeft voor
-            <strong>praktische doeleinden</strong>, zoals het lezen van een boek of koken. De meeste mensen geven om deze reden de voorkeur aan tafellampen of plafondlampen in hun woonruimte.
-          </p>
-          <p class="text-white font-extralight">
-            Het grootste <strong>nadeel</strong> van directe verlichting is dat het soms <strong>te hard en oncomfortabel</strong> kan zijn. Mensen vinden zichzelf vaak loensen of een hand ophouden om het licht te blokkeren, omdat het recht op hen afkomt.
-          </p>
-          <p class="text-white font-extralight">
-            Het <strong>belangrijkste voordeel</strong> van het gebruik van indirecte verlichting is dat het een sfeer schept die veel mensen als <strong>ontspannend ervaren</strong> en die bevorderlijk is voor overpeinzingen of gesprekken tijdens rustige momenten.
-          </p>
-          <p class="text-white font-extralight">
-            Een <strong>ander voordeel</strong> van indirecte verlichting is dat het een zeer <strong>gelijkmatige verdeling</strong> van het licht geeft, waardoor kleine ruimten ruimer kunnen aanvoelen.
-          </p>
-          <p class="text-white font-extralight">
-            Indirecte verlichting is ook een doeltreffende manier om bepaalde voorwerpen of kunstwerken te belichten zonder er <strong>schaduwen op te werpen</strong>, wat het contrast en de definitie vermindert. Dit is vooral belangrijk bij antiquiteiten die gevoelig zijn voor warmte of extreme temperatuurschommelingen, omdat elk type verlichting (ook indirecte verlichting) warmte aan het object zal toevoegen.
-          </p>
-          <p class="text-white font-extralight">
-            Het <strong>grootste nadeel</strong> van indirecte verlichting is dat het <strong>niet veel
-            licht</strong> geeft voor praktische doeleinden, zoals lezen of schrijven. De hoeveelheid licht die
-            het geeft is het meest geschikt om een ruimte karakter te geven in plaats van deze volledig te verlichten. Dit kan worden bereikt door tafellampen met gekleurde kappen te gebruiken of licht kandelaars aan de muren.
-          </p>
-          <p class="text-white font-extralight">
-            Decoratieve verlichting heeft vele voor- en nadelen, maar <strong>het belangrijkste voordeel</strong> van decoratieve of indirecte verlichting is dat het een <strong>sfeer in een ruimte kan scheppen</strong> die veel mensen ontspannend vinden.
-          </p>
-          <p class="text-white font-extralight">
-            Dit komt omdat het licht uit alle hoeken van de kamer komt, in plaats van uit één enkele richting, en over het algemeen naar buiten straalt en weerkaatst op muren en andere oppervlakken in plaats van recht op u af te komen zoals direct licht doet.
-          </p>
-          <p class="text-white font-extralight">
-            Een groot nadeel van decoratieve verlichting is dat het niet genoeg lichtsterkte biedt voor praktische doeleinden, zoals het lezen van de krant of het bereiden van een maaltijd. De lampen die bij dit soort verlichting worden gebruikt, bevatten meestal niet veel lumen (lichtintensiteit).
-          </p>
-          <p class="text-white font-extralight">
-            Een goed verlichte kamer die door dit soort verlichting wordt gecreëerd, zou vooral goed zijn om te gebruiken <strong>voor sfeer</strong> of als een aparte ruimte die zo nodig voor andere doeleinden kan worden gebruikt.
-          </p>
-          <p class="text-white font-extralight">
-            Hoewel decoratieve verlichting niet ideaal is voor praktische doeleinden, kan zij <strong>een sfeervolle en romantische achtergrond</strong> bieden voor bijna elke omgeving. De sfeer in de kamer kan gemakkelijk worden aangepast door de kleur of tint van de lampen te veranderen (als er meerdere lampen zijn).
-          </p>
-          <p class="text-white font-extralight">
-            Bijvoorbeeld, warm oranje of amberkleurige tinten worden vaak gebruikt in <strong>woonkamers</strong> om een gezellige of intieme sfeer te creëren. Een <strong>koele blauwe tint</strong> kan worden gebruikt in een formele eetkamer voor een elegante look die perfect is voor diners.
-          </p>
-        </LongParagraph>
-      </div>
+      <SingleImage :image-src="require('assets/photos/Woonkamer-1.jpg')" />
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
@@ -793,7 +689,58 @@
         </LongParagraph>
       </div>
 
+      <CTA to="/product/led-strip-10-meter">
+        Bekijk best verkochte LED-strips
+      </CTA>
 
+      <SingleImage :image-src="require('assets/photos/rgb-slaapkamer.jpg')" />
+
+      <div class="max-w-5xl mx-auto">
+        <LongParagraph
+            title="Strip lights"
+            :bg-color="true"
+        >
+          <p class="text-white font-extralight">
+            In landen zoals amerika hoor je vaak de term ''strip lights'' vallen, dat is een andere benaming voor 'led strips'. Er wordt eigenlijk precies hetzelfde bedoeld, het wordt alleen iets anders uitgedrukt.
+          </p>
+          <p class="text-white font-extralight">
+            Er zijn wel verschillende soorten strip lights, maar dat valt ook weer onder led strips. Zo zijn er ook nog andere synoniemen voor strip lights, zoals: light strip. Het komt uiteindelijk allemaal op hetzelfde neer.
+          </p>
+        </LongParagraph>
+      </div>
+
+      <div class="max-w-5xl mx-auto">
+        <LongParagraph
+            title="Digitale ledstrips"
+            :bg-color="true"
+        >
+          <p class="text-white font-extralight">
+            Je ziet soms de term digitaal voorbij komen, we leggen je graag uit wat dat precies inhoudt zodat je precies waar je op moet letten als aan het shoppen bent.
+          </p>
+          <p class="text-white font-extralight">
+            Digitaal betekent heel simpel dat de verlichting te besturen is via een app, dat kan dan via verschillende apparaten zijn. In dit geval gaat het dan om digitale WS2812b ledstrips. Jouw nieuwe artikel heeft een built-in RGBIC chip.
+          </p>
+        </LongParagraph>
+      </div>
+
+      <div class="max-w-5xl mx-auto">
+        <LongParagraph
+            title="Ledstrip voor bar"
+            :bg-color="true"
+        >
+          <p class="text-white font-extralight">
+            Ook is dit artikel meer dan geschikt voor een bar, vanwege het <strong>ijzersterke 3M tape</strong> en zijn hoge helderheid is hij prima geschikt.
+          </p>
+        </LongParagraph>
+      </div>
+
+      <CTA to="/product/led-strip-10-meter">
+        Bekijk best verkochte LED-strips
+      </CTA>
+
+      <SingleImage :image-src="require('assets/photos/Bed-2.jpg')" />
+
+     <BlogList />
 
       <SmallCenterTitle
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
@@ -827,9 +774,16 @@ import TextWithImage from "~/components/blocks/TextWithImage.vue";
 import {getCollection} from "~/services/ApiService";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
+import CTA from "~/components/CTA.vue";
+import CategorySlider from "~/components/CategorySlider.vue";
+import Lenghts from '~/components/Lenghts.vue';
+import BlogList from "~/components/BlogList.vue";
 
 export default Vue.extend({
   components: {
+    BlogList,
+    CategorySlider,
+    CTA,
     VideoReviews,
     LongParagraph,
     TextWithImage,
@@ -847,7 +801,8 @@ export default Vue.extend({
     CenterParagraph,
     Banner,
     ProductItem,
-    ProductItemGradient
+    ProductItemGradient,
+    Lenghts
   },
   props: {
     collection: {
@@ -871,29 +826,38 @@ export default Vue.extend({
 
   methods: {
     async getCollection() {
-      this.collection1 = await getCollection('rgb-led-strips', {
-        reverseImages: true,
-        sortKey: 'PRICE',
-        reverse: true
-      });
+      const [
+          col1,
+          col2,
+          col3,
+          col4
+      ] = await Promise.all([
+        await getCollection('rgb-led-strips', {
+          reverseImages: true,
+          sortKey: 'PRICE',
+          reverse: true
+        }),
+        await getCollection('tv-led-strips', {
+          reverseImages: true,
+          sortKey: 'PRICE',
+          reverse: true
+        }),
+        await getCollection('rgb-ic-led-strips', {
+          reverseImages: true,
+          sortKey: 'PRICE',
+          reverse: true
+        }),
+        await getCollection('led-pakketten', {
+          reverseImages: true,
+          sortKey: 'PRICE',
+          reverse: true
+        })
+      ])
 
-      this.collection2 = await getCollection('tv-led-strips', {
-        reverseImages: true,
-        sortKey: 'PRICE',
-        reverse: true
-      });
-
-      this.collection3 = await getCollection('rgb-ic-led-strips', {
-        reverseImages: true,
-        sortKey: 'PRICE',
-        reverse: true
-      });
-
-      this.collection4 = await getCollection('led-pakketten', {
-        reverseImages: true,
-        sortKey: 'PRICE',
-        reverse: true
-      });
+      this.collection1 = col1;
+      this.collection2 = col2;
+      this.collection3 = col3;
+      this.collection4 = col4;
     }
   },
 });

@@ -1,28 +1,28 @@
 <template>
-  <div>
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+  <div class="max-w-4xl mx-auto" style="margin-top: 20px !important;">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
       <div class="lg:col-span-4">
-        <div class="relative _colors flex flex-col justify-center items-center py-20">
-          <div class="py-10 flex items-center justify-center">
-            <img :src="firstBlock.imageSrc" class="w-32" />
+        <div class="relative _colors flex flex-col justify-center items-center py-4">
+          <div class="py-10 flex items-center justify-center -mt-10">
+            <img :src="firstBlock.imageSrc" class="w-24" />
           </div>
-          <h3 class="text-white left-0 right-0 bottom-10 absolute text-xl text-center font-bold uppercase tracking-wide">{{ firstBlock.description }}</h3>
+          <h3 class="text-white left-4 right-4 bottom-4 absolute text-sm text-center font-bold uppercase tracking-wide">{{ firstBlock.description }}</h3>
         </div>
       </div>
       <div class="lg:col-span-4">
-        <div class="relative _montage flex flex-col justify-center items-center py-20">
-          <div class="py-10 flex items-center justify-center">
-            <img :src="secondBlock.imageSrc" class="w-32" />
+        <div class="relative _montage flex flex-col justify-center items-center py-4">
+          <div class="py-10 flex items-center justify-center -mt-10">
+            <img :src="secondBlock.imageSrc" class="w-24" />
           </div>
-          <h3 class="text-white left-0 right-0 bottom-10 absolute text-xl text-center font-bold uppercase tracking-wide">{{ secondBlock.description }}</h3>
+          <h3 class="text-white left-4 right-4 bottom-4 absolute text-sm text-center font-bold uppercase tracking-wide">{{ secondBlock.description }}</h3>
         </div>
       </div>
       <div class="lg:col-span-4">
-        <div class="relative _brightness flex flex-col justify-center items-center py-20">
-          <div class="py-10 flex items-center justify-center">
-            <img :src="thirdBlock.imageSrc" class="w-32" />
+        <div class="relative _brightness flex flex-col justify-center items-center py-4">
+          <div class="py-10 flex items-center justify-center -mt-10">
+            <img :src="thirdBlock.imageSrc" class="w-24" />
           </div>
-          <h3 class="text-white left-0 right-0 bottom-10 absolute text-xl text-center font-bold uppercase tracking-wide">{{ thirdBlock.description }}</h3>
+          <h3 class="text-white left-4 right-4 bottom-4 absolute text-sm text-center font-bold uppercase tracking-wide">{{ thirdBlock.description }}</h3>
         </div>
       </div>
     </div>

@@ -48,6 +48,30 @@
         v-else-if="collection && collection.handle === 'plafond'"
         :collection="collection"
     />
+    <LedStrip3Meter
+        v-else-if="collection && collection.handle === 'led-strip-3-meter'"
+        :collection="collection"
+    />
+    <LedStrip2Meter
+        v-else-if="collection && collection.handle === 'led-strip-2-meter'"
+        :collection="collection"
+    />
+    <LedStrip5Meter
+        v-else-if="collection && collection.handle === 'led-strip-5-meter'"
+        :collection="collection"
+    />
+    <LedStrip10Meter
+        v-else-if="collection && collection.handle === 'led-strip-10-meter'"
+        :collection="collection"
+    />
+    <LedStrip15Meter
+        v-else-if="collection && collection.handle === 'led-strip-15-meter'"
+        :collection="collection"
+    />
+    <LedStrip20Meter
+        v-else-if="collection && collection.handle === 'led-strip-20-meter'"
+        :collection="collection"
+      />
     <div v-else-if="collection && collection.handle">
       <div class="w-full bg-black">
         <div class="max-w-7xl mx-auto pt-2 md:pt-6 mb-2 md:pb-6 text-left px-4 md:px-2">
@@ -174,7 +198,7 @@ import Filters from "../../components/filters/Filters";
 import _ from 'lodash';
 import FilterSidebar from "../../components/filters/FilterSidebar";
 import {getCollection} from "../../services/ApiService";
-import {safeGet, formatMoney} from "../../services/Helpers";
+import {safeGet, formatMoney, hasNumber} from "../../services/Helpers";
 import {mapActions, mapGetters} from "vuex";
 import Landingspage from "../../components/Landingspage";
 import TvLedStrips from "../../components/landingspages/TvLedStrips";
@@ -190,9 +214,21 @@ import Gamekamer from "../../components/landingspages/Gamekamer";
 import Badkamer from "../../components/landingspages/Badkamer";
 import Plafond from "../../components/landingspages/Plafond";
 import Bed from "../../components/landingspages/Bed";
+import LedStrip3Meter from "../../components/landingspages/meters/LedStrip3Meter";
+import LedStrip2Meter from "../../components/landingspages/meters/LedStrip2Meter";
+import LedStrip5Meter from "../../components/landingspages/meters/LedStrip5Meter";
+import LedStrip10Meter from "../../components/landingspages/meters/LedStrip10Meter";
+import LedStrip15Meter from "../../components/landingspages/meters/LedStrip15Meter";
+import LedStrip20Meter from "../../components/landingspages/meters/LedStrip20Meter";
 
 export default Vue.extend({
   components: {
+    LedStrip20Meter,
+    LedStrip15Meter,
+    LedStrip10Meter,
+    LedStrip5Meter,
+    LedStrip2Meter,
+    LedStrip3Meter,
     Bed,
     Plafond,
     Badkamer,
@@ -305,7 +341,10 @@ export default Vue.extend({
 
   async asyncData({params}) {
     let slug = params.slug;
-    slug = slug.replace('led-strip-', '');
+
+    if (!hasNumber(slug) && !slug.includes('afstand')) {
+      slug = slug.replace('led-strip-', '');
+    }
 
     const collection = await getCollection(slug, {
       limit: 50,

@@ -1,6 +1,6 @@
 <template>
-  <div class="relative">
-    <img :src="imageSrc" class="rounded-2xl" />
+  <div v-motion-fade-up class="relative">
+    <img :src="imageSrc" class="rounded-2xl max-h-96 object-cover w-full" />
     <p v-if="description" class="text-white font-extralight lg:absolute bottom-10 left-10 right-10" v-html="description"></p>
   </div>
 </template>

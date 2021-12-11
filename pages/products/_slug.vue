@@ -188,7 +188,6 @@ import SellingPoints from "~/components/SellingPoints";
 import {safeGet} from "~/services/Helpers";
 import NotFound from "~/components/NotFound";
 import Breadcrumbs from "../../components/Breadcrumbs";
-import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
 import _ from 'lodash';
 import {getProduct, getReviews} from "../../services/ApiService";
@@ -265,12 +264,6 @@ export default Vue.extend({
       },
       ...safeGet(this.reviews, 'ldata', {})
     ]
-  },
-
-  setup() {
-    return {
-      _,
-    };
   },
 
   data() {

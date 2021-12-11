@@ -53,6 +53,43 @@
       </div>
     </div>
 
+    <div class="mx-auto max-w-7xl mt-10 mb-10 px-6">
+      <h2 class="mx-auto text-3xl text-center text-white font-bold">
+        De 4 meest populaire soorten LED strips,
+      </h2>
+      <p class="text-white text-2xl text-center mt-2">
+        welke kies jij?
+      </p>
+    </div>
+
+    <div class="px-6 lg:px-0 max-w-7xl mx-auto mt-10">
+      <CategorySlider />
+    </div>
+
+    <div class="px-6 lg:px-0 max-w-7xl mx-auto mt-10">
+      <VideoReviews />
+    </div>
+
+    <div class="mx-auto max-w-7xl mb-10 px-6">
+      <h2 class="mx-auto text-3xl text-center text-white font-bold">
+        Kies jou specifieke lengte
+      </h2>
+    </div>
+
+    <div class="mb-10 px-6">
+      <Lenghts />
+    </div>
+
+    <div class="mx-auto max-w-7xl mb-10 px-6">
+      <h2 class="mx-auto text-3xl text-center text-white font-bold">
+        Kies hier jouw specifieke toepassing
+      </h2>
+    </div>
+
+    <div class="px-6 lg:px-0 mb-10">
+      <Usages />
+    </div>
+
     <div class="px-6 lg:px-0">
       <div class="mx-auto max-w-7xl py-10 px-8 default-gradient" style="border-radius: 20px;">
         <h2>
@@ -62,7 +99,7 @@
         </h2>
         <div class="grid grid-cols-1 lg:grid-cols-3 p-0 lg:p-10 gap-6 lg:gap-0">
           <div class="flex flex-col w-full lg:w-auto items-center justify-center rounded-lg lg:mx-10 mx-0 py-4"
-            style="border-color: rgba(255, 255, 255, 0.1)"
+               style="border-color: rgba(255, 255, 255, 0.1)"
           >
             <div class="flex-grow items-center flex">
               <img class="w-32" src="~assets/icon/icons8-technical-support-50.svg" />
@@ -86,7 +123,7 @@
             <h3 class="text-gray-100 tracking-wide font-bold uppercase mt-4">Betaalbaarheid</h3>
           </div>
         </div>
-    </div>
+      </div>
     </div>
 
     <div class="mx-auto max-w-7xl py-10 px-6 lg:px-0">
@@ -118,53 +155,8 @@
       </div>
     </div>
 
-    <div class="mx-auto max-w-7xl mb-10 px-6">
-      <h2 class="mx-auto text-3xl text-center text-white font-bold">
-        De 4 meest populaire soorten LED strips,
-      </h2>
-      <p class="text-white text-2xl text-center mt-2">
-        welke kies jij?
-      </p>
-    </div>
-
-    <div class="px-6 lg:px-0 max-w-7xl mx-auto mt-10">
-      <CategorySlider />
-    </div>
-
-    <div class="mx-auto max-w-7xl mt-10 mb-10 px-6">
-      <h2 class="mx-auto text-3xl text-center text-white font-bold">
-        Kies hier jouw specifieke toepassing
-      </h2>
-    </div>
-
-    <div class="px-6 lg:px-0">
-      <Usages />
-    </div>
-
-    <div class="max-w-7xl mx-auto mt-10 lg:px-0 px-6">
-      <div class="_house">
-        <div class="flex flex-col items-center justify-center text-center" style="height: 500px;">
-          <img class="w-24" src="~assets/design/kiyoh.png" />
-          <h2 class="py-2 pt-4 text-white text-2xl font-bold">
-            Kiyoh
-          </h2>
-          <div class="flex">
-            <svg v-for="i in 5" :key="i" class="flex-shrink-0 h-7 w-7 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-            </svg>
-          </div>
-          <p class="text-white p-2 font-extralight">
-            58 beoordelingen
-          </p>
-          <a href="https://www.kiyoh.com/add-review/1064733/lideka?lang=nl" target="_blank" rel="noopener noreferrer" class="px-6 py-2 mt-4 bg-green-600 hover:bg-green-700 rounded-full text-white">
-            Beoordeel Ons
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mx-auto max-w-7xl mt-8 relative lg:px-0 space-y-6 lg:space-y-0">
-      <div class="mx-6">
+    <div class="mx-auto max-w-7xl relative lg:px-0 space-y-6 lg:space-y-0">
+      <div>
         <img src="~assets/headers/1.jpg" class="rounded-2xl mx-auto" alt="Lideka home" />
       </div>
       <div class="lg:absolute bottom-10 right-10 left-10 rounded-2xl p-10 prose prose-teal-500 text-white"
@@ -191,6 +183,28 @@
           Dit alles tegen een verkoopprijs die voor vrijwel alle burgers gemakkelijk haalbaar is.
           En op deze wijze creëren we voor iedereen een meer <strong>sfeervolle, aangenamere leefomgeving</strong>.
         </p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto mt-10 lg:px-0 px-6">
+      <div class="_house">
+        <div class="flex flex-col items-center justify-center text-center" style="height: 500px;">
+          <img class="w-24" src="~assets/design/kiyoh.png" />
+          <h2 class="py-2 pt-4 text-white text-2xl font-bold">
+            Kiyoh
+          </h2>
+          <div class="flex">
+            <svg v-for="i in 5" :key="i" class="flex-shrink-0 h-7 w-7 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+          </div>
+          <p class="text-white p-2 font-extralight">
+            81 beoordelingen
+          </p>
+          <a href="https://www.kiyoh.com/add-review/1064733/lideka?lang=nl" target="_blank" rel="noopener noreferrer" class="px-6 py-2 mt-4 bg-green-600 hover:bg-green-700 rounded-full text-white">
+            Bekijk onze beoordelingen
+          </a>
+        </div>
       </div>
     </div>
 
@@ -353,9 +367,12 @@ import ProductItem from "~/components/products/ProductItem.vue";
 import ProductItemGradient from "~/components/products/ProductItemGradient.vue";
 import Usages from "~/components/blocks/Usages.vue";
 import CategorySlider from "~/components/CategorySlider.vue";
+import Reviews from "~/components/reviews/Reviews.vue";
+import VideoReviews from "~/components/VideoReviews.vue";
+import Lenghts from "~/components/Lenghts.vue";
 
 export default Vue.extend({
-  components: {CategorySlider, Usages, ProductItem, ProductItemGradient},
+  components: {Lenghts, Reviews, VideoReviews, CategorySlider, Usages, ProductItem, ProductItemGradient},
   data() {
     return {
       collection: {},
