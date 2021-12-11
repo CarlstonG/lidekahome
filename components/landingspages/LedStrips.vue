@@ -291,7 +291,7 @@
       </CTA>
 
 
-      <SingleImage :image-src="require('assets/photos/slaapkamer-indirect.jpg')" />
+      <SingleImage :image-src="require('assets/photos/Slaapkamer-indirect.jpg')" />
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
