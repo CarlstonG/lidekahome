@@ -5,7 +5,6 @@
       <div class="bg-black border-b border-gray-900 hidden md:block">
         <div class="max-w-7xl mx-auto px-2 md:px-2 py-2">
           <dl class="md:grid md:grid-cols-12">
-
             <div class="relative flex space-x-4 col-span-9">
               <dt class="flex items-center h-full">
                 <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -148,11 +147,72 @@
               <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-grow">
                   <div class="flex space-x-1 min-h-10">
-                    <NuxtLink prefetch v-for="collection in collections" :to="`/categorie/${collection.handle}`"
-                              :key="collection.handle"
-                              class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                      {{ collection.title }}
-                    </NuxtLink>
+<!--                    <NuxtLink prefetch v-for="collection in collections" :to="`/categorie/${collection.handle}`"-->
+<!--                              :key="collection.handle"-->
+<!--                              class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">-->
+<!--                      {{ collection.title }}-->
+<!--                    </NuxtLink>-->
+
+                    <div class="relative navigation-menu">
+                      <div>
+                        <button type="button" @click.prevent="goTo('categorie/led-strips')" class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex space-x-1 items-center">
+                          <span>LED strips</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="navigation-dropdown origin-top-center absolute left-0 w-48 rounded-bl-md shadow-md rounded-tr-md rounded-br-md shadow-lg py-1 bg-white focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                        <NuxtLink to="/categorie/led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-0">Alle LED strips</NuxtLink>
+                        <NuxtLink to="/categorie/tv-led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-1">TV LED strips</NuxtLink>
+                        <NuxtLink to="/categorie/rgb-led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-2">RGB LED strips</NuxtLink>
+                        <NuxtLink to="/categorie/rgb-ic-led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-3">RGB-IC LED strips</NuxtLink>
+                        <NuxtLink to="/categorie/led-pakketten" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-4">LED pakketten</NuxtLink>
+                      </div>
+                    </div>
+
+                    <div class="relative navigation-menu">
+                      <div>
+                        <button type="button" class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex space-x-1 items-center">
+                          <span>LED toepassingen</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="navigation-dropdown origin-top-center absolute left-0 w-48 rounded-bl-md shadow-md rounded-tr-md rounded-br-md shadow-lg py-1 bg-white focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                        <NuxtLink to="/categorie/led-strip-woonkamer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-0">Woonkamer</NuxtLink>
+                        <NuxtLink to="/categorie/led-strip-slaapkamer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-1">Slaapkamer</NuxtLink>
+                        <NuxtLink to="/categorie/led-strip-keuken" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-2">Keuken</NuxtLink>
+                        <NuxtLink to="/categorie/led-strip-gamekamer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-3">Game kamer</NuxtLink>
+                        <NuxtLink to="/categorie/led-strip-badkamer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-4">Badkamer</NuxtLink>
+                        <NuxtLink to="/categorie/led-strip-plafond" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-4">Plafond</NuxtLink>
+                        <NuxtLink to="/categorie/led-strip-bed" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-4">Bed</NuxtLink>
+                        <NuxtLink to="/categorie/led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-4">Overige</NuxtLink>
+                      </div>
+                    </div>
+
+                    <div class="relative navigation-menu">
+                      <div>
+                        <button type="button" class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex space-x-1 items-center">
+                          <span>LED meters</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="navigation-dropdown origin-top-center absolute left-0 w-48 rounded-bl-md shadow-md rounded-tr-md rounded-br-md shadow-lg py-1 bg-white focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                        <NuxtLink to="/categorie/led-strip-2-meter" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-0">2 meter</NuxtLink>
+                        <NuxtLink to="/categorie/led-strip-3-meter" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-1">3 meter</NuxtLink>
+                        <NuxtLink to="/categorie/led-strip-5-meter" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-2">5 meter</NuxtLink>
+                        <NuxtLink to="/categorie/led-strip-10-meter" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-3">10 meter</NuxtLink>
+                        <NuxtLink to="/categorie/led-strip-15-meter" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-4">15 meter</NuxtLink>
+                        <NuxtLink to="/categorie/led-strip-20-meter" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1" id="user-menu-item-5">20 meter</NuxtLink>
+                      </div>
+                    </div>
 
                     <NuxtLink prefetch
                               to="/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge"
@@ -160,6 +220,8 @@
                     >
                       Solar powerbank
                     </NuxtLink>
+
+
 
                     <NuxtLink prefetch
                               to="/categorie/accessoires"
@@ -215,6 +277,10 @@ export default Vue.extend({
 
     openSidebar() {
       this.sidebarIsOpen = true;
+    },
+
+    goTo(location: string) {
+      this.$router.push(location);
     }
   },
 
@@ -248,5 +314,34 @@ export default Vue.extend({
 {
   opacity: 0;
   transform: translateX(-500px);
+}
+
+.navigation-menu {
+  .navigation-dropdown {
+    visibility: hidden;
+    opacity: 0;
+    //transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+  }
+
+  button {
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 1s ease-in-out;
+  }
+
+  &:hover {
+    button {
+      background: #fff !important;
+      color: #000 !important;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .navigation-dropdown {
+      //transform: scale(1);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 }
 </style>

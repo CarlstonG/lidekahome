@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-center">
-    <NuxtLink :to="to" class="flex items-center transition-all space-x-4 shadow-md p-3 px-6 items-center justify-center border border-transparent rounded-full shadow-sm text-lg font-medium text-white bg-indigo-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 font-bold tracking-wide"
+    <NuxtLink :to="to" class="flex items-center transition-all space-x-4 shadow-md p-3 px-6 items-center justify-center border border-transparent rounded-full shadow-sm text-lg font-medium text-white bg-gradient-to-r from-indigo-400 to-purple-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 font-bold tracking-wide"
     >
       <span><slot /></span>
       <svg class="h-5 w-5"

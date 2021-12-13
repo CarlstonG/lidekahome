@@ -49,7 +49,7 @@
       <div class="">
         <NuxtLink :to="product.url">
           <div
-              class="mt-3 uppercase inline-flex items-center space-x-4 tracking-wide shadow-md p-3 px-6 items-center justify-center border border-transparent rounded-full shadow-sm text-sm font-bold text-white bg-indigo-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+              class="mt-3 uppercase inline-flex items-center space-x-4 tracking-wide shadow-md p-3 px-6 items-center justify-center border border-transparent rounded-full shadow-sm text-sm font-bold text-white bg-gradient-to-r from-indigo-400 to-purple-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
           >
             <span>Bekijken</span>
             <svg class="h-5 w-5"
