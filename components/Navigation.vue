@@ -155,7 +155,7 @@
 
                     <div class="relative navigation-menu">
                       <div>
-                        <button type="button" @click.prevent="goTo('categorie/led-strips')" class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex space-x-1 items-center">
+                        <button type="button" @click.prevent="goTo('/categorie/led-strips')" class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex space-x-1 items-center">
                           <span>LED strips</span>
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />

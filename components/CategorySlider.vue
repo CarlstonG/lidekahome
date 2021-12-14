@@ -48,10 +48,10 @@
                       </svg>
                     </h2>
                     <p class="text-white font-extralight ">
-                      Lideka biedt een geweldig assortiment RGB led strips aan, je kunt deze led-strips voor enorm veel verschillende doeleinden gebruiken.
+                      Lideka biedt een geweldig assortiment RGB aan, je kunt ze voor enorm veel verschillende doeleinden gebruiken.
                     </p>
                     <p class="text-white font-extralight ">
-                      De voordelen van deze Led-strips zijn:
+                      De voordelen zijn:
                     </p>
                     <ul class="text-white grid grid-cols-2 gap-4 font-extralight no-list-type">
                       <li class="flex items-center space-x-2"><img alt="Checkmark" class="w-6 h-6"
@@ -121,7 +121,7 @@
                       Bekijk hier één van de nieuwste soorten, ook wel de ‘’dreamcolor’’ strip genoemd. Net als alle andere modellen is de bedienbaar via app en afstandsbediening.
                     </p>
                     <p class="text-white font-extralight ">
-                      De voordelen van deze Led-strips zijn:
+                      De voordelen zijn:
                     </p>
                     <ul class="text-white grid grid-cols-2 gap-4 font-extralight no-list-type">
                       <li class="flex items-center space-x-2"><img alt="Checkmark" class="w-6 h-6" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 text-sm uppercase font-bold">De nieuwste kleureffecten</span></li>
@@ -179,10 +179,10 @@
                       </svg>
                     </h2>
                     <p class="text-white font-extralight ">
-                      Hou je gave special effects bij jouw TV of Computer? Deze USB Led strips zijn meer dan geschikt. Ook geschikt voor een mooie game kamer.
+                      Hou je gave special effects bij jouw TV of Computer? Deze USB uitvoering is meer dan geschikt. Ook voor een mooie game kamer.
                     </p>
                     <p class="text-white font-extralight ">
-                      De voordelen van deze Led-strips zijn:
+                      De voordelen zijn:
                     </p>
                     <ul class="text-white grid grid-cols-2 gap-4 font-extralight no-list-type">
                       <li class="flex items-center space-x-2"><img alt="Checkmark" class="w-6 h-6"
@@ -249,10 +249,10 @@
                     </h2>
 
                     <p class="text-white font-extralight">
-                      Voor de echte liefhebbers hebben we complete LED pakketten. Deze LED paketten bestaan uit TV Led strips, en RGB Led strips. Beiden soorten bestaan uit complete sets.
+                      Voor de echte liefhebbers hebben we complete LED pakketten. Deze LED paketten bestaan uit TV en RGB strips. Beiden soorten bestaan uit complete sets.
                     </p>
                     <p class="text-white font-extralight">
-                      De voordelen van deze paketten zijn:
+                      De voordelen zijn:
                     </p>
                     <ul class="text-white grid grid-cols-2 gap-4 font-extralight no-list-type">
                       <li class="flex items-center space-x-2"><img alt="Checkmark" class="w-6 h-6" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 text-sm uppercase font-bold">Compleet</span></li>

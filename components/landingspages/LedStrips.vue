@@ -70,39 +70,39 @@
             :bg-color="false"
         >
           <p class="text-white font-extralight">
-            LED strips, ook wel geschreven als ledstrips, zijn lichtsnoeren met lichtcomponenten. LED staat voor Light Emitting Diode, vrij vertaald als lichtgevende lampjes. Het kenmerkende element van een LED strip is de
+            Het zijn lichtsnoeren met lichtcomponenten. LED staat voor Light Emitting Diode, vrij vertaald als lichtgevende lampjes. Het kenmerkende element is de
             <strong>veelzijdigheid</strong>. Wist je bijvoorbeeld dat je binnen het kleurenpalet keuze hebt uit meer dan
             <strong>16 miljoen kleuren</strong> en tinten? Het zorgt ervoor dat LED verlichting in vrijwel elke ruimte een sfeervolle toepassing kent.
           </p>
           <p class="text-white font-extralight">
-            Voorbeelden zijn LED strips in de
+            Voorbeelden zijn LED-strips in de
             <a href="/categorie/led-strip-badkamer" class="link">badkamer</a>,
             <a href="/categorie/led-strip-slaapkamer" class="link">slaapkamer</a> of
             <a href="/categorie/led-strip-woonkamer" class="link">woonkamer</a>.
-            Je kunt de ledstrips tegen het <a href="/categorie/led-strip-plafond" class="link">plafond</a> installeren, of juist langs de rand van de spiegel in de badkamer. Zelfs als vervanging van de bestaande verlichting in de ruimte!
+            Je kunt de ze tegen het <a href="/categorie/led-strip-plafond" class="link">plafond</a> installeren, of juist langs de rand van de spiegel in de badkamer. Zelfs als vervanging van de bestaande verlichting in de ruimte!
           </p>
           <p class="text-white font-extralight">
-            Steeds meer mensen gebruiken LED strips buiten. En waarom ook niet? We kopen tegenwoordig de mooiste tuinsets om buiten te kunnen zitten, en
+            Steeds meer mensen gebruiken LED-strips buiten. En waarom ook niet? We kopen tegenwoordig de mooiste tuinsets om buiten te kunnen zitten, en
             <a href="/blog/alles-over-led-verlichting-als-sfeerverlichting" class="link">sfeervolle verlichting</a> hoort daar uiteraard bij.
           </p>
           <p class="text-white font-extralight">
             LED strips zijn eenvoudig te bevestigen langs de onderkant van het dak, en blijven dankzij een
             <strong>stevige plakrand</strong> altijd op hun plek hangen. Zo creëer je ook buiten een
-            <strong>unieke sfeer</strong>, waarmee in de eigen tuin loungen nog leuker wordt. Het gebruik van deze led strips gaat vaak via een
+            <strong>unieke sfeer</strong>, waarmee in de eigen tuin loungen nog leuker wordt. Het gebruik van deze strips gaat vaak via een
             <strong>afstandsbediening</strong>, en <strong>app</strong>.
           </p>
         </LongParagraph>
       </div>
 
       <CTA to="/products/rgb-led-light-strip-15-meter-smart-verlichting">
-        Bekijk meest verkochte led strip
+        Bekijk best verkochte strip
       </CTA>
 
       <SingleImage :image-src="require('assets/photos/Woonkamer-3.jpg')" />
 
       <div class="mx-auto max-w-7xl">
         <h2 class="mx-auto text-3xl text-center text-white font-bold">
-          De 4 meest populaire soorten LED strips,
+          De 4 meest populaire soorten
         </h2>
         <p class="text-white text-2xl text-center mt-2">
           welke kies jij?
@@ -112,7 +112,7 @@
       <CategorySlider />
 
       <CTA to="/products/rgb-led-light-strip-15-meter-smart-verlichting">
-        Bekijk meest verkochte led strip
+        Bekijk meest verkochte LED-strip
       </CTA>
 
 <!--      <Highlights :highlights="[-->
@@ -132,13 +132,8 @@
 
       <SingleImage :image-src="require('assets/photos/Woonkamer-2.jpg')" />
 
-      <ProductsWithBackground
-        title="Thuis genieten van die fijne lounge vibes? Bestel jouw RGB led-strip vandaag nog!"
-        :collection="collection"
-      />
-
       <CenterTitle
-        title="De voordelen van jouw nieuwe LED strips"
+        title="De voordelen van jouw nieuwe LED-strips"
       />
 
       <Benefits
@@ -228,7 +223,7 @@
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="RGB ledstrips"
+            title="RGB"
             :bg-color="true"
         >
           <p class="text-white font-extralight">
@@ -262,15 +257,15 @@
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="RGB-IC Led strips"
+            title="RGB-IC"
             :bg-color="true"
         >
           <p class="text-white font-extralight">
             Net als bij een standaard model vormt de
-            <NuxtLink class="link" to="/categorie/rgb-ic-led-strips">RGB-IC led-strip</NuxtLink> alle mogelijke kleurtinten, maar dan met schitterende <strong>extra lichteffecten</strong>. Deze splinternieuwe vorm van led licht wordt ook wel ‘Dreamcolor Led’ genoemd en is razend populair bij onder Amerikaanse TikTokkers. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe editie is het mogelijk!
+            <NuxtLink class="link" to="/categorie/rgb-ic-led-strips">RGB-IC</NuxtLink> alle mogelijke kleurtinten, maar dan met schitterende <strong>extra lichteffecten</strong>. Deze splinternieuwe vorm van led licht wordt ook wel ‘Dreamcolor Led’ genoemd en is razend populair bij onder Amerikaanse TikTokkers. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe editie is het mogelijk!
           </p>
           <p class="text-white font-extralight">
-            Naast deze extra features werkt de RGB-IC uitvoering net als een traditionele led-strip. Zo ben je verzekerd van 2 jaar garantie, IP65-waterproof bescherming en led-lampjes van de hoogste kwaliteit.
+            Naast deze extra features werkt de RGB-IC uitvoering net als een traditionele LED-strip. Zo ben je verzekerd van 2 jaar garantie, IP65-waterproof bescherming en led-lampjes van de hoogste kwaliteit.
           </p>
           <p class="text-white font-bold">
             RGBIC
@@ -286,8 +281,8 @@
         </LongParagraph>
       </div>
 
-      <CTA to="/categorie/rgb-ic-led-strips">
-        Bekijk RGB-IC LED-strips
+      <CTA to="/products/rgb-ic-led-light-strip-5-meter-smart-verlichting">
+        Bekijk RGB-IC uitvoering
       </CTA>
 
 
@@ -295,12 +290,12 @@
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="TV ledstrip"
+            title="TV"
             :bg-color="true"
         >
           <p class="text-white font-extralight">
             Een
-            <a href="/categorie/tv-led-strips" class="link">led-strip achter je TV</a> creëert een <strong>stijlvolle lichtgloed</strong> rondom het scherm en geeft jouw huiskamer een echte bioscoop sfeer.
+            <a href="/categorie/tv-led-strips" class="link">LED-strip achter je TV</a> creëert een <strong>stijlvolle lichtgloed</strong> rondom het scherm en geeft jouw huiskamer een echte bioscoop sfeer.
           </p>
           <p class="text-white font-extralight">
             Maar deze handige strips zijn veel meer dan alleen mooi en zorgen ook voor een subtielere overgang tussen licht en donker.
@@ -332,58 +327,42 @@
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="Waterdichte LED strips"
+            title="Waterdicht"
             :bg-color="true"
         >
           <p class="text-white font-extralight">
-            Onze <a href="https://nl.wikipedia.org/wiki/IP-code" class="link">IP65</a> LED strips zijn waterdicht, en daardoor ook geschikt <strong>voor buiten</strong>.
+            Onze <a href="https://nl.wikipedia.org/wiki/IP-code" class="link">IP65</a> producten zijn waterdicht, en daardoor ook geschikt <strong>voor buiten</strong>.
             Lekker als je ’s avonds tot in de late uurtjes buiten wilt genieten van
             zomerse omstandigheden, of juist in de winter, wanneer je buiten bij de warme kachel wilt zitten.
           </p>
           <p class="text-white font-extralight">
-            Met onze IP65 bescherming garanderen we dat de LED strips ook in een <strong>vochtige omgeving</strong> optimaal functioneren.
-            Op zoek naar LED strips die waterdicht zijn? Maak je keuze uit het ruime assortiment LED strips bij Lideka Home.
+            Met onze IP65 bescherming garanderen we dat de producten ook in een <strong>vochtige omgeving</strong> optimaal functioneren.
           </p>
         </LongParagraph>
       </div>
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="LED strips monteren: wat heb je nodig?"
+            title="Smart app Lideka Home of afstandsbediening"
             :bg-color="true"
         >
           <p class="text-white font-extralight">
-            Wil je LED strips gebruiken? Montage is erg <strong>eenvoudig</strong>! Je kunt de LED strip naar eigen inzicht op maat
-            <strong>afknippen</strong> op de aangegeven markering. Ideaal wanneer je iets van lengte te kort komt.
-          </p>
-          <p class="text-white font-extralight">
-            De plakrand is <strong>extra stevig</strong> en blijft na montage op een glad oppervlak goed zitten. Met een totaal van 50.000 branduren kan je nog jaren genieten van unieke LED verlichting in huis. Welke onderdelen komen nog meer kijken bij de montage van LED strips?
-          </p>
-        </LongParagraph>
-      </div>
-
-      <div class="max-w-5xl mx-auto">
-        <LongParagraph
-            title="Smart app Lideka Home of afstandsbediening LED"
-            :bg-color="true"
-        >
-          <p class="text-white font-extralight">
-            Met de <strong>Smart app van Lideka Home</strong> ervaar je het gewenste gebruiksgemak. Je kunt hiermee de LED strip op afstand bedienen en kiezen uit het volledige kleurenpalet.
+            Met de <strong>Smart app van Lideka Home</strong> ervaar je het gewenste gebruiksgemak. Je kunt hiermee de LED-strip op afstand bedienen en kiezen uit het volledige kleurenpalet.
           </p>
           <p class="text-white font-extralight">
             Heerlijk vanaf je smartphone schakelen tussen <strong>alle kleuren en tinten</strong>; de fijnste manier om de sfeer in huis te bepalen.
-            Wil je niet kiezen voor de Smart app? Dan gebruik je onze bijgeleverde LED strip <strong>afstandsbediening.</strong>
+            Wil je niet kiezen voor de Smart app? Dan gebruik je onze bijgeleverde <strong>afstandsbediening.</strong>
           </p>
         </LongParagraph>
       </div>
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="Voedingsadapter LED strip"
+            title="Voedingsadapter"
             :bg-color="true"
         >
           <p class="text-white font-extralight">
-            Zoals we al eerder vertelden, heb je bij de aankoop van LED strips keuze uit <strong>5V, 12V of 24V</strong>.
+            Zoals we al eerder vertelden, heb je bij de aankoop keuze uit <strong>5V, 12V of 24V</strong>.
             Welke keuze je hierin maakt, is eveneens afhankelijk van de voedingsadapter.
             Aangezien de normale stroomvoorziening vanuit het stopcontact vaststaat op 230V, dien je deze voor de LED verlichting nog wel om te zetten.
             We raden je bij voorkeur aan om voor een compleet set te gaan, zo ben je in <strong>één</strong> keer helemaal klaar.
@@ -407,25 +386,25 @@
             Een LED verlichting strip is derhalve een stuk <strong>efficiënter</strong>.
           </p>
           <p class="text-white font-extralight">
-            Bij een LED strip worden de lampjes op evenredige afstand van elkaar op het lichtsnoer gesoldeerd, en zorgen daarmee over kleine en grote afstand voor een gelijke afgifte van licht. <strong>Sfeervol en efficiënt.</strong>
+            Bij een LED-strip worden de lampjes op evenredige afstand van elkaar op het lichtsnoer gesoldeerd, en zorgen daarmee over kleine en grote afstand voor een gelijke afgifte van licht. <strong>Sfeervol en efficiënt.</strong>
           </p>
         </LongParagraph>
       </div>
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="5V, 12V en 24V ledstrips"
+            title="5V, 12V en 24V"
             :bg-color="true"
         >
           <p class="text-white font-extralight">
-            Overweeg je LED strips te kopen? Dan is het belangrijk om rekening te houden met het
-            <a class="link" href="https://nl.wikipedia.org/wiki/Elektrische_spanning">Voltage</a>. De LED strips zijn beschikbaar in 5 en 12 volt.
+            Het belangrijk om rekening te houden met het
+            <a class="link" href="https://nl.wikipedia.org/wiki/Elektrische_spanning">Voltage</a>. Onze LED strips zijn beschikbaar in 5 en 12 volt.
           </p>
           <p class="text-white font-extralight">
-            Langs de 5V ledstrips en 12V ledstrips loopt minder stroom, waardoor het over het algemeen als veiliger wordt ervaren.
+            Langs de 5V en 12V loopt minder stroom, waardoor het over het algemeen als veiliger wordt ervaren.
           </p>
           <p class="text-white font-extralight">
-            Voor de kortere ledstrips, zoals een LED strip van 3, 5 of 10 meter, is dit voltage ideaal. Voor de grotere lengtematen vanaf 10 meter is 12V de beste optie.
+            Voor de kortere LED-strips, zoals van 3, 5 of 10 meter, is dit voltage ideaal. Voor de grotere lengtematen vanaf 10 meter is 12V de beste optie.
           </p>
           <p class="text-white font-extralight">
             <a href="/blog/hoe-werkt-led-verlichting" class="link">
@@ -443,15 +422,15 @@
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="Voordelen LED strips"
+            title="Voordelen"
             :bg-color="true"
         >
           <p class="text-white font-extralight">
-            We hebben de voordelen van LED strips al kort laten doorschemeren. Het is een <strong>moderne vorm</strong> van verlichting voor binnen- en buitenshuis, alsmede voor bedrijfspanden.
+            Het is een <strong>moderne vorm</strong> van verlichting voor binnen- en buitenshuis, alsmede voor bedrijfspanden.
           </p>
           <p class="text-white font-extralight">
-            Bij Lideka Home willen we iedereen de kans geven om de voordelen van LED strips te ervaren. Bij led denken we snel aan
-            <strong>energie zuinig</strong>, maar dat is het niet het enigste voordeel.
+            Bij Lideka Home willen we iedereen de kans geven om de voordelen te ervaren. Bij led denken we snel aan
+            <strong>energie zuinig</strong>, maar dat is niet het enigste voordeel.
           </p>
           <p class="text-white font-extralight">
             Wat zijn de <strong>belangrijkste voordelen</strong> van LED verlichting?
@@ -459,7 +438,7 @@
           <ul class="text-white font-extralight no-list-type">
             <li v-for="item in [
                 'Verkrijgbaar in verschillende lengtematen',
-                'LED strips zijn eenvoudig zelf op maat te maken',
+                'Eenvoudig zelf op maat te maken',
                 'Ruim kleurenpalet met miljoenen sprekende RGB kleuren en tinten',
                 'Waterproof (IP65) en daarmee ook buiten te gebruiken',
                 'Extra lange levensduur',
@@ -472,7 +451,7 @@
             </li>
           </ul>
           <p class="text-white font-extralight">
-            Een ander leuk voordeel is dat het licht mooi egaal verdeeld wordt over de ruimte waar je de led strip geplaatst hebt.
+            Een ander leuk voordeel is dat het licht mooi egaal verdeeld wordt over de ruimte waar je het geplaatst hebt.
           </p>
         </LongParagraph>
       </div>
@@ -485,11 +464,11 @@
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="LED strips met lichteffecten"
+            title="LED-strips"
             :bg-color="true"
         >
           <p class="text-white font-extralight">
-            Nog meer halen uit je LED strips? Maak kennis met onze <strong>verrassende lichteffecten</strong>, ideaal voor iedere gelegenheid.
+            Maak kennis met onze <strong>verrassende lichteffecten</strong>, ideaal voor iedere gelegenheid.
           </p>
           <p class="text-white font-extralight">
             Heb je een feestje? Dan kies je voor de <strong>Strobe</strong> stand: flitsende lichten, waarmee je iedereen in beweging krijgt.
@@ -498,15 +477,10 @@
             Een lounge avond met vrienden of familie? Met onze <strong>Fade</strong> verlichting creëer je een unieke sfeer. Deze verlichting biedt wisselende kleuren met donkere intervallen.
           </p>
           <p class="text-white font-extralight">
-            De <strnog>Flash</strnog> verlichting op onze LED strips wisselen doorlopend van kleur en dat geeft een super gaaf effect.
+            De <strnog>Flash</strnog> verlichting wisselen doorlopend van kleur en dat geeft een super gaaf effect.
           </p>
           <p class="text-white font-extralight">
             Tot slot kun je nog kiezen voor <strong>Smooth</strong> LED verlichting; gebruikt voor speciale gelegenheden, feestjes of simpelweg voor de optimale lounge experience.
-          </p>
-          <p class="text-white font-extralight">
-            <a href="/categorie/led-strip-gamekamer" class="link">
-              Bekijk hier onze speciale gamer Led strips
-            </a>
           </p>
         </LongParagraph>
       </div>
@@ -517,60 +491,13 @@
 
       <SingleImage :image-src="require('assets/photos/Badkamer-4.jpg')" />
 
-      <div class="max-w-5xl mx-auto">
-        <LongParagraph
-            title="Toepassing van Led-strips"
-            :bg-color="true"
-        >
-          <p class="text-white font-extralight">
-            Een Led verlichting strip is toepasbaar in het <strong>gehele huis</strong> en door de waterdichtheid van de strips kun je ze
-            <strong>ook buiten</strong> toepassen.
-          </p>
-          <p class="text-white font-extralight">
-            Verlicht jouw schuur met helder wit licht en <strong>creëer sfeer</strong> in de
-            <a href="/categorie/woonkamer" class="link">woonkamer</a> met elegante kleuren. De keuze is aan jou!
-          </p>
-          <p class="text-white font-extralight">
-            De <a href="/categorie/rgb-led-strips" class="link">RGB led strips</a> van Lideka bedragen geen wit licht, echter zit er wel een
-            kleur bij die heel veel lijkt op wit licht. Als je een vervanger zoekt voor warm licht, dan hebben we ook altijd
-            <strong>leuke kleurtjes</strong> bij onze RGB Led producten.
-          </p>
-          <p class="text-white font-extralight">
-            <a href="/categorie/led-strip-gamekamer" class="link">
-              Bekijk hier onze speciale gamer Led strips
-            </a>
-          </p>
-        </LongParagraph>
-      </div>
-
-      <div class="max-w-5xl mx-auto">
-        <LongParagraph
-            title="Voeding"
-            :bg-color="true"
-        >
-          <p class="text-white font-extralight">
-            Bij Lideka hoef jij je <strong>geen zorgen</strong> te maken over voedingen of aansluitingen, wij leveren alles in een compleet set, en daar zit dus ook een bijpassende voeding bij.
-          </p>
-          <p class="text-white font-extralight">
-            Deze <strong>matcht precies</strong> met de led strip die in het set zit. Let wel op, bij andere aanbieders worden de meeste ledstrips zonder voeding geleverd.
-          </p>
-          <p class="text-white font-extralight">
-            <a href="/blog/de-levensduur-van-led-verlichting" class="link">
-              Benieuwd naar de levensduur van LED verlichting? Lees onze blog!
-            </a>
-          </p>
-        </LongParagraph>
-      </div>
-
       <CTA to="/product/led-strip-10-meter">
         Bekijk best verkochte LED-strips
       </CTA>
 
-      <SingleImage :image-src="require('assets/photos/slaapkamer-wit.jpg')" />
-
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="Led strip profielen"
+            title="Profielen"
             :bg-color="true"
         >
           <p class="text-white font-extralight">
@@ -583,13 +510,13 @@
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="Led strip controllers"
+            title="Controllers"
             :bg-color="true"
         >
           <p class="text-white font-extralight">
-            Bij al onze complete sets krijg je <strong>standaard</strong> een led strip controller <strong>meegeleverd</strong>, deze is van
+            Bij al onze complete sets krijg je <strong>standaard</strong> een controller <strong>meegeleverd</strong>, deze is van
             <strong>hoge kwaliteit</strong> en
-            gaat zeker nog jaren mee. De led strip controllers zijn gemaak van hoogwaardige kwaliteit kunststof. Je kunt er de volgende drie dingen mee doen:
+            gaat zeker nog jaren mee. De controllers zijn gemaak van hoogwaardige kwaliteit kunststof. Je kunt er de volgende drie dingen mee doen:
           </p>
           <ol class="text-white font-extralight">
             <li>De helderheid aanpassen</li>
@@ -608,11 +535,6 @@
             Er zijn andere aanbieders op de markt die enkel kleurige strips aanbieden,
             echter vinden wij dit <strong>compleet overbodig</strong>. Aangezien de prijs bijna gelijk is aan een
             RGB strip is het zonde van jouw geld. We raden je dan ook altijd aan om voor een RGB strip te gaan.
-          </p>
-          <p class="text-white font-extralight">
-            <a href="/blog/wat-zijn-de-voordelen-van-led-strips" class="link">
-              Lees ook onze blog over de voordelen van Led-strips eens
-            </a>
           </p>
         </LongParagraph>
       </div>
