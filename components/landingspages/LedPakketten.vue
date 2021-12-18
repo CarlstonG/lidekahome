@@ -8,8 +8,8 @@
 
       <LongParagraph>
         <p class="text-white font-extralight">
-          Voor de echte liefhebbers hebben we <strong>complete</strong> LED pakketten. Deze LED pakketten bestaan uit <NuxtLink to="/products/lideka-rgb-smart-tv-led-light-strip-3-meter-met-smart-app" class="link">TV Led strips</NuxtLink>,
-          en <NuxtLink to="/categorie/rgb-led-strips" class="link">RGB Led strips</NuxtLink>. Beiden soorten bestaan uit complete sets.
+          Voor de echte liefhebbers hebben we <strong>complete</strong> LED pakketten. Deze LED pakketten bestaan uit <NuxtLink to="/products/lideka-rgb-smart-tv-led-light-strip-3-meter-met-smart-app" class="link">TV LED-strips</NuxtLink>,
+          en <NuxtLink to="/categorie/rgb-led-strips" class="link">RGB LED-strips</NuxtLink>. Beiden soorten bestaan uit complete sets.
         </p>
         <p class="text-white font-extralight">
           Met een <strong>uitstekende plakstrip</strong> die nooit meer laat, en eindeloze kleurencombinaties is dit een bijzonder pakket.
@@ -62,7 +62,7 @@
       </CTA>
 
       <CenterTitle
-        title="De voordelen van jouw nieuwe LED strips"
+        title="De voordelen van jouw nieuwe LED-strips"
       />
 
       <Benefits

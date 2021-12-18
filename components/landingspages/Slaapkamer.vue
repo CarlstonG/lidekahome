@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        title="LED STRIP SLAAPKAMER"
+        title="LED-strip SLAAPKAMER"
         description="Onze <a href='/categorie/led-strips' class='link'>RGB LED-strips</a> en
         <a href='/categorie/rgb-ic-led-strips' class='link'>RGB-IC LED-strips</a> zijn perfect voor in de slaapkamer.
         Beiden hebben een bijzonder <strong>stevige plakstrip</strong>, en kunnen daarmee overal bevestigd worden.
@@ -14,7 +14,7 @@
 
       <ProductsWithBackground
           v-if="collection1"
-          title="RGB LED Strips"
+          title="RGB LED-strips"
           :collection="collection1"
       />
 
@@ -28,7 +28,7 @@
 
       <ProductsWithBackground
           v-if="collection3"
-          title="RGB-IC LED Strips"
+          title="RGB-IC LED-strips"
           :collection="collection3"
       />
 
@@ -62,7 +62,7 @@
         title="Vochtige ruimte"
       >
         <p class="text-white font-extralight">
-          Wil je jouw nieuwe led strip
+          Wil je jouw nieuwe LED-strip
           <a href="/categorie/led-strip-plafond" class="link">plafond</a>
           in de <a href="/categorie/led-strip-badkamer" class="link">badkamer</a> gaan plaatsen of in een andere vochtige kamer? Let daarbij altijd op dat je wel te maken hebt met een minimale
           <a href="https://nl.wikipedia.org/wiki/IP-code" target="_blank" class="link">IP 65 ratio</a>. Deze leds zijn namelijk <strong>waterbestendig</strong> en zorgen ervoor dat jij nog jaren
@@ -116,13 +116,13 @@
       </div>
 
       <CenterTitle
-          title="LED STRIP CONTROLLER"
+          title="LED-strip CONTROLLER"
       />
 
       <LongParagraph>
         <p class="text-white font-extralight">
           Zoals je misschien al wist levert Lideka altijd <strong>complete sets</strong>,
-          dit doen we omdat we houden van gemak. Niemand heeft zin om allerlei extra dingen erbij te moeten zoeken, als je er helemaal <strong>geen verstand van hebt</strong>. Voor een expert op het gebied van verlichting zou het dan weer een ander verhaal zijn. Met onze led strip controller kun je volgende 3 dingen doen:
+          dit doen we omdat we houden van gemak. Niemand heeft zin om allerlei extra dingen erbij te moeten zoeken, als je er helemaal <strong>geen verstand van hebt</strong>. Voor een expert op het gebied van verlichting zou het dan weer een ander verhaal zijn. Met onze LED-strip controller kun je volgende 3 dingen doen:
         </p>
         <ol class="text-white font-extralight">
           <li>Dimmen</li>
@@ -162,10 +162,10 @@
             Deze <a class="link" href="/blog/alles-over-led-verlichting-als-sfeerverlichting">sfeervolle verlichting</a> van lideka is perfect te gebruiken als <strong>indirecte verlichting</strong>, maar ook als decoratieve verlichting. Het licht wordt mooi verspreid en het geeft een warme sfeer.
           </p>
           <p>
-            Het maakt niet uit voor welke soorten verlichting je kiest bij Lideka, vanwege de <strong>dim opties</strong> en de <strong>hoge kwaliteit leds</strong> kun je ze voor talloze doelen gebruiken. De Lideka led strips kunnen ook gebruikt worden in combinatie met led strip profielen, deze verkopen wij zelf niet.
+            Het maakt niet uit voor welke soorten verlichting je kiest bij Lideka, vanwege de <strong>dim opties</strong> en de <strong>hoge kwaliteit leds</strong> kun je ze voor talloze doelen gebruiken. De Lideka LED-strips kunnen ook gebruikt worden in combinatie met LED-strip profielen, deze verkopen wij zelf niet.
           </p>
           <p>
-            Echter hebben led strip profielen wel een <strong>positieve invloed</strong> op de led strip zelf. Het kan ook zijn dat je nog geen indirecte verlichting nodig hebt, dan kun je onze strips gewoon als sfeer of decoratie verlichting gebruiken.
+            Echter hebben LED-strip profielen wel een <strong>positieve invloed</strong> op de LED-strip zelf. Het kan ook zijn dat je nog geen indirecte verlichting nodig hebt, dan kun je onze strips gewoon als sfeer of decoratie verlichting gebruiken.
           </p>
         </div>
       </SingleImageWithContent>
@@ -190,7 +190,7 @@
         </p>
       </LongParagraph>
 
-      <CenterTitle title="Led strip afstandsbediening" />
+      <CenterTitle title="LED-strip afstandsbediening" />
       <LongParagraph>
         <p>
           Bij deze TV strip wordt een prachtige <strong>moderne afstandsbediening</strong> geleverd. Deze afstandsbediening heeft meerdere opties,
@@ -219,7 +219,7 @@
           :imageSrc="require('assets/design/landings/slaapkamer/verlichting.jpg')"
       >
         <p class="text-white font-extralight">
-          Deze led strips zijn niet alleen goed te gebruiken voor de slaapkamer, je kunt ze namelijk voor nog veel meer doeleinden gebruiken. Zo zijn ze ook prima als
+          Deze LED-strips zijn niet alleen goed te gebruiken voor de slaapkamer, je kunt ze namelijk voor nog veel meer doeleinden gebruiken. Zo zijn ze ook prima als
           <strong>extra verlichting</strong> in de keuken. In de <a href="/categorie/keuken" class="link">keuken</a> wordt vaak gebruik gemaakt van wit licht, dat is mede doordat je met wit licht toch een beter zicht krijgt op de tafel.
         </p>
         <p class="text-white font-extralight">
@@ -277,7 +277,7 @@
         </p>
         <p class="text-white font-extralight">
           <a href="/blog/hoe-sluit-ik-mijn-led-strips-aan">
-            Hoe sluit ik mijn led strips aan? - Lideka Home
+            Hoe sluit ik mijn LED-strips aan? - Lideka Home
           </a>
         </p>
       </LongParagraph>

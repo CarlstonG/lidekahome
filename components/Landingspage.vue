@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        title="RGB TV Led strips | 16 miljoen kleuren | Complete sets"
+        title="RGB TV LED-strips | 16 miljoen kleuren | Complete sets"
         description="TV LED-STRIPS"
         :imageSrc="require('assets/design/landings/banner.jpg')"
       />
@@ -28,7 +28,7 @@
 
 
       <ProductsWithBackground
-        title="Transformeer jouw ruimte tot thuisbioscoop met onze multifunctionele TV led-strips!"
+        title="Transformeer jouw ruimte tot thuisbioscoop met onze multifunctionele TV LED-strips!"
         :collection="collection"
       />
 
@@ -76,7 +76,7 @@
       <LengthProducts
         :collection="collection"
         title="Uit welke lengtes kan je kiezen?"
-        description="Wij leveren TV Led strips van 2 en 3 meter."
+        description="Wij leveren TV LED-strips van 2 en 3 meter."
       />
 
       <CenterTitle

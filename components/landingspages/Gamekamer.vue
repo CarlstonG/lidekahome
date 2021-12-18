@@ -6,7 +6,7 @@
         :smallText="true"
       />
 
-      <CenterTitle title="RGB LED STRIP" />
+      <CenterTitle title="RGB LED-strip" />
 
       <LongParagraph>
         <p class="text-white font-extralight">
@@ -36,37 +36,37 @@
 
       <ProductsWithBackground
           v-if="collection1"
-          title="RGB LED Strips"
+          title="RGB LED-strips"
           :collection="collection1"
       />
 
       <ProductsWithBackground
           v-if="collection3"
-          title="RGB-IC LED Strips"
+          title="RGB-IC LED-strips"
           :collection="collection3"
       />
 
       <ProductsWithBackground
           v-if="collection2"
-          title="USB TV LED STRIPS"
+          title="USB TV LED-stripS"
           :collection="collection2"
       />
 
       <SingleImage :image-src="require('assets/design/landings/gamekamer/banner2.jpg')" />
 
-      <CenterTitle title="Wat is een RGB led strip?" />
+      <CenterTitle title="Wat is een RGB LED-strip?" />
 
       <LongParagraph>
         <p class="text-white font-extralight">
-          De RGB LED Strip is een <strong>modulair, flexibel verlichtingssysteem.</strong> Het kan op elke gewenste lengte van de rol worden afgesneden en elke afzonderlijke RGB LED-lichtmodule kan in serie worden geschakeld.
+          De RGB LED-strip is een <strong>modulair, flexibel verlichtingssysteem.</strong> Het kan op elke gewenste lengte van de rol worden afgesneden en elke afzonderlijke RGB LED-lichtmodule kan in serie worden geschakeld.
           Elke RGB LED-module heeft drie LED's in zich: een <strong>rode, een groene en een blauwe.</strong>
         </p>
         <p class="text-white font-extralight">
-          De RGB LED Strips zijn licht van gewicht en ook <strong>duurzaam.</strong> Zij kunnen tot 360 graden buigen zonder te breken of te barsten.
-          De RGB LED Strip heeft een <strong>peel-and-stick</strong> achterzijde die zich hecht aan vrijwel elk plastic of metalen oppervlak zonder een spoor achter te laten bij verwijdering.
+          De RGB LED-strips zijn licht van gewicht en ook <strong>duurzaam.</strong> Zij kunnen tot 360 graden buigen zonder te breken of te barsten.
+          De RGB LED-strip heeft een <strong>peel-and-stick</strong> achterzijde die zich hecht aan vrijwel elk plastic of metalen oppervlak zonder een spoor achter te laten bij verwijdering.
         </p>
         <p class="text-white font-extralight">
-          Bij elke RGB LED-strip wordt een externe netvoeding geleverd, waardoor de RGB's tot 5 meter per strip kunnen worden bediend zonder dat extra voedingen nodig zijn. De RGB LED Strip is een
+          Bij elke RGB LED-strip wordt een externe netvoeding geleverd, waardoor de RGB's tot 5 meter per strip kunnen worden bediend zonder dat extra voedingen nodig zijn. De RGB LED-strip is een
           <strong>handige manier</strong> om wisselende verlichting toe te voegen aan verschillende oppervlakken.
         </p>
         <p class="text-white font-extralight">
@@ -80,7 +80,7 @@
         </p>
         <p>
           <a href=/blog/welke-kleuren-led-strips-zijn-er" class="link">
-            Welke kleuren led strips zijn er?
+            Welke kleuren LED-strips zijn er?
           </a>
         </p>
       </LongParagraph>
@@ -111,7 +111,7 @@
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <LongParagraph
               bg-color
-            title="Led strip profiel"
+            title="LED-strip profiel"
           >
             <p class="text-white font-extralight">
               Onze strips zijn uitstekend te gebruiken in combinatie met een profiel. Het heeft zelfs een <strong>positieve invloed</strong> op het product. Echter is het zeker <strong>niet noodzakelijk</strong>. Onze artikelen zijn van enorm <strong>hoge kwaliteit</strong> en de warmte wordt perfect afgevoerd.

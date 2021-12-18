@@ -58,14 +58,14 @@
             Betaalbaarheid
           </h2>
           <p class="text-white font-extralight pt-6 px-6 mx-auto max-w-2xl">
-            Slimme verlichting kan erg duur zijn, en vooral <a class="link" href="/categorie/led-strips">slimme led-strips</a>, nu kun je ook voor een goedkopere gaan maar je wilt toch
+            Slimme verlichting kan erg duur zijn, en vooral <a class="link" href="/categorie/led-strips">slimme LED-strips</a>, nu kun je ook voor een goedkopere gaan maar je wilt toch
             <strong>kwaliteit</strong>.
           </p>
           <p class="text-white font-extralight pt-6 px-6 mx-auto max-w-2xl">
             Vaak wordt er gedacht dat kwaliteit automatisch duur is, maar kwaliteit hoeft echt niet duur te zijn. Door de <strong>juiste processen</strong> te hanteren in de fabriek en de juiste partners te vinden kun jij een hele degelijke prijs neerzetten die voor iedereen haalbaar is.
           </p>
           <p class="text-white font-extralight pt-6 px-6 mx-auto max-w-2xl">
-            Dat is Lideka en dat is waar wij in <strong>geloven</strong>, betaalbare slimme led strips en verlichting, niet alleen voor jou, maar voor <strong>iedereen</strong>!
+            Dat is Lideka en dat is waar wij in <strong>geloven</strong>, betaalbare slimme LED-strips en verlichting, niet alleen voor jou, maar voor <strong>iedereen</strong>!
           </p>
         </div>
       </div>

@@ -55,7 +55,7 @@
 
     <div class="mx-auto max-w-7xl mt-10 mb-10 px-6">
       <h2 class="mx-auto text-3xl text-center text-white font-bold">
-        De 4 meest populaire soorten LED strips,
+        De 4 meest populaire soorten LED-strips,
       </h2>
       <p class="text-white text-2xl text-center mt-2">
         welke kies jij?
@@ -163,16 +163,16 @@
         style="background: rgba(0, 0, 0, 0.75)"
       >
         <h1 class="mx-auto text-3xl uppercase text-white font-bold mb-4" style="color: white;">
-          Lideka home - Betaalbare Slimme Led strips
+          Lideka home - Betaalbare Slimme LED-strips
         </h1>
         <p class="mx-auto text-white font-extralight">
           Lideka is een merk dat zich concentreert op het produceren van
-          <a target="_blank" class="link" href="/categorie/led-strips">slimme betaalbare Led strips.</a>
+          <a target="_blank" class="link" href="/categorie/led-strips">slimme betaalbare LED-strips.</a>
           Op dit moment bestaat ons assortiment uit
-          <a class="link" href="/categorie/rgb-led-strips">RGB led strips</a>,
-          <a class="link" href="/categorie/rgb-ic-led-strips">RGBIC led strips</a>,
-          <a class="link" href="/categorie/tv-led-strips">TV led strips</a> en
-          <a class="link" href="/categorie/led-pakketten">led strips pakketten</a>.
+          <a class="link" href="/categorie/rgb-led-strips">RGB LED-strips</a>,
+          <a class="link" href="/categorie/rgb-ic-led-strips">RGBIC LED-strips</a>,
+          <a class="link" href="/categorie/tv-led-strips">TV LED-strips</a> en
+          <a class="link" href="/categorie/led-pakketten">LED-strips pakketten</a>.
         </p>
         <p class="mx-auto text-white font-extralight">
           Ons assortiment zal snel uitgebreid worden met andere soorten slimme verlichting.
@@ -272,7 +272,7 @@
               Vaak wordt er gedacht dat kwaliteit automatisch duur is, maar kwaliteit hoeft echt niet duur te zijn. Door de <strong>juiste processen</strong> te hanteren in de fabriek en de juiste partners te vinden kun jij een hele degelijke prijs neerzetten die voor iedereen haalbaar is.
             </p>
             <p class="text-white font-extralight pt-6 px-6 mx-auto max-w-2xl">
-              Dat is Lideka en dat is waar wij in <strong>geloven</strong>, betaalbare slimme led strips en verlichting, niet alleen voor jou, maar voor <strong>iedereen</strong>!
+              Dat is Lideka en dat is waar wij in <strong>geloven</strong>, betaalbare slimme LED-strips en verlichting, niet alleen voor jou, maar voor <strong>iedereen</strong>!
             </p>
           </div>
         </div>

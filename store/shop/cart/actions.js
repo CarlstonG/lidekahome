@@ -28,7 +28,7 @@ const actions = {
   },
 
   async applyDiscount(context, payload) {
-    await applyDiscount(context.getters.checkoutId, payload.discountCode);
+    return await applyDiscount(context.getters.checkoutId, payload.discountCode);
   },
 
   async fetchCheckout(context) {

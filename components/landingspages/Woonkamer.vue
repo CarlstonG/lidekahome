@@ -6,7 +6,7 @@
 
         <div class="md:absolute mt-10 lg:mt-0 right-2 bottom-2 left-2 md:bottom-20 md:right-20 md:left-20">
           <h1 class="mx-auto text-4xl text-white font-bold tracking-wide">
-            LED STRIP WOONKAMER
+            LED-strip WOONKAMER
           </h1>
           <h2 class="mx-auto text-lg font-extralight text-white">
             Als je naar betaalbare, kwalitatieve LED-strips opzoekt bent voor in de woonkamer, dan ben je hier aan het perfecte adres. Lideka biedt speciaal voor de woonkamer onze RGB en RGB-IC LED-strips aan. Onze LED lights is van hoge kwaliteit, en helderder dan ooit in de geschiedenis van LED verlichting.
@@ -16,7 +16,7 @@
 
       <CenterTitle title="KIEZEN UIT 2 SOORTEN" />
 
-      <CenterParagraph description="Lideka bied op dit moment 2 geweldige soorten led strips aan voor de woonkamer, beiden strips worden geleverd als een compleet set, en beiden zijn van een uitstekende kwaliteit met een scherpe prijs. Je kunt onze artikelen ook gebruiken in combinatie met led strip profielen, dit heeft tevens een positieve invloed op de strips zelf." />
+      <CenterParagraph description="Lideka bied op dit moment 2 geweldige soorten LED-strips aan voor de woonkamer, beiden strips worden geleverd als een compleet set, en beiden zijn van een uitstekende kwaliteit met een scherpe prijs. Je kunt onze artikelen ook gebruiken in combinatie met LED-strip profielen, dit heeft tevens een positieve invloed op de strips zelf." />
 
       <ProductsWithBackground
           v-if="collection1"
@@ -28,7 +28,7 @@
 
       <ProductsWithBackground
           v-if="collection3"
-          title="RGB-IC LED Strips"
+          title="RGB-IC LED-strips"
           :collection="collection3"
       />
 
@@ -50,7 +50,7 @@
             Dat klinkt krachtig - vooral het gedeelte over "omdat ze gemaakt zijn van licht emitterende diodes (LED)!" Een ander voordeel dat in het artikel wordt genoemd, is dat LED-lampen minder warmte produceren dan gewone lampen. Zie Ik zei het je, het artikel is behoorlijk informatief!
           </p>
           <p>
-            De led strips van Lideka kun je op iedere gewenste plek bevestigen in jouw woonkamer. Reken eerst uit hoeveel meter je precies nodig hebt, daarna kun je de juiste lengte erbij kiezen.
+            De LED-strips van Lideka kun je op iedere gewenste plek bevestigen in jouw woonkamer. Reken eerst uit hoeveel meter je precies nodig hebt, daarna kun je de juiste lengte erbij kiezen.
           </p>
         </div>
       </LongParagraph>
@@ -69,7 +69,7 @@
           Dat klinkt krachtig - vooral het gedeelte over "omdat ze gemaakt zijn van licht emitterende diodes (LED)!" Een ander voordeel dat in het artikel wordt genoemd, is dat LED-lampen minder warmte produceren dan gewone lampen. Zie Ik zei het je, het artikel is behoorlijk informatief!
         </p>
         <p>
-          De led strips van Lideka kun je op iedere gewenste plek bevestigen in jouw woonkamer. Reken eerst uit hoeveel meter je precies nodig hebt, daarna kun je de juiste lengte erbij kiezen.
+          De LED-strips van Lideka kun je op iedere gewenste plek bevestigen in jouw woonkamer. Reken eerst uit hoeveel meter je precies nodig hebt, daarna kun je de juiste lengte erbij kiezen.
         </p>
       </LongParagraph>
 
@@ -79,7 +79,7 @@
             :bg-color="true"
         >
          <p>
-           Traditionele verlichting wordt steeds minder gebruikt, en dat is meer dan logisch. Aangezien een Led lamp enorm veel voordelen heeft. Je kunt nu zelfs een led strip met afstandsbediening kopen, daarmee kun je bijvoorbeeld verschillende kleuren combinaties maken.
+           Traditionele verlichting wordt steeds minder gebruikt, en dat is meer dan logisch. Aangezien een Led lamp enorm veel voordelen heeft. Je kunt nu zelfs een LED-strip met afstandsbediening kopen, daarmee kun je bijvoorbeeld verschillende kleuren combinaties maken.
            Nieuwe verlichting is ook steeds beter bestemd tegen een vochtige ruimte, daar had de oude verlichting vaak moeite mee en dat kon nog wel eens gevaarlijke situaties opleveren.
         </p>
         <p>
@@ -110,7 +110,7 @@
 
       <CenterTitle title="DIMBARE LEDSTRIPS" />
 
-      <CenterParagraph description="Al onze led strips kunnen super makkelijk gedimd worden om maar liefst drie verschillende manieren" />
+      <CenterParagraph description="Al onze LED-strips kunnen super makkelijk gedimd worden om maar liefst drie verschillende manieren" />
 
       <div class="mx-auto max-w-5xl">
         <Highlights :highlights="[
@@ -133,7 +133,7 @@
         title="MUUR LEDSTRIPS"
       >
         <p>
-          Er zijn niet echt speciale muur ledstrips, je moet echter wel voorzichtig zijn bij het aankopen van led strips als je ze voor de muur wilt gaan gebruiken, we raden je aan altijd voor 3M tape te kiezen.
+          Er zijn niet echt speciale muur ledstrips, je moet echter wel voorzichtig zijn bij het aankopen van LED-strips als je ze voor de muur wilt gaan gebruiken, we raden je aan altijd voor 3M tape te kiezen.
         </p>
 
         <p>

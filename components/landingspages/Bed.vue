@@ -32,7 +32,7 @@
 
       <ProductsWithBackground
         v-if="collection1"
-        title="RGB LED Strips"
+        title="RGB LED-strips"
         :collection="collection1"
       />
 
@@ -53,7 +53,7 @@
 
       <ProductsWithBackground
         v-if="collection3"
-        title="RGB-IC LED Strips"
+        title="RGB-IC LED-strips"
         :collection="collection3"
       />
 
@@ -71,7 +71,7 @@
         :bg-color="true"
       >
         <p>
-          Jouw nieuwe led strip is uitgerust met het <strong>ijzersterke 3M tape</strong>,
+          Jouw nieuwe LED-strip is uitgerust met het <strong>ijzersterke 3M tape</strong>,
           3M tape zal niet zomaar meer loslaten en is volledig zelfklevend. Voor een
           <strong>eenvoudige montage</strong> met plakstrip is dus altijd een dubbelzijdige 3M tape aan te raden. 3M tape staat erom bekend dat het niet zomaar meer loslaat.
         </p>
@@ -107,7 +107,7 @@
         <img src="~assets/photos/Bed-2.jpg" class="rounded-2xl" />
         <div class="lg:absolute max-w-5xl bottom-5 inset-x-0 mx-auto">
           <h2 class="text-white uppercase font-bold tracking-wide text-3xl">Indirect licht</h2>
-          <span class="text-white">De led strips van Lideka kunnen uitstekend worden gebruikt als indirect licht, dat komt door zijn
+          <span class="text-white">De LED-strips van Lideka kunnen uitstekend worden gebruikt als indirect licht, dat komt door zijn
 
             <strong>hoge helderheid</strong> en hoge aantal leds per meter. Al onze strips zijn uitgerust met de
             hoge kwalitatieve <strong>SMD 5050 leds</strong> die <strong>drie keer zoveel licht</strong> opbrengen en <strong>drie keer zo lang meegaan.</strong></span>
@@ -121,11 +121,11 @@
         >
           <p>
             Als je opzoek bent naar <strong>decoratief licht</strong>, en je wilt dat deze voldoende licht opbrengt maar toch ook als
-            <strong>sfeerverlichting</strong> gebruikt kan worden, dan raden we je led strip bedverlichting aan. Dit kunnen gewoon normale
+            <strong>sfeerverlichting</strong> gebruikt kan worden, dan raden we je LED-strip bedverlichting aan. Dit kunnen gewoon normale
             <strong>flexibele strips</strong> zijn zodat je ze <strong>extra makkelijk</strong> kunt bevestigen.
           </p>
           <p>
-            Led strip bedverlichting wordt <strong>steeds populairder</strong>, en dat heeft ook te maken het feit dat er steeds mooiere
+            LED-strip bedverlichting wordt <strong>steeds populairder</strong>, en dat heeft ook te maken het feit dat er steeds mooiere
             kleurtjes bij komen. Met de flexibele strips van Lideka ben jij binnen no-time heel je bed rond en heb je een
             <strong>wonderbaarlijke nachtrust</strong>.
           </p>
@@ -149,14 +149,14 @@
             :bg-color="true"
           >
             <p class="text-white">
-              We geven je graag wat meer informatie omtrent <strong>verlichting voor het huis</strong>, en dan in het speciaal voor bed verlichting. Bij voorkeur gaan we voor flexibele led strips zodat je een
+              We geven je graag wat meer informatie omtrent <strong>verlichting voor het huis</strong>, en dan in het speciaal voor bed verlichting. Bij voorkeur gaan we voor flexibele LED-strips zodat je een
               <strong>makkelijke installatie</strong> hebt.
             </p>
             <p class="text-white">
               We raden je aan een RGB of RGBIC versie te nemen, hiermee kun je <strong>warme en donkere kleuren</strong> produceren die extra rustig zijn voor de ogen.
             </p>
             <p class="text-white">
-              De Led strip sets van Lideka bevatten altijd een <strong>moderne afstandsbediening</strong> waarmee je de verlichting aan en uit kunt zetten.
+              De LED-strip sets van Lideka bevatten altijd een <strong>moderne afstandsbediening</strong> waarmee je de verlichting aan en uit kunt zetten.
             </p>
             <p class="text-white">
               We raden je aan eerst goed je bed op te meten zodat je precies weet hoeveel meter strip je nodig hebt.
@@ -176,11 +176,11 @@
           </LongParagraph>
           <div class="grid grid-cols-1 gap-10">
             <LongParagraph
-              title="Led strip sets"
+              title="LED-strip sets"
               :bg-color="true"
             >
               <div class="prose prose-teal-500 text-white max-w-5xl mx-auto">
-                <p>We geven je graag een overzicht waaruit onze led strips sets bestaan</p>
+                <p>We geven je graag een overzicht waaruit onze LED-strips sets bestaan</p>
                 <ul class="text-white font-extralight no-list-type">
                   <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Adapter</span></li>
                   <li class="flex items-center space-x-4"><img alt="Checkmark" class="w-8 h-8" src="~assets/icon/icons8-checkmark.svg" /><span class="tracking-wide text-gray-300 uppercase font-bold">Controller</span></li>
@@ -194,7 +194,7 @@
               :bg-color="true"
             >
               <p>
-                Er zijn veel soorten led strips die ook wit licht hebben als optie, dit kan erg mooi zijn en zeker als je kan kiezen tussen verschillende tinten wit. Echter wordt wit meer gebruikt in combinatie met een eettafel of als gewone verlichting. Voor echte sfeer verlichting wordt toch vaker RGB gebruikt.
+                Er zijn veel soorten LED-strips die ook wit licht hebben als optie, dit kan erg mooi zijn en zeker als je kan kiezen tussen verschillende tinten wit. Echter wordt wit meer gebruikt in combinatie met een eettafel of als gewone verlichting. Voor echte sfeer verlichting wordt toch vaker RGB gebruikt.
               </p>
             </LongParagraph>
           </div>
@@ -204,11 +204,11 @@
       <div class="max-w-5xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <LongParagraph
-            title="Led strip Bedverlichting met sensor"
+            title="LED-strip Bedverlichting met sensor"
             :bg-color="true"
           >
             <div class="prose prose-teal-500 text-white max-w-5xl mx-auto">
-              <p>Led strip Bedverlichting met sensor kun je gebruiken als je dat handig vind, toch wordt het nog vaak
+              <p>LED-strip Bedverlichting met sensor kun je gebruiken als je dat handig vind, toch wordt het nog vaak
                 als overbodig gezien. Waarom zul je denken... Dat heeft te maken met het feit dat je bijna nooit direct
                 gaat slapen als je naar bed gaat, dan is een warme rode sfeer kleur veel relevanter. Deze zet je dan
                 <strong>gemakkelijk</strong> aan en uit met een <strong>app of afstandsbediening.</strong></p>
@@ -218,7 +218,7 @@
 
               <p class="text-white">
                 <a href="/blog/welke-kleuren-led-strips-zijn-er" class="link">
-                  Welke kleuren led strips zijn er?
+                  Welke kleuren LED-strips zijn er?
                 </a>
               </p>
             </div>
@@ -253,13 +253,13 @@
       <div class="max-w-5xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <LongParagraph
-            title="Single color led strip"
+            title="Single color LED-strip"
             :bg-color="true"
           >
             <div class="prose prose-teal-500 text-white mx-auto">
-              <p>Je kunt ook voor een <strong>single color led strip</strong> gaan,
+              <p>Je kunt ook voor een <strong>single color LED-strip</strong> gaan,
                 dat houd in dat je maar 1 kleur hebt. Je kunt bijvoorbeeld kiezen
-                om voor rood of blauw te gaan. Echter <strong>raden wij dit altijd af</strong>, zeker nu een RGB strip bijna dezelfde prijs hebben. Dan kun je beter nog eens kiezen tussen 1 van de vele kleuren combinaties die je kunt maken met de led strip.</p>
+                om voor rood of blauw te gaan. Echter <strong>raden wij dit altijd af</strong>, zeker nu een RGB strip bijna dezelfde prijs hebben. Dan kun je beter nog eens kiezen tussen 1 van de vele kleuren combinaties die je kunt maken met de LED-strip.</p>
             </div>
           </LongParagraph>
           <LongParagraph

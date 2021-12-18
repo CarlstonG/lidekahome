@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        title="RGB TV Led strips | 16 miljoen kleuren | Complete sets"
+        title="RGB TV LED-strips | 16 miljoen kleuren | Complete sets"
         :imageSrc="require('assets/photos/TV-1.jpg')"
       />
 
@@ -33,7 +33,7 @@
       <VideoReviews />
 
       <CTA to="/products/lideka-tv-led-strip-3-meter-usb-rgb-smart-verlichting">
-        Bekijk meest verkochte led strip
+        Bekijk meest verkochte LED-strip
       </CTA>
 
 <!--      <CenterTitle-->
@@ -62,7 +62,7 @@
               title="Compleet pakket"
           >
             <p class="text-white font-extralight">
-              Dit set is echt helemaal compleet en je hebt geen extra kabel meer nodig. Je zou er wel nog hoekconnectoren bij kunnen gebruiken maar deze raden wij sterk af. Onze TV led strips zijn enorm flexibel en deze kun je zonder te knippen achter op een TV plakken. Vanwege de USB poort is installeren nog makkelijker.
+              Dit set is echt helemaal compleet en je hebt geen extra kabel meer nodig. Je zou er wel nog hoekconnectoren bij kunnen gebruiken maar deze raden wij sterk af. Onze TV LED-strips zijn enorm flexibel en deze kun je zonder te knippen achter op een TV plakken. Vanwege de USB poort is installeren nog makkelijker.
             </p>
           </LongParagraph>
           <LongParagraph
@@ -83,7 +83,7 @@
               title="Waarschuwing"
           >
             <p class="text-white font-extralight">
-              Let AUB goed op het feit dat sommige TV's niet voldoende stroom geven aan USB poort, in dit geval raden we je aan om een USB adapter te gebruiken, deze zijn overal te verkrijgen. Je kunt dit ontdekken door gewoon te kijken naar de manier waarop de led strip functioneert. Bij vragen kun je altijd even contact opnemen met de klantenservice.
+              Let AUB goed op het feit dat sommige TV's niet voldoende stroom geven aan USB poort, in dit geval raden we je aan om een USB adapter te gebruiken, deze zijn overal te verkrijgen. Je kunt dit ontdekken door gewoon te kijken naar de manier waarop de LED-strip functioneert. Bij vragen kun je altijd even contact opnemen met de klantenservice.
             </p>
           </LongParagraph>
           <LongParagraph
@@ -91,19 +91,19 @@
               title="TV verlichting goed voor de ogen"
           >
             <p class="text-white font-extralight">
-              Er zijn meerdere studies en onderzoeken geweest naar het gebruik van TV led strips, en daar is keer op keer uitgekomen dat het goed voor de ogen is. Vooral de wat zachtere kleuren zoals rood doen het enorm goed, het brengt je ogen en mind tot rust en het laat je meer ontspannen.
+              Er zijn meerdere studies en onderzoeken geweest naar het gebruik van TV LED-strips, en daar is keer op keer uitgekomen dat het goed voor de ogen is. Vooral de wat zachtere kleuren zoals rood doen het enorm goed, het brengt je ogen en mind tot rust en het laat je meer ontspannen.
             </p>
           </LongParagraph>
         </div>
       </div>
 
       <CTA to="/products/lideka-tv-led-strip-3-meter-usb-rgb-smart-verlichting">
-        Bekijk meest verkochte led strip
+        Bekijk meest verkochte LED-strip
       </CTA>
 
       <SingleImage
         :image-src="require('assets/photos/remote.jpg')"
-        description="<h2 class='font-bold text-3xl'>TV verlichting goed voor de ogen</h2><p>Er zijn meerdere studies en onderzoeken geweest naar het gebruik van TV led strips, en daar is keer op keer uitgekomen dat het goed voor de ogen is. Vooral de wat zachtere kleuren zoals rood doen het enorm goed, het brengt je ogen en mind tot rust en het laat je meer ontspannen.</p>"
+        description="<h2 class='font-bold text-3xl'>TV verlichting goed voor de ogen</h2><p>Er zijn meerdere studies en onderzoeken geweest naar het gebruik van TV LED-strips, en daar is keer op keer uitgekomen dat het goed voor de ogen is. Vooral de wat zachtere kleuren zoals rood doen het enorm goed, het brengt je ogen en mind tot rust en het laat je meer ontspannen.</p>"
       />
 
       <div class="mx-auto max-w-5xl">
@@ -133,13 +133,13 @@
             title="Verbindingen"
         >
           <p class="text-white font-extralight">
-            Er zijn bepaalde softwares zoals google assistent en amazon alexa die dit soort apparaten kunnen bedienen. Echter is dat bij TV Led strips vaak overbodig aangezien deze vanzelf al aan en uit gaan met de TV.
+            Er zijn bepaalde softwares zoals google assistent en amazon alexa die dit soort apparaten kunnen bedienen. Echter is dat bij TV LED-strips vaak overbodig aangezien deze vanzelf al aan en uit gaan met de TV.
           </p>
           <p class="text-white font-extralight">
             <strong>USB Poort</strong>
           </p>
           <p class="text-white font-extralight">
-            De complete sets van Lideka worden direct aangesloten op alle TV's met een USB poort, nu hebben niet alle TV's een USB poort. Dat is geen probleem, je kunt een een adapter kopen met een USB poort en daar dan de TV led strip direct op aansluiten. Houd er ook rekening mee dat niet alle TV's voldoende stroom geven op de USB poort. Een USB poort is vooral enorm handig als je weinig ruimte hebt voor een extra stekker.
+            De complete sets van Lideka worden direct aangesloten op alle TV's met een USB poort, nu hebben niet alle TV's een USB poort. Dat is geen probleem, je kunt een een adapter kopen met een USB poort en daar dan de TV LED-strip direct op aansluiten. Houd er ook rekening mee dat niet alle TV's voldoende stroom geven op de USB poort. Een USB poort is vooral enorm handig als je weinig ruimte hebt voor een extra stekker.
           </p>
         </LongParagraph>
       </div>
@@ -160,7 +160,7 @@
       />
 
       <CTA to="/products/lideka-tv-led-strip-3-meter-usb-rgb-smart-verlichting">
-        Bekijk meest verkochte led strip
+        Bekijk meest verkochte LED-strip
       </CTA>
 
       <CenterTitle

@@ -37,7 +37,7 @@
                 <NuxtLink to="/categorie/rgb-led-strips">
                   <div class="space-y-4">
                     <h2 class="text-2xl text-white font-bold uppercase tracking-wide space-x-4 flex items-center">
-                      <span>RGB Led strips</span>
+                      <span>RGB LED-strips</span>
                       <svg class="h-6 w-6"
                            xmlns="http://www.w3.org/2000/svg"
                            viewBox="0 0 20 20" fill="currentColor"
@@ -107,7 +107,7 @@
                 <NuxtLink to="/categorie/rgb-ic-led-strips">
                   <div class="space-y-4">
                     <h2 class="text-2xl text-white font-bold uppercase tracking-wide space-x-4 flex items-center">
-                      <span>RGB-IC Led strips</span>
+                      <span>RGB-IC LED-strips</span>
                       <svg class="h-6 w-6"
                            xmlns="http://www.w3.org/2000/svg"
                            viewBox="0 0 20 20" fill="currentColor"
@@ -168,7 +168,7 @@
                 <NuxtLink to="/categorie/tv-led-strips">
                   <div class="space-y-4">
                     <h2 class="text-2xl text-white font-bold uppercase tracking-wide space-x-4 flex items-center">
-                      <span>TV Led strips</span>
+                      <span>TV LED-strips</span>
                       <svg class="h-6 w-6"
                            xmlns="http://www.w3.org/2000/svg"
                            viewBox="0 0 20 20" fill="currentColor"

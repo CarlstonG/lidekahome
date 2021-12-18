@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 lg:mb-0">
       <h1 class="md:hidden mx-auto text-3xl text-white font-bold tracking-wide uppercase mb-6">
-        LED strips
+        LED-strips
       </h1>
 
       <video :poster="require('assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
@@ -12,7 +12,7 @@
 
       <div class="hidden md:block md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20 md:right-20">
         <h1 class="mx-auto text-3xl text-white font-bold tracking-wide text-center">
-          LED strips
+          LED-strips
         </h1>
       </div>
     </div>
@@ -28,11 +28,11 @@
           Het mooiste aan deze moderne
           <a class="link" href="/blog/alles-over-led-verlichting-als-sfeerverlichting">sfeerverlichting</a>?
           Led-strips zijn ontzettend <strong>multifunctioneel</strong> en op te hangen waar je maar wilt! Kies je voor een
-          futuristisch verlichte tv, trendy keuken of sfeervolle tuin? Het Lideka® assortiment heeft een led-strip voor
+          futuristisch verlichte tv, trendy keuken of sfeervolle tuin? Het Lideka® assortiment heeft een LED-strip voor
           <strong>elke gelegenheid</strong>.
         </p>
         <p class="text-white font-extralight">
-          Wat is nou het verschil tussen al die verschillende led-strips? Hier vind je al onze kennis en informatie in een handig overzicht. Zo ontdek je gemakkelijk welke Lideka® strip het beste bij jou en jouw ruimte past.
+          Wat is nou het verschil tussen al die verschillende LED-strips? Hier vind je al onze kennis en informatie in een handig overzicht. Zo ontdek je gemakkelijk welke Lideka® strip het beste bij jou en jouw ruimte past.
         </p>
       </LongParagraph>
     </div>
@@ -40,25 +40,25 @@
     <div class="max-w-7xl mx-auto space-y-10 mb-10 px-6 lg:px-0">
       <ProductsWithBackground
           v-if="collection1"
-          title="RGB LED STRIPS"
+          title="RGB LED-stripS"
           :collection="collection1"
       />
 
       <ProductsWithBackground
           v-if="collection2"
-          title="TV LED Strips"
+          title="TV LED-strips"
           :collection="collection2"
       />
 
       <ProductsWithBackground
           v-if="collection3"
-          title="RGB-IC LED Strips"
+          title="RGB-IC LED-strips"
           :collection="collection3"
       />
 
       <ProductsWithBackground
           v-if="collection4"
-          title="LED strip pakketten"
+          title="LED-strip pakketten"
           :collection="collection4"
       />
 
@@ -66,7 +66,7 @@
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
-            title="Wat zijn LED strips"
+            title="Wat zijn LED-strips"
             :bg-color="false"
         >
           <p class="text-white font-extralight">
@@ -86,7 +86,7 @@
             <a href="/blog/alles-over-led-verlichting-als-sfeerverlichting" class="link">sfeervolle verlichting</a> hoort daar uiteraard bij.
           </p>
           <p class="text-white font-extralight">
-            LED strips zijn eenvoudig te bevestigen langs de onderkant van het dak, en blijven dankzij een
+            LED-strips zijn eenvoudig te bevestigen langs de onderkant van het dak, en blijven dankzij een
             <strong>stevige plakrand</strong> altijd op hun plek hangen. Zo creëer je ook buiten een
             <strong>unieke sfeer</strong>, waarmee in de eigen tuin loungen nog leuker wordt. Het gebruik van deze strips gaat vaak via een
             <strong>afstandsbediening</strong>, en <strong>app</strong>.
@@ -398,7 +398,7 @@
         >
           <p class="text-white font-extralight">
             Het belangrijk om rekening te houden met het
-            <a class="link" href="https://nl.wikipedia.org/wiki/Elektrische_spanning">Voltage</a>. Onze LED strips zijn beschikbaar in 5 en 12 volt.
+            <a class="link" href="https://nl.wikipedia.org/wiki/Elektrische_spanning">Voltage</a>. Onze LED-strips zijn beschikbaar in 5 en 12 volt.
           </p>
           <p class="text-white font-extralight">
             Langs de 5V en 12V loopt minder stroom, waardoor het over het algemeen als veiliger wordt ervaren.
@@ -501,7 +501,7 @@
             :bg-color="true"
         >
           <p class="text-white font-extralight">
-            Onze led strips zijn prima te gebruiken in combinatie met een led strip profielen, het heeft namelijk een <strong>positieve invloed</strong>
+            Onze LED-strips zijn prima te gebruiken in combinatie met een LED-strip profielen, het heeft namelijk een <strong>positieve invloed</strong>
             op de led strip, echter is het niet noodzakelijk. De artikelen van Lideka hebben een <strong>goede afvoer</strong> als het gaat
             om warmte en hebben daardoor al een extra lange levensduur.
           </p>
@@ -551,7 +551,7 @@
             :bg-color="true"
         >
           <p class="text-white font-extralight">
-            De LED strips staan bekend om hun lage stroomverbruik, terwijl ze toch veel licht geven.
+            De LED-strips staan bekend om hun lage stroomverbruik, terwijl ze toch veel licht geven.
             Het benodigde vermogen voor onze RGB Led strips is slechts <strong>3 watt per meter</strong>. Een normale gloeilamp van <strong>40 watt</strong> verbruikt gemiddeld meer dan
             <strong>60 watt</strong>.
           </p>

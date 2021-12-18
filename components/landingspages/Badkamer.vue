@@ -7,13 +7,13 @@
 
       <CenterTitle
         tag="h1"
-        title="led strips badkamer"
+        title="LED-strips badkamer"
       />
 
       <LongParagraph>
         <div class="text-left">
           <p class="text-white font-extralight">
-            Ben jij opzoek naar <strong>mooie LED strips</strong> voor in de badkamer of douche? Dan ben je hier aan het juiste adres.
+            Ben jij opzoek naar <strong>mooie LED-strips</strong> voor in de badkamer of douche? Dan ben je hier aan het juiste adres.
           </p>
           <p class="text-white font-extralight">
             We hebben daarvoor 2 speciale pareltjes in ons assortiment, de welbekende
@@ -34,27 +34,27 @@
 
       <ProductsWithBackground
           v-if="collection1"
-          title="RGB LED Strips"
+          title="RGB LED-strips"
           :collection="collection1"
       />
 
       <ProductsWithBackground
           v-if="collection3"
-          title="RGB-IC LED Strips"
+          title="RGB-IC LED-strips"
           :collection="collection3"
       />
-      <CenterTitle title="led strips badkamer" />
+      <CenterTitle title="LED-strips badkamer" />
 
       <LongParagraph>
         <div class="text-left md:text-center">
           <p class="text-white font-extralight">
-            Led strips in de badkamer geven een <strong>gezellige sfeer</strong>. Met led strips kunt u zelfs een bepaalde sfeer creëren, misschien bent u niet in de stemming voor een rustige sfeer en wilt u iets ruigers, led strips zullen precies dat doen.
+            LED-strips in de badkamer geven een <strong>gezellige sfeer</strong>. Met LED-strips kunt u zelfs een bepaalde sfeer creëren, misschien bent u niet in de stemming voor een rustige sfeer en wilt u iets ruigers, LED-strips zullen precies dat doen.
           </p>
           <p class="text-white font-extralight">
             Voor een goede verlichting met je echt <strong>stap voor stap</strong> te werk gaan, je ziet namelijk snel dingen over het hoofd. Er komen veel aspecten bij kijken. Je wilt natuurlijk een <strong>strakke afwerking</strong>. Badkamer ledstrips vereisen strakke lichtlijnen, en de beste led lampjes.
           </p>
           <p class="text-white font-extralight">
-            Als je <strong>snel de juiste verlichting</strong> in huis wilt halen voor de beste sfeer dan raden we RGB of RGBIC led strips aan, deze gaan bijzonder lang mee en hebben heel veel verschillende kleuren.
+            Als je <strong>snel de juiste verlichting</strong> in huis wilt halen voor de beste sfeer dan raden we RGB of RGBIC LED-strips aan, deze gaan bijzonder lang mee en hebben heel veel verschillende kleuren.
           </p>
           <p class="text-white font-extralight">
             <a href="/blog/welke-functies-kun-je-led-verlichting-meegeven" class="link">
@@ -72,7 +72,7 @@
           en zijn daarom <strong>meer dan geschikt</strong>. Ook in de douche hoef jij je geen zorgen te maken, <strong>let daarop wel op dat je controller en adapter afsluit van water en vocht.</strong>
         </p>
         <p class="text-white font-extralight">
-          Je kunt onze led strips gebruiken als normale verlichting zodat je zelf geen extra lamp hoeft te kopen. Ook
+          Je kunt onze LED-strips gebruiken als normale verlichting zodat je zelf geen extra lamp hoeft te kopen. Ook
           <a href="/blog/alles-over-led-verlichting-als-sfeerverlichting" class="link">sfeerverlichting</a> is geen enkel probleem aangezien de strip <strong>volledig te dimmen is</strong>. Je kunt dus echt alle kanten op. Koop je toch wel een extra lamp? Houd dan rekening met vocht.
         </p>
         <p class="text-white font-extralight">
@@ -168,7 +168,7 @@
           >
             <p class="text-white font-extralight">
               Wat vooral belangrijk is in vochtige ruimtes is dat je het juiste IP ratio gebruikt. Je wilt namelijk niet dat je verlichting na de kortsten keren alweer kapot is. We raden altijd een <strong>minimale IP waarde van 65</strong> aan.
-              IP65 is perfect voor binnen het huis, je kunt hiermee met een gerust hart jouw led strips bevestigen in <strong>vochtige ruimtes.</strong>
+              IP65 is perfect voor binnen het huis, je kunt hiermee met een gerust hart jouw LED-strips bevestigen in <strong>vochtige ruimtes.</strong>
             </p>
             <p class="text-white font-extralight">
               Je kunt ook als extra bescherming een LED profiel gebruiken. Als je niet zeker weet wat de juiste keuze is voor jouw nieuwe badkamer dan
@@ -212,7 +212,7 @@
         </p>
         <p class="text-white font-extralight">
           <a href="/blog/welke-kleuren-led-strips-zijn-er" class="link">
-            Welke kleuren led strips zijn er?
+            Welke kleuren LED-strips zijn er?
           </a>
         </p>
       </LongParagraph>
@@ -242,7 +242,7 @@
         </p>
         <p class="text-white font-extralight">
           <a href="/blog/hoe-sluit-ik-mijn-led-strips-aan" class="link">
-            Hoe sluit ik mijn led strips aan? - Lideka Home
+            Hoe sluit ik mijn LED-strips aan? - Lideka Home
           </a>
         </p>
       </LongParagraph>

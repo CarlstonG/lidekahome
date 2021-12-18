@@ -6,7 +6,7 @@
         :smallText="true"
       />
 
-      <CenterTitle title="LED STRIP KEUKEN" />
+      <CenterTitle title="LED-strip KEUKEN" />
 
       <LongParagraph>
         <p class="text-white font-extralight">
@@ -23,7 +23,7 @@
         </p>
         <p>
           <a href="/blog/welke-kleuren-led-strips-zijn-er" class="link">
-            Welke kleuren led strips zijn er?
+            Welke kleuren LED-strips zijn er?
           </a>
         </p>
       </LongParagraph>
@@ -45,7 +45,7 @@
 
       <ProductsWithBackground
           v-if="collection3"
-          title="RGB-IC LED Strips"
+          title="RGB-IC LED-strips"
           :collection="collection3"
       />
 
@@ -93,9 +93,9 @@
         </p>
       </TextWithImage>
 
-      <CenterTitle title="LED STRIP BEDIENING" />
+      <CenterTitle title="LED-strip BEDIENING" />
 
-      <CenterParagraph description="Onze geweldige led strips zijn op drie verschillende manieren te bedienen. " />
+      <CenterParagraph description="Onze geweldige LED-strips zijn op drie verschillende manieren te bedienen. " />
 
       <div class="mx-auto max-w-5xl">
         <Highlights :highlights="[
@@ -109,18 +109,18 @@
             },
             {
               imageSrc: require('assets/design/landings/slaapkamer/controller.png'),
-              description: 'Met de led strip controller'
+              description: 'Met de LED-strip controller'
             }
         ]" />
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <LongParagraph
-          title="LED STRIP PROFIELEN"
+          title="LED-strip PROFIELEN"
           :bg-color="true"
         >
           <p>
-            De led strips van Lideka kunnen prima gebruikt worden in combinatie met <strong>led strip profielen</strong>. De voorkeur gaat dan uit naar een <strong>aluminium led profiel</strong>, dit heeft namelijk een positieve invloed op de ledstrip zelf.
+            De LED-strips van Lideka kunnen prima gebruikt worden in combinatie met <strong>LED-strip profielen</strong>. De voorkeur gaat dan uit naar een <strong>aluminium led profiel</strong>, dit heeft namelijk een positieve invloed op de ledstrip zelf.
           </p>
         </LongParagraph>
         <LongParagraph
@@ -140,9 +140,9 @@
           :bg-color="true"
       >
        <p>
-         Bij Lideka houden we makkelijk en eenvoudig, niet iedereen is namelijk een techneut en heeft veel verstand van verlichting of elektriciteit. Daarom worden onze sets geleverd <strong>inclusief ledstrip controller, voeding en led strip afstandsbediening.</strong> Hieronder wat specificaties omtrent de componenten van de led strip.
+         Bij Lideka houden we makkelijk en eenvoudig, niet iedereen is namelijk een techneut en heeft veel verstand van verlichting of elektriciteit. Daarom worden onze sets geleverd <strong>inclusief ledstrip controller, voeding en LED-strip afstandsbediening.</strong> Hieronder wat specificaties omtrent de componenten van de LED-strip.
        </p>
-        <h3 class="font-bold text-4xl uppercase text-white force-white">LED strip controller:</h3>
+        <h3 class="font-bold text-4xl uppercase text-white force-white">LED-strip controller:</h3>
         <ul class="text-white font-extralight">
           <li>Hoogwaardige kwaliteit kunststof</li>
           <li>Drie verschillende knoppen voor een extra makkelijk bediening</li>
@@ -150,14 +150,14 @@
           <li>Ruime keuze aan kleuren, voor iedere setting een goede kleur</li>
           <li>Lengte van ongeveer 15cm</li>
         </ul>
-        <h3 class="font-bold text-4xl uppercase text-white force-white">Led strip afstandsbediening:</h3>
+        <h3 class="font-bold text-4xl uppercase text-white force-white">LED-strip afstandsbediening:</h3>
         <ul class="text-white font-extralight">
           <li>Talloze kleuren voor een eigen lichtshow</li>
           <li>Kies zelf een gave scene voor iedere gelegenheid</li>
           <li>Nieuwste model</li>
           <li>Uitstekende kwaliteit, zodat je nog jaren kunt genieten</li>
         </ul>
-        <h3 class="font-bold text-4xl uppercase text-white force-white">Led strip voeding:</h3>
+        <h3 class="font-bold text-4xl uppercase text-white force-white">LED-strip voeding:</h3>
         <ul class="text-white font-extralight">
           <li>12V voor een bijzonder hoge lichtopbrengst<li>
           <li>Kabel van 1.40 zodat installeren nog eenvoudiger word<li>
@@ -168,7 +168,7 @@
       <SingleImage :image-src="require('assets/design/landings/keuken/banner4.jpg')" />
 
       <LongParagraph
-        title="Waarom zijn dit de beste led strips voor de keuken?"
+        title="Waarom zijn dit de beste LED-strips voor de keuken?"
       >
        <p>
          We hebben deze LEDstrip speciaal geselecteerd als <strong>keukenverlichting</strong> door zijn <strong>IP65</strong> ratio. Bij gebruik van verlichting in de keuken is het namelijk belangrijk dat je rekening houd met een bepaalde hoeveelheid vocht en damp, zo is een IP65 ratio ideaal.

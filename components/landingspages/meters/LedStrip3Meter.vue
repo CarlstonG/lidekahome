@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 lg:mb-0">
       <h1 class="md:hidden mx-auto text-3xl text-white font-bold tracking-wide uppercase mb-6">
-        LED strip 3 meter
+        LED-strip 3 meter
       </h1>
 
       <video :poster="require('~/assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
@@ -12,7 +12,7 @@
 
       <div class="hidden md:block md:absolute mt-10 lg:mt-0 bottom-2 right-2 left-2 md:bottom-20 md:left-20 md:right-20 text-center">
         <h1 class="mx-auto text-center text-3xl text-white font-bold tracking-wide">
-          LED strip 3 meter
+          LED-strip 3 meter
         </h1>
       </div>
     </div>
@@ -20,7 +20,7 @@
     <div class="mx-auto max-w-7xl mt-10 mb-10">
       <LongParagraph>
         <p class="text-white font-extralight">
-          <a href="/categorie/led-strips">Led strips</a> van 3 meter worden steeds populairder decoratie in de vorm van een strip. Ze hebben een hoge lichtopbrengst, een laag stroomverbruik en zijn gemakkelijk te gebruiken. We hebben ze in verschillende types.
+          <a href="/categorie/led-strips">LED-strips</a> van 3 meter worden steeds populairder decoratie in de vorm van een strip. Ze hebben een hoge lichtopbrengst, een laag stroomverbruik en zijn gemakkelijk te gebruiken. We hebben ze in verschillende types.
         </p>
         <p class="text-white font-extralight">
           Je kunt bij ons kiezen uit een RGB LED-strip van 3 meter met een stekker of een USB aansluiting. De LED-strip van 3 meter die is uitgerust met een USB aansluiting wordt vaak gebruikt voor een TV.
@@ -34,7 +34,7 @@
     <div class="max-w-7xl mx-auto space-y-10 mb-10 px-6 lg:px-0">
       <ProductsWithBackground
           v-if="collection"
-          title="3 meter led strips"
+          title="3 meter LED-strips"
           :collection="collection"
       />
 
@@ -66,13 +66,13 @@
           imageAlt="Leds per meter 3 meter LED-strip"
           :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-3.jpg')"
           url="/products/rgb-led-light-strip-3-meter-smart-verlichting"
-          urlText="Best verkochte 3 meter led strip"
+          urlText="Best verkochte 3 meter LED-strip"
       >
         <p class="text-white font-extralight">
-          Wij leveren onze Led strip van 3 meter met 30 leds per meter. Het type led strip 3 m 30led/meter heeft een vermogen van 18 watt, waardoor het een zeer sterke lichtopbrengst heeft.
+          Wij leveren onze LED-strip van 3 meter met 30 leds per meter. Het type LED-strip 3 m 30led/meter heeft een vermogen van 18 watt, waardoor het een zeer sterke lichtopbrengst heeft.
         </p>
         <p class="text-white font-extralight">
-          We leveren ook USB led strip set TV met 30 leds per meter, deze hebben ook vermogen van 7.5 watt.
+          We leveren ook USB LED-strip set TV met 30 leds per meter, deze hebben ook vermogen van 7.5 watt.
         </p>
         <p class="text-white font-extralight">
           Als u een vraag heeft dan beantwoorden wij deze met alle liefde en plezier. Lideka staat altijd klaar voor alle soorten vragen. Je kunt je vraag dan ook via de mail indienen of telefonisch, dit doe je gemakkelijk bij onze klantenservice.
@@ -91,7 +91,7 @@
           reverse="true"
       >
         <p class="text-white font-extralight">
-          De RGB led strip heeft een silicone achtergrond kleur doordat hij een IP65 ratio heeft. De USB led strip daarentegen heeft een mooie zwarte achtergrondkleur omdat hij een IP20 ratio heeft.
+          De RGB LED-strip heeft een silicone achtergrond kleur doordat hij een IP65 ratio heeft. De USB LED-strip daarentegen heeft een mooie zwarte achtergrondkleur omdat hij een IP20 ratio heeft.
         </p>
       </TextWithImage>
 

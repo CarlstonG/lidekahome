@@ -78,12 +78,12 @@ export default Vue.extend({
       questions: [
         {
           question: 'Mijn afstandsbediening werkt niet, wat nu?',
-          answer: 'Controleer eerst of het plastic beschermlaagje op de batterij is verwijderd. Controleer ook of de led-strip zelf goed is aangesloten. Ga alle verbindingen na en probeer het daarna nog een keer. Werkt de afstandsbediening nog steeds niet? Neem contact op met een van onze experts, ze staan 24/7 voor je klaar!',
+          answer: 'Controleer eerst of het plastic beschermlaagje op de batterij is verwijderd. Controleer ook of de LED-strip zelf goed is aangesloten. Ga alle verbindingen na en probeer het daarna nog een keer. Werkt de afstandsbediening nog steeds niet? Neem contact op met een van onze experts, ze staan 24/7 voor je klaar!',
           isOpen: false,
         },
         {
-          question: 'Kan ik de led strip verlengen?',
-          answer: 'Helaas niet. Wij raden het ten strengste af om onze led-strips te verlengen!',
+          question: 'Kan ik de LED-strip verlengen?',
+          answer: 'Helaas niet. Wij raden het ten strengste af om onze LED-strips te verlengen!',
           isOpen: false,
         },
         {
@@ -92,22 +92,22 @@ export default Vue.extend({
           isOpen: false,
         },
         {
-          question: 'Hoe bevestig ik een led strip?',
+          question: 'Hoe bevestig ik een LED-strip?',
           answer: 'Onze Led-strips zijn voorzien van een stevige plakrand aan de achterzijde en zijn op elk gewenst oppervlak te bevestigen. Verwijder simpelweg de rode beschermlaag, kies de juiste plek en druk de strip zachtjes aan. Led-strips kunnen breken wanneer je ze te hard indrukt, dus ga altijd voorzichtig met de strips om!',
           isOpen: false,
         },
         {
-          question: 'Hoe sluit ik een led strip aan?',
-          answer: 'Koppel de adapter aan de wifi controller en verbind deze met de led-strip. Plaats de adapter in het stopcontact en je bent klaar.',
+          question: 'Hoe sluit ik een LED-strip aan?',
+          answer: 'Koppel de adapter aan de wifi controller en verbind deze met de LED-strip. Plaats de adapter in het stopcontact en je bent klaar.',
           isOpen: false,
         },
         {
-          question: 'Hoe dim je een led strip?',
-          answer: 'Je kunt de led-strip gemakkelijk dimmen met behulp van de Lideka app of de bijgeleverde afstandsbediening.',
+          question: 'Hoe dim je een LED-strip?',
+          answer: 'Je kunt de LED-strip gemakkelijk dimmen met behulp van de Lideka app of de bijgeleverde afstandsbediening.',
           isOpen: false,
         },
         {
-          question: 'Kan ik de led strip inkorten?',
+          question: 'Kan ik de LED-strip inkorten?',
           answer: 'Dat kan zeker. De strip is voorzien van een kniprand, aangegeven met een schaartje. Snijd de strip precies op de kniprand door om jouw verlichting in te korten.',
           isOpen: false,
         },
@@ -123,7 +123,7 @@ export default Vue.extend({
           isOpen: false,
         },
         {
-          question: 'Mijn Led strip komt net uit de verpakking en doet het niet, wat nu?',
+          question: 'Mijn LED-strip komt net uit de verpakking en doet het niet, wat nu?',
           answer: 'Wat vervelend, mijn oprechte excuses daarvoor, maar geen zorgen we gaan dit direct voor jou oplossen. Het is nu belangrijk dat we exact weten wat er niet werkt, zodat we dit snel en efficiënt kunnen oplossen. Als je niet exact weet wat er niet werkt, dan kun je beter alles retourneren, en direct een nieuwe bestellen, dat is dan de beste en snelste oplossing. Als je het wel weet graag een email sturen en duidelijk vermelden welk onderdeel je nodig hebt + bestelnummer + adres.',
           isOpen: false,
         },
@@ -143,12 +143,12 @@ export default Vue.extend({
           isOpen: false,
         },
         {
-          question: 'Mijn led strip blijft branden als hij uitstaat, wat nu, en is dit gevaarlijk?',
+          question: 'Mijn LED-strip blijft branden als hij uitstaat, wat nu, en is dit gevaarlijk?',
           answer: 'Maak je je vooral geen zorgen dit is vrij normaal, en we zullen je uitleggen hoe dat komt. Het wordt reststroom genoemd, dat is hetzelfde als wanneer jij je telefoon uit de oplader haalt, en hij dan nog even door blijft branden. Ik adviseer hem even een paar dagen van het stroom te halen als je hem niet gebruikt, en dan moet het opgelost zijn, anders kun je altijd weer contact met ons opnemen.',
           isOpen: false,
         },
         {
-          question: 'Is jullie led strip ook waterdicht?',
+          question: 'Is jullie LED-strip ook waterdicht?',
           answer: 'De led-strip zelf is waterdicht, maar de adapter niet, hou daar dus rekening mee.',
           isOpen: false,
         },
@@ -158,8 +158,8 @@ export default Vue.extend({
           isOpen: false,
         },
         {
-          question: 'Hebben jullie ook connectoren voor de led strips?',
-          answer: 'Helaas niet, omdat wij alle connectoren uitvoerig hebben getest, en deze vrijwel allemaal problemen opleverde wilden we ze niet in het assortiment brengen. Als je een hoek wilt maken, dan kun je beter simpelweg de led strip ‘voorzichtig buigen’, en dan een hoek van 90 graden maken. Zorg wel dat je de strip eerst warm maakt met een föhn',
+          question: 'Hebben jullie ook connectoren voor de LED-strips?',
+          answer: 'Helaas niet, omdat wij alle connectoren uitvoerig hebben getest, en deze vrijwel allemaal problemen opleverde wilden we ze niet in het assortiment brengen. Als je een hoek wilt maken, dan kun je beter simpelweg de LED-strip ‘voorzichtig buigen’, en dan een hoek van 90 graden maken. Zorg wel dat je de strip eerst warm maakt met een föhn',
           isOpen: false,
         },
       ]

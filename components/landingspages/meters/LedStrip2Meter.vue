@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 lg:mb-0">
       <h1 class="md:hidden mx-auto text-3xl text-white font-bold tracking-wide uppercase mb-6">
-        LED strip 2 meter
+        LED-strip 2 meter
       </h1>
 
       <video :poster="require('~/assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
@@ -12,7 +12,7 @@
 
       <div class="hidden md:block md:absolute mt-10 lg:mt-0 bottom-2 right-2 left-2 md:bottom-20 md:left-20 md:right-20 text-center">
         <h1 class="mx-auto text-center text-3xl text-white font-bold tracking-wide">
-          LED strip 2 meter
+          LED-strip 2 meter
         </h1>
       </div>
     </div>
@@ -29,7 +29,7 @@
     <div class="max-w-7xl mx-auto space-y-10 mb-10 px-6 lg:px-0">
       <ProductsWithBackground
           v-if="collection"
-          title="2 meter led strips"
+          title="2 meter LED-strips"
           :collection="collection"
       />
 
@@ -80,7 +80,7 @@
           </p>
           <p class="text-white font-extralight">
             <NuxtLink to="/products/lideka-tv-led-strip-2-meter-usb-rgb-smart-verlichting">
-              USB 2 meter led strip set TV
+              USB 2 meter LED-strip set TV
             </NuxtLink>
           </p>
           <ul class="text-white font-extralight no-list-type">

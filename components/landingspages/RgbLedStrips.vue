@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        title="RGB Led strips | Multicolor | Complete sets"
+        title="RGB LED-strips | Multicolor | Complete sets"
         :imageSrc="require('assets/design/landings/rgb-led-strips/banner.jpg')"
       />
 
@@ -11,13 +11,13 @@
           De LIDEKA® RGB multicolor <NuxtLink class="link" to="/categorie/led-strips">LED-strip</NuxtLink> creëert een gezellige lounge sfeer en blijft muurvast zitten! Onze RGB LED-strips zijn van de hoogste kwaliteit en beschikken over de meest geavanceerde bedieningsmogelijkheden. Geniet van een breed scala aan kleuren, en ervaar de rust en gezelligheid die onze RGB LED-strips brengen.
         </p>
         <p class="text-white font-extralight">
-          Thuis genieten van die fijne lounge vibes, bij jouw favoriete films? Of heb je zin in een romantisch diner? Het kan allemaal! Bestel jouw <NuxtLink class="link" to="/products/lideka-rgb-led-light-strip-3-meter">RGB led-strip</NuxtLink> vandaag, en geniet morgen al van een <strong>wonderbaarlijke sfeer</strong>!
+          Thuis genieten van die fijne lounge vibes, bij jouw favoriete films? Of heb je zin in een romantisch diner? Het kan allemaal! Bestel jouw <NuxtLink class="link" to="/products/lideka-rgb-led-light-strip-3-meter">RGB LED-strip</NuxtLink> vandaag, en geniet morgen al van een <strong>wonderbaarlijke sfeer</strong>!
         </p>
       </LongParagraph>
 
       <div style="margin-top: 100px;">
         <ProductsWithBackground
-            title="RGB LED strips"
+            title="RGB LED-strips"
             :collection="collection"
         />
       </div>
@@ -48,7 +48,7 @@
       <div class="mx-auto max-w-5xl">
         <LongParagraph
             bg-color
-            title="De voordelen van jouw nieuwe RGBIC led strip"
+            title="De voordelen van jouw nieuwe RGBIC LED-strip"
         >
           <p class="text-white font-extralight">
             RGB-led verlichting combineert rode, groene en blauwe led-lampjes in één behuizing en vormt honderden verschillende lichttinten door deze drie kleuren te mengen. Zo stel jij jouw favoriete kleuren samen wanneer je maar wilt en geniet je iedere keer weer van een unieke sfeer.

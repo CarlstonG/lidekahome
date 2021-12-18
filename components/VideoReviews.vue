@@ -16,7 +16,7 @@
               </div>
 
               <p class="text-white font-bold tracking-wide text-lg pb-6">
-                "Verliefd op Lideka LED strips" <i>Lois</i>
+                "Verliefd op Lideka LED-strips" <i>Lois</i>
               </p>
 
               <div class="flex items-center space-x-2">

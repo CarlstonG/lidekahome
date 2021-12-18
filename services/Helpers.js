@@ -15,6 +15,16 @@ export const formatMoney = (amount, decimals = 2, minDecimals = 2, currency = 'E
     .replace(/([,.])00$/, '$1-').replace('€', '').trim();
 };
 
+export const deliveryTime = () => {
+  if (moment().weekday() === 7) {
+    return 'Vandaag voor 22:00 besteld, morgen in huis';
+  } else if (moment().weekday() === 6) {
+    return 'Vandaag besteld, Maandag in huis'
+  } else {
+    return 'Voor 23:59 besteld, morgen in huis';
+  }
+}
+
 export const nl2br = (str, is_xhtml) => {
   if (typeof str === 'undefined' || str === null) {
     return '';

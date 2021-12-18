@@ -2,14 +2,14 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        title="RGB-IC Led strips | Dreamcolor | Special Effects | Complete sets"
+        title="RGB-IC LED-strips | Dreamcolor | Special Effects | Complete sets"
         :imageSrc="require('assets/photos/rgbic.jpg')"
       />
 
       <LongParagraph>
         <p class="text-white font-extralight">
           Net als bij een standaard model vormt de RGBIC led <strong>alle mogelijke kleurtinten</strong>, maar dan met schitterende <strong>extra lichteffecten</strong>.
-          Deze splinternieuweRGBIC led strip verlichting wordt ook wel ‘<strong>Dreamcolor Ledstrip</strong>’ genoemd en is razend populair bij onder Amerikaanse TikTok kers, en bij aanbieders zoals amazon. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe dreamcolor ledstrip is het mogelijk!
+          Deze splinternieuweRGBIC LED-strip verlichting wordt ook wel ‘<strong>Dreamcolor Ledstrip</strong>’ genoemd en is razend populair bij onder Amerikaanse TikTok kers, en bij aanbieders zoals amazon. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe dreamcolor ledstrip is het mogelijk!
         </p>
         <p class="text-white font-extralight">
           Naast deze extra features werkt de RGBIC led uitvoering net als een traditionele <NuxtLink to="/categorie/led-strips" class="link">LED-strip</NuxtLink>.
@@ -103,7 +103,7 @@
 
       <LongParagraph>
         <p class="text-white font-extralight">
-          Voor een hoge kwaliteit en een hoge lichtopbrengst raden we altijd een minimum van 30 Leds per meter aan voor led strip tot 5 meter. Naarmate de lengte stijgt zullen automatisch het aantal lichtjes per meter aanzienlijk afnemen. Dit is noodzakelijk om ervoor te zorgen dat het licht mooi verdeeld wordt.
+          Voor een hoge kwaliteit en een hoge lichtopbrengst raden we altijd een minimum van 30 Leds per meter aan voor LED-strip tot 5 meter. Naarmate de lengte stijgt zullen automatisch het aantal lichtjes per meter aanzienlijk afnemen. Dit is noodzakelijk om ervoor te zorgen dat het licht mooi verdeeld wordt.
         </p>
         <p class="text-white font-bold">
           Aantal leds
@@ -192,7 +192,7 @@
               title="Muziek modus"
           >
             <p class="text-white font-extralight">
-              Door onze speciale muziek led strips kun je extra genieten, er zit een <strong>hele gevoelige</strong> microfoon in onze controllers,
+              Door onze speciale muziek LED-strips kun je extra genieten, er zit een <strong>hele gevoelige</strong> microfoon in onze controllers,
               als je de muziek modus aanzet via de app of met de afstandsbediening dan zal de verlichting prachtig <strong>meedansen</strong> op de muziek.
             </p>
             <p class="text-white font-extralight">

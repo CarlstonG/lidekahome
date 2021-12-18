@@ -12,10 +12,10 @@
           <NuxtLink to="/blog/wat-is-led" class="link">Wat is led?</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/blog/welke-kleuren-led-strips-zijn-er" class="link">Welke kleuren led strips zijn er?</NuxtLink>
+          <NuxtLink to="/blog/welke-kleuren-led-strips-zijn-er" class="link">Welke kleuren LED-strips zijn er?</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/blog/hoe-sluit-ik-mijn-led-strips-aan" class="link">Hoe sluit ik mijn led strips aan?</NuxtLink>
+          <NuxtLink to="/blog/hoe-sluit-ik-mijn-led-strips-aan" class="link">Hoe sluit ik mijn LED-strips aan?</NuxtLink>
         </li>
         <li>
           Lees onze blog als je meer wilt weten over <NuxtLink to="/blog/de-levensduur-van-led-verlichting" class="link">de levensduur van Led verlichting?</NuxtLink>

@@ -2,7 +2,7 @@
   <div class="bg-black">
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 lg:mb-0">
       <h1 class="md:hidden mx-auto text-3xl text-white font-bold tracking-wide uppercase mb-6">
-        LED strip 5 meter
+        LED-strip 5 meter
       </h1>
 
       <video :poster="require('~/assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
@@ -12,7 +12,7 @@
 
       <div class="hidden md:block md:absolute mt-10 lg:mt-0 bottom-2 right-2 left-2 md:bottom-20 md:left-20 md:right-20 text-center">
         <h1 class="mx-auto text-center text-3xl text-white font-bold tracking-wide">
-          LED strip 5 meter
+          LED-strip 5 meter
         </h1>
       </div>
     </div>
@@ -28,28 +28,28 @@
     <div class="max-w-7xl mx-auto space-y-10 mb-10 px-6 lg:px-0">
       <ProductsWithBackground
           v-if="collection"
-          title="5 meter led strips"
+          title="5 meter LED-strips"
           :collection="collection"
       />
 
       <VideoReviews />
 
       <TextWithImage
-          title="Twee soorten Led strips"
-          imageAlt="Twee soorten Led strips"
+          title="Twee soorten LED-strips"
+          imageAlt="Twee soorten LED-strips"
           :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-1.jpg')"
       >
         <p class="text-white font-extrabold">
           <strong>RGB</strong>
         </p>
         <p class="text-white font-extralight">
-          De <NuxtLink to="/categorie/led-strips">RGB led Strips</NuxtLink> 5 meter van Lideka beschikken over 16 miljoen kleuren. Het heeft 60 leds per meter, en deze leds zijn van de hoogste kwaliteit. De RGB LED strip zelf is gemaakt met topkwaliteit materialen en componenten om ervoor te zorgen dat u het beste product voor uw geld krijgt. Hij bezit bijzonder mooie kleuren zoals, blauw, rood en ook bijvoorbeeld de kleur groen, maar dat is niet alles, bestel vandaag, en ontdek morgen alle RGB kleuren..
+          De <NuxtLink to="/categorie/led-strips">RGB LED-strips</NuxtLink> 5 meter van Lideka beschikken over 16 miljoen kleuren. Het heeft 60 leds per meter, en deze leds zijn van de hoogste kwaliteit. De RGB LED-strip zelf is gemaakt met topkwaliteit materialen en componenten om ervoor te zorgen dat u het beste product voor uw geld krijgt. Hij bezit bijzonder mooie kleuren zoals, blauw, rood en ook bijvoorbeeld de kleur groen, maar dat is niet alles, bestel vandaag, en ontdek morgen alle RGB kleuren..
         </p>
         <p class="text-white font-extrabold">
           <strong>RGBIC</strong>
         </p>
         <p class="text-white font-extralight">
-          De <NuxtLink to="/categorie/rgb-ic-led-strips">RGBIC led strips</NuxtLink> hebben ook 16 miljoen kleuren, en beschikken ook over 60 leds per meter. Toch is deze versie net iets anders, deze led strip heeft een unieke eigenschap, en dat is de mogelijkheid om verschillende kleuren leds tegelijk door de strip heen te laten schieten.
+          De <NuxtLink to="/categorie/rgb-ic-led-strips">RGBIC LED-strips</NuxtLink> hebben ook 16 miljoen kleuren, en beschikken ook over 60 leds per meter. Toch is deze versie net iets anders, deze LED-strip heeft een unieke eigenschap, en dat is de mogelijkheid om verschillende kleuren leds tegelijk door de strip heen te laten schieten.
         </p>
       </TextWithImage>
 
@@ -78,7 +78,7 @@
           :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-3.jpg')"
       >
         <p class="text-white font-extralight">
-          Het aantal ledjes op een gehele led strip zegt enorm veel over de helderheid. Wij kunnen jou gerust stellen met het feit dat je voor 60 per meter kiest, aangezien dit echt meer dan voldoende is. Onze led strip extra helder RGB, brengt het meeste licht op.
+          Het aantal ledjes op een gehele LED-strip zegt enorm veel over de helderheid. Wij kunnen jou gerust stellen met het feit dat je voor 60 per meter kiest, aangezien dit echt meer dan voldoende is. Onze LED-strip extra helder RGB, brengt het meeste licht op.
         </p>
       </TextWithImage>
 
@@ -87,8 +87,8 @@
       />
 
       <TextWithImage
-          title="5 meter led strips"
-          imageAlt="5 meter led strips"
+          title="5 meter LED-strips"
+          imageAlt="5 meter LED-strips"
           :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-2.jpg')"
           reverse="true"
       >

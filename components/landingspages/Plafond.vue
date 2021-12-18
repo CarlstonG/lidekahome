@@ -7,7 +7,7 @@
         :imageSrc="require('assets/design/landings/plafond/banner.jpg')"
       />
 
-      <CenterTitle title="Led strips plafond" />
+      <CenterTitle title="LED-strips plafond" />
 
       <LongParagraph>
         <div class="text-left">
@@ -36,7 +36,7 @@
 
       <ProductsWithBackground
           v-if="collection1"
-          title="RGB LED Strips"
+          title="RGB LED-strips"
           :collection="collection1"
       />
 
@@ -48,7 +48,7 @@
 
       <ProductsWithBackground
           v-if="collection3"
-          title="RGB-IC LED Strips"
+          title="RGB-IC LED-strips"
           :collection="collection3"
       />
 
@@ -67,7 +67,7 @@
       <CenterParagraph>
         <p class="text-white font-extralight">
           Vanwege de hoge kwaliteit <strong>SMD 5050 leds</strong> is onze
-          led strip verlichting meer dan geschikt voor een <strong>grote en een kleine ruimte.</strong>
+          LED-strip verlichting meer dan geschikt voor een <strong>grote en een kleine ruimte.</strong>
           De SMD 5050 leds brengen <strong>drie keer zoveel licht</strong> op als de oude leds.
         </p>
       </CenterParagraph>
@@ -76,10 +76,10 @@
       <div class="mx-auto max-w-5xl">
         <LongParagraph
           :bg-color="true"
-          title="Led strip profiel"
+          title="LED-strip profiel"
         >
           <p class="text-white font-extralight">
-            Een led profiel heeft enkele voordelen, maar het is zeker <strong>niet noodzakelijk.</strong> Het heeft echter wel een positieve invloed op de led strips. Je hebt altijd keuze uit meerdere profielen waaronder aluminium profielen, deze gaan lang mee en zijn licht in gewicht.
+            Een led profiel heeft enkele voordelen, maar het is zeker <strong>niet noodzakelijk.</strong> Het heeft echter wel een positieve invloed op de LED-strips. Je hebt altijd keuze uit meerdere profielen waaronder aluminium profielen, deze gaan lang mee en zijn licht in gewicht.
           </p>
 
           <p class="text-white font-extralight">
@@ -95,8 +95,8 @@
             <a class="link" href="/categorie/woonkamer">de woonkamer.</a>
           </p>
           <p class="text-white font-extralight">
-            Als je echt speciale woonkamer verlichting nodig hebt, dan ben je hier aan het juiste adres. De RGB en de RGBIC zijn daar meer dan geschikt voor. Bij een compleet set krijg je altijd een Led strip <strong>controller</strong>,
-            een Led strip <strong>afstandsbediening</strong> en, een Led strip <strong>voeding.</strong>
+            Als je echt speciale woonkamer verlichting nodig hebt, dan ben je hier aan het juiste adres. De RGB en de RGBIC zijn daar meer dan geschikt voor. Bij een compleet set krijg je altijd een LED-strip <strong>controller</strong>,
+            een LED-strip <strong>afstandsbediening</strong> en, een Led strip <strong>voeding.</strong>
           </p>
           <p class="text-white font-extralight">
             Je kunt ook kiezen voor RGBW strips in de woonkamer, dan kun je ook nog kiezen uit een een strip koud of strip warm. Om <strong>de juiste sfeer</strong> te maken kan dit best helpen.
@@ -135,7 +135,7 @@
 
           <p class="text-white font-extralight">
             <a href="/blog/welke-kleuren-led-strips-zijn-er" class="link">
-              Welke kleuren led strips zijn er?
+              Welke kleuren LED-strips zijn er?
             </a>
           </p>
 
@@ -188,7 +188,7 @@
               Bij Lideka hebben we een <strong>ruime keuze in lengtes</strong>,
               iedere kamer is anders en zo ook ieder
               <a class="link" href="/categorie/plafond">plafond</a>. We raden je altijd aan om voor je bestelling goed te kijken welke lengte je nodig hebt. Je hebt tevens altijd de mogelijkheid om onze
-              <a href="/categorie/led-strips" class="link">led strip</a> <strong>op maat</strong> te maken.
+              <a href="/categorie/led-strips" class="link">LED-strip</a> <strong>op maat</strong> te maken.
             </p>
             <p>
               <a href="/blog/alles-over-led-verlichting-als-sfeerverlichting" class="link">
@@ -213,7 +213,7 @@
         <TextWithImage image-alt="Slaapkamer" :image-src="require('assets/design/landings/plafond/slaapkamer.jpg')" title="Slaapkamer">
           <p class="text-white font-extralight">
             Als je houd van een gezellige slaapkamer dan is RGB verlichting echt iets voor jou. Onze ervaring is dat je een gewone
-            <a href="/categorie/slaapkamer" class="link">slaapkamer</a> binnen no-time kan omtoveren naar een ware lichtshow. Door middel van een RGB led strip is het ook nog eens een <strong>gemakkelijke oplossing</strong>. De installatie is namelijk enorm makkelijk.
+            <a href="/categorie/slaapkamer" class="link">slaapkamer</a> binnen no-time kan omtoveren naar een ware lichtshow. Door middel van een RGB LED-strip is het ook nog eens een <strong>gemakkelijke oplossing</strong>. De installatie is namelijk enorm makkelijk.
           </p>
           <p class="text-white font-extralight">
             <a href="/blog/led-verlichting-in-de-badkamer" class="link">

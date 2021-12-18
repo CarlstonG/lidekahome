@@ -1,11 +1,13 @@
 <template>
   <div class="bg-gray-50">
-    <div class="max-w-7xl mx-auto py-20">
-      <div class="grid grid-cols-3">
+    <h1 class="font-extrabold text-3xl lg:text-4xl text-center mb-10 bg-gray-900 text-white py-6 px-6 text-uppercase">Sitemap</h1>
+
+    <div class="max-w-7xl mx-auto py-10 px-6 lg:px-0">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div v-for="block in blocks">
           <header class="font-bold text-black mb-2">{{ block.title }}</header>
           <ul v-for="link in block.links" class="space-y-4">
-            <li>
+            <li class="text-sm hover:underline">
               <NuxtLink :to="link.href">
                 - {{link.name}}
               </NuxtLink>
@@ -20,59 +22,16 @@
 <script lang="js">
 import Vue from 'vue';
 import {mapGetters} from "vuex";
+import {getBlog} from "../services/ApiService";
+import CenterTitle from "../components/blocks/CenterTitle";
 
 export default Vue.extend({
+  components: {CenterTitle},
   data() {
     return {
       loading: false,
       page: {},
-      blocks: [
-        {
-          title: 'Pagina\'s',
-          links: [
-            {
-              name: 'Klantenservice',
-              href: 'klantenservice'
-            },
-            {
-              name: 'Bestellen en betalen',
-              href: '/bestellen-en-betalen',
-            },
-            {
-              name: 'Verzending',
-              href: '/verzending',
-            },
-            {
-              name: 'Over ons',
-              href: '/over-ons',
-            },
-            {
-              name: 'Algemene voorwaarden',
-              href: '/algemene-voorwaarden',
-            },
-            {
-              name: 'Privacy statement',
-              href: '/privacy-statement',
-            },
-            {
-              name: 'Veelgestelde vragen',
-              href: '/veelgestelde-vragen',
-            },
-            {
-              name: 'Blog',
-              href: '/blog',
-            },
-            {
-              name: 'Contact',
-              href: '/contact'
-            }
-          ]
-        },
-        {
-          title: 'Producten',
-          links: []
-        }
-      ]
+      blocks: []
     };
   },
 
@@ -88,16 +47,47 @@ export default Vue.extend({
 
     this.blocks.push({
       title: 'Categorieën',
+      links: collections.filter((collection) => {
+        return collection.handle !== 'frontpage'
+      }).map((collection) => {
+        return {
+          name: collection.title,
+          href: `/categorie/${collection.handle}`
+        }
+      }),
+    })
+
+    const products = await this.$shopify.product.fetchAll();
+
+    this.blocks.push({
+      title: 'Producten',
+      links: products.map((product) => {
+        return {
+          name: product.title,
+          href: `/products/${product.handle}`
+        }
+      }),
+    })
+
+    const blog = await getBlog('blog');
+
+    this.blocks.push({
+      title: 'Blogs',
+      links: blog.articles.map((blog) => {
+        return {
+          name: blog.title,
+          href: `/blog/${blog.handle}`
+        }
+      }),
+    })
+
+    this.blocks.push({
+      title: 'Pagina\'s',
       links: [
         {
-          href: '#',
-          links: collections.map((collection) => {
-            return {
-              title: collection.title,
-              href: `/categorie/${collection.handle}`
-            }
-          }),
-        }
+          name: 'Home',
+          href: '/'
+        },
       ]
     })
   }

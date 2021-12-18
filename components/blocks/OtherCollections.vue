@@ -5,8 +5,8 @@
                 :navigation-prev-label="prevLabel" :navigation-next-label="nextLabel">
         <slide v-if="collections.indexOf('rgb-led-strips') !== -1">
           <div class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10 mx-2">
-            <img src="~assets/products/1.png" alt="RGB Led Strips" class="rounded-lg" />
-            <h2 class="text-white text-xl font-bold uppercase tracking-wide">RGB Led strips</h2>
+            <img src="~assets/products/1.png" alt="RGB LED-strips" class="rounded-lg" />
+            <h2 class="text-white text-xl font-bold uppercase tracking-wide">RGB LED-strips</h2>
             <NuxtLink to="/categorie/rgb-led-strips"
                       class="mt-3 uppercase tracking-wide flex inline-block shadow-md p-2 px-6 font-bold items-center justify-center border border-transparent rounded-full shadow-sm text-md  text-white bg-indigo-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
             >
@@ -16,8 +16,8 @@
         </slide>
         <slide v-if="collections.indexOf('rgb-ic-led-strips') !== -1">
           <div class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10 mx-2">
-            <img src="~assets/products/16.png" alt="RGB-IC Led Strips" class="rounded-lg" />
-            <h2 class="text-white text-xl font-bold uppercase tracking-wide">RGB-IC Led strips</h2>
+            <img src="~assets/products/16.png" alt="RGB-IC LED-strips" class="rounded-lg" />
+            <h2 class="text-white text-xl font-bold uppercase tracking-wide">RGB-IC LED-strips</h2>
             <NuxtLink to="/categorie/rgb-ic-led-strips"
                       class="mt-3 flex uppercase tracking-wide inline-block shadow-md p-2 px-6 font-bold items-center justify-center border border-transparent rounded-full shadow-sm text-md  text-white bg-indigo-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
             >
@@ -27,8 +27,8 @@
         </slide>
         <slide v-if="collections.indexOf('tv-led-strips') !== -1">
           <div  class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10 mx-2">
-            <img src="~assets/products/5.png" alt="TV Led strips" class="rounded-lg" />
-            <h2 class="text-white text-xl font-bold uppercase tracking-wide">TV Led strips</h2>
+            <img src="~assets/products/5.png" alt="TV LED-strips" class="rounded-lg" />
+            <h2 class="text-white text-xl font-bold uppercase tracking-wide">TV LED-strips</h2>
             <NuxtLink to="/categorie/tv-led-strips"
                       class="mt-3 flex uppercase tracking-wide inline-block shadow-md p-2 px-6 font-bold items-center justify-center border border-transparent rounded-full shadow-sm text-md  text-white bg-indigo-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
             >
@@ -38,7 +38,7 @@
         </slide>
         <slide v-if="collections.indexOf('led-pakketten') !== -1" >
           <div class="space-y-4 flex flex-col justify-center items-center border-2 border-indigo-500 rounded-3xl px-10 py-10 mx-2">
-            <img src="~assets/products/18.png" alt="LED strip pakket" class="rounded-lg" />
+            <img src="~assets/products/18.png" alt="LED-strip pakket" class="rounded-lg" />
             <h2 class="text-white text-xl font-bold uppercase tracking-wide">LED-strip pakketten</h2>
             <NuxtLink to="/categorie/led-pakketten"
                       class="mt-3 flex uppercase tracking-wide inline-block shadow-md p-2 px-6 font-bold items-center justify-center border border-transparent rounded-full shadow-sm text-md  text-white bg-indigo-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"

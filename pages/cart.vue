@@ -116,7 +116,7 @@
 
               <div v-if="checkout.lineItems && checkout.lineItems.length > 0">
                 <div class="mt-4 px-6">
-                  <div class="flex items-center space-x-4 mb-4 max-w-md">
+                  <div class="flex items-center space-x-4 max-w-md mb-2">
                     <div class="flex-1 flex-grow">
                       <FormField :model-value.sync="fields.coupon" name="Coupon code" hide-label />
                     </div>
@@ -127,6 +127,9 @@
                         class="flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                       Activeer
                     </button>
+                  </div>
+                  <div v-if="couponMessage" class="py-2 bg-gray-100 text-sm px-2 rounded-md mb-2">
+                    {{couponMessage}}
                   </div>
                 </div>
 
@@ -224,6 +227,7 @@ import Loading from "~/components/Loading.vue";
 import SellingPoints from "~/components/SellingPoints.vue";
 import PaymentMethodes from "~/components/PaymentMethodes.vue";
 import FormField from "~/components/input/FormField.vue";
+import axios from "axios";
 
 export default Vue.extend({
   name: 'winkelwagen',
@@ -235,6 +239,7 @@ export default Vue.extend({
       products: [],
       loading: false,
       terms: false,
+      couponMessage: '',
       checkoutUrl: '#',
       fields: {
         coupon: ''
@@ -267,9 +272,27 @@ export default Vue.extend({
     ]),
 
     async applyCoupon() {
-      await this.applyDiscount({
-        discountCode: this.fields.coupon
-      });
+      this.couponMessage = '';
+
+      if (this.fields.coupon.length < 1) {
+        this.couponMessage = 'Vul een coupon code in.'
+        return;
+      }
+
+      try {
+        const {data} = await this.applyDiscount({
+          discountCode: this.fields.coupon
+        });
+
+        if (Array.isArray(data) && data.length > 0) {
+          this.couponMessage = 'Coupon code ongeldig of al gebruikt.'
+        } else {
+          this.couponMessage = 'Coupon code toegepast!'
+        }
+      } catch(e) {
+        console.log(e);
+      }
+
       await this.fetchCheckout();
     },
 

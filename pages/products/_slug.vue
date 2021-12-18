@@ -112,7 +112,7 @@
                   class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
                   op voorraad
                 </div>
-                <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">Voor 23:59 besteld, morgen in huis</p>
+                <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ deliveryTime }}</p>
               </dt>
             </div>
 
@@ -191,7 +191,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import "@fancyapps/ui/dist/fancybox.css";
 import _ from 'lodash';
 import {getProduct, getReviews} from "../../services/ApiService";
-import { formatMoney } from "../../services/Helpers";
+import {deliveryTime, formatMoney} from "../../services/Helpers";
 import Reviews from "../../components/reviews/Reviews";
 import Stars from "../../components/reviews/Stars";
 
@@ -273,6 +273,7 @@ export default Vue.extend({
       loading: false,
       product: {},
       slug: null,
+      deliveryTime: deliveryTime(),
       quantity: 1,
       productImages: [],
       expandProductDescription: false,
