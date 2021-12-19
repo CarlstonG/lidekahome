@@ -16,7 +16,7 @@ export const formatMoney = (amount, decimals = 2, minDecimals = 2, currency = 'E
 };
 
 export const deliveryTime = () => {
-  if (moment().weekday() === 7) {
+  if (moment().weekday() === 0) {
     return 'Vandaag voor 22:00 besteld, morgen in huis';
   } else if (moment().weekday() === 6) {
     return 'Vandaag besteld, Maandag in huis'
