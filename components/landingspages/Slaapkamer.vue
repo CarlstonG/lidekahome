@@ -1,30 +1,47 @@
 <template>
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
-      <Banner
-        title="LED-strip SLAAPKAMER"
-        description="Onze <a href='/categorie/led-strips' class='link'>RGB LED-strips</a> en
-        <a href='/categorie/rgb-ic-led-strips' class='link'>RGB-IC LED-strips</a> zijn perfect voor in de slaapkamer.
-        Beiden hebben een bijzonder <strong>stevige plakstrip</strong>, en kunnen daarmee overal bevestigd worden.
-        Ook is onze LED verlichting uitgerust met de <strong>beste kwaliteit led lampjes</strong>,
-        waardoor je een enorm hoge helderheid hebt."
-        :imageSrc="require('assets/photos/Bed-1.jpg')"
-        :smallText="true"
-      />
+      <Banner :imageSrc="require('assets/photos/Bed-1.jpg')"/>
+
+      <CenterTitle
+        tag="h1"
+        title="LED-strips voor in de slaapkamer"
+        />
+
+      <LongParagraph>
+        <div class="text-white font-extralight">
+          Ben jij op zoek naar een mooie
+          <NuxtLink to="/categorie/led-strips" class="link">LED-strip</NuxtLink> voor in de slaapkamer? Onze
+          <NuxtLink to="/categorie/rgb-led-strips" class="link">RGB LED-strips</NuxtLink> en
+          <NuxtLink to="/categorie/rgb-ic-led-strips" class="link">RGB-IC LED-strips</NuxtLink> zijn perfect voor in de slaapkamer.
+          Beiden hebben een bijzonder stevige plakstrip, en kunnen daarmee overal bevestigd worden.
+          Ook is onze LED verlichting uitgerust met de beste kwaliteit led lampjes, waardoor je een enorm hoge helderheid hebt.
+          Onze <NuxtLink class="link" to="/categorie/led-strips">LED-strips</NuxtLink> zijn volledig dimbaar en dus ideaal te gebruiken als sfeerverlichting in de slaapkamer.
+        </div>
+      </LongParagraph>
+
+
+      <LongParagraph
+        title="RGB LED-strips voor in de slaapkamer"
+      >
+        <p class="text-white font-extralight">
+          De RGB LED-strips beschikken over oneindig veel kleuren en zijn te bedienen met zowel een afstandsbediening als onze eigen app. Stel je eigen tijdschema’s in, ontwerp je eigen kleurencombinaties en nog veel meer….
+        </p>
+      </LongParagraph>
 
       <ProductsWithBackground
           v-if="collection1"
-          title="RGB LED-strips"
           :collection="collection1"
       />
 
-      <CenterParagraph>
+      <LongParagraph
+          title="RGB-IC LED-strips voor in de slaapkamer"
+      >
         <p class="text-white font-extralight">
-          De RGB LED-strips beschikken over
-          <strong>oneindig veel kleuren</strong> en zijn te bedienen met zowel een
-          afstandsbediening als onze eigen app. Stel je eigen <strong>tijdschema’s</strong> in, ontwerp je eigen <strong>kleurencombinaties</strong> en nog veel meer….
+          De RGB-IC LED-strips lijken veel op de RGB, maar zijn toch net iets anders. Ze worden ook wel de ‘dreamcolor’
+          <NuxtLink to="/categorie/rgb-ic-led-strips" class="link">LED-strips</NuxtLink> genoemd, je hebt namelijk extra mogelijkheden om bijzondere effecten te creëren, zo kun je meerdere kleuren tegelijk door de LED-strip heen schieten. Verder werkt alles hetzelfde bij deze specifieke LED verlichting.
         </p>
-      </CenterParagraph>
+      </LongParagraph>
 
       <ProductsWithBackground
           v-if="collection3"
@@ -32,223 +49,13 @@
           :collection="collection3"
       />
 
-      <LongParagraph>
-        <p class="text-white font-extralight">
-          De RGB-IC LED-strips lijken veel op de RGB, maar zijn toch net iets anders. Ze worden ook wel de <strong>dreamcolor</strong> LEDstrips genoemd,
-          je hebt namelijk <strong>extra mogelijkheden</strong> om bijzondere effecten te creëren, zo kun je <strong>meerdere kleuren tegelijk</strong> door de  dreamcolor LEDstrips heen laten schieten. Verder werkt alles hetzelfde bij deze specifieke
-          <a href="/categorie/led-strips" target="_blank">LED verlichting</a>.
-        </p>
-        <p class="text-white font-extralight">
-          Benieuwd naar het positieve effect van <a class="link" href="/blog/tv-led-strips-een-nieuwe-vorm-van-televisie-kijken">TV Led-strips?</a> Lees hier onze blog.
-        </p>
-      </LongParagraph>
+      <VideoReviews />
 
-      <Highlights :highlights="[
-          {
-            imageSrc: require('assets/design/landings/tape.png'),
-            description: 'Door zijn bijzondere stevige dubbelzijge 3M tape ben jij verzekerd van een LED-strip die nooit meer loslaat. Zorg voor een schone ondergrond.'
-          },
-          {
-            imageSrc: require('assets/design/landings/usb.png'),
-            description: 'Dit set wordt bovendien geleverd met  een directe USB-aansluiting zodat je de strip razendsnel en zonder kabels, adapters of extra schroeven aan jouw tv kunt koppelen.'
-          },
-          {
-            imageSrc: require('assets/design/landings/warranty.png'),
-            description: 'Naast deze slimme functies wordt ook dit Lideka® model geleverd met led-lampjes van de hoogste kwaliteit en een onvoorwaardelijke garantie van 2 jaar.'
-          }
-      ]" />
-
-      <LongParagraph
-        title="Vochtige ruimte"
+      <CTA
+          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
       >
-        <p class="text-white font-extralight">
-          Wil je jouw nieuwe LED-strip
-          <a href="/categorie/led-strip-plafond" class="link">plafond</a>
-          in de <a href="/categorie/led-strip-badkamer" class="link">badkamer</a> gaan plaatsen of in een andere vochtige kamer? Let daarbij altijd op dat je wel te maken hebt met een minimale
-          <a href="https://nl.wikipedia.org/wiki/IP-code" target="_blank" class="link">IP 65 ratio</a>. Deze leds zijn namelijk <strong>waterbestendig</strong> en zorgen ervoor dat jij nog jaren
-          kunt genieten van je nieuwe verlichting. Tevens geeft Lideka <strong>2 jaar garantie.</strong>
-        </p>
-      </LongParagraph>
-
-      <CenterTitle title="LEDS PER METER" />
-
-      <div class="mx-auto max-w-5xl">
-        <TextWithImage :bg-color="false" :small-image="true" image-alt="LEDS PER METER" :reverse="true" :imageSrc="require('assets/design/landings/slaapkamer/leds-per-meter.png')" title="">
-          <p class="text-white font-extralight">
-            Het aantal leds per meter is <strong>enorm belangrijk</strong>
-            als je gaat kijken voor nieuwe bedienbare ledstrips. Waarom is dat nu zo belangrijk? <strong>Hoe minder leds, hoe lager de lichtopbrengst</strong>,
-            daarom heeft Lideka gekozen voor een aantal van 30 leds per meter. Hierdoor heb je meer dan voldoende licht bij jouw nieuwe RGB verlichting.
-          </p>
-          <p class="text-white font-extralight">
-            <a href="/categorie/rgb-led-strips" class="link">Bekijk ook eens onze andere RGB verlichting.</a>
-          </p>
-        </TextWithImage>
-      </div>
-
-      <CenterTitle title="LED DIMMER" />
-
-      <LongParagraph>
-        <p class="text-white font-extralight">
-          De meeste aanbieders in verlichting willen je graag nog een extra led dimmer verkopen, bij Lideka doen we dat niet. Wij houden van <strong>gemak, betrouwbaarheid en eenvoud</strong>. Daarom zijn al onze strips makkelijk te dimmen op maar liefst drie verschillende manieren.
-        </p>
-        <ol class="text-white font-extralight">
-          <li>Via onze eigen app</li>
-          <li>Via de afstandsbediening</li>
-          <li>Via de controller</li>
-        </ol>
-      </LongParagraph>
-
-      <div class="mx-auto max-w-5xl">
-        <Highlights :highlights="[
-            {
-              imageSrc: require('assets/design/landings/slaapkamer/app.png'),
-              description: 'Via onze eigen app'
-            },
-            {
-              imageSrc: require('assets/design/landings/slaapkamer/remote.png'),
-              description: 'Via de afstandsbediening'
-            },
-            {
-              imageSrc: require('assets/design/landings/slaapkamer/controller.png'),
-              description: 'Via de controller'
-            }
-        ]" />
-      </div>
-
-      <CenterTitle
-          title="LED-strip CONTROLLER"
-      />
-
-      <LongParagraph>
-        <p class="text-white font-extralight">
-          Zoals je misschien al wist levert Lideka altijd <strong>complete sets</strong>,
-          dit doen we omdat we houden van gemak. Niemand heeft zin om allerlei extra dingen erbij te moeten zoeken, als je er helemaal <strong>geen verstand van hebt</strong>. Voor een expert op het gebied van verlichting zou het dan weer een ander verhaal zijn. Met onze LED-strip controller kun je volgende 3 dingen doen:
-        </p>
-        <ol class="text-white font-extralight">
-          <li>Dimmen</li>
-          <li>Kleur veranderen</li>
-          <li>Verschillende scenes afspelen</li>
-        </ol>
-        <p>
-          <a href="/blog/alles-over-led-verlichting-als-sfeerverlichting" class="link">
-            Alles over LED verlichting als sfeerverlichting - Lideka Home
-          </a>
-        </p>
-      </LongParagraph>
-
-      <div class="mx-auto max-w-5xl">
-        <Highlights :gradient="false" :highlights="[
-            {
-              imageSrc: require('assets/design/landings/slaapkamer/brightness.png'),
-              description: 'Dimmen'
-            },
-            {
-              imageSrc: require('assets/design/landings/slaapkamer/color.png'),
-              description: 'Kleur veranderen'
-            },
-            {
-              imageSrc: require('assets/design/landings/slaapkamer/scenes.png'),
-              description: 'Verschillende scenes afspelen'
-            }
-        ]" />
-      </div>
-
-      <SingleImageWithContent
-          :image-src="require('assets/photos/Slaapkamer-indirect.jpg')"
-      >
-        <div class="space-y-4">
-          <h2 class="font-bold text-3xl">Indirecte verlichting</h2>
-          <p>
-            Deze <a class="link" href="/blog/alles-over-led-verlichting-als-sfeerverlichting">sfeervolle verlichting</a> van lideka is perfect te gebruiken als <strong>indirecte verlichting</strong>, maar ook als decoratieve verlichting. Het licht wordt mooi verspreid en het geeft een warme sfeer.
-          </p>
-          <p>
-            Het maakt niet uit voor welke soorten verlichting je kiest bij Lideka, vanwege de <strong>dim opties</strong> en de <strong>hoge kwaliteit leds</strong> kun je ze voor talloze doelen gebruiken. De Lideka LED-strips kunnen ook gebruikt worden in combinatie met LED-strip profielen, deze verkopen wij zelf niet.
-          </p>
-          <p>
-            Echter hebben LED-strip profielen wel een <strong>positieve invloed</strong> op de LED-strip zelf. Het kan ook zijn dat je nog geen indirecte verlichting nodig hebt, dan kun je onze strips gewoon als sfeer of decoratie verlichting gebruiken.
-          </p>
-        </div>
-      </SingleImageWithContent>
-
-      <CenterTitle title="DUBBELZIJDIG TAPE" />
-      <LongParagraph>
-        <p>
-          Jouw nieuwe aanwinst zal uitgerust zijn met ijzer sterk dubbelzijdig 3M tape. Eenmaal goed vastgemaakt zal deze niet zomaar meer loslaten. We hebben hieronder een aantal mooie tips neergezet voor het bevestigen van jouw nieuwe feestelijke verlichting.
-        </p>
-        <p>
-          <strong>Stap voor stap</strong>
-        </p>
-        <ol>
-          <li>Zoek een mooie plek uit om de strip te bevestigen</li>
-          <li>Maak de ondergrond netjes schoon met een vochtige doek en daarna met een droge doek</li>
-          <li>Zorg dat je de strip stevig aandrukt zodat er geen lucht onder blijft zitten</li>
-        </ol>
-        <p>
-          <a href="/blog/kan-je-de-kleur-van-led-verlichting-wijzigen" class="link">
-            Kan je de kleur van led verlichting wijzigen? - Lideka Home
-          </a>
-        </p>
-      </LongParagraph>
-
-      <CenterTitle title="LED-strip afstandsbediening" />
-      <LongParagraph>
-        <p>
-          Bij deze TV strip wordt een prachtige <strong>moderne afstandsbediening</strong> geleverd. Deze afstandsbediening heeft meerdere opties,
-          zo kun je heel makkelijk en <strong>snel van kleur veranderen</strong>. Je kunt ook verschillende <strong>soorten scenes</strong> instellen, en dat maak het hem extra veelzijdig. Voor een compleet overzicht van alle functies kun je hier een kijkje nemen
-        </p>
-      </LongParagraph>
-
-      <TextWithImage
-          title="LED LAMPEN"
-          imageAlt="Led lampen"
-          :bg-color="false"
-          :reverse="true"
-          :medium-image="true"
-          :imageSrc="require('assets/photos/Slaapkamer-led-lamp.jpg')"
-      >
-        <p class="text-white font-extralight">
-          Er zijn ook bijzonder mooie led lampen te koop die je ook kunt aansluiten op een netwerk van slimme verlichting. We raden dit dan ook zeker aangezien je nog meer sfeer kunt creëren in de kamer. Lideka zal deze led lampen ook snel gaan uitbrengen.
-        </p>
-      </TextWithImage>
-
-      <TextWithImage
-          title="EXTRA VERLICHTING"
-          imageAlt="Extra verlichting"
-          :bg-color="false"
-          :reverse="false"
-          :imageSrc="require('assets/design/landings/slaapkamer/verlichting.jpg')"
-      >
-        <p class="text-white font-extralight">
-          Deze LED-strips zijn niet alleen goed te gebruiken voor de slaapkamer, je kunt ze namelijk voor nog veel meer doeleinden gebruiken. Zo zijn ze ook prima als
-          <strong>extra verlichting</strong> in de keuken. In de <a href="/categorie/keuken" class="link">keuken</a> wordt vaak gebruik gemaakt van wit licht, dat is mede doordat je met wit licht toch een beter zicht krijgt op de tafel.
-        </p>
-        <p class="text-white font-extralight">
-          Eigenlijk voor iedere plaats waar jij extra verlichting wilt zijn ze onze artikelen geschikt, let daarbij wel op dat je de juiste
-          <a href="https://nl.wikipedia.org/wiki/IP-code" target="_blank" class="link">IP ratio</a> hebt, aangezien niet elke plaats vrij zal zijn van water en vocht.
-        </p>
-        <p class="text-white font-extralight">
-          <a href="/blog/wat-is-led" class="link">
-            Wat is led? - Lideka Home
-          </a>
-        </p>
-      </TextWithImage>
-
-      <TextWithImage
-          title="WIT LICHT"
-          imageAlt="Wit licht"
-          :bg-color="false"
-          :reverse="true"
-          :imageSrc="require('assets/photos/slaapkamer-wit.jpg')"
-      >
-        <p class="text-white font-extralight">
-          Er zijn ook vele soorten verlichting te koop met een wit licht, toch gaan de meeste mensen tegenwoordig voor de nieuwe
-          <a href="/categorie/rgb-led-strips" class="link" >RGB verlichting</a>. Je kunt ook een mooie combinatie van verlichting maken door bijvoorbeeld rood en wit te combineren met elkaar. Echter is het in de praktijk niet heel makkelijk om een combinatie van verlichting te maken, daarom raden wij bij voorkeur de volgende soorten led aan:
-        </p>
-        <ul class="text-white font-extralight">
-          <li><a href="/categorie/rgb-led-strips" class="link">RGB</a></li>
-          <li><a href="/categorie/rgb-ic-led-strips" class="link">RGBIC</a></li>
-        </ul>
-      </TextWithImage>
+        Beste verkochte slaapkamer LED-strips
+      </CTA>
 
       <SingleImage
           :image-src="require('assets/photos/Bed-2.jpg')"
@@ -282,12 +89,112 @@
         </p>
       </LongParagraph>
 
-      <SmallCenterTitle title="Lideka staat overigens 24/7 klaar om al jouw vragen te beantwoorden."/>
+      <LongParagraph
+        title="Vochtige ruimte"
+      >
+        <p class="text-white font-extralight">
+          Wil je jouw nieuwe LED-strip
+          <a href="/categorie/led-strip-plafond" class="link">plafond</a>
+          in de <a href="/categorie/led-strip-badkamer" class="link">badkamer</a> gaan plaatsen of in een andere vochtige kamer? Let daarbij altijd op dat je wel te maken hebt met een minimale
+          <a href="https://nl.wikipedia.org/wiki/IP-code" target="_blank" class="link">IP 65 ratio</a>. Deze leds zijn namelijk <strong>waterbestendig</strong> en zorgen ervoor dat jij nog jaren
+          kunt genieten van je nieuwe verlichting. Tevens geeft Lideka <strong>2 jaar garantie.</strong>
+        </p>
+      </LongParagraph>
+
+      <SingleImage
+          :image-src="require('assets/photos/Bed-1.jpg')"
+      />
+
+      <CTA
+          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
+      >
+        Beste verkochte slaapkamer LED-strips
+      </CTA>
+
+      <CenterTitle title="LEDS PER METER" />
+
+      <div class="mx-auto max-w-5xl">
+        <TextWithImage :bg-color="false" :small-image="true" image-alt="LEDS PER METER" :reverse="true" :imageSrc="require('assets/design/landings/slaapkamer/leds-per-meter.png')" title="">
+          <p class="text-white font-extralight">
+            Het aantal leds per meter is <strong>enorm belangrijk</strong>
+            als je gaat kijken voor nieuwe bedienbare ledstrips. Waarom is dat nu zo belangrijk? <strong>Hoe minder leds, hoe lager de lichtopbrengst</strong>,
+            daarom heeft Lideka gekozen voor een aantal van 30 leds per meter. Hierdoor heb je meer dan voldoende licht bij jouw nieuwe RGB verlichting.
+          </p>
+          <p class="text-white font-extralight">
+            <a href="/categorie/rgb-led-strips" class="link">Bekijk ook eens onze andere RGB verlichting.</a>
+          </p>
+        </TextWithImage>
+      </div>
+
+      <Lenghts />
+
+      <CenterTitle title="LED DIMMER" />
+
+      <LongParagraph>
+        <p class="text-white font-extralight">
+          De meeste aanbieders in verlichting willen je graag nog een extra led dimmer verkopen, bij Lideka doen we dat niet. Wij houden van <strong>gemak, betrouwbaarheid en eenvoud</strong>. Daarom zijn al onze strips makkelijk te dimmen op maar liefst drie verschillende manieren.
+        </p>
+        <ol class="text-white font-extralight">
+          <li>Via onze eigen app</li>
+          <li>Via de afstandsbediening</li>
+          <li>Via de controller</li>
+        </ol>
+      </LongParagraph>
+
+      <CenterTitle
+          title="LED-strip CONTROLLER"
+      />
+
+      <LongParagraph>
+        <p class="text-white font-extralight">
+          Zoals je misschien al wist levert Lideka altijd <strong>complete sets</strong>,
+          dit doen we omdat we houden van gemak. Niemand heeft zin om allerlei extra dingen erbij te moeten zoeken, als je er helemaal <strong>geen verstand van hebt</strong>. Voor een expert op het gebied van verlichting zou het dan weer een ander verhaal zijn. Met onze LED-strip controller kun je volgende 3 dingen doen:
+        </p>
+        <ol class="text-white font-extralight">
+          <li>Dimmen</li>
+          <li>Kleur veranderen</li>
+          <li>Verschillende scenes afspelen</li>
+        </ol>
+        <p>
+          <a href="/blog/alles-over-led-verlichting-als-sfeerverlichting" class="link">
+            Alles over LED verlichting als sfeerverlichting - Lideka Home
+          </a>
+        </p>
+      </LongParagraph>
+
+      <CenterTitle title="DUBBELZIJDIG TAPE" />
+      <LongParagraph>
+        <p>
+          Jouw nieuwe aanwinst zal uitgerust zijn met ijzer sterk dubbelzijdig 3M tape. Eenmaal goed vastgemaakt zal deze niet zomaar meer loslaten. We hebben hieronder een aantal mooie tips neergezet voor het bevestigen van jouw nieuwe feestelijke verlichting.
+        </p>
+        <p>
+          <strong>Stap voor stap</strong>
+        </p>
+        <ol>
+          <li>Zoek een mooie plek uit om de strip te bevestigen</li>
+          <li>Maak de ondergrond netjes schoon met een vochtige doek en daarna met een droge doek</li>
+          <li>Zorg dat je de strip stevig aandrukt zodat er geen lucht onder blijft zitten</li>
+        </ol>
+        <p>
+          <a href="/blog/kan-je-de-kleur-van-led-verlichting-wijzigen" class="link">
+            Kan je de kleur van led verlichting wijzigen? - Lideka Home
+          </a>
+        </p>
+      </LongParagraph>
+
+      <SingleImage
+          :image-src="require('assets/photos/Bed-2.jpg')"
+      />
+
+      <CTA
+          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
+      >
+        Beste verkochte slaapkamer LED-strips
+      </CTA>
 
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
-
     </div>
   </div>
 </template>
@@ -314,9 +221,15 @@ import {getCollection} from "~/services/ApiService";
 import Steps from "~/components/blocks/Steps.vue";
 import SingleImageWithContent from "~/components/blocks/SingleImageWithContent.vue";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
+import CTA from "~/components/CTA.vue";
+import VideoReviews from "~/components/VideoReviews.vue";
+import Lenghts from "~/components/Lenghts.vue";
 
 export default Vue.extend({
   components: {
+    Lenghts,
+    VideoReviews,
+    CTA,
     LongParagraph,
     SingleImageWithContent,
     Steps,
