@@ -6,7 +6,7 @@
         :smallText="true"
       />
 
-      <CenterTitle title="LED-strip KEUKEN" />
+      <CenterTitle tag="h1" title="LED-strip KEUKEN" />
 
       <LongParagraph>
         <p class="text-white font-extralight">

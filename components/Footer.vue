@@ -98,6 +98,12 @@
                   Partners
                 </NuxtLink>
               </li>
+
+              <li>
+                <NuxtLink to="/sitemap" class="text-sm text-gray-300 hover:text-white">
+                  Sitemap
+                </NuxtLink>
+              </li>
             </ul>
           </div>
           <div class="mt-12 md:mt-0">
@@ -227,7 +233,7 @@
           </p>
         </div>
         <p class="mt-8 text-xs text-gray-400 md:mt-0 md:order-1">
-          Website by <a href="https://rocksolid.dev" target="_blank">Rocksolid Development</a>.
+          Website by <a href="https://rocksolid.dev" rel="nofollow" target="_blank">Rocksolid Development</a>.
         </p>
       </div>
     </footer>
