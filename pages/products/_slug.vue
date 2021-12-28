@@ -145,6 +145,10 @@
               Zakelijke aankoop nodig? Contacteer sales
               <svg class="h-5 w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </NuxtLink>
+
+            <div>
+              <VideoReviewsSmall />
+            </div>
           </div>
         </div>
       </div>
@@ -163,6 +167,7 @@
                 </div>
               </div>
             </div>
+
             <div v-if="product.specifications">
               <h2 class="font-extrabold text-3xl mb-4">Specificaties</h2>
               <div class="product-specs" v-html="cleanSpecifications"></div>
@@ -194,9 +199,10 @@ import {getProduct, getReviews} from "../../services/ApiService";
 import {deliveryTime, formatMoney} from "../../services/Helpers";
 import Reviews from "../../components/reviews/Reviews";
 import Stars from "../../components/reviews/Stars";
+import VideoReviewsSmall from "../../components/VideoReviewsSmall";
 
 export default Vue.extend({
-  components: {Stars, Reviews, Breadcrumbs, NotFound, SellingPoints, Loading, ProductItem},
+  components: {Stars, Reviews, Breadcrumbs, NotFound, SellingPoints, Loading, ProductItem, VideoReviewsSmall},
 
   head() {
     return {
