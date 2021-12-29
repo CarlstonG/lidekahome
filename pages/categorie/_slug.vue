@@ -72,6 +72,10 @@
         v-else-if="collection && collection.handle === 'led-strip-20-meter'"
         :collection="collection"
       />
+    <Action
+      v-else-if="collection && collection.handle === 'action'"
+      :collection="collection"
+    />
     <LedStripMetAfstandsbediening
       v-else-if="collection && collection.handle === 'led-strip-met-afstandsbediening'"
       :collection="collection"
@@ -225,9 +229,11 @@ import LedStrip10Meter from "../../components/landingspages/meters/LedStrip10Met
 import LedStrip15Meter from "../../components/landingspages/meters/LedStrip15Meter";
 import LedStrip20Meter from "../../components/landingspages/meters/LedStrip20Meter";
 import LedStripMetAfstandsbediening from "../../components/landingspages/LedStripMetAfstandsbediening";
+import Action from "../../components/landingspages/Action";
 
 export default Vue.extend({
   components: {
+    Action,
     LedStripMetAfstandsbediening,
     LedStrip20Meter,
     LedStrip15Meter,

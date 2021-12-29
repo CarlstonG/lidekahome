@@ -25,30 +25,30 @@
 
 
           <header class="font-bold text-sm py-2 px-2 tracking-wide uppercase text-uppercase text-white">LED-strips</header>
-          <NuxtLink to="/categorie/led-strips" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-0">Alle LED-strips</NuxtLink>
-          <NuxtLink to="/categorie/tv-led-strips" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-1">TV LED-strips</NuxtLink>
-          <NuxtLink to="/categorie/rgb-led-strips" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-2">RGB LED-strips</NuxtLink>
-          <NuxtLink to="/categorie/rgb-ic-led-strips" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">RGB-IC LED-strips</NuxtLink>
-          <NuxtLink to="/categorie/led-pakketten" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">LED pakketten</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strips" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-0">Alle LED-strips</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/tv-led-strips" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-1">TV LED-strips</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/rgb-led-strips" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-2">RGB LED-strips</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/rgb-ic-led-strips" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">RGB-IC LED-strips</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-pakketten" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">LED pakketten</NuxtLink>
 
           <header class="font-bold text-sm px-2 py-2 tracking-wide uppercase text-uppercase text-white">LED-strip toepassingen</header>
-          <NuxtLink to="/categorie/led-strip-woonkamer" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-0">Woonkamer</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-slaapkamer" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-1">Slaapkamer</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-keuken" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-2">Keuken</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-gamekamer" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">Game kamer</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-badkamer" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Badkamer</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-plafond" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Plafond</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-bed" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Bed</NuxtLink>
-          <NuxtLink to="/categorie/led-strips" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Overige</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-met-afstandsbediening" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Met afstandsbediening</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-woonkamer" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-0">Woonkamer</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-slaapkamer" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-1">Slaapkamer</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-keuken" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-2">Keuken</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-gamekamer" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">Game kamer</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-badkamer" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Badkamer</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-plafond" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Plafond</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-bed" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Bed</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strips" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Overige</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-met-afstandsbediening" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Met afstandsbediening</NuxtLink>
 
           <header class="font-bold text-sm px-2 py-2 tracking-wide uppercase text-uppercase text-white">LED-strip meters</header>
-          <NuxtLink to="/categorie/led-strip-2-meter" class="block px-2  py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-0">2 meter</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-3-meter" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-1">3 meter</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-5-meter" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-2">5 meter</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-10-meter" class="block px-2  py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">10 meter</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-15-meter" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">15 meter</NuxtLink>
-          <NuxtLink to="/categorie/led-strip-20-meter" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-5">20 meter</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-2-meter" class="block px-2  py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-0">2 meter</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-3-meter" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-1">3 meter</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-5-meter" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-2">5 meter</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-10-meter" class="block px-2  py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">10 meter</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-15-meter" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">15 meter</NuxtLink>
+          <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-20-meter" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-5">20 meter</NuxtLink>
 
           <NuxtLink @click.native="closeSidebar()"
                     prefetch

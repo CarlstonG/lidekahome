@@ -261,6 +261,31 @@ export default Vue.extend({
   }
 }
 
+.action-table {
+  border-radius: 5px;
+  width: 100%;
+
+  tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+  }
+
+  tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+  }
+
+  tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
 .default-page-content {
   table {
     width: 100%;
