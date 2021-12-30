@@ -354,7 +354,7 @@ export default Vue.extend({
   async asyncData({params}) {
     let slug = params.slug;
 
-    if (!hasNumber(slug) && !slug.includes('afstand')) {
+    if (!hasNumber(slug) && !slug.includes('afstand') && !slug.includes('action')) {
       slug = slug.replace('led-strip-', '');
     }
 
