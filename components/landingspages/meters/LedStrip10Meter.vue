@@ -11,16 +11,16 @@
       </video>
 
       <div class="hidden md:block md:absolute mt-10 lg:mt-0 bottom-2 right-2 left-2 md:bottom-20 md:left-20 md:right-20 text-center">
-        <h1 class="mx-auto text-center text-3xl text-white font-bold tracking-wide">
+        <h2 class="mx-auto text-center text-3xl text-white font-bold tracking-wide">
           LED-strip 10 meter
-        </h1>
+        </h2>
       </div>
     </div>
 
     <div class="mx-auto max-w-7xl mt-10 mb-10">
       <LongParagraph>
         <p class="text-white font-extralight">
-          Ben jij opzoek naar een <NuxtLink to="/categorie/led-strips">LED-strip</NuxtLink> van 10 meter die jouw favoriete kamer omtovert tot een ware lichtshow of heb je liever een oase van rust? Met de <NuxtLink to="/categorie/led-strips">LED-strips</NuxtLink> van 10 meter bij Lideka kan het allemaal. We hebben overal aan gedacht, en we leveren alleen de meest innovatieve, kwalitatieve en gemakkelijke LED-strips voor jou. Onze LED-strips van 10 meter beschikken over een enorm aantal super heldere Led’s die volledig dimbaar zijn, en dus creëer je altijd de perfecte setting
+          Ben jij opzoek naar een <NuxtLink to="/categorie/led-strips">strip</NuxtLink> van 10 meter die jouw favoriete kamer omtovert tot een ware lichtshow of heb je liever een oase van rust? Met de <NuxtLink to="/categorie/led-strips">strips</NuxtLink> van 10 meter bij Lideka kan het allemaal. We hebben overal aan gedacht, en we leveren alleen de meest innovatieve, kwalitatieve en gemakkelijke strips voor jou. Onze strips van 10 meter beschikken over een enorm aantal super heldere lampjes die volledig dimbaar zijn, en dus creëer je altijd de perfecte setting
         </p>
       </LongParagraph>
     </div>
@@ -28,28 +28,28 @@
     <div class="max-w-7xl mx-auto space-y-10 mb-10 px-6 lg:px-0">
       <ProductsWithBackground
           v-if="collection"
-          title="10 meter LED-strips"
+          title="10 meter strips"
           :collection="collection"
       />
 
       <VideoReviews />
 
       <TextWithImage
-          title="Twee soorten LED-strips"
-          imageAlt="Twee soorten LED-strips"
+          title="Twee soorten strips"
+          imageAlt="Twee soorten strips"
           :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-1.jpg')"
       >
         <p class="text-white font-extrabold">
           <strong>RGB</strong>
         </p>
         <p class="text-white font-extralight">
-          De <NuxtLink to="/categorie/led-strips">RGB LED-strips</NuxtLink> 10 meter van Lideka beschikken over 16 miljoen kleuren. Het heeft 60 leds per meter, en deze leds zijn van de hoogste kwaliteit. De RGB LED-strip zelf is gemaakt met topkwaliteit materialen en componenten om ervoor te zorgen dat u het beste product voor uw geld krijgt. Hij bezit bijzonder mooie kleuren zoals, blauw, rood en ook bijvoorbeeld de kleur groen, maar dat is niet alles, bestel vandaag, en ontdek morgen alle RGB kleuren..
+          De <NuxtLink to="/categorie/led-strips">RGB strips</NuxtLink> 10 meter van Lideka beschikken over 16 miljoen kleuren. Het heeft 60 leds per meter, en deze leds zijn van de hoogste kwaliteit. De RGB LED-strip zelf is gemaakt met topkwaliteit materialen en componenten om ervoor te zorgen dat u het beste product voor uw geld krijgt. Hij bezit bijzonder mooie kleuren zoals, blauw, rood en ook bijvoorbeeld de kleur groen, maar dat is niet alles, bestel vandaag, en ontdek morgen alle RGB kleuren..
         </p>
         <p class="text-white font-extrabold">
           <strong>RGBIC</strong>
         </p>
         <p class="text-white font-extralight">
-          De <NuxtLink to="/categorie/rgb-ic-led-strips">RGBIC LED-strips</NuxtLink> hebben ook 16 miljoen kleuren, en beschikken ook over 60 leds per meter. Toch is deze versie net iets anders, deze LED-strip heeft een unieke eigenschap, en dat is de mogelijkheid om verschillende kleuren leds tegelijk door de strip heen te laten schieten.
+          De <NuxtLink to="/categorie/rgb-ic-led-strips">RGBIC strips</NuxtLink> hebben ook 16 miljoen kleuren, en beschikken ook over 60 leds per meter. Toch is deze versie net iets anders, deze LED-strip heeft een unieke eigenschap, en dat is de mogelijkheid om verschillende kleuren leds tegelijk door de strip heen te laten schieten.
         </p>
       </TextWithImage>
 
@@ -73,12 +73,12 @@
       </TextWithImage>
 
       <TextWithImage
-          title="Aantal leds per meter"
-          imageAlt="Aantal leds per meter"
+          title="Aantal lampjes per meter"
+          imageAlt="Aantal lampjes per meter"
           :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-3.jpg')"
       >
         <p class="text-white font-extralight">
-          Het aantal ledjes op een gehele LED-strip zegt enorm veel over de helderheid. Wij kunnen jou gerust stellen met het feit dat je voor 60 per meter kiest, aangezien dit echt meer dan voldoende is. Onze LED-strip extra helder RGB, brengt het meeste licht op.
+          Het aantal lampjes op een gehele strip zegt enorm veel over de helderheid. Wij kunnen jou gerust stellen met het feit dat je voor 60 per meter kiest, aangezien dit echt meer dan voldoende is. Onze LED-strip extra helder RGB, brengt het meeste licht op.
         </p>
       </TextWithImage>
 
@@ -87,13 +87,13 @@
       />
 
       <TextWithImage
-          title="10 meter LED-strips"
-          imageAlt="10 meter LED-strips"
+          title="10 meter strips"
+          imageAlt="10 meter strips"
           :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-2.jpg')"
           reverse="true"
       >
         <p class="text-white font-extralight">
-          10 meter LED is een hele gebruikelijke lengte, dit heeft te maken met het feit dat de meeste muren, kamers en huizen toch wel een lengte of breedte hebben van 10 meter. Ook brengt 10 meter LED een hoge hoeveelheid licht op, mits er genoeg lampjes per meter LED hebt. Wij raden een licht kleur RGB of RGBIC aan, hier heb je talloze mogelijkheden en combinaties.
+          10 meter strip is een hele gebruikelijke lengte, dit heeft te maken met het feit dat de meeste muren, kamers en huizen toch wel een lengte of breedte hebben van 10 meter. Ook brengt 10 meter LED een hoge hoeveelheid licht op, mits er genoeg lampjes per meter hebt. Wij raden een licht kleur RGB of RGBIC aan, hier heb je talloze mogelijkheden en combinaties.
         </p>
       </TextWithImage>
 

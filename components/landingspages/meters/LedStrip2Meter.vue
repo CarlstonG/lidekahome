@@ -11,17 +11,17 @@
       </video>
 
       <div class="hidden md:block md:absolute mt-10 lg:mt-0 bottom-2 right-2 left-2 md:bottom-20 md:left-20 md:right-20 text-center">
-        <h1 class="mx-auto text-center text-3xl text-white font-bold tracking-wide">
+        <h2 class="mx-auto text-center text-3xl text-white font-bold tracking-wide">
           LED-strip 2 meter
-        </h1>
+        </h2>
       </div>
     </div>
 
     <div class="mx-auto max-w-7xl mt-10 mb-10">
       <LongParagraph>
         <p class="text-white font-extralight">
-          Ben je opzoek naar een leuke LED-strip van 2 meter? Lideka bied je graag zijn
-          <a href="/categorie/tv-led-strips">TV LED-strip</a> van 2 meter aan met een totaal van 60 magische Led’s. We maken gebruik van de meest heldere, duurzame en sterke Led’s die er zijn op de markt. Je bent bij ons aan het perfect adres als het gaat om een LED-strip van 2 meter.
+          Ben je opzoek naar een leuke verlichting strip van 2 meter? Lideka bied je graag zijn
+          <a href="/categorie/tv-led-strips">TV LED-strip</a> van 2 meter aan met een totaal van 60 magische lampjes. We maken gebruik van de meest heldere, duurzame en sterke LED's die er zijn op de markt. Je bent bij ons aan het perfect adres als het gaat om een LED-strip van 2 meter.
         </p>
       </LongParagraph>
     </div>
@@ -46,19 +46,19 @@
       </TextWithImage>
 
       <TextWithImage
-          title="Leds per meter 2 meter LED-strip"
-          imageAlt="Leds per meter 2 meter LED-strip"
+          title="Leds per meter 2 meter strip"
+          imageAlt="Leds per meter 2 meter strip"
           :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-2.jpg')"
           reverse="true"
       >
         <p class="text-white font-extralight">
-          Onze USB LED-strip van 2 meter wordt geleverd met een totaal van 60 SMD 5050 Led’s. Deze zijn extreem helder, duurzaam en zijn ook nog eens van hoge kwaliteit.
+          Onze USB strip van 2 meter wordt geleverd met een totaal van 60 SMD 5050 lampjes. Deze zijn extreem helder, duurzaam en zijn ook nog eens van hoge kwaliteit.
         </p>
       </TextWithImage>
 
       <TextWithImage
-          title="Achtergrondkleur LED-strip 2 meter"
-          imageAlt="Achtergrondkleur LED-strip 2 meter"
+          title="Achtergrondkleur strip 2 meter"
+          imageAlt="Achtergrondkleur strip 2 meter"
           :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-3.jpg')"
       >
         <p class="text-white font-extralight">
@@ -80,7 +80,7 @@
           </p>
           <p class="text-white font-extralight">
             <NuxtLink to="/products/lideka-tv-led-strip-2-meter-usb-rgb-smart-verlichting">
-              USB 2 meter LED-strip set TV
+              USB 2 meter strip set TV
             </NuxtLink>
           </p>
           <ul class="text-white font-extralight no-list-type">

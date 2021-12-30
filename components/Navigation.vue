@@ -171,6 +171,7 @@
                             <NuxtLink to="/categorie/rgb-led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-2">RGB LED-strips</NuxtLink>
                             <NuxtLink to="/categorie/rgb-ic-led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">RGB-IC LED-strips</NuxtLink>
                             <NuxtLink to="/categorie/led-pakketten" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">LED pakketten</NuxtLink>
+                            <NuxtLink to="/categorie/led-strip-met-afstandsbediening" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Met afstandsbediening</NuxtLink>
                           </div>
                           <div>
                             <header class="font-bold text-sm px-4 py-2 tracking-wide uppercase text-uppercase">LED-strip toepassingen</header>
@@ -182,7 +183,6 @@
                             <NuxtLink to="/categorie/led-strip-plafond" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Plafond</NuxtLink>
                             <NuxtLink to="/categorie/led-strip-bed" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Bed</NuxtLink>
                             <NuxtLink to="/categorie/led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Overige</NuxtLink>
-                            <NuxtLink to="/categorie/led-strip-met-afstandsbediening" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Met afstandsbediening</NuxtLink>
                           </div>
                           <div>
                             <header class="font-bold text-sm px-4 py-2 tracking-wide uppercase text-uppercase">LED-strip meters</header>

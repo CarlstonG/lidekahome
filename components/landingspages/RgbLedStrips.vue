@@ -8,7 +8,7 @@
 
       <LongParagraph>
         <p class="text-white font-extralight">
-          De LIDEKA® RGB multicolor <NuxtLink class="link" to="/categorie/led-strips">LED-strip</NuxtLink> creëert een gezellige lounge sfeer en blijft muurvast zitten! Onze RGB LED-strips zijn van de hoogste kwaliteit en beschikken over de meest geavanceerde bedieningsmogelijkheden. Geniet van een breed scala aan kleuren, en ervaar de rust en gezelligheid die onze RGB LED-strips brengen.
+          De LIDEKA® RGB multicolor creëert een gezellige lounge sfeer en blijft muurvast zitten! Onze RGB LED-strips zijn van de hoogste kwaliteit en beschikken over de meest geavanceerde bedieningsmogelijkheden. Geniet van een breed scala aan kleuren, en ervaar de rust en gezelligheid die onze RGB strips brengen.
         </p>
         <p class="text-white font-extralight">
           Thuis genieten van die fijne lounge vibes, bij jouw favoriete films? Of heb je zin in een romantisch diner? Het kan allemaal! Bestel jouw <NuxtLink class="link" to="/products/lideka-rgb-led-light-strip-3-meter">RGB LED-strip</NuxtLink> vandaag, en geniet morgen al van een <strong>wonderbaarlijke sfeer</strong>!
@@ -48,17 +48,17 @@
       <div class="mx-auto max-w-5xl">
         <LongParagraph
             bg-color
-            title="De voordelen van jouw nieuwe RGBIC LED-strip"
+            title="De voordelen van jouw nieuwe RGB strip"
         >
           <p class="text-white font-extralight">
-            RGB-led verlichting combineert rode, groene en blauwe led-lampjes in één behuizing en vormt honderden verschillende lichttinten door deze drie kleuren te mengen. Zo stel jij jouw favoriete kleuren samen wanneer je maar wilt en geniet je iedere keer weer van een unieke sfeer.
+            De verlichting combineert rode, groene en blauwe led-lampjes in één behuizing en vormt honderden verschillende lichttinten door deze drie kleuren te mengen. Zo stel jij jouw favoriete kleuren samen wanneer je maar wilt en geniet je iedere keer weer van een unieke sfeer.
           </p>
           <p class="text-white font-extralight">
-            Deze stijlvolle led set wordt geleverd <strong>inclusief installatiemateriaal</strong>,
+            Deze stijlvolle verlichting set wordt geleverd <strong>inclusief installatiemateriaal</strong>,
             <NuxtLink to="/blog/ip-rating-bij-led-strips-wat-betekent-ip65-lideka" class="link">IP65-waterproof</NuxtLink> bescherming en led lampjes van de hoogste kwaliteit zodat je jouw aankoop nog jarenlang kunt gebruiken. Toch niet tevreden? Lideka® garandeert jou van een 2-jarige garantie.
           </p>
           <p class="text-white font-extralight">
-            Met 16 miljoen RGB-kleuren, krachtige LED-lampjes en een bijgeleverde bluetooth <strong>afstandsbediening</strong> stel jij jouw RGB ledstrip helemaal naar wens in. Leun lekker achterover, geniet van een extra knus interieur en laat het loungen maar beginnen! Je kunt in principe oneindig <strong>veel verschillende kleurencombinaties</strong> maken.
+            Met 16 miljoen RGB-kleuren, krachtige LED-lampjes en een bijgeleverde bluetooth <strong>afstandsbediening</strong> stel jij jouw product helemaal naar wens in. Leun lekker achterover, geniet van een extra knus interieur en laat het loungen maar beginnen! Je kunt in principe oneindig <strong>veel verschillende kleurencombinaties</strong> maken.
           </p>
           <p class="text-white font-bold">
             De drie primaire kleuren:
@@ -72,7 +72,7 @@
       </div>
 
       <CTA to="/products/rgb-led-light-strip-15-meter-smart-verlichting">
-        Bekijk best verkochte RGB LED-strip
+        Bekijk best verkochte RGB strip
       </CTA>
 
       <div class="mx-auto max-w-5xl">
@@ -95,7 +95,7 @@
       </div>
 
       <CTA to="/products/rgb-led-light-strip-15-meter-smart-verlichting">
-        Bekijk best verkochte RGB LED-strip
+        Bekijk best verkochte RGB strip
       </CTA>
 
       <div class="mx-auto max-w-5xl">
@@ -124,7 +124,7 @@
       <BlogList />
 
       <CenterTitle
-        title="Jouw nieuwe RGB led-strip is:"
+        title="Jouw nieuwe RGB strip is:"
       />
 
       <Benefits

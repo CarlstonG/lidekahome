@@ -130,11 +130,7 @@
               </div>
             </div>
             <h4 class="mt-1 font-bold text-white">{{ review.title }}</h4>
-            <div class="text-gray-400 mt-1 text-sm">
-              Door {{ review.reviewer.name }} {{ review.reviewer.source ? `- ${review.reviewer.source}` : '' }}
-            </div>
-
-            <div class="mt-4">
+            <div class="mt-1">
               <p class="text-sm text-gray-400">
                 {{ review.description }}
               </p>

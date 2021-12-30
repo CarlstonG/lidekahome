@@ -43,7 +43,7 @@ export default Vue.extend({
   },
 
   async fetch() {
-    const collections = await this.$shopify.collection.fetchAll();
+    const collections = await this.$shopify.collection.fetchAll(100);
 
     this.blocks.push({
       title: 'Categorieën',
@@ -57,7 +57,7 @@ export default Vue.extend({
       }),
     })
 
-    const products = await this.$shopify.product.fetchAll();
+    const products = await this.$shopify.product.fetchAll(100);
 
     this.blocks.push({
       title: 'Producten',

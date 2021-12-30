@@ -8,17 +8,17 @@
 
       <LongParagraph>
         <p class="text-white font-extralight">
-          Net als bij een standaard model vormt de RGBIC led <strong>alle mogelijke kleurtinten</strong>, maar dan met schitterende <strong>extra lichteffecten</strong>.
-          Deze splinternieuweRGBIC LED-strip verlichting wordt ook wel ‘<strong>Dreamcolor Ledstrip</strong>’ genoemd en is razend populair bij onder Amerikaanse TikTok kers, en bij aanbieders zoals amazon. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe dreamcolor ledstrip is het mogelijk!
+          Net als bij een standaard model vormt de RGBIC <strong>alle mogelijke kleurtinten</strong>, maar dan met schitterende <strong>extra lichteffecten</strong>.
+          Deze splinter nieuwe RGBIC strip verlichting wordt ook wel ‘<strong>Dreamcolor</strong>’ genoemd en is razend populair bij onder Amerikaanse TikTok kers, en bij aanbieders zoals amazon. Van regenboog patronen tot schietende leds of dromerige kleuren, met deze gloednieuwe dreamcolor ledstrip is het mogelijk!
         </p>
         <p class="text-white font-extralight">
-          Naast deze extra features werkt de RGBIC led uitvoering net als een traditionele <NuxtLink to="/categorie/led-strips" class="link">LED-strip</NuxtLink>.
-          Zo ben je verzekerd van 2 jaar garantie, <NuxtLink class="link" target="_blank" to="/blog/ip-rating-bij-led-strips-wat-betekent-ip65-lideka">IP65-waterproof</NuxtLink> bescherming en led-lampjes van de hoogste kwaliteit. Deze nieuwe generatie strips wordt alleen maar populairder.
+          Naast deze extra features werkt de RGBIC uitvoering net als een traditionele <NuxtLink to="/categorie/led-strips" class="link">LED-strip</NuxtLink>.
+          Zo ben je verzekerd van 2 jaar garantie, <NuxtLink class="link" target="_blank" to="/blog/ip-rating-bij-led-strips-wat-betekent-ip65-lideka">IP65-waterproof</NuxtLink> bescherming en lampjes van de hoogste kwaliteit. Deze nieuwe generatie strips wordt alleen maar populairder.
         </p>
       </LongParagraph>
 
       <ProductsWithBackground
-          title="Creëer een extra persoonlijke sfeer met RGB-IC led verlichting!"
+          title="Creëer een extra persoonlijke sfeer met RGB-IC verlichting!"
           :collection="collection"
       />
 

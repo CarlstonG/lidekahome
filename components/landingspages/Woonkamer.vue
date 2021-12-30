@@ -10,14 +10,14 @@
           <NuxtLink to="/categorie/rgb-led-strips" class="link">RGB LED-strips</NuxtLink> en <NuxtLink to="/categorie/rgb-ic-led-strips" class="link">RGB-IC LED-strips</NuxtLink> aan.
         </p>
         <p class="text-white font-extralight">
-          Onze LED lights zijn van hoge kwaliteit, en helderder dan ooit in de geschiedenis van LED verlichting.
+          Onze lights zijn van hoge kwaliteit, en helderder dan ooit in de geschiedenis van LED verlichting.
         </p>
         <p class="text-white font-extralight">
           Kies uit 2 geweldige soorten LED verlichting, en creëer je eigen magische lichtshow.
         </p>
       </LongParagraph>
 
-      <CenterTitle title="RGB LED-strips" />
+      <CenterTitle title="RGB strips" />
       <LongParagraph>
         <p class="text-white font-extralight">
           De <NuxtLink to="/categorie/rgb-led-strips" class="link">RGB Led-strips</NuxtLink> beschikken over maar liefst 16 miljoen verschillende kleuren combinaties. Wat het nog leuker maakt, is dat je deze zelf kunt kiezen vanuit onze eigen app. De RGB LED-strips worden geleverd in een compleet set, je bent dus in 1 keer klaar.
@@ -29,7 +29,7 @@
           :collection="collection1"
       />
 
-      <CenterTitle title="RGB-IC LED-strips" />
+      <CenterTitle title="RGB-IC strips" />
       <LongParagraph>
         <p class="text-white font-extralight">
           De <NuxtLink class="link" to="/categorie/rgb-ic-led-strips">RGB-IC LED-strips</NuxtLink> hebben nog een extra functie, een hele bijzondere functie. Je bij dit soort namelijk verschillende kleuren tegelijk door de strips laten gaan. Dat is een enorm gaaf effect, en erg geliefd onder onze klanten. Verder werkt alles hetzelfde ij dit type LED verlichting, en wordt deze ook in een compleet set geleverd.
@@ -46,13 +46,13 @@
       <CTA
           to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
       >
-        Beste verkochte woonkamer LED-strips
+        Beste verkochte woonkamer strips
       </CTA>
 
       <SingleImage :image-src="require('assets/photos/Woonkamer-2.jpg')" />
 
       <LongParagraph
-          title="Waarom zijn dit de beste LED-strips voor de woonkamer?"
+          title="Waarom zijn dit de beste strips voor de woonkamer?"
       >
         <p>
           Doordat onze <NuxtLink to="/categorie/rgb-led-strips" class="link">RGB</NuxtLink> en

@@ -8,7 +8,7 @@
 
       <LongParagraph>
         <p class="text-white font-extralight">
-          Voor de echte liefhebbers hebben we <strong>complete</strong> LED pakketten. Deze LED pakketten bestaan uit <NuxtLink to="/products/lideka-rgb-smart-tv-led-light-strip-3-meter-met-smart-app" class="link">TV LED-strips</NuxtLink>,
+          Voor de echte liefhebbers hebben we <strong>complete</strong> pakketten. Deze pakketten bestaan uit <NuxtLink to="/products/lideka-rgb-smart-tv-led-light-strip-3-meter-met-smart-app" class="link">TV LED-strips</NuxtLink>,
           en <NuxtLink to="/categorie/rgb-led-strips" class="link">RGB LED-strips</NuxtLink>. Beiden soorten bestaan uit complete sets.
         </p>
         <p class="text-white font-extralight">
@@ -17,7 +17,7 @@
       </LongParagraph>
 
       <ProductsWithBackground
-          title="Onze LED pakketten"
+          title="Onze pakketten"
           :collection="collection"
       />
 
@@ -27,8 +27,8 @@
 
       <div class="mx-auto max-w-4xl space-y-10 lg:px-0">
         <TextWithImage
-            title="RGB LED-strip"
-            imageAlt="RGB LED-strip"
+            title="RGB"
+            imageAlt="RGB"
             :imageSrc="require('assets/design/landings/led-pakketten/pakket-1.jpg')"
             url="/"
         >
@@ -41,8 +41,8 @@
         </TextWithImage>
 
         <TextWithImage
-            title="TV LED-strip"
-            imageAlt="TV LED-strip"
+            title="TV"
+            imageAlt="TV"
             :imageSrc="require('assets/design/landings/led-pakketten/pakket-3.jpg')"
             url="/"
             reverse
@@ -58,11 +58,11 @@
       </div>
 
       <CTA to="/products/rgb-led-light-strip-5-meter-tv-strip-2m-combinatie-pakket">
-        Bekijk beste verkochte LED pakket
+        Bekijk beste verkochte pakket
       </CTA>
 
       <CenterTitle
-        title="De voordelen van jouw nieuwe LED-strips"
+        title="De voordelen van jouw nieuwe strips"
       />
 
       <Benefits

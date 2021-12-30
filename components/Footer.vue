@@ -52,6 +52,12 @@
               </li>
 
               <li>
+                <a href="https://klantenservice.lidekahome.nl/nl-NL" target="_blank" class="text-sm text-gray-300 hover:text-white">
+                  Help center
+                </a>
+              </li>
+
+              <li>
                 <NuxtLink to="/bestellen-en-betalen" class="text-sm text-gray-300 hover:text-white">
                   Bestellen en Betalen
                 </NuxtLink>

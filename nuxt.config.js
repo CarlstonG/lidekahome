@@ -103,6 +103,9 @@ export default {
             '/categorie/led-strip-2-meter',
             '/categorie/led-strip-3-meter',
             '/categorie/led-strip-5-meter',
+            '/categorie/led-strip-10-meter',
+            '/categorie/led-strip-15-meter',
+            '/categorie/led-strip-20-meter',
 
             '/products/rgb-led-light-strip-10-meter-tv-strip-3m-combinatie-pakket',
             '/products/rgb-led-light-strip-5-meter-tv-strip-2m-combinatie-pakket',
@@ -121,6 +124,7 @@ export default {
             '/products/rgb-led-light-strip-10-meter-smart-verlichting',
             '/products/rgb-led-light-strip-5-meter-smart-verlichting',
             '/products/rgb-ic-led-light-strip-5-meter-smart-verlichting',
+            '/products/rgb-ic-led-light-strip-10-meter-smart-verlichting',
             '/products/adapter-2-5a-12v-30w',
 
             '/blog/led-strip-knippen-hier-moet-je-op-letten-lideka%C2%AE',

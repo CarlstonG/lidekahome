@@ -73,7 +73,7 @@
         :collection="collection"
       />
     <Action
-      v-else-if="collection && collection.handle === 'action'"
+      v-else-if="collection && (collection.handle === 'action' || collection.handle === 'led-strip-action')"
       :collection="collection"
     />
     <LedStripMetAfstandsbediening
