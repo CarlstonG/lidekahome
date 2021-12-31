@@ -20,6 +20,14 @@ export const deliveryTime = () => {
     return 'Vandaag besteld, Maandag in huis';
   }
 
+  if (moment().format('DD-MM-YYYY') === '31-12-2021' || moment().format('DD-MM-YYYY') === '01-01-2022') {
+    return 'Vandaag besteld, Maandag in huis';
+  }
+
+  if (moment().format('DD-MM-YYYY') === '02-01-2022') {
+    return 'Voor 23:59 besteld, morgen in huis';
+  }
+
   if (moment().weekday() === 0) {
     return 'Vandaag voor 22:00 besteld, morgen in huis';
   } else if (moment().weekday() === 6) {
