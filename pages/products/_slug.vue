@@ -7,6 +7,24 @@
       </div>
     </div>
     <div v-else>
+      <div v-show="showFixedOrderBar" class="fixed-order-bar fixed z-10 w-full bg-white border-b border-gray-200 ">
+        <div class="max-w-7xl mx-auto py-3 flex items-center justify-end">
+          <h2 v-if="product.price" class="text-2xl inline-block font-bold text-red-500 rounded-md mr-4">
+            {{ formatMoney(product.price) }} <del v-if="product.priceCompare" class="text-xl text-black">{{ formatMoney(product.priceCompare) }}</del>
+          </h2>
+
+          <button @click.prevent="addToCart(product.firstVariantId, quantity)" type="submit" name="add"
+                  id="AddToCart"
+                  class="w-52 relative flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+            <svg class="w-5 h-5 -mt-1 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+            Bestellen
+          </button>
+        </div>
+      </div>
       <Breadcrumbs class="hidden md:block" :path="[ { title: product.collection.title, path: product.collection.url } ]"
                    :title="product.title" />
       <div class="max-w-7xl mx-auto pb-2 pt-6 md:pt-10">
@@ -127,7 +145,7 @@
                 </select>
               </div>
 
-              <button @click.prevent="addToCart(product.firstVariantId, quantity)" type="submit" name="add"
+              <button @click.prevent="addToCart(product.firstVariantId, quantity)" ref="addToCartButton" type="submit" name="add"
                       id="AddToCart"
                       class="w-52 relative flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                 <svg class="w-5 h-5 -mt-1 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -139,7 +157,11 @@
               </button>
             </div>
 
-            <SellingPoints :show-delivery="!product.deliveryDate"/>
+            <p class="text-sm text-gray-500 mt-1">
+              Betaal in 4 termijnen met Klarna
+            </p>
+
+            <SellingPoints :slug="slug" />
 
             <NuxtLink to="/contact" class="text-sm text-gray-500 inline-flex mt-2 hover:text-gray-700">
               Zakelijke aankoop nodig? Contacteer sales
@@ -170,7 +192,14 @@
 
             <div v-if="product.specifications">
               <h2 class="font-extrabold text-3xl mb-4">Specificaties</h2>
-              <div class="product-specs" v-html="cleanSpecifications"></div>
+              <div class="relative">
+                <div class="product-specs" v-bind:class="{ 'fadeHidden': !expandSpecifications }" v-html="cleanSpecifications"></div>
+                <div v-show="!expandSpecifications" class="w-full flex justify-center absolute bottom-6 z-10 left-0 right-0">
+                  <button @click.prevent="expandSpecifications = true" type="button" class="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Toon meer
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           <div v-if="product" class="px-0 md:px-6 mb-6" id="reviews">
@@ -283,6 +312,8 @@ export default Vue.extend({
       quantity: 1,
       productImages: [],
       expandProductDescription: false,
+      expandSpecifications: false,
+      showFixedOrderBar: false,
     };
   },
 
@@ -359,6 +390,12 @@ export default Vue.extend({
         },
       });
     },
+
+    isScrolledPastAddToCartButton() {
+      const button = this.$refs.addToCartButton;
+      
+      this.showFixedOrderBar = window.scrollY > (button.offsetTop + button.offsetHeight);
+    },
   },
 
   async mounted() {
@@ -377,6 +414,13 @@ export default Vue.extend({
       deliveryDate: this.product.deliveryDate,
       price: this.product.price,
     });
+
+    this.isScrolledPastAddToCartButton();
+    window.addEventListener('scroll', this.isScrolledPastAddToCartButton);
+  },
+
+  unmounted() {
+      window.removeEventListener('scroll', this.isScrolledPastAddToCartButton);
   },
 
   async asyncData(ctx) {
@@ -432,6 +476,10 @@ export default Vue.extend({
     bottom: 0;
     left: 0;
   }
+}
+
+.fixed-order-bar {
+  top: 11.9rem;
 }
 </style>
 

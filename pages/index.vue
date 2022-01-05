@@ -70,6 +70,9 @@
       <VideoReviews />
     </div>
 
+
+    <Calendly />
+
     <div class="mx-auto max-w-7xl mb-10 px-6">
       <h2 class="mx-auto text-3xl text-center text-white font-bold">
         Kies jou specifieke lengte
@@ -370,9 +373,20 @@ import CategorySlider from "~/components/CategorySlider.vue";
 import Reviews from "~/components/reviews/Reviews.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import Lenghts from "~/components/Lenghts.vue";
+import Calendly from '~/components/Calendly.vue';
 
 export default Vue.extend({
-  components: {Lenghts, Reviews, VideoReviews, CategorySlider, Usages, ProductItem, ProductItemGradient},
+  components: {
+    Lenghts,
+    Reviews,
+    VideoReviews,
+    CategorySlider,
+    Usages,
+    ProductItem,
+    ProductItemGradient,
+    Calendly
+  },
+  
   data() {
     return {
       collection: {},

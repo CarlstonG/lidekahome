@@ -1,12 +1,20 @@
 <template>
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
-      <Banner
-        :imageSrc="require('assets/photos/keuken.jpg')"
-        :smallText="true"
-      />
+      <h2 class="md:hidden mx-auto text-3xl text-white font-bold tracking-wide uppercase mb-6">
+        LED-strip KEUKEN
+      </h2>
 
-      <CenterTitle tag="h1" title="LED-strip KEUKEN" />
+      <video :poster="require('assets/video-poster-3.jpeg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
+        <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/Keuken-compressed.mp4?v=1641282879" type="video/mp4" />
+      </video>
+
+      <div class="hidden md:block md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20 md:right-20">
+        <h1 class="mx-auto text-3xl text-white font-bold tracking-wide text-center">
+          LED-strip KEUKEN
+        </h1>
+      </div>
+    </div>
 
       <LongParagraph>
         <p class="text-white font-extralight">

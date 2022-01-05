@@ -3,18 +3,18 @@
     <form @submit.prevent="submit">
       <div class="space-y-2">
         <div class="flex space-x-2">
-          <FormField class="flex-1" :errors="$v.fields.firstName" :model-value.sync="fields.lastName" :hide-label="true"
+          <FormField class="flex-1" :extra-rounded="true" :errors="$v.fields.firstName" :model-value.sync="fields.lastName" :hide-label="true"
                     name="Voornaam" input-type="text" />
 
-          <FormField class="flex-1" :errors="$v.fields.lastName" :model-value.sync="fields.lastName" :hide-label="true"
+          <FormField class="flex-1" :extra-rounded="true" :errors="$v.fields.lastName" :model-value.sync="fields.lastName" :hide-label="true"
           name="Achternaam" input-type="text"/>
         </div>
         <div class="flex space-x-2">
-          <FormField class="flex-1" :errors="$v.fields.email" :model-value.sync="fields.email" :hide-label="true"
+          <FormField class="flex-1" :extra-rounded="true" :errors="$v.fields.email" :model-value.sync="fields.email" :hide-label="true"
                     name="E-mailadres" input-type="email"/>
           <div>
             <button type="submit"
-                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-indigo-400 to-purple-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    class="uppercase tracking-wide flex inline-block shadow-md p-2 px-6 items-center justify-center border border-transparent rounded-full shadow-sm text-md  text-white bg-indigo-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
               Inschrijven
             </button>
           </div>
