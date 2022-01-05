@@ -480,7 +480,7 @@ export default Vue.extend({
 }
 
 .fixed-order-bar {
-  top: 11.9rem;
+  top: 11rem;
 }
 </style>
 
