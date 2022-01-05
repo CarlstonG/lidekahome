@@ -201,8 +201,12 @@
             <h2 class="text-md font-medium mb-4 mt-6 text-gray-400">
               Makkelijk betalen
             </h2>
-            <div class="flex">
+            <div>
               <PaymentMethodes/>
+
+              <p class="text-sm text-gray-400 mt-1">
+                Betaal in 4 termijnen met Klarna
+              </p>
             </div>
             <h2 class="text-md font-medium mt-6 text-gray-400">
               Veilig winkelen

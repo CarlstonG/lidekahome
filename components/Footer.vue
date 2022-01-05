@@ -145,7 +145,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
-                Konings Dreef 9<br/>3261 NJ, Oud-Beijerland
+                Edisonstraat 98<br/>3281 NC Numansdorp
               </li>
               <li class="text-gray-300 text-sm">
                 <NuxtLink to="/contact" class="flex">

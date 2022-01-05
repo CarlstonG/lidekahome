@@ -43,9 +43,15 @@
                   <span class="ml-1 text-gray-400 text-xs"><span class="text-gray-200 font-medium">9,5</span> (81)</span>
                 </a>
 
-                <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank">
-                  <img alt="Thuiswinkel waarborg" class="w-20" src="~/assets/thuiswinkel.svg"/>
-                </a>
+                <div class="space-x-3 flex items-center">
+                  <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank">
+                    <img alt="Thuiswinkel waarborg" class="w-20" src="~/assets/thuiswinkel.svg"/>
+                  </a>
+
+                  <a href="https://www.webwinkelkeur.nl/webshop/Lideka-Home_1214064" title="Webwinkel Keurmerk en klantbeoordelingen" target="_blank">
+                    <img src="https://dashboard.webwinkelkeur.nl/banners/76/1214064/1632729812.svg" class="w-20" alt="Webwinkel Keurmerk en klantbeoordelingen" />
+                  </a>
+                </div>
               </dt>
             </div>
           </dl>

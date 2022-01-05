@@ -80,6 +80,10 @@
       v-else-if="collection && collection.handle === 'led-strip-met-afstandsbediening'"
       :collection="collection"
     />
+    <LedStripDimbaar
+      v-else-if="collection && collection.handle === 'led-strip-dimbaar'"
+      :collection="collection"
+    />
     <div v-else-if="collection && collection.handle">
       <div class="w-full bg-black">
         <div class="max-w-7xl mx-auto pt-2 md:pt-6 mb-2 md:pb-6 text-left px-4 md:px-2">
@@ -229,6 +233,7 @@ import LedStrip10Meter from "../../components/landingspages/meters/LedStrip10Met
 import LedStrip15Meter from "../../components/landingspages/meters/LedStrip15Meter";
 import LedStrip20Meter from "../../components/landingspages/meters/LedStrip20Meter";
 import LedStripMetAfstandsbediening from "../../components/landingspages/LedStripMetAfstandsbediening";
+import LedStripDimbaar from "../../components/landingspages/LedStripDimbaar";
 import Action from "../../components/landingspages/Action";
 
 export default Vue.extend({

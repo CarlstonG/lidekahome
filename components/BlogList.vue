@@ -24,19 +24,19 @@
           <NuxtLink to="/blog/tv-led-strips-een-nieuwe-vorm-van-televisie-kijken" class="link">Benieuwd naar het positieve effect van TV strips?</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/blog/kan-je-de-kleur-van-led-verlichting-wijzigen" class="link">Kan je de kleur van onze verlichting wijzigen? - Lideka Home</NuxtLink>
+          <NuxtLink to="/blog/kan-je-de-kleur-van-led-verlichting-wijzigen" class="link">Kan je de kleur van onze verlichting wijzigen?</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/blog/led-verlichting-in-de-badkamer" class="link">Verlichting in de badkamer - Lideka Home</NuxtLink>
+          <NuxtLink to="/blog/led-verlichting-in-de-badkamer" class="link">Verlichting in de badkamer</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/blog/led-verlichting-in-de-slaapkamer" class="link">Verlichting in de slaapkamer - Lideka Home</NuxtLink>
+          <NuxtLink to="/blog/led-verlichting-in-de-slaapkamer" class="link">Verlichting in de slaapkamer</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/blog/alles-over-led-verlichting-als-sfeerverlichting" class="link">Alles over onze verlichting als sfeerverlichting - Lideka Home</NuxtLink>
+          <NuxtLink to="/blog/alles-over-led-verlichting-als-sfeerverlichting" class="link">Alles over onze verlichting als sfeerverlichting</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/blog/welke-functies-kun-je-led-verlichting-meegeven" class="link">Welke functies kun je onze verlichting meegeven? - Lideka Home</NuxtLink>
+          <NuxtLink to="/blog/welke-functies-kun-je-led-verlichting-meegeven" class="link">Welke functies kun je onze verlichting meegeven?</NuxtLink>
         </li>
       </ul>
     </LongParagraph>
