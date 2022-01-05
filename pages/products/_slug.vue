@@ -481,6 +481,11 @@ export default Vue.extend({
 
 .fixed-order-bar {
   top: 11rem;
+
+  @media screen and (max-width: 423px) {
+    top: unset;
+    padding: 0 1rem;
+  }
 }
 </style>
 
