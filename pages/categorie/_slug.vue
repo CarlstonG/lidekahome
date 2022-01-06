@@ -263,7 +263,8 @@ export default Vue.extend({
     FilterSidebar,
     Filters,
     Loading,
-    ProductItem
+    ProductItem,
+    LedStripDimbaar,
   },
 
   data() {

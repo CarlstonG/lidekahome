@@ -2,7 +2,7 @@
   <div class="bg-black">
 
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 lg:mb-0">
-      <Banner :imageSrc="require('assets/photos/remote.jpg')"/>
+      <Banner :imageSrc="require('assets/photos/TV3.jpg')"/>
 
       <div class="mt-4">
         <CenterTitle
@@ -16,117 +16,50 @@
       <LongParagraph>
         <p class="text-white font-extralight">
           Ben jij opzoek naar een
-          <strong>LED-strip met afstandsbediening?</strong>
-          Dan ben je hier aan het juiste adres. Lideka biedt je meerdere soorten en lengten aan als het gaat om
-          <NuxtLink to="/categorie/led-strips" class="link">LED-strips</NuxtLink> met afstandsbediening.
+          <strong>dimbare LED-strip?</strong>
+          Dan ben je hier aan het juiste adres. Lideka biedt je meerdere soorten en lengten aan als het gaat om dimbare
+          <NuxtLink to="/categorie/led-strips" class="link">LED-strips</NuxtLink>.
           Zo hebben we welbekende <NuxtLink to="/categorie/rgb-led-strips" class="link">RGB LED-strip variant</NuxtLink>, maar ook de nieuwe
           <NuxtLink class="link" to="/categorie/rgb-ic-led-strips">RGB-IC LED-strip</NuxtLink> variant.
-          Beiden worden geleverd met een universele afstandsbediening, die talloze functies bevat.
-          Als je opzoek bent naar een <NuxtLink to="/categorie/tv-led-strips" class="link">TV LED-strip</NuxtLink> met een USB-aansluitingen
-          dan hebben we deze ook met een afstandsbediening.
         </p>
       </LongParagraph>
     </div>
 
     <div class="max-w-7xl mx-auto space-y-10 mb-10 px-6 lg:px-0">
       <ProductsWithBackground
-          v-if="collection1"
-          title="RGB LED-strips met afstandsbediening"
-          :collection="collection1"
-      />
-
-      <ProductsWithBackground
-          v-if="collection3"
-          title="RGB-IC LED-strips met afstandsbediening"
-          :collection="collection3"
-      />
-
-      <ProductsWithBackground
-          v-if="collection2"
-          title="USB TV LED-strips met afstandsbediening"
-          :collection="collection2"
-      />
-
-      <ProductsWithBackground
-          v-if="collection4"
-          title="LED-strip pakketten met afstandsbediening"
-          :collection="collection4"
+          v-if="collection"
+          title="Dimbare LED-strips"
+          :collection="collection"
       />
 
       <VideoReviews />
-
-      <TextWithImage
-          title="Universele afstandsbediening"
-          imageAlt="Universele afstandsbediening"
-          :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-1.jpg')"
-      >
-        <p class="text-white font-extralight">
-          Lideka maakt gebruikt van een universele afstandsbediening, zo kun je al onze producten met dezelfde universele afstandsbediening bedienen. Let daarbij wel op dat je een wifi of bluetooth module hebt, beiden kunnen nog verschillen. Vaak zal een led strip met afstandsbediening een wifi module hebben.
-        </p>
-      </TextWithImage>
-
-      <TextWithImage
-          title="Bediening via afstandsbediening"
-          imageAlt="Bediening via afstandsbediening"
-          :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-2.jpg')"
-          reverse="true"
-      >
-        <p class="text-white font-extralight">
-          De bediening via afstandsbediening is makkelijker en sneller dan ooit. Vanwege zijn nieuwe formaat en nieuwe design kun je extra snel schakelen tussen gave kleuren en effecten.
-        </p>
-      </TextWithImage>
-
-      <TextWithImage
-          title="Juiste afstandsbediening"
-          imageAlt="Juiste afstandsbediening"
-          :imageSrc="require('~/assets/design/landings/led-pakketten/pakket-3.jpg')"
-          url="/products/rgb-led-light-strip-15-meter-smart-verlichting"
-          urlText="Best verkochte LED-strip"
-      >
-        <p class="text-white font-extralight">
-          Bij Lideka hoef jij je nooit geen zorgen te maken over de juiste afstandsbediening. Bij een compleet set zorgen wij altijd voor de beste componenten met de hoogste kwaliteit.
-        </p>
-      </TextWithImage>
-
-      <CTA
-        to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
-      >
-        Best verkochte LED-strip
-      </CTA>
 
       <SingleImage
         :image-src="require('~/assets/photos/Woonkamer-1.jpg')"
       />
 
       <LongParagraph
-        title="Strip with remote controller"
+        title="Dimbare led strips | Hoe werkt dat precies?"
       >
         <p class="text-white font-extralight">
-          Bij deze strip with remote controller wordt een geweldige en moderne afstandsbediening geleverd. Deze afstandsbediening ligt lekker in de hand en heeft een prima formaat.
-        </p>
-        <p class="text-white font-extralight">
-          Het is noodzakelijk dat je een controller met afstandsbediening hebt, anders zal de afstandsbediening niet werken. Je kan dit ook wel een intuïtieve afstandsbediening noemen door zijn snelle reactie.
+          Veel huishoudens maken tegenwoordig gebruik van led verlichting - zowel binnenshuis of als sfeervolle buitenverlichting. Dit is niet alleen beter voor het milieu, maar in de meeste gevallen is het ook een kosteneffectieve oplossing in vergelijking met traditionele lampen en verlichting. Van traditionele verlichting - zoals gloeilampen en halogeenlampen -is algemeen bekend dat ze verschillende mogelijkheden bieden om het licht te dimmen. Een vraag die ons regelmatig gesteld wordt is: ‘Zijn led strips dimbaar?’. Natuurlijk niet zo’n gekke vraag als je je bedenkt dat het dimmen van licht een belangrijke factor is voor het creëren van een bepaalde sfeer (in huis). In dit artikel leggen we je uit hoe je led strips kunt dimmen en zetten we de mogelijkheden voor het dimbaar maken van led strips uiteen.
         </p>
       </LongParagraph>
 
       <LongParagraph
-          title="Functies afstandsbediening"
+          title="Zijn alle led strips dimbaar?"
       >
         <p class="text-white font-extralight">
-          Je kunt deze bedienen door middel van kleuraanduidingen en gebruik van symbolen.
+          Hoewel bijna alle led strips dimbaar zijn, doe je er goed aan om bij het kopen van led strips er op te letten dat ze ook daadwerkelijk te dimmen zijn. Sommige led strips worden namelijk alleen gebruikt als sfeerverlichting, en deze zijn vaak niet of slechts heel beperkt dimbaar.
         </p>
-        <ul class="text-white font-extralight">
-          <li>Strobe flitser</li>
-          <li>Uit/aan</li>
-          <li>10 Niveaus van snelheid</li>
-          <li>10 Helderheid niveaus</li>
-          <li>12 Kleuren</li>
-          <li>7 veranderen muziek dansende kleuren</li>
-          <li>7 muziek dansende cirkels</li>
-          <li>12 statische kleuren</li>
-          <li>10 cirkelende modus</li>
-          <li>Wifi</li>
-        </ul>
+
+        <p class="text-white font-extralight">
+          Over het algemeen geldt dat wanneer de spanning van de led strip wordt verlaagd, de led lichtjes zachtjes worden gedimd. Echter is het probleem vaak dat de led strips een constante spanning toegeleverd krijgen. Voor het dimmen van de led strips is dus een (geïntegreerde) dimmer nodig.
+        </p>
+
+        <p class="text-white font-extralight">
+          Alle <NuxtLink to="/categorie/led-strips" class="link">led strips van Lideka Home</NuxtLink> bevatten 10 verschillende helderheid standen, en zijn dus volledig dimbaar.
+        </p>
       </LongParagraph>
 
       <SingleImage
@@ -140,29 +73,23 @@
       </CTA>
 
       <LongParagraph
-          title="Dimbare LED-strips"
+          title="Hoe kan ik led strips dimmen?"
       >
         <p class="text-white font-extralight">
-          Al onze LED-strips kunnen super makkelijk gedimd worden om maar liefst drie verschillende manieren
+          Sommige led strips - zoals de Lideka led strips - zijn standaard dimbaar. Voor het dimmen van de led strips kan bijvoorbeeld een <NuxtLink to="/products/afstandsbediening-bleutooth" class="link">bluetooth afstandsbediening</NuxtLink> worden gebruikt. Wanneer de led strip niet standaard dimbaar is, kunnen er diverse methoden worden toegepast die het dimmen van de led strip mogelijk maken. Elke methode en/of toepassing heeft zijn eigen voor- en nadelen. Welke manier je gebruikt, is afhankelijk van de omvang van je ledstrip-project. Bij grote projecten met vele, meerdere of lange led strips is een andere methode voor het dimmen beter dan voor een project met slechts één enkele led strip. Daarnaast hangt het er ook vanaf welk dimeffect je wilt bereiken - ga je voor een lichte dimming of wil je verschillende dimstanden voor je led strips?
         </p>
-        <ul class="text-white font-extralight">
-          <li>1. Met de controller</li>
-          <li>2. Met de app</li>
-          <li>3. Met de afstandsbediening</li>
-        </ul>
       </LongParagraph>
 
       <LongParagraph
-          title="Voordeel van LED-strips"
+          title="Dimbare led strips | Mogelijkheden"
       >
-        <ul class="text-white font-extralight">
-          <li>Makkelijke bevestiging, nog sneller genieten van een ontspanningsmoment</li>
-          <li>Hoge lichtopbrengst, geen reguliere lampen meer nodig, nog meer geld besparen</li>
-          <li>Extra duurzaam, beter voor het milieu en jouw portemonnee</li>
-          <li>Goed voor de ogen, ze creeer je meer rust en kalmte in je hoofd</li>
-          <li>Bediening via app en afstandsbediening, zo kun je lekker in je luie stoel blijven zitten</li>
-          <li>Bijzondere muziek modus, om jouw feestje nog mooier te maken</li>
-        </ul>
+        <p class="text-white font-extralight">
+          Bij kleine led strip projecten volstaat een eenvoudige transformator of led-dimmer die op het lichtnet kan worden aangesloten. Voor grotere projecten - bijvoorbeeld bij tientallen dimbare led strips - heb je voor elke led strip een eigen transformator voor led dimming nodig. Je kunt dan zelfs bepalen dat de ene led strip een andere dimstand heeft dan andere led strips.
+        </p>
+
+        <p class="text-white font-extralight">
+          Andere mogelijkheden voor het dimbaar maken van led strips zijn o.a. het gebruik van een afstandsbediening voor dimmen, een zogenaamde wanddimmer, een 0-10 Volt dimmer (vergt een lastige installatie i.v.m. veel bedrading) en een draaidimmer (niet voor alle led strips mogelijk).
+        </p>
       </LongParagraph>
 
       <SingleImage
@@ -176,13 +103,13 @@
       </CTA>
 
       <LongParagraph
-        title="LEDS per meter"
+        title="Lideka dimbare led strips"
       >
         <p class="font-extralight text-white">
-          Lideka heeft natuurlijk verschillende soorten strips en verschillende lengtes daarin. We gaan er vanuit dat jij houd van heldere verlichting, en dat je deze verlichting misschien ook wel als indirecte verlichting wilt gaan gebruiken.
+          De led strips van Lideka Home zijn uitstekend trillingsvrij dimbaar en worden veel gebruikt voor sfeerverlichting en een mooi lichteffect. De dimbare led strips zijn bedienbaar met verschillende soorten dimmers, waaronder een bluetooth afstandsbediening of (draadloze) muurdimmers.
         </p>
         <p class="font-extralight text-white">
-          Daarom kiezen wij altijd voor een hoge kwaliteit leds en een hoog aantal leds per meter. Voor het aantal watt per meter verwijzen we je graag door naar onze product pagina's.
+          Heb je vragen over ons assortiment led strips, led strips accessoires of het dimmen van led strips? <NuxtLink to="/klantenservice" class="link">Neem vrijblijvend contact met ons op.</NuxtLink> We helpen je graag.
         </p>
       </LongParagraph>
 
@@ -288,56 +215,6 @@ export default Vue.extend({
     collection: {
       type: Object,
       required: true
-    }
-  },
-
-  data() {
-    return {
-      collection1: null as null|{},
-      collection2: null as null|{},
-      collection3: null as null|{},
-      collection4: null as null|{},
-    }
-  },
-
-  created() {
-    this.getCollection();
-  },
-
-  methods: {
-    async getCollection() {
-      const [
-          col1,
-          col2,
-          col3,
-          col4
-      ] = await Promise.all([
-        await getCollection('rgb-led-strips', {
-          reverseImages: true,
-          sortKey: 'PRICE',
-          reverse: true
-        }),
-        await getCollection('tv-led-strips', {
-          reverseImages: true,
-          sortKey: 'PRICE',
-          reverse: true
-        }),
-        await getCollection('rgb-ic-led-strips', {
-          reverseImages: true,
-          sortKey: 'PRICE',
-          reverse: true
-        }),
-        await getCollection('led-pakketten', {
-          reverseImages: true,
-          sortKey: 'PRICE',
-          reverse: true
-        })
-      ])
-
-      this.collection1 = col1;
-      this.collection2 = col2;
-      this.collection3 = col3;
-      this.collection4 = col4;
     }
   },
 });
