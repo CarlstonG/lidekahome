@@ -25,7 +25,7 @@
                 </span>
             </p>
             <div class="mt-7">
-                <a href="https://calendly.com/lidekahome/advies-gesprek-led-verlichting" target="_blank" class="plan-btn p-3 px-6 items-center justify-center border border-transparent rounded-full text-sm font-bold text-white hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                <a href="https://calendly.com/lidekahome/advies-gesprek-led-verlichting" target="_blank" rel="noopener" class="plan-btn p-3 px-6 items-center justify-center border border-transparent rounded-full text-sm font-bold text-white hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                     Plan een gratis adviesgesprek
                 </a>
             </div>

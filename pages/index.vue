@@ -105,7 +105,7 @@
                style="border-color: rgba(255, 255, 255, 0.1)"
           >
             <div class="flex-grow items-center flex">
-              <img class="w-32" src="~assets/icon/icons8-technical-support-50.svg" />
+              <img class="w-32" src="~assets/icon/icons8-technical-support-50.svg" alt="Service icon" />
             </div>
             <h3 class="text-gray-100 tracking-wide font-bold uppercase mt-4">Service</h3>
           </div>
@@ -113,7 +113,7 @@
                style="border-color: rgba(255, 255, 255, 0.1)"
           >
             <div class="flex-grow items-center flex">
-              <img class="w-32" src="~assets/icon/icons8-verified-account-50.svg" />
+              <img class="w-32" src="~assets/icon/icons8-verified-account-50.svg" alt="Kwaliteit vinkje" />
             </div>
             <h3 class="text-gray-100 tracking-wide font-bold uppercase mt-4">Kwaliteit</h3>
           </div>
@@ -121,7 +121,7 @@
                style="border-color: rgba(255, 255, 255, 0.1)"
           >
             <div class="flex-grow items-center flex h-40 lg:h-auto">
-              <img class="w-32" src="~assets/icon/icons8-low-price-euro-50.svg" />
+              <img class="w-32" src="~assets/icon/icons8-low-price-euro-50.svg" alt="Icon voor prijs naar beneden" />
             </div>
             <h3 class="text-gray-100 tracking-wide font-bold uppercase mt-4">Betaalbaarheid</h3>
           </div>
@@ -135,7 +135,7 @@
         >
           <div class="h-full py-10 lg:py-32 flex justify-center flex-col" style="z-index: 1">
             <div class="flex-grow flex items-center">
-              <img class="w-40 mx-auto" src="~assets/icon/icons8-forest.svg" />
+              <img class="w-40 mx-auto" src="~assets/icon/icons8-forest.svg" alt="Icon voor bomen en bosjes" />
             </div>
             <h3 class="text-gray-100 tracking-wide text-center font-bold uppercase mt-4">Duurzame verlichting</h3>
             <p class="text-white font-extralight text-lg pt-6 px-6 lg:px-20 text-left md:text-center tracking-wide">
@@ -147,7 +147,7 @@
         >
           <div class="h-full py-10 lg:py-32 flex justify-center flex-col" style="z-index: 1">
             <div class="flex-grow flex items-center">
-              <img class="w-40 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" />
+              <img class="w-40 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" alt="Winkelwagen icon" />
             </div>
             <h3 class="text-gray-100 tracking-wide text-center font-bold uppercase mt-4">Gratis retourneren</h3>
             <p class="text-white font-extralight text-lg pt-6 px-6 lg:px-20 text-left md:text-center tracking-wide">
@@ -192,7 +192,7 @@
     <div class="max-w-7xl mx-auto mt-10 lg:px-0 px-6">
       <div class="_house">
         <div class="flex flex-col items-center justify-center text-center" style="height: 500px;">
-          <img class="w-24" src="~assets/design/kiyoh.png" />
+          <img class="w-24" src="~assets/design/kiyoh.png" alt="Kiyoh logo" />
           <h2 class="py-2 pt-4 text-white text-2xl font-bold">
             Kiyoh
           </h2>
@@ -217,7 +217,7 @@
         >
           <div class="py-10 lg:py-16 " style="z-index: 1">
             <div class="flex items-center">
-              <img class="w-32 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" />
+              <img class="w-32 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" alt="Support icon" />
             </div>
             <h2 class="text-white font-bold text-center text-2xl px-6 mt-4 uppercase tracking-wide">
               Service
@@ -238,7 +238,7 @@
         >
           <div class="py-10 lg:py-16 " style="z-index: 1">
             <div class="flex items-center">
-              <img class="w-32 mx-auto" src="~assets/icon/icons8-verified-account-50.svg" />
+              <img class="w-32 mx-auto" src="~assets/icon/icons8-verified-account-50.svg" alt="Verified icon" />
             </div>
             <h2 class="text-white font-bold text-center text-2xl px-6 mt-4 uppercase tracking-wide">
               Kwaliteit
@@ -262,7 +262,7 @@
         >
           <div class="py-10 lg:py-16 " style="z-index: 1">
             <div class="flex items-center">
-              <img class="w-32 mx-auto" src="~assets/icon/icons8-low-price-euro-50.svg" />
+              <img class="w-32 mx-auto" src="~assets/icon/icons8-low-price-euro-50.svg" alt="Winkelwagen icon" />
             </div>
             <h2 class="text-white font-bold text-center text-2xl px-6 mt-4 uppercase tracking-wide">
               Betaalbaarheid
@@ -321,7 +321,7 @@
 
     <div class="max-w-7xl mx-auto pt-16 py-32 pb-20 px-6 md:px-0">
       <div class="flex justify-center space-x-6 md:order-2">
-        <a href="https://www.facebook.com/lidekahome" target="_blank" rel="nofollow"
+        <a href="https://www.facebook.com/lidekahome" target="_blank" rel="noopener"
            class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
           <span class="sr-only">Facebook</span>
           <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -331,7 +331,7 @@
           </svg>
         </a>
 
-        <a href="https://www.instagram.com/lidekahome" target="_blank" rel="nofollow"
+        <a href="https://www.instagram.com/lidekahome" target="_blank" rel="noopener"
            class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
           <span class="sr-only">Instagram</span>
           <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -341,7 +341,7 @@
           </svg>
         </a>
 
-        <a href="https://www.linkedin.com/company/lideka" target="_blank" rel="nofollow"
+        <a href="https://www.linkedin.com/company/lideka" target="_blank" rel="noopener"
            class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
           <span class="sr-only">LinkedIn</span>
           <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8">
@@ -350,7 +350,7 @@
           </svg>
         </a>
 
-        <a href="https://www.youtube.com/channel/UCM6KUMoinLVJZUIOx3Mm2Tw" target="_blank" rel="nofollow"
+        <a href="https://www.youtube.com/channel/UCM6KUMoinLVJZUIOx3Mm2Tw" target="_blank" rel="noopener"
            class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
           <span class="sr-only">YouTube</span>
           <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24">

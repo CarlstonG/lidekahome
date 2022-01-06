@@ -34,7 +34,7 @@
 
             <div class="relative hidden md:block col-span-3">
               <dt class="flex items-center justify-end h-full">
-                <a href="https://www.kiyoh.com/reviews/1064733/lideka?from=widget&lang=nl" target="_blank" class="hidden lg:flex items-center mr-4">
+                <a href="https://www.kiyoh.com/reviews/1064733/lideka?from=widget&lang=nl" target="_blank" rel="noopener" class="hidden lg:flex items-center mr-4">
                   <svg v-for="i in 5" class="flex-shrink-0 h-4 w-4 text-yellow-400"
                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path
@@ -44,11 +44,11 @@
                 </a>
 
                 <div class="space-x-3 flex items-center">
-                  <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank">
+                  <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank" rel="noopener">
                     <img alt="Thuiswinkel waarborg" class="w-20" src="~/assets/thuiswinkel.svg"/>
                   </a>
 
-                  <a href="https://www.webwinkelkeur.nl/webshop/Lideka-Home_1214064" title="Webwinkel Keurmerk en klantbeoordelingen" target="_blank">
+                  <a href="https://www.webwinkelkeur.nl/webshop/Lideka-Home_1214064" title="Webwinkel Keurmerk en klantbeoordelingen" target="_blank" rel="noopener">
                     <img src="https://dashboard.webwinkelkeur.nl/banners/76/1214064/1632729812.svg" class="w-20" alt="Webwinkel Keurmerk en klantbeoordelingen" />
                   </a>
                 </div>

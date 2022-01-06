@@ -9,7 +9,7 @@
     <div v-else>
       <div v-show="showFixedOrderBar" class="fixed-order-bar fixed z-10 w-full bg-white border-b border-gray-200 ">
         <div class="max-w-7xl mx-auto py-3 flex items-center justify-end">
-          <div v-if="product.deliveryDate" class="relative mr-6">
+          <dl v-if="product.deliveryDate" class="relative mr-6">
             <dt class="block md:flex items-center">
               <div
                 class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
@@ -17,8 +17,8 @@
               </div>
               <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ product.deliveryDate }}</p>
             </dt>
-          </div>
-          <div v-else class="relative mr-6">
+          </dl>
+          <dl v-else class="relative mr-6">
             <dt class="block md:flex items-center">
               <div
                 class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
@@ -26,10 +26,9 @@
               </div>
               <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ deliveryTime }}</p>
             </dt>
-          </div>
+          </dl>
 
           <button @click.prevent="addToCart(product.firstVariantId, quantity)" type="submit" name="add"
-                  id="AddToCart"
                   class="w-52 relative flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
             <svg class="w-5 h-5 -mt-1 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
@@ -130,7 +129,7 @@
               </div>
             </div>
 
-            <div v-if="product.deliveryDate" class="relative pb-4">
+            <dl v-if="product.deliveryDate" class="relative pb-4">
               <dt class="block md:flex items-center">
                 <div
                   class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
@@ -138,8 +137,8 @@
                 </div>
                 <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ product.deliveryDate }}</p>
               </dt>
-            </div>
-            <div v-else class="relative pb-4">
+            </dl>
+            <dl v-else class="relative pb-4">
               <dt class="block md:flex items-center">
                 <div
                   class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
@@ -147,7 +146,7 @@
                 </div>
                 <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ deliveryTime }}</p>
               </dt>
-            </div>
+            </dl>
 
             <div class="flex items-center">
               <!-- if available -->

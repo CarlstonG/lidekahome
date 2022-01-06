@@ -46,7 +46,7 @@
             </h3>
             <ul class="mt-4 space-y-2">
               <li>
-                <a href="https://klantenservice.lidekahome.nl/nl-NL" target="_blank" class="text-sm text-gray-300 hover:text-white">
+                <a href="https://klantenservice.lidekahome.nl/nl-NL" target="_blank" rel="noopener" class="text-sm text-gray-300 hover:text-white">
                   Help center
                 </a>
               </li>
@@ -138,9 +138,13 @@
           </div>
         </div>
         <div class="mt-8 border-t border-gray-700 pt-8">
-          <div class="mb-4">
-            <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank" rel="nofollow">
+          <div class="mb-4 flex space-x-6">
+            <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank" rel="noopener">
               <img loading="lazy" class="w-40" alt="Thuiswinkel" src="~/assets/thuiswinkel.svg" />
+            </a>
+
+            <a href="https://www.webwinkelkeur.nl/webshop/Lideka-Home_1214064" title="Webwinkel Keurmerk en klantbeoordelingen" target="_blank" rel="noopener">
+              <img loading="lazy" src="https://dashboard.webwinkelkeur.nl/banners/76/1214064/1632729812.svg" class="w-40" alt="Webwinkel Keurmerk en klantbeoordelingen" />
             </a>
           </div>
 
@@ -161,7 +165,7 @@
 
         <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
           <div class="flex space-x-6 md:order-2">
-            <a href="https://www.facebook.com/lidekahome" target="_blank" rel="nofollow" class="text-gray-400 hover:text-gray-300">
+            <a href="https://www.facebook.com/lidekahome" target="_blank" rel="noopener" class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">Facebook</span>
               <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -170,7 +174,7 @@
               </svg>
             </a>
 
-            <a href="https://www.instagram.com/lidekahome" target="_blank" rel="nofollow"
+            <a href="https://www.instagram.com/lidekahome" target="_blank" rel="noopener"
                class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">Instagram</span>
               <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -180,7 +184,7 @@
               </svg>
             </a>
 
-            <a href="https://www.linkedin.com/company/lideka" target="_blank" rel="nofollow"
+            <a href="https://www.linkedin.com/company/lideka" target="_blank" rel="noopener"
                class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">LinkedIn</span>
               <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6">
@@ -189,7 +193,7 @@
               </svg>
             </a>
 
-            <a href="https://www.youtube.com/channel/UCM6KUMoinLVJZUIOx3Mm2Tw" target="_blank" rel="nofollow"
+            <a href="https://www.youtube.com/channel/UCM6KUMoinLVJZUIOx3Mm2Tw" target="_blank" rel="noopener"
                class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">YouTube</span>
               <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24">
@@ -199,11 +203,11 @@
             </a>
           </div>
           <p class="mt-8 text-sm text-gray-400 md:mt-0 md:order-1">
-            &copy; 2021 Lideka Home - All rights reserved.
+            &copy; 2022 Lideka Home - All rights reserved.
           </p>
         </div>
         <p class="mt-8 text-xs text-gray-400 md:mt-0 md:order-1">
-          Website by <a href="https://rocksolid.dev" rel="nofollow" target="_blank">Rocksolid Development</a>.
+          Website by <a href="https://rocksolid.dev" rel="noopener" target="_blank">Rocksolid Development</a>.
         </p>
       </div>
     </footer>

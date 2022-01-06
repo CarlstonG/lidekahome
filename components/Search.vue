@@ -3,7 +3,7 @@
     <div v-if="isOpen && (products.length > 0 || collections.length > 0)" @click.prevent="isOpen = false"
          class="z-10 fixed top-0 bottom-0 left-0 right-0" style="background: rgba(0, 0, 0, 0.5)">&nbsp;
     </div>
-    <label for="search" class="sr-only">Search</label>
+    <label for="search" class="sr-only">Zoek naar een product</label>
     <div class="relative w-full pl-10">
       <div class="h-10 w-full border-none rounded-md leading-5 bg-gray-900 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm">
         <div class="absolute z-30 inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -24,6 +24,7 @@
                class="block shadow-lg right-0 left-0 top-0 bottom-0 absolute z-20 w-full pl-10 pr-3 py-2 border-none rounded-md leading-5 bg-gray-900 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm"
                placeholder="Zoek op product of categorie (/)"
                type="search"
+               aria-label="Zoek naar een product"
         >
       </div>
       <div v-show="isOpen && (fields.query.length >= 2 || loading)"
