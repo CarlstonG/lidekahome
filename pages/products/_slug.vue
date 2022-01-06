@@ -9,9 +9,24 @@
     <div v-else>
       <div v-show="showFixedOrderBar" class="fixed-order-bar fixed z-10 w-full bg-white border-b border-gray-200 ">
         <div class="max-w-7xl mx-auto py-3 flex items-center justify-end">
-          <h2 v-if="product.price" class="text-2xl inline-block font-bold text-red-500 rounded-md mr-4">
-            {{ formatMoney(product.price) }} <del v-if="product.priceCompare" class="text-xl text-black">{{ formatMoney(product.priceCompare) }}</del>
-          </h2>
+          <div v-if="product.deliveryDate" class="relative mr-6">
+            <dt class="block md:flex items-center">
+              <div
+                class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
+                op voorraad
+              </div>
+              <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ product.deliveryDate }}</p>
+            </dt>
+          </div>
+          <div v-else class="relative mr-6">
+            <dt class="block md:flex items-center">
+              <div
+                class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
+                op voorraad
+              </div>
+              <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ deliveryTime }}</p>
+            </dt>
+          </div>
 
           <button @click.prevent="addToCart(product.firstVariantId, quantity)" type="submit" name="add"
                   id="AddToCart"
@@ -21,7 +36,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
             </svg>
-            Bestellen
+            {{ product.deliveryDate ? 'Pre-order' : 'Bestellen' }}
           </button>
         </div>
       </div>

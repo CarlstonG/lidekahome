@@ -81,7 +81,7 @@
       :collection="collection"
     />
     <LedStripDimbaar
-      v-else-if="collection && collection.handle === 'led-strip-dimbaar'"
+      v-else-if="collection && collection.handle === 'led-strips-dimbaar'"
       :collection="collection"
     />
     <div v-else-if="collection && collection.handle">

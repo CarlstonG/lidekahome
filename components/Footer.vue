@@ -46,50 +46,14 @@
             </h3>
             <ul class="mt-4 space-y-2">
               <li>
-                <NuxtLink to="/klantenservice" class="text-sm text-gray-300 hover:text-white">
-                  Klantenservice
-                </NuxtLink>
-              </li>
-
-              <li>
                 <a href="https://klantenservice.lidekahome.nl/nl-NL" target="_blank" class="text-sm text-gray-300 hover:text-white">
                   Help center
                 </a>
               </li>
 
               <li>
-                <NuxtLink to="/bestellen-en-betalen" class="text-sm text-gray-300 hover:text-white">
-                  Bestellen en Betalen
-                </NuxtLink>
-              </li>
-
-              <li>
-                <NuxtLink to="/verzending" class="text-sm text-gray-300 hover:text-white">
-                  Verzending
-                </NuxtLink>
-              </li>
-
-              <li>
                 <NuxtLink to="/over-ons" class="text-sm text-gray-300 hover:text-white">
                   Over ons
-                </NuxtLink>
-              </li>
-
-              <li>
-                <NuxtLink to="/algemene-voorwaarden" class="text-sm text-gray-300 hover:text-white">
-                  Algemene voorwaarden
-                </NuxtLink>
-              </li>
-
-              <li>
-                <NuxtLink to="/privacy-statement" class="text-sm text-gray-300 hover:text-white">
-                  Privacy statement
-                </NuxtLink>
-              </li>
-
-              <li>
-                <NuxtLink to="/veelgestelde-vragen" class="text-sm text-gray-300 hover:text-white">
-                  Veelgestelde vragen
                 </NuxtLink>
               </li>
 
