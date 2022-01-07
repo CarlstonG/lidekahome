@@ -442,7 +442,8 @@ export default Vue.extend({
     const slug = ctx.params.slug;
     const product = await getProduct(slug);
 
-    const reviews = await getReviews(safeGet(product, 'id'));
+    const base64Id = Buffer.from(safeGet(product, 'id')).toString('base64');
+    const reviews = await getReviews(base64Id);
 
     const x = _.map(product.media, (item) => {
       return item.fullSrc !== null ? item.fullSrc : false
