@@ -12,7 +12,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <p class="ml-2 text-xs leading-6 text-gray-400">{{ deliveryTime }}</p>
+                <DeliveryTime class="ml-2 text-xs leading-6 text-gray-400" />
               </dt>
               <dt class="flex items-center h-full">
                 <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -244,10 +244,15 @@ import Vue from 'vue'
 import {mapGetters} from "vuex";
 import Search from "~/components/Search.vue";
 import Sidebar from "~/components/navigation/Sidebar.vue";
-import {deliveryTime} from "~/services/Helpers";
+import DeliveryTime from '~/components/DeliveryTime.vue';
 
 export default Vue.extend({
-  components: {Sidebar, Search},
+  components: {
+    Sidebar,
+    Search,
+    DeliveryTime,
+  },
+
   props: {
     collections: {
       type: [],
@@ -258,14 +263,7 @@ export default Vue.extend({
   data() {
     return {
       sidebarIsOpen: false,
-      deliveryTime: deliveryTime(),
     };
-  },
-
-  async asyncData() {
-    return {
-      deliveryTime: deliveryTime()
-    }
   },
 
   methods: {
