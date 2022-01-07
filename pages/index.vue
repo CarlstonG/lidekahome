@@ -319,6 +319,8 @@
       </div>
     </div>
 
+    <Newsletter />
+
     <div class="max-w-7xl mx-auto pt-16 py-32 pb-20 px-6 md:px-0">
       <div class="flex justify-center space-x-6 md:order-2">
         <a href="https://www.facebook.com/lidekahome" target="_blank" rel="noopener"
@@ -360,7 +362,6 @@
         </a>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -374,6 +375,7 @@ import Reviews from "~/components/reviews/Reviews.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import Lenghts from "~/components/Lenghts.vue";
 import Calendly from '~/components/Calendly.vue';
+import Newsletter from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -384,7 +386,8 @@ export default Vue.extend({
     Usages,
     ProductItem,
     ProductItemGradient,
-    Calendly
+    Calendly,
+    Newsletter,
   },
   
   data() {
