@@ -25,7 +25,7 @@ export default Vue.extend({
                 case 6:
                     return 'Vandaag besteld, maandag thuis';
                 case 7:
-                    return 'Vandaag voor 20:30, morgen thuis';
+                    return 'Vandaag voor 20:30 besteld, morgen thuis';
             }
         },
     },

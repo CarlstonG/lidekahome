@@ -88,7 +88,7 @@
                 </div>
 
                 <p class="text-white font-bold tracking-wide text-lg pb-6">
-                  "Geweldige kwaliteit!"
+                  "Geweldige kwaliteit!" <i>Lisa</i>
                 </p>
 
                 <div class="flex items-center space-x-2">
@@ -121,7 +121,7 @@
                 </div>
 
                 <p class="text-white font-bold tracking-wide text-lg pb-6">
-                  "Alle feestjes voortaan op mijn kamer!"
+                  "Alle feestjes voortaan op mijn kamer!" <i>Manon</i>
                 </p>
 
                 <div class="flex items-center space-x-2 cursor-pointer">
@@ -154,7 +154,7 @@
                 </div>
 
                 <p class="text-white font-bold tracking-wide text-lg pb-6">
-                  "10x mooiere kamer!"
+                  "10x mooiere kamer!" <i>Jade</i>
                 </p>
 
                 <div class="flex items-center space-x-2 cursor-pointer">
@@ -187,7 +187,7 @@
                 </div>
 
                 <p class="text-white font-bold tracking-wide text-lg pb-6">
-                  "Onwijs leuke sfeer in je kamer!"
+                  "Onwijs leuke sfeer in je kamer!" <i>Renzo</i>
                 </p>
 
                 <div class="flex items-center space-x-2 cursor-pointer">
@@ -220,7 +220,7 @@
                 </div>
 
                 <p class="text-white font-bold tracking-wide text-lg pb-6">
-                  "Super makkelijk te bedienen!"
+                  "Super makkelijk te bedienen!" <i>Anouk</i>
                 </p>
 
                 <div class="flex items-center space-x-2 cursor-pointer">
@@ -253,7 +253,7 @@
                 </div>
 
                 <p class="text-white font-bold tracking-wide text-lg pb-6">
-                  "Super simpel gemonteerd!"
+                  "Super simpel gemonteerd!" <i>Tibor</i>
                 </p>
 
                 <div class="flex items-center space-x-2 cursor-pointer">
