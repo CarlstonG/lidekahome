@@ -123,19 +123,6 @@
               </li>
             </ul>
           </div>
-          <div class="mt-8 xl:mt-0">
-            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              Blijf op de hoogte
-            </h3>
-            <p class="mt-4 text-sm text-gray-300">
-              Schrijf je in, en maak kans op een Led Pakket t.w.v €149,95
-            </p>
-            <Newsletter class="mb-2 mt-4" />
-            <p class="text-gray-500 text-xs mt-4">
-              Je geeft hierbij aan akkoord te gaan met onze <NuxtLink to="/privacy-statement">privacy
-              statement</NuxtLink> en staat toe dat wij je op de hoogte houden van aanbiedingen via jouw e-mailadres.
-            </p>
-          </div>
         </div>
         <div class="mt-8 border-t border-gray-700 pt-8">
           <div class="mb-4 flex space-x-6">

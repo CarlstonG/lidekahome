@@ -177,7 +177,7 @@
           >
             <div class="h-full py-6 flex flex-col" style="z-index: 1">
               <div class="flex items-center">
-                <img class="w-24 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" />
+                <img class="w-24 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" alt="Return icon" />
               </div>
               <h2 class="text-white font-bold text-left md:text-center text-sm uppercase tracking-wide pt-6 px-6 lg:px-20">
                 60 dagen gratis retourneren
@@ -191,7 +191,7 @@
           >
             <div class="h-full py-6 flex flex-col" style="z-index: 1">
               <div class="flex items-center">
-                <img class="w-24 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" />
+                <img class="w-24 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" alt="Support icon" />
               </div>
               <h2 class="text-white font-bold text-left md:text-center text-sm uppercase tracking-wide pt-6 px-6 lg:px-20">
                 24/7 ondersteuning beschikbaar
@@ -331,7 +331,7 @@
             :bg-color="true"
         >
           <p class="text-white font-extralight">
-            Onze <a href="https://nl.wikipedia.org/wiki/IP-code" class="link">IP65</a> producten zijn waterdicht, en daardoor ook geschikt <strong>voor buiten</strong>.
+            Onze <a href="https://nl.wikipedia.org/wiki/IP-code" class="link" rel="noopener">IP65</a> producten zijn waterdicht, en daardoor ook geschikt <strong>voor buiten</strong>.
             Lekker als je ’s avonds tot in de late uurtjes buiten wilt genieten van
             zomerse omstandigheden, of juist in de winter, wanneer je buiten bij de warme kachel wilt zitten.
           </p>
@@ -398,7 +398,7 @@
         >
           <p class="text-white font-extralight">
             Het belangrijk om rekening te houden met het
-            <a class="link" href="https://nl.wikipedia.org/wiki/Elektrische_spanning">Voltage</a>. Onze LED-strips zijn beschikbaar in 5 en 12 volt.
+            <a class="link" href="https://nl.wikipedia.org/wiki/Elektrische_spanning" rel="noopener">Voltage</a>. Onze LED-strips zijn beschikbaar in 5 en 12 volt.
           </p>
           <p class="text-white font-extralight">
             Langs de 5V en 12V loopt minder stroom, waardoor het over het algemeen als veiliger wordt ervaren.
@@ -671,6 +671,8 @@
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
+
+      <NewsletterBlock />
     </div>
   </div>
 </template>
@@ -700,6 +702,7 @@ import CTA from "~/components/CTA.vue";
 import CategorySlider from "~/components/CategorySlider.vue";
 import Lenghts from '~/components/Lenghts.vue';
 import BlogList from "~/components/BlogList.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -724,7 +727,8 @@ export default Vue.extend({
     Banner,
     ProductItem,
     ProductItemGradient,
-    Lenghts
+    Lenghts,
+    NewsletterBlock,
   },
   props: {
     collection: {

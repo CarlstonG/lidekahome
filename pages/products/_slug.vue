@@ -216,6 +216,22 @@
                 </div>
               </div>
             </div>
+
+            <div v-if="product.downloads.manual || product.downloads.brochure">
+              <h2 class="font-extrabold text-3xl mb-4">Downloads</h2>
+              <div class="divide-y">
+                <a v-if="product.downloads.brochure" :href="product.downloads.brochure" target="_blank" rel="noopener" class="block py-2 text-gray-900 hover:text-gray-700 flex items-center">
+                  <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+
+                  Brochure
+                </a>
+                <a v-if="product.downloads.manual" :href="product.downloads.manual" target="_blank" rel="noopener" class="block py-2 text-gray-900 hover:text-gray-700 flex items-center">
+                  <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+
+                  Handleiding
+                </a>
+              </div>
+            </div> 
           </div>
           <div v-if="product" class="px-0 md:px-6 mb-6" id="reviews">
             <Reviews v-if="reviews.reviews" :product="product" :reviews="reviews.reviews" />

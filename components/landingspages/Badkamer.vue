@@ -98,7 +98,7 @@
         <p class="text-white font-extralight">
           Als je nog opzoek bent naar inspiratie voor je badkamer, dan kun je altijd even kijken op
           <a href="https://nl.pinterest.com/search/pins/?q=inspiratie%20badkamer&rs=typed&term_meta%5B%5D=inspiratie%7Ctyped&term_meta%5B%5D=badkamer%7Ctyped"
-             target="_blank" class="link">pinterest</a>.
+             target="_blank" class="link" rel="noopener">pinterest</a>.
         </p>
         <p class="text-white font-extralight">
           <strong>Bestel vandaag, en transformeer morgen jouw badkamer naar een ware lichtshow!</strong>
@@ -113,6 +113,8 @@
       <BlogList />
 
       <Usages />
+
+      <NewsletterBlock />
     </div>
   </div>
 </template>
@@ -142,6 +144,7 @@ import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import CTA from "~/components/CTA.vue";
 import BlogList from "~/components/BlogList.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -166,7 +169,8 @@ export default Vue.extend({
     CenterParagraph,
     Banner,
     ProductItem,
-    ProductItemGradient
+    ProductItemGradient,
+    NewsletterBlock,
   },
   props: {
     collection: {

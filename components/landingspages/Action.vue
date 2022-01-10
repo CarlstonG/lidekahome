@@ -186,6 +186,8 @@
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
+
+      <NewsletterBlock />
     </div>
   </div>
   </div>
@@ -215,6 +217,7 @@ import VideoReviews from "~/components/VideoReviews.vue";
 import CTA from "~/components/CTA.vue";
 import Lenghts from "~/components/Lenghts.vue";
 import BlogList from "~/components/BlogList.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -238,7 +241,8 @@ export default Vue.extend({
     CenterParagraph,
     Banner,
     ProductItem,
-    ProductItemGradient
+    ProductItemGradient,
+    NewsletterBlock,
   },
   props: {
     collection: {

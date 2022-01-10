@@ -185,7 +185,7 @@
           Maar dat niet alleen, ook de kristal heldere <strong>SMD 5050</strong> lampjes maken hem de absolute winnaar.
         </p>
         <p>
-          Als je nog opzoek bent naar inspiratie voor je woonkamer, dan kun je altijd even kijken op <a href="https://nl.pinterest.com/search/pins/?q=keuken%20inspiratie&rs=typed&term_meta%5B%5D=keuken%7Ctyped&term_meta%5B%5D=inspiratie%7Ctyped" target="_blank" class="link">pinterest</a>.
+          Als je nog opzoek bent naar inspiratie voor je woonkamer, dan kun je altijd even kijken op <a href="https://nl.pinterest.com/search/pins/?q=keuken%20inspiratie&rs=typed&term_meta%5B%5D=keuken%7Ctyped&term_meta%5B%5D=inspiratie%7Ctyped" target="_blank" class="link" rel="noopener">pinterest</a>.
         </p>
         <p>
           Heb je nog vragen? Lideka staat <a href="/klantenservice" class="link">24/7</a> klaar om al jouw vragen te beantwoorden, we helpen je daarbij ook graag om de juiste verlichting te vinden.
@@ -200,6 +200,8 @@
       <CenterTitle title="Op welke plekken kun je onze artikelen gebruiken in de keuken?"/>
 
       <Usages />
+
+      <NewsletterBlock />
     </div>
   </div>
 </template>
@@ -226,6 +228,7 @@ import {getCollection} from "~/services/ApiService";
 import Steps from "~/components/blocks/Steps.vue";
 import SingleImageWithContent from "~/components/blocks/SingleImageWithContent.vue";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -247,7 +250,8 @@ export default Vue.extend({
     CenterParagraph,
     Banner,
     ProductItem,
-    ProductItemGradient
+    ProductItemGradient,
+    NewsletterBlock,
   },
   props: {
     collection: {

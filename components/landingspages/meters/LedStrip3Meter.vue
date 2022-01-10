@@ -102,7 +102,7 @@
           >
             <div class="h-full py-10 lg:py-24 flex flex-col" style="z-index: 1">
               <div class="flex items-center">
-                <img class="w-32 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" />
+                <img class="w-32 mx-auto" src="~assets/icon/icons8-return-purchase-50.svg" alt="Retour icon" />
               </div>
               <h2 class="text-white font-bold text-left md:text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
                 60 dagen gratis retourneren
@@ -116,7 +116,7 @@
           >
             <div class="h-full py-10 lg:py-24 flex flex-col" style="z-index: 1">
               <div class="flex items-center">
-                <img class="w-32 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" />
+                <img class="w-32 mx-auto" src="~assets/icon/icons8-technical-support-50.svg" alt="Support icon" />
               </div>
               <h2 class="text-white font-bold text-left md:text-center text-xl uppercase tracking-wide pt-6 px-6 lg:px-20">
                 24/7 ondersteuning beschikbaar
@@ -136,6 +136,8 @@
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
+
+      <NewsletterBlock />
     </div>
   </div>
 </template>
@@ -161,6 +163,7 @@ import TextWithImage from "~/components/blocks/TextWithImage.vue";
 import {getCollection} from "~/services/ApiService";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -181,7 +184,8 @@ export default Vue.extend({
     CenterParagraph,
     Banner,
     ProductItem,
-    ProductItemGradient
+    ProductItemGradient,
+    NewsletterBlock,
   },
   props: {
     collection: {

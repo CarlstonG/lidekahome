@@ -88,8 +88,8 @@
             title="RGB kleuren berekening"
         >
           <p class="text-white font-extralight">
-            <a href="https://nl.wikipedia.org/wiki/RGB-kleursysteem" target="_blank" class="link">RGB</a>
-            is een kleurenmodel waarin het effect van een bepaalde kleur op een vlek wordt bepaald door hoeveel wit, zwart en/of rood licht die vlek weerkaatst. De naam is afgeleid van het gebruik van drie primaire kleuren: Rood, Groen en Blauw. <a href="https://nl.wikipedia.org/wiki/RGB-kleursysteem" target="_blank" class="link">RGB</a> maakt drie kanalen van 24-bit kleur mogelijk met vier bytes per kleur, wat resulteert in een totaal aantal van 16,8 miljoen kleuren (24 bit x 3 = 72 bit ≈ 0,072 byte ≈ 8 bits).
+            <a href="https://nl.wikipedia.org/wiki/RGB-kleursysteem" target="_blank" class="link rel="noopener"">RGB</a>
+            is een kleurenmodel waarin het effect van een bepaalde kleur op een vlek wordt bepaald door hoeveel wit, zwart en/of rood licht die vlek weerkaatst. De naam is afgeleid van het gebruik van drie primaire kleuren: Rood, Groen en Blauw. <a href="https://nl.wikipedia.org/wiki/RGB-kleursysteem" target="_blank" class="link" rel="noopener">RGB</a> maakt drie kanalen van 24-bit kleur mogelijk met vier bytes per kleur, wat resulteert in een totaal aantal van 16,8 miljoen kleuren (24 bit x 3 = 72 bit ≈ 0,072 byte ≈ 8 bits).
           </p>
         </LongParagraph>
       </div>
@@ -104,7 +104,7 @@
             title="RGB colour model"
         >
           <p class="text-white font-extralight">
-            <a href="https://nl.wikipedia.org/wiki/RGB-kleursysteem" target="_blank" class="link">RGB</a> colour (rood, groen, blauw) is een kleurenmodel dat de kleuren beschrijft van het licht dat door voorwerpen wordt uitgezonden of weerkaatst. RGB colour gebruikt <strong>drie primaire kleuren</strong>, additieve primaries, om alle andere kleuren te creëren.
+            <a href="https://nl.wikipedia.org/wiki/RGB-kleursysteem" target="_blank" class="link" rel="noopener">RGB</a> colour (rood, groen, blauw) is een kleurenmodel dat de kleuren beschrijft van het licht dat door voorwerpen wordt uitgezonden of weerkaatst. RGB colour gebruikt <strong>drie primaire kleuren</strong>, additieve primaries, om alle andere kleuren te creëren.
           </p>
           <p class="text-white font-extralight">
             Het RGB colour-kleur model is ontwikkeld door deze drie primaire kleuren in <strong>verschillende hoeveelheden</strong> met elkaar te mengen. De informatie wordt in kleurenbeelden gewoonlijk gecodeerd in drie kanalen voor rood, groen en blauw.
@@ -186,6 +186,7 @@
 
       <Usages />
 
+      <NewsletterBlock />
     </div>
   </div>
 </template>
@@ -213,6 +214,7 @@ import VideoReviews from "~/components/VideoReviews.vue";
 import CTA from "~/components/CTA.vue";
 import Lenghts from "~/components/Lenghts.vue";
 import BlogList from "~/components/BlogList.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -236,7 +238,8 @@ export default Vue.extend({
     Banner,
     ProductItem,
     ProductItemGradient,
-    VideoReviews
+    VideoReviews,
+    NewsletterBlock,
   },
   props: {
     collection: {

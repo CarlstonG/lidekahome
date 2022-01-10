@@ -68,7 +68,7 @@
           Breng je woonkamer tot leven, en geniet van een ware lichtshow!
         </p>
         <p>
-          Als je nog opzoek bent naar inspiratie voor je woonkamer, dan kun je altijd even kijken op <a href="https://nl.pinterest.com/search/pins/?q=woonkamer%20inspiratie&rs=typed&term_meta%5B%5D=woonkamer%7Ctyped&term_meta%5B%5D=inspiratie%7Ctyped" class="link">pinterest</a>.
+          Als je nog opzoek bent naar inspiratie voor je woonkamer, dan kun je altijd even kijken op <a href="https://nl.pinterest.com/search/pins/?q=woonkamer%20inspiratie&rs=typed&term_meta%5B%5D=woonkamer%7Ctyped&term_meta%5B%5D=inspiratie%7Ctyped" rel="noopener" class="link">pinterest</a>.
         </p>
         <p>
           Voor verdere vragen kun je altijd terecht bij onze <NuxtLink to="/contact" class="link">klantenservice</NuxtLink>.
@@ -89,6 +89,7 @@
 
       <Usages />
 
+      <NewsletterBlock />
     </div>
   </div>
 </template>
@@ -118,6 +119,7 @@ import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import CTA from "~/components/CTA.vue";
 import BlogList from "~/components/BlogList.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -142,7 +144,8 @@ export default Vue.extend({
     CenterParagraph,
     Banner,
     ProductItem,
-    ProductItemGradient
+    ProductItemGradient,
+    NewsletterBlock,
   },
   props: {
     collection: {

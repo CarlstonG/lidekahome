@@ -77,7 +77,7 @@
           Maak zelf kleurencombinaties, en kies voor iedere mood een aparte kleur, het is allemaal mogelijk met de LED verlichting van Lideka.
         </p>
         <p class="text-white font-extralight">
-          Als je nog opzoek bent naar inspiratie voor je slaapkamer, dan kun je altijd even kijken op <a target="_blank" class="link" href="https://nl.pinterest.com/search/pins/?rs=ac&len=2&q=slaapkamer%20inspiratie&eq=slaapkame&etslf=7416&term_meta%5B%5D=slaapkamer%7Cautocomplete%7C0&term_meta%5B%5D=inspiratie%7Cautocomplete%7C0">pinterest.</a>
+          Als je nog opzoek bent naar inspiratie voor je slaapkamer, dan kun je altijd even kijken op <a target="_blank" class="link" href="https://nl.pinterest.com/search/pins/?rs=ac&len=2&q=slaapkamer%20inspiratie&eq=slaapkame&etslf=7416&term_meta%5B%5D=slaapkamer%7Cautocomplete%7C0&term_meta%5B%5D=inspiratie%7Cautocomplete%7C0" rel="noopener">pinterest.</a>
         </p>
         <p class="text-white font-extralight">
           Lideka heeft niet de laagste prijs, maar wel een hele degelijke kwaliteit, en de allerbeste service!
@@ -195,6 +195,8 @@
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
+
+      <NewsletterBlock />
     </div>
   </div>
 </template>
@@ -224,6 +226,7 @@ import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import CTA from "~/components/CTA.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import Lenghts from "~/components/Lenghts.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -248,7 +251,8 @@ export default Vue.extend({
     CenterParagraph,
     Banner,
     ProductItem,
-    ProductItemGradient
+    ProductItemGradient,
+    NewsletterBlock,
   },
   props: {
     collection: {

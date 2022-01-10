@@ -162,7 +162,7 @@
       <CenterParagraph>
         <p class="text-white font-extralight text-left">
           Vaak kan jouw nieuwe light strip ook verbonden worden met google home.
-          <a href="https://nl.wikipedia.org/wiki/Google_Home" class="link" target="_blank">Google home</a> is een platform waar jij al jouw slimme apparaten kunt toevoegen en ook direct bedienen. 
+          <a href="https://nl.wikipedia.org/wiki/Google_Home" class="link" target="_blank" rel="noopener">Google home</a> is een platform waar jij al jouw slimme apparaten kunt toevoegen en ook direct bedienen. 
         </p>
         <!-- <p class="text-white font-extralight text-left mt-2">
           Je zult dan een wifi RGBIC strip nodig hebben, en deze moet natuurlijk te verbinden zijn met google home, let daar goed op bij het moment van aankopen.
@@ -174,7 +174,7 @@
       >
         <div>
           <p class="text-white font-extralight">
-            <a class="link" target="_blank" href="https://nl.wikipedia.org/wiki/Google_Assistant">Google assistant</a> is een <strong>virtuele assistent</strong> dat in 2016 ontwikkeld is door google zelf. Je gebruikt google assistant dus in combinatie met google home.
+            <a class="link" target="_blank" href="https://nl.wikipedia.org/wiki/Google_Assistant" rel="noopener">Google assistant</a> is een <strong>virtuele assistent</strong> dat in 2016 ontwikkeld is door google zelf. Je gebruikt google assistant dus in combinatie met google home.
           </p>
           <p class="text-white font-extralight">
             Om gebruik te maken van deze software heb je echter wel <strong>wifi verbinding</strong> nodig, let daarbij wel op dat een bluetooth verbinding makkelijker, en sneller zal werken.
@@ -225,6 +225,7 @@
 
       <Usages />
 
+      <NewsletterBlock />
     </div>
   </div>
 </template>
@@ -251,6 +252,7 @@ import VideoReviews from "~/components/VideoReviews.vue";
 import Lenghts from "~/components/Lenghts.vue";
 import CTA from "~/components/CTA.vue";
 import BlogList from "~/components/BlogList.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -273,7 +275,8 @@ export default Vue.extend({
     Banner,
     ProductItem,
     ProductItemGradient,
-    VideoReviews
+    VideoReviews,
+    NewsletterBlock,
   },
   props: {
     collection: {

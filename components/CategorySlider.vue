@@ -281,6 +281,14 @@ export default Vue.extend({
     ProductItem,
     ProductItemGradient
   },
+
+  props: {
+    title: {
+      type: String,
+      default: '',
+    },
+  },
+
   data() {
     return {
       options: {

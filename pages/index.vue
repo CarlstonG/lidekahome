@@ -204,7 +204,7 @@
           <p class="text-white p-2 font-extralight">
             81 beoordelingen
           </p>
-          <a href="https://www.kiyoh.com/add-review/1064733/lideka?lang=nl" target="_blank" rel="noopener noreferrer" class="px-6 py-2 mt-4 bg-green-600 hover:bg-green-700 rounded-full text-white">
+          <a href="https://www.kiyoh.com/reviews/1064733/lideka" target="_blank" rel="noopener noreferrer" class="px-6 py-2 mt-4 bg-green-600 hover:bg-green-700 rounded-full text-white">
             Bekijk onze beoordelingen
           </a>
         </div>

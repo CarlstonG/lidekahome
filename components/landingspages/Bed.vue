@@ -106,6 +106,8 @@
 
       <Usages />
 
+      <NewsletterBlock />
+
     </div>
   </div>
 </template>
@@ -137,6 +139,7 @@ import Banner from "~/components/blocks/Banner.vue";
 import BlogList from "~/components/BlogList.vue";
 import CTA from "~/components/CTA.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -164,6 +167,7 @@ export default Vue.extend({
     BedPageBanner,
     ProductItem,
     ProductItemGradient,
+    NewsletterBlock,
   },
   props: {
     collection: {

@@ -133,7 +133,7 @@
                   </div>
                 </div>
 
-                <div v-show="checkout" class="flex items-center justify-start">
+                <div v-show="checkout" class="md:flex items-center justify-between">
                   <div class="pb-10 px-6">
                     <table class="min-w-full divide-y divide-gray-200">
                       <tbody>
@@ -158,6 +158,19 @@
                       </tr>
                       </tbody>
                     </table>
+                  </div>
+                  <div class="w-full md:w-60 pb-10 px-6">
+                    <label for="note" class="block text-sm font-medium text-gray-700 mb-1">
+                      Notitie
+                    </label>
+                    <textarea
+                      v-model="fields.note"
+                      id="note"
+                      rows="3"
+                      placeholder="Voer je notitie in"
+                      class="appearance-none block w-full px-3 py-2 border border-gray-300 shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
+                      @change="changeNote"
+                    ></textarea>
                   </div>
                 </div>
                 <div>
@@ -212,7 +225,7 @@
               Veilig winkelen
             </h2>
             <div class="mt-4 mb-4">
-              <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank" rel="nofollow">
+              <a href="https://www.thuiswinkel.org/leden/lidekahome-nl/certificaat/" target="_blank" rel="noopener">
                 <img loading="lazy" class="w-40" alt="Thuiswinkel" src="~/assets/thuiswinkel-black.svg"/>
               </a>
             </div>
@@ -231,7 +244,7 @@ import Loading from "~/components/Loading.vue";
 import SellingPoints from "~/components/SellingPoints.vue";
 import PaymentMethodes from "~/components/PaymentMethodes.vue";
 import FormField from "~/components/input/FormField.vue";
-import axios from "axios";
+import { post } from '~/services/ApiService';
 
 export default Vue.extend({
   name: 'winkelwagen',
@@ -246,7 +259,8 @@ export default Vue.extend({
       couponMessage: '',
       checkoutUrl: '#',
       fields: {
-        coupon: ''
+        coupon: '',
+        note: '',
       }
     };
   },
@@ -259,6 +273,23 @@ export default Vue.extend({
     ...mapGetters('shop/customer', [
       'customer'
     ]),
+  },
+
+  watch: {
+    checkout: {
+      deep: true,
+      handler() {
+        if (this.fields.note !== this.checkout.note) {
+          this.fields.note = this.checkout.note;
+        }
+      }
+    }
+  },
+
+  mounted() {
+    if (this.fields.note !== this.checkout.note) {
+      this.fields.note = this.checkout.note;
+    }
   },
 
   head() {
@@ -300,6 +331,14 @@ export default Vue.extend({
       await this.fetchCheckout();
     },
 
+    async changeNote() {
+      await post(`/checkout/${this.checkout.id}/note`, {
+        note: this.fields.note
+      });
+
+      await this.fetchCheckout();
+    },
+
     onCheckoutButton(e: Event) {
       if (!this.terms) {
         if (!confirm('Door verder te gaan gaat u akkoord met onze algemene voowaarden.')) {
@@ -308,7 +347,7 @@ export default Vue.extend({
         }
       }
 
-      window.location.href = this.checkout.checkoutUrl.replace(process.env.shopifyDomain, process.env.shopifyCheckoutDomain);
+      window.location.href = this.checkout.checkoutUrl.replace(process.env.shopifyDomain, process.env.shopifyCheckoutDomain) + `?note=${this.fields.note}`;
     },
 
     async addQuantity(quantity: number, id: string|number, variantId: string) {

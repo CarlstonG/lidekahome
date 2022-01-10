@@ -312,6 +312,13 @@ import Vue from "vue";
 import {get} from "~/services/ApiService";
 
 export default Vue.extend({
+  props: {
+    title: {
+      type: String,
+      default: '',
+    },
+  },
+
   data() {
     return {
       reviews: [],

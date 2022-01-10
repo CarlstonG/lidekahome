@@ -81,7 +81,7 @@
           Bestel vandaag, en geniet morgen van jouw eigen lichtshow.
         </p>
         <p class="text-white font-extralight">
-          Als je nog opzoek bent naar inspiratie voor je game kamer, dan kun je altijd even kijken op <a href="https://nl.pinterest.com/pin/383931936993652308/" class="link" target="_blank">pinterest.</a>
+          Als je nog opzoek bent naar inspiratie voor je game kamer, dan kun je altijd even kijken op <a href="https://nl.pinterest.com/pin/383931936993652308/" class="link" target="_blank" rel="noopener">pinterest.</a>
         </p>
       </LongParagraph>
 
@@ -100,6 +100,8 @@
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
+
+      <NewsletterBlock />
     </div>
   </div>
 </template>
@@ -129,6 +131,7 @@ import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import CTA from "~/components/CTA.vue";
 import BlogList from "~/components/BlogList.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -153,7 +156,8 @@ export default Vue.extend({
     Banner,
     ProductItem,
     ProductItemGradient,
-    VideoReviews
+    VideoReviews,
+    NewsletterBlock,
   },
   props: {
     collection: {

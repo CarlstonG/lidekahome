@@ -228,7 +228,7 @@
 
         <div class="md:hidden absolute bg-black z-10 left-0 right-0" id="mobile-menu">
           <div class="px-2 pb-2">
-            <Search/>
+            <Search id="search-mobile"/>
           </div>
         </div>
       </nav>

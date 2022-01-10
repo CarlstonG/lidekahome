@@ -233,6 +233,7 @@
 
       <Usages />
 
+      <NewsletterBlock />
     </div>
   </div>
 </template>
@@ -260,6 +261,7 @@ import VideoReviews from "~/components/VideoReviews.vue";
 import CTA from "~/components/CTA.vue";
 import Lenghts from "~/components/Lenghts.vue";
 import BlogList from "~/components/BlogList.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -283,7 +285,8 @@ export default Vue.extend({
     Banner,
     ProductItem,
     ProductItemGradient,
-    VideoReviews
+    VideoReviews,
+    NewsletterBlock,
   },
   props: {
     collection: {

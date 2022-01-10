@@ -75,7 +75,7 @@
         </p>
         <p class="text-white font-extralight">
           Als je nog opzoek bent naar inspiratie voor je plafond, of andere producten, dan kun je altijd even kijken op
-          <a href="https://nl.pinterest.com/search/pins/?q=inspiratie%20plafond&rs=typed&term_meta%5B%5D=inspiratie%7Ctyped&term_meta%5B%5D=plafond%7Ctyped" class="link" target="_blank">pinterest.</a>
+          <a href="https://nl.pinterest.com/search/pins/?q=inspiratie%20plafond&rs=typed&term_meta%5B%5D=inspiratie%7Ctyped&term_meta%5B%5D=plafond%7Ctyped" class="link" target="_blank" rel="noopener">pinterest.</a>
         </p>
         <p class="text-white font-extralight">
           Verder is een <strong>hoge helderheid</strong> ook belangrijk, met name omdat een ruimte met een plafond vaak erg groot uitvalt. Daarom maakt Lideka gebruikt van de nieuwste <strong>SMD 5050 Led’s</strong>, deze hebben drie keer zoveel lichtopbrengst als een normale Led.
@@ -138,6 +138,8 @@
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
+
+      <NewsletterBlock />
     </div>
   </div>
 </template>
@@ -166,6 +168,7 @@ import SingleImageWithContent from "~/components/blocks/SingleImageWithContent.v
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import BlogList from "~/components/BlogList.vue";
+import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
@@ -189,7 +192,8 @@ export default Vue.extend({
     CenterParagraph,
     Banner,
     ProductItem,
-    ProductItemGradient
+    ProductItemGradient,
+    NewsletterBlock,
   },
   props: {
     collection: {
