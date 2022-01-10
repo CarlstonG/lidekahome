@@ -1,6 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 export default {
+  mode: 'jit',
   purge: {
     enabled: true,
     content: [

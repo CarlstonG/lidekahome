@@ -9,8 +9,8 @@
               height="100%"
       />
     </NuxtLink>
-    <NuxtLink class="text-md text-black w-full text-black text-left flex-grow flex-1 h-full block mt-2" :class="{ 'text-white text-2xl font-bold': gradient }" :to="product.url">
-      {{ !gradient ? product.title : product.firstVariant.title }}
+    <NuxtLink class="w-full text-left flex-grow flex-1 h-full block mt-2" :class="{ 'text-white text-2xl font-bold': gradient, 'text-md text-black': !gradient }" :to="product.url">
+      {{ productTitle }}
     </NuxtLink>
 
     <div v-if="!gradient" class="w-full">
@@ -92,7 +92,15 @@ export default Vue.extend({
   computed: {
     ...mapGetters('shop/shop', [
       'currentMaxDeliveryTime'
-    ])
+    ]),
+
+    productTitle() {
+      if (!this.gradient || this.product.firstVariant.title === 'Default Title') {
+        return this.product.title;
+      }
+
+      return this.product.firstVariant.title;
+    },
   },
 
   methods: {
@@ -101,6 +109,7 @@ export default Vue.extend({
     ]),
 
     async addToCart(variantId: string|null|number, quantity = 1) {
+      // @ts-ignore
       await this.addLine({
         variantId: variantId,
         quantity: quantity

@@ -84,6 +84,10 @@
       v-else-if="collection && collection.handle === 'led-strips-dimbaar'"
       :collection="collection"
     />
+    <SolarPowerbank
+      v-else-if="collection && collection.handle === 'solar-powerbank-1'"
+      :collection="collection"
+    />
     <div v-else-if="collection && collection.handle">
       <div class="w-full bg-black">
         <div class="max-w-7xl mx-auto pt-2 md:pt-6 mb-2 md:pb-6 text-left px-4 md:px-2">
@@ -235,6 +239,7 @@ import LedStrip20Meter from "../../components/landingspages/meters/LedStrip20Met
 import LedStripMetAfstandsbediening from "../../components/landingspages/LedStripMetAfstandsbediening";
 import LedStripDimbaar from "../../components/landingspages/LedStripDimbaar";
 import Action from "../../components/landingspages/Action";
+import SolarPowerbank from '~/components/landingspages/SolarPowerbank.vue';
 
 export default Vue.extend({
   components: {
@@ -265,6 +270,7 @@ export default Vue.extend({
     Loading,
     ProductItem,
     LedStripDimbaar,
+    SolarPowerbank,
   },
 
   data() {
@@ -346,7 +352,7 @@ export default Vue.extend({
 
   head() {
     return {
-      title: safeGet(this.collection, 'seoTitle'),
+      title: safeGet(this.collection, 'seoTitle') ?? 'Lideka',
       meta: [
         {
           hid: 'description',

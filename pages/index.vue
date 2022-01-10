@@ -165,9 +165,9 @@
       <div class="lg:absolute bottom-10 right-10 left-10 rounded-2xl p-10 prose prose-teal-500 text-white"
         style="background: rgba(0, 0, 0, 0.75)"
       >
-        <h1 class="mx-auto text-3xl uppercase text-white font-bold mb-4" style="color: white;">
+        <h2 class="mx-auto text-3xl uppercase text-white font-bold mb-4" style="color: white;">
           Lideka home - Betaalbare Slimme LED-strips
-        </h1>
+        </h2>
         <p class="mx-auto text-white font-extralight">
           Lideka is een merk dat zich concentreert op het produceren van
           <a target="_blank" class="link" href="/categorie/led-strips">slimme betaalbare LED-strips.</a>
@@ -358,6 +358,15 @@
           <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24">
             <path
                 d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+          </svg>
+        </a>
+
+        <a href="https://pin.it/7w89n1e" target="_blank" rel="noopener"
+           class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
+          <span class="sr-only">Pinterest</span>
+          <svg role="img" class="h-8 w-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>Pinterest</title>
+            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/>
           </svg>
         </a>
       </div>
