@@ -442,6 +442,9 @@ export default Vue.extend({
         quantity: quantity
       });
 
+      window._learnq = window._learnq || [];
+      window._learnq.push(['track', 'Added to Cart', this.product]);
+
       //@ts-ignore
       this.$root.$emit('productAddedToCart', this.product, quantity);
 
