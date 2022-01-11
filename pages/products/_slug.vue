@@ -129,6 +129,26 @@
               </div>
             </div>
 
+            <div v-if="product.families.length > 0">
+              <span class="text-sm text-gray-500">Soorten:</span>
+              <div class="flex space-x-4 pb-4 mt-1">
+                <NuxtLink
+                  v-for="item in product.families"
+                  :key="item.handle"
+                  :to="`/products/${item.handle}`"
+                  :title="item.name"
+                  class="bg-white border rounded-md overflow-hidden p-0.5"
+                  :class="item.selected ? 'border-black' : 'border-gray-500 transition-opacity hover:opacity-50'"
+                >
+                  <img
+                    :src="item.picture[0].src"
+                    :alt="item.name"
+                    class="w-20 h-20"
+                  />
+                </NuxtLink>
+              </div>
+            </div>
+
             <dl v-if="product.deliveryDate" class="relative pb-4">
               <dt class="block md:flex items-center">
                 <div

@@ -57,7 +57,18 @@
                                   {{ lineItem.title }}
                                 </NuxtLink>
 
-                                <div class="flex items-center space-x-2 mt-4 mb-2">
+                                <p 
+                                  v-if="deliveryDates[lineItem.variant.productHandle]"
+                                  class="text-sm text-gray-500"
+                                >
+                                  {{ deliveryDates[lineItem.variant.productHandle] }}
+                                </p>
+                                <DeliveryTime
+                                  v-else
+                                  class="text-sm text-gray-500"
+                                />
+
+                                <div class="flex items-center space-x-2 mt-2 mb-2">
                                   <div class="flex items-center space-x-2 flex-1">
                                     <span
                                       class="relative z-0 inline-flex shadow-sm rounded-md">
@@ -244,11 +255,19 @@ import Loading from "~/components/Loading.vue";
 import SellingPoints from "~/components/SellingPoints.vue";
 import PaymentMethodes from "~/components/PaymentMethodes.vue";
 import FormField from "~/components/input/FormField.vue";
+import DeliveryTime from '~/components/DeliveryTime.vue';
 import { post } from '~/services/ApiService';
 
 export default Vue.extend({
   name: 'winkelwagen',
-  components: {FormField, PaymentMethodes, SellingPoints, Loading},
+
+  components: {
+    FormField,
+    PaymentMethodes,
+    SellingPoints,
+    Loading,
+    DeliveryTime,
+  },
 
   data() {
     return {
@@ -261,7 +280,8 @@ export default Vue.extend({
       fields: {
         coupon: '',
         note: '',
-      }
+      },
+      deliveryDates: {} as {[key: string]: null | string},
     };
   },
 
@@ -282,6 +302,8 @@ export default Vue.extend({
         if (this.fields.note !== this.checkout.note) {
           this.fields.note = this.checkout.note;
         }
+
+        this.getDeliveryDates();
       }
     }
   },
@@ -289,6 +311,10 @@ export default Vue.extend({
   mounted() {
     if (this.fields.note !== this.checkout.note) {
       this.fields.note = this.checkout.note;
+    }
+
+    if (this.checkout) {
+      this.getDeliveryDates();
     }
   },
 
@@ -305,6 +331,18 @@ export default Vue.extend({
       'applyDiscount',
       'fetchCheckout'
     ]),
+
+    async getDeliveryDates() {
+      const handles = this.checkout.lineItems.map((item: any) => item.variant.productHandle);
+
+      const { data } = await post('/checkout/delivery-dates', { handles });
+
+      for (const product of data) {
+        this.deliveryDates[product.product.handle] = product.product.delivery?.value ?? null;
+      }
+
+      this.$forceUpdate();
+    },
 
     async applyCoupon() {
       this.couponMessage = '';

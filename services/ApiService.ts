@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 
 export const client = axios.create({
   baseURL: process.env.rocksolidApiUrl,
@@ -11,7 +11,7 @@ export const client = axios.create({
 })
 
 export const post = async (url: string, data: {}|FormData, headers: {} = {}) => {
-  return await new Promise((resolve, reject) => {
+  return await new Promise<AxiosResponse>((resolve, reject) => {
     client.post(url, data, {
       headers,
     }).then((response) => {
