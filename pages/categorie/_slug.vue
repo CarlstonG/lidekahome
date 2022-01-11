@@ -358,7 +358,22 @@ export default Vue.extend({
           hid: 'description',
           name: 'description',
           content: safeGet(this.collection, 'seoDescription'),
-        }
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: safeGet(this.collection, 'seoDescription'),
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: safeGet(this.collection, 'seoTitle') ?? 'Lideka',
+        },
+        {
+          hid: 'og:site_name',
+          name: 'og:site_name',
+          content: 'Lideka',
+        },
       ]
     }
   },
