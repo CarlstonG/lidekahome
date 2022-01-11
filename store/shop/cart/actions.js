@@ -56,7 +56,7 @@ const actions = {
     }
 
     const accessToken = localStorage.getItem('accessToken');
-    if (accessToken) {
+    if (accessToken && accessToken !== 'null') {
       await connectCustomerToCheckout({
         checkoutId: checkoutId,
         customerAccessToken: accessToken

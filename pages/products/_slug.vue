@@ -217,7 +217,7 @@
               </div>
             </div>
 
-            <div v-if="product.downloads.manual || product.downloads.brochure">
+            <div v-if="product.downloads.manual || product.downloads.brochure" class="mb-6">
               <h2 class="font-extrabold text-3xl mb-4">Downloads</h2>
               <div class="divide-y">
                 <a v-if="product.downloads.brochure" :href="product.downloads.brochure" target="_blank" rel="noopener" class="block py-2 text-gray-900 hover:text-gray-700 flex items-center">
@@ -232,6 +232,50 @@
                 </a>
               </div>
             </div> 
+
+            <div v-if="product.faq.length > 0" itemscope itemtype="https://schema.org/FAQPage">
+              <h2 class="font-extrabold text-3xl mb-4">Veelgestelde vragen</h2>
+              <div class="space-y-2">
+                <div
+                v-for="item, index in product.faq"
+                :key="`faq-${index}`"
+                class="border border-gray-200 rounded"
+                itemscope
+                itemprop="mainEntity"
+                itemtype="https://schema.org/Question"
+              >
+                <button 
+                  class="p-2 text-md font-bold text-gray-900 hover:bg-gray-100 block w-full flex items-center justify-between"
+                  :class="{'border-b border-gray-200': openFaqItems.includes(index)}"
+                  @click="toggleFaqItem(index)"
+                >
+                  <span itemprop="name">
+                    {{ item.question }}
+                  </span>
+
+                  <svg
+                    class="w-6 h-6 text-gray-600"
+                    :class='openFaqItems.includes(index) ? "transform rotate-180" : ""'
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                  </svg>
+                </button>
+                <div
+                  v-if="openFaqItems.includes(index)"
+                  class="text-sm text-gray-600 p-2"
+                  itemscope
+                  itemprop="acceptedAnswer"
+                  itemtype="https://schema.org/Answer"
+                >
+                  {{ item.answer }}
+                </div>
+              </div>
+              </div>
+            </div>
           </div>
           <div v-if="product" class="px-0 md:px-6 mb-6" id="reviews">
             <Reviews v-if="reviews.reviews" :product="product" :reviews="reviews.reviews" />
@@ -355,6 +399,7 @@ export default Vue.extend({
       expandProductDescription: false,
       expandSpecifications: false,
       showFixedOrderBar: false,
+      openFaqItems: [],
     };
   },
 
@@ -366,6 +411,10 @@ export default Vue.extend({
     ...mapActions('shop/products', [
       'addProductToRecentlyVisited',
     ]),
+
+    toggleFaqItem(index) {
+      this.openFaqItems.includes(index) ? this.openFaqItems.splice(this.openFaqItems.indexOf(index), 1) : this.openFaqItems.push(index);
+    },
 
     async addToCart(variantId, quantity = 1) {
       await this.addLine({
