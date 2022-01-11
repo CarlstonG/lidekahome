@@ -574,7 +574,7 @@
         </LongParagraph>
       </div>
 
-      <CTA to="/product/led-strip-10-meter">
+      <CTA to="/categorie/led-strip-10-meter">
         Bekijk best verkochte LED-strips
       </CTA>
 
@@ -611,7 +611,7 @@
         </LongParagraph>
       </div>
 
-      <CTA to="/product/led-strip-10-meter">
+      <CTA to="/categorie/led-strip-10-meter">
         Bekijk best verkochte LED-strips
       </CTA>
 
