@@ -338,7 +338,15 @@ export default Vue.extend({
       const { data } = await post('/checkout/delivery-dates', { handles });
 
       for (const product of data) {
-        this.deliveryDates[product.product.handle] = product.product.delivery?.value ?? null;
+        let value = product.product.delivery?.value ?? null;
+
+        try {
+          value = JSON.parse(value)[0];
+        } catch(e) {
+          //
+        }
+
+        this.deliveryDates[product.product.handle] = value;
       }
 
       this.$forceUpdate();

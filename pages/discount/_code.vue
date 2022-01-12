@@ -56,6 +56,7 @@ export default Vue.extend({
                 this.loading = false;
             } else {
                 this.$root.$emit('addNotification', 'Gelukt!', 'De kortingscode is toegevoegd aan je winkelwagen', '', 10000);
+                this.fetchCheckout();
                 await this.$router.replace('/');
             }
         }
