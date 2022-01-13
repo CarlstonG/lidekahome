@@ -66,6 +66,7 @@
 
 <script lang="js">
 import Vue from 'vue';
+import moment from 'moment';
 import Loading from "../../components/Loading";
 import {safeGet} from "../../services/Helpers";
 import NotFound from "../../components/NotFound";
@@ -122,6 +123,23 @@ export default Vue.extend({
     url() {
       return `https://lidekahome.nl${this.$route.fullPath}`;
     },
+  },
+
+  jsonld() {
+    return {
+      '@context':'https://schema.org',
+      '@type': 'BlogPosting',
+      name: this.blog.article.title,
+      headline: this.blog.article.excerpt,
+      image: this.blog.article.image,
+      articleBody: this.blog.article.content,
+      datePublished: moment(this.blog.article.publishedAtRaw).toISOString(),
+      author: {
+        '@type': 'Organization',
+        name: 'Lideka',
+        url: 'https://lidekahome.nl',
+      },
+    };
   },
 
   async asyncData({params}) {

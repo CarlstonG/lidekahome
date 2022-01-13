@@ -386,6 +386,22 @@ export default Vue.extend({
     }
   },
 
+  jsonld() {
+    const productJson = this.collection.products.map((product, index) => {
+      return {
+        '@type': 'ListItem',
+        position: index + 1,
+        url: `https://lidekahome.nl/products/${product.handle}`,
+      };
+    });
+
+    return {
+      '@context':'https://schema.org',
+      '@type': 'ItemList',
+      'itemListElement': productJson,
+    };
+  },
+
   async asyncData({params}) {
     let slug = params.slug;
 
