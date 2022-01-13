@@ -6,7 +6,7 @@
             class="relative flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
             :class="fullWidth ? 'w-full' : 'w-52'"    
         >
-            Koop het nu
+            Nu kopen
         </button>
 
         <div v-if="isOpen" @click="isOpen = false" class="h-screen w-screen bg-black bg-opacity-50 fixed top-0 left-0 z-50 flex justify-center items-center">
