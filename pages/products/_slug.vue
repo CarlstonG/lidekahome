@@ -168,7 +168,7 @@
               </dt>
             </dl>
 
-            <div class="flex items-center">
+            <div class="flex items-top">
               <!-- if available -->
               <div class="mr-2">
                 <select id="Quantity" name="quantity"
@@ -179,17 +179,26 @@
                 </select>
               </div>
 
-              <button @click.prevent="addToCart(product.firstVariantId, quantity)" ref="addToCartButton" type="submit" name="add"
+              <div>
+                <button @click.prevent="addToCart(product.firstVariantId, quantity)" ref="addToCartButton" type="submit" name="add"
                       id="AddToCart"
                       class="w-52 relative flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-                <svg class="w-5 h-5 -mt-1 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                </svg>
+                  <svg class="w-5 h-5 -mt-1 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                  </svg>
 
-                {{ product.deliveryDate ? 'Pre-order' : 'Bestellen' }}
-              </button>
+                  {{ product.deliveryDate ? 'Pre-order' : 'Bestellen' }}
+                </button>
+
+                <OneClickCheckout
+                  :variant-id="product.firstVariantId"
+                  :quantity="quantity"
+                  :direct-to-checkout="true"
+                  class="mt-2"
+                />
+              </div>
             </div>
 
             <p class="text-sm text-gray-500 mt-1">
@@ -317,6 +326,7 @@ import Reviews from "../../components/reviews/Reviews";
 import Stars from "../../components/reviews/Stars";
 import VideoReviewsSmall from "../../components/VideoReviewsSmall";
 import DeliveryTime from '~/components/DeliveryTime.vue';
+import OneClickCheckout from '~/components/cart/OnClickCheckout.vue';
 
 export default Vue.extend({
   components: {
@@ -329,6 +339,7 @@ export default Vue.extend({
     ProductItem,
     VideoReviewsSmall,
     DeliveryTime,
+    OneClickCheckout,
   },
 
   head() {
@@ -449,6 +460,9 @@ export default Vue.extend({
       window._learnq = window._learnq || [];
       window._learnq.push(['track', 'Added to Cart', this.product]);
 
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'AddToCart' });
+
       //@ts-ignore
       this.$root.$emit('productAddedToCart', this.product, quantity);
 
@@ -524,6 +538,9 @@ export default Vue.extend({
       }
     });
 
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'ViewContent' });
+
     this.addProductToRecentlyVisited({
       slug: this.slug,
       title: this.product.title,
@@ -536,7 +553,7 @@ export default Vue.extend({
     window.addEventListener('scroll', this.isScrolledPastAddToCartButton);
   },
 
-  unmounted() {
+  beforeDestroy() {
       window.removeEventListener('scroll', this.isScrolledPastAddToCartButton);
   },
 

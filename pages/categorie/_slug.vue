@@ -186,6 +186,12 @@
 
                 <div class="mt-4">
                   <a href="#" @click.prevent="addToCart(product.firstVariant.id, product, 1)" class="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200">In winkelwagen<span class="sr-only">, {{ product.title }}</span></a>
+                  <OneClickCheckout
+                    :variant-id="product.firstVariant.id"
+                    :direct-to-checkout="true"
+                    :full-width="true"
+                    class="mt-1"
+                  />
                 </div>
               </NuxtLink>
             </div>
@@ -240,6 +246,7 @@ import LedStripMetAfstandsbediening from "../../components/landingspages/LedStri
 import LedStripDimbaar from "../../components/landingspages/LedStripDimbaar";
 import Action from "../../components/landingspages/Action";
 import SolarPowerbank from '~/components/landingspages/SolarPowerbank.vue';
+import OneClickCheckout from '~/components/cart/OnClickCheckout.vue';
 
 export default Vue.extend({
   components: {
@@ -271,6 +278,7 @@ export default Vue.extend({
     ProductItem,
     LedStripDimbaar,
     SolarPowerbank,
+    OneClickCheckout,
   },
 
   data() {
