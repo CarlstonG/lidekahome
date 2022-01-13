@@ -15,7 +15,7 @@
                 class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
                 uit voorraad
               </div>
-              <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ product.deliveryDate }}</p>
+              <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ deliveryDate }}</p>
             </dt>
           </dl>
           <dl v-else class="relative mr-6">
@@ -155,7 +155,7 @@
                   class="inline-block border-2 border-green-500 rounded-md uppercase font-bold px-4 py-1 text-xs text-green-500">
                   uit voorraad
                 </div>
-                <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ product.deliveryDate }}</p>
+                <p class="block text-green-500 ml-2 text-sm leading-6 font-medium">{{ deliveryDate }}</p>
               </dt>
             </dl>
             <dl v-else class="relative pb-4">
@@ -253,25 +253,20 @@
               </div>
             </div> 
 
-            <div v-if="product.faq.length > 0" itemscope itemtype="https://schema.org/FAQPage">
+            <div v-if="product.faq.length > 0">
               <h2 class="font-extrabold text-3xl mb-4">Veelgestelde vragen</h2>
               <div class="space-y-2">
                 <div
                 v-for="item, index in product.faq"
                 :key="`faq-${index}`"
                 class="border border-gray-200 rounded"
-                itemscope
-                itemprop="mainEntity"
-                itemtype="https://schema.org/Question"
               >
                 <button 
                   class="p-2 text-md font-bold text-gray-900 hover:bg-gray-100 block w-full flex items-center justify-between"
                   :class="{'border-b border-gray-200': openFaqItems.includes(index)}"
                   @click="toggleFaqItem(index)"
                 >
-                  <span itemprop="name">
-                    {{ item.question }}
-                  </span>
+                  {{ item.question }}
 
                   <svg
                     class="w-6 h-6 text-gray-600"
@@ -287,9 +282,6 @@
                 <div
                   v-if="openFaqItems.includes(index)"
                   class="text-sm text-gray-600 p-2"
-                  itemscope
-                  itemprop="acceptedAnswer"
-                  itemtype="https://schema.org/Answer"
                 >
                   {{ item.answer }}
                 </div>
@@ -383,6 +375,18 @@ export default Vue.extend({
       }
 
       return this.product.specifications.replace(/style="[^"]*"/gm, "")
+    },
+
+    deliveryDate() {
+      if (! this.product.deliveryDate) {
+        return null;
+      }
+
+      try {
+        return JSON.parse(this.product.deliveryDate)[0];
+      } catch(e) {
+        return this.product.deliveryDate;
+      }
     },
   },
 
