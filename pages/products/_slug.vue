@@ -168,7 +168,7 @@
               </dt>
             </dl>
 
-            <div class="flex items-top">
+            <div class="flex items-center">
               <!-- if available -->
               <div class="mr-2">
                 <select id="Quantity" name="quantity"
@@ -192,12 +192,12 @@
                   {{ product.deliveryDate ? 'Pre-order' : 'Bestellen' }}
                 </button>
 
-                <OneClickCheckout
+                <!-- <OneClickCheckout
                   :variant-id="product.firstVariantId"
                   :quantity="quantity"
                   :direct-to-checkout="true"
                   class="mt-2"
-                />
+                /> -->
               </div>
             </div>
 
