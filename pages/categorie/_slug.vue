@@ -187,7 +187,8 @@
                 <div class="mt-4">
                   <a href="#" @click.prevent="addToCart(product.firstVariant.id, product, 1)" class="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200">In winkelmandje<span class="sr-only">, {{ product.title }}</span></a>
                   <OneClickCheckout
-                    :variant-id="product.firstVariant.id"
+                    v-if="!product.deliveryDate"
+                    :product="product"
                     :direct-to-checkout="true"
                     :full-width="true"
                     class="mt-1"
