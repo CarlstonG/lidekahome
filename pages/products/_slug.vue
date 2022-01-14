@@ -8,7 +8,7 @@
     </div>
     <div v-else>
       <div v-show="showFixedOrderBar" class="fixed-order-bar fixed z-10 w-full bg-white border-b border-gray-200 ">
-        <div class="max-w-7xl mx-auto py-3 flex items-center justify-end">
+        <div class="max-w-7xl mx-auto py-3 flex flex-col md:flex-row items-center justify-center md:justify-end">
           <dl v-if="product.deliveryDate" class="relative mr-6">
             <dt class="block md:flex items-center">
               <div
@@ -42,7 +42,7 @@
             v-if="!deliveryDate"
             :product="product"
             :direct-to-checkout="true"
-            class="ml-2"
+            class="mt-2 md:mt-0 md:ml-2"
           />
         </div>
       </div>
@@ -175,9 +175,9 @@
               </dt>
             </dl>
 
-            <div class="flex items-center">
+            <div class="md:flex items-center">
               <!-- if available -->
-              <div class="mr-2">
+              <div class="md:mr-2 mb-2 md:mb-0">
                 <select id="Quantity" name="quantity"
                         v-model="quantity"
                         class="focus:ring-blue-500 px-5 py-3 border focus:border-blue-500 relative block w-full rounded-md bg-transparent focus:z-10 sm:text-sm border-gray-300">
@@ -202,7 +202,7 @@
                 v-if="!deliveryDate"
                 :product="product"
                 :direct-to-checkout="true"
-                class="ml-2"
+                class="mt-2 md:mt-0 md:ml-2"
               />
             </div>
 
