@@ -85,7 +85,7 @@
       :collection="collection"
     />
     <SolarPowerbank
-      v-else-if="collection && collection.handle === 'solar-powerbank-1'"
+      v-else-if="collection && collection.handle === 'solar-powerbank'"
       :collection="collection"
     />
     <div v-else-if="collection && collection.handle">

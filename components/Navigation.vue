@@ -205,7 +205,7 @@
                     </div>
 
                     <NuxtLink prefetch
-                              to="/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge"
+                              to="/categorie/solar-powerbank"
                               class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                       Solar powerbank

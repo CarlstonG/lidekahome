@@ -52,7 +52,7 @@
 
           <NuxtLink @click.native="closeSidebar()"
                     prefetch
-                    to="/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge"
+                    to="/categorie/solar-powerbank"
                     class="text-gray-400 bg-black hover:text-white group flex items-center px-2 py-2 text-base font-medium rounded-md"
           >
             Solar powerbank
