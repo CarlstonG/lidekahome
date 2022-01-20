@@ -148,6 +148,7 @@
                   :class="item.selected ? 'border-black' : 'border-gray-500 transition-opacity hover:opacity-50'"
                 >
                   <img
+                    v-if="item.picture.length > 0"
                     :src="item.picture[0].src"
                     :alt="item.name"
                     class="w-20 h-20"
