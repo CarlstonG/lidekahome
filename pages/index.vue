@@ -640,4 +640,25 @@ export default Vue.extend({
   background-size: cover;
   border-radius: 20px;
 }
+
+._tv {
+  background: url('~assets/design/home.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+._rgb-ic {
+  background: url('~assets/design/landings/rgb-ic/banner-2.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+._rgb {
+  background: url('~assets/design/landings/rgb-led-strips/banner-5.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
 </style>

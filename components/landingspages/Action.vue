@@ -183,6 +183,34 @@
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
 
+      <CenterTitle title="Kies hier jouw type LED-strip" />
+
+      <div class="max-w-7xl mx-auto">
+        <div class="md:grid grid-cols-3 gap-4 space-y-4 md:space-y-0">
+          <div class="_tv hover:opacity-50 transition-all mx-2">
+            <NuxtLink to="/categorie/tv-led-strips">
+              <div class="flex items-end justify-center text-center" style="height: 400px;">
+                <h2 class="p-6 text-white text-2xl font-bold tracking-wide uppercase">TV LED-strips</h2>
+              </div>
+            </NuxtLink>
+          </div>
+          <div class="_rgb hover:opacity-50 transition-all mx-2">
+            <NuxtLink to="/categorie/rgb-led-strips">
+              <div class="flex items-end justify-center text-center" style="height: 400px;">
+                <h2 class="p-6 text-white text-2xl font-bold tracking-wide uppercase">RGB LED-strips</h2>
+              </div>
+            </NuxtLink>
+          </div>
+          <div class="_rgb-ic hover:opacity-50 transition-all mx-2">
+            <NuxtLink to="/categorie/rgb-ic-led-strips">
+              <div class="flex items-end justify-center text-center" style="height: 400px;">
+                <h2 class="p-6 text-white text-2xl font-bold tracking-wide uppercase">RGB-IC LED-strips</h2>
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
