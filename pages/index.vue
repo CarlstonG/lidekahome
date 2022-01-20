@@ -70,6 +70,7 @@
       <VideoReviews />
     </div>
 
+    <Partners />
 
     <Calendly />
 
@@ -386,6 +387,7 @@ import Lenghts from "~/components/Lenghts.vue";
 import Calendly from '~/components/Calendly.vue';
 import Newsletter from '~/components/NewsletterBlock.vue';
 import DeliveryTime from '~/components/DeliveryTime.vue';
+import Partners from '~/components/Partners.vue';
 
 export default Vue.extend({
   components: {
@@ -399,6 +401,7 @@ export default Vue.extend({
     Calendly,
     Newsletter,
     DeliveryTime,
+    Partners,
   },
   
   data() {

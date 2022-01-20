@@ -28,7 +28,10 @@
           :collection="collection"
       />
 
-      <VideoReviews />
+      <VideoReviews
+        :show-video-reviews="false"
+        for-product="Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY4NzI1OTMwNzIyNzc="
+      />
 
       <SingleImage
         :image-src="require('~/assets/powerbank/powerbank.jpg')"

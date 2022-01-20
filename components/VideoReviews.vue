@@ -2,7 +2,7 @@
   <div>
     <h2 class="uppercase text-white font-bold text-3xl mx-auto mb-6 max-w-5xl">Wat zeggen anderen over de Service En Kwaliteit van Lideka?</h2>
     <client-only>
-      <carousel v-bind="options" :perPageCustom="[[480, 1], [768, 1], [1022, 2]]" :navigation-enabled="true"
+      <carousel v-if="showVideoReviews" v-bind="options" :perPageCustom="[[480, 1], [768, 1], [1022, 2]]" :navigation-enabled="true"
                 :navigation-prev-label="prevLabel" :navigation-next-label="nextLabel">
         <slide class="pl-1 pr-1">
           <div
@@ -317,6 +317,16 @@ export default Vue.extend({
       type: String,
       default: '',
     },
+
+    showVideoReviews: {
+      type: Boolean,
+      default: true,
+    },
+
+    forProduct: {
+      type: String,
+      default: null,
+    },
   },
 
   data() {
@@ -382,7 +392,17 @@ export default Vue.extend({
   },
 
   created() {
-    get('/reviews/all').then(({ data }) => {
+    let query = {};
+
+    if (this.forProduct) {
+      query = {
+        params: {
+          product: this.forProduct,
+        }
+      }
+    }
+
+    get('/reviews/all', query).then(({ data }) => {
       this.reviews = data ?? [];
     });
 

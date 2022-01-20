@@ -122,7 +122,7 @@
             </h2>
 
             <div v-if="product.related">
-              <span class="text-sm text-gray-500">Aantal meters:</span>
+              <span class="text-sm text-gray-500">Kies aantal meters:</span>
               <div class="pb-4 mt-1">
                 <NuxtLink
                   v-for="related in product.related"
@@ -137,7 +137,7 @@
             </div>
 
             <div v-if="product.families.length > 0">
-              <span class="text-sm text-gray-500">Soorten:</span>
+              <span class="text-sm text-gray-500">Kies je soort:</span>
               <div class="flex space-x-4 pb-4 mt-1">
                 <NuxtLink
                   v-for="item in product.families"

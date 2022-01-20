@@ -44,7 +44,7 @@
           </dl>
         </div>
 
-        <div class="mt-10">
+        <div class="mt-10" id="reviewForm">
           <h3 class="text-lg font-medium text-gray-900">Schrijf een review</h3>
           <p class="mt-1 text-sm text-gray-600">Als je dit product hebt gekocht, laat een recensie achter voor andere klanten!</p>
 
@@ -137,6 +137,15 @@ export default Vue.extend({
 
   created() {
     this.fetchReviews();
-  }
+  },
+
+  mounted() {
+    if (Object.keys(this.$route.query).includes('new-review')) {
+      this.showReviewForm = true;
+      this.$nextTick(() => {
+        document.getElementById('reviewForm').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+      });
+    }
+  },
 })
 </script>
