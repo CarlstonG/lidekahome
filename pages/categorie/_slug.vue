@@ -210,6 +210,7 @@
     <div v-else>
       <NotFound />
     </div>
+    <div v-if="collection && collection.description" v-html="collection.description"></div>
   </div>
 </template>
 

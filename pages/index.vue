@@ -372,6 +372,137 @@
         </a>
       </div>
     </div>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url":"https://lidekahome.nl/",
+      "email":"klantenservice@lidekahome.nl",
+      "name":"Lideka Home - Ruim Aanbod Slimme Led-strips",
+      "description":"Uitstekende Service En Kwaliteit, Klanten Geven Ons Een Beoordeling Van Gemiddeld 9,6. Op Werkdagen Voor 23:59 besteld = Morgen thuis, Gratis Verzending En Retour. Duurzaam.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Edisonstraat 98",
+        "postalCode": "3281",
+        "streetAddress": "NC Numansdorp"
+      },
+        "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://lidekahome.nl/",
+        "query": "required"
+      },
+      "logo":"https://lidekahome.nl/_nuxt/img/78f730f.svg",
+      "telephone": "+31 (0)85 - 06 01 297",
+        "brand" : [{
+      "@type" : "Organization",
+      "name" : " Lideka Home "}
+      ],
+      "sameAs": [
+        "https://www.facebook.com/lidekahome",
+        "https://www.instagram.com/lidekahome",
+        "https://www.linkedin.com/company/lideka",
+        "https://www.youtube.com/channel/UCM6KUMoinLVJZUIOx3Mm2Tw",
+        "https://pin.it/7w89n1e"
+      ]
+    }
+    </script>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name":"Lideka Home - Ruim Aanbod Slimme Led-strips",
+      "telephone": "+31 (0)85 - 06 01 297",
+      "url" : "https://lidekahome.nl/",
+      "description":"Uitstekende Service En Kwaliteit, Klanten Geven Ons Een Beoordeling Van Gemiddeld 9,6. Op Werkdagen Voor 23:59 besteld = Morgen thuis, Gratis Verzending En Retour. Duurzaam.",
+      "priceRange" : "€€",
+      "logo":"https://lidekahome.nl/_nuxt/img/78f730f.svg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Edisonstraat 98",
+        "addressCountry" : "Netherlands",
+        "addressRegion": "NC",
+        "postalCode": "3281",
+        "streetAddress": "NC Numansdorp"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://lidekahome.nl/",
+        "query": "required"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "bestRating": "5",
+        "ratingCount": "5",
+        "ratingValue": "5"
+      },
+      "hasMap" : "https://www.google.com/maps/dir/28.6200889,78.0548846/Edisonstraat+98,+3281+NC+Numansdorp,+Netherlands/@34.2985409,5.1980521,3z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47c4398b15af62e1:0x7228e8bcd6bc5b!2m2!1d4.444899!2d51.745817",
+      "review" : [{
+      "@type": "Review",
+      "author": "Rene Van Der Werff",
+      "datePublished": "12/01/2022",
+      "reviewBody": "Na wat contact via de mail en whatsapp ,de led strip ontvangen en alles is wat ik had verwacht. Compleet inclusief een duidelijke beschrijving. Als je de app (inclusief bij de aanschaf) geïnstalleerd hebt kun je helemaal los. Leuk muziekje aan en de ledstrip speelt vrolijk mee. Top tevreden over de service.",
+          "name": "",
+          "reviewRating": {
+            "@type": "Rating",
+            "bestRating": "5",
+            "ratingValue": "5",
+            "worstRating": "1"
+          }
+      },{
+      "@type": "Review",
+      "author": "Enrique Van Der horst",
+      "datePublished": "15/09/2021",
+      "reviewBody": "Vandaag de led strips ontvangen en zelf met gemak geplaatst! Tot nu toe zeer tevreden met het resultaat. Ik hoop dat ze lang mee gaan!",
+          "name": "",
+          "reviewRating": {
+            "@type": "Rating",
+            "bestRating": "5",
+            "ratingValue": "5",
+            "worstRating": "1"
+          }
+      },{
+      "@type": "Review",
+      "author": "Lars Hopstaken",
+      "datePublished": "17/11/2021",
+      "reviewBody": "LED-strips besteld bij Lideka, helaas een kleine tegenslag maar na telefonisch contact werd dit binnen 1 werkdag helemaal opgelost. Hele snelle, vriendelijke en bovenal goed service! Ook de strips zelf zijn van goede kwaliteit, plug & play en genieten! Een absolute aanrader als je op zoek bent naar LED-strips",
+          "name": "",
+          "reviewRating": {
+            "@type": "Rating",
+            "bestRating": "5",
+            "ratingValue": "5",
+            "worstRating": "1"
+          }
+      },{
+      "@type": "Review",
+      "author": "Berkay Gonultas",
+      "datePublished": "05/09/2021",
+      "reviewBody": "De strips zijn heel mooi en de klantenservice is heel klantvriendelijk",
+          "name": "",
+          "reviewRating": {
+            "@type": "Rating",
+            "bestRating": "5",
+            "ratingValue": "5",
+            "worstRating": "1"
+          }
+      },{
+      "@type": "Review",
+      "author": "joost hoek",
+      "datePublished": "14/09/2021",
+      "reviewBody": "Super mooie website en snelle service",
+          "name": "",
+          "reviewRating": {
+            "@type": "Rating",
+            "bestRating": "5",
+            "ratingValue": "5",
+            "worstRating": "1"
+          }
+      }
+      ]
+    }
+    </script>
   </div>
 </template>
 
