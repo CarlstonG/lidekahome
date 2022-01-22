@@ -35,7 +35,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
             </svg>
-            {{ product.deliveryDate ? 'Pre-order' : 'In winkelmandje' }}
+            {{ product.isPreOrder ? 'Pre-order' : 'In winkelmandje' }}
           </button>
 
           <OneClickCheckout
@@ -128,7 +128,7 @@
                   v-for="related in product.related"
                   :key="related.id"
                   :to="`/products/${related.handle}`"
-                  :class="!related.selected ? 'py-1 text-sm px-4 inline-block bg-white border border-gray-500 transition-opacity hover:opacity-50 rounded-md mr-1 mb-1' : 'py-1 px-4 text-sm inline-block bg-black text-white border border-black\n'+
+                  :class="!related.selected ? 'py-1 text-sm px-4 inline-block bg-white border border-gray-500 transition-opacity hover:opacity-50 rounded-md mr-1 mb-1' : 'py-1 px-4 text-sm inline-block bg-indigo-400 text-white border border-indigo-400\n'+
 '            rounded-md mr-1 mb-1'"
                 >
                   {{ related.name }}
@@ -145,7 +145,7 @@
                   :to="`/products/${item.handle}`"
                   :title="item.name"
                   class="bg-white border rounded-md overflow-hidden p-0.5"
-                  :class="item.selected ? 'border-black' : 'border-gray-500 transition-opacity hover:opacity-50'"
+                  :class="item.selected ? 'border-indigo-400' : 'border-gray-500 transition-opacity hover:opacity-50'"
                 >
                   <img
                     v-if="item.picture.length > 0"
@@ -196,7 +196,7 @@
                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                 </svg>
 
-                {{ product.deliveryDate ? 'Pre-order' : 'In winkelmandje' }}
+                {{ product.isPreOrder ? 'Pre-order' : 'In winkelmandje' }}
               </button>
 
               <OneClickCheckout
