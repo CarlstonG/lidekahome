@@ -141,11 +141,6 @@
         </div>
       </div>
 
-
-      <div class="mx-auto max-w-4xl lg:px-0">
-        <BlogList />
-      </div>
-
       <SmallCenterTitle
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
@@ -181,12 +176,10 @@ import VideoReviews from "~/components/VideoReviews.vue";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import CTA from "~/components/CTA.vue";
 import Lenghts from "~/components/Lenghts.vue";
-import BlogList from "~/components/BlogList.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
-    BlogList,
     Lenghts,
     CTA,
     LongParagraph,

@@ -110,8 +110,6 @@
         </p>
       </LongParagraph>
 
-      <BlogList />
-
       <Usages />
 
       <NewsletterBlock />
@@ -142,14 +140,12 @@ import Steps from "~/components/blocks/Steps.vue";
 import SingleImageWithContent from "~/components/blocks/SingleImageWithContent.vue";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import CTA from "~/components/CTA.vue";
-import BlogList from "~/components/BlogList.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
     VideoReviews,
-    BlogList,
     CTA,
     LongParagraph,
     SingleImageWithContent,

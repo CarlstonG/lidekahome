@@ -100,8 +100,6 @@
 
       <Banner :imageSrc="require('assets/photos/Bed-1.jpg')"/>
 
-      <BlogList />
-
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
@@ -136,7 +134,6 @@ import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import BedPageCompleteSet from "~/components/blocks/BedPageCompleteSet.vue";
 import Usages from "~/components/blocks/Usages.vue";
 import Banner from "~/components/blocks/Banner.vue";
-import BlogList from "~/components/BlogList.vue";
 import CTA from "~/components/CTA.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
@@ -145,7 +142,6 @@ export default Vue.extend({
   components: {
     VideoReviews,
     CTA,
-    BlogList,
     Banner,
     Usages,
     BedPageCompleteSet,

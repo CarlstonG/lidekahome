@@ -133,8 +133,6 @@
         :image-src="require('assets/design/landings/plafond/banner3.png')"
       />
 
-      <BlogList />
-
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
@@ -167,12 +165,10 @@ import Steps from "~/components/blocks/Steps.vue";
 import SingleImageWithContent from "~/components/blocks/SingleImageWithContent.vue";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
-import BlogList from "~/components/BlogList.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
-    BlogList,
     VideoReviews,
     LongParagraph,
     SingleImageWithContent,

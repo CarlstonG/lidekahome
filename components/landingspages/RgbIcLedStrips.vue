@@ -215,8 +215,6 @@
         ]"
       />
 
-      <BlogList />
-
       <SmallCenterTitle
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
@@ -251,12 +249,10 @@ import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import Lenghts from "~/components/Lenghts.vue";
 import CTA from "~/components/CTA.vue";
-import BlogList from "~/components/BlogList.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
-    BlogList,
     CTA,
     Lenghts,
     LongParagraph,

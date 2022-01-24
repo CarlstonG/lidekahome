@@ -83,8 +83,6 @@
         Beste verkochte woonkamer LED-strips
       </CTA>
 
-      <BlogList />
-
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
@@ -118,12 +116,10 @@ import SingleImageWithContent from "~/components/blocks/SingleImageWithContent.v
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import CTA from "~/components/CTA.vue";
-import BlogList from "~/components/BlogList.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
-    BlogList,
     CTA,
     VideoReviews,
     LongParagraph,

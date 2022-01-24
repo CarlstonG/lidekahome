@@ -121,8 +121,6 @@
         </LongParagraph>
       </div>
 
-      <BlogList />
-
       <CenterTitle
         title="Jouw nieuwe RGB strip is:"
       />
@@ -213,12 +211,10 @@ import QualityBlocks from "~/components/QualityBlocks.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import CTA from "~/components/CTA.vue";
 import Lenghts from "~/components/Lenghts.vue";
-import BlogList from "~/components/BlogList.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
-    BlogList,
     Lenghts,
     CTA,
     QualityBlocks,

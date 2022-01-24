@@ -662,8 +662,6 @@
 
       <SingleImage :image-src="require('assets/photos/Bed-2.jpg')" />
 
-     <BlogList />
-
       <SmallCenterTitle
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
@@ -701,12 +699,10 @@ import VideoReviews from "~/components/VideoReviews.vue";
 import CTA from "~/components/CTA.vue";
 import CategorySlider from "~/components/CategorySlider.vue";
 import Lenghts from '~/components/Lenghts.vue';
-import BlogList from "~/components/BlogList.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
-    BlogList,
     CategorySlider,
     CTA,
     VideoReviews,
