@@ -645,6 +645,12 @@ export default Vue.extend({
     padding: 0 1rem;
   }
 }
+
+.product-des {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.3rem;
+  }
+}
 </style>
 
 
