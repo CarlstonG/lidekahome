@@ -6,7 +6,7 @@
         :smallText="true"
       />
 
-      <CenterTitle tag="h1" title="Game verlichting" />
+      <CenterTitle tag="h1" title="LED-strip Game kamer" />
 
       <LongParagraph>
         <p class="text-white font-extralight">
@@ -53,12 +53,6 @@
       />
 
       <VideoReviews />
-
-      <CTA
-          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
-      >
-        Beste verkochte gamekamer LED-strips
-      </CTA>
 
       <SingleImage :image-src="require('assets/design/landings/gamekamer/banner2.jpg')" />
 

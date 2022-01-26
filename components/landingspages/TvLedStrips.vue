@@ -2,9 +2,15 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        title="RGB TV LED-strips | 16 miljoen kleuren | Complete sets"
         :imageSrc="require('assets/photos/TV-1.jpg')"
       />
+
+      <div class="mt-4">
+        <CenterTitle
+            tag="h1"
+            title="RGB TV LED-strips"
+        />
+      </div>
 
       <LongParagraph>
         <p class="text-white font-extralight">
@@ -31,10 +37,6 @@
       />
 
       <VideoReviews />
-
-      <CTA to="/products/lideka-tv-led-strip-3-meter-usb-rgb-smart-verlichting">
-        Bekijk meest verkochte LED-strip
-      </CTA>
 
 <!--      <CenterTitle-->
 <!--          title="Jouw nieuwe RGB led-strip is:"-->
@@ -155,13 +157,13 @@
         </LongParagraph>
       </div>
 
-      <SingleImage
-          :image-src="require('assets/photos/TV3.jpg')"
-      />
-
       <CTA to="/products/lideka-tv-led-strip-3-meter-usb-rgb-smart-verlichting">
         Bekijk meest verkochte LED-strip
       </CTA>
+
+      <SingleImage
+          :image-src="require('assets/photos/TV3.jpg')"
+      />
 
       <CenterTitle
           title="De voordelen van jouw nieuwe RGB TV LED-strip"
@@ -197,6 +199,10 @@
             imageSrc: require('assets/icon/icons8-shade-selected-faces-50.svg')
           }"
       />
+
+      <CTA to="/products/lideka-tv-led-strip-3-meter-usb-rgb-smart-verlichting">
+        Bekijk meest verkochte LED-strip
+      </CTA>
 
       <SingleImage :image-src="require('assets/photos/tv-last.jpg')"
                    description="Wij staan volledig achter de kwaliteit van onze producten en bieden jou een onvoorwaardelijke garantie van 24 maanden.<br />

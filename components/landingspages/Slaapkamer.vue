@@ -5,7 +5,7 @@
 
       <CenterTitle
         tag="h1"
-        title="LED-strips voor in de slaapkamer"
+        title="LED-strip slaapkamer"
         />
 
       <LongParagraph>
@@ -51,12 +51,6 @@
 
       <VideoReviews />
 
-      <CTA
-          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
-      >
-        Beste verkochte slaapkamer LED-strips
-      </CTA>
-
       <SingleImage
           :image-src="require('assets/photos/Bed-2.jpg')"
       />
@@ -101,15 +95,15 @@
         </p>
       </LongParagraph>
 
-      <SingleImage
-          :image-src="require('assets/photos/Bed-1.jpg')"
-      />
-
       <CTA
           to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
       >
         Beste verkochte slaapkamer LED-strips
       </CTA>
+
+      <SingleImage
+          :image-src="require('assets/photos/Bed-1.jpg')"
+      />
 
       <CenterTitle title="LEDS PER METER" />
 
@@ -182,15 +176,15 @@
         </p>
       </LongParagraph>
 
-      <SingleImage
-          :image-src="require('assets/photos/Bed-2.jpg')"
-      />
-
       <CTA
           to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
       >
         Beste verkochte slaapkamer LED-strips
       </CTA>
+
+      <SingleImage
+          :image-src="require('assets/photos/Bed-2.jpg')"
+      />
 
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 

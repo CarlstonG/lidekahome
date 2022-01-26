@@ -2,9 +2,15 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        title="RGB LED-strips | Multicolor | Complete sets"
         :imageSrc="require('assets/design/landings/rgb-led-strips/banner.jpg')"
       />
+
+      <div class="mt-4">
+        <CenterTitle
+            tag="h1"
+            title="RGB LED-strips"
+        />
+      </div>
 
       <LongParagraph>
         <p class="text-white font-extralight">
@@ -94,10 +100,6 @@
         </LongParagraph>
       </div>
 
-      <CTA to="/products/rgb-led-light-strip-15-meter-smart-verlichting">
-        Bekijk best verkochte RGB strip
-      </CTA>
-
       <div class="mx-auto max-w-5xl">
         <LongParagraph
             bg-color
@@ -120,6 +122,10 @@
           </p>
         </LongParagraph>
       </div>
+
+      <CTA to="/products/rgb-led-light-strip-15-meter-smart-verlichting">
+        Bekijk best verkochte RGB strip
+      </CTA>
 
       <CenterTitle
         title="Jouw nieuwe RGB strip is:"

@@ -2,9 +2,15 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        title="RGB-IC LED-strips | Dreamcolor | Special Effects | Complete sets"
         :imageSrc="require('assets/photos/rgbic.jpg')"
       />
+
+      <div class="mt-4">
+        <CenterTitle
+            tag="h1"
+            title="RGB-IC LED-strips"
+        />
+      </div>
 
       <LongParagraph>
         <p class="text-white font-extralight">
@@ -74,6 +80,10 @@
           }"
       />
 
+      <CTA to="/products/rgb-ic-led-light-strip-10-meter-smart-verlichting">
+        Best verkocht RGBIC LED-strip
+      </CTA>
+
       <div class="mx-auto grid grid-cols-1 gap-10 lg:grid-cols-2">
         <SingleImage
             :image-src="require('assets/photos/rgbic3.jpg')"
@@ -137,13 +147,13 @@
         </ul>
       </LongParagraph>
 
-      <SingleImage
-          :image-src="require('assets/photos/Bed-2.jpg')"
-      />
-
       <CTA to="/products/rgb-ic-led-light-strip-10-meter-smart-verlichting">
         Best verkocht RGBIC LED-strip
       </CTA>
+
+      <SingleImage
+          :image-src="require('assets/photos/Bed-2.jpg')"
+      />
 
       <CenterTitle
           title="Leds per meter"
@@ -182,10 +192,6 @@
         </div>
       </LongParagraph>
 
-      <CTA to="/products/rgb-ic-led-light-strip-10-meter-smart-verlichting">
-        Best verkocht RGBIC LED-strip
-      </CTA>
-
       <div class="mx-auto max-w-5xl">
           <LongParagraph
               bg-color
@@ -202,6 +208,10 @@
             </p>
           </LongParagraph>
       </div>
+
+      <CTA to="/products/rgb-ic-led-light-strip-10-meter-smart-verlichting">
+        Best verkocht RGBIC LED-strip
+      </CTA>
 
       <CenterTitle
         title="Bekijk ook eens onze andere soorten LED-strips:"

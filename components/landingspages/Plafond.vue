@@ -7,7 +7,7 @@
         :imageSrc="require('assets/design/landings/plafond/banner.jpg')"
       />
 
-      <CenterTitle tag="h1" title="LED-strips plafond" />
+      <CenterTitle tag="h1" title="LED-strip plafond" />
 
       <LongParagraph>
         <div class="text-left">
@@ -58,12 +58,6 @@
       />
 
       <VideoReviews />
-
-      <CTA
-          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
-      >
-        Beste verkochte plafond LED-strips
-      </CTA>
 
       <SingleImage :image-src="require('assets/design/landings/plafond/banner2.jpg')" />
 
@@ -166,6 +160,7 @@ import SingleImageWithContent from "~/components/blocks/SingleImageWithContent.v
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
+import CTA from "~/components/CTA.vue";
 
 export default Vue.extend({
   components: {
@@ -190,6 +185,7 @@ export default Vue.extend({
     ProductItem,
     ProductItemGradient,
     NewsletterBlock,
+    CTA,
   },
   props: {
     collection: {

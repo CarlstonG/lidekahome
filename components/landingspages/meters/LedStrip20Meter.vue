@@ -82,6 +82,12 @@
         </p>
       </TextWithImage>
 
+      <CTA
+          to="/products/rgb-led-light-strip-20-meter-smart-verlichting"
+      >
+        Bekijk de 20 meter LED-strip
+      </CTA>
+
       <SingleImage
         :image-src="require('~/assets/photos/Woonkamer-1.jpg')"
       />
@@ -166,6 +172,7 @@ import {getCollection} from "~/services/ApiService";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
+import CTA from "~/components/CTA.vue";
 
 export default Vue.extend({
   components: {
@@ -188,6 +195,7 @@ export default Vue.extend({
     ProductItem,
     ProductItemGradient,
     NewsletterBlock,
+    CTA,
   },
   props: {
     collection: {

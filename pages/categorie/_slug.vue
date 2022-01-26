@@ -210,7 +210,7 @@
     <div v-else>
       <NotFound />
     </div>
-    <div v-if="collection && collection.description" v-html="collection.description" style="disolay: none"></div>
+    <div v-if="collection && collection.description" v-html="collection.description" style="display: none"></div>
   </div>
 </template>
 
