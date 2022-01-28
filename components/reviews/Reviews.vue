@@ -58,7 +58,7 @@
 
         <div class="flow-root">
           <div class="-my-12 divide-y divide-gray-200">
-            <div class="py-12" v-for="review in reviews" :key="review.id">
+            <div class="py-12" v-for="review in filteredReviews" :key="review.id">
               <div class="flex items-center">
                 <div class="flex items-center">
                   <div class="mt-1 flex items-center">
@@ -67,14 +67,11 @@
                     </svg>
                   </div>
                   <h4 class="ml-2 font-bold text-gray-900">{{ review.title }}</h4>
-                  <p class="sr-only">{{ review.stars }} out of 5 stars</p>
+                  <p class="sr-only">{{ review.stars }} van de 5 sterren</p>
                 </div>
               </div>
-              <div class="text-gray-500 mt-1 text-sm">
-                Door {{ review.reviewer.name }} {{ review.reviewer.source ? `- ${review.reviewer.source}` : '' }}
-              </div>
 
-              <div class="mt-4">
+              <div class="mt-2">
                 <p class="text-sm text-gray-600">
                   {{ review.description }}
                 </p>
@@ -85,6 +82,16 @@
                   <img :src="photo" loading="lazy" alt="Photo for review" class="h-20 w-20 rounded-lg bg-center bg-cover">
                 </a>
               </div>
+
+              <div class="text-gray-500 mt-1 text-sm">
+                Door {{ review.reviewer.name }} {{ review.reviewer.source ? `- ${review.reviewer.source}` : '' }}
+              </div>
+            </div>
+
+            <div v-if="hasNewReviewsToDisplay" class="flex justify-center pt-4">
+              <button @click.prevent="showMoreReviews" type="button" class="px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Toon meer reviews
+              </button>
             </div>
 
             <!-- More reviews... -->
@@ -122,7 +129,18 @@ export default Vue.extend({
       reviewByStars: {},
       showReviewForm: false,
       stars: [5,4,3,2,1],
+      reviewsToShow: 10,
     }
+  },
+
+  computed: {
+    hasNewReviewsToDisplay() {
+      return this.reviews.length - 1 > this.reviewsToShow;
+    },
+
+    filteredReviews() {
+      return this.reviews.splice(0, this.reviewsToShow);
+    },
   },
 
   methods: {
@@ -132,6 +150,10 @@ export default Vue.extend({
 
     async fetchReviews() {
       this.reviewByStars = _.groupBy(this.reviews, 'stars');
+    },
+
+    showMoreReviews() {
+      this.reviewsToShow += 10;
     },
   },
 

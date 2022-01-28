@@ -51,7 +51,8 @@ export default {
         '@nuxtjs/tailwindcss',
         '@nuxtjs/pwa',
         '@aceforth/nuxt-optimized-images',
-        '@/plugins/generator'
+        '@/plugins/generator',
+        '@nuxtjs/device',
     ],
 
     motion: {

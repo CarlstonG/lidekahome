@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner :imageSrc="require('assets/photos/Bed-1.jpg')"/>
 
-      <CenterTitle tag="h1" title="LED BEDVERLICHTING" />
+      <CenterTitle tag="h1" title="LED-strip bedverlichting" />
 
       <div>
         <LongParagraph>
@@ -51,12 +51,6 @@
       />
 
       <VideoReviews />
-
-      <CTA
-          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
-      >
-        Beste verkochte bed LED-strips
-      </CTA>
 
       <Banner :imageSrc="require('assets/photos/Bed-2.jpg')"/>
 

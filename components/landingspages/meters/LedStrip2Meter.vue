@@ -5,7 +5,7 @@
         LED-strip 2 meter
       </h1>
 
-      <video v-if="!isOnMobile" :poster="require('~/assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
+      <video v-if="!$device.isMobile" :poster="require('~/assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
         <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/led-strip-video.webm" type="video/webm" />
         <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/led-strip-video_1.mp4" type="video/mp4" />
       </video>
@@ -66,6 +66,12 @@
         </p>
       </TextWithImage>
 
+      <CTA
+          to="/products/lideka-tv-led-strip-2-meter-usb-rgb-smart-verlichting"
+      >
+        Bekijk de 2 meter LED-strip
+      </CTA>
+
       <SingleImage
         :image-src="require('~/assets/photos/Woonkamer-1.jpg')"
       />
@@ -97,6 +103,12 @@
           </ul>
         </LongParagraph>
       </div>
+
+      <CTA
+          to="/products/lideka-tv-led-strip-2-meter-usb-rgb-smart-verlichting"
+      >
+        Bekijk de 2 meter LED-strip
+      </CTA>
 
       <div class="mx-auto max-w-7xl lg:px-0">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -166,6 +178,7 @@ import {getCollection} from "~/services/ApiService";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
+import CTA from "~/components/CTA.vue";
 
 export default Vue.extend({
   components: {
@@ -188,6 +201,7 @@ export default Vue.extend({
     ProductItem,
     ProductItemGradient,
     NewsletterBlock,
+    CTA,
   },
   props: {
     collection: {
@@ -207,16 +221,6 @@ export default Vue.extend({
 
   created() {
     this.getCollection();
-  },
-
-  computed: {
-    isOnMobile() {
-      if (typeof window === 'undefined') {
-        return false;
-      }
-
-      return window.innerWidth < 400;
-    },
   },
 
   methods: {

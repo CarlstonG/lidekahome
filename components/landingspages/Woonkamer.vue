@@ -43,12 +43,6 @@
 
       <VideoReviews />
 
-      <CTA
-          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
-      >
-        Beste verkochte woonkamer strips
-      </CTA>
-
       <SingleImage :image-src="require('assets/photos/Woonkamer-2.jpg')" />
 
       <LongParagraph
@@ -75,13 +69,13 @@
         </p>
       </LongParagraph>
 
-      <SingleImage :image-src="require('assets/photos/Woonkamer-3.jpg')" />
-
       <CTA
           to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
       >
         Beste verkochte woonkamer LED-strips
       </CTA>
+
+      <SingleImage :image-src="require('assets/photos/Woonkamer-3.jpg')" />
 
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 

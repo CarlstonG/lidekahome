@@ -7,7 +7,7 @@
       <div class="mt-4">
         <CenterTitle
             tag="h1"
-            title="LED-strips met afstandsbediening"
+            title="LED-strip met afstandsbediening"
         />
       </div>
     </div>
@@ -129,15 +129,15 @@
         </ul>
       </LongParagraph>
 
-      <SingleImage
-          :image-src="require('~/assets/photos/Woonkamer-2.jpg')"
-      />
-
       <CTA
           to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
       >
         Best verkochte LED-strip
       </CTA>
+
+      <SingleImage
+          :image-src="require('~/assets/photos/Woonkamer-2.jpg')"
+      />
 
       <LongParagraph
           title="Dimbare LED-strips"
@@ -165,15 +165,15 @@
         </ul>
       </LongParagraph>
 
-      <SingleImage
-          :image-src="require('~/assets/photos/Woonkamer-3.jpg')"
-      />
-
       <CTA
           to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
       >
         Best verkochte LED-strip
       </CTA>
+
+      <SingleImage
+          :image-src="require('~/assets/photos/Woonkamer-3.jpg')"
+      />
 
       <LongParagraph
         title="LEDS per meter"
@@ -185,6 +185,12 @@
           Daarom kiezen wij altijd voor een hoge kwaliteit leds en een hoog aantal leds per meter. Voor het aantal watt per meter verwijzen we je graag door naar onze product pagina's.
         </p>
       </LongParagraph>
+
+      <CTA
+          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
+      >
+        Best verkochte LED-strip
+      </CTA>
 
       <CenterTitle title="Kies jou specifieke lengte" />
       <Lenghts />

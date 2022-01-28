@@ -62,15 +62,15 @@
         </p>
       </LongParagraph>
 
-      <SingleImage
-          :image-src="require('~/assets/photos/Woonkamer-2.jpg')"
-      />
-
       <CTA
           to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
       >
         Best verkochte LED-strip
       </CTA>
+
+      <SingleImage
+          :image-src="require('~/assets/photos/Woonkamer-2.jpg')"
+      />
 
       <LongParagraph
           title="Hoe kan ik led strips dimmen?"
@@ -92,15 +92,15 @@
         </p>
       </LongParagraph>
 
-      <SingleImage
-          :image-src="require('~/assets/photos/Woonkamer-3.jpg')"
-      />
-
       <CTA
           to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
       >
         Best verkochte LED-strip
       </CTA>
+
+      <SingleImage
+          :image-src="require('~/assets/photos/Woonkamer-3.jpg')"
+      />
 
       <LongParagraph
         title="Lideka dimbare led strips"
@@ -112,6 +112,12 @@
           Heb je vragen over ons assortiment led strips, led strips accessoires of het dimmen van led strips? <NuxtLink to="/klantenservice" class="link">Neem vrijblijvend contact met ons op.</NuxtLink> We helpen je graag.
         </p>
       </LongParagraph>
+
+      <CTA
+          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
+      >
+        Best verkochte LED-strip
+      </CTA>
 
       <CenterTitle title="Kies jou specifieke lengte" />
       <Lenghts />

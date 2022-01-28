@@ -45,12 +45,6 @@
 
       <SingleImage :image-src="require('~/assets/photos/Badkamer-2.jpg')" />
 
-      <CTA
-        to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
-      >
-        Beste verkochte badkamer LED-strips
-      </CTA>
-
       <CenterTitle title="LED-strips badkamer" />
 
       <LongParagraph>
@@ -109,6 +103,12 @@
           </a>
         </p>
       </LongParagraph>
+
+      <CTA
+        to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
+      >
+        Beste verkochte badkamer LED-strips
+      </CTA>
 
       <Usages />
 

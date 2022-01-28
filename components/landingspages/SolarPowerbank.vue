@@ -58,15 +58,15 @@
         </p>
       </LongParagraph>
 
-      <SingleImage
-          :image-src="require('~/assets/powerbank/solar.jpg')"
-      />
-
       <CTA
           to="/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge"
       >
         Bekijk de solar powerbank
       </CTA>
+
+      <SingleImage
+          :image-src="require('~/assets/powerbank/solar.jpg')"
+      />
 
       <LongParagraph
           title="Goed om te weten"
@@ -116,15 +116,15 @@
         </p>
       </LongParagraph>
 
-      <SingleImage
-          :image-src="require('~/assets/powerbank/mah.jpg')"
-      />
-
       <CTA
           to="/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge"
       >
         Bekijk de solar powerbank
       </CTA>
+
+      <SingleImage
+          :image-src="require('~/assets/powerbank/mah.jpg')"
+      />
 
       <div class="md:grid grid-cols-2 gap-10">
         <LongParagraph
@@ -182,6 +182,12 @@
           Er zijn veel verschillende powerbanks op de markt die zeggen dat ze deze capaciteit hebben, maar let goed op!! Dit is vaak niet waar. Wij controleren dat altijd aan het gewicht van het apparaat.
         </p>
       </LongParagraph>
+
+      <CTA
+          to="/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge"
+      >
+        Bekijk de solar powerbank
+      </CTA>
 
       <SingleImage
           :image-src="require('~/assets/powerbank/multi.jpg')"
@@ -434,6 +440,12 @@
           Ga zorgeloos op pad met de Solar powerbank. Bij Lideka Home met 4 USB poorten en een quick charge functie. Zo ben je binnen no-time weer up and running.
         </p>
       </LongParagraph>
+
+      <CTA
+          to="/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge"
+      >
+        Bekijk de solar powerbank
+      </CTA>
 
       <div class="mx-auto max-w-7xl lg:px-0">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">

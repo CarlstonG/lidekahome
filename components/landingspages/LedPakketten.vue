@@ -2,9 +2,15 @@
   <div class="bg-black">
     <div class="max-w-7xl mx-auto space-y-10 mt-10 mb-10 px-6 lg:px-0">
       <Banner
-        title="LED-strip pakketten | Combineren | Complete sets"
         :imageSrc="require('assets/headers/led-pakket-1.jpg')"
       />
+
+      <div class="mt-4">
+        <CenterTitle
+            tag="h1"
+            title="LED-strip pakketten"
+        />
+      </div>
 
       <LongParagraph>
         <p class="text-white font-extralight">
@@ -58,7 +64,7 @@
       </div>
 
       <CTA to="/products/rgb-led-light-strip-5-meter-tv-strip-2m-combinatie-pakket">
-        Bekijk beste verkochte pakket
+        Bekijk het best verkochte pakket
       </CTA>
 
       <CenterTitle

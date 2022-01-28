@@ -5,7 +5,7 @@
         LED-strip KEUKEN
       </h2>
 
-      <video v-if="!isOnMobile" :poster="require('assets/video-poster-3.jpeg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
+      <video v-if="!$device.isMobile" :poster="require('assets/video-poster-3.jpeg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
         <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/Keuken-compressed.mp4?v=1641282879" type="video/mp4" />
       </video>
 
@@ -14,7 +14,6 @@
           LED-strip KEUKEN
         </h1>
       </div>
-    </div>
 
       <LongParagraph>
         <p class="text-white font-extralight">
@@ -81,6 +80,12 @@
           Wat je dan niet hebt is de mogelijkheid om de strip koud wit te maken. Als je de strip warm wit wilt maken wordt het al makkelijker aangezien de meeste kleuren al warmer zijn. Een witte strip wordt het meest gebruikt aan bijvoorbeeld een eettafel.
         </p>
       </LongParagraph>
+
+      <CTA
+          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
+      >
+        Beste verkochte keuken LED-strips
+      </CTA>
 
       <TextWithImage image-alt="GESCHIKTE VERLICHTING"
                      :image-src="require('assets/design/landings/keuken/verlichting.jpg')"
@@ -173,6 +178,12 @@
         </ul>
       </LongParagraph>
 
+      <CTA
+          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
+      >
+        Beste verkochte keuken LED-strips
+      </CTA>
+
       <SingleImage :image-src="require('assets/design/landings/keuken/banner4.jpg')" />
 
       <LongParagraph
@@ -196,6 +207,12 @@
           </a>
         </p>
       </LongParagraph>
+
+      <CTA
+          to="/products/rgb-led-light-strip-15-meter-smart-verlichting"
+      >
+        Beste verkochte keuken LED-strips
+      </CTA>
 
       <CenterTitle title="Op welke plekken kun je onze artikelen gebruiken in de keuken?"/>
 
@@ -229,6 +246,7 @@ import Steps from "~/components/blocks/Steps.vue";
 import SingleImageWithContent from "~/components/blocks/SingleImageWithContent.vue";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
+import CTA from "~/components/CTA.vue";
 
 export default Vue.extend({
   components: {
@@ -252,6 +270,7 @@ export default Vue.extend({
     ProductItem,
     ProductItemGradient,
     NewsletterBlock,
+    CTA,
   },
   props: {
     collection: {
@@ -271,16 +290,6 @@ export default Vue.extend({
 
   created() {
     this.getCollection();
-  },
-
-  computed: {
-    isOnMobile() {
-      if (typeof window === 'undefined') {
-        return false;
-      }
-
-      return window.innerWidth < 400;
-    },
   },
 
   methods: {

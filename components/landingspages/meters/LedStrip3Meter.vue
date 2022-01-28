@@ -5,7 +5,7 @@
         LED-strip 3 meter
       </h1>
 
-      <video v-if="!isOnMobile" :poster="require('~/assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
+      <video v-if="!$device.isMobile" :poster="require('~/assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
         <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/led-strip-video.webm" type="video/webm" />
         <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/led-strip-video_1.mp4" type="video/mp4" />
       </video>
@@ -78,6 +78,12 @@
           Als u een vraag heeft dan beantwoorden wij deze met alle liefde en plezier. Lideka staat altijd klaar voor alle soorten vragen. Je kunt je vraag dan ook via de mail indienen of telefonisch, dit doe je gemakkelijk bij onze klantenservice.
         </p>
       </TextWithImage>
+
+      <CTA
+          to="/products/rgb-led-light-strip-3-meter-smart-verlichting"
+      >
+        Bekijk de 3 meter LED-strip
+      </CTA>
 
       <SingleImage
         :image-src="require('~/assets/photos/Woonkamer-1.jpg')"
@@ -164,6 +170,7 @@ import {getCollection} from "~/services/ApiService";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
+import CTA from "~/components/CTA.vue";
 
 export default Vue.extend({
   components: {
@@ -186,6 +193,7 @@ export default Vue.extend({
     ProductItem,
     ProductItemGradient,
     NewsletterBlock,
+    CTA,
   },
   props: {
     collection: {
@@ -205,16 +213,6 @@ export default Vue.extend({
 
   created() {
     this.getCollection();
-  },
-
-  computed: {
-    isOnMobile() {
-      if (typeof window === 'undefined') {
-        return false;
-      }
-
-      return window.innerWidth < 400;
-    },
   },
 
   methods: {

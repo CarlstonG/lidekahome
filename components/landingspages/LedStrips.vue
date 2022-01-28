@@ -5,7 +5,7 @@
         LED-strips
       </h1>
 
-      <video v-if="!isOnMobile" :poster="require('assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
+      <video v-if="!$device.isMobile" :poster="require('assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
         <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/led-strip-video.webm" type="video/webm" />
         <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/led-strip-video_1.mp4" type="video/mp4" />
       </video>
@@ -64,6 +64,8 @@
 
       <VideoReviews />
 
+      <SingleImage :image-src="require('assets/photos/Woonkamer-3.jpg')" />
+
       <div class="max-w-5xl mx-auto">
         <LongParagraph
             title="Wat zijn LED-strips"
@@ -93,23 +95,6 @@
           </p>
         </LongParagraph>
       </div>
-
-      <CTA to="/products/rgb-led-light-strip-15-meter-smart-verlichting">
-        Bekijk best verkochte strip
-      </CTA>
-
-      <SingleImage :image-src="require('assets/photos/Woonkamer-3.jpg')" />
-
-      <div class="mx-auto max-w-7xl">
-        <h2 class="mx-auto text-3xl text-center text-white font-bold">
-          De 4 meest populaire soorten
-        </h2>
-        <p class="text-white text-2xl text-center mt-2">
-          welke kies jij?
-        </p>
-      </div>
-
-      <CategorySlider />
 
       <CTA to="/products/rgb-led-light-strip-15-meter-smart-verlichting">
         Bekijk meest verkochte LED-strip
@@ -370,6 +355,10 @@
         </LongParagraph>
       </div>
 
+      <CTA to="/products/rgb-led-light-strip-15-meter-smart-verlichting">
+        Bekijk meest verkochte LED-strip
+      </CTA>
+
       <SingleImage :image-src="require('assets/photos/Woonkamer-2.jpg')" />
 
       <div class="max-w-5xl mx-auto">
@@ -490,10 +479,6 @@
       </CTA>
 
       <SingleImage :image-src="require('assets/photos/Badkamer-4.jpg')" />
-
-      <CTA to="/products/rgb-led-light-strip-10-meter-smart-verlichting">
-        Bekijk best verkochte LED-strips
-      </CTA>
 
       <div class="max-w-5xl mx-auto">
         <LongParagraph
@@ -697,13 +682,11 @@ import {getCollection} from "~/services/ApiService";
 import LongParagraph from "~/components/blocks/LongParagraph.vue";
 import VideoReviews from "~/components/VideoReviews.vue";
 import CTA from "~/components/CTA.vue";
-import CategorySlider from "~/components/CategorySlider.vue";
 import Lenghts from '~/components/Lenghts.vue';
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
 
 export default Vue.extend({
   components: {
-    CategorySlider,
     CTA,
     VideoReviews,
     LongParagraph,
@@ -744,16 +727,6 @@ export default Vue.extend({
 
   created() {
     this.getCollection();
-  },
-
-  computed: {
-    isOnMobile() {
-      if (typeof window === 'undefined') {
-        return false;
-      }
-
-      return window.innerWidth < 400;
-    },
   },
 
   methods: {

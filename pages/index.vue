@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black">
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 mb-10 lg:mb-0">
-      <video v-if="!isOnMobile" preload="none" :poster="require('assets/video-poster-1.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
+      <video v-if="!$device.isMobile" preload="none" :poster="require('assets/video-poster-1.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
         <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/video.webm" type="video/webm" />
         <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/video_1.mp4" type="video/mp4" />
       </video>
@@ -409,16 +409,6 @@ export default Vue.extend({
       collection: {},
       secondaryCollection: {},
     };
-  },
-
-  computed: {
-    isOnMobile() {
-      if (typeof window === 'undefined') {
-        return false;
-      }
-
-      return window.innerWidth < 400;
-    },
   },
 
   head() {
