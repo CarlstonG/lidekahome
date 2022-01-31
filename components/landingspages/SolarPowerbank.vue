@@ -2,7 +2,7 @@
   <div class="bg-black">
 
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 lg:mb-0">
-      <Banner :imageSrc="require('assets/powerbank/top.jpg')"/>
+      <Banner :imageSrc="require('assets/powerbank/banner1.jpg')"/>
 
       <div class="mt-4">
         <CenterTitle
@@ -34,7 +34,7 @@
       />
 
       <SingleImage
-        :image-src="require('~/assets/powerbank/powerbank.jpg')"
+        :image-src="require('~/assets/powerbank/banner4.jpg')"
       />
 
       <LongParagraph
@@ -65,7 +65,7 @@
       </CTA>
 
       <SingleImage
-          :image-src="require('~/assets/powerbank/solar.jpg')"
+          :image-src="require('~/assets/powerbank/banner3.jpg')"
       />
 
       <LongParagraph
@@ -123,7 +123,7 @@
       </CTA>
 
       <SingleImage
-          :image-src="require('~/assets/powerbank/mah.jpg')"
+          :image-src="require('~/assets/powerbank/banner2.jpg')"
       />
 
       <div class="md:grid grid-cols-2 gap-10">
@@ -190,7 +190,7 @@
       </CTA>
 
       <SingleImage
-          :image-src="require('~/assets/powerbank/multi.jpg')"
+          :image-src="require('~/assets/powerbank/banner5.jpg')"
       />
 
       <LongParagraph
@@ -416,7 +416,7 @@
       </LongParagraph>
 
       <SingleImage
-          :image-src="require('~/assets/powerbank/charge.jpg')"
+          :image-src="require('~/assets/powerbank/banner5-1.jpg')"
       />
 
       <LongParagraph
