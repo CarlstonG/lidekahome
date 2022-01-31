@@ -4,7 +4,7 @@
             @click.prevent="addToCart" 
             ref="addToCartButton"
             class="relative flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
-            :class="fullWidth ? 'w-full' : 'w-52'"    
+            :class="fullWidth ? 'w-full' : 'w-40'"    
         >
             Koop met 1 klik
         </button>
