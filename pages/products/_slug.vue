@@ -414,7 +414,10 @@ export default Vue.extend({
         '@type': 'Product',
         sku: safeGet(this.product, 'sku'),
         name: safeGet(this.product, 'title'),
-        brand: safeGet(this.product, 'brand'),
+        brand:  {
+          '@type' : 'Organization',
+          'name': safeGet(this.product, 'brand')
+        },
         description: safeGet(this.product, 'description'),
         image: safeGet(this.product, 'altMediaSrc'),
         aggregateRating: {
