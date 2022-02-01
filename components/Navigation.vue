@@ -1,7 +1,38 @@
 <template>
   <div>
     <div class="h-32 md:h-44 block">&nbsp;</div>
-    <div class="fixed right-0 top-0 left-0 z-40 shadow-lg">
+     <div class="md:hidden fixed h-10 top-0 z-50 py-2 w-full bg-gradient-to-r from-indigo-400 to-purple-500 ">
+            <carousel v-bind="options" >
+               <slide class="flex-1 flex justify-center align-middle">
+                 <div>
+                   <DeliveryTime class="text-md leading-6 text-white" />
+                 </div>
+               </slide>
+               <slide class="flex-1 flex justify-center">
+                 <div>
+                    <p class="text-md leading-6 text-white">Gratis verzending<span class="hidden lg:inline"> in NL en BE</span></p>
+                 </div>
+               </slide>
+               <slide class="flex-1 flex justify-center">
+                 <div>
+                   <p class="text-md leading-6 text-white">60 dagen gratis retourneren<span class="hidden lg:inline"> in NL en BE</span></p>
+                 </div>
+               </slide>
+               <slide class="flex-1 flex justify-center">
+                 <div>
+                    <a href="https://www.kiyoh.com/reviews/1064733/lideka?from=widget&lang=nl" target="_blank" rel="noopener" class="flex items-center mr-4">
+                    <svg v-for="i in 5" class="flex-shrink-0 h-6 w-6 text-yellow-400"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span class="ml-1 text-gray-200 text-md"><span class="text-gray-200 font-medium">9,5</span> (81)</span>
+                  </a>
+                </div>
+               </slide>
+            </carousel>
+          </div>
+    <div class="md:fixed absolute right-0 top-10 md:top-0 left-0 z-40 shadow-lg">
       <div class="bg-black border-b border-gray-900 hidden md:block">
         <div class="max-w-7xl mx-auto px-2 md:px-2 py-2">
           <dl class="md:grid md:grid-cols-12">
@@ -262,6 +293,16 @@ export default Vue.extend({
 
   data() {
     return {
+      options: {
+        autoplay: true,
+        autoplayTimeout: 4000,
+        loop: true,
+        perPage: 1,
+        space: 10,
+        slideCount: 1,
+        paginationEnabled: false,
+        navigationEnabled: false,
+      },
       sidebarIsOpen: false,
     };
   },
