@@ -89,7 +89,7 @@
         </div>
       </div>
 
-      <nav class="md:bg-black bg-white shadow-lg">
+      <nav class="bg-black shadow-lg">
         <div class="max-w-7xl mx-auto px-2 px-2 md:px-2">
           <div class="relative flex items-center justify-between h-20">
             <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -141,7 +141,7 @@
             </div>
             <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto sm:ml-6 sm:pr-0">
               <NuxtLink v-if="loggedIn" to="/account/myaccount"
-                        class="md:bg-black bg-white p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
+                        class="bg-black p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -151,7 +151,7 @@
               </NuxtLink>
               <a v-else
                  :href="`${shopifyCheckoutDomain}/account`"
-                 class="md:bg-black bg-white p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
+                 class="bg-black p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -161,7 +161,7 @@
               </a>
 
               <NuxtLink to="/winkelwagen"
-                        class="relative flex justify-center items-center md:bg-black bg-white p-1 ml-3 rounded-full text-gray-400 hover:text-white focus:outline-none">
+                        class="relative flex justify-center items-center bg-black p-1 ml-3 rounded-full text-gray-400 hover:text-white focus:outline-none">
 
                       <span v-show="count > 0" style="top: -5px; left: 20px;"
                             class="absolute w-5 h-5 rounded-full bg-white text-xs text-black flex items-center justify-center"
@@ -257,7 +257,7 @@
           </div>
         </div>
 
-        <div class="md:hidden absolute md:bg-black bg-white z-10 left-0 right-0" id="mobile-menu">
+        <div class="md:hidden absolute bg-black z-10 left-0 right-0" id="mobile-menu">
           <div class="px-2 pb-2">
             <Search id="search-mobile"/>
           </div>
