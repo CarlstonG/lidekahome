@@ -1,9 +1,9 @@
 <template>
   <div class="bg-black">
     <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 lg:mb-0">
-      <h1 class="md:hidden mx-auto text-3xl text-white font-bold tracking-wide uppercase mb-6">
+      <h2 class="md:hidden mx-auto text-3xl text-white font-bold tracking-wide uppercase mb-6">
         LED-strips
-      </h1>
+      </h2>
 
       <video v-if="!$device.isMobile" :poster="require('assets/video-poster-2.jpg')" class="w-full h-full rounded-2xl" autoplay muted playsinline>
         <source src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/led-strip-video.webm" type="video/webm" />
