@@ -70,7 +70,7 @@
       <VideoReviews />
     </div>
 
-    <Partners />
+    <Partners v-if="!$device.isMobile" />
 
     <Calendly />
 
