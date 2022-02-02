@@ -5,7 +5,7 @@
         <div class="relative _plant flex flex-col justify-center items-center py-4 ">
           <div class="_plant-bg absolute left-0 top-0 right-0 bottom-0"></div>
           <div class="flex items-center justify-center -mt-10">
-            <img :src="firstBlock.imageSrc" class="w-24" />
+            <img :src="firstBlock.imageSrc" class="w-24" alt="Afbeelding eerste blok" />
           </div>
           <h3 class="text-white left-4 right-4 bottom-4 absolute text-sm uppercase text-center font-bold tracking-wide">{{ firstBlock.description }}</h3>
         </div>
@@ -14,7 +14,7 @@
         <div class="relative _audio flex flex-col justify-center items-center py-4 ">
           <div class="_audio-bg absolute left-0 top-0 right-0 bottom-0"></div>
           <div class="flex items-center justify-center -mt-10">
-            <img :src="secondBlock.imageSrc" class="w-24" />
+            <img :src="secondBlock.imageSrc" class="w-24" alt="Afbeelding tweede blok" />
           </div>
           <h3 class="text-white left-4 right-4 bottom-4 uppercase absolute text-sm text-center font-bold tracking-wide">{{ secondBlock.description }}</h3>
         </div>

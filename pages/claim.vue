@@ -1,61 +1,93 @@
 <template>
     <div class="max-w-7xl mx-auto py-20">
-        <div class="_living-room px-8 py-20 mb-10 grid grid-cols-2 gap-10">
-            <h1 class="text-white text-4xl font-bold text-center">Vul het formulier in en ontvang x jaar extra grarantie</h1>
-            <div class="space-y-4">
-                <FormField
-                    class="flex-1"
-                    :hide-label="true"
-                    name="Voer je e-mailadres in"
-                    input-type="email"
-                />
-                <FormField
-                    class="flex-1"
-                    :hide-label="true"
-                    name="Voer je naam in"
-                />
-                <FormField
-                    class="flex-1"
-                    :hide-label="true"
-                    name="Voer je bestelnummer in"
-                />
+        <div class="_living-room px-8 py-20 mb-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <h1 class="text-white text-4xl font-bold text-center">Vul het formulier in en ontvang x jaar extra grarantie op de RGB-ledstrips</h1>
+                <div class="space-y-4">
+                    <FormField
+                        class="flex-1"
+                        :hide-label="true"
+                        name="Voer je e-mailadres in"
+                        input-type="email"
+                    />
+                    <FormField
+                        class="flex-1"
+                        :hide-label="true"
+                        name="Voer je naam in"
+                    />
+                    <FormField
+                        class="flex-1"
+                        :hide-label="true"
+                        name="Voer je bestelnummer in"
+                    />
 
-                <button
-                    type="submit"
-                    class="block w-full uppercase tracking-wide shadow-md py-1 px-6 border border-transparent rounded text-md text-white hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-                    Claim je garantie
-                </button>
+                    <button
+                        type="submit"
+                        class="block w-full uppercase tracking-wide shadow-md py-1 px-6 border border-transparent rounded text-md text-white hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                        Claim je garantie
+                    </button>
 
-                <p class="text-white text-sm">
-                    Door je aan te melden, ga je akkoord met het
-                    <NuxtLink to="/privacy-statement" target="_blank" rel="noopener" class="underline">privacybeleid</NuxtLink>
-                    en de
-                    <NuxtLink to="/algemene-voorwaarden" target="_blank" rel="noopener" class="underline">gebruiksvoorwaarden</NuxtLink>
-                </p>
+                    <p class="text-white text-sm">
+                        Door je aan te melden, ga je akkoord met het
+                        <NuxtLink to="/privacy-statement" target="_blank" rel="noopener" class="underline">privacybeleid</NuxtLink>
+                        en de
+                        <NuxtLink to="/algemene-voorwaarden" target="_blank" rel="noopener" class="underline">gebruiksvoorwaarden</NuxtLink>
+                    </p>
+                </div>
+            </div>
+            <p class="text-white font-bold text-xl mt-6">
+                <span class="bg-indigo-400">Tijdelijke actie:</span>
+                Vul je bol.com reviewnaam in en ontvang iets extra's bij je volgende bestelling
+            </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-8 mb-10">
+            <div class="flex items-center flex-col">
+                <img loading="lazy" src="~assets/icons/WEBicons-05.webp" alt="Makkelijk retourneren" class="w-20"/>
+            </div>
+            <div class="flex items-center flex-col">
+                <img loading="lazy" src="~assets/icons/WEBicons-06.webp" alt="100% tevredenheidsgarantie" class="w-20"/>
+            </div>
+            <div class="flex items-center flex-col">
+                <img loading="lazy" src="~assets/icons/WEBicons-07.webp" alt="Duurzaamheid" class="w-20"/>
             </div>
         </div>
 
         <h3 class="text-white text-3xl font-bold text-center">
-            De garantie geldt op de volgende producten
+            De LED-strip garantie geldt op de volgende producten
         </h3>
 
-        <div class="grid grid-cols-4 mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-5 px-6 lg:px-0">
             <div class="bg-dark rounded-3xl p-4" style="background-color: rgb(21, 21, 21);">
                 <div class="flex flex-col transition-all shadow-none rounded-lg">
-                    <a href="/products/rgb-led-light-strip-15-meter-smart-verlichting" class="preloaded">
-                        <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0570/2352/9109/products/LK_015_1_800x800.jpg?v=1642932759" alt="Lideka - Led Light Strip - 15 Meter (2x7.5) - RGB - Zelfklevend" width="100%" height="100%" class="rounded-lg">
-                    </a>
-                    <a href="/products/rgb-led-light-strip-15-meter-smart-verlichting" class="w-full text-left flex-grow flex-1 h-full block mt-2 text-white text-2xl font-bold preloaded">
+                    <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0570/2352/9109/products/LK_015_1_800x800.jpg?v=1642932759" alt="Lideka - Led Light Strip - 15 Meter (2x7.5) - RGB - Zelfklevend" width="100%" height="100%" class="rounded-lg">
+                    <p class="w-full text-left flex-grow flex-1 h-full block mt-2 text-white text-2xl font-bold preloaded">
                         15 meter
-                    </a>
-                    <a href="/products/rgb-led-light-strip-15-meter-smart-verlichting" class="preloaded">
-                        <div class="mt-3 uppercase inline-flex items-center space-x-4 tracking-wide shadow-md p-3 px-6 items-center justify-center border border-transparent rounded-full shadow-sm text-sm font-bold text-white bg-gradient-to-r from-indigo-400 to-purple-500 hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-                            <span>Bekijken</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5">
-                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                    </a>
+                    </p>
+                </div>
+            </div>
+            <div class="bg-dark rounded-3xl p-4" style="background-color: rgb(21, 21, 21);">
+                <div class="flex flex-col transition-all shadow-none rounded-lg">
+                    <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0570/2352/9109/products/LK_015_1_800x800.jpg?v=1642932759" alt="Lideka - Led Light Strip - 15 Meter (2x7.5) - RGB - Zelfklevend" width="100%" height="100%" class="rounded-lg">
+                    <p class="w-full text-left flex-grow flex-1 h-full block mt-2 text-white text-2xl font-bold preloaded">
+                        15 meter
+                    </p>
+                </div>
+            </div>
+            <div class="bg-dark rounded-3xl p-4" style="background-color: rgb(21, 21, 21);">
+                <div class="flex flex-col transition-all shadow-none rounded-lg">
+                    <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0570/2352/9109/products/LK_015_1_800x800.jpg?v=1642932759" alt="Lideka - Led Light Strip - 15 Meter (2x7.5) - RGB - Zelfklevend" width="100%" height="100%" class="rounded-lg">
+                    <p class="w-full text-left flex-grow flex-1 h-full block mt-2 text-white text-2xl font-bold preloaded">
+                        15 meter
+                    </p>
+                </div>
+            </div>
+            <div class="bg-dark rounded-3xl p-4" style="background-color: rgb(21, 21, 21);">
+                <div class="flex flex-col transition-all shadow-none rounded-lg">
+                    <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0570/2352/9109/products/LK_015_1_800x800.jpg?v=1642932759" alt="Lideka - Led Light Strip - 15 Meter (2x7.5) - RGB - Zelfklevend" width="100%" height="100%" class="rounded-lg">
+                    <p class="w-full text-left flex-grow flex-1 h-full block mt-2 text-white text-2xl font-bold preloaded">
+                        15 meter
+                    </p>
                 </div>
             </div>
         </div>
@@ -96,7 +128,21 @@
             </div>
         </div>
 
+        <div class="mt-10 mb-8 grid grid-cols-1 md:grid-cols-2 gap-8 px-6 lg:px-0">
+            <img src="~/assets/claim.png" alt="Claim jou garantie" />
+            <div>
+                <h2 class="text-white text-3xl font-bold mb-4">Alles voor sfeer in huis</h2>
+                <p class="text-white leading-8">
+                    Lideka Home maakt het leven leuker, gezelliger en aantrekkelijker. Binnen de webshop vind je alle producten waarmee je die fijne sfeer meeneemt naar huis. Met unieke LED-verlichting creëer je zowel binnen als buiten een comfortabele omgeving; een plek waar je zelf graag bent, en waar je het liefst zit met de mensen om wie je het meest geeft. Ontdek hoe we tot onze ideeën zijn gekomen.
+                </p>
+            </div>
+        </div>
+
         <NewsletterBlock />
+
+        <div class="mt-16">
+            <SocialIcons />
+        </div>
     </div>
 </template>
 
@@ -104,11 +150,13 @@
 import Vue from 'vue';
 import FormField from '~/components/input/FormField.vue';
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
+import SocialIcons from '~/components/SocialIcons.vue';
 
 export default Vue.extend({
     components: {
         FormField,
         NewsletterBlock,
+        SocialIcons,
     },
 
     head() {
