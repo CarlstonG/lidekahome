@@ -571,7 +571,7 @@ export default Vue.extend({
       },
     });
 
-    (() => window.dataLayer.push(arguments))('event', 'conversion', {'send_to': 'AW-123456789/AbC-D_efG-h12_34-567',
+    (function() { window.dataLayer.push(arguments)})('event', 'conversion', {'send_to': 'AW-123456789/AbC-D_efG-h12_34-567',
       'value': this.product.price,'currency': 'EUR'
     });
 
