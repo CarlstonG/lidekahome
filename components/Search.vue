@@ -65,8 +65,10 @@
 
 <script>
 import Vue from "vue";
+import {mapGetters} from 'vuex';
 import Loading from "~/components/Loading";
 import {searchProducts, searchCollections} from "~/services/ApiService";
+import {newSearchQuery} from '~/services/GqlService';
 
 export default Vue.extend({
   components: {Loading},
@@ -91,6 +93,7 @@ export default Vue.extend({
       products: [],
       collections: [],
       loading: false,
+      timeout: null,
     };
   },
 
@@ -111,6 +114,12 @@ export default Vue.extend({
     })
   },
 
+  computed: {
+    ...mapGetters('shop/cart', [
+      'checkout'
+    ]),
+  },
+
   methods: {
     async search() {
       if (this.fields.query.length < 3) {
@@ -123,6 +132,18 @@ export default Vue.extend({
       this.products = await searchProducts(this.fields.query)
       this.collections = await searchCollections(this.fields.query);
       this.loading = false;
+
+      if (this.timeout) {
+        clearTimeout(this.timeout);
+      }
+
+      this.timeout = setTimeout(() => {
+        newSearchQuery({
+          term: this.fields.query,
+          searched_at: (new Date).toISOString(),
+          checkout_id: this.checkout.id,
+        });
+      }, 1000);
     }
   }
 });

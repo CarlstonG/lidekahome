@@ -549,6 +549,21 @@ export default Vue.extend({
       
       this.showFixedOrderBar = window.scrollY > (button.offsetTop + button.offsetHeight);
     },
+
+    getProductUpsells() {
+      const upsells = this.product.metafields.find(field => field.key === 'product_upsell')?.value;
+      let handles = null;
+
+      if (! upsells) {
+        return;
+      }
+
+      try {
+        handles = JSON.parse(upsells);
+      } catch(e) {
+        return;
+      }
+    },
   },
 
   async mounted() {
@@ -585,6 +600,8 @@ export default Vue.extend({
 
     this.isScrolledPastAddToCartButton();
     window.addEventListener('scroll', this.isScrolledPastAddToCartButton);
+
+    this.getProductUpsells();
   },
 
   beforeDestroy() {

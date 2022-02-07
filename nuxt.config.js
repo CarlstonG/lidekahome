@@ -317,7 +317,8 @@ export default {
         shopifyGraphql: process.env.SHOPIFY_GRAPHQL,
         rocksolidApiKey: process.env.ROCKSOLID_API_KEY,
         rocksolidApiUrl: process.env.ROCKSOLID_API_URL,
-        shopifyCheckoutDomain: process.env.SHOPIFY_CHECKOUT_DOMAIN
+        shopifyCheckoutDomain: process.env.SHOPIFY_CHECKOUT_DOMAIN,
+        graphqlClient: process.env.GRAPHQL_CLIENT,
     },
 
     serverMiddleware: [{
