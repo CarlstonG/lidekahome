@@ -110,7 +110,12 @@
             </div>
           </div>
           <div class="lg:px-4 col-span-1 md:col-span-6">
-            <h1 class="font-extrabold text-4xl">{{ product.title }}</h1>
+            <h1 class="font-extrabold text-4xl">
+              {{ product.title }}
+              <button @click="addToWishlist" :title="isInWishlist ? 'Verwijder uit verlanglijstje' : 'Voeg toe aan verlanglijstje'">
+                <svg class="w-6 h-6" :class="{'text-red-600': isInWishlist}" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+              </button>
+            </h1>
 
             <a href="#reviews" v-if="product.stars > 0" class="flex items-center">
               <svg v-for="star in product.stars" :key="star"  class="flex-shrink-0 h-6 w-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -321,7 +326,7 @@ import Vue from "vue";
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 import Loading from "~/components/Loading";
-import {mapActions} from "vuex";
+import {mapActions, mapGetters} from "vuex";
 import SellingPoints from "~/components/SellingPoints";
 import {safeGet} from "~/services/Helpers";
 import NotFound from "~/components/NotFound";
@@ -384,6 +389,14 @@ export default Vue.extend({
   },
 
   computed: {
+    ...mapGetters('shop/wishlist', [
+      'favoriteProducts',
+    ]),
+
+    isInWishlist() {
+      return this.favoriteProducts.some(p => p.slug === this.slug);
+    },
+
     productDescription() {
       return this.product.description;
     },
@@ -456,6 +469,11 @@ export default Vue.extend({
 
     ...mapActions('shop/products', [
       'addProductToRecentlyVisited',
+    ]),
+
+    ...mapActions('shop/wishlist', [
+      'addItem',
+      'deleteItem',
     ]),
 
     toggleFaqItem(index) {
@@ -563,6 +581,23 @@ export default Vue.extend({
       } catch(e) {
         return;
       }
+    },
+
+    async addToWishlist() {
+      if (this.isInWishlist) {
+        const item = this.favoriteProducts.find(p => p.slug === this.slug);
+        await this.deleteItem(item.id);
+
+        this.$root.$emit('addNotification', 'Gelukt!', 'Het product is verwijderd uit jou verlanglijstje', '', 10000);
+        return;
+      }
+
+      await this.addItem({
+        ...this.product,
+        slug: this.slug,
+      });
+
+      this.$root.$emit('addNotification', 'Gelukt!', 'Het product is toegevoegd aan jou verlanglijstje', '', 10000);
     },
   },
 

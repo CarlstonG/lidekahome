@@ -55,7 +55,12 @@ export default Vue.extend({
 
     ...mapActions('shop/shop', [
       'fetchShop'
-    ])
+    ]),
+
+    ...mapActions('shop/wishlist', [
+      'initUser',
+      'initFavoriteProducts',
+    ]),
   },
 
   created() {
@@ -67,6 +72,8 @@ export default Vue.extend({
 
   mounted() {
     this.initRecentlyVisitedProducts();
+    this.initUser();
+    this.initFavoriteProducts();
   },
 
   head() {
