@@ -130,7 +130,7 @@ export default {
             '/products/rgb-ic-led-light-strip-10-meter-smart-verlichting',
             '/products/adapter-2-5a-12v-30w',
 
-            '/blog/led-strip-knippen-hier-moet-je-op-letten-lideka%C2%AE',
+            '/blog/led-strip-knippen-hier-moet-je-op-letten-lideka',
             '/blog/ip-rating-bij-led-strips-wat-betekent-ip65-lideka',
             '/blog/tv-led-strips-een-nieuwe-vorm-van-televisie-kijken',
             '/blog/led-verlichting-in-de-tuin',
@@ -484,7 +484,7 @@ export default {
                 res.end();
             }
 
-            if (req.url.match("/products/led-strip-10-meter-2-meter-van-lideka®-rgb")) {
+            if (req.url.match("/products/led-strip-10-meter-2-meter-van-lideka-rgb")) {
                 res.writeHead(301, {Location: req.url.replace("led-strip-5-meter-1-meter-van-lideka-rgb", "rgb-ic-led-light-strip-10-meter-smart-verlichting")})
                 res.end();
             }
