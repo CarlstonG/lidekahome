@@ -164,6 +164,10 @@ export default Vue.extend({
             title: 'Claim X jaar garantie bij Lideka'
         }
     },
+     async mounted() {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: "path_tracking", path: this.$route.path });
+  },
 })
 </script>
 

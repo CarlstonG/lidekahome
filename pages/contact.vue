@@ -120,5 +120,9 @@ export default Vue.extend({
     this.page = await getPage('contact');
     this.loading = false;
   },
+   async mounted() {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: "path_tracking", path: this.$route.path });
+  },
 })
 </script>

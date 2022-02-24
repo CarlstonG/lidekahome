@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="h-32 md:h-44 block">&nbsp;</div>
+    <div class="h-32 md:h-30 block">&nbsp;</div>
      <div class="md:hidden fixed h-10 top-0 z-50 py-2 w-full bg-gradient-to-r from-indigo-400 to-purple-500 ">
             <carousel v-bind="options" >
                <slide class="flex-1 flex justify-center align-middle">
@@ -32,7 +32,7 @@
                </slide>
             </carousel>
           </div>
-    <div class="md:fixed absolute right-0 top-10 md:top-0 left-0 z-40 shadow-lg">
+    <div class="md:fixed absolute right-0 top-10 md:top-0 left-0 z-50 shadow-lg">
       <div class="bg-black border-b border-gray-900 hidden md:block">
         <div class="max-w-7xl mx-auto px-2 md:px-2 py-2">
           <dl class="md:grid md:grid-cols-12">
@@ -88,8 +88,9 @@
           </dl>
         </div>
       </div>
-
-      <nav class="bg-black shadow-lg">
+    </div>
+    <div  v-bind:class="!isProductPage() ? 'md:fixed': ''" class="absolute right-0 top-10 md:top-10 left-0 z-40 shadow-lg">
+      <nav class="bg-black/75 shadow-lg">
         <div class="max-w-7xl mx-auto px-2 px-2 md:px-2">
           <div class="relative flex items-center justify-between h-20">
             <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -134,66 +135,12 @@
                        alt="Lideka Home">
                 </NuxtLink>
               </div>
-
-              <div class="hidden w-full md:block md:w-full lg:w-full md:ml-6 px-20">
-                <Search/>
-              </div>
-            </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto sm:ml-6 sm:pr-0">
-              <NuxtLink v-if="loggedIn" to="/account/myaccount"
-                        class="bg-black p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                </svg>
-                <span class="text-sm ml-2 hidden md:block">{{ customer.firstName }}</span>
-              </NuxtLink>
-              <a v-else
-                 :href="`${shopifyCheckoutDomain}/account`"
-                 class="bg-black p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                </svg>
-                <span class="hidden md:block text-sm ml-2">Inloggen</span>
-              </a>
-
-              <NuxtLink to="/winkelwagen"
-                        class="relative flex justify-center items-center bg-black p-1 ml-3 rounded-full text-gray-400 hover:text-white focus:outline-none">
-
-                      <span v-show="count > 0" style="top: -5px; left: 20px;"
-                            class="absolute w-5 h-5 rounded-full bg-white text-xs text-black flex items-center justify-center"
-                            data-cart-count>{{ count }}</span>
-
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                </svg>
-                <span class="hidden md:block text-sm ml-2">Winkelwagen</span>
-              </NuxtLink>
-
-              <NuxtLink to="/wishlist"
-                        class="relative flex justify-center items-center bg-black p-1 ml-3 rounded-full text-gray-400 hover:text-white focus:outline-none">
-
-                      <span v-show="favoriteCount > 0" style="top: -5px; left: 20px;"
-                            class="absolute w-5 h-5 rounded-full bg-white text-xs text-black flex items-center justify-center"
-                            data-cart-count>{{ favoriteCount }}</span>
-
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
-
-        <div class="hidden md:block bg-black border-t border-gray-800 border-b">
-          <div class="max-w-7xl mx-auto  px-2 py-2 px-8 md:px-2">
+              
+          <div class=" hidden md:block w-full mx-auto md:ml-6 py-2 px-8 md:px-2">
             <div class="relative flex items-center justify-between -ml-2">
               <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-grow">
-                  <div class="flex space-x-1 min-h-10 relative">
+                  <div class="flex space-x-2 min-h-10 relative">
 <!--                    <NuxtLink prefetch v-for="collection in collections" :to="`/categorie/${collection.handle}`"-->
 <!--                              :key="collection.handle"-->
 <!--                              class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">-->
@@ -209,17 +156,17 @@
                           </svg>
                         </button>
                       </div>
-                      <div class="navigation-dropdown main-navigation-dropdown origin-top-center absolute top-9  left-0 w-full right-0 rounded-bl-md shadow-md rounded-tr-md rounded-br-md shadow-lg py-1 bg-white focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                      <div class="navigation-dropdown main-navigation-dropdown origin-top-center absolute top-9  left-0 w-[50vw] right-0 rounded-bl-md shadow-md rounded-tr-md rounded-br-md shadow-lg py-1 bg-white focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 py-6">
                           <div>
                             <header class="font-bold text-sm px-4 py-2 tracking-wide uppercase text-uppercase">LED-strips</header>
-                            <NuxtLink to="/categorie/led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-0">Alle LED-strips</NuxtLink>
-                            <NuxtLink to="/categorie/tv-led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-1">TV LED-strips</NuxtLink>
-                            <NuxtLink to="/categorie/rgb-led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-2">RGB LED-strips</NuxtLink>
-                            <NuxtLink to="/categorie/rgb-ic-led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">RGB-IC LED-strips</NuxtLink>
-                            <NuxtLink to="/categorie/led-pakketten" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">LED pakketten</NuxtLink>
-                            <NuxtLink to="/categorie/led-strip-met-afstandsbediening" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Met afstandsbediening</NuxtLink>
-                            <NuxtLink to="/categorie/led-strips-dimbaar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-5">Dimbare LED-strips</NuxtLink>
+                            <NuxtLink to="/products/rgb-led-light-strip-20-meter-tv-strip-3m-combinatie-pakket" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-0">Alle LED-strips</NuxtLink>
+                            <NuxtLink to="/products/lideka-tv-led-strip-2-meter-usb-rgb-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-1">TV LED-strips</NuxtLink>
+                            <NuxtLink to="/products/rgb-led-light-strip-3-meter-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-2">RGB LED-strips</NuxtLink>
+                            <NuxtLink to="/products/rgb-ic-led-light-strip-5-meter-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">RGB-IC LED-strips</NuxtLink>
+                            <NuxtLink to="/products/rgb-led-light-strip-15-meter-tv-strip-3m-combinatie-pakket-1" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">LED pakketten</NuxtLink>
+                            <NuxtLink to="/products/rgb-led-light-strip-20-meter-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Met afstandsbediening</NuxtLink>
+                            <NuxtLink to="/products/lideka-tv-led-strip-2-meter-usb-rgb-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-5">Dimbare LED-strips</NuxtLink>
                           </div>
                           <div>
                             <header class="font-bold text-sm px-4 py-2 tracking-wide uppercase text-uppercase">LED-strip toepassingen</header>
@@ -264,8 +211,62 @@
                 </div>
               </div>
             </div>
+              </div>
+              
+              <div class="hidden w-full md:block md:w-full lg:w-full md:ml-6 px-2 py-1">
+                <Search/>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto sm:ml-6 sm:pr-0">
+              <NuxtLink v-if="loggedIn" to="/account/myaccount"
+                        class="bg-transparent p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+                <span class="text-sm ml-2 hidden md:block">{{ customer.firstName }}</span>
+              </NuxtLink>
+              <a v-else
+                 :href="`${shopifyCheckoutDomain}/account`"
+                 class="bg-transparent p-1 flex justify-center items-center rounded-full text-gray-400 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+                <span class="hidden md:block text-sm ml-2">Inloggen</span>
+              </a>
+
+              <NuxtLink to="/winkelwagen"
+                        class="bg-transparent relative flex justify-center items-center p-1 ml-3 rounded-full text-gray-400 hover:text-white focus:outline-none">
+
+                      <span v-show="count > 0" style="top: -5px; left: 20px;"
+                            class="absolute w-5 h-5 rounded-full bg-white text-xs text-black flex items-center justify-center"
+                            data-cart-count>{{ count }}</span>
+
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+                <span class="hidden md:block text-sm ml-2">Winkelwagen</span>
+              </NuxtLink>
+
+              <NuxtLink to="/wishlist"
+                        class="bg-transparent relative flex justify-center items-center bg-black p-1 ml-3 rounded-full text-gray-400 hover:text-white focus:outline-none">
+
+                      <span v-show="favoriteCount > 0" style="top: -5px; left: 20px;"
+                            class="absolute w-5 h-5 rounded-full bg-white text-xs text-black flex items-center justify-center"
+                            data-cart-count>{{ favoriteCount }}</span>
+
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+              </NuxtLink>
+            </div>
           </div>
         </div>
+
+
 
         <div class="md:hidden absolute bg-black z-10 left-0 right-0" id="mobile-menu">
           <div class="px-2 pb-2">
@@ -329,6 +330,9 @@ export default Vue.extend({
     goTo(location: string) {
       this.$router.push(location);
     },
+    isProductPage() {
+      return this.$route.path.includes("/products/");
+    }
   },
 
   computed: {
