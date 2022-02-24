@@ -316,6 +316,9 @@ export default Vue.extend({
     if (this.checkout) {
       this.getDeliveryDates();
     }
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: "path_tracking", path: this.$route.path });
   },
 
   head() {
