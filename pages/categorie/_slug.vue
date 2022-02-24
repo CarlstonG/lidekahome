@@ -1,7 +1,12 @@
 <template>
   <div class="bg-white">
+    <Category
+      v-if="collectionStrapi"
+      :strapi="collectionStrapi"
+      :collection="collection"
+    />
     <TvLedStrips
-        v-if="collection && collection.handle === 'tv-led-strips'"
+        v-else-if="collection && collection.handle === 'tv-led-strips'"
         :collection="collection"
     />
     <RgbIcLedStrips
@@ -249,6 +254,8 @@ import LedStripDimbaar from "../../components/landingspages/LedStripDimbaar";
 import Action from "../../components/landingspages/Action";
 import SolarPowerbank from '~/components/landingspages/SolarPowerbank.vue';
 import OneClickCheckout from '~/components/cart/OnClickCheckout.vue';
+import Category from '~/components/category/Category.vue';
+import { getCollectionBySlug } from '~/services/GqlService.ts';
 
 export default Vue.extend({
   components: {
@@ -281,6 +288,7 @@ export default Vue.extend({
     LedStripDimbaar,
     SolarPowerbank,
     OneClickCheckout,
+    Category,
   },
 
   data() {
@@ -290,6 +298,7 @@ export default Vue.extend({
       selectedFilters: {},
       loading: false,
       collection: {},
+      collectionStrapi: null,
       sortKeys: {
         BEST_SELLING: 'Best verkocht',
         PRICE: 'Prijs',
@@ -362,22 +371,22 @@ export default Vue.extend({
 
   head() {
     return {
-      title: safeGet(this.collection, 'seoTitle') ?? 'Lideka',
+      title: safeGet(this.collectionStrapi, 'seo.title', safeGet(this.collection, 'seoTitle')) ?? 'Lideka',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: safeGet(this.collection, 'seoDescription'),
+          content: safeGet(this.collectionStrapi, 'seo.description', safeGet(this.collection, 'seoDescription')),
         },
         {
           hid: 'og:description',
           name: 'og:description',
-          content: safeGet(this.collection, 'seoDescription'),
+          content: safeGet(this.collectionStrapi, 'seo.description', safeGet(this.collection, 'seoDescription')),
         },
         {
           hid: 'og:title',
           name: 'og:title',
-          content: safeGet(this.collection, 'seoTitle') ?? 'Lideka',
+          content: safeGet(this.collectionStrapi, 'seo.title', safeGet(this.collection, 'seoTitle')) ?? 'Lideka',
         },
         {
           hid: 'og:site_name',
@@ -411,6 +420,8 @@ export default Vue.extend({
       slug = slug.replace('led-strip-', '');
     }
 
+    const collectionStrapi = await getCollectionBySlug(params.slug);
+
     const collection = await getCollection(slug, {
       limit: 50,
       sortKey: 'PRICE',
@@ -421,7 +432,7 @@ export default Vue.extend({
       },
     });
 
-    return {slug, collection }
+    return {slug, collection, collectionStrapi }
   },
 })
 </script>
