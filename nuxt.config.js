@@ -52,6 +52,7 @@ export default {
             src: '~/plugins/vue-carousel.js', 
             mode: 'client'
         }, 
+        { src: '~/plugins/vue-switches', ssr: false },
         '~/plugins/gtm'
     ],
 

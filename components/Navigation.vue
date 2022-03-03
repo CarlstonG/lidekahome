@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="h-32 md:h-30 block">&nbsp;</div>
+    <div class="h-40 md:h-32 block">&nbsp;</div>
      <div class="md:hidden fixed h-10 top-0 z-50 py-2 w-full bg-gradient-to-r from-indigo-400 to-purple-500 ">
             <carousel v-bind="options" >
                <slide class="flex-1 flex justify-center align-middle">
