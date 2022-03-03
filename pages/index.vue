@@ -677,7 +677,7 @@ export default Vue.extend({
         ],
         sameAs: [
           "https://www.facebook.com/lidekahome",
-          "https://www.instagram.com/lidekahome",
+          "https://www.instagram.com/lidekahome.nl",
           "https://www.linkedin.com/company/lideka",
           "https://www.youtube.com/channel/UCM6KUMoinLVJZUIOx3Mm2Tw",
           "https://pin.it/7w89n1e",
