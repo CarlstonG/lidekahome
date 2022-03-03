@@ -1,38 +1,43 @@
 <template>
   <div class="bg-black">
     <div class="w-full bg-white">
-       <video
-              preload="none"
-              :poster="require('/assets/photos/rgb-slaapkamer.jpg')"
-              class="w-full"
-              autoplay
-              muted
-              playsinline
-            >
-              <source
-                src="https://cdn.shopify.com/videos/c/vp/4ab7983604dd4e5fb389611a194ede28/4ab7983604dd4e5fb389611a194ede28.HD-1080p-7.2Mbps.mp4"
-                type="video/mp4"
-              />
-            </video>
-            <div class="md:absolute w-fit bottom-2 left-2 px-6 py-4 md:p-6 md:bottom-20 md:left-0 md:bg-black/50 rounded-r-2xl ">
-            <div
-              class="lg:mt-0 bottom-2 md:bottom-20 md:left-20 items-center"
-            >
-              <h1 class="mx-auto my-2 text-3xl text-black md:text-white font-bold tracking-wide">
-                Wij creëren de ultieme sfeer<br> voor jou.              
-                </h1>
-              <h2 class="mx-auto my-2 text-lg font-extralight text-black md:text-white mt-2 w-fit">
-               Zowel binnen als buiten het huis, en dat doen <br v-if="!$device.isMobile"/> we met betaalbare Slimme LED-strips!
-              </h2>
-            </div>
-            <div class="my-4 flex justify-left">
-              <CTA
-                    to="/products/rgb-led-light-strip-20-meter-smart-verlichting"
-                >
-                 Best verkochte LED-strips
-              </CTA>
-            </div>
-          </div>
+      <video
+        preload="none"
+        :poster="require('/assets/photos/rgb-slaapkamer.jpg')"
+        class="w-full"
+        autoplay
+        muted
+        playsinline
+      >
+        <source
+          src="https://cdn.shopify.com/videos/c/vp/4ab7983604dd4e5fb389611a194ede28/4ab7983604dd4e5fb389611a194ede28.HD-1080p-7.2Mbps.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div
+        class="md:absolute w-fit bottom-2 left-2 px-6 py-4 md:p-6 md:bottom-20 md:left-0 md:bg-black/50 rounded-r-2xl "
+      >
+        <div class="lg:mt-0 bottom-2 md:bottom-20 md:left-20 items-center">
+          <h1
+            class="mx-auto my-2 text-3xl text-black md:text-white font-bold tracking-wide"
+          >
+            Wij creëren de ultieme sfeer<br />
+            voor jou.
+          </h1>
+          <h2
+            class="mx-auto my-2 text-lg font-extralight text-black md:text-white mt-2 w-fit"
+          >
+            Zowel binnen als buiten het huis, en dat doen
+            <br v-if="!$device.isMobile" />
+            we met betaalbare Slimme LED-strips!
+          </h2>
+        </div>
+        <div class="my-4 flex justify-left">
+          <CTA to="/products/rgb-led-light-strip-20-meter-smart-verlichting">
+            Best verkochte LED-strips
+          </CTA>
+        </div>
+      </div>
     </div>
     <div class="max-w-7xl mx-auto p-2 hidden lg:block">
       <div class="flex overflow-x-auto">
@@ -134,47 +139,87 @@
 
     <div class="mx-auto max-w-7xl my-10 px-6">
       <div class="grid grid-cols-6 gap-2">
+        <div
+          class="md:pr-8 pb-8 col-span-6 md:col-span-3 md:border-r-2 border-b-2 md:border-b-0 border-gray-600"
+        >
+          <img
+            v-show="enabled"
+            class="mx-auto swap-image rounded-2xl"
+            src="~assets/creatives/kitchen_functional.jpg"
+            alt="kitchen functional"
+          />
+          <img
+            v-show="!enabled"
+            class="mx-auto swap-image rounded-2xl"
+            src="~assets/creatives/kitchen_colorful.jpg"
+            alt="kitchen colorful"
+          />
+          <div
+            v-if="$device.isMobile"
+            class="w-full flex justify-center items-center pt-6"
+          >
+            <div class="px-2 ">
+              <h3 class="text-white uppercase text-center">
+                 kleurrijke <br />
+                verlichting
+              </h3>
+            </div>
+            <div class="px-4 mt-4">
+              <switches
+                v-model="enabled"
+                color="blue"
+                type-bold="true"
+              ></switches>
+            </div>
+            <div class="px-2">
+              <h3 class="text-white uppercase text-center">
+               functionele<br />
+                verlichting
+              </h3>
+            </div>
+          </div>
+        </div>
 
-
-      <div class="md:pr-8 pb-8 col-span-6 md:col-span-3 md:border-r-2 border-b-2 md:border-b-0 border-gray-600">
-      <img v-show="enabled" class="mx-auto swap-image rounded-2xl" src="~assets/creatives/kitchen_functional.jpg" alt="kitchen functional" />
-      <img v-show="!enabled" class="mx-auto swap-image rounded-2xl" src="~assets/creatives/kitchen_colorful.jpg" alt="kitchen colorful" />
-      <div v-if="$device.isMobile" class="w-full flex justify-center items-center pt-6">
-        <div class="px-2 ">
-          <h3 class="text-white uppercase text-center">functionele<br> verlichting </h3>
+        <div
+          class="p-2 flex items-center col-span-6 md:col-span-3 grow-1 text-white"
+        >
+          <div>
+            <h2 class="mx-auto text-3xl text-center font-bold">
+              Schakel om de magie te zien!
+            </h2>
+            <p class="px-4 text-center mx-auto pt-6">
+              Schakel tussen verschillende soorten verlichting waarmee u uw huis
+              kunt verfraaien. Lideka LED kan uw huis verlichten voor het
+              alledaagse, informele leven en het opfleuren voor feestjes!
+            </p>
+            <div
+              v-if="!$device.isMobile"
+              class="w-full flex justify-center items-center pt-6"
+            >
+              <div class="px-2 ">
+                <h3 class="text-white uppercase text-center">
+                 kleurrijke<br />
+                  verlichting
+                </h3>
+              </div>
+              <div class="px-4 mt-4">
+                <switches
+                  v-model="enabled"
+                  color="blue"
+                  type-bold="true"
+                ></switches>
+              </div>
+              <div class="px-2">
+                <h3 class="text-white uppercase text-center">
+                 functionele <br />
+                  verlichting
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="px-4 mt-4">
-        <switches v-model="enabled" color="blue" type-bold="true" ></switches>
-        </div>
-        <div class="px-2">
-        <h3 class="text-white uppercase text-center">kleurrijke<br> verlichting</h3>
-        </div>
-        </div>
-      </div>
-
-      <div class="p-2 flex items-center col-span-6 md:col-span-3 grow-1 text-white">
-        <div>
-        <h2 class="mx-auto text-3xl text-center font-bold">
-          Schakel om de magie te zien!
-          </h2>
-        <p class="px-4 text-center mx-auto pt-6"> Schakel tussen verschillende soorten verlichting waarmee u uw huis kunt verfraaien.
-Lideka LED kan uw huis verlichten voor het alledaagse, informele leven en het opfleuren voor feestjes!</p>
-        <div v-if="!$device.isMobile" class="w-full flex justify-center items-center pt-6">
-        <div class="px-2 ">
-          <h3 class="text-white uppercase text-center">functionele<br> verlichting </h3>
-        </div>
-        <div class="px-4 mt-4">
-        <switches v-model="enabled" color="blue" type-bold="true" ></switches>
-        </div>
-        <div class="px-2">
-        <h3 class="text-white uppercase text-center">kleurrijke<br> verlichting</h3>
-        </div>
-        </div>
-        </div>
-      </div>
       </div>
     </div>
-
 
     <!-- <Calendly /> -->
 
@@ -260,7 +305,9 @@ Lideka LED kan uw huis verlichten voor het alledaagse, informele leven en het op
       </div>
     </div>
 
-    <div class="w-full relative lg:px-0 py-8 space-y-6 lg:space-y-0 bg-white px-4 md:px-0">
+    <div
+      class="w-full relative lg:px-0 py-8 space-y-6 lg:space-y-0 bg-white px-4 md:px-0"
+    >
       <div class="md:max-w-7xl mx-auto ">
         <img
           src="~assets/headers/1.jpg"
@@ -584,14 +631,14 @@ export default Vue.extend({
     DeliveryTime,
     Partners,
     SocialIcons,
-    CTA
+    CTA,
   },
 
   data() {
     return {
       collection: {},
       secondaryCollection: {},
-      enabled: true,
+      enabled: false,
     };
   },
 
@@ -869,24 +916,23 @@ export default Vue.extend({
   border-radius: 20px;
 }
 
-@mixin animate($animation,$duration,$method,$times){
-    animation: $animation $duration $method $times;
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
 }
 
-@mixin keyframes($name){
-    @keyframes #{$name}{
-        @content;
-    }
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
 }
 
-.swap-image{
-
-  @include keyframes(fade-in){
+.swap-image {
+  @include keyframes(fade-in) {
     from {
       opacity: 0;
     }
-    to{
-    opacity: 1;
+    to {
+      opacity: 1;
     }
   }
   @include animate(fade-in, 1s, linear, 1);
