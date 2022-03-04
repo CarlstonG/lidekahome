@@ -389,7 +389,7 @@
               />
             </svg>
           </div>
-          <p class="text-white p-2 font-extralight">81 beoordelingen</p>
+          <p class="text-white p-2 font-extralight">100+ beoordelingen</p>
           <a
             href="https://www.kiyoh.com/reviews/1064733/lideka"
             target="_blank"
