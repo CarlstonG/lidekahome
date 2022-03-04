@@ -2,7 +2,7 @@
     <div>
         <SingleImage
             v-if="block.image.data"
-          :image-src="block.data.attributes.url"
+          :image-src="block.image.data.attributes.url"
       />
 
       <CenterTitle
