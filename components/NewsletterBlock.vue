@@ -1,5 +1,6 @@
 <template>
-  <div class="newsletter-block max-w-7xl mx-auto p-4 md:px-32 md:py-24 rounded-xl border-2 border-indigo-400">
+  <div class="w-full bg-white pb-6 px-3">
+   <div class="newsletter-block max-w-7xl mx-auto  p-4 bg-white md:px-32 md:py-24 rounded-xl border-2 border-indigo-400">
     <form class="flex flex-col text-center justify-center" @submit.prevent="submit">
       <img 
         class="h-8 w-auto mb-8"
@@ -39,6 +40,7 @@
         <NuxtLink to="/algemene-voorwaarden" target="_blank" rel="noopener" class="underline">gebruiksvoorwaarden</NuxtLink>
       </p>
     </form>
+   </div>
   </div>
 </template>
 

@@ -1,38 +1,44 @@
 <template>
   <div class="bg-black">
-    <div class="mx-auto max-w-7xl mt-8 relative px-6 lg:px-0 mb-10 lg:mb-0">
+    <div class="w-full bg-white">
       <video
-        v-if="!$device.isMobile"
         preload="none"
-        :poster="require('assets/video-poster-1.jpg')"
-        class="w-full h-full rounded-2xl"
+        :poster="require('/assets/photos/rgb-slaapkamer.jpg')"
+        class="w-full"
         autoplay
         muted
         playsinline
       >
         <source
-          src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/video.webm"
-          type="video/webm"
-        />
-        <source
-          src="https://cdn.shopify.com/s/files/1/0570/2352/9109/files/video_1.mp4"
+          src="https://cdn.shopify.com/videos/c/vp/4ab7983604dd4e5fb389611a194ede28/4ab7983604dd4e5fb389611a194ede28.HD-1080p-7.2Mbps.mp4"
           type="video/mp4"
         />
       </video>
-
       <div
-        class="md:absolute mt-10 lg:mt-0 bottom-2 left-2 md:bottom-20 md:left-20"
+        class="md:absolute w-fit bottom-2 left-2 px-6 py-4 md:p-6 md:bottom-20 md:left-0 md:bg-black/50 rounded-r-2xl "
       >
-        <h1 class="mx-auto text-3xl text-white font-bold tracking-wide">
-          Wij creëren de ultieme sfeer voor jou.
-        </h1>
-        <h2 class="mx-auto text-lg font-extralight text-white mt-2">
-          Zowel binnen als buiten het huis, en dat doen we met betaalbare Slimme
-          LED-strips!
-        </h2>
+        <div class="lg:mt-0 bottom-2 md:bottom-20 md:left-20 items-center">
+          <h1
+            class="mx-auto my-2 text-3xl text-black md:text-white font-bold tracking-wide"
+          >
+            Wij creëren de ultieme sfeer<br />
+            voor jou.
+          </h1>
+          <h2
+            class="mx-auto my-2 text-lg font-extralight text-black md:text-white mt-2 w-fit"
+          >
+            Zowel binnen als buiten het huis, en dat doen
+            <br v-if="!$device.isMobile" />
+            we met betaalbare Slimme LED-strips!
+          </h2>
+        </div>
+        <div class="my-4 flex justify-left">
+          <CTA to="/products/rgb-led-light-strip-20-meter-smart-verlichting">
+            Best verkochte LED-strips
+          </CTA>
+        </div>
       </div>
     </div>
-
     <div class="max-w-7xl mx-auto p-2 hidden lg:block">
       <div class="flex overflow-x-auto">
         <div
@@ -131,7 +137,91 @@
 
     <Partners v-if="!$device.isMobile" />
 
-    <Calendly />
+    <div class="mx-auto max-w-7xl my-10 px-6">
+      <div class="grid grid-cols-6 gap-2">
+        <div
+          class="md:pr-8 pb-8 col-span-6 md:col-span-3 md:border-r-2 border-b-2 md:border-b-0 border-gray-600"
+        >
+          <img
+            v-show="enabled"
+            class="mx-auto swap-image rounded-2xl"
+            src="~assets/creatives/kitchen_functional.jpg"
+            alt="kitchen functional"
+          />
+          <img
+            v-show="!enabled"
+            class="mx-auto swap-image rounded-2xl"
+            src="~assets/creatives/kitchen_colorful.jpg"
+            alt="kitchen colorful"
+          />
+          <div
+            v-if="$device.isMobile"
+            class="w-full flex justify-center items-center pt-6"
+          >
+            <div class="px-2 ">
+              <h3 class="text-white uppercase text-center">
+                 kleurrijke <br />
+                verlichting
+              </h3>
+            </div>
+            <div class="px-4 mt-4">
+              <switches
+                v-model="enabled"
+                color="blue"
+                type-bold="true"
+              ></switches>
+            </div>
+            <div class="px-2">
+              <h3 class="text-white uppercase text-center">
+               functionele<br />
+                verlichting
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="p-2 flex items-center col-span-6 md:col-span-3 grow-1 text-white"
+        >
+          <div>
+            <h2 class="mx-auto text-3xl text-center font-bold">
+              Schakel om de magie te zien!
+            </h2>
+            <p class="px-4 text-center mx-auto pt-6">
+              Schakel tussen verschillende soorten verlichting waarmee u uw huis
+              kunt verfraaien. Lideka LED kan uw huis verlichten voor het
+              alledaagse, informele leven en het opfleuren voor feestjes!
+            </p>
+            <div
+              v-if="!$device.isMobile"
+              class="w-full flex justify-center items-center pt-6"
+            >
+              <div class="px-2 ">
+                <h3 class="text-white uppercase text-center">
+                 kleurrijke<br />
+                  verlichting
+                </h3>
+              </div>
+              <div class="px-4 mt-4">
+                <switches
+                  v-model="enabled"
+                  color="blue"
+                  type-bold="true"
+                ></switches>
+              </div>
+              <div class="px-2">
+                <h3 class="text-white uppercase text-center">
+                 functionele <br />
+                  verlichting
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <Calendly /> -->
 
     <div class="mx-auto max-w-7xl mb-10 px-6">
       <h2 class="mx-auto text-3xl text-center text-white font-bold">
@@ -151,68 +241,6 @@
 
     <div class="px-6 lg:px-0 mb-10" id="usages">
       <Usages />
-    </div>
-
-    <div class="px-6 lg:px-0">
-      <div
-        class="mx-auto max-w-7xl py-10 px-8 default-gradient"
-        style="border-radius: 20px"
-      >
-        <h2>
-          <div class="flex items-center justify-center mb-4 lg:mb-0">
-            <h2 class="text-3xl text-white font-bold tracking-wide uppercase">
-              Wij geloven in...
-            </h2>
-          </div>
-        </h2>
-        <div class="grid grid-cols-1 lg:grid-cols-3 p-0 lg:p-10 gap-6 lg:gap-0">
-          <div
-            class="flex flex-col w-full lg:w-auto items-center justify-center rounded-lg lg:mx-10 mx-0 py-4"
-            style="border-color: rgba(255, 255, 255, 0.1)"
-          >
-            <div class="flex-grow items-center flex">
-              <img
-                class="w-32"
-                src="~assets/icon/icons8-technical-support-50.svg"
-                alt="Service icon"
-              />
-            </div>
-            <h3 class="text-gray-100 tracking-wide font-bold uppercase mt-4">
-              Service
-            </h3>
-          </div>
-          <div
-            class="flex flex-col w-full lg:w-auto items-center justify-center rounded-lg lg:mx-10 mx-0 py-4"
-            style="border-color: rgba(255, 255, 255, 0.1)"
-          >
-            <div class="flex-grow items-center flex">
-              <img
-                class="w-32"
-                src="~assets/icon/icons8-verified-account-50.svg"
-                alt="Kwaliteit vinkje"
-              />
-            </div>
-            <h3 class="text-gray-100 tracking-wide font-bold uppercase mt-4">
-              Kwaliteit
-            </h3>
-          </div>
-          <div
-            class="flex flex-col w-full lg:w-auto items-center justify-center rounded-lg lg:mx-10 mx-0 py-4"
-            style="border-color: rgba(255, 255, 255, 0.1)"
-          >
-            <div class="flex-grow items-center flex h-40 lg:h-auto">
-              <img
-                class="w-32"
-                src="~assets/icon/icons8-low-price-euro-50.svg"
-                alt="Icon voor prijs naar beneden"
-              />
-            </div>
-            <h3 class="text-gray-100 tracking-wide font-bold uppercase mt-4">
-              Betaalbaarheid
-            </h3>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="mx-auto max-w-7xl py-10 px-6 lg:px-0">
@@ -277,16 +305,18 @@
       </div>
     </div>
 
-    <div class="mx-auto max-w-7xl relative lg:px-0 space-y-6 lg:space-y-0">
-      <div>
+    <div
+      class="w-full relative lg:px-0 py-8 space-y-6 lg:space-y-0 bg-white px-4 md:px-0"
+    >
+      <div class="md:max-w-7xl mx-auto ">
         <img
           src="~assets/headers/1.jpg"
-          class="rounded-2xl mx-auto"
+          class="rounded-2xl mx-auto "
           alt="Lideka home"
         />
       </div>
       <div
-        class="lg:absolute bottom-10 right-10 left-10 rounded-2xl p-10 prose prose-teal-500 text-white"
+        class="lg:absolute bottom-20 right-10 left-20 px-4 rounded-2xl p-10 prose prose-teal-500 text-white"
         style="background: rgba(0, 0, 0, 0.75)"
       >
         <h2
@@ -326,7 +356,7 @@
       </div>
     </div>
 
-    <div class="px-6 lg:px-0 max-w-7xl mx-auto mt-10 flex justify-center">
+    <div class="px-6 lg:px-0 max-w-7xl mx-auto mt-6 flex justify-center">
       <a href="#usages">
         <button
           class="px-6 py-2 mt-4 bg-green-600 hover:bg-green-700 rounded-full text-white"
@@ -479,7 +509,7 @@
       </div>
     </div>
 
-    <div class="px-6 lg:px-0 max-w-7xl mx-auto mt-6 flex justify-center">
+    <div class="px-6 lg:px-0 max-w-7xl mx-auto mt-3 mb-6 flex justify-center">
       <a href="#usages">
         <button
           class="px-6 py-2 mt-4 bg-green-600 hover:bg-green-700 rounded-full text-white"
@@ -489,8 +519,8 @@
       </a>
     </div>
 
-    <div class="max-w-7xl mx-auto pt-8 py-12 px-6 md:px-0">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="w-full pt-8 py-12 px-6 md:px-0 bg-white">
+      <div class=" mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-8">
         <div class="flex items-center flex-col">
           <img
             loading="lazy"
@@ -499,11 +529,11 @@
             class="w-20"
           />
           <h2
-            class="text-white text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase"
+            class="text-gray-800 text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase"
           >
             Gratis Verzending
           </h2>
-          <p class="text-gray-500 text-center text-sm">
+          <p class="text-gray-800 text-center text-sm">
             Omdat Lideka® voor service staat bieden wij al onze artikelen aan
             met gratis verzending (vanaf 20,-). Dat noemen we service!
           </p>
@@ -516,11 +546,11 @@
             class="w-20"
           />
           <h2
-            class="text-white text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase"
+            class="text-gray-800 text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase"
           >
             Makkelijk retourneren
           </h2>
-          <p class="text-gray-500 text-center text-sm">
+          <p class="text-gray-800 text-center text-sm">
             Lideka® maakt retourneren makkelijk. Via ‘Returnless’ kun je op een
             PostNl locatie jouw pakketje gratis afleveren en scannen met je
             mobiel.
@@ -534,11 +564,11 @@
             class="w-20"
           />
           <h2
-            class="text-white text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase"
+            class="text-gray-800 text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase"
           >
             100% tevredenheidsgarantie
           </h2>
-          <p class="text-gray-500 text-center text-sm">
+          <p class="text-gray-800 text-center text-sm">
             Wij staan volledig achter de kwaliteit van onze producten en bieden
             jou daarom een onvoorwaardelijke garantie van 12-24 maanden.
           </p>
@@ -551,11 +581,11 @@
             class="w-20"
           />
           <h2
-            class="text-white text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase"
+            class="text-gray-800 text-center text-sm font-bold mb-2 mt-2 tracking-wide uppercase"
           >
             Duurzaamheid
           </h2>
-          <p class="text-gray-500 text-center text-sm">
+          <p class="text-gray-800 text-center text-sm">
             Lideka® denkt mee aan het milieu, met een duurzame achtergrond
             werken de producten energiebesparend, en energieopwekkend.
           </p>
@@ -585,6 +615,7 @@ import Newsletter from "~/components/NewsletterBlock.vue";
 import DeliveryTime from "~/components/DeliveryTime.vue";
 import Partners from "~/components/Partners.vue";
 import SocialIcons from "~/components/SocialIcons.vue";
+import CTA from "~/components/CTA.vue";
 
 export default Vue.extend({
   components: {
@@ -600,12 +631,14 @@ export default Vue.extend({
     DeliveryTime,
     Partners,
     SocialIcons,
+    CTA,
   },
 
   data() {
     return {
       collection: {},
       secondaryCollection: {},
+      enabled: false,
     };
   },
 
@@ -881,5 +914,27 @@ export default Vue.extend({
   background-position: center;
   background-size: cover;
   border-radius: 20px;
+}
+
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+.swap-image {
+  @include keyframes(fade-in) {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @include animate(fade-in, 1s, linear, 1);
 }
 </style>
