@@ -10,7 +10,7 @@
           </svg>
         </a>
 
-        <a href="https://www.instagram.com/lidekahome" target="_blank" rel="noopener"
+        <a href="https://www.instagram.com/lidekahome.nl/" target="_blank" rel="noopener"
            class="hover:opacity-50 bg-gradient-to-br from-blue-500 to-purple-400 block rounded-full p-2">
           <span class="sr-only">Instagram</span>
           <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

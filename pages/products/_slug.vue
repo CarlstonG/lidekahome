@@ -481,6 +481,7 @@ export default Vue.extend({
     },
 
     async addToCart(variantId, quantity = 1) {
+      this.$nuxt.$loading.start();
       await this.addLine({
         variantId: variantId,
         quantity: quantity
@@ -490,7 +491,6 @@ export default Vue.extend({
       window._learnq.push(['track', 'Added to Cart', this.product]);
 
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ ecommerce: null });
       window.dataLayer.push({
         event: 'AddToCart',
         ecommerce: {
@@ -507,6 +507,7 @@ export default Vue.extend({
       this.$root.$emit('productAddedToCart', this.product, quantity);
 
       this.product = await getProduct(this.slug);
+      this.$nuxt.$loading.finish();
     },
 
     initializeSwiper() {
@@ -591,7 +592,7 @@ export default Vue.extend({
         this.$root.$emit('addNotification', 'Gelukt!', 'Het product is verwijderd uit jou verlanglijstje', '', 10000);
         return;
       }
-
+      
       await this.addItem({
         ...this.product,
         slug: this.slug,
@@ -611,7 +612,7 @@ export default Vue.extend({
     });
 
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({ event: "path_tracking", path: this.$route.path });
     window.dataLayer.push({
       event: 'view_item',
       ecommerce: {
@@ -699,7 +700,7 @@ export default Vue.extend({
 }
 
 .fixed-order-bar {
-  top: 11rem;
+  top: 2.8rem;
 
   @media screen and (max-width: 423px) {
     top: unset;

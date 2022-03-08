@@ -23,7 +23,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 import { mapGetters, mapActions } from 'vuex';
 
@@ -39,5 +39,9 @@ export default Vue.extend({
             'deleteItem',
         ]),
     },
+     async mounted() {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: "path_tracking", path: this.$route.path });
+  },
 })
 </script>

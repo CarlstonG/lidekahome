@@ -28,16 +28,33 @@ export default {
             },
             {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
         ],
+        script: [
+            {
+              hid: 'gtm',
+              innerHTML: `window.dataLayer = window.dataLayer || [];`,
+              type: 'text/javascript'
+            }
+          ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: [],
+    css: ['~/assets/css/globalStyle.css'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ['~/plugins/jsonld', '~/plugins/vuelidate.js', {
-        src: '~/plugins/vue-nl2br.js',
-        mode: 'client'
-    }, {src: '~/plugins/vue-carousel.js', mode: 'client'}],
+    plugins: [
+        '~/plugins/jsonld',
+        '~/plugins/vuelidate.js',
+        {
+            src: '~/plugins/vue-nl2br.js',
+            mode: 'client'
+        }, 
+        {
+            src: '~/plugins/vue-carousel.js', 
+            mode: 'client'
+        }, 
+        { src: '~/plugins/vue-switches', ssr: false },
+        '~/plugins/gtm'
+    ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: false,
@@ -190,7 +207,8 @@ export default {
     ],
 
     gtm: {
-        id: process.env.GTM
+        id: process.env.GTM,
+        pageTracking: true,
     },
 
     image: {
@@ -532,5 +550,6 @@ export default {
 
             sortRoutes(routes)
         }
-    }
+    },
+    loading: '~/components/Preloader.vue',
 }

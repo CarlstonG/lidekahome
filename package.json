@@ -43,6 +43,7 @@
     "vue-imgix": "^2.9.0",
     "vue-nl2br": "^0.1.2",
     "vue-rellax": "^0.2.0",
+    "vue-switches": "^2.0.1",
     "vuelidate": "^0.7.6"
   },
   "devDependencies": {

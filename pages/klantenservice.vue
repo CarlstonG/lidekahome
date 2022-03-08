@@ -327,5 +327,11 @@ export default Vue.extend({
     this.page = await getPage('klantenservice');
     this.loading = false;
   },
+   async mounted() {
+     // @ts-ignore
+    window.dataLayer = window.dataLayer || [];
+    // @ts-ignore
+    window.dataLayer.push({ event: "path_tracking", path: this.$route.path });
+  },
 })
 </script>

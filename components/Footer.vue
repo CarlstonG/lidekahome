@@ -161,7 +161,7 @@
               </svg>
             </a>
 
-            <a href="https://www.instagram.com/lidekahome" target="_blank" rel="noopener"
+            <a href="https://www.instagram.com/lidekahome.nl/" target="_blank" rel="noopener"
                class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">Instagram</span>
               <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
