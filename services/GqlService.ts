@@ -153,12 +153,16 @@ export const getCollectionBySlug = async (slug: string) => {
               }
             }
           }
-          shopify_collection
-          collection_title
+          cover_video_url
           intro
           seo {
             title
             description
+          }
+          collections {
+            shopify_collection_slug
+            title
+            content
           }
           body {
             __typename

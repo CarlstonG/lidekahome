@@ -3,7 +3,6 @@
     <Category
       v-if="collectionStrapi"
       :strapi="collectionStrapi"
-      :collection="collection"
     />
     <TvLedStrips
         v-else-if="collection && collection.handle === 'tv-led-strips'"
