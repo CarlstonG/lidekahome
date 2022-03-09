@@ -47,6 +47,7 @@ export const getAllVacancies = async () => {
         data {
         attributes {
             title
+            fulltime_partime
             Slug
         }
         }
@@ -65,6 +66,7 @@ export const getVacancyBySlug = async (slug: string) => {
           data {
             attributes {
               title
+              fulltime_partime
               Description
               what_we_offer {
                 offer
@@ -150,6 +152,7 @@ export const getCollectionBySlug = async (slug: string) => {
               attributes {
                 url
                 ext
+                alternativeText
               }
             }
           }
@@ -168,11 +171,13 @@ export const getCollectionBySlug = async (slug: string) => {
             __typename
             ... on ComponentContentCollectionContentBlock {
               title
+              heading_type
               content
               image {
                 data {
                   attributes {
                     url
+                    alternativeText
                   }
                 }
               }

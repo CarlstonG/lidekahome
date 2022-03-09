@@ -17,6 +17,9 @@
                         <NuxtLink :to="`/werken-bij/${vacancy.attributes.Slug}`" class="text-lg font-bold text-gray-900">
                             {{ vacancy.attributes.title }}
                         </NuxtLink>
+                        <p class="text-sm text-gray-500">
+                            {{ vacancy.attributes.fulltime_partime }}
+                        </p>
                         <NuxtLink :to="`/werken-bij/${vacancy.attributes.Slug}`"
                         class="mt-4 background uppercase tracking-wide shadow-md py-1 px-6 border border-transparent rounded text-md text-white hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                         Bekijk vacature

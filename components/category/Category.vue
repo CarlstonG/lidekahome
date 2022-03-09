@@ -21,6 +21,7 @@
             <template v-else>
                 <Banner
                     :imageSrc="strapi.cover.data.attributes.url"
+                    :alt="strapi.cover.data.attributes.alternativeText"
                 />
 
                 <div class="mt-4">
@@ -88,7 +89,7 @@ export default Vue.extend({
             intro: marked.parse(this.strapi.intro, {
                 breaks: true,
             }),
-            collections: [],
+            collections: [] as any[],
         };
     },
 
@@ -103,7 +104,7 @@ export default Vue.extend({
             }
 
             for (const collection of this.strapi.collections) {
-                const c = {...collection};
+                const c = {...collection} as any;
                 c.collection = await getCollection(collection.shopify_collection_slug, {
                     reverseImages: true,
                     sortKey: 'PRICE',

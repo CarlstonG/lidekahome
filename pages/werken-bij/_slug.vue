@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white">
         <Breadcrumbs />
-        <div v-if="!vacancy">
+        <div v-if="!vacancy.attributes">
             <div class="max-w-7xl mx-auto pb-20 pt-6 md:pt-10 relative" style="min-height: 500px">
                 <Loading v-show="loading"/>
                 <NotFound v-if="!loading" />
@@ -14,6 +14,9 @@
                     <h1 class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                         {{ vacancy.attributes.title }}
                     </h1>
+                    <p class="text-center text-gray-500">
+                        {{ vacancy.attributes.fulltime_partime }}
+                    </p>
                 </div>
                 <div class="mt-6 text-gray-500 page-content shadow-lg p-4 md:p-12 rounded-lg default-page-content" v-html="vacancy.attributes.Description"></div>
 

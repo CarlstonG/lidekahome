@@ -8,7 +8,7 @@
     </CenterParagraph>
 
     <div class="relative mt-2">
-      <img :src="imageSrc" :alt="title.length > 0 ? title : 'Banner afbeelding'" class="rounded-2xl max-h-96 object-cover w-full" />
+      <img :src="imageSrc" :alt="alt ? alt : title.length > 0 ? title : 'Banner afbeelding'" class="rounded-2xl max-h-96 object-cover w-full" />
       <h2 v-if="description && !smallText" class="mt-2 md:mt-0 text-white text-left md:text-center text-2xl font-bold tracking-wide lg:absolute bottom-10 left-0 right-0 uppercase">
         {{ description }}
       </h2>
@@ -36,6 +36,10 @@ export default Vue.extend({
     title: {
       type: String,
       default: ''
+    },
+    alt: {
+      type: String,
+      default: null,
     },
     description: {
       type: String,

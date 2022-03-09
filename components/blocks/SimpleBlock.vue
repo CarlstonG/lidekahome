@@ -3,10 +3,13 @@
         <SingleImage
             v-if="block.image.data"
           :image-src="block.image.data.attributes.url"
+          :alt="block.image.data.attributes.alternativeText"
+          class="mb-2"
       />
 
       <CenterTitle
           :title="block.title"
+          :tag="heading_type"
       />
 
       <LongParagraph
@@ -24,7 +27,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue';
 import { marked } from 'marked';
 import SingleImage from './SingleImage.vue';
@@ -51,5 +54,11 @@ export default Vue.extend({
             }),
         };
     },
+
+    computed: {
+      heading_type() {
+        return this.block.heading_type ?? 'h2';
+      }
+    }
 })
 </script>
