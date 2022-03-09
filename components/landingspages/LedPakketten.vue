@@ -155,8 +155,8 @@
 
       <Usages />
 
-      <NewsletterBlock />
     </div>
+      <NewsletterBlock />
   </div>
 </template>
 
