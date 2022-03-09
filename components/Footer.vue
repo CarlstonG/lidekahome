@@ -3,18 +3,11 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="border-t bg-black border-b border-gray-900">
       <div class="max-w-7xl mx-auto px-6 py-6">
-        <dl class="md:grid md:grid-cols-4">
+        <dl class="md:grid md:grid-cols-3">
           <div class="relative hidden md:block">
             <dt class="flex justify-center items-center">
               <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <DeliveryTime class="ml-2 text-xs leading-6 font-medium text-gray-400" />
-            </dt>
-          </div>
-
-          <div class="relative">
-            <dt class="flex justify-center items-center">
-              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <p class="ml-2 text-xs leading-6 font-medium text-gray-400">24/7 bereikbaar</p>
             </dt>
           </div>
 
@@ -88,7 +81,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                   </svg>
-                  klantenservice@lidekahome.nl
+                  <a href="https://klantenservice.lidekahome.nl/nl-NL" target="_blank" rel="noopener" class="text-sm text-gray-300 hover:text-white">
+                    Neem contact op
+                  </a>
                 </a>
               </li>
               <li class="text-gray-300">

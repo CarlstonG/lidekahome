@@ -80,6 +80,9 @@ export default Vue.extend({
     return {
       title: this.shop.name,
       description: this.shop.description,
+      htmlAttrs: {
+        lang: "nl",
+      },
     }
   },
 })

@@ -28,6 +28,7 @@ import Loading from "~/components/Loading";
 import {safeGet} from "~/services/Helpers";
 import NotFound from "~/components/NotFound";
 import {getPage} from "../services/ApiService";
+import {getPageBySlug} from "../services/GqlService";
 import Breadcrumbs from "~/components/Breadcrumbs";
 
 export default Vue.extend({
@@ -75,7 +76,12 @@ export default Vue.extend({
 
   async fetch() {
     this.loading = true;
-    this.page = await getPage(this.slug);
+    this.page = await getPageBySlug(this.slug);
+    
+    if (! this.page) {
+      this.page = await getPage(this.slug);
+    }
+
     this.loading = false;
   },
 })
