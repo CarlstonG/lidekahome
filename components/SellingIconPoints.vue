@@ -1,12 +1,12 @@
 <template>
-  <div class="grid grid-cols-4 gap-2 my-4 md:w-10/12">
+  <div class="grid grid-cols-4 gap-2 my-4 ">
     <div class="flex flex-col justify-start items-center">
       <img src="~/assets/icons/WEBicons-04.png" class="w-12 h-12 mb-2" />
       <h2 class="text-xs text-gray-600 font-bold uppercase text-center">Gratis verzending</h2>
     </div>
     <div class="flex flex-col justify-start items-center">
       <img src="~/assets/icons/WEBicons-05.png" class="w-12 h-12 mb-2"/>
-      <h2 class="text-xs text-gray-600 font-bold uppercase text-center">gratis retourneren binnen 60 dagen</h2>
+      <h2 class="text-xs text-gray-600 font-bold uppercase text-center">gemakkelijk retourneren</h2>
     </div>
     <div class="flex flex-col justify-start items-center">
       <img src="~/assets/icons/WEBicons-09.png" class="w-12 h-12 mb-2" />

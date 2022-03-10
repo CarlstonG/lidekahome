@@ -140,6 +140,8 @@ export const addCustomerImages = () =>{
 }
 
 export const handleMostPopularBadge = (related) =>{
-  let len = related.length;
-  related[parseInt(len/2)].popular = true;
+  if(related){
+    let len = related.length;
+    related[parseInt(len/2)].popular = true;
+  }
 }

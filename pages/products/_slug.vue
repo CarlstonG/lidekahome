@@ -39,7 +39,7 @@
                 op voorraad
               </div>
               <DeliveryTime
-                class="block text-green-500 ml-2 text-sm leading-6 font-medium"
+                class="block text-green-500 mx-2 text-sm leading-6 font-medium"
               />
             </dt>
           </dl>
@@ -51,7 +51,7 @@
               @click.prevent="addToCart(product.firstVariantId, quantity)"
               type="submit"
               name="add"
-              class="w-full md:w-40 relative flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+              class="w-11/12 md:w-56 relative flex items-center justify-center p-2 border border-transparent rounded-full cta-shadow text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
             >
               <svg
                 class="w-5 h-5 -mt-1 mr-1"
@@ -164,6 +164,12 @@
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
             </div>
+             <div v-show="!isSolarPage" class="flex flex-col justify-center pt-4 pb-2 items-center">
+              <h2 class="text-md font-bold uppercase text-center py-2 text-gray-500 w-full">Wat maakt Lideka uniek?</h2>
+              <div class="border-b-2 border-gray-300  w-6/12"/>
+            </div>
+
+            <SellingIconPoints v-show="!isSolarPage" :slug="slug" />
           </div>
           <div class="lg:px-4 col-span-1 md:col-span-6">
             <h1 class="font-extrabold text-4xl">
@@ -197,7 +203,7 @@
             <a
               href="#reviews"
               v-if="product.stars > 0"
-              class="flex items-center"
+              class="flex items-center mt-2"
             >
               <svg
                 v-for="star in product.stars"
@@ -212,17 +218,19 @@
                   d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                 />
               </svg>
-              <span class="ml-2 text-sm text-gray-900">({{ getRatingStars(product.stars) }}/5)</span>
-              <span class="ml-2 text-sm text-gray-900"
+              <span class="ml-2 text-sm text-blue-800">({{ finalStars }}/5)</span>
+              <span class="ml-2 text-sm text-blue-800"
                 >({{ product.totalReviews }} reviews)</span
               >
             </a>
-            <h2 class="text-xl my-2 italic font-bold">Over 1000+ colorful homes!</h2>
+            <h2 v-if="isSolarPage" class="text-xl mt1 mb-2 italic font-bold gradient-text">10,000+ tevreden klanten!</h2>
+            <h2 v-else class="text-xl mt1 mb-2 italic font-bold gradient-text">Meer dan 10,000+ kleurrijke huizen!</h2>
+            <div class="border-b-2 border-gray-300 md:w-6/12"/>
             <div class="flex">
               <div
-                class="text-xl my-4 font-bold text-indigo-500 bg-indigo-100 w-fit shrink px-2 py-1 rounded"
+                class="text-xl mt-4 mb-1 font-bold text-indigo-500 bg-indigo-100 w-fit shrink px-2 py-1 rounded"
               >
-                Our Best Price
+                Onze beste prijs
               </div>
             </div>
             <div class="flex mb-2 mt-2 ">
@@ -245,8 +253,8 @@
                 </div>
               </div>
             </div>
-            <h2 class="text-md ml-2 mb-4">(~{{ pricePerMeter(product.price, product.related)}} EUR/Meter)</h2>
-
+            <h2 class="text-md ml-2 mb-2 font-bold text-green-500 italic">Slechts {{ pricePerMeter(product.price, product.related)}} EUR/meter!</h2>
+            <div class="border-b-2 border-gray-300 mb-2 md:w-6/12"/>
             <div v-if="product.related">
               <span class="text-sm text-gray-500">Kies aantal meters:</span>
               <div class="pb-4 mt-1">
@@ -256,7 +264,7 @@
                   :to="`/products/${related.handle}`"
                   :class="
                     !related.selected
-                      ? related.popular ? 'py-1 px-4 inline-block bg-green-200 popular-shadow rounded-md mr-1 mb-1 border border-green-300' : 'py-1 text-sm px-4 inline-block bg-white border border-gray-500 transition-opacity hover:opacity-50 rounded-md mr-1 mb-1'
+                      ? related.popular ? 'py-1 px-4 inline-block bg-green-200 popular-shadow rounded-md ml-1 mr-2 mb-1 border border-green-300 popular-shadow' : 'py-1 text-sm px-4 inline-block bg-white border border-gray-500 transition-opacity hover:opacity-50 rounded-md mr-1 mb-1'
                       : 'py-1 px-4 text-sm inline-block bg-indigo-400 text-white border border-indigo-400\n' +
                         '            rounded-md mr-1 mb-1'
                   "
@@ -340,7 +348,7 @@
                 type="submit"
                 name="add"
                 id="AddToCart"
-                class="w-52 relative flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                class="w-52 relative flex items-center justify-center py-2 border border-transparent rounded-full cta-shadow text-md font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 ml-2"
               >
                 <svg
                   class="w-5 h-5 -mt-1 mr-1"
@@ -368,17 +376,16 @@
               />
             </div>
 
-            <p class="text-sm text-gray-500 mt-1">
+            <p class="text-sm text-gray-500 mt-2">
               Betaal in 4 termijnen met Klarna
             </p>
 
             <div class="flex flex-col justify-center pt-4 pb-2 items-center md:items-start">
-              <h2 class="text-md font-bold uppercase md:ml-12 text-center md:text-start py-2 text-gray-500 w-full">Wij garanderen u een veilige checkout</h2>
-              <div class="border-b-2 border-gray-300 md:ml-16 w-6/12"/>
-              <img src="~/assets/icons/trust-badge.png" class="md:w-8/12 md:ml-4 mt-2" />
+              <h2 class="text-md font-bold uppercase text-center md:text-left py-2 text-gray-500 w-full">Wij garanderen u een veilige checkout</h2>
+              <div class="border-b-2 border-gray-300 w-7/12"/>
+              <img src="~/assets/icons/trust-badge.png" class="md:w-7/12 mt-2" />
             </div>
-
-            <SellingIconPoints :slug="slug" />
+          
             <NuxtLink
               to="/contact"
               class="text-sm text-gray-500 inline-flex mt-2 hover:text-gray-700"
@@ -413,42 +420,19 @@
         </div>
       </div>
       
-      <div class="w-full px-6 lg:px-0 pb-10 pt-6 bg-black">
-        <CenterTitle class="my-4"
-        title="De voordelen van jouw nieuwe RGB LED-strip"
-      />
-
-      <Benefits
-          :first-block="{
-          title: 'Energiebesparend',
-          description: 'Energiebesparend',
-          imageSrc: require('assets/icon/icons8-forest.svg')
-        }"
-          :second-block="{
-          title: 'Naadloze overgang',
-          description: 'Naadloze overgang op het geluid van de tv',
-          imageSrc: require('assets/icon/icons8-audio-wave-50.svg')
-        }"
-      />
-
-      <BenefitsThreeCols
-          :first-block="{
-            title: 'Kleuren',
-            description: '16 miljoen kleuren',
-            imageSrc: require('assets/icon/icons8-paint-palette-50.svg')
-          }"
-          :second-block="{
-            title: 'Makkelijke bevestiging',
-            description: 'Makkelijke bevestiging',
-            imageSrc: require('assets/icon/icons8-wrench-50.svg')
-          }"
-          :third-block="{
-            title: 'Helderheid',
-            description: 'Hoge helderheid',
-            imageSrc: require('assets/icon/icons8-shade-selected-faces-50.svg')
-          }"
-      />
+      <div v-if="!isSolarPage" class="w-full mx-auto p-8 animated-bg flex flex-col md:flex-row items-center">
+        <div class="max-w-7xl mx-auto ">
+        <img src="~/assets/products/product_support.png" class="rounded-xl" />
         </div>
+        <div class="flex flex-col items-center mt-4 md:mt-0">
+        <img src="~/assets/lideka-white.png" class="mx-auto w-3/4 md:w-2/4" />
+        <h2 ref="ledMappedTicker" class="text-8xl font-bold text-white mt-4" v-html="ledMappedFinal"></h2>
+        <h2 class="text-xl font-bold text-white uppercase mt-6">
+          versierde huizen
+        </h2>
+        </div>
+        </div>
+
 
 
       <div class="max-w-7xl mx-auto px-6 lg:px-0 pb-10 pt-6">
@@ -478,7 +462,7 @@
             </div>
 
             
-            <div class="flex flex-col justify-center items-center my-4 pt-4 pb-2">
+            <div v-if="!isSolarPage" class="flex flex-col justify-center items-center my-4 pt-4 pb-2">
               <h2 class="text-xl font-bold uppercase text-gray-500 text-center w-full">Hoe LED-strips te installeren</h2>
               <div class="border-b-2 border-gray-300 mt-2 w-6/12"/>
               <img src="~/assets/products/how_to_use.webp" class="md:w-9/12 mt-4 rounded-2xl" />
@@ -626,17 +610,44 @@
         <img src="~/assets/happy_customers.png" class="mx-auto rounded-xl" />
       </div>
 
-      <div class="w-full mx-auto px-6 lg:px-0 pb-10 pt-6 animated-bg flex flex-col items-center">
-        <img src="~/assets/lideka-white.png" class="mx-auto w-2/4 md:w-1/4" />
-        <h2 class="text-8xl font-bold text-white mt-4" v-html="ledMappedFinal"></h2>
-        <h2 class="text-xl font-bold text-white uppercase mt-6">
-          versierde huizen
-        </h2>
+      <div class="w-full px-6 lg:px-0 pb-10 pt-6 bg-black">
+        <CenterTitle class="my-4"
+        title="De voordelen van jouw nieuwe RGB LED-strip"
+      />
+
+      <Benefits
+          :first-block="{
+          title: 'Energiebesparend',
+          description: 'Energiebesparend',
+          imageSrc: require('assets/icon/icons8-forest.svg')
+        }"
+          :second-block="{
+          title: 'Naadloze overgang',
+          description: 'Naadloze overgang op het geluid van de tv',
+          imageSrc: require('assets/icon/icons8-audio-wave-50.svg')
+        }"
+      />
+
+      <BenefitsThreeCols
+          :first-block="{
+            title: 'Kleuren',
+            description: '16 miljoen kleuren',
+            imageSrc: require('assets/icon/icons8-paint-palette-50.svg')
+          }"
+          :second-block="{
+            title: 'Makkelijke bevestiging',
+            description: 'Makkelijke bevestiging',
+            imageSrc: require('assets/icon/icons8-wrench-50.svg')
+          }"
+          :third-block="{
+            title: 'Helderheid',
+            description: 'Hoge helderheid',
+            imageSrc: require('assets/icon/icons8-shade-selected-faces-50.svg')
+          }"
+      />
         </div>
 
-      <div class="max-w-7xl mx-auto px-6 lg:px-0 pb-10 pt-6">
-        <img src="~/assets/products/product_support.png" class="mx-auto rounded-xl" />
-      </div>
+      
     </div>
   </div>
 </template>
@@ -748,6 +759,13 @@ export default Vue.extend({
         return this.product.deliveryDate;
       }
     },
+    isSolarPage() {
+      const slugs = [
+        "solar-charger-2400-mah-5v-346-5-g",
+        "solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge",
+      ];
+      return slugs.includes(this.slug);
+    },
   },
 
   jsonld() {
@@ -778,7 +796,7 @@ export default Vue.extend({
     return {
       formatMoney,
       savePercentage,
-      getRatingStars,
+      finalStars: 0,
       pricePerMeter,
       showLightbox: false,
       loading: false,
@@ -790,7 +808,8 @@ export default Vue.extend({
       expandSpecifications: false,
       showFixedOrderBar: false,
       openFaqItems: [],
-      ledMappedFinal: 0,
+      ledMappedFinal: "0",
+      startTicker: false
     };
   },
 
@@ -891,10 +910,15 @@ export default Vue.extend({
     },
 
     isScrolledPastAddToCartButton() {
-      const button = this.$refs.addToCartButton;
+      if(!this.isSolarPage){
+        const ticker = this.$refs.ledMappedTicker;
+        this.startTicker = window.scrollY > ticker.offsetTop;
+      }
 
+      const button = this.$refs.addToCartButton;
       this.showFixedOrderBar =
         window.scrollY > button.offsetTop + button.offsetHeight;
+
     },
 
     getProductUpsells() {
@@ -944,12 +968,14 @@ export default Vue.extend({
     },
 
     handleLedTicker(){
+      let tempLedMapped = 0;
       let loop = setInterval(()=>{
-        this.ledMappedFinal = this.ledMappedFinal + parseInt(Math.random()*20); 
-        if(this.ledMappedFinal >= this.ledMapped){
+        tempLedMapped = tempLedMapped + parseInt(Math.random()*200); 
+        this.ledMappedFinal = tempLedMapped.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        if(tempLedMapped >= this.ledMapped){
           clearInterval(loop);
         }
-      }, 20);
+      }, 2);
     }
 
   },
@@ -1016,7 +1042,7 @@ export default Vue.extend({
     product.media.push(...addCustomerImages());
     handleMostPopularBadge(product.related);
 
-    let ledMapped = 1513;
+    let ledMapped = 10513;
     let t1 = new Date();
     let t2 = new Date('3/9/2022');
 
@@ -1024,7 +1050,9 @@ export default Vue.extend({
     let dayDiff = Math.ceil(timeDiff/(1000*60*60*24));
     ledMapped = ledMapped + (Math.random()*3*dayDiff);
 
-    return { product, reviews, slug, productImages, ledMapped };
+    const finalStars = getRatingStars(product.stars);
+
+    return { product, reviews, slug, productImages, ledMapped, finalStars };
   },
 });
 </script>
@@ -1071,7 +1099,7 @@ export default Vue.extend({
 }
 
 .fixed-order-bar {
-  top: 2.8rem;
+  top: 2.6rem;
 
   @media screen and (max-width: 423px) {
     top: unset;
@@ -1131,4 +1159,17 @@ export default Vue.extend({
   text-decoration: underline;
 }
 
+.gradient-text{
+   background: linear-gradient(to right, #5ab9ea, #8860d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-shadow{
+  box-shadow: 5px 5px 10px rgba(22, 163,74, 0.8);
+}
+
+.popular-shadow{
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
 </style>
