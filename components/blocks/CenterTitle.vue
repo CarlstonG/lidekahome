@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" class="uppercase text-left md:text-center text-white max-w-4xl mx-auto font-bold text-3xl">
+  <component :is="tag" class="text-left md:text-center text-white max-w-4xl mx-auto font-bold text-3xl">
     {{ title }}
   </component>
 </template>

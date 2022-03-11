@@ -8,6 +8,10 @@
             v-else-if="block.__typename === 'ComponentContentCollectionContentBlock'"
             :block="block"
         />
+        <SimpleBlockInline
+            v-else-if="block.__typename === 'ComponentContentCollectionContentBlockInline'"
+            :block="block"
+        />
         <LengthsBlock
             v-else-if="block.__typename === 'ComponentContentLengthButtons'"
             :block="block"
@@ -23,6 +27,7 @@
 import Vue from 'vue';
 import TwoCols from '~/components/blocks/TwoCols.vue';
 import SimpleBlock from '~/components/blocks/SimpleBlock.vue';
+import SimpleBlockInline from '~/components/blocks/SimpleBlockInline.vue';
 import LengthsBlock from '~/components/blocks/LengtsBlock.vue';
 import UsageBlock from '~/components/blocks/UsageBlock.vue';
 
@@ -32,6 +37,7 @@ export default Vue.extend({
         SimpleBlock,
         LengthsBlock,
         UsageBlock,
+        SimpleBlockInline,
     },
 
     props: {

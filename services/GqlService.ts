@@ -165,6 +165,7 @@ export const getCollectionBySlug = async (slug: string) => {
           collections {
             shopify_collection_slug
             title
+            heading_type
             content
           }
           body {
@@ -184,6 +185,21 @@ export const getCollectionBySlug = async (slug: string) => {
               dark_bg
               cta_slug
               cta_title
+            }
+            ... on ComponentContentCollectionContentBlockInline {
+                title
+                heading_type_inline: heading_type
+                content_inline: content
+                image_inline: image {
+                  data {
+                    attributes {
+                      url
+                    }
+                  }
+                }
+                display_image_left
+                cta_slug
+                cta_title
             }
             ... on ComponentContentTwoColumns {
               column_one_title

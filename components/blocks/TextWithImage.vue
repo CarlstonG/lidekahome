@@ -5,7 +5,7 @@
   >
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div class="flex justify-center space-y-4 flex-col">
-        <h2 v-if="title" class="text-white uppercase font-bold tracking-wide text-3xl">{{ title }}</h2>
+        <component v-if="title" :is="titleTag" class="text-white font-bold tracking-wide text-3xl">{{ title }}</component>
         <slot />
         <div v-if="url">
           <NuxtLink :to="url"
@@ -46,6 +46,10 @@ export default Vue.extend({
     title: {
       type: String,
       required: true,
+    },
+    titleTag: {
+      type: String,
+      default: 'h2',
     },
     url: {
       type: String,
