@@ -216,6 +216,17 @@ export const getCollectionBySlug = async (slug: string) => {
             ... on ComponentContentBenefits {
                 title
             }
+            ... on ComponentContentSingleImage {
+                bottom_text
+                single_image: image {
+                  data {
+                    attributes {
+                      url
+                      alternativeText
+                    }
+                  }
+                }
+              }
           }
         }
       }

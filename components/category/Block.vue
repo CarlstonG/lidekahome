@@ -24,6 +24,19 @@
             v-else-if="block.__typename === 'ComponentContentBenefits'"
             :block="block"
         />
+        <template
+            v-else-if="block.__typename === 'ComponentContentSingleImage'"
+        >
+            <SingleImage 
+                :image-src="block.single_image.data.attributes.url"
+                :alt="block.single_image.data.attributes.alternativeText"
+            />
+
+            <SmallCenterTitle
+                v-if="block.bottom_text"
+                :title="block.bottom_text"
+            />
+        </template>
     </div>
 </template>
 
@@ -35,6 +48,8 @@ import SimpleBlock from '~/components/blocks/SimpleBlock.vue';
 import SimpleBlockInline from '~/components/blocks/SimpleBlockInline.vue';
 import LengthsBlock from '~/components/blocks/LengtsBlock.vue';
 import UsageBlock from '~/components/blocks/UsageBlock.vue';
+import SmallCenterTitle from "~/components/blocks/SmallCenterTitle.vue";
+import SingleImage from "~/components/blocks/SingleImage.vue";
 
 export default Vue.extend({
     components: {
@@ -44,6 +59,8 @@ export default Vue.extend({
         LengthsBlock,
         UsageBlock,
         SimpleBlockInline,
+        SmallCenterTitle,
+        SingleImage,
     },
 
     props: {
