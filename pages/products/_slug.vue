@@ -253,7 +253,7 @@
                 </div>
               </div>
             </div>
-            <h2 class="text-md ml-2 mb-2 font-bold text-green-500 italic">Slechts {{ pricePerMeter(product.price, product.related)}} EUR/meter!</h2>
+            <h2 v-show="!isSolarPage" class="text-md ml-2 mb-2 font-bold text-green-500 italic">Slechts {{ pricePerMeter(product.price, product.related)}} EUR/meter!</h2>
             <div class="border-b-2 border-gray-300 mb-2 md:w-6/12"/>
             <div v-if="product.related">
               <span class="text-sm text-gray-500">Kies aantal meters:</span>
