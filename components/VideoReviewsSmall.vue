@@ -20,18 +20,9 @@
                 </svg>
               </div>
 
-              <p class="text-white font-bold tracking-wide text-sm pb-2">
+              <p class="text-white font-bold tracking-wide text-sm pb-6">
                 "Verliefd op Lideka LED-strips" <i>Lois</i>
               </p>
-
-              <div class="flex items-center space-x-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                       stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                  </svg>
-                  <span class="font-bold tracking-wide text-sm">Bekijk video</span>
-                </div>
             </div>
           </div>
         </div>
@@ -53,18 +44,9 @@
                 </svg>
               </div>
 
-              <p class="text-white font-bold tracking-wide text-sm pb-2">
+              <p class="text-white font-bold tracking-wide text-sm pb-6">
                 "Mega enthousiast!" <i>Daniel</i>
               </p>
-
-              <div class="flex items-center space-x-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                       stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                  </svg>
-                  <span class="font-bold tracking-wide text-sm">Bekijk video</span>
-                </div>
             </div>
           </div>
         </div>
@@ -86,18 +68,9 @@
                 </svg>
               </div>
 
-              <p class="text-white font-bold tracking-wide text-sm pb-2">
+              <p class="text-white font-bold tracking-wide text-sm pb-6">
                 "Geweldige kwaliteit!"
               </p>
-
-              <div class="flex items-center space-x-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                       stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                  </svg>
-                  <span class="font-bold tracking-wide text-sm">Bekijk video</span>
-                </div>
             </div>
           </div>
         </div>
@@ -119,18 +92,9 @@
                 </svg>
               </div>
 
-              <p class="text-white font-bold tracking-wide text-sm pb-2">
+              <p class="text-white font-bold tracking-wide text-sm pb-6">
                 "Alle feestjes voortaan op mijn kamer!"
               </p>
-
-              <div class="flex items-center space-x-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                       stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                  </svg>
-                  <span class="font-bold tracking-wide text-sm">Bekijk video</span>
-                </div>
             </div>
           </div>
         </div>
@@ -152,18 +116,9 @@
                 </svg>
               </div>
 
-              <p class="text-white font-bold tracking-wide text-sm pb-2">
+              <p class="text-white font-bold tracking-wide text-sm pb-6">
                 "10x mooiere kamer!"
               </p>
-
-              <div class="flex items-center space-x-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                       stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                  </svg>
-                  <span class="font-bold tracking-wide text-sm">Bekijk video</span>
-                </div>
             </div>
           </div>
         </div>
@@ -185,18 +140,9 @@
                 </svg>
               </div>
 
-              <p class="text-white font-bold tracking-wide text-sm pb-2">
+              <p class="text-white font-bold tracking-wide text-sm pb-6">
                 "Onwijs leuke sfeer in je kamer!"
               </p>
-
-              <div class="flex items-center space-x-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                       stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                  </svg>
-                  <span class="font-bold tracking-wide text-sm">Bekijk video</span>
-                </div>
             </div>
           </div>
         </div>
@@ -218,18 +164,9 @@
                 </svg>
               </div>
 
-              <p class="text-white font-bold tracking-wide text-sm pb-2">
+              <p class="text-white font-bold tracking-wide text-sm pb-6">
                 "Super makkelijk te bedienen!"
               </p>
-
-              <div class="flex items-center space-x-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                       stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                  </svg>
-                  <span class="font-bold tracking-wide text-sm">Bekijk video</span>
-                </div>
             </div>
           </div>
         </div>
@@ -251,18 +188,9 @@
                 </svg>
               </div>
 
-              <p class="text-white font-bold tracking-wide text-sm pb-2">
+              <p class="text-white font-bold tracking-wide text-sm pb-6">
                 "Super simpel gemonteerd!"
               </p>
-
-              <div class="flex items-center space-x-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                       stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                  </svg>
-                  <span class="font-bold tracking-wide text-sm">Bekijk video</span>
-                </div>
             </div>
           </div>
         </div>
