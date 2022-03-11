@@ -213,6 +213,9 @@ export const getCollectionBySlug = async (slug: string) => {
             ... on ComponentContentApplicationsSlider {
               title
             }
+            ... on ComponentContentBenefits {
+                title
+            }
           }
         }
       }
