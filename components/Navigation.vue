@@ -160,7 +160,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 py-6">
                           <div>
                             <header class="font-bold text-sm px-4 py-2 tracking-wide uppercase text-uppercase">LED-strips</header>
-                            <NuxtLink to="/products/rgb-led-light-strip-20-meter-tv-strip-3m-combinatie-pakket" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-0">Alle LED-strips</NuxtLink>
+                            <NuxtLink to="/categorie/led-strips" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-0">Alle LED-strips</NuxtLink>
                             <NuxtLink to="/products/lideka-tv-led-strip-2-meter-usb-rgb-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-1">TV LED-strips</NuxtLink>
                             <NuxtLink to="/products/rgb-led-light-strip-3-meter-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-2">RGB LED-strips</NuxtLink>
                             <NuxtLink to="/products/rgb-ic-led-light-strip-5-meter-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">RGB-IC LED-strips</NuxtLink>
