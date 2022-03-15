@@ -165,8 +165,8 @@
                             <NuxtLink to="/products/rgb-led-light-strip-3-meter-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-2">RGB LED-strips</NuxtLink>
                             <NuxtLink to="/products/rgb-ic-led-light-strip-5-meter-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">RGB-IC LED-strips</NuxtLink>
                             <NuxtLink to="/products/rgb-led-light-strip-15-meter-tv-strip-3m-combinatie-pakket-1" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">LED pakketten</NuxtLink>
-                            <NuxtLink to="/products/rgb-led-light-strip-20-meter-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Met afstandsbediening</NuxtLink>
-                            <NuxtLink to="/products/lideka-tv-led-strip-2-meter-usb-rgb-smart-verlichting" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-5">Dimbare LED-strips</NuxtLink>
+                            <NuxtLink to="/categorie/led-strip-met-afstandsbediening" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">Met afstandsbediening</NuxtLink>
+                            <NuxtLink to="/categorie/led-strips-dimbaar" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-5">Dimbare LED-strips</NuxtLink>
                           </div>
                           <div>
                             <header class="font-bold text-sm px-4 py-2 tracking-wide uppercase text-uppercase">LED-strip toepassingen</header>
