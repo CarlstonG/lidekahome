@@ -9,7 +9,7 @@
           :titleTag="block.heading_type_inline"
           :link-behind-image="block.link"
       >
-        <div class="text-white font-extralight prose" v-html="content"></div>
+        <div class="text-white font-extralight prose block" v-html="content"></div>
       </TextWithImage>
 </template>
 
@@ -44,7 +44,7 @@ export default Vue.extend({
 </script>
 
 <style>
-.prose strong, .prose a {
+.block strong, .block a {
     color: #FFF;
 }
 </style>

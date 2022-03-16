@@ -129,11 +129,11 @@ export default Vue.extend({
     return {
       '@context':'https://schema.org',
       '@type': 'BlogPosting',
-      name: this.blog.article.title,
-      headline: this.blog.article.excerpt,
-      image: this.blog.article.image,
-      articleBody: this.blog.article.content,
-      datePublished: moment(this.blog.article.publishedAtRaw).toISOString(),
+      name: this.blog.article?.title,
+      headline: this.blog.article?.excerpt,
+      image: this.blog.article?.image,
+      articleBody: this.blog.article?.content,
+      datePublished: moment(this.blog.article?.publishedAtRaw).toISOString(),
       author: {
         '@type': 'Organization',
         name: 'Lideka',

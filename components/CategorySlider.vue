@@ -24,7 +24,7 @@
             class="default-gradient mx-2 relative h-full lg:pb-20 "
             style="border-radius: 20px"
           >
-            <NuxtLink to="/categorie/rgb-led-strips">
+            <NuxtLink to="/products/rgb-led-light-strip-3-meter-smart-verlichting">
               <div class="p-6">
                 <div class="flex items-center flex-col">
                   <h2
@@ -238,7 +238,7 @@
             class="default-gradient mx-2 relative h-full lg:pb-20"
             style="border-radius: 20px"
           >
-            <NuxtLink to="/categorie/rgb-led-strips">
+            <NuxtLink to="/products/rgb-ic-led-light-strip-5-meter-smart-verlichting">
               <div class="p-6">
                 <div class="flex items-center flex-col">
                   <h2
@@ -452,7 +452,7 @@
             class="default-gradient mx-2 relative h-full lg:pb-20"
             style="border-radius: 20px"
           >
-            <NuxtLink to="/categorie/rgb-led-strips">
+            <NuxtLink to="/products/lideka-tv-led-strip-2-meter-usb-rgb-smart-verlichting">
               <div class="p-6">
                 <div class="flex items-center flex-col">
                   <h2
@@ -668,7 +668,7 @@
             class="default-gradient mx-2 relative h-full lg:pb-20"
             style="border-radius: 20px"
           >
-            <NuxtLink to="/categorie/rgb-led-strips">
+            <NuxtLink to="/products/rgb-led-light-strip-15-meter-tv-strip-3m-combinatie-pakket-1">
               <div class="p-6">
                 <div class="flex items-center flex-col">
                   <h2

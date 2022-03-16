@@ -147,6 +147,7 @@ export const getCollectionBySlug = async (slug: string) => {
       data {
         attributes {
           title,
+          slug
           cover {
             data {
               attributes {

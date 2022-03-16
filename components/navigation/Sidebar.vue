@@ -22,7 +22,13 @@
       </div>
       <div class="mt-5 flex-1 h-0 overflow-y-auto">
         <nav class="px-2 space-y-1">
-
+          <NuxtLink @click.native="closeSidebar()"
+                    prefetch
+                    to="/categorie/solar-powerbank"
+                    class="text-gray-400 bg-black hover:text-white group flex items-center px-2 py-2 text-base font-medium rounded-md"
+          >
+            Solar powerbank
+          </NuxtLink>
 
           <header class="font-bold text-sm py-2 px-2 tracking-wide uppercase text-uppercase text-white">LED-strips</header>
           <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strips" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-0">Alle LED-strips</NuxtLink>
@@ -49,14 +55,6 @@
           <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-10-meter" class="block px-2  py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-3">10 meter</NuxtLink>
           <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-15-meter" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-4">15 meter</NuxtLink>
           <NuxtLink @click.native="closeSidebar()" to="/categorie/led-strip-20-meter" class="block px-2 py-2 text-base text-gray-400 hover:bg-gray-900 hover:text-white rounded-md" role="menuitem" tabindex="-1" id="user-menu-item-5">20 meter</NuxtLink>
-
-          <NuxtLink @click.native="closeSidebar()"
-                    prefetch
-                    to="/categorie/solar-powerbank"
-                    class="text-gray-400 bg-black hover:text-white group flex items-center px-2 py-2 text-base font-medium rounded-md"
-          >
-            Solar powerbank
-          </NuxtLink>
 
           <NuxtLink @click.native="closeSidebar()"
                     prefetch

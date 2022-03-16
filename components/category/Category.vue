@@ -44,7 +44,14 @@
                 />
             </template>
 
-            <VideoReviews />
+            <VideoReviews
+                v-if="strapi.slug !== 'solar-powerbank'"
+            />
+            <VideoReviews
+                v-else
+                :show-video-reviews="false"
+                for-product="Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY4NzI1OTMwNzIyNzc="
+            />
 
             <Block 
                 v-for="(block, index) in strapi.body"
