@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="space-y-10">
         <CenterTitle :title="collection.title" :tag="heading_type" />
         <CenterParagraph v-if="collection.content">
             <p class="text-white font-extralight" v-html="collection.content"></p>

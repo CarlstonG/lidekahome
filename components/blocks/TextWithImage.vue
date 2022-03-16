@@ -16,7 +16,9 @@
         </div>
       </div>
       <div v-motion-fade-up :class="`flex items-center justify-center ${reverse ? 'order-first' : ''}`">
-        <img :class="`${smallImage ? 'w-52' : ''} rounded-2xl ${mediumImage ? 'w-96' : ''}`" :src="imageSrc" :alt="imageAlt" />
+        <component :is="linkBehindImage ? 'NuxtLink' : 'div'" :to="linkBehindImage">
+          <img :class="`${smallImage ? 'w-52' : ''} rounded-2xl ${mediumImage ? 'w-96' : ''}`" :src="imageSrc" :alt="imageAlt" />
+        </component>
       </div>
     </div>
   </div>
@@ -67,6 +69,10 @@ export default Vue.extend({
       type: String,
       default: () => 'Meer informatie'
     },
+    linkBehindImage: {
+      type: String,
+      default: null,
+    }
   }
 });
 </script>

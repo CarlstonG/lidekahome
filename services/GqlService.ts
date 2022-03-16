@@ -194,12 +194,14 @@ export const getCollectionBySlug = async (slug: string) => {
                   data {
                     attributes {
                       url
+                      alternativeText
                     }
                   }
                 }
                 display_image_left
                 cta_slug
                 cta_title
+                link
             }
             ... on ComponentContentTwoColumns {
               column_one_title

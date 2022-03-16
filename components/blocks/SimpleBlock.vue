@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="space-y-10">
         <SingleImage
             v-if="block.image.data"
           :image-src="block.image.data.attributes.url"

@@ -7,8 +7,9 @@
           :url="block.cta_slug"
           :urlText="block.cta_title"
           :titleTag="block.heading_type_inline"
+          :link-behind-image="block.link"
       >
-        <p class="text-white font-extralight" v-html="content"></p>
+        <div class="text-white font-extralight prose" v-html="content"></div>
       </TextWithImage>
 </template>
 
@@ -41,3 +42,9 @@ export default Vue.extend({
     }
 });
 </script>
+
+<style>
+.prose strong, .prose a {
+    color: #FFF;
+}
+</style>
