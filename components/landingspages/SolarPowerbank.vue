@@ -484,8 +484,8 @@
         title="Lideka staat 24/7 klaar om al jouw vragen te beantwoorden"
       />
 
-      <NewsletterBlock />
     </div>
+      <NewsletterBlock />
   </div>
 </template>
 
