@@ -229,6 +229,36 @@ export const getCollectionBySlug = async (slug: string) => {
                   }
                 }
               }
+            ... on ComponentContentCustomBenefits {
+              block_title
+              column_1_title
+              column_1_image {
+                data {
+                  attributes {
+                    url
+                    alternativeText
+                  }
+                }
+              }
+              column_2_title
+              column_2_image {
+                data {
+                  attributes {
+                    url
+                    alternativeText
+                  }
+                }
+              }
+              column_3_title
+              column_3_image {
+                data {
+                  attributes {
+                    url
+                    alternativeText
+                  }
+                }
+              }
+            }
           }
         }
       }

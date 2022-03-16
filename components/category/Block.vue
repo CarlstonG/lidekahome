@@ -24,6 +24,10 @@
             v-else-if="block.__typename === 'ComponentContentBenefits'"
             :block="block"
         />
+        <CustomBenefits
+            v-else-if="block.__typename === 'ComponentContentCustomBenefits'"
+            :block="block"
+        />
         <template
             v-else-if="block.__typename === 'ComponentContentSingleImage'"
         >
@@ -43,6 +47,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import BenefitsBlock from '~/components/blocks/BenefitsBlock.vue';
+import CustomBenefits from '~/components/blocks/CustomBenfits.vue';
 import TwoCols from '~/components/blocks/TwoCols.vue';
 import SimpleBlock from '~/components/blocks/SimpleBlock.vue';
 import SimpleBlockInline from '~/components/blocks/SimpleBlockInline.vue';
@@ -54,6 +59,7 @@ import SingleImage from "~/components/blocks/SingleImage.vue";
 export default Vue.extend({
     components: {
         BenefitsBlock,
+        CustomBenefits,
         TwoCols,
         SimpleBlock,
         LengthsBlock,
