@@ -1059,8 +1059,8 @@ export default Vue.extend({
     },
 
     handleLedTicker() {
-    this.ledMapped = this.isSolarPage ? 1013 : 50513;
-    const incrementVal = this.isSolarPage ? 25 : 1000;
+    this.ledMapped = this.isSolarPage ? 7013 : 50513;
+    const incrementVal = this.isSolarPage ? 150 : 1000;
     console.log(incrementVal);
     let t1 = new Date();
     let t2 = new Date("3/9/2022");
