@@ -214,9 +214,8 @@
       <CenterTitle title="Kies hier jouw specifieke toepassing" />
 
       <Usages />
-
-      <NewsletterBlock />
-    </div>
+      </div>
+    <NewsletterBlock />
   </div>
   </div>
 </template>

@@ -59,8 +59,8 @@
                 :block="block"
             />
 
-            <NewsletterBlock />
-        </div>
+            </div>
+        <NewsletterBlock />
     </div>
 </template>
 
