@@ -104,7 +104,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
-                Edisonstraat 98<br/>3281 NC Numansdorp
+                Koningsdreef 9<br/>3261 NJ Oud-beijerland
               </li>
               <li class="text-gray-300 text-sm">
                 <a href="https://klantenservice.lidekahome.nl/nl-NL" class="flex">

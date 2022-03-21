@@ -691,9 +691,9 @@ export default Vue.extend({
           "Uitstekende Service En Kwaliteit, Klanten Geven Ons Een Beoordeling Van Gemiddeld 9,6. Op Werkdagen Voor 23:59 besteld = Morgen thuis, Gratis Verzending En Retour. Duurzaam.",
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Edisonstraat 98",
-          postalCode: "3281",
-          streetAddress: "NC Numansdorp",
+          addressLocality: "Koningsdreef 9",
+          postalCode: "3261",
+          streetAddress: "NJ Oud-beijerland",
         },
         potentialAction: {
           "@type": "SearchAction",
@@ -728,11 +728,11 @@ export default Vue.extend({
         logo: "https://lidekahome.nl/_nuxt/img/78f730f.svg",
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Edisonstraat 98",
           addressCountry: "Netherlands",
-          addressRegion: "NC",
-          postalCode: "3281",
-          streetAddress: "NC Numansdorp",
+          addressRegion: "NJ",
+          addressLocality: "Koningsdreef 9",
+          postalCode: "3261",
+          streetAddress: "NJ Oud-beijerland",
         },
         potentialAction: {
           "@type": "SearchAction",
@@ -746,7 +746,7 @@ export default Vue.extend({
           ratingValue: "5",
         },
         hasMap:
-          "https://www.google.com/maps/dir/28.6200889,78.0548846/Edisonstraat+98,+3281+NC+Numansdorp,+Netherlands/@34.2985409,5.1980521,3z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47c4398b15af62e1:0x7228e8bcd6bc5b!2m2!1d4.444899!2d51.745817",
+          "https://www.google.com/maps/place/koningsdreef+9,+3261+LJ+Oud-Beijerland/@51.8178223,4.4142213,17z/data=!3m1!4b1!4m9!1m2!2m1!1sKoningsdreef+9,+Oud-beijerland,+3261+NJ!3m5!1s0x47c436fbe5220f89:0xeb85a8072b37361!8m2!3d51.817819!4d4.41641!15sCidLb25pbmdzZHJlZWYgOSwgT3VkLWJlaWplcmxhbmQsIDMyNjEgTkqSARBnZW9jb2RlZF9hZGRyZXNz",
         review: [
           {
             "@type": "Review",
