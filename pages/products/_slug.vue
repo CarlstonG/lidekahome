@@ -83,6 +83,7 @@
         <div class="grid grid-cols-1 md:grid-cols-12 mx-6 lg:mx-0 relative">
           <div class="px-0 md:px-6 mb-8 md:mb-0 col-span-1 md:col-span-6">
             <div
+              v-if="isMounted"
               style="--swiper-navigation-color: #2563eb; --swiper-pagination-color: #2563eb; --swiper-navigation-size: 40px"
               class="swiper-container mySwiper2 mb-2"
             >
@@ -900,6 +901,7 @@ export default Vue.extend({
       openFaqItems: [],
       ledMappedFinal: "0",
       tickerDone: false,
+      isMounted: false,
     };
   },
 
@@ -1061,7 +1063,6 @@ export default Vue.extend({
     handleLedTicker() {
     this.ledMapped = this.isSolarPage ? 7013 : 50513;
     const incrementVal = this.isSolarPage ? 150 : 1000;
-    console.log(incrementVal);
     let t1 = new Date();
     let t2 = new Date("3/9/2022");
 
@@ -1123,6 +1124,7 @@ export default Vue.extend({
     window.addEventListener("scroll", this.isScrolledPastAddToCartButton);
 
     this.getProductUpsells();
+    this.isMounted = true;
   },
 
   beforeDestroy() {

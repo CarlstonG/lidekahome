@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="h-40 md:h-32 block">&nbsp;</div>
-     <div class="md:hidden fixed h-10 top-0 z-50 py-2 w-full bg-gradient-to-r from-indigo-400 to-purple-500 ">
-            <carousel v-bind="options" >
+    <div v-bind:class="!isProductPage() && showAnnouncementBarBelow ? 'bottom-0': 'top-0'" class="md:hidden fixed h-10 z-50 py-2 w-full bg-gradient-to-r from-indigo-400 to-purple-500 ">
+            <carousel v-if="isMounted" v-bind="options" >
                <slide class="flex-1 flex justify-center align-middle">
                  <div>
                    <DeliveryTime class="text-md leading-6 text-white" />
@@ -89,8 +89,8 @@
         </div>
       </div>
     </div>
-    <div  v-bind:class="!isProductPage() ? 'md:fixed': ''" class="absolute right-0 top-10 md:top-10 left-0 z-40 shadow-lg">
-      <nav class="bg-black/75 shadow-lg">
+    <div  v-bind:class="customNavClass" class="right-0 md:top-10 left-0 z-40 shadow-lg">
+      <nav class="bg-black md:bg-black/75 shadow-lg">
         <div class="max-w-7xl mx-auto px-2 px-2 md:px-2">
           <div class="relative flex items-center justify-between h-20">
             <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -268,7 +268,7 @@
 
 
 
-        <div class="md:hidden absolute bg-black z-10 left-0 right-0" id="mobile-menu">
+        <div class="md:hidden absolute bg-black md:bg-black/75 z-10 left-0 right-0" id="mobile-menu">
           <div class="px-2 pb-2">
             <Search id="search-mobile"/>
           </div>
@@ -315,6 +315,9 @@ export default Vue.extend({
         navigationEnabled: false,
       },
       sidebarIsOpen: false,
+      isMounted: false,
+      showAnnouncementBarBelow: false,
+      customNavClass:"absolute top-10",
     };
   },
 
@@ -332,7 +335,19 @@ export default Vue.extend({
     },
     isProductPage() {
       return this.$route.path.includes("/products/");
-    }
+    },
+    stickyNavClass(){
+      if(this.isProductPage()) return 'absolute top-10';
+
+      if(this.showAnnouncementBarBelow){
+        return "fixed top-0";
+      }
+      return "fixed top-10";
+    },
+    isPageScrolled(){
+      this.showAnnouncementBarBelow = window.scrollY > 100;
+      this.customNavClass = this.stickyNavClass();
+    },
   },
 
   computed: {
@@ -352,6 +367,13 @@ export default Vue.extend({
       'customer',
       'loggedIn'
     ]),
+
+    
+  },
+  mounted(){
+    this.isMounted = true;
+    this.isPageScrolled();
+    window.addEventListener("scroll", this.isPageScrolled);
   }
 });
 </script>
