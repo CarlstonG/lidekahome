@@ -689,49 +689,6 @@
       >
         <img src="~/assets/happy_customers.png" class="mx-auto rounded-xl" />
       </div>
-
-      <div
-        v-show="!isSolarPage"
-        class="w-full px-6 lg:px-0 pb-10 pt-6 bg-black"
-      >
-        <CenterTitle
-          class="my-4"
-          title="De voordelen van jouw nieuwe RGB LED-strip"
-        />
-
-        <Benefits
-          v-show="!isSolarPage"
-          :first-block="{
-            title: 'Energiebesparend',
-            description: 'Energiebesparend',
-            imageSrc: require('assets/icon/icons8-forest.svg'),
-          }"
-          :second-block="{
-            title: 'Naadloze overgang',
-            description: 'Naadloze overgang op het geluid van de tv',
-            imageSrc: require('assets/icon/icons8-audio-wave-50.svg'),
-          }"
-        />
-
-        <BenefitsThreeCols
-          v-show="!isSolarPage"
-          :first-block="{
-            title: 'Kleuren',
-            description: '16 miljoen kleuren',
-            imageSrc: require('assets/icon/icons8-paint-palette-50.svg'),
-          }"
-          :second-block="{
-            title: 'Makkelijke bevestiging',
-            description: 'Makkelijke bevestiging',
-            imageSrc: require('assets/icon/icons8-wrench-50.svg'),
-          }"
-          :third-block="{
-            title: 'Helderheid',
-            description: 'Hoge helderheid',
-            imageSrc: require('assets/icon/icons8-shade-selected-faces-50.svg'),
-          }"
-        />
-      </div>
     </div>
   </div>
 </template>

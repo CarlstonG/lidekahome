@@ -47,7 +47,7 @@ export default Vue.extend({
   },
 
   head() {
-    return {
+    const head =  {
       title: safeGet(this.page, 'seo.title', safeGet(this.page, 'title')),
       meta: [
         {
@@ -67,6 +67,16 @@ export default Vue.extend({
         },
       ]
     }
+
+    if (safeGet(this.page, 'seo.page_no_index')) {
+      head.meta.push({
+        hid: 'robots',
+        name: 'robots',
+        content: 'noindex',
+      })
+    }
+
+    return head;
   },
 
   async asyncData({params}) {

@@ -114,6 +114,7 @@ export const getPageBySlug = async (slug: string) => {
               SEO {
                 title
                 description
+                page_no_index
               }
             }
           }
