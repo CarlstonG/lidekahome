@@ -744,7 +744,7 @@ export default Vue.extend({
   },
 
   head() {
-    return {
+    const head = {
       title:
         safeGet(this.product, "seo.title") ?? safeGet(this.product, "title"),
       meta: [
@@ -774,7 +774,21 @@ export default Vue.extend({
           content: safeGet(this.product, "product.title"),
         },
       ],
+      link: [],
     };
+
+    if (safeGet(this.product, "canonicalUrls", [])) {
+      const urls = safeGet(this.product, "canonicalUrls", []);
+
+      for (const url of urls) {
+        head.link.push({
+          rel: "canonical",
+          href: url,
+        });
+      }
+    }
+
+    return head;
   },
 
   computed: {
