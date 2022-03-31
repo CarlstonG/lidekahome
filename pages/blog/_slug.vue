@@ -114,7 +114,12 @@ export default Vue.extend({
           hid: 'og:image:alt',
           property: 'og:image:alt',
           content: safeGet(this.blog, 'article.imageAlt')
-        }
+        },
+        {
+          hid: "og:type",
+          property: "og:type",
+          content: "article",
+        },
       ]
     }
   },

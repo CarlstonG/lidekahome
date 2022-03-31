@@ -773,6 +773,11 @@ export default Vue.extend({
           property: "og:image:alt",
           content: safeGet(this.product, "product.title"),
         },
+        {
+          hid: "og:type",
+          property: "og:type",
+          content: "product",
+        },
       ],
       link: [],
     };
