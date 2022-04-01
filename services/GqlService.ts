@@ -115,7 +115,9 @@ export const getPageBySlug = async (slug: string) => {
                 title
                 description
                 page_no_index
-                canonical_url
+                canonical_url_field {
+                  url
+                }
               }
             }
           }
@@ -164,7 +166,9 @@ export const getCollectionBySlug = async (slug: string) => {
           seo {
             title
             description
-            canonical_url
+            canonical_url_field {
+              url
+            }
           }
           collections {
             shopify_collection_slug
@@ -281,4 +285,27 @@ export const getCollectionBySlug = async (slug: string) => {
   }
 
   return page.attributes;
+}
+
+export const getSitemap = async () => {
+  const query = gql`query {
+    sitemaps {
+      data {
+        attributes {
+          url
+          priority
+          lastmod
+          changefreq
+        }
+      }
+    }
+  }`;
+
+  console.log('test', process.env.graphqlClient);
+
+  const result = await request('http://localhost:1337/graphql', query);
+
+  const sitemap = result.sitemaps.data ?? null;
+
+  return sitemap;
 }

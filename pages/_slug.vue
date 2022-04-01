@@ -77,11 +77,15 @@ export default Vue.extend({
       })
     }
 
-    if (safeGet(this.page, 'seo.canonical_url')) {
-      head.link.push({
+    if (safeGet(this.page, "seo.canonical_url_field", [])) {
+      const urls = safeGet(this.page, "seo.canonical_url_field", []);
+
+      for (const url of urls) {
+        head.link.push({
           rel: "canonical",
-          href: safeGet(this.page, 'seo.canonical_url'),
+          href: url.url,
         });
+      }
     }
 
     return head;

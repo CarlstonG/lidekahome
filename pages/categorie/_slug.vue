@@ -396,11 +396,15 @@ export default Vue.extend({
       link: [],
     };
 
-    if (safeGet(this.collectionStrapi, 'seo.canonical_url')) {
-      head.link.push({
+    if (safeGet(this.collectionStrapi, "seo.canonical_url_field", [])) {
+      const urls = safeGet(this.collectionStrapi, "seo.canonical_url_field", []);
+
+      for (const url of urls) {
+        head.link.push({
           rel: "canonical",
-          href: safeGet(this.collectionStrapi, 'seo.canonical_url'),
+          href: url.url,
         });
+      }
     }
 
     return head;

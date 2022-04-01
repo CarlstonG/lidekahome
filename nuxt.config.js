@@ -1,5 +1,6 @@
 import {sortRoutes} from '@nuxt/utils'
 import axios from "axios";
+import { getSitemap } from './services/GqlService';
 
 export default {
     // Target: https://go.nuxtjs.dev/config-target
@@ -514,15 +515,17 @@ export default {
                 res.end();
             }
 
-            /*
-            if (req.url.match('sitemap.xml')) {
-              await axios.get(`${process.env.ROCKSOLID_API_URL}/sitemap?api_key=${process.env.ROCKSOLID_API_KEY}`).then((response) => {
-                res.end(response.data);
-              }).catch((err) => {
-                res.end(err);
-              })
-            }
-             */
+            // if (req.url.match('sitemap.xml')) {
+            //    const sitemap = await getSitemap();
+
+            //    console.log(sitemap);
+
+            //    let result = `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">`;
+
+
+            //     result += `</urlset>`;
+            //    res.end(result);
+            // }
 
             next();
         }
