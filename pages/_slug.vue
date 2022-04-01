@@ -65,7 +65,8 @@ export default Vue.extend({
           property: 'og:description',
           content: safeGet(this.page, 'seo.description', safeGet(this.page, 'body'))
         },
-      ]
+      ],
+      link: [],
     }
 
     if (safeGet(this.page, 'seo.page_no_index')) {
@@ -74,6 +75,13 @@ export default Vue.extend({
         name: 'robots',
         content: 'noindex',
       })
+    }
+
+    if (safeGet(this.page, 'seo.canonical_url')) {
+      head.link.push({
+          rel: "canonical",
+          href: safeGet(this.page, 'seo.canonical_url'),
+        });
     }
 
     return head;

@@ -369,7 +369,7 @@ export default Vue.extend({
   },
 
   head() {
-    return {
+    const head = {
       title: safeGet(this.collectionStrapi, 'seo.title', safeGet(this.collection, 'seoTitle')) ?? 'Lideka',
       meta: [
         {
@@ -392,8 +392,18 @@ export default Vue.extend({
           name: 'og:site_name',
           content: 'Lideka',
         },
-      ]
+      ],
+      link: [],
+    };
+
+    if (safeGet(this.collectionStrapi, 'seo.canonical_url')) {
+      head.link.push({
+          rel: "canonical",
+          href: safeGet(this.collectionStrapi, 'seo.canonical_url'),
+        });
     }
+
+    return head;
   },
 
   jsonld() {

@@ -115,6 +115,7 @@ export const getPageBySlug = async (slug: string) => {
                 title
                 description
                 page_no_index
+                canonical_url
               }
             }
           }
@@ -163,6 +164,7 @@ export const getCollectionBySlug = async (slug: string) => {
           seo {
             title
             description
+            canonical_url
           }
           collections {
             shopify_collection_slug
