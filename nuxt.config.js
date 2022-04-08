@@ -515,17 +515,25 @@ export default {
                 res.end();
             }
 
-            // if (req.url.match('sitemap.xml')) {
-            //    const sitemap = await getSitemap();
+            if (req.url.match('sitemap.xml')) {
+               const sitemap = await getSitemap();
 
-            //    console.log(sitemap);
+               let result = `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">`;
 
-            //    let result = `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">`;
-
-
-            //     result += `</urlset>`;
-            //    res.end(result);
-            // }
+                for (const item of sitemap) {
+                    result += `<url>
+                        <loc>${item.attributes.url}</loc>
+                        <lastmod>${item.attributes.lastmod}</lastmod>
+                        <priority>${item.attributes.priority}</priority>
+                        <changefreq>${item.attributes.changefreq}</changefreq>
+                    </url>`;
+                }
+                result += `</urlset>`;
+                res.writeHead(200, {
+                    'Content-Type': 'application/xml',
+                });
+               res.end(result);
+            }
 
             next();
         }
