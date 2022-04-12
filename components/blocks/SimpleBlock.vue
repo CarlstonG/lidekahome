@@ -15,7 +15,7 @@
       <LongParagraph
         :bg-color="block.dark_bg"
       >
-        <span class="text-white font-extralight" v-html="content"></span>
+        <span class="text-white font-extralight content" v-html="content"></span>
       </LongParagraph>
 
       <CTA
@@ -62,3 +62,9 @@ export default Vue.extend({
     }
 })
 </script>
+
+<style>
+.content h3 {
+  color: white;
+}
+</style>
