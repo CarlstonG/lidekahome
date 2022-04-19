@@ -24,6 +24,7 @@ import Vue from 'vue';
 import {mapGetters} from "vuex";
 import {getBlog} from "../services/ApiService";
 import CenterTitle from "../components/blocks/CenterTitle";
+import { getPages } from "../services/GqlService";
 
 export default Vue.extend({
   components: {CenterTitle},
@@ -79,17 +80,27 @@ export default Vue.extend({
           href: `/blog/${blog.handle}`
         }
       }),
-    })
+    });
+
+    const pages = await getPages();
 
     this.blocks.push({
       title: 'Pagina\'s',
       links: [
-        {
-          name: 'Home',
-          href: '/'
-        },
-      ]
-    })
+        ...[
+          {
+            name: 'Home',
+            href: '/'
+          },
+        ],
+        ...pages.map(page => {
+          return {
+            name: page.attributes.title,
+            href: page.attributes.slug,
+          }
+        }),
+      ],
+    });
   },
    async mounted() {
     window.dataLayer = window.dataLayer || [];

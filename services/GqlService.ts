@@ -103,6 +103,24 @@ export const getVacancyBySlug = async (slug: string) => {
     };
 }
 
+export const getPages = async () => {
+  const matation = gql`
+  query {
+      pages {
+        data {
+          attributes {
+            title
+            slug
+          }
+        }
+      }
+    }`;
+
+  const result = await request(process.env.graphqlClient as string, matation);
+
+  return result.pages.data;
+}
+
 export const getPageBySlug = async (slug: string) => {
     const matation = gql`
     query ($slug: String!){
