@@ -63,6 +63,17 @@
               </li>
 
               <li>
+                <a href="https://klantenservice.lidekahome.nl/nl-NL/articles/algemene-voorwaarden-5283" target="_blank" class="text-sm text-gray-300 hover:text-white">
+                  Algemene voorwaarden
+                </a>
+              </li>
+              <li>
+                <a href="https://klantenservice.lidekahome.nl/nl-NL/retourneren-22835" target="_blank" class="text-sm text-gray-300 hover:text-white">
+                  Retourneren
+                </a>
+              </li>
+
+              <li>
                 <NuxtLink to="/sitemap" class="text-sm text-gray-300 hover:text-white">
                   Sitemap
                 </NuxtLink>
