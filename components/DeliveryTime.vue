@@ -15,6 +15,7 @@ export default Vue.extend({
         },
 
         deliveryTime() {
+            return 'Vandaag besteld donderdag thuis';
             switch (this.weekDayNumber) {
                 case 1:
                 case 2:
