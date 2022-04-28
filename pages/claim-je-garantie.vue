@@ -2,23 +2,29 @@
     <div class="max-w-7xl mx-auto py-20">
         <div class="_living-room px-8 py-20 mb-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <h1 class="text-white text-4xl font-bold text-center">Vul het formulier in en ontvang x jaar extra grarantie op de RGB-ledstrips</h1>
-                <div class="space-y-4">
+                <h1 class="text-white text-4xl font-bold text-center">Vul je gegevens in, en ontvang 2 jaar garantie op jouw artikel van Lideka®</h1>
+                <form class="space-y-4" @submit.prevent="submit">
                     <FormField
                         class="flex-1"
                         :hide-label="true"
                         name="Voer je e-mailadres in"
                         input-type="email"
+                        :errors="$v.fields.email"
+                        :model-value.sync="fields.email"
                     />
                     <FormField
                         class="flex-1"
                         :hide-label="true"
                         name="Voer je naam in"
+                        :errors="$v.fields.name"
+                        :model-value.sync="fields.name"
                     />
                     <FormField
                         class="flex-1"
                         :hide-label="true"
                         name="Voer je bestelnummer in"
+                        :errors="$v.fields.order"
+                        :model-value.sync="fields.order"
                     />
 
                     <button
@@ -29,19 +35,15 @@
 
                     <p class="text-white text-sm">
                         Door je aan te melden, ga je akkoord met het
-                        <NuxtLink to="/privacy-statement" target="_blank" rel="noopener" class="underline">privacybeleid</NuxtLink>
+                        <a href="https://klantenservice.lidekahome.nl/nl-NL/privacy-statement-22829" target="_blank" rel="noopener" class="underline">privacybeleid</a>
                         en de
-                        <NuxtLink to="/algemene-voorwaarden" target="_blank" rel="noopener" class="underline">gebruiksvoorwaarden</NuxtLink>
+                        <a href="https://klantenservice.lidekahome.nl/nl-NL/articles/algemene-voorwaarden-5283" target="_blank" rel="noopener" class="underline">gebruiksvoorwaarden</a>
                     </p>
-                </div>
+                </form>
             </div>
-            <p class="text-white font-bold text-xl mt-6">
-                <span class="bg-indigo-400">Tijdelijke actie:</span>
-                Vul je bol.com reviewnaam in en ontvang iets extra's bij je volgende bestelling
-            </p>
         </div>
 
-        <div class="grid grid-cols-3 gap-8 mb-10">
+        <!-- <div class="grid grid-cols-3 gap-8 mb-10">
             <div class="flex items-center flex-col">
                 <img loading="lazy" src="~assets/icons/WEBicons-05.webp" alt="Makkelijk retourneren" class="w-20"/>
             </div>
@@ -90,7 +92,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="px-6 lg:px-0 my-10">
             <div class="mx-auto max-w-7xl py-10 px-8 default-gradient" style="border-radius: 20px;">
@@ -128,7 +130,7 @@
             </div>
         </div>
 
-        <div class="mt-10 mb-8 grid grid-cols-1 md:grid-cols-2 gap-8 px-6 lg:px-0">
+        <!-- <div class="mt-10 mb-8 grid grid-cols-1 md:grid-cols-2 gap-8 px-6 lg:px-0">
             <img src="~/assets/claim.png" alt="Claim jou garantie" />
             <div>
                 <h2 class="text-white text-3xl font-bold mb-4">Alles voor sfeer in huis</h2>
@@ -136,9 +138,9 @@
                     Lideka Home maakt het leven leuker, gezelliger en aantrekkelijker. Binnen de webshop vind je alle producten waarmee je die fijne sfeer meeneemt naar huis. Met unieke LED-verlichting creëer je zowel binnen als buiten een comfortabele omgeving; een plek waar je zelf graag bent, en waar je het liefst zit met de mensen om wie je het meest geeft. Ontdek hoe we tot onze ideeën zijn gekomen.
                 </p>
             </div>
-        </div>
+        </div> -->
 
-        <NewsletterBlock />
+        <!-- <NewsletterBlock /> -->
 
         <div class="mt-16">
             <SocialIcons />
@@ -148,9 +150,11 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import {email, required} from "vuelidate/lib/validators";
 import FormField from '~/components/input/FormField.vue';
 import NewsletterBlock from '~/components/NewsletterBlock.vue';
 import SocialIcons from '~/components/SocialIcons.vue';
+import { post } from '~/services/ApiService';
 
 export default Vue.extend({
     components: {
@@ -159,17 +163,76 @@ export default Vue.extend({
         SocialIcons,
     },
 
-    head() {
+    data() {
         return {
-            title: 'Claim X jaar garantie bij Lideka'
+            loading: false,
+            fields: {
+                name: '',
+                email: '',
+                order: '',
+            },
+        };
+    },
+
+    methods: {
+        async submit() {
+            if (this.loading) {
+                return;
+            }
+
+            this.loading = true;
+
+            this.$v.$touch();
+
+            if (this.$v.$invalid) {
+                this.$root.$emit('addNotification', 'Niet gelukt!', 'Vul alle velden correct in', 'error')
+            } else {
+                try {
+                    await post('/claim', {
+                        ...this.fields
+                    })
+
+                    this.$v.$reset();
+                    this.fields.email = '';
+                    this.fields.name = '';
+                    this.fields.order = '';
+                    this.$root.$emit('addNotification', 'Gelukt!', 'Je garantie claim is ingediend!', '', 5000)
+                } catch (err) {
+                this.$root.$emit('addNotification', 'Oops.', 'Er is iets fout gegaan.', 'error')
+                }
+
+                this.loading = false;
+            }
         }
     },
-     async mounted() {
-         // @ts-ignore
-    window.dataLayer = window.dataLayer || [];
-    // @ts-ignore
-    window.dataLayer.push({ event: "path_tracking", path: this.$route.path });
-  },
+
+    head() {
+        return {
+            title: 'Ontvang 2 jaar garantie op jouw artikel van Lideka®'
+        }
+    },
+    
+    async mounted() {
+        // @ts-ignore
+        window.dataLayer = window.dataLayer || [];
+        // @ts-ignore
+        window.dataLayer.push({ event: "path_tracking", path: this.$route.path });
+    },
+
+    validations: {
+        fields: {
+            email: {
+                required,
+                email
+            },
+            name: {
+                required,
+            },
+            order: {
+                required,
+            },
+        },
+    },
 })
 </script>
 

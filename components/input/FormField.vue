@@ -85,6 +85,9 @@ export default Vue.extend({
   watch: {
     value() {
       this.$emit('update:modelValue', this.value);
+    },
+    modelValue() {
+      this.value = this.modelValue;
     }
   }
 });

@@ -1,5 +1,5 @@
 <template>
-  <div aria-live="assertive" class="fixed inset-0 z-40 flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start">
+  <div aria-live="assertive" class="fixed inset-0 z-50 flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start">
     <div ref="notificationsRef" class="w-full flex flex-col items-center space-y-4 sm:items-end">
       <transition-group name="fade" class="w-full flex flex-col items-center space-y-4 sm:items-end">
         <Alert v-for="notification in notifications" :key="notification.id" :title="notification.title" :message="notification.message" :type="notification.type" :duration="notification.duration" @close="closeNotification(notification.id)" />
