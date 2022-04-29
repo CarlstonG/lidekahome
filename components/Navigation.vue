@@ -378,7 +378,7 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s ease-in-out, transform .25s ease-in-out;
 }

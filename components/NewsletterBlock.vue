@@ -107,7 +107,7 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .newsletter-block {
   background: url('~/assets/newsletter-background.png') no-repeat;
   background-position: center;

@@ -204,7 +204,7 @@ export default Vue.extend({
   },
 });
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .banner-desc p{
   font-size: 24px;
   line-height: 33px;

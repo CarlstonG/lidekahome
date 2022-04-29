@@ -202,7 +202,7 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .fade-enter-active, .fade-leave-active {
   max-height: 100px;
   transition: all .25s ease-in-out;

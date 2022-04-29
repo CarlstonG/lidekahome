@@ -40,7 +40,7 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .calendly {
     background: url('~assets/calendly-background.jpg') no-repeat;
     background-position: center;

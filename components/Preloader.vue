@@ -26,7 +26,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 @keyframes breathe {
   0% {
     opacity: 0;
