@@ -21,7 +21,7 @@
                             {{ vacancy.attributes.fulltime_partime }}
                         </p>
                         <NuxtLink :to="`/werken-bij/${vacancy.attributes.Slug}`"
-                        class="mt-4 background uppercase tracking-wide shadow-md py-1 px-6 border border-transparent rounded text-md text-white hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                        class="mt-4 work-background uppercase tracking-wide shadow-md py-1 px-6 border border-transparent rounded text-md text-white hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                         Bekijk vacature
                         </NuxtLink>
                     </div>
@@ -47,8 +47,8 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped>
-.background {
+<style lang="scss">
+.work-background {
     background: linear-gradient(100.91deg, #5AB6E7 -6.75%, #8560CD 111.47%);
 }
 </style>

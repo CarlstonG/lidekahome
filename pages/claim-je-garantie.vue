@@ -29,7 +29,7 @@
 
                     <button
                         type="submit"
-                        class="block w-full uppercase tracking-wide shadow-md py-1 px-6 border border-transparent rounded text-md text-white hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                        class="block claim-btn w-full uppercase tracking-wide shadow-md py-1 px-6 border border-transparent rounded text-md text-white hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                         Claim je garantie
                     </button>
 
@@ -236,8 +236,8 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped>
-button {
+<style lang="scss">
+button.claim-btn {
     background: linear-gradient(100.91deg, #5AB6E7 -6.75%, #8560CD 111.47%);
 }
 </style>
