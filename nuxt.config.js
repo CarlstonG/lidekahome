@@ -395,7 +395,7 @@ export default {
                 res.end();
             }
 
-            if (req.url.match("/claim")) {
+            if (req.url === '/claim') {
                 res.writeHead(301, {Location: req.url.replace("/claim", "/claim-je-garantie")})
                 res.end();
             }
