@@ -395,6 +395,11 @@ export default {
                 res.end();
             }
 
+            if (req.url.match("/claim")) {
+                res.writeHead(301, {Location: req.url.replace("/claim", "/claim-je-garantie")})
+                res.end();
+            }
+
             if (req.url.startsWith('/account/login')) {
                 res.writeHead(301, {Location: (`https://${process.env.SHOPIFY_CHECKOUT_DOMAIN}/account/login${(req.url.replace('/account/login', ''))}`)});
                 res.end();
