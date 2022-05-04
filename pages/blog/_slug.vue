@@ -12,14 +12,11 @@
       <div class="relative py-16 bg-white overflow-hidden">
         <div class="relative px-4 sm:px-6 lg:px-8">
           <div class="text-lg max-w-prose mx-auto">
-            <h1>
-              <span class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
-                {{ blog.article.publishedAt }}
-              </span>
-                <span
-                  class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                  {{ blog.article.title }}
-              </span>
+            <p class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
+              {{ blog.article.publishedAt }}
+            </p>
+            <h1 class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              {{ blog.article.title }}
             </h1>
           </div>
           <div class="max-w-prose prose-lg mx-auto pt-6">
@@ -88,32 +85,32 @@ export default Vue.extend({
 
   head() {
     return {
-      title: safeGet(this.blog, 'article.title'),
+      title: safeGet(this.blog, 'article.seo.title', safeGet(this.blog, 'article.title')),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: safeGet(this.blog, 'seo.description'),
+          content: safeGet(this.blog, 'article.seo.description', safeGet(this.blog, 'seo.description')),
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: safeGet(this.blog, 'article.title')
+          content: safeGet(this.blog, 'article.seo.title', safeGet(this.blog, 'article.title'))
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: safeGet(this.blog, 'seo.description')
+          content: safeGet(this.blog, 'article.seo.description', safeGet(this.blog, 'seo.description')),
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: safeGet(this.blog, 'article.image')
+          content: safeGet(this.blog, 'article.image'),
         },
         {
           hid: 'og:image:alt',
           property: 'og:image:alt',
-          content: safeGet(this.blog, 'article.imageAlt')
+          content: safeGet(this.blog, 'article.imageAlt'),
         },
         {
           hid: "og:type",
