@@ -400,6 +400,11 @@ export default {
                 res.end();
             }
 
+            if (req.url.match('/products/lideka-solar-powerbank-solar-charger-de-ultieme-combinatie-30-000-mah-powerbank-zeer-effieciente-solar-charger-iphone-samsung-apple')) {
+                res.writeHead(301, {Location: req.url.replace("lideka-solar-powerbank-solar-charger-de-ultieme-combinatie-30-000-mah-powerbank-zeer-effieciente-solar-charger-iphone-samsung-apple", "lideka-solar-powerbank-solar-charger-de-ultieme-combinatie")})
+                res.end();
+            }
+
             if (req.url.startsWith('/account/login')) {
                 res.writeHead(301, {Location: (`https://${process.env.SHOPIFY_CHECKOUT_DOMAIN}/account/login${(req.url.replace('/account/login', ''))}`)});
                 res.end();
