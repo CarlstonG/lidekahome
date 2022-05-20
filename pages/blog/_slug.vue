@@ -84,7 +84,7 @@ export default Vue.extend({
   },
 
   head() {
-    return {
+    const head = {
       title: safeGet(this.blog, 'article.seo.title', safeGet(this.blog, 'article.title')),
       meta: [
         {
@@ -117,8 +117,22 @@ export default Vue.extend({
           property: "og:type",
           content: "article",
         },
-      ]
+      ],
+      link: [],
     }
+
+    if (safeGet(this.blog, "article.canonicalUrls", [])) {
+      const urls = safeGet(this.blog, "article.canonicalUrls", []);
+
+      for (const url of urls) {
+        head.link.push({
+          rel: "canonical",
+          href: url,
+        });
+      }
+    }
+
+    return head;
   },
 
   computed: {
