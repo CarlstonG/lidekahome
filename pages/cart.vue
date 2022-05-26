@@ -188,7 +188,7 @@
                   <div class="flex items-start mb-4 px-6">
                     <div class="h-5 flex items-center">
                       <input id="terms" v-model="terms" name="terms" type="checkbox"
-                             class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                             class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" required>
                     </div>
                     <div class="ml-3 text-sm">
                       <label for="terms" class="font-medium text-gray-700">
