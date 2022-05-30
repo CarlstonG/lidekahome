@@ -1231,6 +1231,7 @@ export default Vue.extend({
   color: green;
   border: none;
   text-decoration: underline;
+  display: hidden;
 }
 
 .one-click-checkout-link button:hover {
