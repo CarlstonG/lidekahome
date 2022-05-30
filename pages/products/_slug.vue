@@ -1225,7 +1225,7 @@ export default Vue.extend({
     background-position: 0% 50%;
   }
 }
-
+/* remove display hidden if want to use */
 .one-click-checkout-link button {
   background: transparent;
   color: green;
