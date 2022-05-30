@@ -1228,18 +1228,18 @@ export default Vue.extend({
 }
 /* remove display hidden if want to use */
 .one-click-checkout-link button {
-  background: transparent;
+  /* background: transparent;
   color: green;
   border: none;
-  text-decoration: underline;
+  text-decoration: underline; */
   display: hidden;
 }
 
 .one-click-checkout-link button:hover {
-  background: transparent;
+  /* background: transparent;
   color: rgb(0, 59, 0);
   border: none;
-  text-decoration: underline;
+  text-decoration: underline; */
   display: hidden;
 }
 
