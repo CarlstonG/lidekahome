@@ -383,12 +383,13 @@
                 {{ product.isPreOrder ? "Pre-order" : "In winkelmandje" }}
               </button>
 
-              <OneClickCheckout
+            <!-- Remove button one checkout -->
+              <!-- <OneClickCheckout
                 v-if="!deliveryDate"
                 :product="product"
                 :direct-to-checkout="true"
                 class="mt-2 md:mt-0 md:ml-2 one-click-checkout-link"
-              />
+              /> -->
             </div>
 
             <p class="text-sm text-gray-500 mt-2">
@@ -1239,6 +1240,7 @@ export default Vue.extend({
   color: rgb(0, 59, 0);
   border: none;
   text-decoration: underline;
+  display: hidden;
 }
 
 .gradient-text {
