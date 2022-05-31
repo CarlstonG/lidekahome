@@ -335,10 +335,10 @@
           <a class="link" href="/categorie/rgb-ic-led-strips"
             >RGBIC LED-strips</a
           >,
-          <a class="link" href="/categorie/tv-led-strips">TV LED-strips</a> en
+          <a class="link" href="/categorie/tv-led-strips">TV LED-strips</a>
           <a class="link" href="/categorie/led-pakketten"
             >LED-strips pakketten</a
-          >.
+          > <a class="link" href="/categorie/solar-powerbank">Powerbanks en Solar Chargers</a>.
         </p>
         <p class="mx-auto text-white font-extralight">
           Ons assortiment zal snel uitgebreid worden met andere soorten slimme
