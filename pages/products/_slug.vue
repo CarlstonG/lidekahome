@@ -234,10 +234,10 @@
               v-if="isSolarPage"
               class="text-xl mt1 mb-2 italic font-bold gradient-text"
             >
-              10,000+ tevreden klanten!
+              50584 tevreden klanten!
             </h2>
             <h2 v-else class="text-base mt1 mb-2 font-bold gradient-text">
-              Meer dan 10,000+ kleurrijke klanten!
+              Meer dan 50584 kleurrijke klanten!
             </h2>
             <div class="flex"></div>
             <div class="flex mb-2 mt-2 items-end ">
