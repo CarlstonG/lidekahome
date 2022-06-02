@@ -78,6 +78,11 @@
                   Sitemap
                 </NuxtLink>
               </li>
+                <li>
+                <a href="https://klantenservice.lidekahome.nl/nl-NL/privacy-statement-22829" target="_blank" class="text-sm text-gray-300 hover:text-white">
+                  Privacy statement
+                </a>
+              </li>
             </ul>
           </div>
           <div class="mt-12 md:mt-0">
