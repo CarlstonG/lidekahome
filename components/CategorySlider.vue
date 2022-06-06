@@ -48,14 +48,14 @@
                   <img
                     src="~assets/products/14.png"
                     class="rounded-lg w-full max-w-xs"
-                  />
+                   alt="category1"/>
                   <div class="flex space-x-8 items-center justify-center">
                     <div class="text-center flex flex-col">
                       <div class="flex-grow flex items-center justify-center">
                         <img
                           class="w-10"
                           src="~assets/icon/icons8-verified-account-50.svg"
-                        />
+                        alt="category2"/>
                       </div>
                       <span
                         class="text-white font-bold text-xs tracking-wide uppercase mt-2"
@@ -67,7 +67,7 @@
                         <img
                           class="w-10"
                           src="~assets/icon/icons8-forest.svg"
-                        />
+                        alt="category3"/>
                       </div>
                       <span
                         class="text-white font-bold text-xs tracking-wide uppercase mt-2"
@@ -79,7 +79,7 @@
                         <img
                           class="w-10"
                           src="~assets/icon/icons8-shade-selected-faces-50.svg"
-                        />
+                        alt="category4"/>
                       </div>
                       <span
                         class="text-white font-bold text-xs tracking-wide uppercase mt-2"
@@ -262,14 +262,14 @@
                   <img
                     src="~assets/products/16.png"
                     class="rounded-lg w-full max-w-xs"
-                  />
+                  alt="category5"/>
                   <div class="flex space-x-8 items-center justify-center">
                     <div class="text-center flex flex-col">
                       <div class="flex-grow flex items-center justify-center">
                         <img
                           class="w-10"
                           src="~assets/icon/icons8-verified-account-50.svg"
-                        />
+                        alt="category6"/>
                       </div>
                       <span
                         class="text-white font-bold text-xs tracking-wide uppercase mt-2"
@@ -281,7 +281,7 @@
                         <img
                           class="w-10"
                           src="~assets/icon/icons8-forest.svg"
-                        />
+                        alt="category7"/>
                       </div>
                       <span
                         class="text-white font-bold text-xs tracking-wide uppercase mt-2"
@@ -476,14 +476,14 @@
                   <img
                     src="~assets/products/5.png"
                     class="rounded-lg w-full max-w-xs"
-                  />
+                  alt="category8"/>
                   <div class="flex space-x-8 items-center justify-center">
                     <div class="text-center flex flex-col">
                       <div class="flex-grow flex items-center justify-center">
                         <img
                           class="w-10"
                           src="~assets/icon/icons8-verified-account-50.svg"
-                        />
+                        alt="category9"/>
                       </div>
                       <span
                         class="text-white font-bold text-xs tracking-wide uppercase mt-2"
@@ -495,7 +495,7 @@
                         <img
                           class="w-10"
                           src="~assets/icon/icons8-forest.svg"
-                        />
+                        alt="category10"/>
                       </div>
                       <span
                         class="text-white font-bold text-xs tracking-wide uppercase mt-2"
@@ -507,7 +507,7 @@
                         <img
                           class="w-10"
                           src="~assets/icon/icons8-shade-selected-faces-50.svg"
-                        />
+                        alt="category11"/>
                       </div>
                       <span
                         class="text-white font-bold text-xs tracking-wide uppercase mt-2"
@@ -692,14 +692,14 @@
                   <img
                     src="~assets/products/18.png"
                     class="rounded-lg w-full max-w-xs"
-                  />
+                  alt="category12"/>
                   <div class="flex space-x-8 items-center justify-center">
                     <div class="text-center flex flex-col">
                       <div class="flex-grow flex items-center justify-center">
                         <img
                           class="w-10"
                           src="~assets/icon/icons8-verified-account-50.svg"
-                        />
+                        alt="category13"/>
                       </div>
                       <span
                         class="text-white font-bold text-xs tracking-wide uppercase mt-2"
@@ -723,7 +723,7 @@
                         <img
                           class="w-10"
                           src="~assets/icon/icons8-shade-selected-faces-50.svg"
-                        />
+                        alt="category14"/>
                       </div>
                       <span
                         class="text-white font-bold text-xs tracking-wide uppercase mt-2"

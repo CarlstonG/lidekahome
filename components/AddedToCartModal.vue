@@ -5,7 +5,7 @@
                 Het artikel is toegevoegd aan je winkelmandje
             </h2>
             <div class="flex mt-6">
-                <img :src="image" class="h-20 w-20">
+                <img :src="image" class="h-20 w-20" alt="cartimage">
                 <div class="flex-grow flex flex-col ml-3">
                     <h3 class="text-lg font-medium text-gray-900">
                         {{ product.title }}

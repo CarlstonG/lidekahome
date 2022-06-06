@@ -1,7 +1,7 @@
 <template>
     <div class="calendly max-w-7xl mx-auto p-5 md:pl-16 md:py-44 mb-10">
         <div class="relative md:w-2/3 p-5 md:py-16 md:pr-16 md:pl-28 text-white bg-white bg-opacity-10 rounded-3xl backdrop-filter backdrop-blur-sm">
-            <img :src="require('assets/calendly-person.svg')" alt="" class="hidden md:block absolute -left-12 top-20">
+            <img :src="require('assets/calendly-person.svg')" alt="calendlyimage" class="hidden md:block absolute -left-12 top-20">
             <h2 class="font-bold text-xl md:text-3xl">
                 Heb je problemen met het kiezen van de juiste LED-verlichting?
             </h2>
