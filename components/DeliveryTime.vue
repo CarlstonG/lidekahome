@@ -21,7 +21,7 @@ export default Vue.extend({
                 case 3:
                 case 4:
                 case 5:
-                    return 'Op werkdagen voor 23:30 besteld, volgende werkdag in huis';
+                    return ' Op werkdagen voor 23:30 besteld, volgende werkdag in huis';
                 case 6:
                     return 'Vandaag besteld, maandag thuis';
                 case 7:

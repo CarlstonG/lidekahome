@@ -5,17 +5,17 @@
             <carousel v-if="isMounted" v-bind="options" >
                <slide class="flex-1 flex justify-center align-middle">
                  <div>
-                   <DeliveryTime class="text-md leading-6 text-white" />
+                   <DeliveryTime class="text-xs leading-6 text-white" />
                  </div>
                </slide>
                <slide class="flex-1 flex justify-center">
                  <div>
-                    <p class="text-md leading-6 text-white">Gratis verzending<span class="hidden lg:inline"> in NL en BE</span></p>
+                    <p class="text-xs leading-6 text-white">Gratis verzending<span class="hidden lg:inline"> in NL en BE</span></p>
                  </div>
                </slide>
                <slide class="flex-1 flex justify-center">
                  <div>
-                   <p class="text-md leading-6 text-white">60 dagen gratis retourneren<span class="hidden lg:inline"> in NL en BE</span></p>
+                   <p class="text-xs leading-6 text-white">60 dagen gratis retourneren<span class="hidden lg:inline"> in NL en BE</span></p>
                  </div>
                </slide>
                <slide class="flex-1 flex justify-center">
@@ -43,7 +43,8 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <DeliveryTime class="ml-2 text-xs leading-6 text-gray-400" />
+                <p class="ml-2 text-xs leading-6 text-gray-400 smaller-text"><DeliveryTime/></p>
+                
               </dt>
               <dt class="flex items-center h-full">
                 <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -379,6 +380,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s ease-in-out, transform .25s ease-in-out;
 }
