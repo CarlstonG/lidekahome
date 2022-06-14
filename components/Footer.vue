@@ -61,7 +61,11 @@
                   Partners
                 </NuxtLink>
               </li>
-
+                <li>
+                <NuxtLink to="/team" class="text-sm text-gray-300 hover:text-white">
+                  Team
+                </NuxtLink>
+              </li>
               <li>
                 <a href="https://klantenservice.lidekahome.nl/nl-NL/articles/algemene-voorwaarden-5283" target="_blank" class="text-sm text-gray-300 hover:text-white">
                   Algemene voorwaarden

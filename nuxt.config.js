@@ -94,6 +94,7 @@ export default {
         hostname: 'https://lidekahome.nl',
         gzip: true,
         exclude: [
+            
             '/winkelwagen',
             '/sso',
             '/contact',
@@ -102,9 +103,11 @@ export default {
             '/account/*',
             '/klantenservice',
             '/auth/sso',
-            '/cart'
+            '/cart',
+            '/team'
         ],
         routes: ([
+         
             '/categorie/led-strips',
             '/categorie/solar-tuinverlichting',
             '/categorie/solar-powerbank',
