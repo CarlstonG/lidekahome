@@ -67,7 +67,7 @@
                 </NuxtLink>
               </li>
               <li>
-                <a href="https://klantenservice.lidekahome.nl/nl-NL/articles/algemene-voorwaarden-5283" target="_blank" class="text-sm text-gray-300 hover:text-white">
+                <a href="https://lidekahome.nl/algemene-voorwaarden" target="_blank" class="text-sm text-gray-300 hover:text-white">
                   Algemene voorwaarden
                 </a>
               </li>
