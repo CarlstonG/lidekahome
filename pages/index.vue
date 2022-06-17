@@ -111,6 +111,43 @@
       </div>
     </div>
 
+<!-- Solar added card -->
+         
+      <div class="mx-auto max-w-7xl mt-10 mb-10 px-6">
+      <h2 class="mx-auto text-3xl text-center text-white font-bold">
+        
+View the most sold Solar Powerbank now
+      </h2>
+      <p class="text-white text-2xl text-center mt-2">
+Solar Powerbank Summer Sale </p>
+
+<div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+<div class="bg-inherit rounded-lg shadow-md grid justify-items-center">
+        <img src="~assets/powerbank1.png" class="object-cover"/>
+     
+    <a target="_blank" href="https://lidekahome.nl/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge" class="bg-green-400 py-3	cursor: pointer px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75 justify-center">Buy Now</a>
+  </div>
+
+  <div class="bg-inherit rounded-lg shadow-md grid justify-items-center">
+        <img src="~assets/powerbank2.png" class="object-cover"/>
+    
+    <a target="_blank" href="https://lidekahome.nl/products/lideka-solar-powerbank-solar-charger-de-ultieme-combinatie" class="bg-green-400 py-3 px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75 justify-center">Buy Now</a>
+  </div>
+
+  <div class="bg-inherit rounded-lg shadow-md  grid justify-items-center">
+        <img src="~assets/powerbank3.png" class="object-cover"/>
+     
+    <a target="_blank" href="https://lidekahome.nl/products/solar-charger-2400-mah-5v-346-5-g" class="bg-green-400 py-3 px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75 justify-center">Buy Now</a>
+  </div>
+</div>
+      
+
+
+    </div>
+
+
+
+
     <div class="mx-auto max-w-7xl mt-10 mb-10 px-6">
       <h2 class="mx-auto text-3xl text-center text-white font-bold">
         De 4 meest populaire soorten LED-strips,
