@@ -452,24 +452,16 @@
             <h2
               class="text-white font-bold text-center text-2xl px-6 mt-4 uppercase tracking-wide"
             >
-              Kwaliteit
+              Duurzaamheid
             </h2>
             <p class="text-white font-extralight pt-6 px-6">
-              Zoals je hierboven al hebt gelezen gaan we voor een
-              <strong>degelijke kwaliteit</strong>. Een kwaliteit waarop jij kan
-              bouwen, en een kwaliteit waarin jij kan geloven.
+              Lideka® wil als merk en organisatie het stroomgebruik van huizen en daarmee consumenten met <strong>70%</strong> verminderen.
             </p>
             <p class="text-white font-extralight pt-6 px-6">
-              Al onze fabrieken worden zorgvuldig gecontroleerd op zaken zoals:
-              Kinderarbeid, slechte werkcondities en slechte salarissen. Alle
-              materialen die we gebruiken hebben een
-              <strong>uitstekende kwaliteit</strong>, tevens voldoen alle
-              artikelen aan de zogeheten <strong>CE markeringen</strong>.
+              We doen dat door middel van <strong>duurzame LED verlichting</strong>, en <strong>Solar apparaten</strong>. Alle bestellingen worden zo duurzaam mogelijk geleverd. Daarbij kiezen we altijd voor een <strong>degelijke kwaliteit</strong> materialen die langer meegaan.
             </p>
             <p class="text-white font-extralight pt-6 px-6">
-              Mocht er onverhoopt iets misgaan of ben je toch niet tevreden? Er
-              is altijd iemand voor jou beschikbaar om al je obstakels op te
-              lossen, twijfel nooit om contact op te nemen.
+              Ook binnen de organisatie doen we er alles aan om vuil te scheiden, zo min mogelijk te verspillen, en al het afval netjes te recyclen. Samen werken we aan een betere en <strong>duurzame toekomst</strong>. Zodat niet alleen wij kunnen genieten van een gezonde planeet, maar ook de volgende en volgende generatie.
             </p>
           </div>
         </div>
