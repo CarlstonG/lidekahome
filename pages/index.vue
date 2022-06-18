@@ -44,7 +44,7 @@
         <div
           class="mx-auto flex space-x-12 whitespace-nowrap py-3 px-4 sm:px-6 lg:space-x-24 lg:px-8"
         >
-          <div class="flex items-center text-sm font-medium text-indigo-400">
+          <div class="flex items-center text-xm font-medium text-indigo-400">
             <!-- Heroicon name: outline/truck -->
             <svg
               class="mr-2 flex-none w-6 h-6"
@@ -116,10 +116,10 @@
       <div class="mx-auto max-w-7xl mt-10 mb-10 px-6">
       <h2 class="mx-auto text-3xl text-center text-white font-bold">
         
-View the most sold Solar Powerbank now
+Bekijk nu de meest verkochte Solar Powerbank
       </h2>
       <p class="text-white text-2xl text-center mt-2">
-Solar Powerbank Summer Sale </p>
+Zomeruitverkoop op Powerbank </p>
 
 <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
 <div class="bg-inherit rounded-lg shadow-md grid justify-items-center">
