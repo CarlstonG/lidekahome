@@ -116,10 +116,10 @@
       <div class="mx-auto max-w-7xl mt-10 mb-10 px-6">
       <h2 class="mx-auto text-3xl text-center text-white font-bold">
         
-Bekijk nu de meest verkochte Solar Powerbank
+ Bekijk nu de meest verkochte Solar Powerbank
       </h2>
       <p class="text-white text-2xl text-center mt-2">
-Zomeruitverkoop op Powerbank </p>
+Zomeruitverkoop op Powerbank</p>
 
 <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
 <div class="bg-inherit rounded-lg shadow-md grid justify-items-center">
