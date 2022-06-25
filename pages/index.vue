@@ -65,7 +65,7 @@
               />
             </svg>
             
-            <DeliveryTime/>
+            <p>Op werkdagen voor 23:30 besteld, volgende werkdag in huis</p>
           </div>
 
           <div class="flex items-center text-sm font-medium text-indigo-400">
