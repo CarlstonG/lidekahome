@@ -44,7 +44,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <p class="ml-2 text-xs leading-6 text-gray-400 smaller-text"><DeliveryTime/></p>
+                <p class="ml-2 text-xs leading-6 text-gray-400 smaller-text">Op werkdagen voor 23:30 besteld, volgende werkdag in huis</p>
                 
               </dt>
               <dt class="flex items-center h-full">
