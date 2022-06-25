@@ -44,7 +44,7 @@
         <div
           class="mx-auto flex space-x-12 whitespace-nowrap py-3 px-4 sm:px-6 lg:space-x-24 lg:px-8"
         >
-          <div class="flex items-center text-xs font-medium text-indigo-400">
+          <div class="flex items-center text-sm font-medium text-indigo-400">
             <!-- Heroicon name: outline/truck -->
             <svg
               class="mr-2 flex-none w-6 h-6"

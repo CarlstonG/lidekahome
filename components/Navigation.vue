@@ -5,7 +5,8 @@
             <carousel v-if="isMounted" v-bind="options" >
                <slide class="flex-1 flex justify-center align-middle">
                  <div>
-                   <DeliveryTime class="text-xs leading-6 text-white" />
+                   <!-- <DeliveryTime class="text-xs leading-6 text-white" /> -->
+                   <p class="text-xs leading-6 text-white">Op werkdagen voor 23:30 besteld, volgende werkdag in huis</p>
                  </div>
                </slide>
                <slide class="flex-1 flex justify-center">
