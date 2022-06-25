@@ -4,7 +4,8 @@ import { getSitemap } from './services/GqlService';
 
 export default {
     // Target: https://go.nuxtjs.dev/config-target
-    target: 'server',
+    target: 'static',
+            
 
     server: {
         host: '0.0.0.0'

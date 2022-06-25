@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /sso
+Disallow: /account/
+Disallow: /auth/sso
+
+Sitemap: https://www.lidekahome.nl/sitemap.xml
