@@ -21,10 +21,10 @@ export default Vue.extend({
                 case 3:
                 case 4:
                 case 5:
-                    return 'Op werkdagen voor 23:30 besteld, volgende werkdag in huis';
+                    return 'An Werktagen vor 23:30 Uhr bestellt, am nächsten Werktag geliefert';
                 case 6:
                     // return 'Vandaag besteld, maandag thuis';
-                      return 'Op werkdagen voor 23:30 besteld, volgende werkdag in huis';
+                      return 'An Werktagen vor 23:30 Uhr bestellt, am nächsten Werktag geliefert';
                 case 7:
                     return 'Vandaag voor 20:30 besteld, morgen thuis';
             }

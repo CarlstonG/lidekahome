@@ -29,6 +29,7 @@
       "@nuxt/image"
     ]
   },
+  "jsx": "preserve",
   "exclude": [
     "node_modules",
     ".nuxt",

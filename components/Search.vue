@@ -23,7 +23,7 @@
           @click="isOpen = true"
           :class="{ 'bg-white border-white ring-white': isOpen }"
           class="block shadow-lg right-0 left-0 top-0 bottom-0 absolute z-20 w-full pl-10 pr-3 py-2 border-none rounded-md leading-5 bg-gray-900 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm"
-          placeholder="Zoek op product of categorie (/)"
+          placeholder="Suche nach Produkt oder Kategorie (/)"
           type="search"
           aria-label="Zoek naar een product"
         >

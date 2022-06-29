@@ -15,26 +15,28 @@
         />
       </video>
       <div
-        class="md:absolute w-fit bottom-2 left-2 px-6 py-4 md:p-6 md:bottom-20 md:left-0 md:bg-black/50 rounded-r-2xl "
+        class="md:absolute w-fit  px-6 py-4 md:p-6 md:bottom-20 md:left-0 md:bg-black/50 rounded-r-2xl "
       >
         <div class="lg:mt-0 bottom-2 md:bottom-20 md:left-20 items-center">
           <h1
             class="mx-auto my-2 text-3xl text-black md:text-white font-bold tracking-wide"
           >
-            Wij creëren de ultieme sfeer<br />
-            voor jou.
+            Wir schaffen die ultimative<br />
+            Atmosphäre
+          für dich.
           </h1>
           <h2
             class="mx-auto my-2 text-lg font-extralight text-black md:text-white mt-2 w-fit"
           >
-            Zowel binnen als buiten het huis, en dat doen
+            Sowohl innerhalb als auch außerhalb des Hauses
             <br v-if="!$device.isMobile" />
-            we met betaalbare Slimme LED-strips!
+            und das tun
+            wir mit erschwinglichen Smart LED Strips!
           </h2>
         </div>
         <div class="my-4 flex justify-left">
-          <CTA to="/products/rgb-led-light-strip-20-meter-smart-verlichting">
-            Best verkochte LED-strips
+          <CTA to="/products/rgb-led-light-strip-20-meter-smart-verlichting">          
+            Meistverkaufte LED-Streifen
           </CTA>
         </div>
       </div>
@@ -65,7 +67,7 @@
               />
             </svg>
             
-            <p>Op werkdagen voor 23:30 besteld, volgende werkdag in huis</p>
+            <p class="text-xs">An Werktagen vor 23:30 Uhr bestellt, am nächsten Werktag geliefert</p>
           </div>
 
           <div class="flex items-center text-sm font-medium text-indigo-400">
@@ -85,7 +87,7 @@
                 d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
               />
             </svg>
-            <p>Gratis verzending in NL en BE</p>
+            <p class="text-xs">Kostenloser Versand in NL und BE</p>
           </div>
 
           <div class="flex items-center text-sm font-medium text-indigo-400">
@@ -105,7 +107,7 @@
                 d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
-            <p>60 dagen gratis retourneren in NL en BE</p>
+            <p class="text-xs">60 Tage kostenlose Rückgabe in NL und BE</p>
           </div>
         </div>
       </div>
@@ -114,30 +116,29 @@
 <!-- Solar added card -->
          
       <div class="mx-auto max-w-7xl mt-10 mb-10 px-6">
-      <h2 class="mx-auto text-3xl text-center text-white font-bold">
-        
- Bekijk nu de meest verkochte Solar Powerbank
+      <h2 class="mx-auto text-3xl text-center text-white font-bold">      
+Sehen Sie sich jetzt die meistverkaufte Solar Powerbank an
       </h2>
       <p class="text-white text-2xl text-center mt-2">
-Zomeruitverkoop op Powerbank</p>
+Sommerschlussverkauf auf Powerbank</p>
 
 <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
 <div class="bg-inherit rounded-lg shadow-md grid justify-items-center">
         <img src="~assets/powerbank1.png" class="object-cover"/>
      
-    <a target="_blank" href="https://lidekahome.nl/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge" class="bg-green-400 py-3	cursor: pointer px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75 justify-center">Buy Now</a>
+    <a target="_blank" href="https://lidekahome.nl/products/solar-powerbank-30000-mah-4x-usb-usb-c-wireless-charge" class="bg-green-400 py-3	cursor: pointer px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75 justify-center">Kaufe jetzt</a>
   </div>
 
   <div class="bg-inherit rounded-lg shadow-md grid justify-items-center">
         <img src="~assets/powerbank2.png" class="object-cover"/>
     
-    <a target="_blank" href="https://lidekahome.nl/products/lideka-solar-powerbank-solar-charger-de-ultieme-combinatie" class="bg-green-400 py-3 px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75 justify-center">Buy Now</a>
+    <a target="_blank" href="https://lidekahome.nl/products/lideka-solar-powerbank-solar-charger-de-ultieme-combinatie" class="bg-green-400 py-3 px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75 justify-center">Kaufe jetzt</a>
   </div>
 
   <div class="bg-inherit rounded-lg shadow-md  grid justify-items-center">
         <img src="~assets/powerbank3.png" class="object-cover"/>
      
-    <a target="_blank" href="https://lidekahome.nl/products/solar-charger-2400-mah-5v-346-5-g" class="bg-green-400 py-3 px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75 justify-center">Buy Now</a>
+    <a target="_blank" href="https://lidekahome.nl/products/solar-charger-2400-mah-5v-346-5-g" class="bg-green-400 py-3 px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75 justify-center">Kaufe jetzt</a>
   </div>
 </div>
       
@@ -150,9 +151,9 @@ Zomeruitverkoop op Powerbank</p>
 
     <div class="mx-auto max-w-7xl mt-10 mb-10 px-6">
       <h2 class="mx-auto text-3xl text-center text-white font-bold">
-        De 4 meest populaire soorten LED-strips,
+        Die 4 beliebtesten Arten von LED-Streifen,
       </h2>
-      <p class="text-white text-2xl text-center mt-2">welke kies jij?</p>
+      <p class="text-white text-2xl text-center mt-2">welche wählen Sie aus?</p>
     </div>
 
     <div class="px-6 lg:px-0 max-w-7xl mx-auto mt-10">

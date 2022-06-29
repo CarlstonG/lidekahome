@@ -37,7 +37,6 @@
           title="3 meter strips"
           :collection="collection"
       />
-
       <VideoReviews />
 
       <TextWithImage
@@ -146,6 +145,7 @@
     </div>
       <NewsletterBlock />
   </div>
+   
 </template>
 
 <script lang="ts">
@@ -195,6 +195,7 @@ export default Vue.extend({
     NewsletterBlock,
     CTA,
   },
+  
   props: {
     collection: {
       type: Object,
@@ -226,7 +227,7 @@ export default Vue.extend({
         await getCollection('rgb-led-strips', {
           reverseImages: true,
           sortKey: 'PRICE',
-          reverse: true
+          reverse: true,
         }),
         await getCollection('tv-led-strips', {
           reverseImages: true,
@@ -242,6 +243,8 @@ export default Vue.extend({
           reverseImages: true,
           sortKey: 'PRICE',
           reverse: true
+       
+          
         })
       ])
 
@@ -251,5 +254,8 @@ export default Vue.extend({
       this.collection4 = col4;
     }
   },
+
+ 
 });
+
 </script>

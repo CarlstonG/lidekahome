@@ -6,17 +6,17 @@
                <slide class="flex-1 flex justify-center align-middle">
                  <div>
                    <!-- <DeliveryTime class="text-xs leading-6 text-white" /> -->
-                   <p class="text-xs leading-6 text-white">Op werkdagen voor 23:30 besteld, volgende werkdag in huis</p>
+                   <p class="text-xs leading-6 text-white">An Werktagen vor 23:30 Uhr bestellt, am nächsten Werktag geliefert</p>
                  </div>
                </slide>
                <slide class="flex-1 flex justify-center">
                  <div>
-                    <p class="text-xs leading-6 text-white">Gratis verzending<span class="hidden lg:inline"> in NL en BE</span></p>
+                    <p class="text-xs leading-6 text-white">Kostenloser Versand in NL und BEKostenloser Versand in NL und BE</p>
                  </div>
                </slide>
                <slide class="flex-1 flex justify-center">
                  <div>
-                   <p class="text-xs leading-6 text-white">60 dagen gratis retourneren<span class="hidden lg:inline"> in NL en BE</span></p>
+                   <p class="text-xs leading-6 text-white">60 Tage kostenlose Rückgabe in NL und BE</p>
                  </div>
                </slide>
                <slide class="flex-1 flex justify-center">
@@ -44,7 +44,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <p class="ml-2 text-xs leading-6 text-gray-400 smaller-text">Op werkdagen voor 23:30 besteld, volgende werkdag in huis</p>
+                <p class="ml-2 text-xs leading-6 text-gray-400 smaller-text">An Werktagen vor 23:30 Uhr bestellt, am nächsten Werktag geliefert</p>
                 
               </dt>
               <dt class="flex items-center h-full">
@@ -53,7 +53,9 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <p class="ml-2 text-xs leading-6 text-gray-400">Gratis verzending<span class="hidden lg:inline"> in NL en BE</span></p>
+                <p class="ml-2 text-xs leading-6 text-gray-400">Kostenloser Versand in NL und BE
+
+</p>
               </dt>
               <dt class="flex items-center h-full">
                 <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -61,7 +63,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <p class="ml-2 text-xs leading-6 text-gray-400">60 dagen gratis retourneren<span class="hidden lg:inline"> in NL en BE</span></p>
+                <p class="ml-2 text-xs leading-6 text-gray-400">60 Tage kostenlose Rückgabe in NL und BE</span></p>
               </dt>
             </div>
 
@@ -206,8 +208,7 @@
                     <NuxtLink prefetch
                               to="/categorie/accessoires"
                               class="text-gray-300 hover:bg-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    >
-                      Accessoires
+                    >Zubehör
                     </NuxtLink>
                   </div>
                 </div>
@@ -237,7 +238,9 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                 </svg>
-                <span class="hidden md:block text-sm ml-2">Inloggen</span>
+                 <!-- inloggin -->
+                <span class="hidden md:block text-sm ml-2">Anmeldung</span>
+                <!-- inloggin login button-->
               </a>
 
               <NuxtLink to="/winkelwagen"
@@ -252,7 +255,8 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                 </svg>
-                <span class="hidden md:block text-sm ml-2">Winkelwagen</span>
+                <!-- <span class="hidden md:block text-sm ml-2">Winkelwagen</span> -->
+                <span class="hidden md:block text-sm ml-2">Einkaufswagen</span>
               </NuxtLink>
 
               <NuxtLink to="/wishlist"

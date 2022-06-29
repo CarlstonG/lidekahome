@@ -20,7 +20,7 @@
     <div class="mx-auto max-w-7xl mt-10 mb-10">
       <LongParagraph>
         <p class="text-white font-extralight">
-          Ben je opzoek naar een leuke verlichting strip van 2 meter? Lideka bied je graag zijn
+          Ben je op zoek naar een leuke verlichting strip van 2 meter? Lideka bied je graag zijn
           <a href="/categorie/tv-led-strips">TV LED-strip</a> van 2 meter aan met een totaal van 60 magische lampjes. We maken gebruik van de meest heldere, duurzame en sterke LED's die er zijn op de markt. Je bent bij ons aan het perfect adres als het gaat om een LED-strip van 2 meter.
         </p>
       </LongParagraph>

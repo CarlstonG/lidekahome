@@ -147,7 +147,7 @@
                   <button
                     class="px-6 py-2 mt-4 bg-green-600 hover:bg-green-700 z-50 rounded-full text-white space-x-4 flex items-center"
                   >
-                    <span>Koop nu RGB LED-strips!</span>
+                    <span>Kaufe jetzt RGB LED-strips!</span>
                   </button>
                 </div>
               </div>
@@ -361,7 +361,7 @@
                   <button
                     class="px-6 py-2 mt-4 bg-green-600 hover:bg-green-700 z-50 rounded-full text-white space-x-4 flex items-center"
                   >
-                    <span>Koop nu RGB-IC LED-Strips!</span>
+                    <span>Kaufe jetzt RGB-IC LED-Strips!</span>
                   </button>
                 </div>
               </div>
@@ -576,7 +576,7 @@
                   <button
                     class="px-6 py-2 mx-auto mt-4 bg-green-600 hover:bg-green-700 z-50 rounded-full text-white space-x-4 flex items-center"
                   >
-                    <span>Koop nu TV LED-Strips!</span>
+                    <span>Kaufe jetzt TV LED-Strips!</span>
                   </button>
                 </div>
               </div>
