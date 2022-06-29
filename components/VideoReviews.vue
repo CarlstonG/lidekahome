@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h2 class="uppercase text-white font-bold text-3xl mx-auto mb-6 max-w-5xl">
-WAS ANDERE ÜBER LIDEKA SAGEN SERVICE UND QUALITÄT?</h2>
+    <h2 class="uppercase text-center text-white font-bold text-3xl mx-auto mb-6 max-w-5xl">WAS ANDERE ÜBER LIDEKA SAGEN SERVICE UND QUALITÄT?</h2>
     <client-only>
       <carousel v-if="showVideoReviews" v-bind="options" :perPageCustom="[[480, 1], [768, 1], [1022, 2]]" :navigation-enabled="true"
                 :navigation-prev-label="prevLabel" :navigation-next-label="nextLabel">

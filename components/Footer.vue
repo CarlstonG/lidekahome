@@ -32,7 +32,7 @@
     <footer class="bg-black" aria-labelledby="footerHeading">
       <h2 id="footerHeading" class="sr-only">Footer</h2>
       <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
               Pagina's
@@ -61,11 +61,18 @@
                   Partners
                 </NuxtLink>
               </li>
-                <li>
+              </ul>
+              </div>
+              <div>
+              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+              Pagina's
+            </h3>
+              <ul class="mt-4 space-y-2">
+                <!-- <li>
                 <NuxtLink to="/team" class="text-sm text-gray-300 hover:text-white">
                   Team
                 </NuxtLink>
-              </li>
+              </li> -->
               <li>
                 <a href="https://lidekahome.nl/algemene-voorwaarden" target="_blank" class="text-sm text-gray-300 hover:text-white">
                   Algemene voorwaarden

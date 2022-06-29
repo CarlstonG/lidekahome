@@ -224,12 +224,10 @@ Sommerschlussverkauf auf Powerbank</p>
         >
           <div>
             <h2 class="mx-auto text-3xl text-center font-bold">
-              Schakel om de magie te zien!
+              Schalten Sie um, um die Magie zu sehen!
             </h2>
             <p class="px-4 text-center mx-auto pt-6">
-              Schakel tussen verschillende soorten verlichting waarmee u uw huis
-              kunt verfraaien. Lideka LED kan uw huis verlichten voor het
-              alledaagse, informele leven en het opfleuren voor feestjes!
+              Wechseln Sie zwischen verschiedenen Beleuchtungsarten, mit denen Sie Ihr Zuhause beleuchten können verschönern kann. Lideka LED kann Ihr Zuhause dafür beleuchten Alltagsleben und verschönern Sie es für Partys!
             </p>
             <div
               v-if="!$device.isMobile"
@@ -237,8 +235,8 @@ Sommerschlussverkauf auf Powerbank</p>
             >
               <div class="px-2 ">
                 <h3 class="text-white uppercase text-center">
-                 kleurrijke<br />
-                  verlichting
+                  bunt<br />
+                  Hilfe
                 </h3>
               </div>
               <div class="px-4 mt-4">
@@ -250,8 +248,7 @@ Sommerschlussverkauf auf Powerbank</p>
               </div>
               <div class="px-2">
                 <h3 class="text-white uppercase text-center">
-                 functionele <br />
-                  verlichting
+                 funktionell <br /> Hilfe 
                 </h3>
               </div>
             </div>
@@ -264,7 +261,7 @@ Sommerschlussverkauf auf Powerbank</p>
 
     <div class="mx-auto max-w-7xl mb-10 px-6">
       <h2 class="mx-auto text-3xl text-center text-white font-bold">
-        Kies jou specifieke lengte
+        Wählen Sie Ihre spezifische Länge
       </h2>
     </div>
 
@@ -274,7 +271,7 @@ Sommerschlussverkauf auf Powerbank</p>
 
     <div class="mx-auto max-w-7xl mb-10 px-6">
       <h2 class="mx-auto text-3xl text-center text-white font-bold">
-        Kies hier jouw specifieke toepassing
+        Wählen Sie hier Ihre spezifische Anwendung aus
       </h2>
     </div>
 
@@ -302,14 +299,12 @@ Sommerschlussverkauf auf Powerbank</p>
             <h3
               class="text-gray-100 tracking-wide text-center font-bold uppercase mt-4"
             >
-              Duurzame verlichting
+              NACHHALTIGE BELEUCHTUNG
             </h3>
             <p
               class="text-white font-extralight text-lg pt-6 px-6 lg:px-20 text-left md:text-center tracking-wide"
             >
-              Onze duurzame smart verlichting is met zorg geproduceerd,
-              makkelijk bedienbaar, en draagt bij aan het behoud van onze
-              planeet!
+              Unsere nachhaltige intelligente Beleuchtung wird mit Sorgfalt hergestellt, einfach zu bedienen und trägt zum Erhalt unserer Umwelt bei Planet!
             </p>
           </div>
         </div>
@@ -331,13 +326,12 @@ Sommerschlussverkauf auf Powerbank</p>
             <h3
               class="text-gray-100 tracking-wide text-center font-bold uppercase mt-4"
             >
-              Gratis retourneren
+              Kostenlose Rücksendung
             </h3>
             <p
               class="text-white font-extralight text-lg pt-6 px-6 lg:px-20 text-left md:text-center tracking-wide"
             >
-              Ben je niet tevreden met je aankoop? Retourneer makkelijk, gratis,
-              en ontvang het volledige aankoopbedrag terug.
+Sind Sie mit Ihrem Kauf nicht zufrieden? Rücksendung einfach, kostenlos, und erhalten den vollen Kaufbetrag zurück.
             </p>
           </div>
         </div>
@@ -362,7 +356,7 @@ Sommerschlussverkauf auf Powerbank</p>
           class="mx-auto text-3xl uppercase text-white font-bold mb-4"
           style="color: white"
         >
-          Lideka home - Betaalbare Slimme LED-strips
+          Lideka home - Erschwingliche intelligente LED-Streifen
         </h2>
         <p class="mx-auto text-white font-extralight">
           Lideka is een merk dat zich concentreert op het produceren van
@@ -458,20 +452,20 @@ Sommerschlussverkauf auf Powerbank</p>
               Service
             </h2>
             <p class="text-white font-extralight pt-6 px-6">
-              Een goede service voor jou vinden wij belangrijk. Wij geloven dat
-              het onze verantwoordelijkheid is om jou te helpen en te adviseren
-              waar dat nodig is, niet alleen tijdens het verkoopproces, maar
-              vooral na het verkoopproces.
+              Wir glauben, dass guter Service für Sie wichtig ist. wir glauben das
+              Es ist unsere Aufgabe, Ihnen zu helfen und Sie zu beraten
+              ggf. nicht nur während des Verkaufsprozesses, sondern
+              insbesondere nach dem Verkaufsprozess.
             </p>
-            <p class="text-white font-extralight pt-6 px-6">
-              Je kunt ons 24/7 bereiken op (<a
+            <p class="text-white font-extralight pt-6 px-6">  
+Sie erreichen uns rund um die Uhr unter (<a
                 class="link"
                 href="tel:0850601297"
                 >085-0601297</a
-              >), je zult niet altijd direct antwoord kunnen krijgen op
-              specifieke vragen, maar onze experts zullen je altijd zo snel
-              mogelijk antwoord geven. We streven ernaar om altijd binnen 24 uur
-              terug te bellen of terug te mailen, dit kan op
+              >), Sie werden nicht immer in der Lage sein, eine direkte Antwort darauf zu bekommen
+              spezifische Fragen, aber unsere Experten werden Ihnen immer so schnell wie möglich antworten
+              mögliche Antwort. Wir sind bestrebt, immer innerhalb von 24 Stunden zu liefern
+              zurückrufen oder mailen, dies ist auf möglich
               <a class="link" href="mailto:klantenservice@lidekahome.nl"
                 >klantenservice@lidekahome.nl</a
               >.
@@ -490,16 +484,17 @@ Sommerschlussverkauf auf Powerbank</p>
             <h2
               class="text-white font-bold text-center text-2xl px-6 mt-4 uppercase tracking-wide"
             >
-              Duurzaamheid
+              HALTBARKEIT
             </h2>
             <p class="text-white font-extralight pt-6 px-6">
-              Lideka® wil als merk en organisatie het stroomgebruik van huizen en daarmee consumenten met <strong>70%</strong> verminderen.
+              
+Als Marke und Organisation möchte Lideka® den Stromverbrauch von Haushalten und damit Verbrauchern reduzieren <strong>70%</strong> Reduzieren.
             </p>
             <p class="text-white font-extralight pt-6 px-6">
-              We doen dat door middel van <strong>duurzame LED verlichting</strong>, en <strong>Solar apparaten</strong>. Alle bestellingen worden zo duurzaam mogelijk geleverd. Daarbij kiezen we altijd voor een <strong>degelijke kwaliteit</strong> materialen die langer meegaan.
+              Das machen wir durch <strong>nachhaltige LED-Beleuchtung</strong>, en <strong>Solargeräte</strong>. Alle Bestellungen werden so nachhaltig wie möglich geliefert. Wir wählen immer a <strong>Anständige Qualität</strong> Materialien, die länger halten.
             </p>
-            <p class="text-white font-extralight pt-6 px-6">
-              Ook binnen de organisatie doen we er alles aan om vuil te scheiden, zo min mogelijk te verspillen, en al het afval netjes te recyclen. Samen werken we aan een betere en <strong>duurzame toekomst</strong>. Zodat niet alleen wij kunnen genieten van een gezonde planeet, maar ook de volgende en volgende generatie.
+            <p class="text-white font-extralight pt-6 px-6">    
+Innerhalb der Organisation tun wir auch alles, um Abfälle zu trennen, so wenig wie möglich zu verschwenden und alle Abfälle ordnungsgemäß zu recyceln. Gemeinsam arbeiten wir an einem besseren und <strong>nachhaltige Zukunft</strong>. Damit nicht nur wir uns an einem gesunden Planeten erfreuen können, sondern auch die nächste und übernächste Generation.
             </p>
           </div>
         </div>
@@ -515,25 +510,24 @@ Sommerschlussverkauf auf Powerbank</p>
             <h2
               class="text-white font-bold text-center text-2xl px-6 mt-4 uppercase tracking-wide"
             >
-              Betaalbaarheid
+              BEZAHLBARKEIT
             </h2>
             <p class="text-white font-extralight pt-6 px-6 mx-auto max-w-2xl">
-              Slimme verlichting kan erg duur zijn, en vooral
-              <a class="link" href="/categorie/led-strips">slimme led-strips</a
-              >, nu kun je ook voor een goedkopere gaan maar je wilt toch
-              <strong>kwaliteit</strong>.
+              Intelligente Beleuchtung kann sehr teuer sein und vor allem
+              <a class="link" href="/categorie/led-strips">Intelligente LED-Streifen</a
+              >, Jetzt können Sie sich auch für ein billigeres entscheiden, aber Sie wollen immer noch
+              <strong>Qualität</strong>.
             </p>
             <p class="text-white font-extralight pt-6 px-6 mx-auto max-w-2xl">
-              Vaak wordt er gedacht dat kwaliteit automatisch duur is, maar
-              kwaliteit hoeft echt niet duur te zijn. Door de
-              <strong>juiste processen</strong> te hanteren in de fabriek en de
-              juiste partners te vinden kun jij een hele degelijke prijs
-              neerzetten die voor iedereen haalbaar is.
+              Oft wird angenommen, dass Qualität automatisch teuer ist, aber
+              Qualität muss nicht teuer sein. Bis zum
+              <strong>richtige Prozesse</strong> 
+                im Werk zu handhaben und die Wenn Sie die richtigen Partner finden, können Sie einen sehr anständigen Preis erzielen etwas schaffen, das für alle zugänglich ist.
             </p>
             <p class="text-white font-extralight pt-6 px-6 mx-auto max-w-2xl">
-              Dat is Lideka en dat is waar wij in <strong>geloven</strong>,
-              betaalbare slimme LED-strips en verlichting, niet alleen voor jou,
-              maar voor <strong>iedereen</strong>!
+              Das ist Lideka und da kommen wir ins Spiel <strong>glauben</strong>,    
+erschwingliche intelligente LED-Streifen und Beleuchtung, nicht nur für Sie,
+aber für<strong>alle</strong>!
             </p>
           </div>
         </div>
@@ -545,7 +539,7 @@ Sommerschlussverkauf auf Powerbank</p>
         <button
           class="px-6 py-2 mt-4 bg-green-600 hover:bg-green-700 rounded-full text-white"
         >
-          <span>Welke kamer zou jij willen opfleuren?</span>
+          <span>Welchen Raum möchten Sie verschönern?</span>
         </button>
       </a>
     </div>
