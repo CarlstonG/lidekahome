@@ -235,7 +235,7 @@ Sommerschlussverkauf auf Powerbank</p>
             >
               <div class="px-2 ">
                 <h3 class="text-white uppercase text-center">
-                  bunt<br />
+                  bunt 
                   Hilfe
                 </h3>
               </div>
@@ -248,7 +248,7 @@ Sommerschlussverkauf auf Powerbank</p>
               </div>
               <div class="px-2">
                 <h3 class="text-white uppercase text-center">
-                 funktionell <br /> Hilfe 
+                 funktionell Hilfe 
                 </h3>
               </div>
             </div>

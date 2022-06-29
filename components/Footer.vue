@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="border-t bg-black border-b border-gray-900">
+    <!-- <div class="border-t bg-black border-b border-gray-900">
       <div class="max-w-7xl mx-auto px-6 py-6">
         <dl class="md:grid md:grid-cols-3">
           <div class="relative hidden md:block">
@@ -26,7 +26,7 @@
           </div>
         </dl>
       </div>
-    </div>
+    </div> -->
 
 
     <footer class="bg-black" aria-labelledby="footerHeading">
