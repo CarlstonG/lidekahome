@@ -1,4 +1,5 @@
-# rocksolid-headless-shopify
+# German Shopify
+# Template Copied from Rocksolid Dutch Website
 
 ## Build Setup
 
